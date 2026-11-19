@@ -113,10 +113,11 @@ const repo = repoUrl;
       <section class="panel">
         {d.creature?.spawn && (<><h2>Spawns</h2><ul class="drops">{d.creature.spawn.map((x) => <li><span>{x.when}</span>{x.chance && <span class="drops__chance">{x.chance}</span>}</li>)}</ul></>)}
         {d.creature?.summon && (<><h2>To summon</h2><ul class="drops">{d.creature.summon.map((x) => <li><span>{x}</span></li>)}</ul></>)}
+        {d.creature && d.drops && d.drops.length > 0 && (<><h2>Drops</h2><ul class="drops">{d.drops.map((x) => <li><span>{x.from}</span>{x.chance && <span class="drops__chance">{x.chance}</span>}</li>)}</ul></>)}
       </section>
     )}
 
-    {d.drops && d.drops.length > 0 && (
+    {d.drops && d.drops.length > 0 && !(d.creature?.spawn || d.creature?.summon) && (
       <section class="panel panel--drops">
         <h2>{d.creature ? 'Drops' : 'Dropped by'}</h2>
         <ul class="drops">

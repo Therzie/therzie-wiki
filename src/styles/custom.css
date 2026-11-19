@@ -437,6 +437,7 @@ nav.sidebar .large { font-size: 1.05rem; letter-spacing: 0.08em; }
 .card-item h3 { font-size: 1.1rem; letter-spacing: 0.05em; }
 .tooltip-card__name { font-size: 1.35rem; }
 .panel h2 { font-size: 1.45rem; }
+.panel ul + h2 { margin-top: 1.1rem; }
 .matrix__group { font-size: 1rem; }
 .matrix__tier > span:not(.matrix__rune) { font-size: 1rem; }
 .tier h3 { font-size: 1.25rem; }
