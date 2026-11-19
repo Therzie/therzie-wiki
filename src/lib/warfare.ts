@@ -57,12 +57,4 @@ export const GUIDE: { slug: string; title: string; summary: string; stat?: strin
     summary: 'Bows, greatbows and crossbows at the Fletcher Table, with tier ammo, quivers and throwing belts.' },
   { slug: 'more', title: 'And More', rune: 'ᛗ',
     summary: 'Lingering meads, Dark Crystal veins in the Mistlands and Dvergr style Black Forge extensions.' },
-  { slug: 'crafting-filter', title: 'The Crafting Filter', rune: 'ᛁ',
-    summary: 'Family tabs and a tier strip at every station, so you find the weapon you want in seconds.' },
-  { slug: 'install', title: 'Install and prefabs', rune: 'ᛃ',
-    summary: 'How to install and update Warfare, the prefab name pattern for server admins, and translations.' },
-  { slug: 'saga', title: 'The Therzie Saga', rune: 'ᛊ',
-    summary: 'How Warfare fits together with Armory, Wizardry and Monstrum.' },
-  { slug: 'credits', title: 'Roadmap and credits', rune: 'ᚷ',
-    summary: 'What comes next, everyone who helped forge Warfare, and how to support the work.' },
 ];

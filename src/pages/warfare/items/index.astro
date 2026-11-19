@@ -1,10 +1,12 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import ItemBrowser from '../../../components/ItemBrowser.astro';
-import { getItems } from '../../../lib/wiki';
-const items = (await getItems('warfare')).filter((i) => i.data.kind === 'item');
+import { getItems, warfareTab } from '../../../lib/wiki';
+const items = (await getItems('warfare')).filter((i) => warfareTab(i.data) === 'items');
 ---
-<StarlightPage frontmatter={{ title: 'Warfare items', description: 'Gems, materials, meads, saddles, keys and bars from Warfare.', tableOfContents: false }}>
-  <p class="lead">Gems, materials, meads, saddles, keys and bars: where they drop and how they are made.</p>
+<StarlightPage frontmatter={{ title: 'Warfare items', description: 'Gems, materials, saddles, keys and bars from Warfare.', tableOfContents: false }}>
+  <p class="lead">
+    Gems, materials, saddles, keys and bars: where they drop and how they are made.
+  </p>
   <ItemBrowser items={items} />
 </StarlightPage>

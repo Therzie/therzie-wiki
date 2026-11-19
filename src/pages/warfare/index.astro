@@ -1,22 +1,24 @@
 ---
 // Warfare overview: a navigation panel with a short summary of every topic.
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-import { getItems, url } from '../../lib/wiki';
+import { getItems, url, warfareTab } from '../../lib/wiki';
 import { LINKS, GUIDE } from '../../lib/warfare';
 
 const items = await getItems('warfare');
 const art = (f: string) => url(`/readme/warfare/${f}`);
-const count = (sheet: string) => items.filter((i) => i.data.source?.sheet === sheet).length;
+const count = (tab: string) => items.filter((i) => warfareTab(i.data) === tab).length;
 const browse = [
-  { href: '/warfare/weapons/', title: 'Weapons', text: 'Every weapon, shield and ammo type with damage, recipe and biome.', n: count('Weapons') },
-  { href: '/warfare/pieces/', title: 'Pieces', text: 'Crafting stations, extensions and build pieces.', n: count('Pieces') },
-  { href: '/warfare/items/', title: 'Items', text: 'Materials, meads, quivers and the rest.', n: count('Items') },
+  { href: '/warfare/weapons/', title: 'Weapons', text: 'Every weapon and shield with damage, recipe and biome.', n: count('weapons') },
+  { href: '/warfare/ammo/', title: 'Ammo', text: 'Arrows and crossbow bolts, including explosive and pickaxe ammo.', n: count('ammo') },
+  { href: '/warfare/bombs/', title: 'Bombs', text: 'Throwable bombs.', n: count('bombs') },
+  { href: '/warfare/meads/', title: 'Meads - Potions', text: 'Lingering stamina meads and resistance meads.', n: count('meads') },
+  { href: '/warfare/pieces/', title: 'Pieces', text: 'Crafting stations, extensions and build pieces.', n: count('pieces') },
+  { href: '/warfare/items/', title: 'Items', text: 'Gems, materials, saddles, keys and bars.', n: count('items') },
 ];
 
 // Old links pointed at anchors on one long page; send them to the topic page.
 const OLD = { 'the-forge-path': 'forge-path', 'relics-of-the-forsaken': 'relics', 'the-arsenal': 'arsenal', 'eitr-infusion': 'runeforge',
-  'the-fletchers-hall': 'fletchers-hall', 'and-more': 'more', 'the-therzie-saga': 'saga', 'install-notes': 'install',
-  'the-crafting-filter': 'crafting-filter', 'prefab-names': 'install', 'languages': 'install', 'roadmap': 'credits', 'credits': 'credits', 'support': 'credits' };
+  'the-fletchers-hall': 'fletchers-hall', 'and-more': 'more' };
 ---
 <StarlightPage frontmatter={{ title: 'Warfare', description: 'Weapons for every biome, from Meadows flint to Ashlands flametal.', tableOfContents: false }}>
   <div class="readme not-content">
@@ -41,7 +43,7 @@ const OLD = { 'the-forge-path': 'forge-path', 'relics-of-the-forsaken': 'relics'
         <a class="guide-card guide-card--browse" href={url(b.href)}>
           <span class="guide-card__title">{b.title}</span>
           <span class="guide-card__text">{b.text}</span>
-          <span class="guide-card__stat">{b.n} entries</span>
+          <span class="guide-card__stat">{b.n} {b.n === 1 ? 'entry' : 'entries'}</span>
         </a>
       ))}
     </div>

@@ -1,0 +1,12 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import ItemBrowser from '../../../components/ItemBrowser.astro';
+import { getItems, warfareTab } from '../../../lib/wiki';
+const items = (await getItems('warfare')).filter((i) => warfareTab(i.data) === 'bombs');
+---
+<StarlightPage frontmatter={{ title: 'Warfare bombs', description: 'Bombs from Warfare, with damage and recipe.', tableOfContents: false }}>
+  <p class="lead">
+    Throwable bombs that Warfare adds, with their damage and recipe.
+  </p>
+  <ItemBrowser items={items} />
+</StarlightPage>

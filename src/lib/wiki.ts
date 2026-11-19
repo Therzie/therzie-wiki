@@ -89,7 +89,20 @@ export const statLabel = (k: string) => STAT_LABEL[k] ?? k.replace(/_/g, ' ').re
 export const isGear = (kind?: string) => ['weapon', 'shield', 'ammo', 'tool'].includes(kind ?? 'weapon');
 
 /** Pages per mod. Every item belongs to the section of its spreadsheet tab. */
-export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string; legacy?: boolean }[] = [
+/** Warfare database tab of an item: ammo, bombs and meads get their own tab instead of Weapons or Items. */
+export function warfareTab(d: { kind?: string; prefab?: string; group?: string; source?: { sheet: string } }): 'ammo' | 'bombs' | 'meads' | 'weapons' | 'pieces' | 'items' {
+  if (d.kind === 'ammo') return 'ammo';
+  if (d.prefab?.startsWith('Bomb')) return 'bombs';
+  if (d.group === 'Potions' || d.prefab?.startsWith('Mead')) return 'meads';
+  if (d.kind === 'piece') return 'pieces';
+  if (d.kind === 'item') return 'items';
+  return 'weapons';
+}
+
+export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string; legacy?: boolean; tab?: string }[] = [
+  { mod: 'warfare', path: '/warfare/ammo/', label: 'Ammo', title: 'Warfare ammo', sheets: ['Weapons'], tab: 'ammo', lead: '' },
+  { mod: 'warfare', path: '/warfare/bombs/', label: 'Bombs', title: 'Warfare bombs', sheets: ['Weapons'], tab: 'bombs', lead: '' },
+  { mod: 'warfare', path: '/warfare/meads/', label: 'Meads - Potions', title: 'Warfare meads and potions', sheets: ['Items'], tab: 'meads', lead: '' },
   { mod: 'warfare', path: '/warfare/weapons/', label: 'Weapons', title: 'Warfare weapons', sheets: ['Weapons'], matrix: 'tiers', lead: '' },
   { mod: 'warfare', path: '/warfare/pieces/', label: 'Pieces', title: 'Warfare pieces', sheets: ['Pieces'], lead: '' },
   { mod: 'warfare', path: '/warfare/items/', label: 'Items', title: 'Warfare items', sheets: ['Items'], lead: '' },
@@ -114,7 +127,8 @@ export const SECTIONS: { mod: string; path: string; label: string; title: string
 ];
 export const isLegacy = (mod: string) => SECTIONS.some((s) => s.mod === mod && s.legacy);
 export const sectionOf = (it: Item) =>
-  SECTIONS.find((s) => s.mod === it.data.mod && it.data.source && s.sheets.includes(it.data.source.sheet)) ??
+  SECTIONS.find((s) => s.tab && s.mod === it.data.mod && s.tab === warfareTab(it.data)) ??
+  SECTIONS.find((s) => !s.tab && s.mod === it.data.mod && it.data.source && s.sheets.includes(it.data.source.sheet)) ??
   SECTIONS.find((s) => s.mod === it.data.mod);
 export const UPGRADES = ['Base', 'Bronze', 'Iron', 'Silver', 'Blackmetal', 'Carapace', 'Flametal'];
 

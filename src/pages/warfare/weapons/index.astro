@@ -1,12 +1,12 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import ItemBrowser from '../../../components/ItemBrowser.astro';
-import { getItems, isGear } from '../../../lib/wiki';
-const items = (await getItems('warfare')).filter((i) => isGear(i.data.kind));
+import { getItems, isGear, warfareTab } from '../../../lib/wiki';
+const items = (await getItems('warfare')).filter((i) => isGear(i.data.kind) && warfareTab(i.data) === 'weapons');
 ---
-<StarlightPage frontmatter={{ title: 'Warfare weapons', description: 'All Warfare weapons, shields and ammo by type, tier and biome.', tableOfContents: false }}>
+<StarlightPage frontmatter={{ title: 'Warfare weapons', description: 'All Warfare weapons, shields and tools by type, tier and biome.', tableOfContents: false }}>
   <p class="lead">
-    Every Warfare weapon, shield and ammo type with its damage, recipe and biome. Search, filter by biome, or switch to
+    Every Warfare weapon and shield with its damage, recipe and biome. Search, filter by biome, or switch to
     the progression view to follow each type along the Forge Path, tier by tier.
   </p>
   <ItemBrowser items={items} matrix="tiers" />

@@ -1,0 +1,12 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import ItemBrowser from '../../../components/ItemBrowser.astro';
+import { getItems, warfareTab } from '../../../lib/wiki';
+const items = (await getItems('warfare')).filter((i) => warfareTab(i.data) === 'ammo');
+---
+<StarlightPage frontmatter={{ title: 'Warfare ammo', description: 'Arrows and crossbow bolts from Warfare, with damage, recipe and biome.', tableOfContents: false }}>
+  <p class="lead">
+    Arrows and crossbow bolts, from wooden bolts to explosive and pickaxe ammo. Craft them at the Fletcher Table.
+  </p>
+  <ItemBrowser items={items} />
+</StarlightPage>

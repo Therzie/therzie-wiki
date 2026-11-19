@@ -35,6 +35,9 @@ export default defineConfig({
           items: [
             { label: 'Overview', link: '/warfare/' },
             { label: 'Weapons', link: '/warfare/weapons/' },
+            { label: 'Ammo', link: '/warfare/ammo/' },
+            { label: 'Bombs', link: '/warfare/bombs/' },
+            { label: 'Meads - Potions', link: '/warfare/meads/' },
             { label: 'Pieces', link: '/warfare/pieces/' },
             { label: 'Items', link: '/warfare/items/' },
             {
@@ -47,10 +50,6 @@ export default defineConfig({
                 { label: 'The Runeforge', link: '/warfare/runeforge/' },
                 { label: "The Fletcher's Hall", link: '/warfare/fletchers-hall/' },
                 { label: 'And More', link: '/warfare/more/' },
-                { label: 'The Crafting Filter', link: '/warfare/crafting-filter/' },
-                { label: 'Install and prefabs', link: '/warfare/install/' },
-                { label: 'The Therzie Saga', link: '/warfare/saga/' },
-                { label: 'Roadmap and credits', link: '/warfare/credits/' },
               ],
             },
           ],

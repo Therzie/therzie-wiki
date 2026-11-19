@@ -1,0 +1,12 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import ItemBrowser from '../../../components/ItemBrowser.astro';
+import { getItems, warfareTab } from '../../../lib/wiki';
+const items = (await getItems('warfare')).filter((i) => warfareTab(i.data) === 'meads');
+---
+<StarlightPage frontmatter={{ title: 'Warfare meads and potions', description: 'Lingering meads and resistance meads from Warfare.', tableOfContents: false }}>
+  <p class="lead">
+    Lingering stamina meads and resistance meads, with their effects and recipes.
+  </p>
+  <ItemBrowser items={items} />
+</StarlightPage>
