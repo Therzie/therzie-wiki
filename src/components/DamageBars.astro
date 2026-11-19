@@ -1,18 +1,18 @@
 ---
+// Damage shown as in-game stat lines: icon, damage type, value.
 import { DAMAGE } from '../lib/wiki';
 import Glyph from './Glyph.astro';
-interface Props { damage: Record<string, number>; max?: number; compact?: boolean }
-const { damage, max = 180, compact = false } = Astro.props;
+interface Props { damage: Record<string, number>; compact?: boolean; max?: number }
+const { damage, compact = false } = Astro.props;
 const entries = Object.entries(damage).sort((a, b) => b[1] - a[1]);
 ---
-<ul class:list={['dmg', { 'dmg--compact': compact }]}>
+<ul class:list={['stats', { 'stats--compact': compact }]}>
   {entries.map(([type, value]) => {
     const d = DAMAGE[type] ?? { label: type, color: '#999' };
     return (
-      <li style={`--c:${d.color};--w:${Math.min(100, (value / max) * 100)}%`}>
-        <span class="dmg__label"><Glyph damage={type} size={compact ? 12 : 14} />{d.label}</span>
-        <span class="dmg__bar"><span /></span>
-        <span class="dmg__value">{value}</span>
+      <li style={`--c:${d.color}`}>
+        <span class="stats__label"><Glyph damage={type} size={compact ? 12 : 15} />{d.label}</span>
+        <span class="stats__value">{value}</span>
       </li>
     );
   })}
