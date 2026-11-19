@@ -1,0 +1,27 @@
+name: Assasin's hood
+prefab: HelmetRogue_TW
+mod: armory
+kind: armor
+group: Rogue
+set:
+  name: Rogue
+  effects:
+    - 'Increase damage with Knives: 1%'
+    - 'Knives Skill: +2'
+stats:
+  armor: 6
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Troll Helmet
+    - Troll Hide
+    - Greydwarf Eye
+  upgrade:
+    - Coal
+source:
+  sheet: Armory
+  row: 111
+  col: 3
+description: ''
+notes: ''

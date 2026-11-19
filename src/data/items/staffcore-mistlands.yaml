@@ -1,0 +1,19 @@
+name: Tempest core
+prefab: Staffcore_Mistlands_TW
+mod: wizardry
+kind: item
+group: Staffs Items
+recipe:
+  yields: 1
+  materials:
+    - Softtissue
+    - Queen Shard
+    - Refined Eitr
+    - Dvergr Trophy
+  station: Arcane Anvil Level 6
+source:
+  sheet: Wizardry
+  row: 69
+  col: 7
+description: ''
+notes: ''

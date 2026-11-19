@@ -1,0 +1,25 @@
+name: Tempest staff
+prefab: StaffMistlands_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+effect: 'Secondary: Lightning AOE'
+info:
+  - 'Upgrades: Wizard Table'
+damage:
+  lightning: 125
+stats:
+  eitr: 28
+recipe:
+  yields: 1
+  materials:
+    - Mysterious Staff Base
+    - Tempest Core
+    - Gjall Trophy
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 102
+  col: 7
+description: ''
+notes: ''

@@ -1,0 +1,22 @@
+name: Wizard butter soup
+prefab: ShroomSoupMountain_TW
+mod: wizardry
+kind: food
+group: Food Mountain
+food:
+  health: 40
+  stamina: 35
+  eitr: 20
+recipe:
+  yields: 1
+  materials:
+    - Wizard Butter
+    - Onion
+    - Wolf Meat
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 25
+  col: 3
+description: ''
+notes: ''

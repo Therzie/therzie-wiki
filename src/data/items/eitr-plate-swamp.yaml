@@ -1,0 +1,24 @@
+name: Swamp buffet
+prefab: EitrPlateSwamp_TW
+mod: wizardry
+kind: food
+group: Food Swamp
+effect: Eitr Regen +6%
+food:
+  health: 18
+  stamina: 8
+  eitr: 55
+recipe:
+  yields: 1
+  materials:
+    - Deathcap
+    - Entrails
+    - Turnip
+    - Bloodbag
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 14
+  col: 6
+description: ''
+notes: ''

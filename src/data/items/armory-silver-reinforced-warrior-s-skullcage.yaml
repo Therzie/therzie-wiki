@@ -1,0 +1,32 @@
+biome: Mountains
+name: Silver-Reinforced Warrior's skullcage
+mod: armory
+kind: armor
+group: Warrior
+tier: Silver
+set:
+  name: Warrior
+  effects:
+    - 'Increase damage with Clubs: 3%'
+    - 'Health Regen: +8%'
+    - 'Attack Stamina Usage: -4%'
+    - 'Block Stamina Usage: -2%'
+    - 'Clubs Skill: +6'
+stats:
+  armor: 20
+  upgrade: Silver
+recipe:
+  yields: 1
+  materials:
+    - Warrior'S Skullcage
+    - Silver
+    - Obsidian
+    - Wolf Fang
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 250
+  col: 3
+description: ''
+notes: ''

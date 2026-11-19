@@ -1,0 +1,23 @@
+name: Robe weaving loom
+prefab: WeavingLoom_TW
+mod: wizardry
+kind: piece
+group: Stations & Extensions
+info:
+  - Recipes
+  - Fabric, Yarn
+  - Upgrades Wizard Table Lvl 3
+  - Upgrades Arcane Anvil Lvl 2
+recipe:
+  yields: 1
+  materials:
+    - Core Wood
+    - Hard Antler
+    - Thistle
+    - Bone Fragments
+source:
+  sheet: Wizardry
+  row: 5
+  col: 5
+description: ''
+notes: ''

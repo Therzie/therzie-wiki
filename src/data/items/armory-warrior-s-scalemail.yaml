@@ -1,0 +1,27 @@
+name: Warrior's Scalemail
+mod: armory
+kind: armor
+group: Warrior
+set:
+  name: Warrior
+  effects:
+    - 'Increase damage with Clubs: 2%'
+    - 'Clubs Skill: +4'
+stats:
+  armor: 14
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Iron Scale Mail
+    - Iron
+    - Rotten Pelt
+    - Guck
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 238
+  col: 4
+description: ''
+notes: ''

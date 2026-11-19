@@ -1,0 +1,31 @@
+biome: Mistlands
+name: Carapace-Reinforced Fenrir Legging
+mod: armory
+kind: armor
+group: Fenrir
+tier: Carapace
+set:
+  name: Fenrir
+  effects:
+    - 'Increase damage with Fists: 5%'
+    - 'Attack Stamina Usage: -9%'
+    - 'Run Stamina Usage: -9%'
+    - 'Fists Skill: +10'
+stats:
+  armor: 28
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal-Reinforced Fenrir Legging
+    - Soft Tissue
+    - Refined Eitr
+    - Scale Hide
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 386
+  col: 5
+description: ''
+notes: ''

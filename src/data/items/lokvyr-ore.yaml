@@ -10,11 +10,9 @@ drops:
     chance: 100%
   - from: Lokvyr Golem
     chance: 45%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 81
+  col: 5
 description: ''
 notes: ''

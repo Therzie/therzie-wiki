@@ -1,0 +1,31 @@
+biome: Mistlands
+name: Carapace-Reinforced Fenrir Hood
+mod: armory
+kind: armor
+group: Fenrir
+tier: Carapace
+set:
+  name: Fenrir
+  effects:
+    - 'Increase damage with Fists: 5%'
+    - 'Attack Stamina Usage: -9%'
+    - 'Run Stamina Usage: -9%'
+    - 'Fists Skill: +10'
+stats:
+  armor: 28
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal-Reinforced Fenrir Hood
+    - Carapace
+    - Refined Eitr
+    - Venomous Fang
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 386
+  col: 3
+description: ''
+notes: ''

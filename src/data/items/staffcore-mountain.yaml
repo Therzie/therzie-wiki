@@ -1,0 +1,18 @@
+name: Crystalline core
+prefab: Staffcore_Mountain_TW
+mod: wizardry
+kind: item
+group: Staffs Items
+recipe:
+  yields: 1
+  materials:
+    - Crystal
+    - Obsidian
+    - Moder Shard
+  station: Arcane Anvil Level 5
+source:
+  sheet: Wizardry
+  row: 69
+  col: 5
+description: ''
+notes: ''

@@ -1,0 +1,35 @@
+biome: Meadows
+name: Darkhorn
+prefab: Sheep_TW
+mod: wizardry
+kind: creature
+group: Creatures
+creature:
+  health: 25
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 20%
+    - when: Night
+      chance: 14%
+drops:
+  - from: Wool
+    chance: 100%
+  - from: Raw Meat
+    chance: 60%
+  - from: Darkhorn Trophy
+    chance: 15%
+source:
+  sheet: W.Creatures
+  row: 2
+  col: 3
+description: ''
+notes: ''

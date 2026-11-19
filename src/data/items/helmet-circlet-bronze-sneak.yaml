@@ -1,0 +1,23 @@
+name: 'Enchanted bronze circlet: Sneak'
+prefab: HelmetCircletBronze_Sneak_TW
+mod: wizardry
+kind: armor
+group: Circlets Bronze
+effect: 'Sneak +3 · Sneak Stamina Usage: -5%'
+stats:
+  armor: 6+
+recipe:
+  yields: 1
+  materials:
+    - Bronze Circlet
+    - Ruby
+    - Elder Shard
+    - Troll Hide
+  station: Arcane anvil
+  level: 2
+source:
+  sheet: Wizardry
+  row: 202
+  col: 7
+description: ''
+notes: ''

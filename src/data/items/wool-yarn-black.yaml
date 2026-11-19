@@ -1,0 +1,17 @@
+name: Black Yarn
+prefab: WoolYarn_Black_TW
+mod: wizardry
+kind: item
+group: Wool Materials
+recipe:
+  yields: 1
+  materials:
+    - Wool
+    - Tar
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 55
+  col: 4
+description: ''
+notes: ''

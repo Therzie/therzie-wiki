@@ -1,0 +1,21 @@
+name: Magical iron ring
+prefab: RingSwamp_TW
+mod: wizardry
+kind: armor
+group: Rings
+effect: Elemental MagicSkill +3
+recipe:
+  yields: 1
+  materials:
+    - Bonemass Shard
+    - Iron
+  station: Arcane anvil
+  level: 2
+  monstrum:
+    - Withered Bone or Onyx
+source:
+  sheet: Wizardry
+  row: 189
+  col: 4
+description: ''
+notes: ''

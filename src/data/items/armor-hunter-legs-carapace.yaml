@@ -1,0 +1,30 @@
+biome: Mistlands
+name: Carapace leather hunting leggings
+prefab: ArmorHunterLegsCarapace_TW
+mod: armory
+kind: armor
+group: Hunter
+tier: Carapace
+set:
+  name: Hunter
+  effects:
+    - Sneak and Run Stamina -10%
+    - Bows and Crossbow +10 Skill
+    - Pierce Damage +10%
+stats:
+  armor: 25
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Blazed Leather Hunting Leggings
+    - Carapace
+    - Soft Tissue
+    - Scale Hide
+  station: Armory
+source:
+  sheet: Armory
+  row: 97
+  col: 5
+description: ''
+notes: ''

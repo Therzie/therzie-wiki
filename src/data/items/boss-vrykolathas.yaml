@@ -1,0 +1,31 @@
+biome: Swamp
+name: Vrykolathas
+prefab: BossVrykolathas_TW
+mod: monstrum
+kind: creature
+group: Bosses
+creature:
+  boss: true
+  health: 5000
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: weak
+    poison: immune
+    lightning: weak
+    spirit: weak
+    frost: resistant
+  summon:
+    - Wraith Trophy x2
+drops:
+  - from: Blood Drinker Scythe
+    chance: 7%
+  - from: Vrykolathas trophy
+    chance: 100%
+source:
+  sheet: Monstrum
+  row: 3
+  col: 7
+description: ''
+notes: ''

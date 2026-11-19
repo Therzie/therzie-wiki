@@ -18,5 +18,6 @@ recipe:
 source:
   sheet: Weapons
   row: 82
+  col: 7
 description: ''
 notes: ''

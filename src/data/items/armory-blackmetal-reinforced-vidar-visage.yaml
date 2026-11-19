@@ -1,0 +1,31 @@
+biome: Plains
+name: Blackmetal-Reinforced Vidar Visage
+mod: armory
+kind: armor
+group: Vidar
+tier: Blackmetal
+set:
+  name: Vidar
+  effects:
+    - 'Increase damage with Swords: 4%'
+    - 'Attack Stamina Usage: -8%'
+    - 'Block Stamina Usage: -4%'
+    - 'Swords Skill: +8'
+stats:
+  armor: 26
+  upgrade: Blackmetal
+recipe:
+  yields: 1
+  materials:
+    - Vidar Visage
+    - Blackmetal
+    - Tar
+    - Lox Bone
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 320
+  col: 3
+description: ''
+notes: ''

@@ -1,0 +1,20 @@
+name: Pure staff base
+prefab: Staffbase_Mountain_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+damage:
+  blunt: 37
+recipe:
+  yields: 1
+  materials:
+    - Infused Fir Wood
+    - Silver
+    - Freeze Gland
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 87
+  col: 8
+description: ''
+notes: ''

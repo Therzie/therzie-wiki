@@ -1,0 +1,24 @@
+name: 'Enchanted blackmetal circlet: Sneak'
+prefab: HelmetCircletBM_Sneak_TW
+mod: wizardry
+kind: armor
+group: Circlets Blackmetal
+effect: 'Sneak +12 · Sneak Stamina Usage: -11%'
+stats:
+  armor: 12+
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal Circlet
+    - Yagluth Shard
+    - Deathsquito Trophy
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Lox Pelt or Emerald
+source:
+  sheet: Wizardry
+  row: 241
+  col: 7
+description: ''
+notes: ''

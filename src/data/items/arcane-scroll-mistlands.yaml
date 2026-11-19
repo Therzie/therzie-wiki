@@ -1,0 +1,18 @@
+name: 'Arcane scroll: ''Storm'''
+prefab: ArcaneScroll_Mistlands_TW
+mod: wizardry
+kind: item
+group: Scrolls (Upgrade Staffs)
+recipe:
+  yields: 1
+  materials:
+    - Queen Shard
+    - Refined Eitr
+    - Carapace
+  station: Arcane Anvil Level 4
+source:
+  sheet: Wizardry
+  row: 78
+  col: 7
+description: ''
+notes: ''

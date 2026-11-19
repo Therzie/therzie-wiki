@@ -8,12 +8,13 @@ const d = Astro.props.item.data;
 const dmg = Object.entries(d.damage).sort((a, b) => b[1] - a[1]);
 const max = d.damage_max ?? {};
 const stats = Object.entries(d.stats ?? {}).filter(([k]) => k !== 'levels');
+const food = (['health', 'stamina', 'eitr'] as const).filter((k) => d.food?.[k] !== undefined);
 ---
 <div class="tooltip-card" role="group" aria-label={`${d.name} tooltip`}>
   <div class="tooltip-card__name">{d.name}</div>
-  <div class="tooltip-card__type">{d.group}{d.skill && ` · ${d.skill}`}</div>
+  <div class="tooltip-card__type">{d.creature?.boss ? 'Boss' : d.group}{d.skill && ` · ${d.skill}`}</div>
   {d.description && <p class="tooltip-card__desc">{d.description}</p>}
-  {(dmg.length > 0 || stats.length > 0) && (
+  {(dmg.length > 0 || stats.length > 0 || food.length > 0 || d.creature?.health !== undefined) && (
     <dl class="tooltip-card__stats">
       {dmg.map(([t, v]) => (
         <div style={`--c:${DAMAGE[t]?.color ?? '#ccc'}`}>
@@ -21,11 +22,16 @@ const stats = Object.entries(d.stats ?? {}).filter(([k]) => k !== 'levels');
         </div>
       ))}
       {dmg.length > 1 && <div class="tooltip-card__total"><dt>Total</dt><dd>{totalDamage(Astro.props.item)}</dd></div>}
+      {d.creature?.health !== undefined && <div><dt>Health</dt><dd>{d.creature.health}</dd></div>}
+      {food.map((k) => <div class={`food food--${k}`}><dt>{k[0].toUpperCase() + k.slice(1)}</dt><dd>{d.food?.[k]}</dd></div>)}
       {stats.map(([k, v]) => <div><dt>{statLabel(k)}</dt><dd>{v}</dd></div>)}
       {d.recipe.yields > 1 && <div><dt>Crafted per batch</dt><dd>{d.recipe.yields}</dd></div>}
     </dl>
   )}
   {d.stats?.levels && <p class="tooltip-card__note">Values for upgrade {String(d.stats.levels).replace(/^lvl/i, 'levels')}</p>}
   {d.effect && <p class="tooltip-card__effect">{d.effect}</p>}
+  {d.set && d.set.effects.length > 0 && (
+    <div class="tooltip-card__set"><b>{d.set.name} set (3 pieces)</b><ul>{d.set.effects.map((e) => <li>{e}</li>)}</ul></div>
+  )}
   {d.info && d.info.length > 0 && <ul class="tooltip-card__info">{d.info.map((x) => <li>{x}</li>)}</ul>}
 </div>

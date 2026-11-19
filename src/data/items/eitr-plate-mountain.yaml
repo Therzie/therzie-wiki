@@ -1,0 +1,24 @@
+name: Mountain buffet
+prefab: EitrPlateMountain_TW
+mod: wizardry
+kind: food
+group: Food Mountain
+effect: Eitr Regen +8%
+food:
+  health: 22
+  stamina: 10
+  eitr: 65
+recipe:
+  yields: 1
+  materials:
+    - Wizard Butter
+    - Wolf Meat
+    - Onion
+    - Serpent Meat
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 25
+  col: 6
+description: ''
+notes: ''

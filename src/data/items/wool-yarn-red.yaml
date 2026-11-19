@@ -1,0 +1,17 @@
+name: Red yarn
+prefab: WoolYarn_Red_TW
+mod: wizardry
+kind: item
+group: Wool Materials
+recipe:
+  yields: 1
+  materials:
+    - Wool
+    - Red Jute
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 61
+  col: 3
+description: ''
+notes: ''

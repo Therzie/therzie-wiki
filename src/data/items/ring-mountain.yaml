@@ -1,0 +1,21 @@
+name: Magical silver ring
+prefab: RingMountain_TW
+mod: wizardry
+kind: armor
+group: Rings
+effect: Eitr Regen +4%
+recipe:
+  yields: 1
+  materials:
+    - Moder Shard
+    - Silver
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Fenris Claw or Diamond
+source:
+  sheet: Wizardry
+  row: 189
+  col: 5
+description: ''
+notes: ''

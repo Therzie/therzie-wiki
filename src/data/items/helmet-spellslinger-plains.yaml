@@ -1,0 +1,27 @@
+name: Wizard hood
+prefab: HelmetSpellslinger_Plains_TW
+mod: wizardry
+kind: armor
+group: Armor Plains Wizard
+set:
+  name: Armor Plains Wizard
+  effects:
+    - 'Elemental Magic: +9'
+    - 'Blood Magic: +9'
+stats:
+  armor: 12
+  eitr_regen: 15%
+recipe:
+  yields: 1
+  materials:
+    - Wizard Fabric Bundle
+    - Tar
+    - Yagluth Shard
+    - Lox Trophy
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 161
+  col: 3
+description: ''
+notes: ''

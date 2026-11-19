@@ -1,0 +1,29 @@
+name: Halberdier's greaves
+mod: armory
+kind: armor
+group: Bold
+set:
+  name: Bold
+  effects:
+    - 'Increase damage with Polearms: 4%'
+    - 'Run Stamina Usage: -6%'
+    - 'Attack Stamina Usage: -6%'
+    - 'Polearms Skill: +8'
+stats:
+  armor: 26
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Padded Greaves
+    - Blackmetal
+    - Linen Thread
+    - Needle
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 400
+  col: 5
+description: ''
+notes: ''

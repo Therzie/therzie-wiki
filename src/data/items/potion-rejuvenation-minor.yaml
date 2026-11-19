@@ -1,0 +1,20 @@
+name: Minor rejuvenation potion
+prefab: PotionRejuvenationMinor_TW
+mod: wizardry
+kind: item
+group: Potions
+effect: 'Health: 32 · Stamina: 28 · Eitr 55'
+recipe:
+  yields: 1
+  materials:
+    - Bonemass Shard
+    - Minor Healing Mead
+    - Minor Stamina Mead
+    - Small Eitr Mead
+  station: Potion Cauldron
+source:
+  sheet: W.Food
+  row: 65
+  col: 9
+description: ''
+notes: ''

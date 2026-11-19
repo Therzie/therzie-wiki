@@ -1,0 +1,27 @@
+name: Assassins Striders
+prefab: ArmorRogueLegs_TW
+mod: armory
+kind: armor
+group: Rogue
+set:
+  name: Rogue
+  effects:
+    - 'Increase damage with Knives: 1%'
+    - 'Knives Skill: +2'
+stats:
+  armor: 6
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Troll Leather Pants
+    - Troll Hide
+    - Deer Hide
+  upgrade:
+    - Bone Fragments
+source:
+  sheet: Armory
+  row: 111
+  col: 5
+description: ''
+notes: ''

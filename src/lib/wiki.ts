@@ -28,12 +28,13 @@ export function iconFor(prefab: string): string | undefined {
 
 export async function getItems(mod?: string) {
   const all = await getCollection('items', (e) => !e.data.hidden && (!mod || e.data.mod === mod));
+  // sheet order within a group, tiers first for gear
   return all.sort(
     (a, b) =>
       a.data.group.localeCompare(b.data.group) ||
       tierIndex(a.data.tier) - tierIndex(b.data.tier) ||
-      biomeIndex(a.data.biome) - biomeIndex(b.data.biome) ||
-      totalDamage(a) - totalDamage(b)
+      (a.data.source?.row ?? 0) - (b.data.source?.row ?? 0) ||
+      (a.data.source?.col ?? 0) - (b.data.source?.col ?? 0)
   );
 }
 
@@ -65,11 +66,36 @@ export function materialIndex(items: Item[]) {
 export const repoUrl = `https://github.com/${process.env.SITE_OWNER ?? 'therzie'}/${process.env.SITE_REPO ?? 'therzie-wiki'}`;
 
 export const KIND_LABEL: Record<string, string> = {
-  weapon: 'Weapon', shield: 'Shield', ammo: 'Ammo', tool: 'Tool', piece: 'Piece', item: 'Item',
+  weapon: 'Weapon', shield: 'Shield', ammo: 'Ammo', tool: 'Tool', armor: 'Armor', piece: 'Piece', item: 'Item',
+  creature: 'Creature', food: 'Food',
 };
 export const STAT_LABEL: Record<string, string> = {
   block_armor: 'Block armor', block_force: 'Block force', parry_bonus: 'Parry bonus', armor: 'Armor',
-  comfort: 'Comfort', value: 'Value', levels: 'Values',
+  comfort: 'Comfort', value: 'Value', levels: 'Values', upgrade: 'Upgrade', eitr_regen: 'Eitr regen', carry_weight: 'Carry weight',
+  eitr: 'Eitr cost',
 };
 export const statLabel = (k: string) => STAT_LABEL[k] ?? k.replace(/_/g, ' ').replace(/^\w/, (c) => c.toUpperCase());
 export const isGear = (kind?: string) => ['weapon', 'shield', 'ammo', 'tool'].includes(kind ?? 'weapon');
+
+/** Pages per mod. Every item belongs to the section of its spreadsheet tab. */
+export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string }[] = [
+  { mod: 'warfare', path: '/warfare/weapons/', label: 'Weapons', title: 'Warfare weapons', sheets: ['Weapons'], matrix: 'tiers', lead: '' },
+  { mod: 'warfare', path: '/warfare/pieces/', label: 'Pieces', title: 'Warfare pieces', sheets: ['Pieces'], lead: '' },
+  { mod: 'warfare', path: '/warfare/items/', label: 'Items', title: 'Warfare items', sheets: ['Items'], lead: '' },
+  { mod: 'armory', path: '/armory/', label: 'Armor sets', title: 'Armory', sheets: ['Armory'], matrix: 'upgrades',
+    lead: 'Every Armory set with its set effects, armor value and recipes, from the base set to its last upgrade. Switch to the upgrade view to see each set along its upgrade path.' },
+  { mod: 'monstrum', path: '/monstrum/', label: 'Creatures', title: 'Monstrum creatures', sheets: ['Monstrum'],
+    lead: 'Bosses and creatures from Monstrum: where they live, what they drop, how much health they have and which damage hurts them.' },
+  { mod: 'monstrum', path: '/monstrum/food/', label: 'Food', title: 'Monstrum food', sheets: ['M.Food'],
+    lead: 'Food made from Monstrum creatures, with health, stamina and eitr.' },
+  { mod: 'wizardry', path: '/wizardry/', label: 'Gear and items', title: 'Wizardry', sheets: ['Wizardry'],
+    lead: 'Stations, magic materials, staffs, robes, rings and circlets from Wizardry.' },
+  { mod: 'wizardry', path: '/wizardry/creatures/', label: 'Creatures', title: 'Wizardry creatures', sheets: ['W.Creatures'],
+    lead: 'The mages of every biome and the Darkhorn: drops, health and resistances.' },
+  { mod: 'wizardry', path: '/wizardry/food/', label: 'Food and potions', title: 'Wizardry food and potions', sheets: ['W.Food'],
+    lead: 'Eitr food, scrolls and potions from Wizardry.' },
+];
+export const sectionOf = (it: Item) =>
+  SECTIONS.find((s) => s.mod === it.data.mod && it.data.source && s.sheets.includes(it.data.source.sheet)) ??
+  SECTIONS.find((s) => s.mod === it.data.mod);
+export const UPGRADES = ['Base', 'Bronze', 'Iron', 'Silver', 'Blackmetal', 'Carapace', 'Flametal'];

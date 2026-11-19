@@ -1,0 +1,37 @@
+biome: Mistlands
+name: Corrupted mage
+prefab: CorruptedDvergerMage_TW
+mod: wizardry
+kind: creature
+group: Creatures
+creature:
+  health: 520
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: resistant
+    poison: normal
+    lightning: resistant
+    spirit: immune
+    frost: resistant
+  spawn:
+    - when: Day
+      chance: 16%
+    - when: Night
+      chance: 22%
+drops:
+  - from: Softtissue
+    chance: 70%
+  - from: Coins
+    chance: 7-14x
+  - from: Dvergr Trophy
+    chance: 20%
+  - from: Queen Shard
+    chance: 100%
+source:
+  sheet: W.Creatures
+  row: 2
+  col: 13
+description: ''
+notes: ''

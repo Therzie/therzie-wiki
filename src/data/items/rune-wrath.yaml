@@ -6,13 +6,11 @@ group: Materials
 drops:
   - from: Herald of the Storm
     chance: 100%
-recipe:
-  yields: 1
-  materials: []
 checks:
   - 'Prefab RuneWrath_TW appears 2x in the sheet (Magic Rune: Wrath, Items r60; Magic Rune: Wrath, Items r99)'
 source:
   sheet: Items
   row: 60
+  col: 13
 description: ''
 notes: ''

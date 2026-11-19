@@ -1,0 +1,29 @@
+biome: Mistlands
+name: Conjured seeker
+prefab: SummonedSeeker_TW
+mod: wizardry
+kind: creature
+group: Creatures
+effect: Summoned from Corrupted
+creature:
+  health: 200
+  resist:
+    blunt: resistant
+    slash: resistant
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: resistant
+    spirit: immune
+    frost: normal
+drops:
+  - from: Carapace
+    chance: 60%
+  - from: Queen Shard
+    chance: 10%
+source:
+  sheet: W.Creatures
+  row: 2
+  col: 15
+description: ''
+notes: ''

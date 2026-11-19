@@ -1,0 +1,19 @@
+name: Iron Circlet
+prefab: HelmetCircletIron_TW
+mod: wizardry
+kind: armor
+group: Circlets Iron
+stats:
+  armor: 2
+recipe:
+  yields: 1
+  materials:
+    - Iron
+  station: Wizard Table
+  level: 4
+source:
+  sheet: Wizardry
+  row: 215
+  col: 3
+description: ''
+notes: ''

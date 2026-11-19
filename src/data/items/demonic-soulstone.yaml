@@ -16,11 +16,9 @@ drops:
     chance: 50%
   - from: Warbringer
     chance: 50%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 70
+  col: 9
 description: ''
 notes: ''

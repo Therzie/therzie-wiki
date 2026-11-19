@@ -1,0 +1,23 @@
+name: Magical infused birch wood
+prefab: EnchantedWoodPlains_TW
+mod: wizardry
+kind: item
+group: Enchanted Wood Materials
+drops:
+  - from: Birch Trees (Plains)
+    chance: Yggdrasil Trees%
+  - from: 40%
+    chance: 50%
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Linen Thread
+    - Yagluth Shard
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 33
+  col: 6
+description: ''
+notes: ''

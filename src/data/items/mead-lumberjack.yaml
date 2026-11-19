@@ -1,0 +1,19 @@
+name: Lumberjack mead
+prefab: MeadLumberjack_TW
+mod: wizardry
+kind: item
+group: Potions
+effect: Wood Cutting skill +10 · Chopping Damage +25%
+recipe:
+  yields: 1
+  materials:
+    - Elder Shard
+    - Witch Eye
+    - Honey
+  station: Potion Cauldron
+source:
+  sheet: W.Food
+  row: 57
+  col: 9
+description: ''
+notes: ''

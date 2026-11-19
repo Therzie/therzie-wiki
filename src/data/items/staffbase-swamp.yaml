@@ -1,0 +1,20 @@
+name: Rotting staff base
+prefab: Staffbase_Swamp_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+damage:
+  blunt: 27
+recipe:
+  yields: 1
+  materials:
+    - Infused Ancient Wood
+    - Iron
+    - Withered Bone
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 87
+  col: 5
+description: ''
+notes: ''

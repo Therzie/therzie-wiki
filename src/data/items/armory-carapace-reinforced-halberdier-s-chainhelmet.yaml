@@ -1,0 +1,31 @@
+biome: Mistlands
+name: Carapace-Reinforced Halberdier's chainhelmet
+mod: armory
+kind: armor
+group: Bold
+tier: Carapace
+set:
+  name: Bold
+  effects:
+    - 'Increase damage with Polearms: 5%'
+    - 'Run Stamina Usage: -9%'
+    - 'Attack Stamina Usage: -9%'
+    - 'Polearms Skill: +10'
+stats:
+  armor: 32
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Halberdier'S Chainhelmet
+    - Carapace
+    - Refined Eitr
+    - Dark Crystal
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 413
+  col: 3
+description: ''
+notes: ''

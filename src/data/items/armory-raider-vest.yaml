@@ -1,0 +1,28 @@
+name: Raider Vest
+mod: armory
+kind: armor
+group: Vigorous
+set:
+  name: Vigorous
+  effects:
+    - 'Increase damage with Axes: 1%'
+    - 'Axe Skill: +2'
+stats:
+  armor: 8
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Bronze Chest
+    - Bronze
+    - Troll Bone
+  upgrade:
+    - Deer Hide
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 172
+  col: 4
+description: ''
+notes: ''

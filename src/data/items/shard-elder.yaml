@@ -1,0 +1,23 @@
+name: Elder shard
+prefab: ShardElder_TW
+mod: wizardry
+kind: item
+group: Materials
+drops:
+  - from: Elder
+    chance: 1-3x
+  - from: Greydwarf Mage
+    chance: 1-2x
+recipe:
+  yields: 1
+  materials:
+    - Bronze
+    - Ancient Seed
+    - Greydwarf Shaman Trophy
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 17
+  col: 3
+description: ''
+notes: ''

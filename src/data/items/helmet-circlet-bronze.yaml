@@ -1,0 +1,19 @@
+name: Bronze circlet
+prefab: HelmetCircletBronze_TW
+mod: wizardry
+kind: armor
+group: Circlets Bronze
+stats:
+  armor: 2
+recipe:
+  yields: 1
+  materials:
+    - Bronze
+  station: Wizard Table
+  level: 3
+source:
+  sheet: Wizardry
+  row: 202
+  col: 3
+description: ''
+notes: ''

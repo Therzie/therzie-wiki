@@ -1,0 +1,31 @@
+biome: Ashlands
+name: Flametal-Reinforced Warrior's skullcage
+mod: armory
+kind: armor
+group: Warrior
+tier: Flametal
+set:
+  name: Warrior
+  effects:
+    - 'Increase damage with Clubs: 7%'
+    - 'Attack Stamina Usage: -16%'
+    - 'Block Stamina Usage: -8%'
+    - 'Clubs Skill: +12'
+stats:
+  armor: 38
+  upgrade: Flametal
+recipe:
+  yields: 1
+  materials:
+    - Carapace-Reinforced Warrior'S Skullcage
+    - Flametal
+    - Bonemaw Tooth
+    - Refined Eitr
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 293
+  col: 3
+description: ''
+notes: ''

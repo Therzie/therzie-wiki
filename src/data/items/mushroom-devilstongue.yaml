@@ -1,0 +1,20 @@
+name: Devil's tongue
+prefab: MushroomDevilstongue_TW
+mod: wizardry
+kind: food
+group: Food Plains
+effect: Eitr Regen +4, Weak VS Fire
+food:
+  health: 5
+  stamina: 0
+  eitr: 24
+recipe:
+  yields: 1
+  materials: []
+  station: Plains Spawn
+source:
+  sheet: W.Food
+  row: 36
+  col: 12
+description: ''
+notes: ''

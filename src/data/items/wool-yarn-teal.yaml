@@ -1,0 +1,17 @@
+name: Teal yarn
+prefab: WoolYarn_Teal_TW
+mod: wizardry
+kind: item
+group: Wool Materials
+recipe:
+  yields: 1
+  materials:
+    - Wool
+    - Refined Eitr
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 61
+  col: 6
+description: ''
+notes: ''

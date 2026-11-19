@@ -1,0 +1,19 @@
+name: Cooked Bear Steak
+prefab: CookedBearSteak_TW
+mod: monstrum
+kind: food
+group: Food
+food:
+  health: 38
+  stamina: 23
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Raw Bear Steak
+source:
+  sheet: M.Food
+  row: 2
+  col: 11
+description: ''
+notes: ''

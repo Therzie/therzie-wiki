@@ -1,0 +1,22 @@
+name: Arcane anvil
+prefab: ArcaneAnvil_TW
+mod: wizardry
+kind: piece
+group: Stations & Extensions
+info:
+  - Recipes
+  - Craft Rings, Scrolls, Wood, Cores,
+  - Shards, Enchanted Circlets
+  - Upgrades Wizard Table Lvl 2
+recipe:
+  yields: 1
+  materials:
+    - Stone
+    - Surtling Core
+    - Elder Shard
+source:
+  sheet: Wizardry
+  row: 5
+  col: 4
+description: ''
+notes: ''

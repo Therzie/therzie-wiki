@@ -1,0 +1,31 @@
+biome: Mountains
+name: Silver-Reinforced Raider Helmet
+mod: armory
+kind: armor
+group: Vigorous
+tier: Silver
+set:
+  name: Vigorous
+  effects:
+    - 'Increase damage with Axes: 3%'
+    - 'Attack Stamina Usage: -4%'
+    - 'Block Stamina Usage: -2%'
+    - 'Axe Skill: +6'
+stats:
+  armor: 20
+  upgrade: Silver
+recipe:
+  yields: 1
+  materials:
+    - Iron-Reinforced Raider Helmet
+    - Silver
+    - Obsidian
+    - Wolf Fang
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 196
+  col: 3
+description: ''
+notes: ''

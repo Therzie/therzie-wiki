@@ -1,0 +1,21 @@
+name: Bear jerky
+prefab: BearJerky_TW
+mod: monstrum
+kind: food
+group: Food
+food:
+  health: 30
+  stamina: 30
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Raw Bear Steak
+    - Honey
+  station: Cauldron
+source:
+  sheet: M.Food
+  row: 2
+  col: 15
+description: ''
+notes: ''

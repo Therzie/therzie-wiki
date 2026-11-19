@@ -1,0 +1,30 @@
+biome: Mistlands
+name: Carapace hunting vest
+prefab: ArmorHunterChestCarapace_TW
+mod: armory
+kind: armor
+group: Hunter
+tier: Carapace
+set:
+  name: Hunter
+  effects:
+    - Sneak and Run Stamina -10%
+    - Bows and Crossbow +10 Skill
+    - Pierce Damage +10%
+stats:
+  armor: 25
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Blazed Hunting Vest
+    - Carapace
+    - Eitr
+    - Dark Crystal
+  station: Armory
+source:
+  sheet: Armory
+  row: 97
+  col: 4
+description: ''
+notes: ''

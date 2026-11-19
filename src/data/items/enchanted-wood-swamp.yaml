@@ -1,0 +1,23 @@
+name: Magical infused ancient wood
+prefab: EnchantedWoodSwamp_TW
+mod: wizardry
+kind: item
+group: Enchanted Wood Materials
+drops:
+  - from: Ancient Trees (Swamp)
+    chance: Fir Trees (Mountain)%
+  - from: 40%
+    chance: 45%
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Ooze
+    - Bonemass Shard
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 33
+  col: 4
+description: ''
+notes: ''

@@ -8,11 +8,9 @@ drops:
     chance: 75%
   - from: Prowler
     chance: 25%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 20
+  col: 17
 description: ''
 notes: ''

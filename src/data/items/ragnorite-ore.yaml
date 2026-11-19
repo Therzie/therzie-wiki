@@ -3,11 +3,9 @@ prefab: RagnoriteOre_TW
 mod: warfare
 kind: item
 group: Materials
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 81
+  col: 7
 description: ''
 notes: ''

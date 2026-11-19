@@ -1,0 +1,24 @@
+name: 'Enchanted carapace circlet: Sneak'
+prefab: HelmetCircletCarapace_Sneak_TW
+mod: wizardry
+kind: armor
+group: Circlets Carapace
+effect: 'Sneak +16 · Sneak Stamina Usage: -13%'
+stats:
+  armor: 14+
+recipe:
+  yields: 1
+  materials:
+    - Carapace Circlet
+    - Queen Shard
+    - Tick Trophy
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Eitr or Amethyst
+source:
+  sheet: Wizardry
+  row: 254
+  col: 7
+description: ''
+notes: ''

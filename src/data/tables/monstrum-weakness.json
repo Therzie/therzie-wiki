@@ -1,0 +1,611 @@
+{
+ "source": "Mon.Weakness",
+ "types": [
+  "blunt",
+  "slash",
+  "pierce",
+  "fire",
+  "poison",
+  "lightning",
+  "spirit",
+  "frost",
+  "pickaxe",
+  "health",
+  "damage",
+  "elemental damage"
+ ],
+ "rows": [
+  {
+   "section": "Deep North",
+   "name": "Pridetusk",
+   "resist": {
+    "blunt": "resistant",
+    "slash": "resistant",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "2000",
+    "damage": "b/s:131-149",
+    "elemental damage": "frost:20-25"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Ursa",
+   "resist": {
+    "blunt": "resistant",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "1220",
+    "damage": "s: 110-125",
+    "elemental damage": "frost: 25"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Arctic Wolf",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "680",
+    "damage": "s: 95",
+    "elemental damage": "frost: 25"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Ice Drake",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "750",
+    "damage": "b: 34",
+    "elemental damage": "frost: 110"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Ice Stalker",
+   "resist": {
+    "blunt": "resistant",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "resistant",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "1020",
+    "damage": "s: 114,125, p: 20",
+    "elemental damage": "frost: 25, 140"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Frostmancer",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "normal",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "980",
+    "damage": "s: 100, p: 35",
+    "elemental damage": "frost: 69, 80, 155"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Tundra Hunter",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "normal",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "1200",
+    "damage": "s: 110, 120",
+    "elemental damage": "frost: 29"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Jotunn Berserker",
+   "resist": {
+    "blunt": "resistant",
+    "slash": "resistant",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "1500",
+    "damage": "s: 141, 161, b: 136",
+    "elemental damage": "frost: 20, 25"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Jotunn Crusher",
+   "resist": {
+    "blunt": "normal",
+    "slash": "resistant",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "1700"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Glacier Golem",
+   "resist": {
+    "blunt": "normal",
+    "slash": "resistant",
+    "pierce": "resistant",
+    "fire": "normal",
+    "poison": "immune",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "immune",
+    "pickaxe": "very weak",
+    "health": "2000"
+   }
+  },
+  {
+   "section": "Deep North",
+   "name": "Storm Herald",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "resistant",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "normal",
+    "frost": "resistant",
+    "pickaxe": "n/a",
+    "health": "20000"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Scorpid",
+   "resist": {
+    "blunt": "normal",
+    "slash": "resistant",
+    "pierce": "normal",
+    "fire": "immune",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "1020"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Warg",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "immune",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "800"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Terroxadus",
+   "resist": {
+    "blunt": "normal",
+    "slash": "resistant",
+    "pierce": "normal",
+    "fire": "immune",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "2000"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Fire Drake",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "immune",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "750"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Imp",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "immune",
+    "poison": "immune",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "330"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Enforcer",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "resistant",
+    "fire": "immune",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "normal",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "1200"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Minotaurus",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "resistant",
+    "fire": "immune",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "normal",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "1500"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Scorched Pincer",
+   "resist": {
+    "blunt": "normal",
+    "slash": "resistant",
+    "pierce": "resistant",
+    "fire": "immune",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "850"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Lava Golem",
+   "resist": {
+    "blunt": "normal",
+    "slash": "resistant",
+    "pierce": "resistant",
+    "fire": "immune",
+    "poison": "immune",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "very weak",
+    "health": "2000"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Bloodgill",
+   "resist": {
+    "blunt": "resistant",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "resistant",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "resistant",
+    "pickaxe": "n/a",
+    "health": "760"
+   }
+  },
+  {
+   "section": "Ashlands",
+   "name": "Sythrak",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "immune",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "20000"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Asmodeus",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "immune",
+    "poison": "resistant",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "550"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Svält",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "immune",
+    "poison": "normal",
+    "lightning": "weak",
+    "spirit": "normal",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "2500"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Vrykolathas",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "weak",
+    "poison": "immune",
+    "lightning": "weak",
+    "spirit": "weak",
+    "frost": "resistant",
+    "pickaxe": "n/a",
+    "health": "5000"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Burning hunger",
+   "resist": {
+    "blunt": "weak",
+    "slash": "normal",
+    "pierce": "resistant",
+    "fire": "immune",
+    "poison": "immune",
+    "lightning": "normal",
+    "spirit": "normal",
+    "frost": "weak",
+    "pickaxe": "n/a",
+    "health": "100"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Ancient shaman",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "very weak",
+    "poison": "resistant",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "185"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Hel wraith",
+   "resist": {
+    "blunt": "resistant",
+    "slash": "resistant",
+    "pierce": "resistant",
+    "fire": "weak",
+    "poison": "immune",
+    "lightning": "normal",
+    "spirit": "weak",
+    "frost": "immune",
+    "pickaxe": "n/a",
+    "health": "100"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Damned soul",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "resistant",
+    "poison": "immune",
+    "lightning": "normal",
+    "spirit": "normal",
+    "frost": "resistant",
+    "pickaxe": "n/a",
+    "health": "150"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Fox",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "30"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Razorback",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "50"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Rotting Elk",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "normal",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "140"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Crawler",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "immune",
+    "poison": "resistant",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "200"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Obsidian Golem",
+   "resist": {
+    "blunt": "normal",
+    "slash": "resistant",
+    "pierce": "resistant",
+    "fire": "immune",
+    "poison": "immune",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "immune",
+    "pickaxe": "very weak",
+    "health": "600"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Grizzly Bear",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "250"
+   }
+  },
+  {
+   "section": "Boss",
+   "name": "Prowler",
+   "resist": {
+    "blunt": "normal",
+    "slash": "normal",
+    "pierce": "normal",
+    "fire": "normal",
+    "poison": "normal",
+    "lightning": "normal",
+    "spirit": "immune",
+    "frost": "normal",
+    "pickaxe": "n/a",
+    "health": "335"
+   }
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+name: 'Arcane scroll: ''Feather light'''
+prefab: ArcaneScroll_SlowfallBuff_TW
+mod: wizardry
+kind: item
+group: Scrolls
+effect: Fall Damage -100%
+recipe:
+  yields: 1
+  materials:
+    - 'Arcane Scroll: ''Cleansing'''
+    - Fenris Claw
+    - Surtling Core
+  station: Arcane anvil
+source:
+  sheet: W.Food
+  row: 48
+  col: 12
+description: ''
+notes: ''

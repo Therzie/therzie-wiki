@@ -6,9 +6,6 @@ group: Materials
 drops:
   - from: Sythrak
     chance: 100%
-recipe:
-  yields: 1
-  materials: []
 checks:
   - >-
     Prefab RuneDestruction_TW appears 2x in the sheet (Magic Rune: Destruction, Items r60; Magic Rune:
@@ -16,5 +13,6 @@ checks:
 source:
   sheet: Items
   row: 60
+  col: 17
 description: ''
 notes: ''

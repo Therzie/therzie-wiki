@@ -1,0 +1,21 @@
+name: Spell cabinet
+prefab: WizardTable_ext3_TW
+mod: wizardry
+kind: piece
+group: Stations & Extensions
+info:
+  - Upgrades Wizard Table Lvl 6
+  - Upgrades Arcane Anvil Lvl 5
+recipe:
+  yields: 1
+  materials:
+    - Crystal
+    - Fine Wood
+    - Obsidian
+    - Moder Shard
+source:
+  sheet: Wizardry
+  row: 5
+  col: 8
+description: ''
+notes: ''

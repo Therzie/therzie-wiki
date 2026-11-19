@@ -1,0 +1,24 @@
+name: Helweed soup
+prefab: HelweedSoup_TW
+mod: monstrum
+kind: food
+group: Food DeepNorth
+effect: Eitr Regen +8%
+food:
+  health: 36
+  stamina: 18
+  eitr: 105
+recipe:
+  yields: 1
+  materials:
+    - Helweed
+    - Drake Scale
+    - Wintercap
+    - Primal Leek
+  station: Cauldron lvl 5
+source:
+  sheet: M.Food
+  row: 26
+  col: 23
+description: ''
+notes: ''

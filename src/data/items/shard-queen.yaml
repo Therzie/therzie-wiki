@@ -1,0 +1,30 @@
+name: Queen shard
+prefab: ShardQueen_TW
+mod: wizardry
+kind: item
+group: Materials
+drops:
+  - from: Queen
+    chance: 1-6x
+  - from: Corrupted Mages
+    chance: 1-2x
+  - from: Dvergr Mages
+    chance: 10%
+  - from: Conjured Seeker
+    chance: 10%
+recipe:
+  yields: 1
+  materials:
+    - Eitr
+    - Soft Tissue
+    - Dverger Trophy
+  upgrade:
+    - Yagluth Shard
+    - Eitr
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 17
+  col: 7
+description: ''
+notes: ''

@@ -1,0 +1,21 @@
+name: Magical infused Yggdrasil wood
+prefab: EnchantedWoodMistlands_TW
+mod: wizardry
+kind: item
+group: Enchanted Wood Materials
+drops:
+  - from: Yggdrasil Trees
+    chance: 50%
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Eitr
+    - Queen Shard
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 33
+  col: 7
+description: ''
+notes: ''

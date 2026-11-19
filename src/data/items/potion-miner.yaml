@@ -1,0 +1,19 @@
+name: Miner potion
+prefab: PotionMiner_TW
+mod: wizardry
+kind: item
+group: Potions
+effect: Pickaxe skill +25 · Pickage Damage +25%
+recipe:
+  yields: 1
+  materials:
+    - Bonemass Shard
+    - Deathcap
+    - Bone Fragments
+  station: Potion Cauldron
+source:
+  sheet: W.Food
+  row: 57
+  col: 12
+description: ''
+notes: ''

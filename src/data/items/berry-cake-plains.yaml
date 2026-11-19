@@ -1,0 +1,23 @@
+name: Berry cake
+prefab: BerryCakePlains_TW
+mod: wizardry
+kind: food
+group: Food Plains
+food:
+  health: 36
+  stamina: 40
+  eitr: 39
+recipe:
+  yields: 1
+  materials:
+    - Devil'S Tongue
+    - Cloudberries
+    - Honey
+    - Barley Flour
+  station: Preparation Table
+source:
+  sheet: W.Food
+  row: 36
+  col: 9
+description: ''
+notes: ''

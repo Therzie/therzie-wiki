@@ -1,0 +1,20 @@
+name: Aquatic potion
+prefab: PotionAquatic_TW
+mod: wizardry
+kind: item
+group: Potions
+effect: 'Swim: 25 · Fishing: 15'
+recipe:
+  yields: 1
+  materials:
+    - Moder Shard
+    - Wizard Butter
+    - Raw Fish
+    - Chitin
+  station: Potion Cauldron
+source:
+  sheet: W.Food
+  row: 65
+  col: 3
+description: ''
+notes: ''

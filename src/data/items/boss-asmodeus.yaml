@@ -1,0 +1,31 @@
+biome: Meadows
+name: Asmodeus
+prefab: BossAsmodeus_TW
+mod: monstrum
+kind: creature
+group: Bosses
+creature:
+  boss: true
+  health: 550
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: resistant
+    lightning: normal
+    spirit: immune
+    frost: normal
+  summon:
+    - Neck Trophy x2
+drops:
+  - from: Viper Weapon
+    chance: 6%
+  - from: Asmodeus Trophy
+    chance: 100%
+source:
+  sheet: Monstrum
+  row: 3
+  col: 3
+description: ''
+notes: ''

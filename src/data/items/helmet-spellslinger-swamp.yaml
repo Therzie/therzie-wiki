@@ -1,0 +1,26 @@
+name: Scholar hood
+prefab: HelmetSpellslinger_Swamp_TW
+mod: wizardry
+kind: armor
+group: Armor Swamp Scholar
+set:
+  name: Armor Swamp Scholar
+  effects:
+    - 'Elemental Magic: +5'
+    - 'Blood Magic: +5'
+stats:
+  armor: 8
+  eitr_regen: 9%
+recipe:
+  yields: 1
+  materials:
+    - Scholar Fabric Bundle
+    - Guck
+    - Bonemass Shard
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 133
+  col: 3
+description: ''
+notes: ''

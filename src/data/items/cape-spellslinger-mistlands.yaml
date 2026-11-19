@@ -1,0 +1,27 @@
+name: Warlock cape
+prefab: CapeSpellslinger_Mistlands_TW
+mod: wizardry
+kind: armor
+group: Armor Mistlands Warlock
+effect: 'Eitr Regen: 6%, FeatherFall'
+set:
+  name: Armor Mistlands Warlock
+  effects:
+    - 'Elemental Magic: +12'
+    - 'Blood Magic: +12'
+stats:
+  armor: 1
+recipe:
+  yields: 1
+  materials:
+    - Electromancer Fabric Bundle
+    - Needle
+    - Queen Shard
+    - Carapace
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 175
+  col: 6
+description: ''
+notes: ''

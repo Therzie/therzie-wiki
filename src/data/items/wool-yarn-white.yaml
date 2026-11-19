@@ -1,0 +1,17 @@
+name: White yarn
+prefab: WoolYarn_White_TW
+mod: wizardry
+kind: item
+group: Wool Materials
+recipe:
+  yields: 1
+  materials:
+    - Wool
+    - Wolf Pelt
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 61
+  col: 4
+description: ''
+notes: ''

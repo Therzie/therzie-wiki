@@ -1,0 +1,27 @@
+name: Tarmancer
+prefab: StaffGolem_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+info:
+  - 'Upgrades: Wizard Table 5+'
+stats:
+  eitr: 85
+  use_health: 40%
+recipe:
+  yields: 1
+  materials:
+    - Tar
+    - Yagluth Shard
+    - Goblin Totem
+    - Growth Trophy
+    - Tar, Yagluth Shard, Goblin Totem
+  station: Arcane Anvil 6
+checks:
+  - No damage values in the sheet
+source:
+  sheet: Wizardry
+  row: 102
+  col: 5
+description: ''
+notes: ''

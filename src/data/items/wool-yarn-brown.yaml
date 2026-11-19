@@ -1,0 +1,17 @@
+name: Brown yarn
+prefab: WoolYarn_Brown_TW
+mod: wizardry
+kind: item
+group: Wool Materials
+recipe:
+  yields: 1
+  materials:
+    - Wool
+    - Resin
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 55
+  col: 6
+description: ''
+notes: ''

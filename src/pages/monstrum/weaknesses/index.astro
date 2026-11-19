@@ -1,0 +1,30 @@
+---
+// Weakness table from the Mon.Weakness tab of the spreadsheet.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import Glyph from '../../../components/Glyph.astro';
+import table from '../../../data/tables/monstrum-weakness.json';
+import { DAMAGE } from '../../../lib/wiki';
+const sections = [...new Set(table.rows.map((r) => r.section))];
+const label = (t: string) => DAMAGE[t]?.label ?? t.replace(/^\w/, (c) => c.toUpperCase());
+---
+<StarlightPage frontmatter={{ title: 'Monstrum weaknesses', description: 'Which damage types hurt each Monstrum creature.', tableOfContents: false }}>
+  <p class="lead">Which damage hurts which creature. Colours go from very weak (green) to immune (dark).</p>
+  <p class="legend not-content">
+    {['very weak', 'weak', 'normal', 'resistant', 'very resistant', 'immune'].map((x) => <span class="res" data-res={x}>{x}</span>)}
+  </p>
+  {sections.map((sec) => (
+    <>
+      <h2>{sec}</h2>
+      <div class="table-wrap not-content">
+        <table class="item-table weak-table">
+          <thead><tr><th>Creature</th>{table.types.map((t) => <th>{DAMAGE[t] && <Glyph damage={t} size={13} />} {label(t)}</th>)}</tr></thead>
+          <tbody>
+            {table.rows.filter((r) => r.section === sec).map((r) => (
+              <tr><td class="weak-table__name">{r.name}</td>{table.types.map((t) => <td>{DAMAGE[t] ? <span class="res" data-res={r.resist[t] ?? ''}>{r.resist[t] ?? ''}</span> : <span class="small">{r.resist[t] ?? ''}</span>}</td>)}</tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  ))}
+</StarlightPage>

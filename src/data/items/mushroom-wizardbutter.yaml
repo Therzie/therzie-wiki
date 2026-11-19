@@ -1,0 +1,20 @@
+name: Wizard butter
+prefab: MushroomWizardbutter_TW
+mod: wizardry
+kind: food
+group: Food Mountain
+effect: Eitr Regen +2, Weak VS Frost
+food:
+  health: 5
+  stamina: 0
+  eitr: 21
+recipe:
+  yields: 1
+  materials: []
+  station: Mountain Spawn
+source:
+  sheet: W.Food
+  row: 25
+  col: 12
+description: ''
+notes: ''

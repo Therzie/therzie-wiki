@@ -1,0 +1,29 @@
+biome: Mistlands
+name: Carapace-Reinforced Assassins Tunic
+mod: armory
+kind: armor
+group: Rogue
+tier: Carapace
+set:
+  name: Rogue
+  effects:
+    - 'Increase damage with Knives: 5%'
+    - 'Knives Skill: +10'
+stats:
+  armor: 28
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal-Reinforced Assassins Tunic
+    - Soft Tissue
+    - Carapace
+    - Refined Eitr
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 160
+  col: 4
+description: ''
+notes: ''

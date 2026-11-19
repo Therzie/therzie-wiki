@@ -1,0 +1,25 @@
+name: Chaos staff
+prefab: StaffPlains_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+effect: 'Secondary: Meteors'
+info:
+  - 'Upgrades: Wizard Table'
+damage:
+  blunt: 30
+  fire: 20
+stats:
+  eitr: 24
+recipe:
+  yields: 1
+  materials:
+    - Wicked Staff Base
+    - Chaos Core
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 102
+  col: 4
+description: ''
+notes: ''

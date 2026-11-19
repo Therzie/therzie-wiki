@@ -6,11 +6,9 @@ group: Materials
 drops:
   - from: Dire Wolf
     chance: 85%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 50
+  col: 5
 description: ''
 notes: ''

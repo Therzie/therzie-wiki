@@ -1,0 +1,24 @@
+name: Meat pie
+prefab: MeatPie_TW
+mod: monstrum
+kind: food
+group: Food DeepNorth
+effect: Health Regen +7%
+food:
+  health: 120
+  stamina: 44
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Pridetusk Meat
+    - Frozen Ursa Steak
+    - Primal Leek
+    - Helweed
+  station: Preparation Table
+source:
+  sheet: M.Food
+  row: 14
+  col: 23
+description: ''
+notes: ''

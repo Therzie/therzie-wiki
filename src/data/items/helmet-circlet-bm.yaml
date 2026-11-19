@@ -1,0 +1,19 @@
+name: Blackmetal circlet
+prefab: HelmetCircletBM_TW
+mod: wizardry
+kind: armor
+group: Circlets Blackmetal
+stats:
+  armor: 2
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal
+  station: Wizard Table
+  level: 6
+source:
+  sheet: Wizardry
+  row: 241
+  col: 3
+description: ''
+notes: ''

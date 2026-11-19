@@ -21,5 +21,6 @@ checks:
 source:
   sheet: Weapons
   row: 42
+  col: 4
 description: ''
 notes: ''

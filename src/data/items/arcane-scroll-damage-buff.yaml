@@ -1,0 +1,18 @@
+name: 'Arcane scroll: ''Destruction'''
+prefab: ArcaneScroll_DamageBuff_TW
+mod: wizardry
+kind: item
+group: Scrolls
+effect: Elemental Damage +5%
+recipe:
+  yields: 1
+  materials:
+    - 'Arcane Scroll: ''Underworld'''
+    - 'Arcane Scroll: ''Hellfire'''
+  station: Arcane anvil
+source:
+  sheet: W.Food
+  row: 48
+  col: 3
+description: ''
+notes: ''

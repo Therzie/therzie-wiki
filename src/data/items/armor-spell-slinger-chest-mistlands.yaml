@@ -1,0 +1,27 @@
+name: Warlock robe
+prefab: ArmorSpellSlingerChest_Mistlands_TW
+mod: wizardry
+kind: armor
+group: Armor Mistlands Warlock
+set:
+  name: Armor Mistlands Warlock
+  effects:
+    - 'Elemental Magic: +12'
+    - 'Blood Magic: +12'
+stats:
+  armor: 16
+  eitr_regen: 40%
+recipe:
+  yields: 1
+  materials:
+    - Electromancer Fabric Bundle
+    - Blackmetal
+    - Queen Shard
+    - Lox Pelt
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 175
+  col: 4
+description: ''
+notes: ''

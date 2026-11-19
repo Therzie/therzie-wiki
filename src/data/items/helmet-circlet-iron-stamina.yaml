@@ -1,0 +1,24 @@
+name: 'Enchanted iron circlet: Stamina'
+prefab: HelmetCircletIron_Stamina_TW
+mod: wizardry
+kind: armor
+group: Circlets Iron
+effect: Jump/Dodge/Swim/Run Stamina Use · -5%
+stats:
+  armor: 8+
+recipe:
+  yields: 1
+  materials:
+    - Iron Circlet
+    - Bonemass Shard
+    - Ooze
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Withered Bone or Onyx
+source:
+  sheet: Wizardry
+  row: 215
+  col: 4
+description: ''
+notes: ''

@@ -1,0 +1,29 @@
+name: Vidar Visage
+mod: armory
+kind: armor
+group: Vidar
+set:
+  name: Vidar
+  effects:
+    - 'Increase damage with Swords: 3%'
+    - 'Attack Stamina Usage: -4%'
+    - 'Block Stamina Usage: -2%'
+    - 'Swords Skill: +6'
+stats:
+  armor: 20
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Drake Helmet
+    - Silver
+    - Bronze
+    - Wolf Fang
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 307
+  col: 3
+description: ''
+notes: ''

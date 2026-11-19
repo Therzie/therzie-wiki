@@ -1,0 +1,31 @@
+biome: Ashlands
+name: Flametal-Reinforced Vidar Chainmail
+mod: armory
+kind: armor
+group: Vidar
+tier: Flametal
+set:
+  name: Vidar
+  effects:
+    - 'Increase damage with Swords: 7%'
+    - 'Attack Stamina Usage: -20%'
+    - 'Block Stamina Usage: -10%'
+    - 'Swords Skill: +12'
+stats:
+  armor: 38
+  upgrade: Flametal
+recipe:
+  yields: 1
+  materials:
+    - Carapace-Reinforced Vidar Chainmail
+    - Flametal
+    - Bonemaw Tooth
+    - Refined Eitr
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 346
+  col: 4
+description: ''
+notes: ''

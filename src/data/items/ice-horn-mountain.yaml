@@ -1,0 +1,22 @@
+name: Brain chill
+prefab: IceHornMountain_TW
+mod: wizardry
+kind: food
+group: Food Mountain
+food:
+  health: 29
+  stamina: 15
+  eitr: 33
+recipe:
+  yields: 1
+  materials:
+    - Wizard Butter
+    - Freeze Gland
+    - Honey
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 25
+  col: 9
+description: ''
+notes: ''

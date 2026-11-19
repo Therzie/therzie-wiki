@@ -1,0 +1,19 @@
+name: Small eitr mead
+prefab: MeadEitrBlackForest_TW
+mod: wizardry
+kind: item
+group: Potions
+effect: 45 Eitr over time
+recipe:
+  yields: 1
+  materials:
+    - Tasty Mead
+    - Witch Eye
+    - Honey
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 57
+  col: 3
+description: ''
+notes: ''

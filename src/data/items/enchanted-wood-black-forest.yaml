@@ -1,0 +1,23 @@
+name: Magical infused pine wood
+prefab: EnchantedWoodBlackForest_TW
+mod: wizardry
+kind: item
+group: Enchanted Wood Materials
+drops:
+  - from: Pine Trees (Black Forest)
+    chance: Ancient Trees (Swamp)%
+  - from: 40%
+    chance: 40%
+recipe:
+  yields: 1
+  materials:
+    - Core Wood
+    - Greywarf Eye
+    - Elder Shard
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 33
+  col: 3
+description: ''
+notes: ''

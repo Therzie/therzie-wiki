@@ -1,0 +1,29 @@
+biome: Swamp
+name: Iron-Reinforced Raider Helmet
+mod: armory
+kind: armor
+group: Vigorous
+tier: Iron
+set:
+  name: Vigorous
+  effects:
+    - 'Increase damage with Axes: 2%'
+    - 'Axe Skill: +4'
+stats:
+  armor: 14
+  upgrade: Iron
+recipe:
+  yields: 1
+  materials:
+    - Raider Helmet
+    - Iron
+    - Rotten Pelt
+    - Ooze
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 184
+  col: 3
+description: ''
+notes: ''

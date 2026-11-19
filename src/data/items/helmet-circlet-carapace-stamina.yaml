@@ -1,0 +1,24 @@
+name: 'Enchanted carapace circlet: Stamina'
+prefab: HelmetCircletCarapace_Stamina_TW
+mod: wizardry
+kind: armor
+group: Circlets Carapace
+effect: Jump/Dodge/Swim/Run Stamina Use · -11%
+stats:
+  armor: 14+
+recipe:
+  yields: 1
+  materials:
+    - Carapace Circlet
+    - Queen Shard
+    - Seeker Trophy
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Eitr or Amethyst
+source:
+  sheet: Wizardry
+  row: 254
+  col: 4
+description: ''
+notes: ''

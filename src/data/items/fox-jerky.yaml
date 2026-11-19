@@ -1,0 +1,21 @@
+name: Fox Jerky
+prefab: FoxJerky_TW
+mod: monstrum
+kind: food
+group: Food
+food:
+  health: 11
+  stamina: 30
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Raw Fox Meat
+    - Honey
+  station: Cauldron
+source:
+  sheet: M.Food
+  row: 2
+  col: 7
+description: ''
+notes: ''

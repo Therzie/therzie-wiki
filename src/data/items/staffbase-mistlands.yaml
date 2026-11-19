@@ -1,0 +1,19 @@
+name: Mysterious staff base
+prefab: Staffbase_Mistlands_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+damage:
+  blunt: 57
+recipe:
+  yields: 1
+  materials:
+    - Magical Infused Yggdrasil Wood
+    - Carapace
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 102
+  col: 6
+description: ''
+notes: ''

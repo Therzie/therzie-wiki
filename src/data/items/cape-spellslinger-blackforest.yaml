@@ -1,0 +1,26 @@
+name: Novice cape
+prefab: CapeSpellslingerBlackforest_TW
+mod: wizardry
+kind: armor
+group: Armor Black Forest Novice
+set:
+  name: Armor Black Forest Novice
+  effects:
+    - 'Elemental Magic: +3'
+    - 'Blood Magic: +3'
+stats:
+  armor: 1
+  eitr_regen: 2%
+recipe:
+  yields: 1
+  materials:
+    - Novice Fabric Bundle
+    - Bone Fragments
+    - Elder Shard
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 119
+  col: 6
+description: ''
+notes: ''
