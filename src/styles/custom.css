@@ -589,3 +589,6 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 .guide-pager__home { align-self: center; font-size: var(--sl-text-sm); color: var(--sl-color-gray-2) !important; text-decoration: none; }
 @media (max-width: 40rem) { .guide-pager { grid-template-columns: 1fr 1fr; } .guide-pager__home { display: none; } }
 .readme--page h2:not(.readme__head) { font-family: var(--tw-head); color: var(--tw-bronze-hi); font-size: 1.45rem; margin-top: 2rem !important; }
+
+.group__title[style*='--c'] { color: var(--c); }
+.group__title[style*='--c'] svg { align-self: center; }

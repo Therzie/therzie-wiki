@@ -6,13 +6,18 @@ import BiomeBadge from './BiomeBadge.astro';
 import Glyph from './Glyph.astro';
 import RuneDivider from './RuneDivider.astro';
 import Rune from './Rune.astro';
-import { groupsOf, BIOMES, TIERS, UPGRADES, DAMAGE, url, slugify, totalDamage, biomeColor, type Item } from '../lib/wiki';
+import { groupsOf, groupBiome, BIOMES, TIERS, UPGRADES, DAMAGE, url, slugify, totalDamage, biomeColor, type Item } from '../lib/wiki';
 
-interface Props { items: Item[]; matrix?: 'tiers' | 'upgrades'; showMatrix?: boolean }
+interface Props { items: Item[]; matrix?: 'tiers' | 'upgrades'; showMatrix?: boolean; groupBy?: 'biome'; all?: Item[] }
 const { items, showMatrix: legacy = false } = Astro.props;
 const matrix = Astro.props.matrix ?? (legacy ? 'tiers' : undefined);
 const showMatrix = !!matrix;
-const groups = groupsOf(items);
+const byBiome = Astro.props.groupBy === 'biome';
+const labelOf = new Map(items.map((i) => [i.id, byBiome ? groupBiome(i, Astro.props.all ?? items) : i.data.group]));
+const groupOf = (i: Item) => labelOf.get(i.id)!;
+const groups = byBiome
+  ? [...BIOMES.map((b) => b.name), 'Other'].filter((b) => items.some((i) => groupOf(i) === b))
+  : groupsOf(items);
 const max = Math.max(1, ...items.map(totalDamage));
 const usedBiomes = BIOMES.filter((b) => items.some((i) => i.data.biome === b.name));
 const hasDamage = items.some((i) => Object.keys(i.data.damage).length);
@@ -51,12 +56,12 @@ const columns = [...baseCols, ...(untiered ? [{ id: '', rune: 'ᛟ', biome: '', 
 
   <section class="not-content" data-panel="cards">
     {groups.map((g, gi) => {
-      const list = items.filter((i) => i.data.group === g);
+      const list = items.filter((i) => groupOf(i) === g);
       const skill = list[0]?.data.skill;
       return (
         <div class="group" id={`group-${slugify(g)}`} data-group-block={slugify(g)}>
           {gi > 0 && <RuneDivider seed={gi} count={5} />}
-          <h2 class="group__title">{g}{skill && <span class="group__skill">{skill} skill</span>}<span class="group__count">{list.length}</span></h2>
+          <h2 class="group__title" style={byBiome && g !== 'Other' ? `--c:${biomeColor(g)}` : undefined}>{byBiome && g !== 'Other' && <Glyph biome={g} size={18} />}{g}{skill && <span class="group__skill">{skill} skill</span>}<span class="group__count">{list.length}</span></h2>
           <div class="card-grid">{list.map((it) => <ItemCard item={it} max={max} />)}</div>
         </div>
       );
@@ -78,7 +83,7 @@ const columns = [...baseCols, ...(untiered ? [{ id: '', rune: 'ᛟ', biome: '', 
         <>
           <div class="matrix__group">{g}</div>
           {columns.map((t) => {
-            const cell = items.filter((i) => i.data.group === g && (t.other ? !colKey(i) : colKey(i) === t.id));
+            const cell = items.filter((i) => groupOf(i) === g && (t.other ? !colKey(i) : colKey(i) === t.id));
             return (
               <div class:list={['matrix__cell', { 'is-empty': !cell.length }]} style={`--c:${biomeColor(t.biome)}`}>
                 {cell.map((it) => (

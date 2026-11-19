@@ -90,8 +90,9 @@ export const isGear = (kind?: string) => ['weapon', 'shield', 'ammo', 'tool'].in
 
 /** Pages per mod. Every item belongs to the section of its spreadsheet tab. */
 /** Warfare database tab of an item: ammo, bombs and meads get their own tab instead of Weapons or Items. */
-export function warfareTab(d: { kind?: string; prefab?: string; group?: string; source?: { sheet: string } }): 'ammo' | 'bombs' | 'meads' | 'weapons' | 'pieces' | 'items' {
+export function warfareTab(d: { kind?: string; prefab?: string; group?: string; source?: { sheet: string } }): 'ammo' | 'shields' | 'bombs' | 'meads' | 'weapons' | 'pieces' | 'items' {
   if (d.kind === 'ammo') return 'ammo';
+  if (d.kind === 'shield') return 'shields';
   if (d.prefab?.startsWith('Bomb')) return 'bombs';
   if (d.group === 'Potions' || d.prefab?.startsWith('Mead')) return 'meads';
   if (d.kind === 'piece') return 'pieces';
@@ -99,25 +100,34 @@ export function warfareTab(d: { kind?: string; prefab?: string; group?: string; 
   return 'weapons';
 }
 
-export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string; legacy?: boolean; tab?: string }[] = [
+export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string; legacy?: boolean; tab?: string; match?: (d: Item['data']) => boolean; groupBy?: 'biome' }[] = [
   { mod: 'warfare', path: '/warfare/ammo/', label: 'Ammo', title: 'Warfare ammo', sheets: ['Weapons'], tab: 'ammo', lead: '' },
   { mod: 'warfare', path: '/warfare/bombs/', label: 'Bombs', title: 'Warfare bombs', sheets: ['Weapons'], tab: 'bombs', lead: '' },
   { mod: 'warfare', path: '/warfare/meads/', label: 'Meads - Potions', title: 'Warfare meads and potions', sheets: ['Items'], tab: 'meads', lead: '' },
+  { mod: 'warfare', path: '/warfare/shields/', label: 'Shields', title: 'Warfare shields', sheets: ['Weapons'], tab: 'shields', lead: '' },
   { mod: 'warfare', path: '/warfare/weapons/', label: 'Weapons', title: 'Warfare weapons', sheets: ['Weapons'], matrix: 'tiers', lead: '' },
   { mod: 'warfare', path: '/warfare/pieces/', label: 'Pieces', title: 'Warfare pieces', sheets: ['Pieces'], lead: '' },
   { mod: 'warfare', path: '/warfare/items/', label: 'Items', title: 'Warfare items', sheets: ['Items'], lead: '' },
   { mod: 'armory', path: '/armory/', label: 'Armor sets', title: 'Armory', sheets: ['Armory'], matrix: 'upgrades',
     lead: 'Every Armory set with its set effects, armor value and recipes, from the base set to its last upgrade. Switch to the upgrade view to see each set along its upgrade path.' },
-  { mod: 'monstrum', path: '/monstrum/', label: 'Creatures', title: 'Monstrum creatures', sheets: ['Monstrum'],
-    lead: 'Bosses and creatures from Monstrum: where they live, what they drop, how much health they have and which damage hurts them.' },
-  { mod: 'monstrum', path: '/monstrum/food/', label: 'Food', title: 'Monstrum food', sheets: ['M.Food'],
-    lead: 'Food made from Monstrum creatures, with health, stamina and eitr.' },
-  { mod: 'wizardry', path: '/wizardry/', label: 'Gear and items', title: 'Wizardry', sheets: ['Wizardry'],
-    lead: 'Stations, magic materials, staffs, robes, rings and circlets from Wizardry.' },
-  { mod: 'wizardry', path: '/wizardry/creatures/', label: 'Creatures', title: 'Wizardry creatures', sheets: ['W.Creatures'],
+  { mod: 'monstrum', path: '/monstrum/', label: 'Creatures', title: 'Monstrum creatures', sheets: ['Monstrum'], groupBy: 'biome',
+    lead: 'Bosses and creatures from Monstrum by biome: what they drop, how much health they have and which damage hurts them.' },
+  { mod: 'monstrum', path: '/monstrum/food/', label: 'Food', title: 'Monstrum food', sheets: ['M.Food'], groupBy: 'biome',
+    lead: 'Food made from Monstrum creatures, by the biome of the creature it comes from, with health, stamina and eitr.' },
+  { mod: 'wizardry', path: '/wizardry/', label: 'Staffs', title: 'Wizardry staffs', sheets: ['Wizardry'], match: (d) => d.kind === 'weapon',
+    lead: 'Every Wizardry staff with its damage, eitr cost and recipe.' },
+  { mod: 'wizardry', path: '/wizardry/armor/', label: 'Armor', title: 'Wizardry armor', sheets: ['Wizardry'], match: (d) => d.kind === 'armor',
+    lead: 'Mage robes for every biome, circlets and rings.' },
+  { mod: 'wizardry', path: '/wizardry/scrolls/', label: 'Scrolls', title: 'Wizardry scrolls', sheets: ['Wizardry', 'W.Food'], match: (d) => /^Scrolls/.test(d.group),
+    lead: 'Arcane scrolls: the ones you read for an effect, and the ones that upgrade your staffs.' },
+  { mod: 'wizardry', path: '/wizardry/items/', label: 'Items', title: 'Wizardry items', sheets: ['Wizardry'], match: (d) => (d.kind === 'item' || d.kind === 'piece') && !/^Scrolls/.test(d.group),
+    lead: 'Stations and extensions, magic materials and staff cores.' },
+  { mod: 'wizardry', path: '/wizardry/food/', label: 'Food', title: 'Wizardry food', sheets: ['W.Food'], match: (d) => d.kind === 'food', groupBy: 'biome',
+    lead: 'Eitr food from Wizardry by biome, with health, stamina and eitr.' },
+  { mod: 'wizardry', path: '/wizardry/meads/', label: 'Meads - Potions', title: 'Wizardry meads and potions', sheets: ['W.Food'], match: (d) => d.group === 'Potions',
+    lead: 'Eitr meads, rejuvenation potions and utility potions from Wizardry.' },
+  { mod: 'wizardry', path: '/wizardry/creatures/', label: 'Creatures', title: 'Wizardry creatures', sheets: ['W.Creatures'], groupBy: 'biome',
     lead: 'The mages of every biome and the Darkhorn: drops, health and resistances.' },
-  { mod: 'wizardry', path: '/wizardry/food/', label: 'Food and potions', title: 'Wizardry food and potions', sheets: ['W.Food'],
-    lead: 'Eitr food, scrolls and potions from Wizardry.' },
   { mod: 'warfare-fi', path: '/warfare-fi/', label: 'Weapons', title: 'Warfare Fire & Ice weapons', sheets: ['Weapons-F&I'], legacy: true,
     lead: 'Weapons, shields and ammo from Warfare Fire & Ice, as documented before Valheim 1.0.' },
   { mod: 'warfare-fi', path: '/warfare-fi/armor/', label: 'Armor', title: 'Warfare Fire & Ice armor', sheets: ['Armor-F&I'], legacy: true,
@@ -126,9 +136,12 @@ export const SECTIONS: { mod: string; path: string; label: string; title: string
     lead: 'Bosses and creatures of the Deep North from Monstrum Deep North, as documented before Valheim 1.0.' },
 ];
 export const isLegacy = (mod: string) => SECTIONS.some((s) => s.mod === mod && s.legacy);
+export const inSection = (s: (typeof SECTIONS)[number], d: Item['data']) =>
+  s.mod === d.mod && !!d.source && s.sheets.includes(d.source.sheet) && (!s.match || s.match(d));
 export const sectionOf = (it: Item) =>
   SECTIONS.find((s) => s.tab && s.mod === it.data.mod && s.tab === warfareTab(it.data)) ??
-  SECTIONS.find((s) => !s.tab && s.mod === it.data.mod && it.data.source && s.sheets.includes(it.data.source.sheet)) ??
+  SECTIONS.find((s) => !s.tab && s.match && inSection(s, it.data)) ??
+  SECTIONS.find((s) => !s.tab && !s.match && inSection(s, it.data)) ??
   SECTIONS.find((s) => s.mod === it.data.mod);
 export const UPGRADES = ['Base', 'Bronze', 'Iron', 'Silver', 'Blackmetal', 'Carapace', 'Flametal'];
 
@@ -144,4 +157,23 @@ export function materialIcon(name: string, itemsByName?: Map<string, Item>): str
   for (const c of candidates) if (vanillaIcons.has(`${c}.png`)) return url(`/icons/vanilla/${c}.png`);
   const item = itemsByName?.get(slugify(base));
   return item?.data.prefab ? iconFor(item.data.prefab) : undefined;
+}
+
+/**
+ * Biome an item is shown under when a page groups by biome. Uses the item's own biome, then a biome named in its
+ * sheet group ("Food Swamp", "Food DeepNorth"), then the biome of the creature that drops one of its ingredients.
+ * Display only: nothing is written back to the item.
+ */
+export function groupBiome(it: Item, all: Item[]): string {
+  if (it.data.biome) return it.data.biome;
+  const g = it.data.group.toLowerCase().replace(/\s+/g, '');
+  const named = BIOMES.find((b) => g.includes(b.name.toLowerCase().replace(/\s+/g, '')) || g.includes(b.name.toLowerCase().replace(/s$/, '').replace(/\s+/g, '')));
+  if (named) return named.name;
+  const order = (b?: string) => BIOMES.findIndex((x) => x.name === b);
+  let best: string | undefined;
+  for (const m of it.data.recipe.materials) {
+    const src = all.find((c) => c.data.kind === 'creature' && c.data.biome && c.data.drops?.some((x) => x.from.toLowerCase() === m.toLowerCase()));
+    if (src && order(src.data.biome) > order(best)) best = src.data.biome;
+  }
+  return best ?? 'Other';
 }

@@ -3,10 +3,11 @@
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import ItemBrowser from './ItemBrowser.astro';
 import { Aside } from '@astrojs/starlight/components';
-import { getItems, SECTIONS } from '../lib/wiki';
+import { getItems, SECTIONS, inSection } from '../lib/wiki';
 interface Props { path: string }
 const section = SECTIONS.find((s) => s.path === Astro.props.path)!;
-const items = (await getItems(section.mod)).filter((i) => i.data.source && section.sheets.includes(i.data.source.sheet));
+const all = await getItems(section.mod);
+const items = all.filter((i) => inSection(section, i.data));
 ---
 <StarlightPage frontmatter={{ title: section.title, description: section.lead, tableOfContents: false }}>
   {section.legacy && (
@@ -14,5 +15,5 @@ const items = (await getItems(section.mod)).filter((i) => i.data.source && secti
   )}
   <p class="lead">{section.lead}</p>
   <slot />
-  <ItemBrowser items={items} matrix={section.matrix} />
+  <ItemBrowser items={items} matrix={section.matrix} groupBy={section.groupBy} all={all} />
 </StarlightPage>

@@ -8,7 +8,8 @@ const items = await getItems('warfare');
 const art = (f: string) => url(`/readme/warfare/${f}`);
 const count = (tab: string) => items.filter((i) => warfareTab(i.data) === tab).length;
 const browse = [
-  { href: '/warfare/weapons/', title: 'Weapons', text: 'Every weapon and shield with damage, recipe and biome.', n: count('weapons') },
+  { href: '/warfare/weapons/', title: 'Weapons', text: 'Every weapon with damage, recipe and biome.', n: count('weapons') },
+  { href: '/warfare/shields/', title: 'Shields', text: 'Bucklers, round shields and tower shields.', n: count('shields') },
   { href: '/warfare/ammo/', title: 'Ammo', text: 'Arrows and crossbow bolts, including explosive and pickaxe ammo.', n: count('ammo') },
   { href: '/warfare/bombs/', title: 'Bombs', text: 'Throwable bombs.', n: count('bombs') },
   { href: '/warfare/meads/', title: 'Meads - Potions', text: 'Lingering stamina meads and resistance meads.', n: count('meads') },

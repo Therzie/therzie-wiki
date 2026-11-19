@@ -35,6 +35,7 @@ export default defineConfig({
           items: [
             { label: 'Overview', link: '/warfare/' },
             { label: 'Weapons', link: '/warfare/weapons/' },
+            { label: 'Shields', link: '/warfare/shields/' },
             { label: 'Ammo', link: '/warfare/ammo/' },
             { label: 'Bombs', link: '/warfare/bombs/' },
             { label: 'Meads - Potions', link: '/warfare/meads/' },
@@ -69,9 +70,13 @@ export default defineConfig({
         {
           label: 'Wizardry',
           items: [
-            { label: 'Gear and items', link: '/wizardry/' },
+            { label: 'Staffs', link: '/wizardry/' },
+            { label: 'Armor', link: '/wizardry/armor/' },
+            { label: 'Items', link: '/wizardry/items/' },
+            { label: 'Food', link: '/wizardry/food/' },
+            { label: 'Meads - Potions', link: '/wizardry/meads/' },
+            { label: 'Scrolls', link: '/wizardry/scrolls/' },
             { label: 'Creatures', link: '/wizardry/creatures/' },
-            { label: 'Food and potions', link: '/wizardry/food/' },
           ],
         },
         {

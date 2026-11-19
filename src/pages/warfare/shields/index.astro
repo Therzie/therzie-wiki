@@ -1,0 +1,12 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import ItemBrowser from '../../../components/ItemBrowser.astro';
+import { getItems, warfareTab } from '../../../lib/wiki';
+const items = (await getItems('warfare')).filter((i) => warfareTab(i.data) === 'shields');
+---
+<StarlightPage frontmatter={{ title: 'Warfare shields', description: 'Bucklers, round shields and tower shields from Warfare, with block, parry and recipe.', tableOfContents: false }}>
+  <p class="lead">
+    Bucklers, round shields and tower shields with their block values, recipes and biome.
+  </p>
+  <ItemBrowser items={items} matrix="tiers" />
+</StarlightPage>
