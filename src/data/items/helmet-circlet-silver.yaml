@@ -1,0 +1,19 @@
+name: Silver circlet
+prefab: HelmetCircletSilver_TW
+mod: wizardry
+kind: armor
+group: Circlets Silver
+stats:
+  armor: 2
+recipe:
+  yields: 1
+  materials:
+    - Silver
+  station: Wizard Table
+  level: 5
+source:
+  sheet: Wizardry
+  row: 228
+  col: 3
+description: ''
+notes: ''

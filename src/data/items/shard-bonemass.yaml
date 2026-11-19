@@ -1,0 +1,26 @@
+name: Bonemass shard
+prefab: ShardBonemass_TW
+mod: wizardry
+kind: item
+group: Materials
+drops:
+  - from: Bonemass
+    chance: 1-4x
+  - from: Skeletal Mage
+    chance: 1-2x
+recipe:
+  yields: 1
+  materials:
+    - Iron
+    - Withered Bone
+    - Rancid Remains Trophy
+  upgrade:
+    - Elder Shard
+    - Iron
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 17
+  col: 4
+description: ''
+notes: ''

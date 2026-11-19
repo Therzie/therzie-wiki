@@ -9,5 +9,5 @@ const items = (await getItems('warfare')).filter((i) => isGear(i.data.kind));
     Every Warfare weapon, shield and ammo type with its damage, recipe and biome. Search, filter by biome, or switch to
     the progression view to follow each type along the Forge Path, tier by tier.
   </p>
-  <ItemBrowser items={items} showMatrix />
+  <ItemBrowser items={items} matrix="tiers" />
 </StarlightPage>

@@ -1,0 +1,25 @@
+name: Crystaline staff
+prefab: StaffMountain_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+effect: 'Use Health: 15% for Secondary · Secondary: Heal AOE'
+info:
+  - 'Upgrades: Wizard Table'
+damage:
+  pierce: 8
+  frost: 12
+stats:
+  eitr: 5
+recipe:
+  yields: 1
+  materials:
+    - Pure Staff Base
+    - Crystalline Core
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 87
+  col: 9
+description: ''
+notes: ''

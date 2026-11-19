@@ -6,11 +6,9 @@ group: Materials
 drops:
   - from: Grizzly Bear
     chance: 90%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 20
+  col: 15
 description: ''
 notes: ''

@@ -1,0 +1,31 @@
+biome: Plains
+name: Blackmetal-Reinforced Fenrir Legging
+mod: armory
+kind: armor
+group: Fenrir
+tier: Blackmetal
+set:
+  name: Fenrir
+  effects:
+    - 'Increase damage with Fists: 4%'
+    - 'Attack Stamina Usage: -6%'
+    - 'Run Stamina Usage: -6%'
+    - 'Fists Skill: +8'
+stats:
+  armor: 22
+  upgrade: Blackmetal
+recipe:
+  yields: 1
+  materials:
+    - Fenrir Legging
+    - Blackmetal
+    - Tar
+    - Needle
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 373
+  col: 5
+description: ''
+notes: ''

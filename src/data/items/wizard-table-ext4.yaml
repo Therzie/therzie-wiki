@@ -1,0 +1,21 @@
+name: Ritual circle
+prefab: WizardTable_ext4_TW
+mod: wizardry
+kind: piece
+group: Stations & Extensions
+info:
+  - Upgrades Wizard Table Lvl 7
+  - Upgrades Arcane Anvil Lvl 6
+recipe:
+  yields: 1
+  materials:
+    - Tar
+    - Fuling Totem
+    - Skeleton Trophy
+    - Yagluth Shard
+source:
+  sheet: Wizardry
+  row: 5
+  col: 9
+description: ''
+notes: ''

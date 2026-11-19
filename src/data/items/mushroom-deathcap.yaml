@@ -1,0 +1,20 @@
+name: Deathcap
+prefab: MushroomDeathcap_TW
+mod: wizardry
+kind: food
+group: Food Swamp
+effect: Eitr Regen +2, Weak VS Poison
+food:
+  health: 5
+  stamina: 0
+  eitr: 18
+recipe:
+  yields: 1
+  materials: []
+  station: Swamp Spawn
+source:
+  sheet: W.Food
+  row: 14
+  col: 12
+description: ''
+notes: ''

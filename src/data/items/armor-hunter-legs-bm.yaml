@@ -1,0 +1,30 @@
+biome: Plains
+name: Blazed leather hunting leggings
+prefab: ArmorHunterLegsBM_TW
+mod: armory
+kind: armor
+group: Hunter
+tier: Blackmetal
+set:
+  name: Hunter
+  effects:
+    - Sneak and Run Stamina -8%
+    - Bows and Crossbow +8 Skill
+    - Pierce Damage +8%
+stats:
+  armor: 20
+  upgrade: Blackmetal
+recipe:
+  yields: 1
+  materials:
+    - Frosted Leather Hunting Leggings
+    - Lox Pelt
+    - Lox Bone
+    - Prowler Fang
+  station: Armory
+source:
+  sheet: Armory
+  row: 83
+  col: 5
+description: ''
+notes: ''

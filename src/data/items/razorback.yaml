@@ -1,0 +1,37 @@
+biome: Black Forest
+name: Razorback
+prefab: Razorback_TW
+mod: monstrum
+kind: creature
+group: Other
+creature:
+  health: 50
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 18%
+    - when: Night
+      chance: 18%
+drops:
+  - from: Boar Meat
+    chance: 90%
+  - from: Razorback leather
+    chance: 100%
+  - from: Razorback Trophy
+    chance: 18%
+  - from: Razorback tusk
+    chance: 70%
+source:
+  sheet: Monstrum
+  row: 24
+  col: 5
+description: ''
+notes: ''

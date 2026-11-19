@@ -1,0 +1,23 @@
+name: Mixed grill
+prefab: MixedGrill_TW
+mod: monstrum
+kind: food
+group: Food
+food:
+  health: 58
+  stamina: 35
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Raw Bear Steak
+    - Sausages
+    - Wolf Meat
+    - Raw Fox Meat
+  station: 'Cauldron: Level 2'
+source:
+  sheet: M.Food
+  row: 2
+  col: 19
+description: ''
+notes: ''

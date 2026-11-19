@@ -1,0 +1,29 @@
+biome: Swamp
+name: Iron-Reinforced Raider Vest
+mod: armory
+kind: armor
+group: Vigorous
+tier: Iron
+set:
+  name: Vigorous
+  effects:
+    - 'Increase damage with Axes: 2%'
+    - 'Axe Skill: +4'
+stats:
+  armor: 14
+  upgrade: Iron
+recipe:
+  yields: 1
+  materials:
+    - Raider Vest
+    - Iron
+    - Entrails
+    - Withered Bone
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 184
+  col: 4
+description: ''
+notes: ''

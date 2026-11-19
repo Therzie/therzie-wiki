@@ -10,7 +10,9 @@ const { item } = Astro.props;
 const d = item.data;
 const tier = tierInfo(d.tier);
 const stats = Object.entries(d.stats ?? {}).filter(([k]) => k !== 'levels');
-const search = [d.name, d.prefab, d.group, d.tier, d.biome, ...d.recipe.materials, ...(d.drops ?? []).map((x) => x.from)]
+const weak = Object.entries(d.creature?.resist ?? {}).filter(([, v]) => /weak/.test(v)).map(([k]) => k);
+const immune = Object.entries(d.creature?.resist ?? {}).filter(([, v]) => v === 'immune').map(([k]) => k);
+const search = [d.name, d.prefab ?? '', d.group, d.tier ?? '', d.biome ?? '', d.set?.name ?? '', ...d.recipe.materials, ...(d.drops ?? []).map((x) => x.from)]
   .join(' ').toLowerCase();
 ---
 <a class="card-item" href={url(`/items/${item.id}/`)}
@@ -19,7 +21,7 @@ const search = [d.name, d.prefab, d.group, d.tier, d.biome, ...d.recipe.material
     <ItemIcon prefab={d.prefab} name={d.name} biome={d.biome} />
     <div>
       <h3>{d.name}</h3>
-      <code>{d.prefab}</code>
+      {d.prefab && <code>{d.prefab}</code>}
     </div>
   </div>
   <div class="card-item__meta">
@@ -29,6 +31,18 @@ const search = [d.name, d.prefab, d.group, d.tier, d.biome, ...d.recipe.material
     {d.checks.length > 0 && <span class="pill pill--warn" title={d.checks.join('\n')}>check</span>}
   </div>
   {Object.keys(d.damage).length > 0 && <DamageBars damage={d.damage} max={d.damage_max} compact />}
+  {d.food && (
+    <ul class="stats stats--compact">
+      {(['health', 'stamina', 'eitr'] as const).filter((k) => d.food?.[k] !== undefined).map((k) => <li><span class="stats__label">{k[0].toUpperCase() + k.slice(1)}</span><span class="stats__value">{d.food?.[k]}</span></li>)}
+    </ul>
+  )}
+  {d.creature && (
+    <ul class="stats stats--compact">
+      {d.creature.health !== undefined && <li><span class="stats__label">Health</span><span class="stats__value">{d.creature.health}</span></li>}
+      {weak.length > 0 && <li><span class="stats__label">Weak to</span><span class="stats__value">{weak.join(', ')}</span></li>}
+      {immune.length > 0 && <li><span class="stats__label">Immune</span><span class="stats__value">{immune.join(', ')}</span></li>}
+    </ul>
+  )}
   {stats.length > 0 && (
     <ul class="stats stats--compact">
       {stats.map(([k, v]) => <li><span class="stats__label">{statLabel(k)}</span><span class="stats__value">{v}</span></li>)}

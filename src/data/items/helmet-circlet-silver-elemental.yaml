@@ -1,0 +1,24 @@
+name: 'Enchanted silver circlet: Elemental'
+prefab: HelmetCircletSilver_Elemental_TW
+mod: wizardry
+kind: armor
+group: Circlets Silver
+effect: Elemental Magic +8
+stats:
+  armor: 10+
+recipe:
+  yields: 1
+  materials:
+    - Silver Circlet
+    - Moder Shard
+    - Freeze Gland
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Wolf Fang or Diamond
+source:
+  sheet: Wizardry
+  row: 228
+  col: 5
+description: ''
+notes: ''

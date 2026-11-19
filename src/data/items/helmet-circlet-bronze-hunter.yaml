@@ -1,0 +1,23 @@
+name: 'Enchanted bronze circlet: Hunter'
+prefab: HelmetCircletBronze_Hunter_TW
+mod: wizardry
+kind: armor
+group: Circlets Bronze
+effect: Bows +3 · Crossbows +3
+stats:
+  armor: 6+
+recipe:
+  yields: 1
+  materials:
+    - Bronze Circlet
+    - Ruby
+    - Elder Shard
+    - Bone Fragments
+  station: Arcane anvil
+  level: 2
+source:
+  sheet: Wizardry
+  row: 202
+  col: 6
+description: ''
+notes: ''

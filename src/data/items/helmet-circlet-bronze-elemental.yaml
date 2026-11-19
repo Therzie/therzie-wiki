@@ -1,0 +1,23 @@
+name: 'Enchanted bronze circlet: Elemental'
+prefab: HelmetCircletBronze_Elemental_TW
+mod: wizardry
+kind: armor
+group: Circlets Bronze
+effect: Elemental Magic +4
+stats:
+  armor: 6+
+recipe:
+  yields: 1
+  materials:
+    - Bronze Circlet
+    - Ruby
+    - Elder Shard
+    - Surtling Core
+  station: Arcane anvil
+  level: 2
+source:
+  sheet: Wizardry
+  row: 202
+  col: 5
+description: ''
+notes: ''

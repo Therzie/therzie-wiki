@@ -1,0 +1,30 @@
+biome: Plains
+name: Blazed hunting vest
+prefab: ArmorHunterChestBM_TW
+mod: armory
+kind: armor
+group: Hunter
+tier: Blackmetal
+set:
+  name: Hunter
+  effects:
+    - Sneak and Run Stamina -8%
+    - Bows and Crossbow +8 Skill
+    - Pierce Damage +8%
+stats:
+  armor: 20
+  upgrade: Blackmetal
+recipe:
+  yields: 1
+  materials:
+    - Frosted Hunting Vest
+    - Lox Pelt
+    - Blackmetal
+    - Lox Bone
+  station: Armory
+source:
+  sheet: Armory
+  row: 83
+  col: 4
+description: ''
+notes: ''

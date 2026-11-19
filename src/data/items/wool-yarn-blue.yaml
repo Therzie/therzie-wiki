@@ -1,0 +1,17 @@
+name: Blue yarn
+prefab: WoolYarn_Blue_TW
+mod: wizardry
+kind: item
+group: Wool Materials
+recipe:
+  yields: 1
+  materials:
+    - Wool
+    - Freeze Gland
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 55
+  col: 5
+description: ''
+notes: ''

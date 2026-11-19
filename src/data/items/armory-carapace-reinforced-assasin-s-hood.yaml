@@ -1,0 +1,29 @@
+biome: Mistlands
+name: Carapace-reinforced Assasin's hood
+mod: armory
+kind: armor
+group: Rogue
+tier: Carapace
+set:
+  name: Rogue
+  effects:
+    - 'Increase damage with Knives: 5%'
+    - 'Knives Skill: +10'
+stats:
+  armor: 28
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal-Reinforced Assasin'S Hood
+    - Soft Tissue
+    - Refined Eitr
+    - Venomous Fang
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 160
+  col: 3
+description: ''
+notes: ''

@@ -1,0 +1,23 @@
+name: Magical infused fir wood
+prefab: EnchantedWoodMountain_TW
+mod: wizardry
+kind: item
+group: Enchanted Wood Materials
+drops:
+  - from: Fir Trees (Mountain)
+    chance: Birch Trees (Plains)%
+  - from: 45%
+    chance: 40%
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Freeze Gland
+    - Moder Shard
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 33
+  col: 5
+description: ''
+notes: ''

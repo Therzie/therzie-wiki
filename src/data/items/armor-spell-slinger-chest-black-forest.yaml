@@ -1,0 +1,26 @@
+name: Novice robe
+prefab: ArmorSpellSlingerChest_BlackForest_TW
+mod: wizardry
+kind: armor
+group: Armor Black Forest Novice
+set:
+  name: Armor Black Forest Novice
+  effects:
+    - 'Elemental Magic: +3'
+    - 'Blood Magic: +3'
+stats:
+  armor: 6
+  eitr_regen: 12%
+recipe:
+  yields: 1
+  materials:
+    - Novice Fabric Bundle
+    - Bronze
+    - Elder Shard
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 119
+  col: 4
+description: ''
+notes: ''

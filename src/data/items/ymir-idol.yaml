@@ -14,11 +14,9 @@ drops:
     chance: 15%
   - from: Gorr
     chance: 100%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 60
+  col: 3
 description: ''
 notes: ''

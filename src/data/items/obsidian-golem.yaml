@@ -1,0 +1,33 @@
+biome: Mountains
+name: Obsidian Golem
+prefab: ObsidianGolem_TW
+mod: monstrum
+kind: creature
+group: Other
+creature:
+  health: 600
+  resist:
+    blunt: normal
+    slash: resistant
+    pierce: resistant
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 10%
+    - when: Night
+      chance: 10%
+drops:
+  - from: Obsidian
+    chance: 100%
+  - from: Obsidian Golem Trophy
+    chance: 25%
+source:
+  sheet: Monstrum
+  row: 47
+  col: 7
+description: ''
+notes: ''

@@ -1,0 +1,21 @@
+name: Scholar fabric bundle
+prefab: FabricBundle_Swamp_TW
+mod: wizardry
+kind: item
+group: Fabric Materials
+recipe:
+  yields: 1
+  materials:
+    - Brown Yarn
+    - Green Yarn
+  alternative:
+    - Ooze
+    - Guck
+    - Bonemass Shard
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 44
+  col: 4
+description: ''
+notes: ''

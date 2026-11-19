@@ -1,0 +1,21 @@
+name: Magical bronze ring
+prefab: RingBlackForest_TW
+mod: wizardry
+kind: armor
+group: Rings
+effect: Sneak +5
+recipe:
+  yields: 1
+  materials:
+    - Elder Shard
+    - Bronze
+  station: Arcane anvil
+  level: 1
+  monstrum:
+    - Ruby
+source:
+  sheet: Wizardry
+  row: 189
+  col: 3
+description: ''
+notes: ''

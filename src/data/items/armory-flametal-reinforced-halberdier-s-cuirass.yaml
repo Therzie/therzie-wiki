@@ -1,0 +1,31 @@
+biome: Ashlands
+name: Flametal-Reinforced Halberdier's cuirass
+mod: armory
+kind: armor
+group: Bold
+tier: Flametal
+set:
+  name: Bold
+  effects:
+    - 'Increase damage with Polearms: 6%'
+    - 'Run Stamina Usage: -12%'
+    - 'Attack Stamina Usage: -12%'
+    - 'Polearms Skill: +12'
+stats:
+  armor: 38
+  upgrade: Flametal
+recipe:
+  yields: 1
+  materials:
+    - Carapace-Reinforced Halberdier'S Cuirass
+    - Flametal
+    - Bonemaw Tooth
+    - Morgen Heart
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 426
+  col: 4
+description: ''
+notes: ''

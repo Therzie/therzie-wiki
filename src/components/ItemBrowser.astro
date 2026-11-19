@@ -6,16 +6,25 @@ import BiomeBadge from './BiomeBadge.astro';
 import Glyph from './Glyph.astro';
 import RuneDivider from './RuneDivider.astro';
 import Rune from './Rune.astro';
-import { groupsOf, BIOMES, TIERS, DAMAGE, url, slugify, totalDamage, biomeColor, type Item } from '../lib/wiki';
+import { groupsOf, BIOMES, TIERS, UPGRADES, DAMAGE, url, slugify, totalDamage, biomeColor, type Item } from '../lib/wiki';
 
-interface Props { items: Item[]; showMatrix?: boolean }
-const { items, showMatrix = false } = Astro.props;
+interface Props { items: Item[]; matrix?: 'tiers' | 'upgrades'; showMatrix?: boolean }
+const { items, showMatrix: legacy = false } = Astro.props;
+const matrix = Astro.props.matrix ?? (legacy ? 'tiers' : undefined);
+const showMatrix = !!matrix;
 const groups = groupsOf(items);
 const max = Math.max(1, ...items.map(totalDamage));
 const usedBiomes = BIOMES.filter((b) => items.some((i) => i.data.biome === b.name));
 const hasDamage = items.some((i) => Object.keys(i.data.damage).length);
-const untiered = items.some((i) => !i.data.tier);
-const columns = [...TIERS.map((t) => ({ ...t, other: false })), ...(untiered ? [{ id: '', rune: 'ᛟ', biome: '', text: 'Boss weapons and items without a material tier in the prefab name', keys: [], other: true }] : [])];
+const colKey = (i: Item) => (matrix === 'upgrades' ? String(i.data.stats?.upgrade ?? '') : i.data.tier ?? '');
+const untiered = items.some((i) => !colKey(i));
+const baseCols = matrix === 'upgrades'
+  ? UPGRADES.filter((u) => items.some((i) => colKey(i) === u)).map((u) => {
+      const t = TIERS.find((x) => x.id === u);
+      return { id: u, rune: t?.rune ?? 'ᛒ', biome: t?.biome ?? '', text: u === 'Base' ? 'The base set' : `${u} upgrade`, keys: [], other: false };
+    })
+  : TIERS.map((t) => ({ ...t, other: false }));
+const columns = [...baseCols, ...(untiered ? [{ id: '', rune: 'ᛟ', biome: '', text: 'Items without a tier', keys: [], other: true }] : [])];
 ---
   <slot />
 
@@ -29,7 +38,7 @@ const columns = [...TIERS.map((t) => ({ ...t, other: false })), ...(untiered ? [
     </div>}
     <div class="views" role="tablist" aria-label="View">
       <button class="view is-on" data-view="cards">Cards</button>
-      {showMatrix && <button class="view" data-view="matrix">Progression</button>}
+      {showMatrix && <button class="view" data-view="matrix">{matrix === 'upgrades' ? 'Upgrades' : 'Progression'}</button>}
       <button class="view" data-view="table">Table</button>
     </div>
   </div>
@@ -56,20 +65,20 @@ const columns = [...TIERS.map((t) => ({ ...t, other: false })), ...(untiered ? [
   </section>
 
   {showMatrix && <section class="not-content" data-panel="matrix" hidden>
-    <div class="matrix matrix--tiers" style={`--cols:${TIERS.length + (untiered ? 1 : 0)}`}>
+    <div class="matrix matrix--tiers" style={`--cols:${columns.length}`}>
       <div class="matrix__corner"></div>
       {columns.map((t) => (
         <div class="matrix__biome matrix__tier" style={`--c:${biomeColor(t.biome)}`} title={t.text}>
           <Rune r={t.rune} class="matrix__rune" />
           <span>{t.other ? 'Other' : t.id}</span>
-          {!t.other && <small><Glyph biome={t.biome} size={11} />{t.biome}</small>}
+          {!t.other && t.biome && <small><Glyph biome={t.biome} size={11} />{t.biome}</small>}
         </div>
       ))}
       {groups.map((g) => (
         <>
           <div class="matrix__group">{g}</div>
           {columns.map((t) => {
-            const cell = items.filter((i) => i.data.group === g && (t.other ? !i.data.tier : i.data.tier === t.id));
+            const cell = items.filter((i) => i.data.group === g && (t.other ? !colKey(i) : colKey(i) === t.id));
             return (
               <div class:list={['matrix__cell', { 'is-empty': !cell.length }]} style={`--c:${biomeColor(t.biome)}`}>
                 {cell.map((it) => (
@@ -84,7 +93,9 @@ const columns = [...TIERS.map((t) => ({ ...t, other: false })), ...(untiered ? [
         </>
       ))}
     </div>
-    <p class="small">Columns follow the Forge Path: every material tier from Flint to Flametal. Items without a tier in their prefab name, such as the boss weapons, are under Other.</p>
+    <p class="small">{matrix === 'upgrades'
+      ? 'Columns follow the upgrade path of each set, from the base set to its last upgrade.'
+      : 'Columns follow the Forge Path: every material tier from Flint to Flametal. Items without a tier in their prefab name, such as the boss weapons, are under Other.'}</p>
   </section>}
 
   <section data-panel="table" hidden>

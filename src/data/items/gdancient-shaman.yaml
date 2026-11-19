@@ -1,0 +1,32 @@
+biome: Black Forest
+name: Ancient shaman
+prefab: GDAncientShaman_TW
+mod: monstrum
+kind: creature
+group: Other
+creature:
+  health: 185
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: weak
+    poison: resistant
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Svalt Altar Spawn
+drops:
+  - from: Greydwarf Eye
+    chance: 100%
+  - from: Core Wood
+    chance: 50%
+  - from: Greydwarf Shaman trophy
+    chance: 25%
+source:
+  sheet: Monstrum
+  row: 24
+  col: 7
+description: ''
+notes: ''

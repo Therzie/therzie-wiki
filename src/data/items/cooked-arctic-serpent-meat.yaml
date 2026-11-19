@@ -1,0 +1,21 @@
+name: Cooked arctic serpent meat
+prefab: CookedArcticSerpentMeat_TW
+mod: monstrum
+kind: food
+group: Food DeepNorth
+effect: Swim +10
+food:
+  health: 92
+  stamina: 35
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Ice Stalker Meat
+  station: Iron Cooking Station
+source:
+  sheet: M.Food
+  row: 14
+  col: 7
+description: ''
+notes: ''

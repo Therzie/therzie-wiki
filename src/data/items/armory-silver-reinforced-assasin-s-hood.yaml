@@ -1,0 +1,29 @@
+biome: Mountains
+name: Silver-Reinforced Assasin's hood
+mod: armory
+kind: armor
+group: Rogue
+tier: Silver
+set:
+  name: Rogue
+  effects:
+    - 'Increase damage with Knives: 3%'
+    - 'Knives Skill: +6'
+stats:
+  armor: 16
+  upgrade: Silver
+recipe:
+  yields: 1
+  materials:
+    - Iron-Reinforced Assasin'S Hood
+    - Silver
+    - Wolf Fang
+    - Red Jute
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 136
+  col: 3
+description: ''
+notes: ''

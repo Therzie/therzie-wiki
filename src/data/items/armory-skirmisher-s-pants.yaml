@@ -1,0 +1,29 @@
+name: Skirmisher's pants
+mod: armory
+kind: armor
+group: Legion
+set:
+  name: Legion
+  effects:
+    - 'Increase damage with Spears: 5%'
+    - 'Block Stamina Usage: -9%'
+    - 'Run Stamina Usage: -9%'
+    - 'Spears Skill: +10'
+stats:
+  armor: 32
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Carapace Greaves
+    - Soft Tissue
+    - Refined Eitr
+    - Scale Hide
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 439
+  col: 5
+description: ''
+notes: ''

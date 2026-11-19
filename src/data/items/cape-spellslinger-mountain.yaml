@@ -1,0 +1,27 @@
+name: Magus cape
+prefab: CapeSpellslinger_Mountain_TW
+mod: wizardry
+kind: armor
+group: Armor Mountain Magus
+effect: 'Eitr Regen: 4%, Resistant VS Frost'
+set:
+  name: Armor Mountain Magus
+  effects:
+    - 'Elemental Magic: +7'
+    - 'Blood Magic: +7'
+stats:
+  armor: 1
+recipe:
+  yields: 1
+  materials:
+    - Magus Fabric Bundle
+    - Wolf Fang
+    - Moder Shard
+    - Silver
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 147
+  col: 6
+description: ''
+notes: ''

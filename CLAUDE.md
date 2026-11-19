@@ -6,7 +6,7 @@ since the beginning. You assist; editors decide.
 ## Ownership of content
 - `src/data/items/*.yaml`: one file per item.
   - Sheet fields (written by `scripts/import-sheet.mjs`): name, prefab, mod, kind, group, skill, tier, effect,
-    info, damage, damage_max, stats, drops, recipe, checks, source. Change these only through the importer or when an editor asks.
+    info, set, damage, damage_max, stats, food, creature, drops, recipe, checks, source. Change these only through the importer or when an editor asks.
   - Editorial fields: description, notes, tips, biome, biome_guessed, hidden. Never overwrite existing
     text. Propose new text and let the editor approve it.
 - Never "correct" the spreadsheet data on your own. When data looks wrong, add a line to `checks`
@@ -21,8 +21,9 @@ since the beginning. You assist; editors decide.
 
 ## Layout
 - `scripts/import-sheet.mjs`: spreadsheet → YAML (card layout parser, merge keeps editorial fields).
-- `src/pages/`: Warfare overview (`warfare/`, based on the Warfare README), weapon list (`warfare/weapons/`),
-  item pages (`items/[slug]`), materials, to-check list.
+- `src/pages/`: Warfare overview (`warfare/`, based on the Warfare README), section pages per mod (configured in
+  `SECTIONS` in `src/lib/wiki.ts`), item pages (`items/[slug]`), Monstrum weaknesses, materials, to-check list.
+- `src/data/tables/`: tables from the sheet that are not items (Monstrum weaknesses).
 - `src/data/tiers.json`: the 11 Warfare tiers with rune, biome and text (from the Warfare README). The importer
   takes the tier from the prefab name (`<Class><Tier>_TW`) and the biome from the tier.
 - `public/admin/config.yml`: the form editor.

@@ -6,11 +6,9 @@ group: Materials
 drops:
   - from: Jotarr Wolf
     chance: 8%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 81
+  col: 13
 description: ''
 notes: ''

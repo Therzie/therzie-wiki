@@ -7,11 +7,9 @@ drops:
   - from: Frozen Mammoth Bones
     chance: 33%
   - from: Jotunnheim fragment
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 50
+  col: 13
 description: ''
 notes: ''

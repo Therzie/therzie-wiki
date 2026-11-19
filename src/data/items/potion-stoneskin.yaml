@@ -1,0 +1,20 @@
+name: Stoneskin potion
+prefab: PotionStoneskin_TW
+mod: wizardry
+kind: item
+group: Potions
+effect: Resistant Blunt/Slash/Pierce · Jump Height/Length -80% · Movement Speed -80%
+recipe:
+  yields: 1
+  materials:
+    - Yagluth Shard
+    - Devils Tounge
+    - Stone
+    - Obsidian
+  station: Potion Cauldron
+source:
+  sheet: W.Food
+  row: 74
+  col: 12
+description: ''
+notes: ''

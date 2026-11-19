@@ -1,0 +1,20 @@
+name: Black troll cape
+prefab: CapeTrollBlack_TW
+mod: armory
+kind: item
+group: Extra
+effect: Sneak +15 (Troll Hide Set)
+recipe:
+  yields: 1
+  materials:
+    - Troll Hide Cape
+    - Troll Hide
+    - Coal
+    - Bone Fragments (Upgrade
+  station: Workbench Level 2
+source:
+  sheet: Armory
+  row: 3
+  col: 4
+description: ''
+notes: ''

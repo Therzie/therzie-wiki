@@ -1,0 +1,20 @@
+name: Witch eye
+prefab: MushroomWitcheye_TW
+mod: wizardry
+kind: food
+group: Food Black Forest
+effect: Eitr Regen +1, Movement Speed -3%
+food:
+  health: 5
+  stamina: 0
+  eitr: 15
+recipe:
+  yields: 1
+  materials: []
+  station: Black Forest Spawn
+source:
+  sheet: W.Food
+  row: 2
+  col: 12
+description: ''
+notes: ''

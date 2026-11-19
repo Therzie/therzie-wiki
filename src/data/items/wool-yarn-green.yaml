@@ -1,0 +1,17 @@
+name: Green yarn
+prefab: WoolYarn_Green_TW
+mod: wizardry
+kind: item
+group: Wool Materials
+recipe:
+  yields: 1
+  materials:
+    - Wool
+    - Guck
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 55
+  col: 7
+description: ''
+notes: ''

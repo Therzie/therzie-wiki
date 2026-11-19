@@ -1,0 +1,30 @@
+biome: Swamp
+name: Iron-Reinforced Assasin's hood
+mod: armory
+kind: armor
+group: Rogue
+tier: Iron
+set:
+  name: Rogue
+  effects:
+    - 'Increase damage with Knives: 2%'
+    - 'Knives Skill: +4'
+stats:
+  armor: 10
+  upgrade: Iron
+recipe:
+  yields: 1
+  materials:
+    - Assasin'S Hood
+    - Iron
+    - Rotten Pelt
+  upgrade:
+    - Ooze
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 124
+  col: 3
+description: ''
+notes: ''

@@ -1,0 +1,31 @@
+biome: Mistlands
+name: Carapace-Reinforced Raider Trousers
+mod: armory
+kind: armor
+group: Vigorous
+tier: Carapace
+set:
+  name: Vigorous
+  effects:
+    - 'Increase damage with Axes: 5%'
+    - 'Attack Stamina Usage: -12%'
+    - 'Block Stamina Usage: -6%'
+    - 'Axe Skill: +10'
+stats:
+  armor: 32
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal-Reinforced Raider Trousers
+    - Carapace
+    - Refined Eitr
+    - Soft Tissue
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 224
+  col: 5
+description: ''
+notes: ''

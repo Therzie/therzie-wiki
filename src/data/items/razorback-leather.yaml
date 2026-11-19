@@ -6,11 +6,9 @@ group: Materials
 drops:
   - from: Razorback
     chance: 100%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 20
+  col: 5
 description: ''
 notes: ''

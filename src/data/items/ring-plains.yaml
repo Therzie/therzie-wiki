@@ -1,0 +1,22 @@
+name: Magical blackmetal ring
+prefab: RingPlains_TW
+mod: wizardry
+kind: armor
+group: Rings
+effect: Elemental Damage +3%
+recipe:
+  yields: 1
+  materials:
+    - Yagluth Shard
+    - Blackmetal
+  station: Arcane anvil
+  level: 4
+  monstrum:
+    - Fuling Totem or Emerald
+    - Growth Trophy
+source:
+  sheet: Wizardry
+  row: 189
+  col: 6
+description: ''
+notes: ''

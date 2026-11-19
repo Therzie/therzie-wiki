@@ -1,0 +1,31 @@
+biome: Mistlands
+name: Carapace-Reinforced Halberdier's greaves
+mod: armory
+kind: armor
+group: Bold
+tier: Carapace
+set:
+  name: Bold
+  effects:
+    - 'Increase damage with Polearms: 5%'
+    - 'Run Stamina Usage: -9%'
+    - 'Attack Stamina Usage: -9%'
+    - 'Polearms Skill: +10'
+stats:
+  armor: 32
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Halberdier'S Greaves
+    - Carapace
+    - Refined Eitr
+    - Soft Tissue
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 413
+  col: 5
+description: ''
+notes: ''

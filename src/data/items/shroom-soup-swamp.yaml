@@ -1,0 +1,22 @@
+name: Deathcap soup
+prefab: ShroomSoupSwamp_TW
+mod: wizardry
+kind: food
+group: Food Swamp
+food:
+  health: 32
+  stamina: 27
+  eitr: 14
+recipe:
+  yields: 1
+  materials:
+    - Deathcap
+    - Carrot
+    - Entrails
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 14
+  col: 3
+description: ''
+notes: ''

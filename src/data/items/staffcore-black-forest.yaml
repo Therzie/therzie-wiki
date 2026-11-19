@@ -1,0 +1,17 @@
+name: Evergrowth core
+prefab: Staffcore_BlackForest_TW
+mod: wizardry
+kind: item
+group: Staffs Items
+recipe:
+  yields: 1
+  materials:
+    - Ancient Seed
+    - Elder Shard
+  station: Arcane Anvil Level 2
+source:
+  sheet: Wizardry
+  row: 69
+  col: 3
+description: ''
+notes: ''

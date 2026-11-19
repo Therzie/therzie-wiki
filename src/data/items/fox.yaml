@@ -1,0 +1,35 @@
+biome: Meadows
+name: Fox
+prefab: Fox_TW
+mod: monstrum
+kind: creature
+group: Other
+creature:
+  health: 30
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 16%
+    - when: Night
+      chance: 20%
+drops:
+  - from: Raw Fox Meat
+    chance: 80%
+  - from: Fox Pelt
+    chance: 100%
+  - from: Fox Trophy
+    chance: 18%
+source:
+  sheet: Monstrum
+  row: 24
+  col: 3
+description: ''
+notes: ''

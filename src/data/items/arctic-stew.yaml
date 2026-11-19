@@ -1,0 +1,24 @@
+name: Northern stew
+prefab: ArcticStew_TW
+mod: monstrum
+kind: food
+group: Food DeepNorth
+effect: Health Regen +10%
+food:
+  health: 125
+  stamina: 46
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Pridetusk Meat
+    - Dire Wolf Meat
+    - Wintercap
+    - Primal Leek
+  station: Cauldron lvl 5
+source:
+  sheet: M.Food
+  row: 14
+  col: 27
+description: ''
+notes: ''

@@ -1,0 +1,19 @@
+name: Carapace circlet
+prefab: HelmetCircletCarapace_TW
+mod: wizardry
+kind: armor
+group: Circlets Carapace
+stats:
+  armor: 2
+recipe:
+  yields: 1
+  materials:
+    - Carapace
+  station: Wizard Table
+  level: 7
+source:
+  sheet: Wizardry
+  row: 254
+  col: 3
+description: ''
+notes: ''

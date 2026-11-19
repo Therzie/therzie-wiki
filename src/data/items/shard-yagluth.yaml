@@ -1,0 +1,26 @@
+name: Yagluth shard
+prefab: ShardYagluth_TW
+mod: wizardry
+kind: item
+group: Materials
+drops:
+  - from: Yagluth
+    chance: 1-5x
+  - from: Goblin Mage
+    chance: 1-2x
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal
+    - Needle
+    - Fuling Shaman Trophy
+  upgrade:
+    - Moder Shard
+    - Blackmetal
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 17
+  col: 6
+description: ''
+notes: ''

@@ -1,0 +1,26 @@
+name: Scholar cape
+prefab: CapeSpellslinger_Swamp_TW
+mod: wizardry
+kind: armor
+group: Armor Swamp Scholar
+effect: 'Eitr Regen: 3%, Resistant VS Poison'
+set:
+  name: Armor Swamp Scholar
+  effects:
+    - 'Elemental Magic: +5'
+    - 'Blood Magic: +5'
+stats:
+  armor: 1
+recipe:
+  yields: 1
+  materials:
+    - Scholar Fabric Bundle
+    - Withered Bone
+    - Bonemass Shard
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 133
+  col: 6
+description: ''
+notes: ''

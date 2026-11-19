@@ -1,0 +1,24 @@
+name: 'Enchanted silver circlet: Hunter'
+prefab: HelmetCircletSilver_Hunter_TW
+mod: wizardry
+kind: armor
+group: Circlets Silver
+effect: Bows +7 · Crossbows +7
+stats:
+  armor: 10+
+recipe:
+  yields: 1
+  materials:
+    - Silver Circlet
+    - Moder Shard
+    - Fenris Claw
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Wolf Fang or Diamond
+source:
+  sheet: Wizardry
+  row: 228
+  col: 6
+description: ''
+notes: ''

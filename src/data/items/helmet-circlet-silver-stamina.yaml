@@ -1,0 +1,24 @@
+name: 'Enchanted silver circlet: Stamina'
+prefab: HelmetCircletSilver_Stamina_TW
+mod: wizardry
+kind: armor
+group: Circlets Silver
+effect: Jump/Dodge/Swim/Run Stamina Use · -7%
+stats:
+  armor: 10+
+recipe:
+  yields: 1
+  materials:
+    - Silver Circlet
+    - Moder Shard
+    - Crystal
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Freeze Gland or Diamond
+source:
+  sheet: Wizardry
+  row: 228
+  col: 4
+description: ''
+notes: ''

@@ -1,0 +1,18 @@
+name: 'Arcane scroll: ''Underworld'''
+prefab: ArcaneScroll_Swamp_TW
+mod: wizardry
+kind: item
+group: Scrolls (Upgrade Staffs)
+recipe:
+  yields: 1
+  materials:
+    - Bonemass Shard
+    - Guck
+    - Bloodbag
+  station: Arcane Anvil Level 2
+source:
+  sheet: Wizardry
+  row: 78
+  col: 4
+description: ''
+notes: ''

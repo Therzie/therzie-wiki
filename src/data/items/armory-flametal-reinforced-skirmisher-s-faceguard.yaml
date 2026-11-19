@@ -1,0 +1,31 @@
+biome: Ashlands
+name: Flametal-Reinforced Skirmisher's faceguard
+mod: armory
+kind: armor
+group: Legion
+tier: Flametal
+set:
+  name: Legion
+  effects:
+    - 'Increase damage with Spears: 6%'
+    - 'Block Stamina Usage: -12%'
+    - 'Run Stamina Usage: -12%'
+    - 'Spears Skill: +12'
+stats:
+  armor: 38
+  upgrade: Flametal
+recipe:
+  yields: 1
+  materials:
+    - Skirmisher'S Faceguard
+    - Flametal
+    - Charred Bone
+    - Refined Eitr
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 452
+  col: 3
+description: ''
+notes: ''

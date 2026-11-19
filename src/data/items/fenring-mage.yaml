@@ -1,0 +1,37 @@
+biome: Mountains
+name: Fenring mage
+prefab: FenringMage_TW
+mod: wizardry
+kind: creature
+group: Creatures
+creature:
+  health: 240
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: resistant
+    lightning: resistant
+    spirit: weak
+    frost: resistant
+  spawn:
+    - when: Day
+      chance: 16%
+    - when: Night
+      chance: 22%
+drops:
+  - from: Fenris Claw
+    chance: 100%
+  - from: Crystal
+    chance: 15%
+  - from: Moder Shard
+    chance: 100%
+  - from: Cultist Trophy
+    chance: 20%
+source:
+  sheet: W.Creatures
+  row: 2
+  col: 9
+description: ''
+notes: ''

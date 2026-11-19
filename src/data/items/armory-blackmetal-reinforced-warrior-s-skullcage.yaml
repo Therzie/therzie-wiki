@@ -1,0 +1,31 @@
+biome: Plains
+name: Blackmetal-Reinforced Warrior's skullcage
+mod: armory
+kind: armor
+group: Warrior
+tier: Blackmetal
+set:
+  name: Warrior
+  effects:
+    - 'Increase damage with Clubs: 4%'
+    - 'Attack Stamina Usage: -8%'
+    - 'Block Stamina Usage: -4%'
+    - 'Clubs Skill: +8'
+stats:
+  armor: 26
+  upgrade: Blackmetal
+recipe:
+  yields: 1
+  materials:
+    - Silver-Reinforced Warrior'S Skullcage
+    - Blackmetal
+    - Tar
+    - Lox Bone
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 265
+  col: 3
+description: ''
+notes: ''

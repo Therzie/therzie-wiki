@@ -1,0 +1,25 @@
+name: Firestarter
+prefab: StaffSurtling_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+info:
+  - 'Upgrades: Wizard Table 4+'
+stats:
+  eitr: 40
+  use_health: 25%
+recipe:
+  yields: 1
+  materials:
+    - Surtling Core
+    - Bonemass Shard
+    - Surtling Trophy
+  station: Arcane Anvil 3
+checks:
+  - No damage values in the sheet
+source:
+  sheet: Wizardry
+  row: 87
+  col: 7
+description: ''
+notes: ''

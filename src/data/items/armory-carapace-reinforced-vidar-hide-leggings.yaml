@@ -1,0 +1,31 @@
+biome: Mistlands
+name: Carapace-Reinforced Vidar Hide Leggings
+mod: armory
+kind: armor
+group: Vidar
+tier: Carapace
+set:
+  name: Vidar
+  effects:
+    - 'Increase damage with Swords: 5%'
+    - 'Attack Stamina Usage: -12%'
+    - 'Block Stamina Usage: -6%'
+    - 'Swords Skill: +10'
+stats:
+  armor: 32
+  upgrade: Carapace
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal-Reinforced Vidar Hide Leggings
+    - Soft Tissue
+    - Refined Eitr
+    - Black Jute
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 333
+  col: 5
+description: ''
+notes: ''

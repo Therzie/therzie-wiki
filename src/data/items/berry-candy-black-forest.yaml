@@ -1,0 +1,22 @@
+name: Honey glazed eitr berry
+prefab: BerryCandyBlackForest_TW
+mod: wizardry
+kind: food
+group: Food Black Forest
+food:
+  health: 17
+  stamina: 19
+  eitr: 17
+recipe:
+  yields: 1
+  materials:
+    - Witch Eye
+    - Blueberries
+    - Honey
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 2
+  col: 9
+description: ''
+notes: ''

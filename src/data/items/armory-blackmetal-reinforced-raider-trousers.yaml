@@ -1,0 +1,31 @@
+biome: Plains
+name: Blackmetal-Reinforced Raider Trousers
+mod: armory
+kind: armor
+group: Vigorous
+tier: Blackmetal
+set:
+  name: Vigorous
+  effects:
+    - 'Increase damage with Axes: 4%'
+    - 'Attack Stamina Usage: -8%'
+    - 'Block Stamina Usage: -4%'
+    - 'Axe Skill: +8'
+stats:
+  armor: 26
+  upgrade: Blackmetal
+recipe:
+  yields: 1
+  materials:
+    - Silver-Reinforced Raider Trousers
+    - Blackmetal
+    - Tar
+    - Needle
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 210
+  col: 5
+description: ''
+notes: ''

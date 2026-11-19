@@ -1,0 +1,24 @@
+name: 'Enchanted carapace circlet: Hunter'
+prefab: HelmetCircletCarapace_Hunter_TW
+mod: wizardry
+kind: armor
+group: Circlets Carapace
+effect: Bows +13 · Crossbows +13
+stats:
+  armor: 14+
+recipe:
+  yields: 1
+  materials:
+    - Carapace Circlet
+    - Queen Shard
+    - Gjall Trophy
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Eitr or Amethyst
+source:
+  sheet: Wizardry
+  row: 254
+  col: 6
+description: ''
+notes: ''

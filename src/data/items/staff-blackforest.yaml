@@ -1,0 +1,25 @@
+name: Evergrowth staff
+prefab: StaffBlackforest_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+effect: 'Secondary: Root Spawns'
+info:
+  - 'Upgrades: Wizard Table'
+damage:
+  blunt: 35
+  spirit: 5
+stats:
+  eitr: 10
+recipe:
+  yields: 1
+  materials:
+    - Gnarly Staff Base
+    - Evergrowth Core
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 87
+  col: 4
+description: ''
+notes: ''

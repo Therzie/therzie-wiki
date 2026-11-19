@@ -1,0 +1,23 @@
+name: Heartscream
+prefab: Heartscream_TW
+mod: monstrum
+kind: food
+group: Food DeepNorth
+effect: Stamina Regen +5%
+food:
+  health: 34
+  stamina: 100
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Jotunn Eyeball
+    - Helweed
+    - Tundra Berry
+  station: Cauldron lvl 5
+source:
+  sheet: M.Food
+  row: 26
+  col: 11
+description: ''
+notes: ''

@@ -1,0 +1,20 @@
+name: Speed potion
+prefab: PotionSpeed_TW
+mod: wizardry
+kind: item
+group: Potions
+effect: Movement Speed +20% · Run Stamina usage -20%
+recipe:
+  yields: 1
+  materials:
+    - Yagluth Shard
+    - Devils Tounge
+    - Cloudberries
+    - Guck
+  station: Potion Cauldron
+source:
+  sheet: W.Food
+  row: 74
+  col: 9
+description: ''
+notes: ''

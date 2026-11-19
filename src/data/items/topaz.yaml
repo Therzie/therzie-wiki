@@ -5,11 +5,9 @@ kind: item
 group: Gems
 stats:
   value: 100
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 2
+  col: 11
 description: ''
 notes: ''

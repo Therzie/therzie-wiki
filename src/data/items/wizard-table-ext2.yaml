@@ -1,0 +1,21 @@
+name: Ancient spell book
+prefab: WizardTable_ext2_TW
+mod: wizardry
+kind: piece
+group: Stations & Extensions
+info:
+  - Upgrades Wizard Table Lvl 5
+  - Upgrades Arcane Anvil Lvl 4
+recipe:
+  yields: 1
+  materials:
+    - Withered Bones
+    - Ancient Wood
+    - Ooze
+    - Bonemass Shard
+source:
+  sheet: Wizardry
+  row: 5
+  col: 7
+description: ''
+notes: ''

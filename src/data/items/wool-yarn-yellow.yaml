@@ -1,0 +1,17 @@
+name: Yellow yarn
+prefab: WoolYarn_Yellow_TW
+mod: wizardry
+kind: item
+group: Wool Materials
+recipe:
+  yields: 1
+  materials:
+    - Wool
+    - Dandelion
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 61
+  col: 5
+description: ''
+notes: ''

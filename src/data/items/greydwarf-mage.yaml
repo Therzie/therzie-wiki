@@ -1,0 +1,37 @@
+biome: Black Forest
+name: Greydwarf mage
+prefab: GreydwarfMage_TW
+mod: wizardry
+kind: creature
+group: Creatures
+creature:
+  health: 130
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: immune
+    poison: resistant
+    lightning: resistant
+    spirit: immune
+    frost: resistant
+  spawn:
+    - when: Day
+      chance: 16%
+    - when: Night
+      chance: 22%
+drops:
+  - from: Ancient Seed
+    chance: 20%
+  - from: Surtling Core
+    chance: 15%
+  - from: Elder Shard
+    chance: 100%
+  - from: G.Shaman Trophy
+    chance: 20%
+source:
+  sheet: W.Creatures
+  row: 2
+  col: 5
+description: ''
+notes: ''

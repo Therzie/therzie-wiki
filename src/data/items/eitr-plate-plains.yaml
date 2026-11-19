@@ -1,0 +1,24 @@
+name: Plains buffet
+prefab: EitrPlatePlains_TW
+mod: wizardry
+kind: food
+group: Food Plains
+effect: Eitr Regen +10%
+food:
+  health: 24
+  stamina: 12
+  eitr: 75
+recipe:
+  yields: 1
+  materials:
+    - Devil'S Tongue
+    - Lox Meat
+    - Cloudberries
+    - Barley Flour
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 36
+  col: 6
+description: ''
+notes: ''

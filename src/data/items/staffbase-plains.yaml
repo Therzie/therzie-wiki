@@ -1,0 +1,19 @@
+name: Wicked staff base
+prefab: Staffbase_Plains_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+damage:
+  blunt: 47
+recipe:
+  yields: 1
+  materials:
+    - Infused Birch Wood
+    - Blackmetal
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 102
+  col: 3
+description: ''
+notes: ''

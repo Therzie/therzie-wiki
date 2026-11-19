@@ -1,0 +1,20 @@
+name: Cooked Bloodgill meat
+prefab: CookedSharkMeat_TW
+mod: monstrum
+kind: food
+group: Food
+food:
+  health: 40
+  stamina: 74
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Bloodgill Meat
+  station: Iron Cooking Station
+source:
+  sheet: M.Food
+  row: 2
+  col: 23
+description: ''
+notes: ''

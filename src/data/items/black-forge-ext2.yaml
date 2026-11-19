@@ -15,5 +15,6 @@ recipe:
 source:
   sheet: Pieces
   row: 13
+  col: 3
 description: ''
 notes: ''

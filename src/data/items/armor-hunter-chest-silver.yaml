@@ -1,0 +1,30 @@
+biome: Mountains
+name: Frosted hunting vest
+prefab: ArmorHunterChestSilver_TW
+mod: armory
+kind: armor
+group: Hunter
+tier: Silver
+set:
+  name: Hunter
+  effects:
+    - Sneak and Run Stamina -6%
+    - Bows and Crossbow +6 Skill
+    - Pierce Damage +6%
+stats:
+  armor: 15
+  upgrade: Silver
+recipe:
+  yields: 1
+  materials:
+    - Rotten Hunting Vest
+    - Grizzly Bear Pelt
+    - Fenris Claw
+    - Silver
+  station: Armory
+source:
+  sheet: Armory
+  row: 69
+  col: 4
+description: ''
+notes: ''

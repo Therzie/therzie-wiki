@@ -1,0 +1,24 @@
+name: 'Enchanted silver circlet: Sneak'
+prefab: HelmetCircletSilver_Sneak_TW
+mod: wizardry
+kind: armor
+group: Circlets Silver
+effect: 'Sneak +9 · Sneak Stamina Usage: -9%'
+stats:
+  armor: 10+
+recipe:
+  yields: 1
+  materials:
+    - Silver Circlet
+    - Moder Shard
+    - Wolf Pelt
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Obsidian or Diamond
+source:
+  sheet: Wizardry
+  row: 228
+  col: 7
+description: ''
+notes: ''

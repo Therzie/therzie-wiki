@@ -6,13 +6,11 @@ group: Materials
 drops:
   - from: Chieftan Gorr
     chance: 100%
-recipe:
-  yields: 1
-  materials: []
 checks:
   - 'Prefab RuneRage_TW appears 2x in the sheet (Magic Rune: Rage, Items r60; Magic Rune: Rage, Items r99)'
 source:
   sheet: Items
   row: 60
+  col: 15
 description: ''
 notes: ''

@@ -1,0 +1,23 @@
+name: 'Enchanted bronze circlet: Stamina'
+prefab: HelmetCircletBronze_Stamina_TW
+mod: wizardry
+kind: armor
+group: Circlets Bronze
+effect: Jump/Dodge/Swim/Run Stamina Use · -3%
+stats:
+  armor: 6+
+recipe:
+  yields: 1
+  materials:
+    - Bronze Circlet
+    - Ruby
+    - Elder Shard
+    - Thistle
+  station: Arcane anvil
+  level: 2
+source:
+  sheet: Wizardry
+  row: 202
+  col: 4
+description: ''
+notes: ''

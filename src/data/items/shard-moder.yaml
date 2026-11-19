@@ -1,0 +1,26 @@
+name: Moder shard
+prefab: ShardModer_TW
+mod: wizardry
+kind: item
+group: Materials
+drops:
+  - from: Moder
+    chance: 1-4x
+  - from: Fenring Mage
+    chance: 1-2x
+recipe:
+  yields: 1
+  materials:
+    - Silver
+    - Fenris Claw
+    - Cultist Trophy
+  upgrade:
+    - Bonemass Shard
+    - Silver
+  station: Arcane Anvil
+source:
+  sheet: Wizardry
+  row: 17
+  col: 5
+description: ''
+notes: ''

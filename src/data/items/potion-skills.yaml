@@ -1,0 +1,20 @@
+name: Skillful potion
+prefab: PotionSkills_TW
+mod: wizardry
+kind: item
+group: Potions
+effect: All Skills +10
+recipe:
+  yields: 1
+  materials:
+    - Moder Shard
+    - Wizard Butter
+    - Death Tounge
+    - Cloudberries
+  station: Potion Cauldron
+source:
+  sheet: W.Food
+  row: 74
+  col: 6
+description: ''
+notes: ''

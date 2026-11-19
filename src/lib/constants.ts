@@ -3,10 +3,10 @@ import tiers from '../data/tiers.json';
 export const MODS = [
   { id: 'warfare', name: 'Warfare', blurb: 'Weapons, shields, pieces and items', ready: true },
   { id: 'warfare-fi', name: 'Warfare Fire & Ice', blurb: 'Elemental weapons and armor', ready: false },
-  { id: 'armory', name: 'Armory', blurb: 'Armor sets for every biome', ready: false },
-  { id: 'monstrum', name: 'Monstrum', blurb: 'Creatures, bosses, food and taming', ready: false },
+  { id: 'armory', name: 'Armory', blurb: 'Armor sets for every biome', ready: true },
+  { id: 'monstrum', name: 'Monstrum', blurb: 'Creatures, bosses, food and weaknesses', ready: true },
   { id: 'monstrum-dn', name: 'Monstrum Deep North', blurb: 'The Deep North and its progression', ready: false },
-  { id: 'wizardry', name: 'Wizardry', blurb: 'Magic items, creatures and food', ready: false },
+  { id: 'wizardry', name: 'Wizardry', blurb: 'Staffs, robes, rings, creatures and food', ready: true },
 ] as const;
 
 export const BIOMES = [

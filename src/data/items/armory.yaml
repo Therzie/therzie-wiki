@@ -1,0 +1,20 @@
+name: Armory Station
+prefab: Armory_TW
+mod: armory
+kind: item
+group: Extra
+effect: Built in Smelter+Chest - Upgrades with Forge
+recipe:
+  yields: 1
+  materials:
+    - Bronze
+    - Stone
+    - Bronze Nails
+    - Surtling Core
+    - Eikthyr Trophy
+source:
+  sheet: Armory
+  row: 3
+  col: 5
+description: ''
+notes: ''

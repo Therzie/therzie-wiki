@@ -1,0 +1,14 @@
+name: Wool
+prefab: WoolScraps_TW
+mod: wizardry
+kind: item
+group: Wool Materials
+drops:
+  - from: Darkhorn
+    chance: Wool%
+source:
+  sheet: Wizardry
+  row: 55
+  col: 3
+description: ''
+notes: ''

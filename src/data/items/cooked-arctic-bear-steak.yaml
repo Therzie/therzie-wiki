@@ -1,0 +1,20 @@
+name: Cooked ursa steak
+prefab: CookedArcticBearSteak_TW
+mod: monstrum
+kind: food
+group: Food DeepNorth
+food:
+  health: 84
+  stamina: 24
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Frozen Ursa Steak
+  station: Iron Cooking Station
+source:
+  sheet: M.Food
+  row: 14
+  col: 3
+description: ''
+notes: ''

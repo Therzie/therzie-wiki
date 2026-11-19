@@ -6,11 +6,9 @@ group: Materials
 drops:
   - from: Helhound
     chance: 8%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 81
+  col: 11
 description: ''
 notes: ''

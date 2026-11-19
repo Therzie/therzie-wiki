@@ -1,0 +1,27 @@
+name: Black leather hunting leggings
+prefab: ArmorHunterLegs_TW
+mod: armory
+kind: armor
+group: Hunter
+set:
+  name: Hunter
+  effects:
+    - Sneak and Run Stamina Usage -2%
+    - Bows and Crossbow +2 Skill
+    - Pierce Damage +2%
+stats:
+  armor: 5
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Bear Hide
+    - Bronze
+    - Bear Paw
+  station: Armory
+source:
+  sheet: Armory
+  row: 41
+  col: 5
+description: ''
+notes: ''

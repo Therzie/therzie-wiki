@@ -1,0 +1,29 @@
+biome: Swamp
+name: Rotten hunting vest
+prefab: ArmorHunterChestIron_TW
+mod: armory
+kind: armor
+group: Hunter
+tier: Iron
+set:
+  name: Hunter
+  effects:
+    - Sneak and Run Stamina -4%
+    - Bows and Crossbow +4 Skill
+    - Pierce Damage +4%
+stats:
+  armor: 10
+  upgrade: Iron
+recipe:
+  yields: 1
+  materials:
+    - Black Leather Hunting Vest
+    - Iron
+    - Rotten Pelt
+  station: Armory
+source:
+  sheet: Armory
+  row: 55
+  col: 4
+description: ''
+notes: ''

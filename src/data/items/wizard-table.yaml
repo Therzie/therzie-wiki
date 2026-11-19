@@ -1,0 +1,23 @@
+name: Wizard table
+prefab: WizardTable_TW
+mod: wizardry
+kind: piece
+group: Stations & Extensions
+info:
+  - Recipes
+  - BaseStaffs, MainStaff, Armor
+  - Base Circlets
+recipe:
+  yields: 1
+  materials:
+    - Surtling Core
+    - Bronze
+    - Core Wood
+    - Troll Hide
+    - Bone Fragments
+source:
+  sheet: Wizardry
+  row: 5
+  col: 3
+description: ''
+notes: ''

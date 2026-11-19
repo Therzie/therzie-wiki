@@ -1,0 +1,29 @@
+biome: Plains
+name: Blackmetal-Reinforced Assassins Striders
+mod: armory
+kind: armor
+group: Rogue
+tier: Blackmetal
+set:
+  name: Rogue
+  effects:
+    - 'Increase damage with Knives: 4%'
+    - 'Knives Skill: +8'
+stats:
+  armor: 22
+  upgrade: Blackmetal
+recipe:
+  yields: 1
+  materials:
+    - Silver-Reinforced Assassins Striders
+    - Blackmetal
+    - Linen Thread
+    - Needle
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 148
+  col: 5
+description: ''
+notes: ''

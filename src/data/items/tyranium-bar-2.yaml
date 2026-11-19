@@ -18,5 +18,6 @@ checks:
 source:
   sheet: Items
   row: 109
+  col: 7
 description: ''
 notes: ''

@@ -1,0 +1,26 @@
+name: Scholar robe
+prefab: ArmorSpellSlingerChest_Swamp_TW
+mod: wizardry
+kind: armor
+group: Armor Swamp Scholar
+set:
+  name: Armor Swamp Scholar
+  effects:
+    - 'Elemental Magic: +5'
+    - 'Blood Magic: +5'
+stats:
+  armor: 8
+  eitr_regen: 18%
+recipe:
+  yields: 1
+  materials:
+    - Scholar Fabric Bundle
+    - Iron
+    - Bonemass Shard
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 133
+  col: 4
+description: ''
+notes: ''

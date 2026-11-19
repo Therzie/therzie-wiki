@@ -12,11 +12,9 @@ drops:
     chance: 12%
   - from: Primalist
     chance: 12%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 60
+  col: 9
 description: ''
 notes: ''

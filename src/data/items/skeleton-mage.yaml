@@ -1,0 +1,37 @@
+biome: Swamp
+name: Skeletal mage
+prefab: SkeletonMage_TW
+mod: wizardry
+kind: creature
+group: Creatures
+creature:
+  health: 180
+  resist:
+    blunt: weak
+    slash: normal
+    pierce: resistant
+    fire: immune
+    poison: immune
+    lightning: resistant
+    spirit: weak
+    frost: resistant
+  spawn:
+    - when: Day
+      chance: 16%
+    - when: Night
+      chance: 22%
+drops:
+  - from: Bone Fragments
+    chance: 100%
+  - from: Withered Bone
+    chance: 15%
+  - from: Bonemass Shard
+    chance: 100%
+  - from: Rancid Trophy
+    chance: 20%
+source:
+  sheet: W.Creatures
+  row: 2
+  col: 7
+description: ''
+notes: ''

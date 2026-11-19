@@ -1,0 +1,22 @@
+name: Devils tongue soup
+prefab: ShroomSoupPlains_TW
+mod: wizardry
+kind: food
+group: Food Plains
+food:
+  health: 52
+  stamina: 37
+  eitr: 26
+recipe:
+  yields: 1
+  materials:
+    - Devil'S Tongue
+    - Barley
+    - Lox Meat
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 36
+  col: 3
+description: ''
+notes: ''

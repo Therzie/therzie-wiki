@@ -483,3 +483,23 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 .card-item__drops { margin: 0; font-size: var(--sl-text-xs); color: var(--sl-color-gray-2); }
 
 .matrix--tiers .matrix__group { font-size: 0.85rem; overflow-wrap: anywhere; }
+
+/* resistances */
+.res { display: inline-block; padding: 0.05rem 0.45rem; border-radius: 3px; font-size: var(--sl-text-xs); font-weight: 600; white-space: nowrap; color: var(--sl-color-gray-2); }
+.res[data-res='very weak'] { background: #2f6b2a; color: #e8ffe0; }
+.res[data-res='weak'] { background: #3f5a2a; color: #dff3c8; }
+.res[data-res='normal'] { color: var(--sl-color-gray-3); }
+.res[data-res='resistant'] { background: #6b4a1f; color: #ffe3b8; }
+.res[data-res='very resistant'] { background: #7a3418; color: #ffd6c2; }
+.res[data-res='immune'] { background: #1b1b1f; color: #9a9aa6; box-shadow: inset 0 0 0 1px #3a3a44; }
+.res[data-res='n/a'], .res[data-res=''] { color: var(--sl-color-gray-4); }
+.legend { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.weak-table td, .weak-table th { text-align: center; }
+.weak-table td.weak-table__name { text-align: left; font-family: var(--tw-head); letter-spacing: 0.05em; text-transform: uppercase; color: var(--tw-ember); }
+.weak-table th { font-size: 0.8rem; }
+.tooltip-card__set { margin-top: 0.6rem; padding-top: 0.5rem; border-top: 1px solid rgb(230 194 127 / 0.2); font-size: var(--sl-text-xs); color: #9fd4ff; }
+.tooltip-card__set b { color: var(--tw-bronze-hi); font-family: var(--tw-head); letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.85rem; }
+.tooltip-card__set ul { margin: 0.25rem 0 0; padding-left: 1rem; }
+.tooltip-card__set li { margin: 0 !important; }
+.food--health dd { color: #ff6b5e; } .food--stamina dd { color: #f2d64b; } .food--eitr dd { color: #b98cff; }
+.drops .glyph { vertical-align: -2px; }

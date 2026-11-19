@@ -1,0 +1,21 @@
+name: Magus fabric bundle
+prefab: FabricBundle_Mountain_TW
+mod: wizardry
+kind: item
+group: Fabric Materials
+recipe:
+  yields: 1
+  materials:
+    - White Yarn
+    - Blue Yarn
+  alternative:
+    - Wolf Pelt
+    - Fenris Hair Bundle
+    - Moder Shard
+  station: Robe weaving loom
+source:
+  sheet: Wizardry
+  row: 44
+  col: 5
+description: ''
+notes: ''

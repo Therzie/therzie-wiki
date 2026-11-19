@@ -1,0 +1,35 @@
+biome: Mountains
+name: Grizzly Bear
+prefab: GrizzlyBear_TW
+mod: monstrum
+kind: creature
+group: Other
+creature:
+  health: 250
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 15%
+    - when: Night
+      chance: 19%
+drops:
+  - from: Grizzly Pelt
+    chance: 90%
+  - from: Raw Bear Steak
+    chance: 70%
+  - from: Grizzly Bear Trophy
+    chance: 20%
+source:
+  sheet: Monstrum
+  row: 47
+  col: 9
+description: ''
+notes: ''

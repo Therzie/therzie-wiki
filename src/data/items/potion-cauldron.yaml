@@ -1,0 +1,23 @@
+name: Potion cauldron
+prefab: PotionCauldron_TW
+mod: wizardry
+kind: piece
+group: Stations & Extensions
+info:
+  - Recipes
+  - Potions
+  - Upgrades Wizard Table Lvl 4
+  - Upgrades Arcane Anvil Lvl 3
+recipe:
+  yields: 1
+  materials:
+    - Iron
+    - Bronze
+    - Guck
+    - Bonemass Shard
+source:
+  sheet: Wizardry
+  row: 5
+  col: 6
+description: ''
+notes: ''

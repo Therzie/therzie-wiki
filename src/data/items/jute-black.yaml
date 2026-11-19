@@ -8,11 +8,9 @@ drops:
     chance: 25%
   - from: Dvergr Mages
     chance: 35%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 28
+  col: 9
 description: ''
 notes: ''

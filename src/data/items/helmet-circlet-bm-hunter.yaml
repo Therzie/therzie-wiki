@@ -1,0 +1,24 @@
+name: 'Enchanted blackmetal circlet: Hunter'
+prefab: HelmetCircletBM_Hunter_TW
+mod: wizardry
+kind: armor
+group: Circlets Blackmetal
+effect: Bows +9 · Crossbows +9
+stats:
+  armor: 12+
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal Circlet
+    - Yagluth Shard
+    - Lox Trophy
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Tar or Emerald
+source:
+  sheet: Wizardry
+  row: 241
+  col: 6
+description: ''
+notes: ''

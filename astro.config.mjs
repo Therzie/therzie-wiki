@@ -42,6 +42,26 @@ export default defineConfig({
             { label: 'Eitr Infusion', link: '/warfare/#eitr-infusion' },
           ],
         },
+        {
+          label: 'Armory',
+          items: [{ label: 'Armor sets', link: '/armory/' }],
+        },
+        {
+          label: 'Monstrum',
+          items: [
+            { label: 'Creatures', link: '/monstrum/' },
+            { label: 'Weaknesses', link: '/monstrum/weaknesses/' },
+            { label: 'Food', link: '/monstrum/food/' },
+          ],
+        },
+        {
+          label: 'Wizardry',
+          items: [
+            { label: 'Gear and items', link: '/wizardry/' },
+            { label: 'Creatures', link: '/wizardry/creatures/' },
+            { label: 'Food and potions', link: '/wizardry/food/' },
+          ],
+        },
         { label: 'Materials', link: '/materials/' },
         { label: 'To check', link: '/checks/' },
         { label: 'About & contributing', slug: 'about' },

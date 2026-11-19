@@ -1,0 +1,27 @@
+name: Warrior's Legguards
+mod: armory
+kind: armor
+group: Warrior
+set:
+  name: Warrior
+  effects:
+    - 'Increase damage with Clubs: 2%'
+    - 'Clubs Skill: +4'
+stats:
+  armor: 14
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Iron Greaves
+    - Iron
+    - Ooze
+    - Entrails
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 238
+  col: 5
+description: ''
+notes: ''

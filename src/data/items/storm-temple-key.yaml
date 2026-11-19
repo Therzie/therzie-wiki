@@ -16,5 +16,6 @@ recipe:
 source:
   sheet: Items
   row: 89
+  col: 5
 description: ''
 notes: ''

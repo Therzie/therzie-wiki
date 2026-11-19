@@ -1,0 +1,27 @@
+name: Magus robe
+prefab: ArmorSpellSlingerChest_Mountain_TW
+mod: wizardry
+kind: armor
+group: Armor Mountain Magus
+set:
+  name: Armor Mountain Magus
+  effects:
+    - 'Elemental Magic: +7'
+    - 'Blood Magic: +7'
+stats:
+  armor: 10
+  eitr_regen: 24%
+recipe:
+  yields: 1
+  materials:
+    - Magus Fabric Bundle
+    - Silver
+    - Moder Shard
+    - Fenris Hair
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 147
+  col: 4
+description: ''
+notes: ''

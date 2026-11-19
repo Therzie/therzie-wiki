@@ -1,0 +1,22 @@
+name: Witcheye soup
+prefab: ShroomSoupBlackForest_TW
+mod: wizardry
+kind: food
+group: Food Black Forest
+food:
+  health: 25
+  stamina: 21
+  eitr: 10
+recipe:
+  yields: 1
+  materials:
+    - Witch Eye
+    - Mushroom
+    - Raw Meat
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 2
+  col: 3
+description: ''
+notes: ''

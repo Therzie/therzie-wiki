@@ -6,11 +6,9 @@ group: Materials
 drops:
   - from: Muspelheim fragment
     chance: 100%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 81
+  col: 3
 description: ''
 notes: ''

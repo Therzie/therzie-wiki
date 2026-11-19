@@ -1,0 +1,22 @@
+name: Magical carapace ring
+prefab: RingMistlands_TW
+mod: wizardry
+kind: armor
+group: Rings
+effect: Health Regen +2% · Blood Magic Skll +5
+recipe:
+  yields: 1
+  materials:
+    - Carapace
+    - Bile Bag
+  station: Arcane anvil
+  level: 4
+  monstrum:
+    - Soft Tissue or Amethyst
+    - Tick Trophy
+source:
+  sheet: Wizardry
+  row: 189
+  col: 7
+description: ''
+notes: ''

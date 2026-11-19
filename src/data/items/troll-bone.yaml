@@ -6,11 +6,9 @@ group: Materials
 drops:
   - from: Troll
     chance: 85%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 20
+  col: 11
 description: ''
 notes: ''

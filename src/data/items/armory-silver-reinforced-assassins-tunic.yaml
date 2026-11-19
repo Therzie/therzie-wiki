@@ -1,0 +1,29 @@
+biome: Mountains
+name: Silver-Reinforced Assassins Tunic
+mod: armory
+kind: armor
+group: Rogue
+tier: Silver
+set:
+  name: Rogue
+  effects:
+    - 'Increase damage with Knives: 3%'
+    - 'Knives Skill: +6'
+stats:
+  armor: 16
+  upgrade: Silver
+recipe:
+  yields: 1
+  materials:
+    - Iron-Reinforced Assassins Tunic
+    - Silver
+    - Red Jute
+    - Wolf Pelt
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 136
+  col: 4
+description: ''
+notes: ''

@@ -1,0 +1,19 @@
+name: Gnarly staff base
+prefab: Staffbase_BlackForest_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+damage:
+  blunt: 17
+recipe:
+  yields: 1
+  materials:
+    - Infused Pine Wood
+    - Surtling Core
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 87
+  col: 3
+description: ''
+notes: ''

@@ -1,0 +1,30 @@
+name: Fenrir Legging
+mod: armory
+kind: armor
+group: Fenrir
+set:
+  name: Fenrir
+  effects:
+    - 'Increase damage with Fists: 3%'
+    - 'Attack Stamina Usage: -3%'
+    - 'Run Stamina Usage: -3%'
+    - 'Fists Skill: +6'
+stats:
+  armor: 16
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Fenris Leggings
+    - Silver
+    - Obsidian
+  upgrade:
+    - Fenris Hair->Wolf Pelt
+checks:
+  - No prefab in the sheet
+source:
+  sheet: Armory
+  row: 360
+  col: 5
+description: ''
+notes: ''

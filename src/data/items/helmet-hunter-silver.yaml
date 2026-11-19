@@ -1,0 +1,30 @@
+biome: Mountains
+name: Frosted leather hunting hood
+prefab: HelmetHunterSilver_TW
+mod: armory
+kind: armor
+group: Hunter
+tier: Silver
+set:
+  name: Hunter
+  effects:
+    - Sneak and Run Stamina -6%
+    - Bows and Crossbow +6 Skill
+    - Pierce Damage +6%
+stats:
+  armor: 15
+  upgrade: Silver
+recipe:
+  yields: 1
+  materials:
+    - Rotten Leather Hunting Hood
+    - Grizzly Bear Pelt
+    - Wolf Fang
+    - Silver
+  station: Armory
+source:
+  sheet: Armory
+  row: 69
+  col: 3
+description: ''
+notes: ''

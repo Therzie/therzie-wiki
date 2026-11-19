@@ -1,0 +1,25 @@
+name: Underworld staff
+prefab: StaffSwamp_TW
+mod: wizardry
+kind: weapon
+group: Staffs
+effect: 'Secondary: Poison AOE'
+info:
+  - 'Upgrades: Wizard Table'
+damage:
+  blunt: 25
+  poison: 60
+stats:
+  eitr: 15
+recipe:
+  yields: 1
+  materials:
+    - Rotting Staff Base
+    - Underworld Core
+  station: Wizard Table
+source:
+  sheet: Wizardry
+  row: 87
+  col: 6
+description: ''
+notes: ''

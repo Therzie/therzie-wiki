@@ -12,11 +12,9 @@ drops:
     chance: 8%
   - from: Seeker Soldier
     chance: 3%
-recipe:
-  yields: 1
-  materials: []
 source:
   sheet: Items
   row: 2
+  col: 9
 description: ''
 notes: ''

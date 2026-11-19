@@ -1,0 +1,24 @@
+name: 'Enchanted iron circlet: Hunter'
+prefab: HelmetCircletIron_Hunter_TW
+mod: wizardry
+kind: armor
+group: Circlets Iron
+effect: Bows +5 · Crossbows +5
+stats:
+  armor: 8+
+recipe:
+  yields: 1
+  materials:
+    - Iron Circlet
+    - Bonemass Shard
+    - Bloodbag
+  station: Arcane anvil
+  level: 3
+  monstrum:
+    - Withered Bone or Onyx
+source:
+  sheet: Wizardry
+  row: 215
+  col: 6
+description: ''
+notes: ''

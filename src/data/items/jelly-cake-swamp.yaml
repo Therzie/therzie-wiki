@@ -1,0 +1,22 @@
+name: Jellymass dessert
+prefab: JellyCakeSwamp_TW
+mod: wizardry
+kind: food
+group: Food Swamp
+food:
+  health: 22
+  stamina: 27
+  eitr: 26
+recipe:
+  yields: 1
+  materials:
+    - Deathcap
+    - Ooze
+    - Honey
+  station: Cauldron
+source:
+  sheet: W.Food
+  row: 14
+  col: 9
+description: ''
+notes: ''

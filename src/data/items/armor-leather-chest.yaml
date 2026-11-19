@@ -1,0 +1,27 @@
+name: Stag leather tunic
+prefab: ArmorLeatherChest_TW
+mod: armory
+kind: armor
+group: Stag
+set:
+  name: Stag
+  effects:
+    - 'Movement Speed: +3%'
+    - 'Run Skill: +10'
+    - Jump +50%, Jump and Run Stamina Usage -5%
+stats:
+  armor: 2
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Leather Tunic
+    - Deer Hide
+    - Leather Scraps Or Fox Pelt
+  station: Workbench
+source:
+  sheet: Armory
+  row: 14
+  col: 4
+description: ''
+notes: ''
