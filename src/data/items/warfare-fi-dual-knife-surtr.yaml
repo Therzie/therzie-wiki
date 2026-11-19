@@ -1,0 +1,23 @@
+name: Surtr Daggers
+prefab: DualKnifeSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: DualWield
+effect: Burst of pierce damage on 6th hit
+damage:
+  slash: 65
+  pierce: 65
+  fire: 5
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Drake Scale
+    - Warbringer Trophy
+source:
+  sheet: Weapons-F&I
+  row: 43
+  col: 8
+description: ''
+notes: ''

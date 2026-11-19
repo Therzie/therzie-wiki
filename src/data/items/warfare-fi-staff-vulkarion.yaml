@@ -1,0 +1,25 @@
+name: Vulkarion's Rage
+prefab: StaffVulkarion_TW
+mod: warfare-fi
+kind: weapon
+group: Magic Weapons
+damage:
+  blunt: 24
+  fire: 28
+stats:
+  eitr: 39
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Surtr Idol
+    - Doomcaller Trophy
+checks:
+  - '"Recipe" heading missing in the sheet'
+source:
+  sheet: Weapons-F&I
+  row: 271
+  col: 5
+description: ''
+notes: ''

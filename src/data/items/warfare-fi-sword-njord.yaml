@@ -1,0 +1,22 @@
+name: Njord Sword
+prefab: SwordNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Swords
+skill: Swords
+damage:
+  slash: 155
+  frost: 5
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Dire Wolf Pelt
+    - Ursa Trophy
+source:
+  sheet: Weapons-F&I
+  row: 146
+  col: 3
+description: ''
+notes: ''

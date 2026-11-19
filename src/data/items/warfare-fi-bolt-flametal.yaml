@@ -1,0 +1,22 @@
+biome: Ashlands
+name: Flametal Bolt
+prefab: BoltFlametal_TW
+mod: warfare-fi
+kind: ammo
+group: CrossBolts
+tier: Flametal
+damage:
+  pierce: 112
+  fire: 4
+recipe:
+  yields: 1
+  materials:
+    - Boreal Wood
+    - Ragnorite
+    - Feathers
+source:
+  sheet: Weapons-F&I
+  row: 182
+  col: 4
+description: ''
+notes: ''

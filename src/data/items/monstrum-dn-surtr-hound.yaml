@@ -1,0 +1,36 @@
+name: Helhound
+prefab: SurtrHound_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth Surtr Creatures (Night-Only)
+creature:
+  health: 670
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: immune
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 0%
+    - when: Night
+      chance: 16%
+drops:
+  - from: Rugged Demon Pelt
+    chance: 100%
+  - from: Demonic Soulstone
+    chance: 40%
+  - from: Ragnorite Spiked Collar
+    chance: 8%
+  - from: Helhound Trophy
+    chance: 20%
+source:
+  sheet: M.DeepNorth
+  row: 96
+  col: 13
+description: ''
+notes: ''

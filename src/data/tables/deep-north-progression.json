@@ -1,0 +1,31 @@
+{
+ "source": "DN-Progression",
+ "rows": [
+  {
+   "tool": "Flametal enchanted pickaxe",
+   "mines": [
+    "Lokvyr deposit",
+    "Jotunnheim fragment",
+    "Glacier stalag",
+    "Muspelheim fragment",
+    "Black Ice",
+    "DeepNorth Boulders"
+   ]
+  },
+  {
+   "tool": "Lokvyr pickaxe",
+   "mines": [
+    "Titan remnant",
+    "Pure Ragnorite",
+    "Pure Tyranium"
+   ]
+  },
+  {
+   "tool": "Flametal axe",
+   "mines": [
+    "Boreal tree",
+    "Boreal pine tree"
+   ]
+  }
+ ]
+}

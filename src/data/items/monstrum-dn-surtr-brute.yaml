@@ -1,0 +1,38 @@
+name: Enforcer
+prefab: SurtrBrute_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth Surtr Creatures (Night-Only)
+creature:
+  health: 1700
+  resist:
+    blunt: normal
+    slash: resistant
+    pierce: normal
+    fire: immune
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 0%
+    - when: Night
+      chance: 14%
+drops:
+  - from: Demon Horn
+    chance: 85%
+  - from: Demonic Soulstone
+    chance: 50%
+  - from: Enforcer Trophy
+    chance: 20%
+  - from: Surtr Idol
+    chance: 30%
+  - from: Muspelheim Fragment
+    chance: 14%
+source:
+  sheet: M.DeepNorth
+  row: 96
+  col: 15
+description: ''
+notes: ''

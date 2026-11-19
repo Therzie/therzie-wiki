@@ -49,6 +49,9 @@ Icons come from the mods themselves, so they always match the prefab:
 2. Run **Tools > Therzie Wiki > Export item icons**, pick the folder with the item prefabs and then
    the `public/icons` folder of this repository.
 3. Commit the new or changed PNG files. Every item with a `<Prefab>.png` shows its icon automatically.
+4. For the game's own materials (Wood, Fine Wood, trophies, ...) run **Tools > Therzie Wiki > Export vanilla
+   material icons** on the folder with the vanilla prefabs and save to `public/icons/vanilla`. The crafting slots
+   find them by name ("Fine Wood" → `finewood.png`, "Deer Trophy" → `trophydeer.png`).
 
 ## Working with Claude (optional)
 

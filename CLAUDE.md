@@ -28,5 +28,6 @@ since the beginning. You assist; editors decide.
   takes the tier from the prefab name (`<Class><Tier>_TW`) and the biome from the tier.
 - `public/admin/config.yml`: the form editor.
 - `public/icons/<Prefab>.png`: item icons, exported from the Unity project with `tools/unity/WikiIconExport.cs`
-  (a placeholder is shown when missing).
+  (a placeholder is shown when missing); vanilla material icons in `public/icons/vanilla/<prefab lower case>.png`.
+- Legacy pre 1.0 mods (Warfare Fire & Ice, Monstrum Deep North) have item pages prefixed with the mod id.
 - `public/readme/warfare/`: header art and raven portraits from the Warfare README.

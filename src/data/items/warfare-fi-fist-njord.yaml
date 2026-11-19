@@ -1,0 +1,23 @@
+name: Njord fists
+prefab: FistNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Claws
+skill: Fists
+effect: on 6th hit lowers blunt resistance for 2 hits
+damage:
+  blunt: 150
+  frost: 5
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Icestalker Scale
+    - Bladefist Trophy
+source:
+  sheet: Weapons-F&I
+  row: 233
+  col: 3
+description: ''
+notes: ''

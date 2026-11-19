@@ -1,0 +1,38 @@
+name: Warbringer
+prefab: SurtrWarbringer_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth Surtr Creatures (Night-Only)
+creature:
+  health: 1600
+  resist:
+    blunt: resistant
+    slash: normal
+    pierce: normal
+    fire: immune
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 0%
+    - when: Night
+      chance: 12%
+drops:
+  - from: Demon Horn
+    chance: 85%
+  - from: Demonic Soulstone
+    chance: 50%
+  - from: Warbringer Trophy
+    chance: 20%
+  - from: Helcloth Leather
+    chance: 50%
+  - from: Muspelheim Fragment
+    chance: 12%
+source:
+  sheet: M.DeepNorth
+  row: 96
+  col: 5
+description: ''
+notes: ''

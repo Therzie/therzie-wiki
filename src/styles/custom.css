@@ -521,3 +521,5 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 .legacy__lead { color: var(--sl-color-gray-3); font-size: var(--sl-text-sm); margin: 0.4rem 0 1rem; }
 .mod--legacy { opacity: 0.8; filter: saturate(0.7); }
 .mod--legacy:hover { opacity: 1; filter: none; border-color: var(--tw-bronze); }
+
+.slot__box img { width: 82%; height: 82%; object-fit: contain; filter: drop-shadow(1px 2px 1px rgb(0 0 0 / 0.7)); }

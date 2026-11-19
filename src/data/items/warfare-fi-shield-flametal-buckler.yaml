@@ -1,0 +1,26 @@
+biome: Ashlands
+name: Flametal buckler
+prefab: ShieldFlametalBuckler_TW
+mod: warfare-fi
+kind: shield
+group: Bucklers
+tier: Flametal
+effect: Resistant VS Fire
+stats:
+  block_armor: 88
+  block_force: 50
+  parry_bonus: 2.5x
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Drake Scale
+    - Surtr Idol
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 316
+  col: 4
+description: ''
+notes: ''

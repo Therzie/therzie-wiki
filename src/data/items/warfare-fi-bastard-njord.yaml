@@ -1,0 +1,23 @@
+name: Njord bastard sword
+prefab: BastardNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Bastard Swords
+skill: Swords
+effect: 4th hit lowers targets slash resistance
+damage:
+  slash: 190
+  frost: 8
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Jotunn Tooth
+    - Juggernaut Trophy
+source:
+  sheet: Weapons-F&I
+  row: 133
+  col: 3
+description: ''
+notes: ''

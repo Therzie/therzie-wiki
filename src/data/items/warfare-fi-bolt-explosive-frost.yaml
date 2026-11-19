@@ -1,0 +1,20 @@
+name: Explosive Frost Bolt
+prefab: BoltExplosiveFrost_TW
+mod: warfare-fi
+kind: ammo
+group: CrossBolts
+effect: Frost damage on impact
+damage:
+  pierce: 82
+recipe:
+  yields: 1
+  materials:
+    - Boreal Wood
+    - Black Ice
+    - 'Magic Rune: Rage'
+source:
+  sheet: Weapons-F&I
+  row: 182
+  col: 6
+description: ''
+notes: ''

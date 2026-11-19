@@ -1,0 +1,23 @@
+name: Demonic cape
+prefab: CapeDemon_TW
+mod: warfare-fi
+kind: armor
+group: Capes
+effect: 'Resistant VS Fire · Wind Run · Dodge Stamina Usage: -15%'
+stats:
+  armor: 1
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - Burning Fang
+    - Helhide Bundle
+    - 'Magic Rune: Destruction'
+  station: Ymir Forge
+source:
+  sheet: Armor-F&I
+  row: 2
+  col: 3
+description: ''
+notes: ''

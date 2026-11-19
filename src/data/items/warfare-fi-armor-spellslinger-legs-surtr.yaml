@@ -1,0 +1,22 @@
+name: Surtr's striders
+prefab: ArmorSpellslingerLegs_Surtr_TW
+mod: warfare-fi
+kind: armor
+group: Capes
+stats:
+  eitr_regen: 55%
+  armor: 31
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - Helhide Bundle
+    - 'Magic Rune: Destruction'
+    - Daggerfang Scalehide
+  station: Galdr Table
+source:
+  sheet: Armor-F&I
+  row: 43
+  col: 5
+description: ''
+notes: ''

@@ -1,0 +1,23 @@
+name: Surtr Battlehammer
+prefab: BattlehammerSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Battlehammer
+skill: Clubs
+effect: 4th hit on enemy target now lowers their blunt resistance for the next attack
+damage:
+  blunt: 192
+  fire: 8
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Pine Wood
+    - Daggerfang Trophy
+source:
+  sheet: Weapons-F&I
+  row: 107
+  col: 4
+description: ''
+notes: ''

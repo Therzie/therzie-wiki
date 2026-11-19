@@ -1,0 +1,22 @@
+name: Njord crossbow
+prefab: CrossbowNjord_TW
+mod: warfare-fi
+kind: weapon
+group: CrossBows
+damage:
+  pierce: 240
+  frost: 8
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Jotunn Eyeball
+    - Primalist Trophy
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 220
+  col: 3
+description: ''
+notes: ''

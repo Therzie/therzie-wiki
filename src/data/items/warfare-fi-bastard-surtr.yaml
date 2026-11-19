@@ -1,0 +1,23 @@
+name: Surtr bastard sword
+prefab: BastardSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Bastard Swords
+skill: Swords
+effect: 4th hit lowers targets slash resistance
+damage:
+  slash: 190
+  fire: 8
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Demon Horn
+    - Legionnaire T Rophy
+source:
+  sheet: Weapons-F&I
+  row: 133
+  col: 4
+description: ''
+notes: ''

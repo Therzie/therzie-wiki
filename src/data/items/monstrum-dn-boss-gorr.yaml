@@ -1,0 +1,35 @@
+name: Chieftain Gorr
+prefab: BossGorr_TW
+mod: monstrum-dn
+kind: creature
+group: Bosses DeepNorth
+creature:
+  health: 32500
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: immune
+  summon:
+    - Berserker Trophy x2
+    - Open Door
+    - Jotarr relic x1
+drops:
+  - from: Gorr the Dragonslayer trophy
+    chance: 100%
+  - from: Dragonslayer
+    chance: 8%
+  - from: Ymir Idol 1-3x
+    chance: 100%
+  - from: Magic Rune
+    chance: Wrath 1-3x
+source:
+  sheet: M.DeepNorth
+  row: 2
+  col: 7
+description: ''
+notes: ''

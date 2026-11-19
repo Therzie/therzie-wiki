@@ -1,0 +1,22 @@
+name: Krom axes
+prefab: DualAxeKrom_TW
+mod: warfare-fi
+kind: weapon
+group: DualWield
+effect: 4th hit lowers slash resistance
+damage:
+  slash: 165
+  lightning: 20
+recipe:
+  yields: 1
+  materials:
+    - Thoradus
+    - 'Magic Rune: Wrath'
+    - Boreal Wood
+    - Jotarr Berserker Trophy
+source:
+  sheet: Weapons-F&I
+  row: 43
+  col: 4
+description: ''
+notes: ''

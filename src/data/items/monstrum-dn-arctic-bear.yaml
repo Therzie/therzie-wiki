@@ -1,0 +1,33 @@
+name: Ursa
+prefab: ArcticBear_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 1200
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: resistant
+  spawn:
+    - when: Day
+      chance: 12%
+    - when: Night
+drops:
+  - from: Ursa Pelt
+    chance: 85%
+  - from: Ursa Steak
+    chance: 100%
+  - from: Ursa Trophy
+    chance: 20%
+source:
+  sheet: M.DeepNorth
+  row: 28
+  col: 3
+description: ''
+notes: ''

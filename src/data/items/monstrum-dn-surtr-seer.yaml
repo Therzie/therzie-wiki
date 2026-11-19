@@ -1,0 +1,38 @@
+name: Doomcaller
+prefab: SurtrSeer_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth Surtr Creatures (Night-Only)
+creature:
+  health: 1100
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: immune
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 0%
+    - when: Night
+      chance: 12%
+drops:
+  - from: Demonic Soulstone
+    chance: 60%
+  - from: Helcloth Leather
+    chance: 85%
+  - from: Doomcaller Trophy
+    chance: 20%
+  - from: Surtr Idol
+    chance: 15%
+  - from: Muspelheim Fragment
+    chance: 12%
+source:
+  sheet: M.DeepNorth
+  row: 96
+  col: 3
+description: ''
+notes: ''

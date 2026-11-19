@@ -1,0 +1,22 @@
+name: Njord Throwing Axe
+prefab: ThrowAxeNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Throwing Axes
+skill: Throwing
+effect: 4th hit on enemy target now lowers their slash resistance for the next attack
+damage:
+  slash: 88
+  frost: 5
+recipe:
+  yields: 10
+  materials:
+    - Boreal Wood
+    - Tyranium
+    - 'Magic Rune: Rage'
+source:
+  sheet: Weapons-F&I
+  row: 18
+  col: 3
+description: ''
+notes: ''

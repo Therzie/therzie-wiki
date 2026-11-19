@@ -1,0 +1,23 @@
+name: Surtr Battleaxe
+prefab: BattleaxeSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Battleaxe
+skill: Axes
+effect: Lowers slash resistance on 4th hit
+damage:
+  slash: 194
+  fire: 8
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Pine Wood
+    - Enforcer Trophy
+source:
+  sheet: Weapons-F&I
+  row: 30
+  col: 4
+description: ''
+notes: ''

@@ -1,0 +1,32 @@
+name: Gut-gnasher
+prefab: SurtrImp_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth Surtr Creatures (Night-Only)
+creature:
+  health: 500
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: immune
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 0%
+    - when: Night
+      chance: 14%
+drops:
+  - from: Demon Horn
+    chance: 35%
+  - from: Gut-gnasher Trophy
+    chance: 16%
+source:
+  sheet: M.DeepNorth
+  row: 96
+  col: 11
+description: ''
+notes: ''

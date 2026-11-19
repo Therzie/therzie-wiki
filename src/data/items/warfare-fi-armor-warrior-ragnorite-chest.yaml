@@ -1,0 +1,21 @@
+name: Baldr's courage
+prefab: ArmorWarriorRagnoriteChest_TW
+mod: warfare-fi
+kind: armor
+group: Capes
+stats:
+  armor: 44
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - Helhide Bundle
+    - 'Magic Rune: Destruction'
+    - Drake Scale
+  station: Ymir Forge
+source:
+  sheet: Armor-F&I
+  row: 57
+  col: 4
+description: ''
+notes: ''

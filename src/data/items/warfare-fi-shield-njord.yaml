@@ -1,0 +1,24 @@
+name: Njord aegis
+prefab: ShieldNjord_TW
+mod: warfare-fi
+kind: shield
+group: Round Shields
+effect: Resistant VS Frost
+stats:
+  block_armor: 132
+  block_force: 70
+  parry_bonus: 1.5x
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - Norther Fur Bundle
+    - Boreal Wood
+    - Jotunn Eyeball
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 330
+  col: 3
+description: ''
+notes: ''

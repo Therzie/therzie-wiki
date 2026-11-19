@@ -1,0 +1,23 @@
+name: Njord tribe defender
+prefab: ShieldNjordTower_TW
+mod: warfare-fi
+kind: shield
+group: Tower Shields
+effect: Resistant VS Frost
+stats:
+  block_armor: 152
+  block_force: 150
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - Northern Fur Bundle
+    - Icestalker Scale
+    - Ymir Idol
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 344
+  col: 3
+description: ''
+notes: ''

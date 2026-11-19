@@ -1,0 +1,21 @@
+name: Void-caller
+prefab: StaffImpDemon_TW
+mod: warfare-fi
+kind: weapon
+group: Magic Weapons
+effect: 'Eitr:120 / Use Health: 50%'
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Surtr Idol
+    - Gut-Gnasher Trophy
+checks:
+  - No damage values in the sheet
+source:
+  sheet: Weapons-F&I
+  row: 271
+  col: 4
+description: ''
+notes: ''

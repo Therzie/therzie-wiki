@@ -1,0 +1,22 @@
+name: Njord Atgeir
+prefab: AtgeirNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Atgeir & Lances
+skill: Polearm
+damage:
+  pierce: 165
+  frost: 8
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Boreal Pine Wood
+    - Pridetusk Trophy
+source:
+  sheet: Weapons-F&I
+  row: 57
+  col: 3
+description: ''
+notes: ''

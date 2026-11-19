@@ -1,0 +1,21 @@
+name: Surtr Spear
+prefab: SpearSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Spears
+damage:
+  pierce: 155
+  fire: 5
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Wood
+    - Helhound Trophy
+source:
+  sheet: Weapons-F&I
+  row: 246
+  col: 4
+description: ''
+notes: ''

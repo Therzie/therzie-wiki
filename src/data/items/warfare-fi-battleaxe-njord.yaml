@@ -1,0 +1,23 @@
+name: Njord Battleaxe
+prefab: BattleaxeNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Battleaxe
+skill: Axes
+effect: Lowers slash resistance on 4th hit
+damage:
+  slash: 194
+  frost: 8
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Boreal Pine Wood
+    - Jotarr Berserker Trophy
+source:
+  sheet: Weapons-F&I
+  row: 30
+  col: 3
+description: ''
+notes: ''

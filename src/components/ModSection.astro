@@ -2,12 +2,16 @@
 // One section page of a mod (Armory, Monstrum creatures, Wizardry food, ...), driven by SECTIONS in lib/wiki.
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import ItemBrowser from './ItemBrowser.astro';
+import { Aside } from '@astrojs/starlight/components';
 import { getItems, SECTIONS } from '../lib/wiki';
 interface Props { path: string }
 const section = SECTIONS.find((s) => s.path === Astro.props.path)!;
 const items = (await getItems(section.mod)).filter((i) => i.data.source && section.sheets.includes(i.data.source.sheet));
 ---
 <StarlightPage frontmatter={{ title: section.title, description: section.lead, tableOfContents: false }}>
+  {section.legacy && (
+    <Aside type="note" title="Legacy pre 1.0 Wiki">This mod is from before Valheim 1.0. The values are kept as they were documented and may not match the current game.</Aside>
+  )}
   <p class="lead">{section.lead}</p>
   <slot />
   <ItemBrowser items={items} matrix={section.matrix} />

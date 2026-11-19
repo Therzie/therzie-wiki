@@ -1,0 +1,23 @@
+name: Surtr wristblades
+prefab: FistSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Claws
+skill: Fists
+effect: Secondary attack causes extra fire damage
+damage:
+  slash: 150
+  fire: 5
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Burning Fang
+    - Doomcaller Trophy
+source:
+  sheet: Weapons-F&I
+  row: 233
+  col: 4
+description: ''
+notes: ''

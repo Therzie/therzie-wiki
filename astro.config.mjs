@@ -62,6 +62,15 @@ export default defineConfig({
             { label: 'Food and potions', link: '/wizardry/food/' },
           ],
         },
+        {
+          label: 'Legacy pre 1.0 Wiki',
+          collapsed: true,
+          items: [
+            { label: 'Fire & Ice weapons', link: '/warfare-fi/' },
+            { label: 'Fire & Ice armor', link: '/warfare-fi/armor/' },
+            { label: 'Deep North creatures', link: '/monstrum-dn/' },
+          ],
+        },
         { label: 'Materials', link: '/materials/' },
         { label: 'To check', link: '/checks/' },
         { label: 'About & contributing', slug: 'about' },

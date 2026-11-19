@@ -1,0 +1,23 @@
+name: Thirst for knowledge
+prefab: RingLoki_TW
+mod: warfare-fi
+kind: weapon
+group: Extra
+stats:
+  eitr_regen: +35%
+recipe:
+  yields: 1
+  materials:
+    - Thoradus
+    - Surtr Idol
+    - 'Magic Rune: Wrath'
+    - Herald Of The Storm Trophy
+  station: Ymir Forge
+checks:
+  - No damage values in the sheet
+source:
+  sheet: Weapons-F&I
+  row: 295
+  col: 4
+description: ''
+notes: ''

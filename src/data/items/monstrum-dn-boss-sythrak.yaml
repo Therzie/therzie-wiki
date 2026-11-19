@@ -1,0 +1,36 @@
+name: 'Boss: Sythrak'
+prefab: BossSythrak_TW
+mod: monstrum-dn
+kind: creature
+group: Bosses DeepNorth
+creature:
+  health: 32500
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: immune
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Niddhog spawn trophy
+    - when: Open Door
+    - when: Destroyer's idol
+      chance: '1'
+drops:
+  - from: Drake Scale 1-4x
+    chance: 100%
+  - from: Topaz
+    chance: 100%
+  - from: Magic Rune
+    chance: Destruction 1-3x
+  - from: Sythrak trophy
+    chance: 100%
+source:
+  sheet: M.DeepNorth
+  row: 2
+  col: 5
+description: ''
+notes: ''

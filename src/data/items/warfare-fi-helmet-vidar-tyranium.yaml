@@ -1,0 +1,22 @@
+name: Vidar's crown
+prefab: HelmetVidarTyranium_TW
+mod: warfare-fi
+kind: armor
+group: Capes
+stats:
+  armor: 44
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - Norther Fur Bundle
+    - 'Magic Rune: Rage'
+    - Jotunn Eye
+  station: Ymir Forge
+source:
+  sheet: Armor-F&I
+  row: 13
+  col: 3
+description: ''
+notes: ''

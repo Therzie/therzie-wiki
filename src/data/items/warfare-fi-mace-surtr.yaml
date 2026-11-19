@@ -1,0 +1,22 @@
+name: Surtr Hammer
+prefab: MaceSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Maces
+skill: Clubs
+damage:
+  blunt: 155
+  fire: 5
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Wood
+    - Daggerfang Trophy
+source:
+  sheet: Weapons-F&I
+  row: 69
+  col: 4
+description: ''
+notes: ''

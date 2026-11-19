@@ -1,0 +1,38 @@
+name: Primalist
+prefab: JotunnShaman_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 1100
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: immune
+  spawn:
+    - when: Day
+      chance: 12%
+    - when: Night
+      chance: 0%
+drops:
+  - from: Jotunn Tooth
+    chance: 85%
+  - from: Jotunn Eyeball
+    chance: 35%
+  - from: Primalist trophy
+    chance: 20%
+  - from: Ymir Idol
+    chance: 15%
+  - from: Tyranium Idol Fragment
+    chance: 12%
+source:
+  sheet: M.DeepNorth
+  row: 50
+  col: 9
+description: ''
+notes: ''

@@ -1,0 +1,23 @@
+name: Surtr Greatbow
+prefab: GreatbowSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: GreatBows
+effect: 'Piercing: Deal extra damage to your foes on 4th hit'
+damage:
+  pierce: 130
+  fire: 10
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Pine Wood
+    - Niddhog Spawn Trophy
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 206
+  col: 4
+description: ''
+notes: ''

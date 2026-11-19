@@ -1,0 +1,22 @@
+name: Njord Axe
+prefab: AxeNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Axes
+skill: Axes
+damage:
+  slash: 160
+  frost: 5
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Boreal Wood
+    - Dire Wolf Trophy
+source:
+  sheet: Weapons-F&I
+  row: 6
+  col: 3
+description: ''
+notes: ''

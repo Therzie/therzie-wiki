@@ -1,0 +1,31 @@
+name: Fire drake
+prefab: SurtrDrake_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth Surtr Creatures (Night-Only)
+creature:
+  health: 780
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: immune
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 0%
+    - when: Night
+      chance: 12%
+    - when: Niddhog spawn trophy
+drops:
+  - from: Drake Scale
+    chance: 100%
+source:
+  sheet: M.DeepNorth
+  row: 119
+  col: 3
+description: ''
+notes: ''

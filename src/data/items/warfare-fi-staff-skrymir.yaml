@@ -1,0 +1,23 @@
+name: Skrymir's wrath
+prefab: StaffSkrymir_TW
+mod: warfare-fi
+kind: weapon
+group: Magic Weapons
+damage:
+  pierce: 66
+  frost: 150
+stats:
+  eitr: 30
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Jotunn Eyeball
+    - Primalist Trophy
+source:
+  sheet: Weapons-F&I
+  row: 271
+  col: 3
+description: ''
+notes: ''

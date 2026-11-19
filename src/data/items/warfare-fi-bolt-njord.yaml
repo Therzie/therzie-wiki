@@ -1,0 +1,20 @@
+name: Njord bolt
+prefab: BoltNjord_TW
+mod: warfare-fi
+kind: ammo
+group: CrossBolts
+damage:
+  pierce: 112
+  frost: 4
+recipe:
+  yields: 1
+  materials:
+    - Boreal Wood
+    - Tyranium
+    - Feathers
+source:
+  sheet: Weapons-F&I
+  row: 182
+  col: 3
+description: ''
+notes: ''

@@ -1,0 +1,22 @@
+name: Njord Mace
+prefab: MaceNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Maces
+skill: Clubs
+damage:
+  blunt: 155
+  frost: 5
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Boreal Wood
+    - Icestalker Trophy
+source:
+  sheet: Weapons-F&I
+  row: 69
+  col: 3
+description: ''
+notes: ''

@@ -1,0 +1,23 @@
+name: Njord war pike
+prefab: WarpikeNjord_TW
+mod: warfare-fi
+kind: weapon
+group: WarPikes
+skill: Spears
+effect: 4th hit lowers targets pierce resistance
+damage:
+  pierce: 158
+  frost: 5
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Boreal Pine Wood
+    - Jotarr Berserker Trophy
+source:
+  sheet: Weapons-F&I
+  row: 258
+  col: 3
+description: ''
+notes: ''

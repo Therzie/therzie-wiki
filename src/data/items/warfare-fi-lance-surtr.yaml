@@ -1,0 +1,22 @@
+name: Surtr lance
+prefab: LanceSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Atgeir & Lances
+skill: Polearm
+damage:
+  pierce: 192
+  fire: 8
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Pine Wood
+    - Legionnaire Trophy
+source:
+  sheet: Weapons-F&I
+  row: 57
+  col: 6
+description: ''
+notes: ''

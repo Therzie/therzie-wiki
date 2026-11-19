@@ -1,0 +1,22 @@
+name: Surtr Axe
+prefab: AxeSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Axes
+skill: Axes
+damage:
+  slash: 160
+  fire: 5
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Wood
+    - Helhound Trophy
+source:
+  sheet: Weapons-F&I
+  row: 6
+  col: 4
+description: ''
+notes: ''

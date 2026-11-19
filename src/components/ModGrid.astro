@@ -17,13 +17,13 @@ const legacy = MODS.filter((m) => m.legacy);
 {legacy.length > 0 && (
   <section class="legacy not-content">
     <h2 class="legacy__title">Legacy pre 1.0 Wiki</h2>
-    <p class="legacy__lead">From before Valheim 1.0. These pages are still in the original spreadsheet.</p>
+    <p class="legacy__lead">From before Valheim 1.0, kept as documented in the original spreadsheet.</p>
     <div class="mod-grid">
       {legacy.map((m) => (
-        <a class="mod mod--legacy" href={m.legacy}>
+        <a class="mod mod--legacy" href={url(m.legacy!)}>
           <span class="mod__name">{m.name}</span>
           <span class="mod__blurb">{m.blurb}</span>
-          <span class="mod__count">Open in the spreadsheet ↗</span>
+          <span class="mod__count">{items.filter((i) => i.data.mod === m.id).length} items · legacy</span>
         </a>
       ))}
     </div>

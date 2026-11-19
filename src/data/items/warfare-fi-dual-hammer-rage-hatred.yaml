@@ -1,0 +1,22 @@
+name: Rage and Hatred
+prefab: DualHammerRageHatred_TW
+mod: warfare-fi
+kind: weapon
+group: DualWield
+effect: 5th hit restores % of stamina
+damage:
+  blunt: 160
+  fire: 20
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Muspelheim Crystal
+    - Legionnaire Trophy
+source:
+  sheet: Weapons-F&I
+  row: 43
+  col: 6
+description: ''
+notes: ''

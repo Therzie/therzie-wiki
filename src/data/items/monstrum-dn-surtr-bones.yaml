@@ -1,0 +1,29 @@
+name: Volatile bones
+prefab: SurtrBones_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth Surtr Creatures (Night-Only)
+creature:
+  health: 300
+  resist:
+    blunt: weak
+    slash: normal
+    pierce: resistant
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: normal
+    frost: weak
+  spawn:
+    - when: Day
+      chance: 0%
+    - when: Night
+      chance: 0%
+drops:
+  - from: None, Boss Summon
+source:
+  sheet: M.DeepNorth
+  row: 119
+  col: 5
+description: ''
+notes: ''

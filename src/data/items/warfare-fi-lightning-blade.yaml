@@ -1,0 +1,23 @@
+name: Lightning blade
+prefab: LightningBlade_TW
+mod: warfare-fi
+kind: weapon
+group: Blades
+skill: Swords
+effect: Enemy targets below 25% take 15-20% extra damage
+damage:
+  slash: 180
+  lightning: 25
+recipe:
+  yields: 1
+  materials:
+    - Thoradus
+    - 'Magic Rune: Wrath'
+    - Fenrir Artifact
+    - Stormbringer Trophy
+source:
+  sheet: Weapons-F&I
+  row: 158
+  col: 5
+description: ''
+notes: ''

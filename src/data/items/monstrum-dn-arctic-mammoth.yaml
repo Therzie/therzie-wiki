@@ -1,0 +1,35 @@
+name: Pridetusk
+prefab: ArcticMammoth_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 2000
+  resist:
+    blunt: resistant
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: immune
+  spawn:
+    - when: Day
+      chance: 10%
+    - when: Night
+drops:
+  - from: Pridetusk Pelt 1-2x
+    chance: 85%
+  - from: Pridetusk Meat
+    chance: 100%
+  - from: Broken Mammoth Tusk
+    chance: 85%
+  - from: Pridetusk Trophy
+    chance: 20%
+source:
+  sheet: M.DeepNorth
+  row: 28
+  col: 7
+description: ''
+notes: ''

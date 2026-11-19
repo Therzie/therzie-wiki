@@ -1,0 +1,23 @@
+name: Frost Disciple
+prefab: FrostFenring_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 1480
+  spawn:
+    - when: Day
+    - when: Night
+drops:
+  - from: Jotunnheim Crystal
+    chance: 75%
+  - from: Fenrir Artifact
+    chance: 50%
+  - from: Magic Rune
+    chance: Rage
+source:
+  sheet: M.DeepNorth
+  row: 73
+  col: 3
+description: ''
+notes: ''

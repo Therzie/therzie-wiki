@@ -1,0 +1,35 @@
+name: Lokvyr golem
+prefab: ArcticGolem_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 1800
+  resist:
+    blunt: normal
+    slash: resistant
+    pierce: resistant
+    fire: resistant
+    poison: immune
+    lightning: resistant
+    spirit: immune
+    frost: immune
+  spawn:
+    - when: Day
+      chance: 10%
+    - when: Night
+drops:
+  - from: Glacier Stone 1-5x
+    chance: 100%
+  - from: Lokvyr ore 1-4x
+    chance: 55%
+  - from: Black Ice 1-4x
+    chance: 85%
+  - from: Lokvyr golem trophy
+    chance: 20%
+source:
+  sheet: M.DeepNorth
+  row: 28
+  col: 11
+description: ''
+notes: ''

@@ -1,0 +1,21 @@
+name: Vulkarion's heart
+prefab: ArmorRaiderRagnoriteChest_TW
+mod: warfare-fi
+kind: armor
+group: Capes
+stats:
+  armor: 44
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - Helhide Bundle
+    - 'Magic Rune: Destruction'
+    - Demonic Soulstone
+  station: Ymir Forge
+source:
+  sheet: Armor-F&I
+  row: 72
+  col: 4
+description: ''
+notes: ''

@@ -1,0 +1,21 @@
+name: Njord Spear
+prefab: SpearNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Spears
+damage:
+  pierce: 155
+  frost: 5
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Boreal Wood
+    - Pridetusk Trophy
+source:
+  sheet: Weapons-F&I
+  row: 246
+  col: 3
+description: ''
+notes: ''

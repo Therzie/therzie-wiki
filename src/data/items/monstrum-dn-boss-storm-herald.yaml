@@ -1,0 +1,41 @@
+name: 'Boss: Herald of the Storm'
+prefab: BossStormHerald_TW
+mod: monstrum-dn
+kind: creature
+group: Bosses DeepNorth
+creature:
+  health: 32500
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: resistant
+    poison: normal
+    lightning: immune
+    spirit: immune
+    frost: resistant
+  summon:
+    - Acolyte trophy x2
+    - Open Door
+    - Storm key x1
+drops:
+  - from: Herald of the Storm trophy
+    chance: 100%
+  - from: Fenrir Artifact 1-4x
+    chance: 100%
+  - from: Mysterious Scroll
+    chance: 10%
+  - from: Stormstrike Hammers
+    chance: 6%
+  - from: Stormbringer Staff
+    chance: 10%
+  - from: Sapphire
+    chance: 100%
+  - from: Magic Rune
+    chance: Wrath 1-3x
+source:
+  sheet: M.DeepNorth
+  row: 2
+  col: 3
+description: ''
+notes: ''

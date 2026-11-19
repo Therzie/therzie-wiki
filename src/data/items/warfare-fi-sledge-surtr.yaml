@@ -1,0 +1,23 @@
+name: Surtr Sledgehammer
+prefab: SledgeSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Sledges
+skill: Clubs
+effect: 8% chance to stun
+damage:
+  blunt: 180
+  fire: 8
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Pine Wood
+    - Lokvyr Golem Trophy
+source:
+  sheet: Weapons-F&I
+  row: 94
+  col: 4
+description: ''
+notes: ''

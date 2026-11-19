@@ -1,0 +1,20 @@
+name: Surtr arrows
+prefab: ArrowSurtr_TW
+mod: warfare-fi
+kind: ammo
+group: Arrows
+damage:
+  pierce: 102
+  fire: 4
+recipe:
+  yields: 1
+  materials:
+    - Boreal Wood
+    - Ragnorite
+    - Feathers
+source:
+  sheet: Weapons-F&I
+  row: 171
+  col: 4
+description: ''
+notes: ''

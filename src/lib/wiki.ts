@@ -89,7 +89,7 @@ export const statLabel = (k: string) => STAT_LABEL[k] ?? k.replace(/_/g, ' ').re
 export const isGear = (kind?: string) => ['weapon', 'shield', 'ammo', 'tool'].includes(kind ?? 'weapon');
 
 /** Pages per mod. Every item belongs to the section of its spreadsheet tab. */
-export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string }[] = [
+export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string; legacy?: boolean }[] = [
   { mod: 'warfare', path: '/warfare/weapons/', label: 'Weapons', title: 'Warfare weapons', sheets: ['Weapons'], matrix: 'tiers', lead: '' },
   { mod: 'warfare', path: '/warfare/pieces/', label: 'Pieces', title: 'Warfare pieces', sheets: ['Pieces'], lead: '' },
   { mod: 'warfare', path: '/warfare/items/', label: 'Items', title: 'Warfare items', sheets: ['Items'], lead: '' },
@@ -105,8 +105,29 @@ export const SECTIONS: { mod: string; path: string; label: string; title: string
     lead: 'The mages of every biome and the Darkhorn: drops, health and resistances.' },
   { mod: 'wizardry', path: '/wizardry/food/', label: 'Food and potions', title: 'Wizardry food and potions', sheets: ['W.Food'],
     lead: 'Eitr food, scrolls and potions from Wizardry.' },
+  { mod: 'warfare-fi', path: '/warfare-fi/', label: 'Weapons', title: 'Warfare Fire & Ice weapons', sheets: ['Weapons-F&I'], legacy: true,
+    lead: 'Weapons, shields and ammo from Warfare Fire & Ice, as documented before Valheim 1.0.' },
+  { mod: 'warfare-fi', path: '/warfare-fi/armor/', label: 'Armor', title: 'Warfare Fire & Ice armor', sheets: ['Armor-F&I'], legacy: true,
+    lead: 'Armor sets and capes from Warfare Fire & Ice, as documented before Valheim 1.0.' },
+  { mod: 'monstrum-dn', path: '/monstrum-dn/', label: 'Creatures', title: 'Monstrum Deep North creatures', sheets: ['M.DeepNorth'], legacy: true,
+    lead: 'Bosses and creatures of the Deep North from Monstrum Deep North, as documented before Valheim 1.0.' },
 ];
+export const isLegacy = (mod: string) => SECTIONS.some((s) => s.mod === mod && s.legacy);
 export const sectionOf = (it: Item) =>
   SECTIONS.find((s) => s.mod === it.data.mod && it.data.source && s.sheets.includes(it.data.source.sheet)) ??
   SECTIONS.find((s) => s.mod === it.data.mod);
 export const UPGRADES = ['Base', 'Bronze', 'Iron', 'Silver', 'Blackmetal', 'Carapace', 'Flametal'];
+
+/** Icon for a material name: the vanilla icon (public/icons/vanilla/<prefab>.png) or the icon of a wiki item with that name. */
+const vanillaDir = path.join(process.cwd(), 'public', 'icons', 'vanilla');
+const vanillaIcons = new Set(fs.existsSync(vanillaDir) ? fs.readdirSync(vanillaDir).filter((f) => f.endsWith('.png')) : []);
+export function materialIcon(name: string, itemsByName?: Map<string, Item>): string | undefined {
+  const base = name.replace(/\s*\(level.*\)$/, '');
+  const compact = base.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const candidates = [compact];
+  const trophy = base.match(/^(.*)\s+trophy$/i);
+  if (trophy) candidates.push(`trophy${trophy[1].toLowerCase().replace(/[^a-z0-9]/g, '')}`);
+  for (const c of candidates) if (vanillaIcons.has(`${c}.png`)) return url(`/icons/vanilla/${c}.png`);
+  const item = itemsByName?.get(slugify(base));
+  return item?.data.prefab ? iconFor(item.data.prefab) : undefined;
+}

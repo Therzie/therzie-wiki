@@ -1,0 +1,23 @@
+name: Njord Claymore
+prefab: ClaymoreNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Claymore
+skill: Swords
+effect: Enemy targets below 25% take 15-20% extra damage
+damage:
+  slash: 190
+  frost: 8
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Broken Mammoth Tusk
+    - Bladefist Trophy
+source:
+  sheet: Weapons-F&I
+  row: 120
+  col: 3
+description: ''
+notes: ''

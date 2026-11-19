@@ -1,0 +1,22 @@
+name: Surtr crossbow
+prefab: CrossbowSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: CrossBows
+damage:
+  pierce: 240
+  fire: 8
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Demonic Soulstone
+    - Doomcaller Trophy
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 220
+  col: 4
+description: ''
+notes: ''

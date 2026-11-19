@@ -1,0 +1,36 @@
+name: Acolyte
+prefab: StormCultist_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 1000
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: immune
+    spirit: normal
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 10%
+    - when: Night
+      chance: 10%
+drops:
+  - from: Fenrir Artifact
+    chance: 85%
+  - from: Ymir Idol
+    chance: 10%
+  - from: Surtr Idol
+    chance: 10%
+  - from: Acolyte Trophy
+    chance: 20%
+source:
+  sheet: M.DeepNorth
+  row: 28
+  col: 13
+description: ''
+notes: ''

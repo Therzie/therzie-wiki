@@ -1,0 +1,24 @@
+name: Surtr's visage
+prefab: HelmetSpellslinger_Surtr_TW
+mod: warfare-fi
+kind: armor
+group: Capes
+stats:
+  eitr_regen: 35%
+  elemental_magic: '+16'
+  blood_magic: 16
+  armor: 31
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - Helhide Bundle
+    - 'Magic Rune: Destruction'
+    - Surtr Idle
+  station: Galdr Table
+source:
+  sheet: Armor-F&I
+  row: 43
+  col: 3
+description: ''
+notes: ''

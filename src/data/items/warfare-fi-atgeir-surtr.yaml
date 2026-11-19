@@ -1,0 +1,22 @@
+name: Surtr Atgeir
+prefab: AtgeirSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Atgeir & Lances
+skill: Polearm
+damage:
+  pierce: 165
+  fire: 8
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Pine Wood
+    - Legionnaire Trophy
+source:
+  sheet: Weapons-F&I
+  row: 57
+  col: 4
+description: ''
+notes: ''

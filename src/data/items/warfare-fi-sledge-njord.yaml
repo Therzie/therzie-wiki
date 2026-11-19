@@ -1,0 +1,23 @@
+name: Njord Sledgehammer
+prefab: SledgeNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Sledges
+skill: Clubs
+effect: 8% chance to stun
+damage:
+  blunt: 180
+  frost: 8
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Boreal Pine Wood
+    - Lokvyr Golem Trophy
+source:
+  sheet: Weapons-F&I
+  row: 94
+  col: 3
+description: ''
+notes: ''

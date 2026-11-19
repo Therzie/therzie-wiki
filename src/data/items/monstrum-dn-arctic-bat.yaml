@@ -1,0 +1,21 @@
+name: Ice Bat
+prefab: ArcticBat_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 80
+  spawn:
+    - when: Day
+    - when: Night
+drops:
+  - from: Jotunn Eyeball
+    chance: 22%
+  - from: Bloodbag
+    chance: 100%
+source:
+  sheet: M.DeepNorth
+  row: 50
+  col: 15
+description: ''
+notes: ''

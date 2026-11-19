@@ -1,0 +1,24 @@
+biome: Mountains
+name: Muspelheim crystal battleaxe
+prefab: BattleaxeCrystalMuspelheim_TW
+mod: warfare-fi
+kind: weapon
+group: Battleaxe
+skill: Axes
+tier: Crystal
+damage:
+  slash: 192
+  fire: 8
+recipe:
+  yields: 1
+  materials:
+    - Boreal Pine Wood
+    - 'Magic Rune: Destruction'
+    - Muspelheim Crystal
+    - Drake Scale
+source:
+  sheet: Weapons-F&I
+  row: 30
+  col: 6
+description: ''
+notes: ''

@@ -1,0 +1,22 @@
+name: Valor
+prefab: NecklaceTyr_TW
+mod: warfare-fi
+kind: weapon
+group: Extra
+effect: 'Blocking: +10'
+recipe:
+  yields: 1
+  materials:
+    - Fenrir Artifact
+    - Ymir Idol
+    - Jotunn Eyeball
+    - Siegelord Brutalis Trophy
+  station: Ymir Forge
+checks:
+  - No damage values in the sheet
+source:
+  sheet: Weapons-F&I
+  row: 295
+  col: 3
+description: ''
+notes: ''

@@ -1,0 +1,23 @@
+name: Volcanic Blade
+prefab: VolcanicBlade_TW
+mod: warfare-fi
+kind: weapon
+group: Blades
+skill: Swords
+effect: Enemy targets below 25% take 15-20% extra damage
+damage:
+  slash: 180
+  fire: 25
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Surtr Idol
+    - Enforcer Trophy
+source:
+  sheet: Weapons-F&I
+  row: 158
+  col: 4
+description: ''
+notes: ''

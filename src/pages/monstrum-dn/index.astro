@@ -1,0 +1,12 @@
+---
+import ModSection from '../../components/ModSection.astro';
+import table from '../../data/tables/deep-north-progression.json';
+---
+<ModSection path="/monstrum-dn/">
+  <h2>Tool progression</h2>
+  <p>Which tool you need to mine or chop what in the Deep North.</p>
+  <table class="item-table">
+    <thead><tr><th>Tool</th><th>Mines</th></tr></thead>
+    <tbody>{table.rows.map((r) => <tr><td>{r.tool}</td><td>{r.mines.join(' · ')}</td></tr>)}</tbody>
+  </table>
+</ModSection>

@@ -1,0 +1,37 @@
+name: Siegelord Brutalis
+prefab: BossBrutalis_TW
+mod: monstrum-dn
+kind: creature
+group: Bosses DeepNorth
+creature:
+  health: 32500
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: immune
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  summon:
+    - Legionnaire trophy x2
+    - Open Door
+    - Muspelheim portal stone x1
+drops:
+  - from: Demonic Soulstone 1-8x
+    chance: 100%
+  - from: Demon Horn 1-2x
+    chance: 100%
+  - from: Siegelord Brutalis trophy
+    chance: 100%
+  - from: Surtr Idol 1-3x
+    chance: 100%
+  - from: Topaz
+    chance: 100%
+source:
+  sheet: M.DeepNorth
+  row: 2
+  col: 9
+description: ''
+notes: ''

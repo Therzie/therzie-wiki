@@ -1,0 +1,23 @@
+name: Surtr Claymore
+prefab: ClaymoreSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Claymore
+skill: Swords
+effect: Enemy targets below 25% take 15-20% extra damage
+damage:
+  slash: 190
+  fire: 8
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Drake Scale
+    - Enforcer Trophy
+source:
+  sheet: Weapons-F&I
+  row: 120
+  col: 4
+description: ''
+notes: ''

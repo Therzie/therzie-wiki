@@ -1,0 +1,23 @@
+name: Njord Knife
+prefab: KnifeNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Knives
+skill: Knives
+damage:
+  slash: 65
+  pierce: 65
+  frost: 5
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Jotunn Eyeball
+    - Primalist Trophy
+source:
+  sheet: Weapons-F&I
+  row: 81
+  col: 3
+description: ''
+notes: ''

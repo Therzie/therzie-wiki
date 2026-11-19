@@ -1,0 +1,27 @@
+name: Stormbringer
+prefab: StaffStorm_TW
+mod: warfare-fi
+kind: weapon
+group: Boss Weapons
+effect: 'Secondary: Calls down lightning'
+damage:
+  lightning: 32
+stats:
+  use_eitr: 30
+drops:
+  - from: Herald of the Storm
+    chance: 10%
+recipe:
+  yields: 1
+  materials:
+    - Thoradus
+    - 'Magic Rune: Wrath'
+    - Fenrir Artifact
+    - Herald Of The Storm Trophy
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 358
+  col: 4
+description: ''
+notes: ''

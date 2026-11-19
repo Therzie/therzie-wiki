@@ -1,0 +1,23 @@
+name: Njord Daggers
+prefab: DualKnifeNjord_TW
+mod: warfare-fi
+kind: weapon
+group: DualWield
+effect: Burst of pierce damage on 6th hit
+damage:
+  slash: 65
+  pierce: 65
+  frost: 5
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Icestalker Scale
+    - Bladefist Trophy
+source:
+  sheet: Weapons-F&I
+  row: 43
+  col: 7
+description: ''
+notes: ''

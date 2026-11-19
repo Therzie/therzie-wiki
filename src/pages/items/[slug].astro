@@ -7,7 +7,7 @@ import ItemTooltip from '../../components/ItemTooltip.astro';
 import CraftingSlots from '../../components/CraftingSlots.astro';
 import RuneDivider from '../../components/RuneDivider.astro';
 import Rune from '../../components/Rune.astro';
-import { getItems, url, slugify, totalDamage, modName, biomeIndex, tierIndex, tierInfo, repoUrl, KIND_LABEL, isGear, sectionOf, DAMAGE, type Item } from '../../lib/wiki';
+import { getItems, url, slugify, totalDamage, modName, biomeIndex, tierIndex, tierInfo, repoUrl, KIND_LABEL, isGear, sectionOf, DAMAGE, isLegacy, type Item } from '../../lib/wiki';
 import Glyph from '../../components/Glyph.astro';
 
 export async function getStaticPaths() {
@@ -53,6 +53,10 @@ const repo = repoUrl;
       {tier && <p class="item-hero__tier"><Rune r={tier.rune} /> {tier.text}</p>}
     </div>
   </div>
+
+  {isLegacy(d.mod) && (
+    <Aside type="note" title="Legacy pre 1.0 Wiki">{modName(d.mod)} is from before Valheim 1.0. These values are kept as they were documented.</Aside>
+  )}
 
   {d.checks.length > 0 && (
     <Aside type="caution" title="To check">

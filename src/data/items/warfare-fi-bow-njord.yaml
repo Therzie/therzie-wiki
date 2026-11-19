@@ -1,0 +1,22 @@
+name: Njord Bow
+prefab: BowNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Bows
+damage:
+  pierce: 92
+  frost: 5
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Boreal Wood
+    - Bladefist Trophy
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 193
+  col: 3
+description: ''
+notes: ''

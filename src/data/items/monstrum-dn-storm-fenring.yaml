@@ -1,0 +1,32 @@
+name: Stormbringer
+prefab: StormFenring_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 1280
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: immune
+    spirit: normal
+    frost: normal
+  spawn:
+    - when: Day
+      chance: 25%
+    - when: Night
+      chance: 10%
+drops:
+  - from: Stormbringer Trophy
+    chance: 20%
+  - from: Fenrir Artifact
+    chance: 65%
+source:
+  sheet: M.DeepNorth
+  row: 28
+  col: 15
+description: ''
+notes: ''

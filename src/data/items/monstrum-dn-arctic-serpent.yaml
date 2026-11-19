@@ -1,0 +1,34 @@
+name: Ice Stalker
+prefab: ArcticSerpent_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 1300
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: resistant
+    poison: resistant
+    lightning: normal
+    spirit: immune
+    frost: immune
+  spawn:
+    - when: Day
+      chance: 15%
+    - when: Night
+      chance: 25%
+drops:
+  - from: Arctic Serpent Scale 1-3x
+    chance: 85%
+  - from: Ice Stalker Trophy
+    chance: 20%
+  - from: Ice Stalker Meat
+    chance: 100%
+source:
+  sheet: M.DeepNorth
+  row: 28
+  col: 9
+description: ''
+notes: ''

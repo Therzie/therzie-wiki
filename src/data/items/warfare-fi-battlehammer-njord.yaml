@@ -1,0 +1,23 @@
+name: Njord Battlehammer
+prefab: BattlehammerNjord_TW
+mod: warfare-fi
+kind: weapon
+group: Battlehammer
+skill: Clubs
+effect: 4th hit on enemy target now lowers their blunt resistance for the next attack
+damage:
+  blunt: 192
+  frost: 8
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Boreal Pine Wood
+    - Ursa Trophy
+source:
+  sheet: Weapons-F&I
+  row: 107
+  col: 3
+description: ''
+notes: ''

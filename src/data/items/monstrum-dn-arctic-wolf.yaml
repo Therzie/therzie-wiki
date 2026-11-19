@@ -1,0 +1,33 @@
+name: Dire Wolf
+prefab: ArcticWolf_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 800
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: resistant
+  spawn:
+    - when: Day
+      chance: 12%
+    - when: Night
+drops:
+  - from: Dire Wolf Pelt
+    chance: 85%
+  - from: Dire Wolf Meat
+    chance: 90%
+  - from: Dire Wolf Trophy
+    chance: 18%
+source:
+  sheet: M.DeepNorth
+  row: 28
+  col: 5
+description: ''
+notes: ''

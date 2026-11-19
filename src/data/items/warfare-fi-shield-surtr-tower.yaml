@@ -1,0 +1,23 @@
+name: Surtr bulwark
+prefab: ShieldSurtrTower_TW
+mod: warfare-fi
+kind: shield
+group: Tower Shields
+effect: Very Resistant VS Fire
+stats:
+  block_armor: 152
+  block_force: 150
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - Helhide Bundle
+    - Daggerfang Scale
+    - Surtr Idol
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 344
+  col: 4
+description: ''
+notes: ''

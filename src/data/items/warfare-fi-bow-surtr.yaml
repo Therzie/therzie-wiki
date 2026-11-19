@@ -1,0 +1,22 @@
+name: Surtr Bow
+prefab: BowSurtr_TW
+mod: warfare-fi
+kind: weapon
+group: Bows
+damage:
+  pierce: 92
+  fire: 5
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Boreal Wood
+    - Helhound Trophy
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 193
+  col: 4
+description: ''
+notes: ''

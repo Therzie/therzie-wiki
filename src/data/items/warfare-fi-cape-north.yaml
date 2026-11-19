@@ -1,0 +1,23 @@
+name: Northern cape
+prefab: CapeNorth_TW
+mod: warfare-fi
+kind: armor
+group: Capes
+effect: 'Resistant VS Frost · Attack Stamina Usage: -10% · Block Stamina Usage: -20%'
+stats:
+  armor: 12
+  upgrade: Base
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - Broken Mammoth Tusk
+    - Norther Fur Bundle
+    - 'Magic Rune: Rage'
+  station: Ymir Forge
+source:
+  sheet: Armor-F&I
+  row: 2
+  col: 4
+description: ''
+notes: ''

@@ -35,7 +35,13 @@ const TABS = {
   Wizardry: { mod: 'wizardry', layout: 'cards' },
   'W.Creatures': { mod: 'wizardry', layout: 'creatures' },
   'W.Food': { mod: 'wizardry', layout: 'food' },
+  // legacy pre 1.0 wiki
+  'Weapons-F&I': { mod: 'warfare-fi', layout: 'cards', legacy: true },
+  'Armor-F&I': { mod: 'warfare-fi', layout: 'cards', kind: 'armor', legacy: true },
+  'M.DeepNorth': { mod: 'monstrum-dn', layout: 'creatures', legacy: true },
+  'DN-Progression': { mod: 'monstrum-dn', layout: 'progression', legacy: true },
 };
+const LEGACY_MODS = new Set(Object.values(TABS).filter((t) => t.legacy).map((t) => t.mod));
 
 // ---------- arguments ----------
 const argv = process.argv.slice(2);
@@ -74,8 +80,11 @@ function materialName(raw) {
   return { 'Black Metal': 'Blackmetal' }[s] ?? s;
 }
 const slugify = (s) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const slugOf = (it) =>
-  it.prefab ? it.prefab.replace(/_TW$/, '').replace(/_/g, '-').replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase() : `${it.mod}-${slugify(it.name)}`;
+// legacy mods reuse many current prefab names, so their pages live under their own prefix
+const slugOf = (it) => {
+  const base = it.prefab ? it.prefab.replace(/_TW$/, '').replace(/_/g, '-').replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase() : `${it.mod}-${slugify(it.name)}`;
+  return LEGACY_MODS.has(it.mod) && it.prefab ? `${it.mod}-${base}` : base;
+};
 const isPrefab = (s) => /^[A-Za-z0-9_]+_TW$/.test(clean(s));
 function parseGroup(label) {
   const t = clean(label);
@@ -378,13 +387,13 @@ function parseCreatures(rows, tab, cfg, startRow, ctx) {
         if (mode === 'spawn') {
           const inline = v.match(/^(day|night):\s*(.+)$/i);
           if (inline) creature.spawn.push({ when: inline[1], chance: inline[2] });
-          else creature.spawn.push(n ? { when: v, chance: n } : { when: v });
+          else creature.spawn.push(n ? { when: v.replace(/:$/, ''), chance: n } : { when: v.replace(/:$/, '') });
           continue;
         }
         if (mode === 'stats') {
           if (/^health$/i.test(v)) { creature.health = numberOr(n); continue; }
           const t = v.toLowerCase();
-          if (DAMAGE_TYPES.includes(t) && n) { creature.resist[t] = n.toLowerCase(); continue; }
+          if (DAMAGE_TYPES.includes(t)) { if (n && !/^\?+$/.test(n)) creature.resist[t] = n.toLowerCase(); continue; }
           if (n) { item.stats[statKey(v)] = numberOr(n); continue; }
         }
         item.effect.push(v);
@@ -471,6 +480,19 @@ function parseWeakness(rows, tab) {
   return [];
 }
 
+// ---------- tool progression table (DN-Progression) ----------
+function parseProgression(rows, tab) {
+  const out = [];
+  for (const row of rows) {
+    const tool = clean(row?.[1]);
+    if (!tool) continue;
+    out.push({ tool, mines: row.slice(3).map(clean).filter(Boolean) });
+  }
+  fs.mkdirSync(TABLES_DIR, { recursive: true });
+  fs.writeFileSync(path.join(TABLES_DIR, 'deep-north-progression.json'), JSON.stringify({ source: tab, rows: out }, null, 1));
+  return [];
+}
+
 // ---------- tier and biome ----------
 const TIERS = JSON.parse(fs.readFileSync(path.resolve('src/data/tiers.json'), 'utf8'));
 function tierOf(prefab) {
@@ -499,7 +521,7 @@ for (const data of await loadSources()) {
   const cfg = TABS[tab];
   if (!cfg) { ctx.skipped.push(`Tab ${tab}: not configured in TABS`); continue; }
   const rows = (data.values ?? []).map((r) => r ?? []);
-  const parser = { cards: parseCards, creatures: parseCreatures, food: parseFood, weakness: parseWeakness }[cfg.layout];
+  const parser = { cards: parseCards, creatures: parseCreatures, food: parseFood, weakness: parseWeakness, progression: parseProgression }[cfg.layout];
   all.push(...parser(rows, tab, cfg, Number(startRow), ctx));
 }
 

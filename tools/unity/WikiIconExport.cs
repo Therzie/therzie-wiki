@@ -4,7 +4,8 @@
 // to <folder>/<Prefab>.png, so the wiki can show it from public/icons/.
 //
 // Install: copy this file into any Editor folder of the Unity project (for example Assets/Editor/).
-// Use:     Tools > Therzie Wiki > Export item icons
+// Use:     Tools > Therzie Wiki > Export item icons            (Therzie items, _TW prefabs -> public/icons/<Prefab>.png)
+//          Tools > Therzie Wiki > Export vanilla material icons (game items -> public/icons/vanilla/<prefab in lower case>.png)
 //
 // The icon is read from ItemDrop.m_itemData.m_shared.m_icons[0] through SerializedObject,
 // so no reference to assembly_valheim is needed. Sprites from atlases and non-readable or
@@ -21,10 +22,19 @@ public static class WikiIconExport
     const string PrefTarget = "TherzieWiki.IconExport.Target";
 
     [MenuItem("Tools/Therzie Wiki/Export item icons")]
-    public static void Export()
+    public static void Export() => Run(vanilla: false);
+
+    // Vanilla materials (Wood, FineWood, TrophyDeer, ...) for the crafting slots and material pages.
+    // The wiki finds them by the material name: "Fine Wood" -> finewood.png, "Deer Trophy" -> trophydeer.png.
+    [MenuItem("Tools/Therzie Wiki/Export vanilla material icons")]
+    public static void ExportVanilla() => Run(vanilla: true);
+
+    static void Run(bool vanilla)
     {
-        string source = EditorPrefs.GetString(PrefSource, "Assets");
-        source = EditorUtility.OpenFolderPanel("Folder with the item prefabs (inside Assets)", source, "");
+        string prefSource = vanilla ? PrefSource + ".Vanilla" : PrefSource;
+        string prefTarget = vanilla ? PrefTarget + ".Vanilla" : PrefTarget;
+        string source = EditorPrefs.GetString(prefSource, vanilla ? "Assets/GameObject" : "Assets");
+        source = EditorUtility.OpenFolderPanel(vanilla ? "Folder with the vanilla prefabs (inside Assets)" : "Folder with the item prefabs (inside Assets)", source, "");
         if (string.IsNullOrEmpty(source)) return;
         source = ToAssetPath(source);
         if (source == null)
@@ -32,12 +42,12 @@ public static class WikiIconExport
             EditorUtility.DisplayDialog("Therzie Wiki", "Pick a folder inside this project's Assets folder.", "OK");
             return;
         }
-        EditorPrefs.SetString(PrefSource, source);
+        EditorPrefs.SetString(prefSource, source);
 
-        string target = EditorUtility.OpenFolderPanel("Save icons to (the wiki's public/icons folder)",
-            EditorPrefs.GetString(PrefTarget, ""), "");
+        string target = EditorUtility.OpenFolderPanel(vanilla ? "Save icons to (the wiki's public/icons/vanilla folder)" : "Save icons to (the wiki's public/icons folder)",
+            EditorPrefs.GetString(prefTarget, ""), "");
         if (string.IsNullOrEmpty(target)) return;
-        EditorPrefs.SetString(PrefTarget, target);
+        EditorPrefs.SetString(prefTarget, target);
 
         string[] guids = AssetDatabase.FindAssets("t:Prefab", new[] { source });
         var written = new Dictionary<string, string>();
@@ -49,7 +59,7 @@ public static class WikiIconExport
             {
                 string path = AssetDatabase.GUIDToAssetPath(guids[i]);
                 string name = Path.GetFileNameWithoutExtension(path);
-                if (!name.EndsWith("_TW")) continue;
+                if (name.EndsWith("_TW") == vanilla) continue;
 
                 if (EditorUtility.DisplayCancelableProgressBar("Therzie Wiki", name, (float)i / guids.Length)) break;
 
@@ -64,7 +74,7 @@ public static class WikiIconExport
                     continue;
                 }
 
-                File.WriteAllBytes(Path.Combine(target, name + ".png"), SpriteToPng(icon));
+                File.WriteAllBytes(Path.Combine(target, (vanilla ? name.ToLowerInvariant() : name) + ".png"), SpriteToPng(icon));
                 written[name] = path;
             }
         }

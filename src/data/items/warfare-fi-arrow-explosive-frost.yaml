@@ -1,0 +1,19 @@
+name: Explosive Frost Arrow
+prefab: ArrowExplosiveFrost_TW
+mod: warfare-fi
+kind: ammo
+group: Arrows
+damage:
+  pierce: 72
+recipe:
+  yields: 1
+  materials:
+    - Boreal Wood
+    - Black Ice
+    - 'Magic Rune: Rage'
+source:
+  sheet: Weapons-F&I
+  row: 171
+  col: 5
+description: ''
+notes: ''

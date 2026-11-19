@@ -1,7 +1,7 @@
 ---
 // Recipe as a row of crafting slots, like a workbench requirement list.
 // A Monstrum entry can be a choice ("A or B"); that slot shows both names.
-import { materialUrl } from '../lib/wiki';
+import { materialUrl, materialIcon } from '../lib/wiki';
 interface Props { materials: string[]; variant?: 'base' | 'monstrum' | 'upgrade' }
 const { materials, variant = 'base' } = Astro.props;
 const mono = (m: string) => m.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
@@ -15,7 +15,7 @@ const mono = (m: string) => m.split(/\s+/).slice(0, 2).map((w) => w[0]).join('')
           <>
             {i > 0 && <span class="slots__or">or</span>}
             <a class="slot" href={materialUrl(m)} title={m}>
-              <span class="slot__box"><span>{mono(m)}</span></span>
+              <span class:list={['slot__box', { 'has-img': materialIcon(m) }]}>{materialIcon(m) ? <img src={materialIcon(m)} alt="" width="44" height="44" loading="lazy" /> : <span>{mono(m)}</span>}</span>
               <span class="slot__name">{m}</span>
             </a>
           </>

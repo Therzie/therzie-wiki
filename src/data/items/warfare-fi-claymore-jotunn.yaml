@@ -1,0 +1,25 @@
+name: Jotunn's bane
+prefab: ClaymoreJotunn_TW
+mod: warfare-fi
+kind: weapon
+group: Claymore
+skill: Swords
+effect: Secondary attack cause bleed dot
+damage:
+  slash: 192
+  frost: 30
+recipe:
+  yields: 1
+  materials:
+    - Jotunnheim Crystal
+    - 'Magic Rune: Rage'
+    - Ymir Idol
+    - Gorr Trophy
+checks:
+  - '"Recipe" heading missing in the sheet'
+source:
+  sheet: Weapons-F&I
+  row: 120
+  col: 5
+description: ''
+notes: ''

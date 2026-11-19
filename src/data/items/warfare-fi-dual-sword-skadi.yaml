@@ -1,0 +1,22 @@
+name: Skadi blades
+prefab: DualSwordSkadi_TW
+mod: warfare-fi
+kind: weapon
+group: DualWield
+effect: Secondary attack causes Bleed damage over time
+damage:
+  slash: 160
+  frost: 20
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - 'Magic Rune: Rage'
+    - Black Ice
+    - Lokvyr Golem Trophy
+source:
+  sheet: Weapons-F&I
+  row: 43
+  col: 5
+description: ''
+notes: ''

@@ -1,0 +1,19 @@
+name: Explosive Fire Arrow
+prefab: ArrowExplosiveFire_TW
+mod: warfare-fi
+kind: ammo
+group: Arrows
+damage:
+  pierce: 72
+recipe:
+  yields: 1
+  materials:
+    - Boreal Wood
+    - Burning Fang
+    - 'Magic Rune: Destruction'
+source:
+  sheet: Weapons-F&I
+  row: 171
+  col: 6
+description: ''
+notes: ''

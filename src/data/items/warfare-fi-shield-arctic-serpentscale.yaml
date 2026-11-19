@@ -1,0 +1,23 @@
+name: Arctic serpentscale shield
+prefab: ShieldArcticSerpentscale_TW
+mod: warfare-fi
+kind: shield
+group: Tower Shields
+effect: Resistant VS Pierce
+stats:
+  block_armor: 126
+  block_force: 140
+recipe:
+  yields: 1
+  materials:
+    - Icestalker Scale
+    - Broken Mammoth Tusk
+    - Black Ice
+    - Ice Stalker Trophy
+  station: Ymir Forge
+source:
+  sheet: Weapons-F&I
+  row: 344
+  col: 5
+description: ''
+notes: ''

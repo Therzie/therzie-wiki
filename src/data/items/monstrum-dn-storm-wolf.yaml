@@ -1,0 +1,27 @@
+name: Storm Wolf
+prefab: StormWolf_TW
+mod: monstrum-dn
+kind: creature
+group: DeepNorth
+creature:
+  health: 700
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: resistant
+    poison: resistant
+    lightning: immune
+    spirit: immune
+    frost: resistant
+  spawn:
+    - when: Day
+    - when: Night
+drops:
+  - from: None, Boss Summon
+source:
+  sheet: M.DeepNorth
+  row: 50
+  col: 13
+description: ''
+notes: ''
