@@ -101,44 +101,89 @@ img = mix(img, col('#b5552a'), glow * 0.6)
 img = mix(img, col('#ffa94d'), np.exp(-(((u - 0.5) / 0.2) ** 2 + ((v - 1.04) / 0.16) ** 2)) * 0.5)
 
 # ---------- pine forest framing the clearing ----------
-def pine(mask, x0, base, height, width, lean, seed):
+from PIL import ImageDraw
+
+SS = 2  # supersampling for smooth silhouettes
+
+
+def draw_pine(d, cx, base, height, width, seed):
+    """One spruce: a thin trunk with many drooping, tapered branches and ragged needle tips."""
     r = np.random.default_rng(seed)
+    cx, base, height, width = cx * W * SS, base * H * SS, height * H * SS, width * W * SS
     top = base - height
-    t = np.clip((v - top) / height, 0, 1)
-    tiers = 9 + r.integers(0, 5)
-    ph = (t * tiers + r.random()) % 1.0
-    # each tier: branch tips spread out then pull in, drooping
-    saw = 0.45 + 0.55 * ph ** 0.7
-    half = width * (0.04 + 0.96 * t ** 0.85) * saw
-    half *= 1 + 0.08 * noise(3, 1, seed)
-    cx = x0 + lean * (1 - t)
-    inside = (np.abs(u - cx) < half) & (v > top) & (v < base + 0.4)
-    trunk = (np.abs(u - cx) < 0.0035) & (v > top)
-    return np.maximum(mask, (inside | trunk).astype(np.float32))
+    d.line([(cx, top), (cx, base + 40)], fill=255, width=max(2, int(width * 0.05)))
+    # dense core so only the outer branch tips read as silhouette
+    core_l, core_r = [], []
+    for k in range(40):
+        t = k / 39
+        hw = width * 0.22 * (0.05 + 0.95 * t ** 0.85) * r.uniform(0.8, 1.0)
+        yk = top + t * height
+        core_l.append((cx - hw, yk)); core_r.append((cx + hw, yk))
+    d.polygon(core_l + core_r[::-1] + [(cx, top)], fill=255)
+    # branches grow in whorls: clusters at irregular heights
+    levels = []
+    y = 0.0
+    while y < 1.0:
+        y += r.uniform(0.008, 0.022) * (0.6 + y)
+        for _ in range(r.integers(3, 7)):
+            levels.append(min(1.0, y + r.normal(0, 0.006)))
+    for t in levels:
+        t = max(0.0, t)
+        y = top + t * height
+        reach = width * (0.06 + 0.94 * t ** 0.8) * r.uniform(0.55, 1.1)
+        if r.random() < 0.08 and t > 0.3:
+            reach *= 0.4                        # a broken or missing branch
+        for side in ((-1,) if r.random() < 0.5 else (1,)) if r.random() < 0.35 else (-1, 1):
+            L = reach * r.uniform(0.7, 1.15)
+            droop = L * r.uniform(0.12, 0.5)
+            lift = L * r.uniform(-0.05, 0.12)
+            # branch as a tapered curved polygon (quadratic bezier)
+            pts_top, pts_bot = [], []
+            th0 = max(2.5, L * 0.16)
+            for k in range(9):
+                q = k / 8
+                bx = cx + side * L * q
+                by = y - lift * 4 * q * (1 - q) + droop * q * q
+                th = th0 * (1 - q) + 1.0
+                pts_top.append((bx, by - th * 0.6))
+                pts_bot.append((bx, by + th))
+            d.polygon(pts_top + pts_bot[::-1], fill=255)
+            # needle clumps hanging along the branch
+            for k in range(int(r.integers(2, 5) + L / 12)):
+                q = r.uniform(0.25, 1.0)
+                bx = cx + side * L * q
+                by = y - lift * 4 * q * (1 - q) + droop * q * q
+                ln = r.uniform(3, 12) + L * r.uniform(0.02, 0.09)
+                ang = np.pi / 2 + side * r.uniform(-0.6, 0.2)
+                d.line([(bx, by), (bx + np.cos(ang) * ln * side * 0.4, by + np.sin(ang) * ln)], fill=255, width=2)
+    # leader at the very top
+    d.polygon([(cx - width * 0.03, top + height * 0.05), (cx, top - height * 0.02), (cx + width * 0.03, top + height * 0.05)], fill=255)
+
 
 def forest(side, n, seed, base_lo, base_hi, hmin, hmax, colour, rim, blur):
     global img
     r = np.random.default_rng(seed)
-    mask = np.zeros((H, W), np.float32)
+    m = Image.new('L', (W * SS, H * SS), 0)
+    d = ImageDraw.Draw(m)
     for i in range(n):
-        if side == 'L':
-            x0 = r.uniform(-0.04, 0.27) ** 1.0
-        else:
-            x0 = 1 - r.uniform(-0.04, 0.27)
-        mask = pine(mask, x0, r.uniform(base_lo, base_hi), r.uniform(hmin, hmax),
-                    r.uniform(0.035, 0.065), r.uniform(-0.01, 0.01), seed * 100 + i)
-    mask = gaussian_filter(mask, blur)
-    # warm rim light on edges facing the fire
-    edge = np.clip(mask - gaussian_filter(mask, 3), 0, 1) * 1.6
+        off = r.uniform(-0.03, 0.27)
+        x0 = off if side == 'L' else 1 - off
+        draw_pine(d, x0, r.uniform(base_lo, base_hi), r.uniform(hmin, hmax), r.uniform(0.045, 0.075), seed * 100 + i)
+    mask = np.asarray(m.resize((W, H), Image.LANCZOS), np.float32) / 255
+    if blur:
+        mask = gaussian_filter(mask, blur)
+    # warm rim light on the edges facing the fire
+    outer = gaussian_filter(mask, 9)
+    edge = np.clip(mask - gaussian_filter(mask, 2.5), 0, 1) * np.clip((0.75 - outer) * 3, 0, 1) * 1.6
     img = mix(img, colour, mask)
-    img += (edge * glow * 0.7)[..., None] * col(rim)
+    img += (edge * glow * 0.75)[..., None] * col(rim)
     return mask
 
-forest('L', 7, 41, 0.78, 0.92, 0.25, 0.42, col('#10222a'), '#ff9a4a', 2.2)
-forest('R', 7, 43, 0.78, 0.92, 0.25, 0.42, col('#10222a'), '#ff9a4a', 2.2)
+forest('L', 7, 41, 0.78, 0.92, 0.25, 0.42, col('#10222a'), '#ff9a4a', 1.6)
+forest('R', 7, 43, 0.78, 0.92, 0.25, 0.42, col('#10222a'), '#ff9a4a', 1.6)
 img = mix(img, col('#1a3640'), np.exp(-((v - 0.82) / 0.07) ** 2) * 0.35)  # low mist
-forest('L', 4, 51, 1.05, 1.15, 0.75, 1.0, col('#070f13'), '#ffb066', 1.2)
-forest('R', 4, 53, 1.05, 1.15, 0.75, 1.0, col('#070f13'), '#ffb066', 1.2)
+forest('L', 4, 51, 1.05, 1.15, 0.75, 1.0, col('#070f13'), '#ffb066', 0)
+forest('R', 4, 53, 1.05, 1.15, 0.75, 1.0, col('#070f13'), '#ffb066', 0)
 
 # ---------- foreground ferns / grass ----------
 gr = noise(3, 2, 61, aniso=(10, 0.5))
