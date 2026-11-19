@@ -1,0 +1,21 @@
+biome: Plains
+name: Blackmetal Spear
+prefab: SpearBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Spears
+tier: Blackmetal
+damage:
+  pierce: 95
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Needle
+    - Lox Trophy
+source:
+  sheet: Weapons
+  row: 271
+description: ''
+notes: ''

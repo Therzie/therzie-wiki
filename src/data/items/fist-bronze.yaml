@@ -1,0 +1,21 @@
+biome: Black Forest
+name: Bronze Knuckles
+prefab: FistBronze_TW
+mod: warfare
+kind: weapon
+group: Claws
+skill: Fists
+tier: Bronze
+damage:
+  blunt: 20
+recipe:
+  yields: 1
+  materials:
+    - Deer Hide
+    - Bronze
+    - Greydwarf Trophy
+source:
+  sheet: Weapons
+  row: 258
+description: ''
+notes: ''

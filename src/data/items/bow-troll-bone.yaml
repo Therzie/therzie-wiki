@@ -1,0 +1,23 @@
+biome: Black Forest
+name: Trollbone Bow
+prefab: BowTrollBone_TW
+mod: warfare
+kind: weapon
+group: Bows
+tier: Bone
+damage:
+  pierce: 37
+recipe:
+  yields: 1
+  materials:
+    - Troll Bone
+    - Bronze
+  station: Fletchers Table
+  monstrum:
+    - Bone Fragments
+    - Razorback Tusk
+source:
+  sheet: Weapons
+  row: 219
+description: ''
+notes: ''

@@ -1,0 +1,21 @@
+biome: Ashlands
+name: Flametal enchanted pickaxe
+prefab: PickaxeFader_TW
+mod: warfare
+kind: tool
+group: Pickaxes
+tier: Flametal
+damage:
+  pierce: 65
+recipe:
+  yields: 1
+  materials:
+    - Flametal
+    - Fader Relic
+checks:
+  - Tier Flametal taken from the name; the prefab name has no tier
+source:
+  sheet: Weapons
+  row: 307
+description: ''
+notes: ''

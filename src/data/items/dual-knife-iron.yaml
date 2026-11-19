@@ -1,0 +1,22 @@
+biome: Swamp
+name: Iron daggers
+prefab: DualKnifeIron_TW
+mod: warfare
+kind: weapon
+group: Dual Knives
+skill: Knives
+tier: Iron
+damage:
+  slash: 22
+  pierce: 22
+recipe:
+  yields: 1
+  materials:
+    - Root
+    - Iron
+    - Draugr Elite Trophy
+source:
+  sheet: Weapons
+  row: 106
+description: ''
+notes: ''

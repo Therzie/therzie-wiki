@@ -1,0 +1,24 @@
+name: Burning fang
+prefab: BurningFang_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Gut-gnasher
+    chance: 20%
+  - from: Helhound
+    chance: 50%
+  - from: Fire Drake
+    chance: 45%
+  - from: Sythrak
+    chance: 100%
+  - from: Daggerfang
+    chance: 45%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 70
+description: ''
+notes: ''

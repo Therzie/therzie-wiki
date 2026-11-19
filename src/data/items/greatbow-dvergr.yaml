@@ -1,0 +1,24 @@
+biome: Mistlands
+name: Dwarven Greatbow
+prefab: GreatbowDvergr_TW
+mod: warfare
+kind: weapon
+group: GreatBows
+tier: Dvergr
+effect: 'Piercing: Deal extra damage to your foes on 4th hit'
+damage:
+  pierce: 100
+  lightning: 12
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Carapace
+    - Refined Eitr
+    - Gjall Trophy
+  station: Black Forge
+source:
+  sheet: Weapons
+  row: 231
+description: ''
+notes: ''

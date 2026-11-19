@@ -1,0 +1,23 @@
+name: 'Magic Rune: Destruction'
+prefab: RuneDestruction_TW
+mod: warfare
+kind: item
+group: Recipes
+recipe:
+  yields: 1
+  materials:
+    - Black Ice
+    - Demon Horn
+    - Demonic Soulstone
+    - Burning Fang
+    - Fenrir Artifact
+  station: Rune Sphere Alternative Recipes in Red
+checks:
+  - >-
+    Prefab RuneDestruction_TW appears 2x in the sheet (Magic Rune: Destruction, Items r60; Magic Rune:
+    Destruction, Items r99)
+source:
+  sheet: Items
+  row: 99
+description: ''
+notes: ''

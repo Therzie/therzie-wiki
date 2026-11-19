@@ -7,7 +7,7 @@ import ItemTooltip from '../../components/ItemTooltip.astro';
 import CraftingSlots from '../../components/CraftingSlots.astro';
 import RuneDivider from '../../components/RuneDivider.astro';
 import Rune from '../../components/Rune.astro';
-import { getItems, url, slugify, totalDamage, modName, biomeIndex, tierIndex, tierInfo, repoUrl, type Item } from '../../lib/wiki';
+import { getItems, url, slugify, totalDamage, modName, biomeIndex, tierIndex, tierInfo, repoUrl, KIND_LABEL, isGear, type Item } from '../../lib/wiki';
 
 export async function getStaticPaths() {
   const items = await getItems();
@@ -22,6 +22,8 @@ const family = all
   .filter((i) => i.data.group === d.group && i.data.mod === d.mod)
   .sort((a, b) => tierIndex(a.data.tier) - tierIndex(b.data.tier) || biomeIndex(a.data.biome) - biomeIndex(b.data.biome) || totalDamage(a) - totalDamage(b));
 const tier = tierInfo(d.tier);
+const section = isGear(d.kind) ? 'weapons' : d.kind === 'piece' ? 'pieces' : 'items';
+const hasRecipe = d.recipe.materials.length > 0 || (d.recipe.monstrum?.length ?? 0) > 0;
 const pos = family.findIndex((i) => i.id === item.id);
 const prev = family[pos - 1];
 const next = family[pos + 1];
@@ -33,10 +35,11 @@ const repo = repoUrl;
     <div class="item-hero__body">
       <div class="item-hero__meta">
         <a class="pill" href={url(`/${d.mod}/`)}>{modName(d.mod)}</a>
-        <a class="pill" href={url(`/${d.mod}/weapons/#group-${slugify(d.group)}`)}>{d.group}</a>
+        <a class="pill" href={url(`/${d.mod}/${section}/#group-${slugify(d.group)}`)}>{d.group}</a>
+        {!isGear(d.kind) && <span class="pill">{KIND_LABEL[d.kind]}</span>}
         {d.skill && <span class="pill">{d.skill} skill</span>}
         {tier && <a class="pill pill--tier" href={url(`/${d.mod}/#tier-${tier.id.toLowerCase()}`)}><Rune r={tier.rune} />{tier.id} tier</a>}
-        <BiomeBadge biome={d.biome} guessed={d.biome_guessed} />
+        {d.biome && <BiomeBadge biome={d.biome} guessed={d.biome_guessed} />}
       </div>
       <p class="prefab">
         <code data-copy={d.prefab}>{d.prefab}</code>
@@ -60,18 +63,37 @@ const repo = repoUrl;
       <ItemTooltip item={item} />
     </section>
 
-    <section class="panel panel--craft">
-      <h2>Crafting {d.recipe.yields > 1 && <span class="panel__total">makes {d.recipe.yields}</span>}</h2>
-      {d.recipe.station && <p class="muted">{d.recipe.station}{d.recipe.level ? ` level ${d.recipe.level}` : ''}</p>}
-      {d.recipe.materials.length ? <CraftingSlots materials={d.recipe.materials} /> : <p class="muted">No recipe in the spreadsheet yet.</p>}
-      {d.recipe.monstrum && (
-        <div class="monstrum">
-          <h3>With Monstrum installed</h3>
-          <CraftingSlots materials={d.recipe.monstrum} variant="monstrum" />
-        </div>
-      )}
-      <p class="small slots-note">Quantities are not in the spreadsheet yet.</p>
-    </section>
+    {hasRecipe ? (
+      <section class="panel panel--craft">
+        <h2>Crafting {d.recipe.yields > 1 && <span class="panel__total">makes {d.recipe.yields}</span>}</h2>
+        {d.recipe.station && <p class="muted">{d.recipe.station}{d.recipe.level ? ` level ${d.recipe.level}` : ''}</p>}
+        {d.recipe.materials.length > 0 && <CraftingSlots materials={d.recipe.materials} />}
+        {d.recipe.upgrade && (
+          <div class="monstrum">
+            <h3>To upgrade</h3>
+            <CraftingSlots materials={d.recipe.upgrade} variant="upgrade" />
+          </div>
+        )}
+        {d.recipe.monstrum && (
+          <div class="monstrum">
+            <h3>With Monstrum installed</h3>
+            <CraftingSlots materials={d.recipe.monstrum} variant="monstrum" />
+          </div>
+        )}
+        <p class="small slots-note">Quantities are not in the spreadsheet yet.</p>
+      </section>
+    ) : d.drops?.length ? null : (
+      <section class="panel panel--craft"><h2>Crafting</h2><p class="muted">No recipe in the spreadsheet.</p></section>
+    )}
+
+    {d.drops && d.drops.length > 0 && (
+      <section class="panel panel--drops">
+        <h2>Dropped by</h2>
+        <ul class="drops">
+          {d.drops.map((x) => <li><span>{x.from}</span>{x.chance && <span class="drops__chance">{x.chance}</span>}</li>)}
+        </ul>
+      </section>
+    )}
   </div>
 
 
@@ -87,14 +109,14 @@ const repo = repoUrl;
   <RuneDivider seed={d.name.length} />
 
   <section class="family not-content">
-    <h2>{d.group} progression</h2>
+    <h2>{isGear(d.kind) ? `${d.group} progression` : `More ${d.group}`}</h2>
     <ol class="family__line">
       {family.map((f) => (
         <li class:list={{ 'is-current': f.id === item.id }}>
           <a href={url(`/items/${f.id}/`)}>
             <ItemIcon prefab={f.data.prefab} name={f.data.name} biome={f.data.biome} size={40} />
             <span>{f.data.name}</span>
-            <small>{totalDamage(f)}</small>
+            {totalDamage(f) > 0 && <small>{totalDamage(f)}</small>}
           </a>
         </li>
       ))}

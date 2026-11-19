@@ -1,0 +1,19 @@
+name: Explosive Poison Arrow
+prefab: ArrowExplosivePoison_TW
+mod: warfare
+kind: ammo
+group: Arrows
+damage:
+  pierce: 45
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Rotten Pelt
+    - Blackmetal
+    - Tar
+source:
+  sheet: Weapons
+  row: 183
+description: ''
+notes: ''

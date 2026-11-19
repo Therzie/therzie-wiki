@@ -1,0 +1,21 @@
+biome: Ocean
+name: Abyssal Sword
+prefab: SwordChitin_TW
+mod: warfare
+kind: weapon
+group: Swords
+skill: Swords
+tier: Chitin
+damage:
+  slash: 45
+recipe:
+  yields: 1
+  materials:
+    - Chitin
+    - Bronze
+    - Ancient Bark
+source:
+  sheet: Weapons
+  row: 171
+description: ''
+notes: ''

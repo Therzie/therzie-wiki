@@ -1,0 +1,22 @@
+biome: Black Forest
+name: Bone Claymore
+prefab: ClaymoreBone_TW
+mod: warfare
+kind: weapon
+group: Claymore
+skill: Swords
+tier: Bone
+damage:
+  blunt: 30
+  slash: 15
+recipe:
+  yields: 1
+  materials:
+    - Bone Fragments
+    - Copper
+    - Skeleton Trophy
+source:
+  sheet: Weapons
+  row: 145
+description: ''
+notes: ''

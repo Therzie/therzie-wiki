@@ -1,0 +1,22 @@
+biome: Swamp
+name: Iron Sledge (Warfare Version)
+prefab: SledgeIron_TW
+mod: warfare
+kind: weapon
+group: Sledges
+skill: Clubs
+tier: Iron
+damage:
+  blunt: 60
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Iron
+    - Ymir Flesh
+    - Draugr Elite Trophy
+source:
+  sheet: Weapons
+  row: 119
+description: ''
+notes: ''

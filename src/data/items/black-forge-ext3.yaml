@@ -1,0 +1,19 @@
+name: Eitr-infused sharpening stone
+prefab: BlackForge_ext3_TW
+mod: warfare
+kind: piece
+group: Extra
+info:
+  - Black Forge Extension
+recipe:
+  yields: 1
+  materials:
+    - Refined Eitr
+    - Flametal
+    - Grausten
+    - Black Marble
+source:
+  sheet: Pieces
+  row: 13
+description: ''
+notes: ''

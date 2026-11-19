@@ -1,0 +1,19 @@
+name: Black Anvil
+prefab: BlackForge_ext2_TW
+mod: warfare
+kind: piece
+group: Extra
+info:
+  - Black Forge Extension
+recipe:
+  yields: 1
+  materials:
+    - Iron
+    - Black Marble
+    - Yggdrasil Wood
+    - Black Core
+source:
+  sheet: Pieces
+  row: 13
+description: ''
+notes: ''

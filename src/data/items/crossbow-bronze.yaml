@@ -1,0 +1,21 @@
+biome: Black Forest
+name: Bronze Crossbow
+prefab: CrossbowBronze_TW
+mod: warfare
+kind: weapon
+group: CrossBows
+tier: Bronze
+damage:
+  pierce: 50
+recipe:
+  yields: 1
+  materials:
+    - Core Wood
+    - Bronze
+    - GD Shaman Trophy
+  station: Fletchers Table
+source:
+  sheet: Weapons
+  row: 245
+description: ''
+notes: ''

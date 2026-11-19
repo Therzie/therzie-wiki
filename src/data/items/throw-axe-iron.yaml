@@ -1,8 +1,11 @@
+biome: Swamp
 name: Iron Throwing Axe
 prefab: ThrowAxeIron_TW
 mod: warfare
+kind: weapon
 group: Throwing Axes
 skill: Throwing
+tier: Iron
 damage:
   slash: 28
 recipe:
@@ -13,7 +16,5 @@ recipe:
 source:
   sheet: Weapons
   row: 18
-biome: Swamp
 description: ''
 notes: ''
-tier: Iron

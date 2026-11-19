@@ -1,0 +1,171 @@
+---
+// Browser for a list of items: cards per group, optional progression per tier, sortable table.
+import ItemCard from './ItemCard.astro';
+import ItemIcon from './ItemIcon.astro';
+import BiomeBadge from './BiomeBadge.astro';
+import Glyph from './Glyph.astro';
+import RuneDivider from './RuneDivider.astro';
+import Rune from './Rune.astro';
+import { groupsOf, BIOMES, TIERS, DAMAGE, url, slugify, totalDamage, biomeColor, type Item } from '../lib/wiki';
+
+interface Props { items: Item[]; showMatrix?: boolean }
+const { items, showMatrix = false } = Astro.props;
+const groups = groupsOf(items);
+const max = Math.max(1, ...items.map(totalDamage));
+const usedBiomes = BIOMES.filter((b) => items.some((i) => i.data.biome === b.name));
+const hasDamage = items.some((i) => Object.keys(i.data.damage).length);
+const untiered = items.some((i) => !i.data.tier);
+const columns = [...TIERS.map((t) => ({ ...t, other: false })), ...(untiered ? [{ id: '', rune: 'ᛟ', biome: '', text: 'Boss weapons and items without a material tier in the prefab name', keys: [], other: true }] : [])];
+---
+  <slot />
+
+  <div class="toolbar not-content" data-toolbar>
+    <input type="search" placeholder="Search name, prefab or material…" data-search aria-label="Search" />
+    {usedBiomes.length > 0 && <div class="chips" role="group" aria-label="Biome">
+      <button class="chip is-on" data-biome-filter="">All biomes</button>
+      {usedBiomes.map((b) => (
+        <button class="chip" data-biome-filter={b.name} style={`--c:${b.color}`}><Glyph biome={b.name} size={13} />{b.name}</button>
+      ))}
+    </div>}
+    <div class="views" role="tablist" aria-label="View">
+      <button class="view is-on" data-view="cards">Cards</button>
+      {showMatrix && <button class="view" data-view="matrix">Progression</button>}
+      <button class="view" data-view="table">Table</button>
+    </div>
+  </div>
+
+  {groups.length > 1 && (
+    <nav class="group-jump not-content" aria-label="Jump to type">
+      {groups.map((g) => <a href={`#group-${slugify(g)}`}>{g}</a>)}
+    </nav>
+  )}
+
+  <section class="not-content" data-panel="cards">
+    {groups.map((g, gi) => {
+      const list = items.filter((i) => i.data.group === g);
+      const skill = list[0]?.data.skill;
+      return (
+        <div class="group" id={`group-${slugify(g)}`} data-group-block={slugify(g)}>
+          {gi > 0 && <RuneDivider seed={gi} count={5} />}
+          <h2 class="group__title">{g}{skill && <span class="group__skill">{skill} skill</span>}<span class="group__count">{list.length}</span></h2>
+          <div class="card-grid">{list.map((it) => <ItemCard item={it} max={max} />)}</div>
+        </div>
+      );
+    })}
+    <p class="empty" data-empty hidden>Nothing matches this filter.</p>
+  </section>
+
+  {showMatrix && <section class="not-content" data-panel="matrix" hidden>
+    <div class="matrix matrix--tiers" style={`--cols:${TIERS.length + (untiered ? 1 : 0)}`}>
+      <div class="matrix__corner"></div>
+      {columns.map((t) => (
+        <div class="matrix__biome matrix__tier" style={`--c:${biomeColor(t.biome)}`} title={t.text}>
+          <Rune r={t.rune} class="matrix__rune" />
+          <span>{t.other ? 'Other' : t.id}</span>
+          {!t.other && <small><Glyph biome={t.biome} size={11} />{t.biome}</small>}
+        </div>
+      ))}
+      {groups.map((g) => (
+        <>
+          <div class="matrix__group">{g}</div>
+          {columns.map((t) => {
+            const cell = items.filter((i) => i.data.group === g && (t.other ? !i.data.tier : i.data.tier === t.id));
+            return (
+              <div class:list={['matrix__cell', { 'is-empty': !cell.length }]} style={`--c:${biomeColor(t.biome)}`}>
+                {cell.map((it) => (
+                  <a href={url(`/items/${it.id}/`)} title={`${it.data.name} · ${totalDamage(it)} damage`}>
+                    <ItemIcon prefab={it.data.prefab} name={it.data.name} biome={it.data.biome} size={30} />
+                    <span>{it.data.name}</span>
+                  </a>
+                ))}
+              </div>
+            );
+          })}
+        </>
+      ))}
+    </div>
+    <p class="small">Columns follow the Forge Path: every material tier from Flint to Flametal. Items without a tier in their prefab name, such as the boss weapons, are under Other.</p>
+  </section>}
+
+  <section data-panel="table" hidden>
+    <div class="table-wrap">
+      <table class="item-table" data-sortable>
+        <thead>
+          <tr>
+            <th data-sort="text">Name</th><th data-sort="text">Type</th>{showMatrix && <th data-sort="biome">Tier</th>}<th data-sort="biome">Biome</th>
+            {Object.values(DAMAGE).filter((d) => items.some((i) => i.data.damage[d.label.toLowerCase()])).map((d) => <th data-sort="num">{d.label}</th>)}
+            {hasDamage && <th data-sort="num">Total</th>}<th>Recipe</th>
+          </tr>
+        </thead>
+        <tbody>
+          {items.map((it) => (
+            <tr data-biome={it.data.biome ?? ''} data-search={[it.data.name, it.data.prefab, it.data.group, ...it.data.recipe.materials].join(' ').toLowerCase()}>
+              <td><a href={url(`/items/${it.id}/`)}>{it.data.name}</a></td>
+              <td>{it.data.group}</td>
+              {showMatrix && <td data-value={TIERS.findIndex((t) => t.id === it.data.tier)}>{it.data.tier ?? ''}</td>}
+              <td data-value={BIOMES.findIndex((b) => b.name === it.data.biome)}><BiomeBadge biome={it.data.biome} guessed={it.data.biome_guessed} /></td>
+              {Object.values(DAMAGE).filter((d) => items.some((i) => i.data.damage[d.label.toLowerCase()])).map((d) => <td class="num">{it.data.damage[d.label.toLowerCase()] ?? ''}</td>)}
+              {hasDamage && <td class="num"><strong>{totalDamage(it) || ''}</strong></td>}
+              <td class="small">{it.data.recipe.materials.join(', ')}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+<script>
+  const root = document;
+  const search = root.querySelector<HTMLInputElement>('[data-search]')!;
+  const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-biome-filter]')];
+  let biome = '';
+
+  function apply() {
+    const q = search.value.trim().toLowerCase();
+    let shown = 0;
+    root.querySelectorAll<HTMLElement>('.card-item, .item-table tbody tr').forEach((el) => {
+      const ok = (!biome || el.dataset.biome === biome) && (!q || (el.dataset.search ?? '').includes(q));
+      el.hidden = !ok;
+      if (ok && el.classList.contains('card-item')) shown++;
+    });
+    root.querySelectorAll<HTMLElement>('[data-group-block]').forEach((g) => {
+      g.hidden = !g.querySelector('.card-item:not([hidden])');
+    });
+    root.querySelector<HTMLElement>('[data-empty]')!.hidden = shown > 0;
+  }
+  search.addEventListener('input', apply);
+  chips.forEach((c) =>
+    c.addEventListener('click', () => {
+      biome = c.dataset.biomeFilter ?? '';
+      chips.forEach((x) => x.classList.toggle('is-on', x === c));
+      apply();
+    })
+  );
+
+  const views = [...root.querySelectorAll<HTMLButtonElement>('[data-view]')];
+  views.forEach((v) =>
+    v.addEventListener('click', () => {
+      views.forEach((x) => x.classList.toggle('is-on', x === v));
+      root.querySelectorAll<HTMLElement>('[data-panel]').forEach((p) => (p.hidden = p.dataset.panel !== v.dataset.view));
+    })
+  );
+
+  // sortable table
+  root.querySelectorAll<HTMLTableElement>('[data-sortable]').forEach((table) => {
+    table.querySelectorAll<HTMLTableCellElement>('th[data-sort]').forEach((th, col) => {
+      let dir = 1;
+      th.addEventListener('click', () => {
+        const rows = [...table.tBodies[0].rows];
+        const key = (r: HTMLTableRowElement) => {
+          const td = r.cells[col];
+          if (th.dataset.sort === 'text') return td.textContent!.trim().toLowerCase();
+          return Number(td.dataset.value ?? (td.textContent!.trim() || -1));
+        };
+        rows.sort((a, b) => (key(a) > key(b) ? dir : key(a) < key(b) ? -dir : 0));
+        dir = -dir;
+        rows.forEach((r) => table.tBodies[0].appendChild(r));
+      });
+    });
+  });
+</script>

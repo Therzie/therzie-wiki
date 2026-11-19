@@ -1,0 +1,20 @@
+biome: Black Forest
+name: Bronze Bolt
+prefab: BoltBronze_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+tier: Bronze
+damage:
+  pierce: 32
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Bronze
+    - Feathers
+source:
+  sheet: Weapons
+  row: 195
+description: ''
+notes: ''

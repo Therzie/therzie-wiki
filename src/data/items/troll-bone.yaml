@@ -1,0 +1,16 @@
+name: Troll Bone
+prefab: TrollBone_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Troll
+    chance: 85%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 20
+description: ''
+notes: ''

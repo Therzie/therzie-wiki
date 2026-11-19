@@ -1,0 +1,23 @@
+biome: Swamp
+name: Iron Knife
+prefab: KnifeIron_TW
+mod: warfare
+kind: weapon
+group: Knives
+skill: Knives
+tier: Iron
+damage:
+  slash: 22
+  pierce: 22
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Iron
+  monstrum:
+    - Leech Trophy
+source:
+  sheet: Weapons
+  row: 94
+description: ''
+notes: ''

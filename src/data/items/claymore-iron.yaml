@@ -1,0 +1,21 @@
+biome: Swamp
+name: Iron Claymore
+prefab: ClaymoreIron_TW
+mod: warfare
+kind: weapon
+group: Claymore
+skill: Swords
+tier: Iron
+damage:
+  slash: 66
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Iron
+    - Draugr Elite Trophy
+source:
+  sheet: Weapons
+  row: 145
+description: ''
+notes: ''

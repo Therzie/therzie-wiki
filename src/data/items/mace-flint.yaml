@@ -1,0 +1,22 @@
+biome: Meadows
+name: Flint Mace
+prefab: MaceFlint_TW
+mod: warfare
+kind: weapon
+group: Maces
+skill: Clubs
+tier: Flint
+damage:
+  blunt: 20
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Flint
+  monstrum:
+    - Leather Scraps or Fox Pelt
+source:
+  sheet: Weapons
+  row: 82
+description: ''
+notes: ''

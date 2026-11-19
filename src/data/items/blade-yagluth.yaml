@@ -1,0 +1,26 @@
+name: Doombringer
+prefab: BladeYagluth_TW
+mod: warfare
+kind: weapon
+group: Boss Weapons
+effect: 'Fire and brimstone: Spawns a meteor projectile from the sky on secondary attack'
+damage:
+  slash: 106
+  fire: 6
+  lightning: 6
+drops:
+  - from: Yagluth
+    chance: 7%
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal
+    - Goblin Totem
+    - Torn Spirit
+    - Yagluth Trophy
+  station: Forge
+source:
+  sheet: Weapons
+  row: 373
+description: ''
+notes: ''

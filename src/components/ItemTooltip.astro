@@ -1,24 +1,31 @@
 ---
 // Item card in the style of an in-game tooltip: name, type line, stat lines with highlighted values.
 import type { Item } from '../lib/wiki';
-import { DAMAGE, totalDamage } from '../lib/wiki';
+import { DAMAGE, totalDamage, statLabel } from '../lib/wiki';
 import Glyph from './Glyph.astro';
 interface Props { item: Item }
 const d = Astro.props.item.data;
 const dmg = Object.entries(d.damage).sort((a, b) => b[1] - a[1]);
+const max = d.damage_max ?? {};
+const stats = Object.entries(d.stats ?? {}).filter(([k]) => k !== 'levels');
 ---
 <div class="tooltip-card" role="group" aria-label={`${d.name} tooltip`}>
   <div class="tooltip-card__name">{d.name}</div>
   <div class="tooltip-card__type">{d.group}{d.skill && ` · ${d.skill}`}</div>
   {d.description && <p class="tooltip-card__desc">{d.description}</p>}
-  <dl class="tooltip-card__stats">
-    {dmg.map(([t, v]) => (
-      <div style={`--c:${DAMAGE[t]?.color ?? '#ccc'}`}>
-        <dt><Glyph damage={t} size={13} />{DAMAGE[t]?.label ?? t}</dt><dd>{v}</dd>
-      </div>
-    ))}
-    {dmg.length > 1 && <div class="tooltip-card__total"><dt>Total</dt><dd>{totalDamage(Astro.props.item)}</dd></div>}
-    {d.recipe.yields > 1 && <div><dt>Crafted per batch</dt><dd>{d.recipe.yields}</dd></div>}
-  </dl>
+  {(dmg.length > 0 || stats.length > 0) && (
+    <dl class="tooltip-card__stats">
+      {dmg.map(([t, v]) => (
+        <div style={`--c:${DAMAGE[t]?.color ?? '#ccc'}`}>
+          <dt><Glyph damage={t} size={13} />{DAMAGE[t]?.label ?? t}</dt><dd>{v}{max[t] ? `–${max[t]}` : ''}</dd>
+        </div>
+      ))}
+      {dmg.length > 1 && <div class="tooltip-card__total"><dt>Total</dt><dd>{totalDamage(Astro.props.item)}</dd></div>}
+      {stats.map(([k, v]) => <div><dt>{statLabel(k)}</dt><dd>{v}</dd></div>)}
+      {d.recipe.yields > 1 && <div><dt>Crafted per batch</dt><dd>{d.recipe.yields}</dd></div>}
+    </dl>
+  )}
+  {d.stats?.levels && <p class="tooltip-card__note">Values for upgrade {String(d.stats.levels).replace(/^lvl/i, 'levels')}</p>}
   {d.effect && <p class="tooltip-card__effect">{d.effect}</p>}
+  {d.info && d.info.length > 0 && <ul class="tooltip-card__info">{d.info.map((x) => <li>{x}</li>)}</ul>}
 </div>

@@ -1,0 +1,22 @@
+name: Stagbreaker (Warfare Version)
+prefab: SledgeStagbreaker_TW
+mod: warfare
+kind: weapon
+group: Sledges
+skill: Clubs
+damage:
+  blunt: 20
+  lightning: 5
+recipe:
+  yields: 1
+  materials:
+    - Core Wood
+    - Deer Trophy
+    - Leather Scraps
+  upgrade:
+    - Bone Fragments (level 2+)
+source:
+  sheet: Weapons
+  row: 119
+description: ''
+notes: ''

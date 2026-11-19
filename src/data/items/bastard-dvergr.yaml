@@ -1,0 +1,25 @@
+biome: Mistlands
+name: Dwarven bastard sword
+prefab: BastardDvergr_TW
+mod: warfare
+kind: weapon
+group: Bastard Swords
+skill: Swords
+tier: Dvergr
+effect: 4th hit lowers targets slash resistance
+damage:
+  slash: 130
+  lightning: 15
+recipe:
+  yields: 1
+  materials:
+    - Carapace
+    - Refined Eitr
+    - Venomous Fang
+  monstrum:
+    - Gjall Trophy
+source:
+  sheet: Weapons
+  row: 158
+description: ''
+notes: ''

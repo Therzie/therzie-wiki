@@ -1,0 +1,17 @@
+name: Ursa rug
+prefab: rug_ArcticBear_TW
+mod: warfare
+kind: piece
+group: Rugs
+stats:
+  comfort: 1
+recipe:
+  yields: 1
+  materials:
+    - Ursa Pelt
+    - Ursa Trophy
+source:
+  sheet: Pieces
+  row: 53
+description: ''
+notes: ''

@@ -1,0 +1,25 @@
+name: Hunger
+prefab: FistQueen_TW
+mod: warfare
+kind: weapon
+group: Boss Weapons
+effect: 'Devour: 6th hit lowers slash resistance and causes bleeding with secondary attack'
+damage:
+  slash: 108
+  poison: 12
+drops:
+  - from: Queen
+    chance: 8%
+recipe:
+  yields: 1
+  materials:
+    - Carapace
+    - Dark Crystal
+    - Venomous Fang
+    - Queen Trophy
+  station: Black Forge
+source:
+  sheet: Weapons
+  row: 373
+description: ''
+notes: ''

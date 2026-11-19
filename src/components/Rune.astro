@@ -3,6 +3,6 @@
 // those get scaled up so every rune reads at the same height.
 interface Props { r: string; class?: string }
 const { r, class: cls } = Astro.props;
-const small = r === 'ᚲ' || r === 'ᛜ';
+const small = r === 'ᚲ' ? 'kaun' : r === 'ᛜ' ? 'ing' : undefined;
 ---
-<span class:list={['rune', cls, { 'rune--small': small }]}>{r}</span>
+<span class:list={['rune', cls, small && `rune--${small}`]}>{r}</span>

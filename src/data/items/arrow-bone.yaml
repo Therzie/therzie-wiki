@@ -1,0 +1,21 @@
+biome: Black Forest
+name: Bone Arrow
+prefab: ArrowBone_TW
+mod: warfare
+kind: ammo
+group: Arrows
+tier: Bone
+damage:
+  blunt: 38
+  pierce: 5
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Bone Fragments
+    - Feathers
+source:
+  sheet: Weapons
+  row: 183
+description: ''
+notes: ''

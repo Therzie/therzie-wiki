@@ -1,0 +1,23 @@
+biome: Plains
+name: Blackmetal bastard sword
+prefab: BastardBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Bastard Swords
+skill: Swords
+tier: Blackmetal
+damage:
+  slash: 106
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal
+    - Tar
+    - Goblin Brute Trophy
+  monstrum:
+    - Lox Bone or Prowler Fang
+source:
+  sheet: Weapons
+  row: 158
+description: ''
+notes: ''

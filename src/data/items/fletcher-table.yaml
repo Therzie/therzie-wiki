@@ -1,0 +1,17 @@
+name: Fletcher table
+prefab: FletcherTable_TW
+mod: warfare
+kind: piece
+group: Fletcher Table & Extensions
+recipe:
+  yields: 1
+  materials:
+    - Bronze
+    - Core Wood
+    - Leather Scraps
+    - Deer Hide
+source:
+  sheet: Pieces
+  row: 2
+description: ''
+notes: ''

@@ -1,0 +1,23 @@
+biome: Ashlands
+name: Flametal daggers
+prefab: DualKnifeFlametal_TW
+mod: warfare
+kind: weapon
+group: Dual Knives
+skill: Knives
+tier: Flametal
+damage:
+  slash: 55
+  pierce: 55
+recipe:
+  yields: 1
+  materials:
+    - Ashwood
+    - Flametal
+    - Charred Bone
+    - Warlock Trophy
+source:
+  sheet: Weapons
+  row: 106
+description: ''
+notes: ''

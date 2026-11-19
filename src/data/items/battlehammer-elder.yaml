@@ -1,0 +1,26 @@
+name: Cranium Basher
+prefab: BattlehammerElder_TW
+mod: warfare
+kind: weapon
+group: Boss Weapons
+effect: 'Smasher: Lowers creatures blunt resistance on 6th hit'
+damage:
+  blunt: 52
+  spirit: 10
+drops:
+  - from: Elder
+    chance: 4%
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Stone
+    - Greydwarf Eye
+  station: Forge
+  monstrum:
+    - Elder Trophy
+source:
+  sheet: Weapons
+  row: 358
+description: ''
+notes: ''

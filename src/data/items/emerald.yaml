@@ -1,0 +1,22 @@
+name: Emerald
+prefab: Emerald_TW
+mod: warfare
+kind: item
+group: Gems
+stats:
+  value: 60
+drops:
+  - from: Yagluth
+    chance: 100%
+  - from: Fuling Shaman
+    chance: 8%
+  - from: Fuling Berserker
+    chance: 3%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 2
+description: ''
+notes: ''

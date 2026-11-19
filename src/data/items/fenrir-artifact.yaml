@@ -1,0 +1,20 @@
+name: Fenrir artifact
+prefab: FenrirArtifact_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Acolyte
+    chance: 85%
+  - from: Stormbringer
+    chance: 65%
+  - from: Herald of the Storm
+    chance: 100%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 50
+description: ''
+notes: ''

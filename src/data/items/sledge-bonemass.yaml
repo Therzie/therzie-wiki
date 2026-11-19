@@ -1,0 +1,25 @@
+name: Skullcrusher
+prefab: SledgeBonemass_TW
+mod: warfare
+kind: weapon
+group: Boss Weapons
+effect: 'Bash: Every hit has a 6% chance to stun your enemies'
+damage:
+  blunt: 64
+  poison: 15
+drops:
+  - from: Bonemass
+    chance: 5%
+recipe:
+  yields: 1
+  materials:
+    - Iron
+    - Guck
+    - Ooze
+    - Bonemass Trophy
+  station: Forge
+source:
+  sheet: Weapons
+  row: 373
+description: ''
+notes: ''

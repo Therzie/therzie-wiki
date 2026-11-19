@@ -7,6 +7,8 @@ export const DAMAGE_GLYPHS: Record<string, string> = {
   frost: '<path d="M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7"/><path d="M9 4l3 2 3-2M9 20l3-2 3 2"/>',
   lightning: '<path d="M13 2 L5 13 h6 l-1 9 8-12 h-6 z"/>',
   poison: '<path d="M12 3c3 5 6 8 6 12a6 6 0 0 1-12 0c0-4 3-7 6-12z"/><path d="M9 15a3 3 0 0 0 3 3"/>',
+  chop: '<path d="M4 20 L14 10"/><path d="M12 4c4 0 8 4 8 8l-6-2-2-6z"/>',
+  pickaxe: '<path d="M12 12 L4 20"/><path d="M4 8c4-4 12-4 16 0l-8 4z"/>',
   spirit: '<path d="M6 21V11a6 6 0 0 1 12 0v10l-2-2-2 2-2-2-2 2-2-2z"/><circle cx="10" cy="11" r="1"/><circle cx="14" cy="11" r="1"/>',
 };
 

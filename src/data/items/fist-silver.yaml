@@ -1,0 +1,25 @@
+biome: Mountains
+name: Silver Claws
+prefab: FistSilver_TW
+mod: warfare
+kind: weapon
+group: Claws
+skill: Fists
+tier: Silver
+effect: on 5th hit cause bleeding damage
+damage:
+  slash: 60
+  spirit: 20
+recipe:
+  yields: 1
+  materials:
+    - Fenris Hair
+    - Fenris Claw
+    - Silver
+  monstrum:
+    - Ulv Trophy
+source:
+  sheet: Weapons
+  row: 258
+description: ''
+notes: ''

@@ -1,0 +1,18 @@
+name: Dwarven Smelter
+prefab: SmelterDwarven_TW
+mod: warfare
+kind: piece
+group: Extra
+info:
+  - Smelt Ores at faster pace
+recipe:
+  yields: 1
+  materials:
+    - Flametal
+    - Glacier Stone
+    - Black Ice
+source:
+  sheet: Pieces
+  row: 43
+description: ''
+notes: ''

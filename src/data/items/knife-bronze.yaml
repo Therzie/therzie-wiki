@@ -1,0 +1,24 @@
+biome: Black Forest
+name: Bronze Knife
+prefab: KnifeBronze_TW
+mod: warfare
+kind: weapon
+group: Knives
+skill: Knives
+tier: Bronze
+damage:
+  slash: 16
+  pierce: 16
+recipe:
+  yields: 1
+  materials:
+    - Bronze
+    - Greydwarf Shaman Trophy
+  monstrum:
+    - Bone Fragments
+    - Razorback Tusk
+source:
+  sheet: Weapons
+  row: 94
+description: ''
+notes: ''

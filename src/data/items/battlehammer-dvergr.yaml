@@ -1,0 +1,28 @@
+biome: Mistlands
+name: Dwarven Battlehammer
+prefab: BattlehammerDvergr_TW
+mod: warfare
+kind: weapon
+group: Battlehammer
+skill: Clubs
+tier: Dvergr
+effect: 4th hit lowers blunt resistance
+damage:
+  blunt: 128
+  lightning: 15
+damage_max:
+  blunt: 149
+stats:
+  levels: lvl 1-4
+recipe:
+  yields: 1
+  materials:
+    - Soft Tissue
+    - Carapace
+    - Refined Eitr
+    - Seeker Soldier Trophy
+source:
+  sheet: Weapons
+  row: 132
+description: ''
+notes: ''

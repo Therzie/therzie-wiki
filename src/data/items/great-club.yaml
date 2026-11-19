@@ -1,0 +1,17 @@
+name: Giant Club
+prefab: GreatClub_TW
+mod: warfare
+kind: weapon
+group: Maces
+skill: Clubs
+damage:
+  blunt: 20
+recipe:
+  yields: 1
+  materials:
+    - Wood
+source:
+  sheet: Weapons
+  row: 82
+description: ''
+notes: ''

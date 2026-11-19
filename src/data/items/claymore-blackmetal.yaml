@@ -1,0 +1,23 @@
+biome: Plains
+name: Blackmetal Claymore
+prefab: ClaymoreBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Claymore
+skill: Swords
+tier: Blackmetal
+damage:
+  slash: 106
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal
+    - Fine Wood
+    - Linen Thread
+  monstrum:
+    - Goblin Shaman Trophy
+source:
+  sheet: Weapons
+  row: 145
+description: ''
+notes: ''

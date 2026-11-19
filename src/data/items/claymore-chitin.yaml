@@ -1,0 +1,21 @@
+biome: Ocean
+name: Abyssal claymore
+prefab: ClaymoreChitin_TW
+mod: warfare
+kind: weapon
+group: Claymore
+skill: Swords
+tier: Chitin
+damage:
+  slash: 56
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Bronze
+    - Chitin
+source:
+  sheet: Weapons
+  row: 145
+description: ''
+notes: ''

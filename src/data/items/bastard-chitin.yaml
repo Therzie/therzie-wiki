@@ -1,0 +1,21 @@
+biome: Ocean
+name: Abyssal bastard sword
+prefab: BastardChitin_TW
+mod: warfare
+kind: weapon
+group: Bastard Swords
+skill: Swords
+tier: Chitin
+damage:
+  slash: 56
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Chitin
+    - Bronze
+source:
+  sheet: Weapons
+  row: 158
+description: ''
+notes: ''

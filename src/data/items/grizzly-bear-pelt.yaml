@@ -1,0 +1,16 @@
+name: Grizzly pelt
+prefab: GrizzlyBearPelt_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Grizzly Bear
+    chance: 90%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 20
+description: ''
+notes: ''

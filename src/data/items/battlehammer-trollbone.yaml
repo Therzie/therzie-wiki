@@ -1,0 +1,19 @@
+name: Trollbane Battlehammer
+prefab: BattlehammerTrollbone_TW
+mod: warfare
+kind: weapon
+group: Battlehammer
+skill: Clubs
+damage:
+  blunt: 48
+recipe:
+  yields: 1
+  materials:
+    - Troll Bone
+    - Troll Hide
+    - Troll Trophy
+source:
+  sheet: Weapons
+  row: 132
+description: ''
+notes: ''

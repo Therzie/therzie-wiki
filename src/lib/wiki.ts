@@ -54,7 +54,7 @@ export function materialIndex(items: Item[]) {
       if (!map.has(m)) map.set(m, { items: [], monstrum: [] });
       map.get(m)!.items.push(it);
     }
-    for (const m of it.data.recipe.monstrum ?? []) {
+    for (const m of (it.data.recipe.monstrum ?? []).flatMap((x) => x.split(/ or /))) {
       if (!map.has(m)) map.set(m, { items: [], monstrum: [] });
       map.get(m)!.monstrum.push(it);
     }
@@ -63,3 +63,13 @@ export function materialIndex(items: Item[]) {
 }
 
 export const repoUrl = `https://github.com/${process.env.SITE_OWNER ?? 'therzie'}/${process.env.SITE_REPO ?? 'therzie-wiki'}`;
+
+export const KIND_LABEL: Record<string, string> = {
+  weapon: 'Weapon', shield: 'Shield', ammo: 'Ammo', tool: 'Tool', piece: 'Piece', item: 'Item',
+};
+export const STAT_LABEL: Record<string, string> = {
+  block_armor: 'Block armor', block_force: 'Block force', parry_bonus: 'Parry bonus', armor: 'Armor',
+  comfort: 'Comfort', value: 'Value', levels: 'Values',
+};
+export const statLabel = (k: string) => STAT_LABEL[k] ?? k.replace(/_/g, ' ').replace(/^\w/, (c) => c.toUpperCase());
+export const isGear = (kind?: string) => ['weapon', 'shield', 'ammo', 'tool'].includes(kind ?? 'weapon');

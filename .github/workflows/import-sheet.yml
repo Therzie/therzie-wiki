@@ -23,7 +23,7 @@ jobs:
         env:
           GOOGLE_SHEETS_API_KEY: ${{ secrets.GOOGLE_SHEETS_API_KEY }}
         run: |
-          node scripts/import-sheet.mjs --range "Weapons!A6:AC68" --mod warfare | tee import-report.txt
+          node scripts/import-sheet.mjs --range "Weapons!A1:AC1185" --range "Pieces!A1:AK1027" --range "Items!A1:AK1005" | tee import-report.txt
       - name: Check that the site still builds
         run: npx astro build
       - uses: peter-evans/create-pull-request@v7

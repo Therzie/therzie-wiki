@@ -1,0 +1,17 @@
+name: Pridetusk saddle
+prefab: SaddleMammoth_TW
+mod: warfare
+kind: item
+group: Recipes
+recipe:
+  yields: 1
+  materials:
+    - Pridetusk Pelt
+    - Broken Mammoth Tusk
+    - Pridetusk Trophy
+  station: Workbench Lvl 5
+source:
+  sheet: Items
+  row: 89
+description: ''
+notes: ''

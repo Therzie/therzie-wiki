@@ -1,8 +1,12 @@
+biome: Ashlands
+biome_guessed: true
 name: Flametal Battleaxe
 prefab: BattleaxeDvergr_TW
 mod: warfare
+kind: weapon
 group: Battleaxe
 skill: Axes
+tier: Dvergr
 damage:
   slash: 174
 recipe:
@@ -14,13 +18,12 @@ recipe:
   monstrum:
     - Valkyrie Trophy
 checks:
-  - Prefab BattleaxeDvergr_TW appears 2x in the sheet (Dwarven Battleaxe, Flametal Battleaxe)
+  - >-
+    Prefab BattleaxeDvergr_TW appears 2x in the sheet (Dwarven Battleaxe, Weapons r29; Flametal Battleaxe,
+    Weapons r29)
   - Prefab tier Dvergr (Mistlands) does not match the name (Ashlands)
 source:
   sheet: Weapons
   row: 29
-biome: Ashlands
-biome_guessed: true
 description: ''
 notes: ''
-tier: Dvergr

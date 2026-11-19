@@ -27,7 +27,7 @@ collections:
     view_groups: [{ label: Type, field: group }, { label: Biome, field: biome }]
     fields:
       - { label: Name, name: name, widget: string, hint: "From the spreadsheet" }
-      - { label: Prefab, name: prefab, widget: string, pattern: ['^[A-Za-z0-9]+_TW$', 'Prefab names end in _TW'], hint: "From the spreadsheet" }
+      - { label: Prefab, name: prefab, widget: string, pattern: ['^[A-Za-z0-9_]+_TW$', 'Prefab names end in _TW'], hint: "From the spreadsheet" }
       - label: Mod
         name: mod
         widget: select

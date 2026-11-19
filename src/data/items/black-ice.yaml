@@ -1,0 +1,18 @@
+name: Black ice
+prefab: BlackIce_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Black Ice Crystals
+    chance: 100%
+  - from: Lokvyr Golem
+    chance: 85%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 50
+description: ''
+notes: ''

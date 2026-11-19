@@ -1,0 +1,25 @@
+biome: Mistlands
+name: Dwarven Lance
+prefab: LanceDvergr_TW
+mod: warfare
+kind: weapon
+group: Atgeir & Lances
+skill: Polearm
+tier: Dvergr
+effect: Secondary attack causes bleed damage over 10 seconds
+damage:
+  pierce: 135
+  lightning: 15
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Dark Crystal
+    - Refined Eitr
+  monstrum:
+    - Gjall Trophy
+source:
+  sheet: Weapons
+  row: 69
+description: ''
+notes: ''

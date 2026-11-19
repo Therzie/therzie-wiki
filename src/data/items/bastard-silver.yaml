@@ -1,0 +1,24 @@
+biome: Mountains
+name: Silver bastard sword
+prefab: BastardSilver_TW
+mod: warfare
+kind: weapon
+group: Bastard Swords
+skill: Swords
+tier: Silver
+damage:
+  slash: 86
+  spirit: 30
+recipe:
+  yields: 1
+  materials:
+    - Silver
+    - Ancient Bark
+    - Wolf Fang
+  monstrum:
+    - Fenring Trophy
+source:
+  sheet: Weapons
+  row: 158
+description: ''
+notes: ''

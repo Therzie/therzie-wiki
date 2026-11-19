@@ -1,0 +1,17 @@
+name: Wood lathe
+prefab: FletcherTable_ext4_TW
+mod: warfare
+kind: piece
+group: Fletcher Table & Extensions
+recipe:
+  yields: 1
+  materials:
+    - Silver
+    - Fine Wood
+    - Obsidian
+    - Wolf Pelt
+source:
+  sheet: Pieces
+  row: 2
+description: ''
+notes: ''

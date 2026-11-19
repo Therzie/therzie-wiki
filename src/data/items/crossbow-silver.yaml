@@ -1,0 +1,23 @@
+biome: Mountains
+name: Silver Crossbow
+prefab: CrossbowSilver_TW
+mod: warfare
+kind: weapon
+group: CrossBows
+tier: Silver
+damage:
+  pierce: 110
+  spirit: 5
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Silver
+    - Red Jute
+    - Cultist Trophy
+  station: Fletchers Table
+source:
+  sheet: Weapons
+  row: 245
+description: ''
+notes: ''

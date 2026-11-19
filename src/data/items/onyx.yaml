@@ -1,0 +1,22 @@
+name: Onyx
+prefab: Onyx_TW
+mod: warfare
+kind: item
+group: Gems
+stats:
+  value: 30
+drops:
+  - from: Bonemass
+    chance: 50%
+  - from: Abomination
+    chance: 8%
+  - from: Draugr Elite
+    chance: 3%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 2
+description: ''
+notes: ''

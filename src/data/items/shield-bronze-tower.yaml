@@ -1,0 +1,21 @@
+biome: Black Forest
+name: Bronze tower shield
+prefab: ShieldBronzeTower_TW
+mod: warfare
+kind: shield
+group: Tower Shields
+tier: Bronze
+stats:
+  block_armor: 34
+  block_force: 100
+recipe:
+  yields: 1
+  materials:
+    - Core Wood
+    - Bronze
+    - Deer Hide
+source:
+  sheet: Weapons
+  row: 344
+description: ''
+notes: ''

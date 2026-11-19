@@ -15,12 +15,17 @@ const dropNulls = (o: Record<string, number | null>) =>
 const item = z.object({
   // --- sheet ---
   name: z.string().min(1),
-  prefab: z.string().regex(/^[A-Za-z0-9]+_TW$/, 'Prefab names end in _TW'),
+  prefab: z.string().regex(/^[A-Za-z0-9_]+_TW$/, 'Prefab names end in _TW'),
   mod: z.enum(MODS.map((m) => m.id) as [string, ...string[]]),
+  kind: z.enum(['weapon', 'shield', 'ammo', 'tool', 'piece', 'item']).default('weapon'),
   group: z.string(),
   skill: opt(z.string()),
   tier: opt(z.enum(TIERS.map((t) => t.id) as [string, ...string[]])),
   effect: opt(z.string()),
+  info: opt(z.array(z.string())),
+  damage_max: opt(z.record(z.string(), z.number())),
+  stats: opt(z.record(z.string(), z.union([z.string(), z.number()]))),
+  drops: opt(z.array(z.object({ from: z.string(), chance: opt(z.string()) }))),
   damage: z.record(z.string(), z.number().nullable()).nullish().transform((d) => dropNulls(d ?? {})),
   recipe: z
     .object({
@@ -29,6 +34,7 @@ const item = z.object({
       level: opt(z.number().int()),
       materials: z.array(z.string()).nullish().transform((v) => v ?? []),
       monstrum: opt(z.array(z.string())),
+      upgrade: opt(z.array(z.string())),
     })
     .default({ yields: 1, materials: [] }),
   checks: z.array(z.string()).nullish().transform((v) => v ?? []),

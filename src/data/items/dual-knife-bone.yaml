@@ -1,0 +1,22 @@
+biome: Black Forest
+name: Bone daggers
+prefab: DualKnifeBone_TW
+mod: warfare
+kind: weapon
+group: Dual Knives
+skill: Knives
+tier: Bone
+damage:
+  slash: 12
+  pierce: 12
+recipe:
+  yields: 1
+  materials:
+    - Bone Fragments
+    - Copper
+    - Wood
+source:
+  sheet: Weapons
+  row: 106
+description: ''
+notes: ''

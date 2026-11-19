@@ -1,8 +1,11 @@
+biome: Plains
 name: Blackmetal Battleaxe
 prefab: BattleaxeBlackmetal_TW
 mod: warfare
+kind: weapon
 group: Battleaxe
 skill: Axes
+tier: Blackmetal
 damage:
   slash: 110
 recipe:
@@ -16,7 +19,5 @@ recipe:
 source:
   sheet: Weapons
   row: 29
-biome: Plains
 description: ''
 notes: ''
-tier: Blackmetal

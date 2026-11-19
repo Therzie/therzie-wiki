@@ -1,8 +1,11 @@
+biome: Mistlands
 name: Dwarven Throwing Axe
 prefab: ThrowAxeDvergr_TW
 mod: warfare
+kind: weapon
 group: Throwing Axes
 skill: Throwing
+tier: Dvergr
 damage:
   slash: 68
   lightning: 4
@@ -15,7 +18,5 @@ recipe:
 source:
   sheet: Weapons
   row: 18
-biome: Mistlands
 description: ''
 notes: ''
-tier: Dvergr

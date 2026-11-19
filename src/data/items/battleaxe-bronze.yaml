@@ -1,8 +1,11 @@
+biome: Black Forest
 name: Bronze Battleaxe
 prefab: BattleaxeBronze_TW
 mod: warfare
+kind: weapon
 group: Battleaxe
 skill: Axes
+tier: Bronze
 damage:
   slash: 50
 recipe:
@@ -11,14 +14,11 @@ recipe:
     - Core Wood
     - Bronze
   monstrum:
-    - Greydwarf Brute Trophy
-    - Razorback Trophy
+    - Greydwarf Brute Trophy or Razorback Trophy
 checks:
   - Read "Greydwarf Brute" as "Greydwarf Brute Trophy" (Monstrum recipe)
 source:
   sheet: Weapons
   row: 29
-biome: Black Forest
 description: ''
 notes: ''
-tier: Bronze

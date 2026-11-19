@@ -1,0 +1,26 @@
+biome: Plains
+name: Blackmetal Battlehammer
+prefab: BattlehammerBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Battlehammer
+skill: Clubs
+tier: Blackmetal
+damage:
+  blunt: 108
+damage_max:
+  blunt: 126
+stats:
+  levels: lvl 1-4
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Lox Bone
+    - Fuling Berserker Trophy
+source:
+  sheet: Weapons
+  row: 132
+description: ''
+notes: ''

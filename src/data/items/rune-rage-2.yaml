@@ -1,0 +1,21 @@
+name: 'Magic Rune: Rage'
+prefab: RuneRage_TW
+mod: warfare
+kind: item
+group: Recipes
+recipe:
+  yields: 1
+  materials:
+    - Black Ice
+    - Jotunn Eyeball
+    - Jotunn Tooth
+    - Broken Mammoth Tusk
+    - Fenrir Artifact
+  station: Rune Sphere Alternative Recipes in Red
+checks:
+  - 'Prefab RuneRage_TW appears 2x in the sheet (Magic Rune: Rage, Items r60; Magic Rune: Rage, Items r99)'
+source:
+  sheet: Items
+  row: 99
+description: ''
+notes: ''

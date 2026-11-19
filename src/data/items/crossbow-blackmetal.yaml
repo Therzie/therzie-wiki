@@ -1,0 +1,22 @@
+biome: Plains
+name: Blackmetal Crossbow
+prefab: CrossbowBlackmetal_TW
+mod: warfare
+kind: weapon
+group: CrossBows
+tier: Blackmetal
+damage:
+  pierce: 140
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Lox Bone
+    - Fuling Berserker Trophy
+  station: Fletchers Table
+source:
+  sheet: Weapons
+  row: 245
+description: ''
+notes: ''

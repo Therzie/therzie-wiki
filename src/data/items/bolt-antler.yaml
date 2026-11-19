@@ -1,0 +1,17 @@
+name: Antler bolt
+prefab: BoltAntler_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+damage:
+  pierce: 27
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Hard Antler
+source:
+  sheet: Weapons
+  row: 195
+description: ''
+notes: ''

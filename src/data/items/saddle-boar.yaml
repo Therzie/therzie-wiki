@@ -1,0 +1,17 @@
+name: Razorback saddle
+prefab: SaddleBoar_TW
+mod: warfare
+kind: item
+group: Saddles
+recipe:
+  yields: 1
+  materials:
+    - Leather Scraps
+    - Black Dye
+    - Razorback Trophy
+  station: Workbench lvl3
+source:
+  sheet: Items
+  row: 39
+description: ''
+notes: ''

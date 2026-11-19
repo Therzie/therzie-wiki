@@ -1,0 +1,24 @@
+name: Ymir idol
+prefab: YmirIdol_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Acolyte
+    chance: 15%
+  - from: Berzerker
+    chance: 38%
+  - from: Juggernaut
+    chance: 38%
+  - from: Primalist
+    chance: 15%
+  - from: Gorr
+    chance: 100%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 60
+description: ''
+notes: ''

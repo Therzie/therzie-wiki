@@ -1,8 +1,11 @@
+biome: Mountains
 name: Silver Throwing Axe
 prefab: ThrowAxeSilver_TW
 mod: warfare
+kind: weapon
 group: Throwing Axes
 skill: Throwing
+tier: Silver
 damage:
   slash: 38
   spirit: 4
@@ -14,7 +17,5 @@ recipe:
 source:
   sheet: Weapons
   row: 18
-biome: Mountains
 description: ''
 notes: ''
-tier: Silver

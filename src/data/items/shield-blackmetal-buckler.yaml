@@ -1,0 +1,23 @@
+biome: Plains
+name: Blackmetal buckler
+prefab: ShieldBlackmetalBuckler_TW
+mod: warfare
+kind: shield
+group: Bucklers
+tier: Blackmetal
+stats:
+  block_armor: 59
+  block_force: 40
+  parry_bonus: 2.5x
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal
+    - Fine Wood
+    - Linen Thread
+    - Lox Trophy
+source:
+  sheet: Weapons
+  row: 316
+description: ''
+notes: ''

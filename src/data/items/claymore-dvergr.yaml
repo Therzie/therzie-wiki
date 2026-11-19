@@ -1,0 +1,25 @@
+biome: Mistlands
+name: Dwarven Claymore
+prefab: ClaymoreDvergr_TW
+mod: warfare
+kind: weapon
+group: Claymore
+skill: Swords
+tier: Dvergr
+effect: Enemy targets below 25% take 15-20% extra damage
+damage:
+  slash: 130
+  lightning: 15
+recipe:
+  yields: 1
+  materials:
+    - Carapace
+    - Mandible
+    - Refined Eitr
+  monstrum:
+    - Seeker Soldier Trophy
+source:
+  sheet: Weapons
+  row: 145
+description: ''
+notes: ''

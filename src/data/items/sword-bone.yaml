@@ -1,0 +1,23 @@
+biome: Black Forest
+name: BoneSword
+prefab: SwordBone_TW
+mod: warfare
+kind: weapon
+group: Swords
+skill: Swords
+tier: Bone
+damage:
+  slash: 28
+recipe:
+  yields: 1
+  materials:
+    - Bone Fragments
+    - Core Wood
+    - Tin
+checks:
+  - 'Unknown damage type "Blunet" in "Blunet: 7"'
+source:
+  sheet: Weapons
+  row: 171
+description: ''
+notes: ''

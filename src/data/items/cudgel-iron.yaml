@@ -1,0 +1,22 @@
+biome: Swamp
+name: Iron spiked cudgel
+prefab: CudgelIron_TW
+mod: warfare
+kind: weapon
+group: Maces
+skill: Clubs
+tier: Iron
+damage:
+  blunt: 30
+  pierce: 25
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Iron
+    - Rotten Pelt
+source:
+  sheet: Weapons
+  row: 82
+description: ''
+notes: ''

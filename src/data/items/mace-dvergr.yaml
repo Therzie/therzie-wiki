@@ -1,0 +1,24 @@
+biome: Mistlands
+name: Dwarven Mallet
+prefab: MaceDvergr_TW
+mod: warfare
+kind: weapon
+group: Maces
+skill: Clubs
+tier: Dvergr
+damage:
+  blunt: 100
+  lightning: 15
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Carapace
+    - Refined Eitr
+  monstrum:
+    - Dvergr Trophy
+source:
+  sheet: Weapons
+  row: 82
+description: ''
+notes: ''

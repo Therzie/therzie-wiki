@@ -1,20 +1,26 @@
 ---
 // Recipe as a row of crafting slots, like a workbench requirement list.
+// A Monstrum entry can be a choice ("A or B"); that slot shows both names.
 import { url, slugify } from '../lib/wiki';
-interface Props { materials: string[]; variant?: 'base' | 'monstrum' }
+interface Props { materials: string[]; variant?: 'base' | 'monstrum' | 'upgrade' }
 const { materials, variant = 'base' } = Astro.props;
 const mono = (m: string) => m.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
 ---
 <ul class:list={['slots', `slots--${variant}`]}>
-  {materials.map((m, i) => (
-    <>
-      {variant === 'monstrum' && i > 0 && <li class="slots__or">or</li>}
-      <li>
-        <a class="slot" href={url(`/materials/#${slugify(m)}`)} title={m}>
-          <span class="slot__box"><span>{mono(m)}</span></span>
-          <span class="slot__name">{m}</span>
-        </a>
+  {materials.map((entry) => {
+    const alts = entry.split(/ or /);
+    return (
+      <li class:list={{ 'slots__choice': alts.length > 1 }}>
+        {alts.map((m, i) => (
+          <>
+            {i > 0 && <span class="slots__or">or</span>}
+            <a class="slot" href={url(`/materials/#${slugify(m.replace(/\s*\(level.*\)$/, ''))}`)} title={m}>
+              <span class="slot__box"><span>{mono(m)}</span></span>
+              <span class="slot__name">{m}</span>
+            </a>
+          </>
+        ))}
       </li>
-    </>
-  ))}
+    );
+  })}
 </ul>

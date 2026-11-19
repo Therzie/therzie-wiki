@@ -1,0 +1,20 @@
+name: Frost Bolt
+prefab: BoltFrost_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+damage:
+  pierce: 31
+  frost: 52
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Obsidian
+    - Feathers
+    - Freeze Gland
+source:
+  sheet: Weapons
+  row: 195
+description: ''
+notes: ''

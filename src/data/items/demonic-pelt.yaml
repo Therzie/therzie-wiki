@@ -1,0 +1,16 @@
+name: Rugged demon pelt
+prefab: DemonicPelt_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Helhound
+    chance: 100%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 70
+description: ''
+notes: ''

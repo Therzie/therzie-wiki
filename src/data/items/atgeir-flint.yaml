@@ -1,0 +1,22 @@
+biome: Meadows
+name: Flint Atgeir
+prefab: AtgeirFlint_TW
+mod: warfare
+kind: weapon
+group: Atgeir & Lances
+skill: Polearm
+tier: Flint
+damage:
+  pierce: 25
+recipe:
+  yields: 1
+  materials:
+    - Flint
+    - Core Wood
+  monstrum:
+    - Leather Scraps or Fox Pelt
+source:
+  sheet: Weapons
+  row: 69
+description: ''
+notes: ''

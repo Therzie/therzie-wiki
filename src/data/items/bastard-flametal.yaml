@@ -1,0 +1,24 @@
+biome: Ashlands
+name: Flametal Bastard Sword
+prefab: BastardFlametal_TW
+mod: warfare
+kind: weapon
+group: Bastard Swords
+skill: Swords
+tier: Flametal
+effect: 4th hit lowers targets slash resistance
+damage:
+  slash: 170
+recipe:
+  yields: 1
+  materials:
+    - Flametal
+    - Charred Bone
+    - Asksvin Hide
+  monstrum:
+    - Bonemaw Trophy
+source:
+  sheet: Weapons
+  row: 158
+description: ''
+notes: ''

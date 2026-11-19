@@ -1,0 +1,17 @@
+name: Pridetusk rug
+prefab: rug_Mammoth_TW
+mod: warfare
+kind: piece
+group: Rugs
+stats:
+  comfort: 1
+recipe:
+  yields: 1
+  materials:
+    - Pridetusk Pelt
+    - Broken Mammoth Tusk
+source:
+  sheet: Pieces
+  row: 53
+description: ''
+notes: ''

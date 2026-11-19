@@ -1,0 +1,25 @@
+biome: Mistlands
+name: Dwarven fists
+prefab: FistDvergr_TW
+mod: warfare
+kind: weapon
+group: Claws
+skill: Fists
+tier: Dvergr
+effect: on 5th hit restores a % of your stamina
+damage:
+  blunt: 105
+  lightning: 10
+recipe:
+  yields: 1
+  materials:
+    - Soft Tissue
+    - Mandible
+    - Refined Eitr
+  monstrum:
+    - Seeker Trophy
+source:
+  sheet: Weapons
+  row: 258
+description: ''
+notes: ''

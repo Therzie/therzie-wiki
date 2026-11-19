@@ -1,0 +1,24 @@
+name: Dark crystal
+prefab: DarkCrystal_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Dvergr
+    chance: 15%
+  - from: Dvergr Mages
+    chance: 25%
+  - from: Gjall
+    chance: 35%
+  - from: Seeker
+    chance: 15%
+  - from: Seeker Soldier
+    chance: 20%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 28
+description: ''
+notes: ''

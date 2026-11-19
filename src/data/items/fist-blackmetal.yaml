@@ -1,0 +1,25 @@
+biome: Plains
+name: Blackmetal claws
+prefab: FistBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Claws
+skill: Fists
+tier: Blackmetal
+effect: on 6th hit increases your movement speed
+damage:
+  slash: 80
+recipe:
+  yields: 1
+  materials:
+    - Blackmetal
+    - Needle
+    - Trophy Deathsquito
+  monstrum:
+    - Lox Bone
+    - Prowler Fang
+source:
+  sheet: Weapons
+  row: 258
+description: ''
+notes: ''

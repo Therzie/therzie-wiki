@@ -1,0 +1,16 @@
+name: Enchanted blazing coal
+prefab: CoalMuspelheim_TW
+mod: warfare
+kind: item
+group: Recipes
+recipe:
+  yields: 1
+  materials:
+    - Coal
+    - Muspelheim Crystal
+  station: Ymir Forge
+source:
+  sheet: Items
+  row: 89
+description: ''
+notes: ''

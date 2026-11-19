@@ -1,0 +1,22 @@
+biome: Black Forest
+name: Bronze banded shield
+prefab: ShieldBronzeBanded_TW
+mod: warfare
+kind: shield
+group: Round Shields
+tier: Bronze
+stats:
+  block_armor: 24
+  block_force: 30
+  parry_bonus: 1.5x
+recipe:
+  yields: 1
+  materials:
+    - Core Wood
+    - Bronze
+    - Deer Hide
+source:
+  sheet: Weapons
+  row: 330
+description: ''
+notes: ''

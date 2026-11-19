@@ -1,0 +1,17 @@
+name: Thoradus Smithing Mallet
+prefab: YmirForge_ext3_TW
+mod: warfare
+kind: piece
+group: Ymir Forge & Extensions
+recipe:
+  yields: 1
+  materials:
+    - Thoradus
+    - 'Magic Rune: Wrath'
+    - Broken Mammoth Tusk
+    - Boreal Pine Wood
+source:
+  sheet: Pieces
+  row: 31
+description: ''
+notes: ''

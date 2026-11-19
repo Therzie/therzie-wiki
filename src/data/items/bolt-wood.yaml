@@ -1,0 +1,16 @@
+name: Wooden bolt
+prefab: BoltWood_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+damage:
+  pierce: 22
+recipe:
+  yields: 1
+  materials:
+    - Wood
+source:
+  sheet: Weapons
+  row: 195
+description: ''
+notes: ''

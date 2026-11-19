@@ -1,0 +1,25 @@
+biome: Swamp
+name: Iron Battlehammer
+prefab: BattlehammerIron_TW
+mod: warfare
+kind: weapon
+group: Battlehammer
+skill: Clubs
+tier: Iron
+damage:
+  blunt: 68
+damage_max:
+  blunt: 86
+stats:
+  levels: lvl 1-4
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Iron
+    - Draugr Elite Trophy
+source:
+  sheet: Weapons
+  row: 132
+description: ''
+notes: ''

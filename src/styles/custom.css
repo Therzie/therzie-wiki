@@ -461,5 +461,25 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 
 /* small runes (kaun, ing) at the same visual height as the rest */
 .rune { display: inline-block; }
-.rune--small { transform: scale(2.2); transform-origin: 50% 65%; margin-inline: 0.2em; }
+.rune--kaun { transform: scale(2.2); transform-origin: 50% 65%; margin-inline: 0.2em; }
+.rune--ing { transform: scale(1.35); transform-origin: 50% 60%; }
 .rune-divider span { display: inline-flex; gap: 0.35em; letter-spacing: 0; }
+
+/* jump links to the groups on a browser page */
+.group-jump { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; margin-top: 1rem !important; font-size: var(--sl-text-sm); }
+.group-jump a { color: var(--tw-bronze-hi); text-decoration: none; font-family: var(--tw-head); letter-spacing: 0.06em; text-transform: uppercase; }
+.group-jump a:hover { color: var(--tw-ember); }
+
+/* drops, choices, extra tooltip lines */
+.drops { list-style: none; padding: 0; margin: 0.5rem 0 0; display: grid; gap: 0.2rem; }
+.drops li { display: flex; justify-content: space-between; margin: 0 !important; padding: 0.2rem 0; border-bottom: 1px solid rgb(230 194 127 / 0.08); font-size: var(--sl-text-sm); color: var(--sl-color-gray-1); }
+.drops__chance { color: var(--tw-ember); font-weight: 700; font-variant-numeric: tabular-nums; }
+.slots__choice { display: flex; align-items: flex-start; gap: 0.35rem; }
+.slots__choice .slots__or { align-self: center; margin-top: -1.2rem; }
+.slots--upgrade .slot__box { box-shadow: inset 0 0 0 1px #5f8fbf, inset 0 0 12px rgb(0 0 0 / 0.8); }
+.tooltip-card__note { margin: 0.4rem 0 0; font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); }
+.tooltip-card__info { margin: 0.5rem 0 0; padding-left: 1rem; font-size: var(--sl-text-xs); color: var(--sl-color-gray-2); }
+.tooltip-card__info li { margin: 0 !important; }
+.card-item__drops { margin: 0; font-size: var(--sl-text-xs); color: var(--sl-color-gray-2); }
+
+.matrix--tiers .matrix__group { font-size: 0.85rem; overflow-wrap: anywhere; }

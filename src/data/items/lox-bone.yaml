@@ -1,0 +1,18 @@
+name: Lox Bone
+prefab: LoxBone_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Lox
+    chance: 75%
+  - from: Prowler
+    chance: 25%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 20
+description: ''
+notes: ''

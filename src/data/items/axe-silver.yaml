@@ -1,8 +1,11 @@
+biome: Mountains
 name: Silver Axe
 prefab: AxeSilver_TW
 mod: warfare
+kind: weapon
 group: Axes
 skill: Axes
+tier: Silver
 damage:
   slash: 80
   spirit: 30
@@ -16,7 +19,5 @@ recipe:
 source:
   sheet: Weapons
   row: 6
-biome: Mountains
 description: ''
 notes: ''
-tier: Silver

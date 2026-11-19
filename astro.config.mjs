@@ -36,6 +36,8 @@ export default defineConfig({
             { label: 'Overview', link: '/warfare/' },
             { label: 'The Forge Path', link: '/warfare/#the-forge-path' },
             { label: 'Weapons', link: '/warfare/weapons/' },
+            { label: 'Pieces', link: '/warfare/pieces/' },
+            { label: 'Items', link: '/warfare/items/' },
             { label: 'Relics of the Forsaken', link: '/warfare/#relics-of-the-forsaken' },
             { label: 'Eitr Infusion', link: '/warfare/#eitr-infusion' },
           ],

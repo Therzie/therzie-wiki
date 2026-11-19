@@ -1,0 +1,22 @@
+biome: Ocean
+name: Abyssal katars
+prefab: FistChitin_TW
+mod: warfare
+kind: weapon
+group: Claws
+skill: Fists
+tier: Chitin
+effect: Secondary attack causes Bleed damage
+damage:
+  slash: 30
+recipe:
+  yields: 1
+  materials:
+    - Deer Hide
+    - Bronze
+    - Chitin
+source:
+  sheet: Weapons
+  row: 258
+description: ''
+notes: ''

@@ -1,7 +1,7 @@
 import tiers from '../data/tiers.json';
 
 export const MODS = [
-  { id: 'warfare', name: 'Warfare', blurb: 'Weapons, shields and pieces', ready: true },
+  { id: 'warfare', name: 'Warfare', blurb: 'Weapons, shields, pieces and items', ready: true },
   { id: 'warfare-fi', name: 'Warfare Fire & Ice', blurb: 'Elemental weapons and armor', ready: false },
   { id: 'armory', name: 'Armory', blurb: 'Armor sets for every biome', ready: false },
   { id: 'monstrum', name: 'Monstrum', blurb: 'Creatures, bosses, food and taming', ready: false },
@@ -30,6 +30,8 @@ export const DAMAGE = {
   lightning: { label: 'Lightning', color: '#f2d64b' },
   poison: { label: 'Poison', color: '#86c35a' },
   spirit: { label: 'Spirit', color: '#e8e2c8' },
+  chop: { label: 'Chop', color: '#b98b5a' },
+  pickaxe: { label: 'Pickaxe', color: '#9aa3ad' },
 } as Record<string, { label: string; color: string }>;
 
 

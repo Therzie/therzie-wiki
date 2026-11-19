@@ -1,0 +1,19 @@
+name: Spirit Bomb
+prefab: BombSpirit_TW
+mod: warfare
+kind: weapon
+group: Extra
+damage:
+  spirit: 40
+recipe:
+  yields: 1
+  materials:
+    - Silver Ore
+    - Fenris Hair
+    - Cloud Berry
+  station: Cauldron
+source:
+  sheet: Weapons
+  row: 296
+description: ''
+notes: ''

@@ -1,0 +1,24 @@
+name: Demon horn
+prefab: DemonicHorn_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Brutalis
+    chance: 100%
+  - from: Enforcer
+    chance: 85%
+  - from: Legionnaire
+    chance: 85%
+  - from: Doomcaller
+    chance: 60%
+  - from: Warbringer
+    chance: 85%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 70
+description: ''
+notes: ''

@@ -1,8 +1,11 @@
+biome: Mistlands
 name: Dwarven Battleaxe
 prefab: BattleaxeDvergr_TW
 mod: warfare
+kind: weapon
 group: Battleaxe
 skill: Axes
+tier: Dvergr
 effect: 4th hit lowers enemy slash resistance for the next attack
 damage:
   slash: 135
@@ -16,11 +19,11 @@ recipe:
   monstrum:
     - Gjall Trophy
 checks:
-  - Prefab BattleaxeDvergr_TW appears 2x in the sheet (Dwarven Battleaxe, Flametal Battleaxe)
+  - >-
+    Prefab BattleaxeDvergr_TW appears 2x in the sheet (Dwarven Battleaxe, Weapons r29; Flametal Battleaxe,
+    Weapons r29)
 source:
   sheet: Weapons
   row: 29
-biome: Mistlands
 description: ''
 notes: ''
-tier: Dvergr

@@ -1,0 +1,22 @@
+biome: Ocean
+name: Chitin daggers
+prefab: DualKnifeChitin_TW
+mod: warfare
+kind: weapon
+group: Dual Knives
+skill: Knives
+tier: Chitin
+damage:
+  slash: 18
+  pierce: 18
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Chitin
+    - Bronze
+source:
+  sheet: Weapons
+  row: 106
+description: ''
+notes: ''

@@ -1,0 +1,22 @@
+biome: Black Forest
+name: Bone war pike
+prefab: WarpikeBone_TW
+mod: warfare
+kind: weapon
+group: WarPikes
+skill: Spears
+tier: Bone
+effect: 4th hit lowers targets pierce resistance
+damage:
+  pierce: 38
+recipe:
+  yields: 1
+  materials:
+    - Bone Fragments
+    - Copper
+    - Skeleon Trophy
+source:
+  sheet: Weapons
+  row: 283
+description: ''
+notes: ''

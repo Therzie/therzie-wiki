@@ -1,0 +1,19 @@
+name: 'Magic Rune: Wrath'
+prefab: RuneWrath_TW
+mod: warfare
+kind: item
+group: Recipes
+recipe:
+  yields: 1
+  materials:
+    - 'Magic Rune: Rage'
+    - 'Magic Rune: Destruction'
+    - Fenrir Artifact
+  station: Rune Sphere
+checks:
+  - 'Prefab RuneWrath_TW appears 2x in the sheet (Magic Rune: Wrath, Items r60; Magic Rune: Wrath, Items r99)'
+source:
+  sheet: Items
+  row: 99
+description: ''
+notes: ''

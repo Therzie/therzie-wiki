@@ -1,0 +1,20 @@
+name: Rotten Pelt
+prefab: RottenPelt_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Draugr
+    chance: 12%
+  - from: Draugr Elite
+    chance: 35%
+  - from: Rotten Elk
+    chance: 100%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 20
+description: ''
+notes: ''

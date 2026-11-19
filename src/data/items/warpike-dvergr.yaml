@@ -1,0 +1,25 @@
+biome: Mistlands
+name: Dwarven war pike
+prefab: WarpikeDvergr_TW
+mod: warfare
+kind: weapon
+group: WarPikes
+skill: Spears
+tier: Dvergr
+effect: 4th hit lowers targets pierce resistance
+damage:
+  pierce: 103
+  lightning: 15
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Refined Eitr
+    - Venomous Fang
+  monstrum:
+    - Tick Trophy
+source:
+  sheet: Weapons
+  row: 283
+description: ''
+notes: ''

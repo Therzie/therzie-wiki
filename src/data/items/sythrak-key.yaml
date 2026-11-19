@@ -1,0 +1,20 @@
+name: Destroyer's idol
+prefab: SythrakKey_TW
+mod: warfare
+kind: item
+group: Recipes
+info:
+  - Opens Door to Sythrak
+recipe:
+  yields: 1
+  materials:
+    - Ragnorite
+    - 'Magic Rune: Destruction'
+    - Drake Scale
+    - Surtr Idol
+  station: Lokvyr Smelting Vat
+source:
+  sheet: Items
+  row: 89
+description: ''
+notes: ''

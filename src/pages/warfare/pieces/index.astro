@@ -1,0 +1,10 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import ItemBrowser from '../../../components/ItemBrowser.astro';
+import { getItems } from '../../../lib/wiki';
+const items = (await getItems('warfare')).filter((i) => i.data.kind === 'piece');
+---
+<StarlightPage frontmatter={{ title: 'Warfare pieces', description: 'Crafting stations, extensions, rugs and banners from Warfare.', tableOfContents: false }}>
+  <p class="lead">Crafting stations and their extensions, rugs and banners that Warfare adds to the build menu.</p>
+  <ItemBrowser items={items} />
+</StarlightPage>

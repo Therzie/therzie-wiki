@@ -1,0 +1,18 @@
+name: Black jute
+prefab: JuteBlack_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Dvergr
+    chance: 25%
+  - from: Dvergr Mages
+    chance: 35%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 28
+description: ''
+notes: ''

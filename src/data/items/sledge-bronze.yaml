@@ -1,0 +1,21 @@
+biome: Black Forest
+name: BronzeSledgehammer
+prefab: SledgeBronze_TW
+mod: warfare
+kind: weapon
+group: Sledges
+skill: Clubs
+tier: Bronze
+damage:
+  blunt: 45
+recipe:
+  yields: 1
+  materials:
+    - Core Wood
+    - Bronze
+    - Greydward Brute Trophy
+source:
+  sheet: Weapons
+  row: 119
+description: ''
+notes: ''

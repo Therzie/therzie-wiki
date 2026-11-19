@@ -1,0 +1,19 @@
+name: Explosive Poison Bolt
+prefab: BoltExplosivePoison_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+effect: Explodes on impact
+damage:
+  pierce: 55
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Blackmetal
+    - Ooze
+source:
+  sheet: Weapons
+  row: 206
+description: ''
+notes: ''

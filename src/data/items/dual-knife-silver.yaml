@@ -1,0 +1,24 @@
+biome: Mountains
+name: Silver daggers
+prefab: DualKnifeSilver_TW
+mod: warfare
+kind: weapon
+group: Dual Knives
+skill: Knives
+tier: Silver
+damage:
+  slash: 26
+  pierce: 26
+  spirit: 12
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Crystal
+    - Silver
+    - Cultist Trophy
+source:
+  sheet: Weapons
+  row: 106
+description: ''
+notes: ''

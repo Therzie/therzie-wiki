@@ -1,0 +1,20 @@
+name: Blunt Bolt
+prefab: BoltBlunt_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+damage:
+  blunt: 55
+  pierce: 10
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Obsidian
+    - Iron
+    - Feathers
+source:
+  sheet: Weapons
+  row: 206
+description: ''
+notes: ''

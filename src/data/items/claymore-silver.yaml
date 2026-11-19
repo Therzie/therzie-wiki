@@ -1,0 +1,25 @@
+biome: Mountains
+name: Silver Claymore
+prefab: ClaymoreSilver_TW
+mod: warfare
+kind: weapon
+group: Claymore
+skill: Swords
+tier: Silver
+damage:
+  slash: 86
+  spirit: 30
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Silver
+    - Crystal
+  monstrum:
+    - Cultist Trophy
+    - Grizzly Bear Trophy
+source:
+  sheet: Weapons
+  row: 145
+description: ''
+notes: ''

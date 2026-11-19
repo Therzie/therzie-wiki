@@ -1,0 +1,22 @@
+name: Diamond
+prefab: Diamond_TW
+mod: warfare
+kind: item
+group: Gems
+stats:
+  value: 45
+drops:
+  - from: Moder
+    chance: 80%
+  - from: Cultist
+    chance: 8%
+  - from: StoneGolem
+    chance: 3%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 2
+description: ''
+notes: ''

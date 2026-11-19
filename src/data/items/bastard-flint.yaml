@@ -1,0 +1,23 @@
+biome: Meadows
+name: Flint bastard sword
+prefab: BastardFlint_TW
+mod: warfare
+kind: weapon
+group: Bastard Swords
+skill: Swords
+tier: Flint
+damage:
+  slash: 26
+recipe:
+  yields: 1
+  materials:
+    - Flint
+    - Core Wood
+    - Greydwarf Eye
+  monstrum:
+    - Leather Scraps
+source:
+  sheet: Weapons
+  row: 158
+description: ''
+notes: ''

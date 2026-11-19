@@ -1,0 +1,22 @@
+biome: Meadows
+name: Flint Sword
+prefab: SwordFlint_TW
+mod: warfare
+kind: weapon
+group: Swords
+skill: Swords
+tier: Flint
+damage:
+  slash: 15
+recipe:
+  yields: 1
+  materials:
+    - Flint
+    - Wood
+  monstrum:
+    - Leather Scraps or Fox Pelt
+source:
+  sheet: Weapons
+  row: 171
+description: ''
+notes: ''

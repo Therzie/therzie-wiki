@@ -1,0 +1,18 @@
+name: Pridetusk pelt
+prefab: ArcticMammothPelt_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Pridetusk
+    chance: 85%
+recipe:
+  yields: 1
+  materials: []
+checks:
+  - Prefab ArcticMammothPelt_TW appears 2x in the sheet (Pridetusk pelt, Items r50; Pridetusk pelt, Items r50)
+source:
+  sheet: Items
+  row: 50
+description: ''
+notes: ''

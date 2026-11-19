@@ -1,0 +1,17 @@
+name: Bear saddle
+prefab: SaddleBear_TW
+mod: warfare
+kind: item
+group: Saddles
+recipe:
+  yields: 1
+  materials:
+    - Black Bear Pelt
+    - Troll Bone
+    - Black Bear Trophy
+  station: Workbench lvl3
+source:
+  sheet: Items
+  row: 39
+description: ''
+notes: ''

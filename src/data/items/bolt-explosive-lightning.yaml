@@ -1,0 +1,19 @@
+name: Explosive Lightning Bolt
+prefab: BoltExplosiveLightning_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+effect: Lightning damage on impact
+damage:
+  pierce: 55
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Carapace
+    - Refined Eitr
+source:
+  sheet: Weapons
+  row: 206
+description: ''
+notes: ''

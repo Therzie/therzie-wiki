@@ -1,0 +1,23 @@
+biome: Plains
+name: Blackmetal Trident
+prefab: TridentBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Atgeir & Lances
+skill: Polearm
+tier: Blackmetal
+damage:
+  pierce: 106
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Chitin
+  monstrum:
+    - Lox Trophy
+source:
+  sheet: Weapons
+  row: 69
+description: ''
+notes: ''

@@ -1,0 +1,20 @@
+name: Helweave leather
+prefab: Helcloth_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Enforcer
+    chance: 60%
+  - from: Doomcaller
+    chance: 85%
+  - from: Warbringer
+    chance: 50%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 70
+description: ''
+notes: ''

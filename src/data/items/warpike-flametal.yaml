@@ -1,0 +1,26 @@
+biome: Ashlands
+name: Flametal war pike
+prefab: WarpikeFlametal_TW
+mod: warfare
+kind: weapon
+group: WarPikes
+skill: Spears
+tier: Flametal
+effect: 4th hit lowers targets pierce resistance
+damage:
+  pierce: 138
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Flametal
+    - Charred Bone
+  monstrum:
+    - Warrior Trophy
+checks:
+  - '"Recipe" heading missing in the sheet'
+source:
+  sheet: Weapons
+  row: 283
+description: ''
+notes: ''

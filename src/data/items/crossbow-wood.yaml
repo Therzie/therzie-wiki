@@ -1,0 +1,19 @@
+name: Crude Crossbow
+prefab: CrossbowWood_TW
+mod: warfare
+kind: weapon
+group: CrossBows
+damage:
+  pierce: 30
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Deer Hide
+    - Leather Scraps
+  station: Workbench
+source:
+  sheet: Weapons
+  row: 245
+description: ''
+notes: ''

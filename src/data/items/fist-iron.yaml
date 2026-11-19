@@ -1,0 +1,21 @@
+biome: Swamp
+name: Iron knuckles
+prefab: FistIron_TW
+mod: warfare
+kind: weapon
+group: Claws
+skill: Fists
+tier: Iron
+damage:
+  blunt: 40
+recipe:
+  yields: 1
+  materials:
+    - Rotten Pelt
+    - Iron
+    - Abomination Trophy
+source:
+  sheet: Weapons
+  row: 258
+description: ''
+notes: ''

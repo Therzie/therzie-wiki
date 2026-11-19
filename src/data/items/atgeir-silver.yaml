@@ -1,0 +1,24 @@
+biome: Mountains
+name: Silver Atgeir
+prefab: AtgeirSilver_TW
+mod: warfare
+kind: weapon
+group: Atgeir & Lances
+skill: Polearm
+tier: Silver
+damage:
+  pierce: 85
+  spirit: 30
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Silver
+    - Fenrir Claw
+  monstrum:
+    - Cultist Trophy or Obisidan Golem Trophy
+source:
+  sheet: Weapons
+  row: 69
+description: ''
+notes: ''

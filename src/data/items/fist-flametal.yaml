@@ -1,0 +1,24 @@
+biome: Ashlands
+name: Flametal Claws
+prefab: FistFlametal_TW
+mod: warfare
+kind: weapon
+group: Claws
+skill: Fists
+tier: Flametal
+effect: on 5th hit lower slash
+damage:
+  slash: 135
+recipe:
+  yields: 1
+  materials:
+    - Flametal
+    - Bonemaw Tooth
+    - Asksvin Hide
+  monstrum:
+    - Asksvin Trophy
+source:
+  sheet: Weapons
+  row: 258
+description: ''
+notes: ''

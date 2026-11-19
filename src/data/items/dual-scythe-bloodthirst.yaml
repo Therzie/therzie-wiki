@@ -1,0 +1,25 @@
+name: Blood Thirster
+prefab: DualScytheBloodthirst_TW
+mod: warfare
+kind: weapon
+group: Boss Weapons
+effect: Increased Damage per missing health 0.25%
+damage:
+  slash: 62
+drops:
+  - from: Vrykolathas
+    chance: 6%
+recipe:
+  yields: 1
+  materials:
+    - Iron
+    - Rotten Pelt
+    - Bloodbag
+  monstrum:
+    - Bonemass Trophy
+    - Vrykolathas Trophy
+source:
+  sheet: Weapons
+  row: 358
+description: ''
+notes: ''

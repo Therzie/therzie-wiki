@@ -1,0 +1,24 @@
+biome: Mountains
+name: Silver Sledgehammer
+prefab: SledgeSilver_TW
+mod: warfare
+kind: weapon
+group: Sledges
+skill: Clubs
+tier: Silver
+effect: 2% chance to stun
+damage:
+  blunt: 75
+  spirit: 30
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Silver
+    - Wolf Fang
+    - Cultist Trophy
+source:
+  sheet: Weapons
+  row: 119
+description: ''
+notes: ''

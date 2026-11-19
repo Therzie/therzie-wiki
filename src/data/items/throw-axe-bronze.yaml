@@ -1,8 +1,11 @@
+biome: Black Forest
 name: Bronze Throwing Axe
 prefab: ThrowAxeBronze_TW
 mod: warfare
+kind: weapon
 group: Throwing Axes
 skill: Throwing
+tier: Bronze
 damage:
   slash: 18
 recipe:
@@ -13,7 +16,5 @@ recipe:
 source:
   sheet: Weapons
   row: 18
-biome: Black Forest
 description: ''
 notes: ''
-tier: Bronze

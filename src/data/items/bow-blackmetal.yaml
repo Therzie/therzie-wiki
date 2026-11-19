@@ -1,0 +1,23 @@
+biome: Plains
+name: Blackmetal Bow
+prefab: BowBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Bows
+tier: Blackmetal
+damage:
+  pierce: 62
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+  station: Fletchers Table
+  monstrum:
+    - Needle
+    - Deathsquito Trophy
+source:
+  sheet: Weapons
+  row: 219
+description: ''
+notes: ''

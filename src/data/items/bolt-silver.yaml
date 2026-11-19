@@ -1,0 +1,21 @@
+biome: Mountains
+name: Silver Bolt
+prefab: BoltSilver_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+tier: Silver
+damage:
+  pierce: 52
+  spirit: 20
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Silver
+    - Feathers
+source:
+  sheet: Weapons
+  row: 206
+description: ''
+notes: ''

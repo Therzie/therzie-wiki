@@ -1,8 +1,11 @@
+biome: Plains
 name: Blackmetal Throwing Axe
 prefab: ThrowAxeBlackMetal_TW
 mod: warfare
+kind: weapon
 group: Throwing Axes
 skill: Throwing
+tier: Blackmetal
 damage:
   slash: 48
 recipe:
@@ -14,7 +17,5 @@ recipe:
 source:
   sheet: Weapons
   row: 18
-biome: Plains
 description: ''
 notes: ''
-tier: Blackmetal

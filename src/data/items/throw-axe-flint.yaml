@@ -1,8 +1,11 @@
+biome: Meadows
 name: Flint Throwing Axe
 prefab: ThrowAxeFlint_TW
 mod: warfare
+kind: weapon
 group: Throwing Axes
 skill: Throwing
+tier: Flint
 damage:
   slash: 9
 recipe:
@@ -13,7 +16,5 @@ recipe:
 source:
   sheet: Weapons
   row: 18
-biome: Meadows
 description: ''
 notes: ''
-tier: Flint

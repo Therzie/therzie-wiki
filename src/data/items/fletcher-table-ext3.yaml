@@ -1,0 +1,17 @@
+name: Vice
+prefab: FletcherTable_ext3_TW
+mod: warfare
+kind: piece
+group: Fletcher Table & Extensions
+recipe:
+  yields: 1
+  materials:
+    - Iron
+    - Ancient Bark
+    - Iron Nails
+    - Rotten Pelt
+source:
+  sheet: Pieces
+  row: 2
+description: ''
+notes: ''

@@ -1,0 +1,20 @@
+name: Muspelheim portal stone
+prefab: DemonPortalKey_TW
+mod: warfare
+kind: item
+group: Recipes
+info:
+  - Opens Gate to Brutalis
+recipe:
+  yields: 1
+  materials:
+    - Muspelheim Portal Fragment
+    - 'Magic Rune: Destruction'
+    - Black Ice
+    - Surtr Idol
+  station: Lokvyr Smelting Vat
+source:
+  sheet: Items
+  row: 89
+description: ''
+notes: ''

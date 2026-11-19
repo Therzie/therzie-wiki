@@ -1,0 +1,24 @@
+biome: Plains
+name: Blackmetal Sledgehammer
+prefab: SledgeBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Sledges
+skill: Clubs
+tier: Blackmetal
+effect: 3% chance to stun
+damage:
+  blunt: 90
+  pierce: 10
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Linen Thread
+    - Fuling Berserker Trophy
+source:
+  sheet: Weapons
+  row: 119
+description: ''
+notes: ''

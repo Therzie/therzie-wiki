@@ -1,9 +1,9 @@
 ---
-// Damage shown as in-game stat lines: icon, damage type, value.
+// Damage shown as in-game stat lines: icon, damage type, value (or range over upgrade levels).
 import { DAMAGE } from '../lib/wiki';
 import Glyph from './Glyph.astro';
-interface Props { damage: Record<string, number>; compact?: boolean; max?: number }
-const { damage, compact = false } = Astro.props;
+interface Props { damage: Record<string, number>; max?: Record<string, number>; compact?: boolean }
+const { damage, max = {}, compact = false } = Astro.props;
 const entries = Object.entries(damage).sort((a, b) => b[1] - a[1]);
 ---
 <ul class:list={['stats', { 'stats--compact': compact }]}>
@@ -12,7 +12,7 @@ const entries = Object.entries(damage).sort((a, b) => b[1] - a[1]);
     return (
       <li style={`--c:${d.color}`}>
         <span class="stats__label"><Glyph damage={type} size={compact ? 12 : 15} />{d.label}</span>
-        <span class="stats__value">{value}</span>
+        <span class="stats__value">{value}{max[type] ? `–${max[type]}` : ''}</span>
       </li>
     );
   })}

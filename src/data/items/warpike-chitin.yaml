@@ -1,0 +1,22 @@
+biome: Ocean
+name: Abyssal war pike
+prefab: WarpikeChitin_TW
+mod: warfare
+kind: weapon
+group: WarPikes
+skill: Spears
+tier: Chitin
+effect: 4th hit lowers targets pierce resistance
+damage:
+  pierce: 48
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Chitin
+    - Bronze
+source:
+  sheet: Weapons
+  row: 283
+description: ''
+notes: ''

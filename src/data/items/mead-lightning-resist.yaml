@@ -1,0 +1,18 @@
+name: Lightning Resistance Mead
+prefab: MeadLightningResist_TW
+mod: warfare
+kind: item
+group: Potions
+effect: Resistance Vs Lightning
+recipe:
+  yields: 1
+  materials:
+    - Honey
+    - Barley
+    - Flax
+  station: Fermenter
+source:
+  sheet: Items
+  row: 11
+description: ''
+notes: ''

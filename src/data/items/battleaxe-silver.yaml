@@ -1,8 +1,11 @@
+biome: Mountains
 name: Silver Battleaxe
 prefab: BattleaxeSilver_TW
 mod: warfare
+kind: weapon
 group: Battleaxe
 skill: Axes
+tier: Silver
 damage:
   slash: 90
   spirit: 30
@@ -17,7 +20,5 @@ recipe:
 source:
   sheet: Weapons
   row: 29
-biome: Mountains
 description: ''
 notes: ''
-tier: Silver

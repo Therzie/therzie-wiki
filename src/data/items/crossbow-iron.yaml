@@ -1,0 +1,22 @@
+biome: Swamp
+name: Iron Crossbow
+prefab: CrossbowIron_TW
+mod: warfare
+kind: weapon
+group: CrossBows
+tier: Iron
+damage:
+  pierce: 80
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Iron
+    - Withered Bone
+    - Wraith Trophy
+  station: Fletchers Table
+source:
+  sheet: Weapons
+  row: 245
+description: ''
+notes: ''

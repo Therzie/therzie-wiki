@@ -1,0 +1,17 @@
+name: Fox rug
+prefab: rug_Fox_TW
+mod: warfare
+kind: piece
+group: Rugs
+stats:
+  comfort: 1
+recipe:
+  yields: 1
+  materials:
+    - Fox Pelt
+    - Fox Trophy
+source:
+  sheet: Pieces
+  row: 22
+description: ''
+notes: ''

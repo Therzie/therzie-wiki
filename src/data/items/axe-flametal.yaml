@@ -1,8 +1,11 @@
+biome: Ashlands
 name: Flametal axe
 prefab: AxeFlametal_TW
 mod: warfare
+kind: weapon
 group: Axes
 skill: Axes
+tier: Flametal
 damage:
   slash: 140
 recipe:
@@ -17,7 +20,5 @@ checks:
 source:
   sheet: Weapons
   row: 6
-biome: Ashlands
 description: ''
 notes: ''
-tier: Flametal

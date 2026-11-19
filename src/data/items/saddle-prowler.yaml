@@ -1,0 +1,17 @@
+name: Prowler saddle
+prefab: SaddleProwler_TW
+mod: warfare
+kind: item
+group: Saddles
+recipe:
+  yields: 1
+  materials:
+    - Prowler Fang
+    - Lox Pelt
+    - Prowler Trophy
+  station: Workbench lvl4
+source:
+  sheet: Items
+  row: 39
+description: ''
+notes: ''

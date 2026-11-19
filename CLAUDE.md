@@ -5,8 +5,8 @@ since the beginning. You assist; editors decide.
 
 ## Ownership of content
 - `src/data/items/*.yaml`: one file per item.
-  - Sheet fields (written by `scripts/import-sheet.mjs`): name, prefab, mod, group, skill, effect,
-    damage, recipe, checks, source. Change these only through the importer or when an editor asks.
+  - Sheet fields (written by `scripts/import-sheet.mjs`): name, prefab, mod, kind, group, skill, tier, effect,
+    info, damage, damage_max, stats, drops, recipe, checks, source. Change these only through the importer or when an editor asks.
   - Editorial fields: description, notes, tips, biome, biome_guessed, hidden. Never overwrite existing
     text. Propose new text and let the editor approve it.
 - Never "correct" the spreadsheet data on your own. When data looks wrong, add a line to `checks`

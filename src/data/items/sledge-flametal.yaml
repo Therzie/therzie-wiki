@@ -1,0 +1,23 @@
+biome: Ashlands
+name: Flametal Sledgehammer
+prefab: SledgeFlametal_TW
+mod: warfare
+kind: weapon
+group: Sledges
+skill: Clubs
+tier: Flametal
+effect: 5% chance to stun
+damage:
+  blunt: 170
+recipe:
+  yields: 1
+  materials:
+    - Flametal
+    - Bonemaw Tooth
+    - Asksvin Hide
+    - Morgen Trophy
+source:
+  sheet: Weapons
+  row: 119
+description: ''
+notes: ''

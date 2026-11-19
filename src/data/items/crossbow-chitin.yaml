@@ -1,0 +1,22 @@
+biome: Ocean
+name: Chitin Crossbow
+prefab: CrossbowChitin_TW
+mod: warfare
+kind: weapon
+group: CrossBows
+tier: Chitin
+damage:
+  pierce: 65
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Bronze
+    - Chitin
+    - Troll Trophy
+  station: Fletchers Table
+source:
+  sheet: Weapons
+  row: 245
+description: ''
+notes: ''

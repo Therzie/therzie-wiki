@@ -1,0 +1,24 @@
+biome: Plains
+name: Blackmetal lance
+prefab: LanceBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Atgeir & Lances
+skill: Polearm
+tier: Blackmetal
+effect: Secondary attack causes bleed damage over 10 seconds
+damage:
+  pierce: 111
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Lox Trophy
+  monstrum:
+    - Lox Bone or Prowler Fang
+source:
+  sheet: Weapons
+  row: 69
+description: ''
+notes: ''

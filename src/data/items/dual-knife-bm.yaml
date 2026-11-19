@@ -1,0 +1,25 @@
+biome: Plains
+name: Blackmetal daggers
+prefab: DualKnifeBM_TW
+mod: warfare
+kind: weapon
+group: Dual Knives
+skill: Knives
+tier: Blackmetal
+damage:
+  slash: 35
+  pierce: 35
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Linen Thread
+    - Blackmetal
+    - Fuling Shaman Trophy
+checks:
+  - Tier Blackmetal taken from the name; the prefab name has no tier
+source:
+  sheet: Weapons
+  row: 106
+description: ''
+notes: ''

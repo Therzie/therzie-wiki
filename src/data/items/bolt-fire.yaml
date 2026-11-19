@@ -1,0 +1,19 @@
+name: Fire Bolt
+prefab: BoltFire_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+damage:
+  pierce: 16
+  fire: 34
+recipe:
+  yields: 1
+  materials:
+    - Wood
+    - Resin
+    - Feathers
+source:
+  sheet: Weapons
+  row: 195
+description: ''
+notes: ''

@@ -1,0 +1,20 @@
+name: Pickaxe Arrow
+prefab: ArrowPickaxe_TW
+mod: warfare
+kind: ammo
+group: Arrows
+damage:
+  pierce: 10
+  pickaxe: 60
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Iron
+    - Surtling Core
+    - Feathers
+source:
+  sheet: Weapons
+  row: 183
+description: ''
+notes: ''

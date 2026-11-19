@@ -1,0 +1,17 @@
+name: Bow rack
+prefab: FletcherTable_ext1_TW
+mod: warfare
+kind: piece
+group: Fletcher Table & Extensions
+recipe:
+  yields: 1
+  materials:
+    - Bronze
+    - Fine Wood
+    - Bronze Nails
+    - Deer Hide
+source:
+  sheet: Pieces
+  row: 2
+description: ''
+notes: ''

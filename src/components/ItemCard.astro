@@ -1,15 +1,17 @@
 ---
 import type { Item } from '../lib/wiki';
-import { url, totalDamage, slugify, tierInfo } from '../lib/wiki';
+import { url, totalDamage, slugify, tierInfo, statLabel } from '../lib/wiki';
 import ItemIcon from './ItemIcon.astro';
 import BiomeBadge from './BiomeBadge.astro';
 import Rune from './Rune.astro';
 import DamageBars from './DamageBars.astro';
 interface Props { item: Item; max: number }
-const { item, max } = Astro.props;
+const { item } = Astro.props;
 const d = item.data;
 const tier = tierInfo(d.tier);
-const search = [d.name, d.prefab, d.group, d.tier, d.biome, ...d.recipe.materials].join(' ').toLowerCase();
+const stats = Object.entries(d.stats ?? {}).filter(([k]) => k !== 'levels');
+const search = [d.name, d.prefab, d.group, d.tier, d.biome, ...d.recipe.materials, ...(d.drops ?? []).map((x) => x.from)]
+  .join(' ').toLowerCase();
 ---
 <a class="card-item" href={url(`/items/${item.id}/`)}
    data-biome={d.biome ?? ''} data-group={slugify(d.group)} data-search={search} data-total={totalDamage(item)}>
@@ -22,10 +24,18 @@ const search = [d.name, d.prefab, d.group, d.tier, d.biome, ...d.recipe.material
   </div>
   <div class="card-item__meta">
     {tier && <span class="pill pill--tier" title={`${tier.id} tier`}><Rune r={tier.rune} />{tier.id}</span>}
-    <BiomeBadge biome={d.biome} guessed={d.biome_guessed} />
+    {d.biome && <BiomeBadge biome={d.biome} guessed={d.biome_guessed} />}
     {d.recipe.yields > 1 && <span class="pill">x{d.recipe.yields}</span>}
     {d.checks.length > 0 && <span class="pill pill--warn" title={d.checks.join('\n')}>check</span>}
   </div>
-  <DamageBars damage={d.damage} max={max} compact />
+  {Object.keys(d.damage).length > 0 && <DamageBars damage={d.damage} max={d.damage_max} compact />}
+  {stats.length > 0 && (
+    <ul class="stats stats--compact">
+      {stats.map(([k, v]) => <li><span class="stats__label">{statLabel(k)}</span><span class="stats__value">{v}</span></li>)}
+    </ul>
+  )}
+  {d.drops && d.drops.length > 0 && (
+    <p class="card-item__drops">Drops from {d.drops.slice(0, 3).map((x) => `${x.from}${x.chance ? ` ${x.chance}` : ''}`).join(', ')}{d.drops.length > 3 && ` +${d.drops.length - 3}`}</p>
+  )}
   {d.effect && <p class="card-item__effect">{d.effect}</p>}
 </a>

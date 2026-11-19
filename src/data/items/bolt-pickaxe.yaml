@@ -1,0 +1,20 @@
+name: Pickaxe Bolt
+prefab: BoltPickaxe_TW
+mod: warfare
+kind: ammo
+group: CrossBolts
+damage:
+  pierce: 10
+  pickaxe: 70
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Resin
+    - Surtling Core
+    - Feathers
+source:
+  sheet: Weapons
+  row: 206
+description: ''
+notes: ''

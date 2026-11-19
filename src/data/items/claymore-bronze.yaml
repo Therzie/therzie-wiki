@@ -1,0 +1,22 @@
+biome: Black Forest
+name: Bronze Claymore
+prefab: ClaymoreBronze_TW
+mod: warfare
+kind: weapon
+group: Claymore
+skill: Swords
+tier: Bronze
+damage:
+  slash: 46
+recipe:
+  yields: 1
+  materials:
+    - Core Wood
+    - Bronze
+  monstrum:
+    - Greydwarf Brute Trophy
+source:
+  sheet: Weapons
+  row: 145
+description: ''
+notes: ''

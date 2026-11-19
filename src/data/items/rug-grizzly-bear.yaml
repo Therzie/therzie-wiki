@@ -1,0 +1,17 @@
+name: Grizzly rug
+prefab: rug_GrizzlyBear_TW
+mod: warfare
+kind: piece
+group: Rugs
+stats:
+  comfort: 1
+recipe:
+  yields: 1
+  materials:
+    - Grizzly Pelt
+    - Grizzly Trophy
+source:
+  sheet: Pieces
+  row: 22
+description: ''
+notes: ''

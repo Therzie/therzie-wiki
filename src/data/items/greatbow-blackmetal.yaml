@@ -1,0 +1,23 @@
+biome: Plains
+name: Blackmetal Greatbow
+prefab: GreatbowBlackmetal_TW
+mod: warfare
+kind: weapon
+group: GreatBows
+tier: Blackmetal
+effect: 'Piercing: Deal extra damage to your foes on 4th hit'
+damage:
+  pierce: 87
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Lox Bone
+    - Fuling Berserker Trophy
+  station: Fletchers Table
+source:
+  sheet: Weapons
+  row: 231
+description: ''
+notes: ''

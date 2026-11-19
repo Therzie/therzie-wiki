@@ -1,0 +1,21 @@
+biome: Meadows
+name: Flint Knuckles
+prefab: FistFlint_TW
+mod: warfare
+kind: weapon
+group: Claws
+skill: Fists
+tier: Flint
+damage:
+  slash: 10
+recipe:
+  yields: 1
+  materials:
+    - Flint
+    - Wood
+    - Deer Hide
+source:
+  sheet: Weapons
+  row: 258
+description: ''
+notes: ''

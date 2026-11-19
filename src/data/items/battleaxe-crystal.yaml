@@ -1,8 +1,11 @@
+biome: Mountains
 name: Crystal Battleaxe
 prefab: BattleaxeCrystal_TW
 mod: warfare
+kind: weapon
 group: Battleaxe
 skill: Axes
+tier: Crystal
 damage:
   slash: 90
   spirit: 30
@@ -12,12 +15,8 @@ recipe:
     - Ancient Bark
     - Silver
     - Crystal
-checks:
-  - Group taken from the block above (no label in the sheet)
 source:
   sheet: Weapons
   row: 42
-biome: Mountains
 description: ''
 notes: ''
-tier: Crystal

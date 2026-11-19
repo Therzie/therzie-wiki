@@ -1,8 +1,11 @@
+biome: Meadows
 name: Flint Battleaxe
 prefab: BattleaxeFlint_TW
 mod: warfare
+kind: weapon
 group: Battleaxe
 skill: Axes
+tier: Flint
 damage:
   slash: 30
 recipe:
@@ -14,7 +17,5 @@ recipe:
 source:
   sheet: Weapons
   row: 29
-biome: Meadows
 description: ''
 notes: ''
-tier: Flint

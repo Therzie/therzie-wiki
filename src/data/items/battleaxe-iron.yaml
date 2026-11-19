@@ -1,8 +1,11 @@
+biome: Swamp
 name: Iron Battleaxe
 prefab: BattleaxeIron_TW
 mod: warfare
+kind: weapon
 group: Battleaxe
 skill: Axes
+tier: Iron
 damage:
   slash: 70
 recipe:
@@ -14,7 +17,5 @@ recipe:
 source:
   sheet: Weapons
   row: 29
-biome: Swamp
 description: ''
 notes: ''
-tier: Iron

@@ -1,0 +1,26 @@
+name: Demonic soulstone
+prefab: DemonicSoulstone_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Gut-gnasher
+    chance: 33%
+  - from: Brutalis
+    chance: 100%
+  - from: Enforcer
+    chance: 50%
+  - from: Helhound
+    chance: 40%
+  - from: Legionnaire
+    chance: 50%
+  - from: Warbringer
+    chance: 50%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 70
+description: ''
+notes: ''

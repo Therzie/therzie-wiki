@@ -1,0 +1,27 @@
+biome: Mountains
+name: Silver Battlehammer
+prefab: BattlehammerSilver_TW
+mod: warfare
+kind: weapon
+group: Battlehammer
+skill: Clubs
+tier: Silver
+damage:
+  blunt: 88
+  spirit: 30
+damage_max:
+  blunt: 106
+stats:
+  levels: lvl 1-4
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Silver
+    - Crystal
+    - Stone Golem Trophy
+source:
+  sheet: Weapons
+  row: 132
+description: ''
+notes: ''

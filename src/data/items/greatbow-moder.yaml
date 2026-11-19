@@ -1,0 +1,25 @@
+name: Skystrike
+prefab: GreatbowModer_TW
+mod: warfare
+kind: weapon
+group: Boss Weapons
+effect: 'Pinning: Slows targets for brief moment -50%'
+damage:
+  pierce: 25
+  frost: 60
+drops:
+  - from: Moder
+    chance: 6%
+recipe:
+  yields: 1
+  materials:
+    - Silver
+    - Crystal
+    - Freeze Gland
+    - Moder Trophy
+  station: Fletchers Table
+source:
+  sheet: Weapons
+  row: 373
+description: ''
+notes: ''

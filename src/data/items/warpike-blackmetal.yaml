@@ -1,0 +1,25 @@
+biome: Plains
+name: Blackmetal war pike
+prefab: WarpikeBlackmetal_TW
+mod: warfare
+kind: weapon
+group: WarPikes
+skill: Spears
+tier: Blackmetal
+effect: 4th hit lowers targets pierce resistance
+damage:
+  pierce: 98
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Gobling Brute Trophy
+  monstrum:
+    - Lox Bone
+    - Prowler Fang
+source:
+  sheet: Weapons
+  row: 283
+description: ''
+notes: ''

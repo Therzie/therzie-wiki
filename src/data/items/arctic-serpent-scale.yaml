@@ -1,0 +1,16 @@
+name: Icestalker scale
+prefab: ArcticSerpentScale_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Ice Stalker
+    chance: 85%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 50
+description: ''
+notes: ''

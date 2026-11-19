@@ -1,0 +1,16 @@
+name: Razorback tusk
+prefab: RazorbackTusk_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Razorback
+    chance: 70%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 20
+description: ''
+notes: ''

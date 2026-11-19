@@ -1,0 +1,22 @@
+biome: Ocean
+name: Abyssal hammer
+prefab: MaceChitin_TW
+mod: warfare
+kind: weapon
+group: Maces
+skill: Clubs
+tier: Chitin
+damage:
+  blunt: 35
+  pierce: 15
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Chitin
+    - Bronze
+source:
+  sheet: Weapons
+  row: 82
+description: ''
+notes: ''

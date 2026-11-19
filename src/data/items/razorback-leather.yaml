@@ -1,0 +1,16 @@
+name: Razorback leather
+prefab: RazorbackLeather_TW
+mod: warfare
+kind: item
+group: Materials
+drops:
+  - from: Razorback
+    chance: 100%
+recipe:
+  yields: 1
+  materials: []
+source:
+  sheet: Items
+  row: 20
+description: ''
+notes: ''

@@ -1,0 +1,22 @@
+name: Tyranium
+prefab: TyraniumBar_TW
+mod: warfare
+kind: item
+group: Smelting
+info:
+  - 'Other: Add to Smelter'
+  - Tyranium spiked collar
+  - Tyranium Chain
+recipe:
+  yields: 1
+  materials:
+    - Pure Tyranium Ore
+    - Enchanted Blazing Coal
+  station: Ymir Forge [Smelter]
+checks:
+  - Prefab TyraniumBar_TW appears 2x in the sheet (Tyranium, Items r99; Tyranium, Items r109)
+source:
+  sheet: Items
+  row: 109
+description: ''
+notes: ''

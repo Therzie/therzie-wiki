@@ -1,0 +1,22 @@
+biome: Black Forest
+name: Bone bastard sword
+prefab: BastardBone_TW
+mod: warfare
+kind: weapon
+group: Bastard Swords
+skill: Swords
+tier: Bone
+damage:
+  blunt: 30
+  slash: 15
+recipe:
+  yields: 1
+  materials:
+    - Bone Fragments
+    - Copper
+    - Skeleton Trophy
+source:
+  sheet: Weapons
+  row: 158
+description: ''
+notes: ''
