@@ -17,12 +17,43 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      SITE_OWNER: ${{ github.repository_owner }}
+      SITE_REPO: ${{ github.event.repository.name }}
     steps:
       - uses: actions/checkout@v4
-      - uses: withastro/action@v5
-        env:
-          SITE_OWNER: ${{ github.repository_owner }}
-          SITE_REPO: ${{ github.event.repository.name }}
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npx astro build
+
+      # Browsers may keep a page for up to 10 minutes. A page from the previous deploy still
+      # points to the CSS/JS files of that build, so those files are kept for a while:
+      # restore the asset folder of earlier deploys and add every file the new build does not have.
+      - name: Restore assets of earlier deploys
+        uses: actions/cache/restore@v4
+        with:
+          path: previous-assets
+          key: pages-assets-${{ github.run_id }}
+          restore-keys: pages-assets-
+      - name: Keep earlier assets next to the new ones
+        run: |
+          mkdir -p previous-assets
+          # forget files older than 30 days
+          find previous-assets -type f -mtime +30 -delete
+          cp -rn previous-assets/. dist/_astro/ 2>/dev/null || true
+          cp -r dist/_astro/. previous-assets/
+          echo "Asset files in this deploy: $(ls dist/_astro | wc -l)"
+      - name: Save assets for the next deploy
+        uses: actions/cache/save@v4
+        with:
+          path: previous-assets
+          key: pages-assets-${{ github.run_id }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
