@@ -15,6 +15,6 @@ source:
   sheet: Weapons
   row: 29
 biome: Meadows
-biome_guessed: true
 description: ''
 notes: ''
+tier: Flint

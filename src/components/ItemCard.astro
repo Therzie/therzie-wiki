@@ -1,13 +1,14 @@
 ---
 import type { Item } from '../lib/wiki';
-import { url, totalDamage, slugify } from '../lib/wiki';
+import { url, totalDamage, slugify, tierInfo } from '../lib/wiki';
 import ItemIcon from './ItemIcon.astro';
 import BiomeBadge from './BiomeBadge.astro';
 import DamageBars from './DamageBars.astro';
 interface Props { item: Item; max: number }
 const { item, max } = Astro.props;
 const d = item.data;
-const search = [d.name, d.prefab, d.group, d.biome, ...d.recipe.materials].join(' ').toLowerCase();
+const tier = tierInfo(d.tier);
+const search = [d.name, d.prefab, d.group, d.tier, d.biome, ...d.recipe.materials].join(' ').toLowerCase();
 ---
 <a class="card-item" href={url(`/items/${item.id}/`)}
    data-biome={d.biome ?? ''} data-group={slugify(d.group)} data-search={search} data-total={totalDamage(item)}>
@@ -19,6 +20,7 @@ const search = [d.name, d.prefab, d.group, d.biome, ...d.recipe.materials].join(
     </div>
   </div>
   <div class="card-item__meta">
+    {tier && <span class="pill pill--tier" title={`${tier.id} tier`}><span class="rune">{tier.rune}</span>{tier.id}</span>}
     <BiomeBadge biome={d.biome} guessed={d.biome_guessed} />
     {d.recipe.yields > 1 && <span class="pill">x{d.recipe.yields}</span>}
     {d.checks.length > 0 && <span class="pill pill--warn" title={d.checks.join('\n')}>check</span>}

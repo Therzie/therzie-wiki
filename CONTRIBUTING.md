@@ -41,6 +41,15 @@ Open `<site>/admin/` and sign in:
 Every save in the editor is a commit, and the site updates about a minute later.
 If something goes wrong, every earlier version is still in the history on GitHub.
 
+## Item icons
+
+Icons come from the mods themselves, so they always match the prefab:
+
+1. Copy `tools/unity/WikiIconExport.cs` into an `Editor` folder of the Unity project.
+2. Run **Tools > Therzie Wiki > Export item icons**, pick the folder with the item prefabs and then
+   the `public/icons` folder of this repository.
+3. Commit the new or changed PNG files. Every item with a `<Prefab>.png` shows its icon automatically.
+
 ## Working with Claude (optional)
 
 The repo contains a `CLAUDE.md` file with the rules of this wiki. If you open the repo in Claude

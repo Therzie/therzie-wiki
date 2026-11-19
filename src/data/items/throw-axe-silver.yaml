@@ -15,6 +15,6 @@ source:
   sheet: Weapons
   row: 18
 biome: Mountains
-biome_guessed: true
 description: ''
 notes: ''
+tier: Silver

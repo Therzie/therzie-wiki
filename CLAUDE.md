@@ -21,6 +21,11 @@ since the beginning. You assist; editors decide.
 
 ## Layout
 - `scripts/import-sheet.mjs`: spreadsheet → YAML (card layout parser, merge keeps editorial fields).
-- `src/pages/`: overview (`warfare/`), item pages (`items/[slug]`), materials, to-check list.
+- `src/pages/`: Warfare overview (`warfare/`, based on the Warfare README), weapon list (`warfare/weapons/`),
+  item pages (`items/[slug]`), materials, to-check list.
+- `src/data/tiers.json`: the 11 Warfare tiers with rune, biome and text (from the Warfare README). The importer
+  takes the tier from the prefab name (`<Class><Tier>_TW`) and the biome from the tier.
 - `public/admin/config.yml`: the form editor.
-- `public/icons/<Prefab>.png`: item icons (optional; a placeholder is shown when missing).
+- `public/icons/<Prefab>.png`: item icons, exported from the Unity project with `tools/unity/WikiIconExport.cs`
+  (a placeholder is shown when missing).
+- `public/readme/warfare/`: header art and raven portraits from the Warfare README.

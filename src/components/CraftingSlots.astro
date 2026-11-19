@@ -1,0 +1,20 @@
+---
+// Recipe as a row of crafting slots, like a workbench requirement list.
+import { url, slugify } from '../lib/wiki';
+interface Props { materials: string[]; variant?: 'base' | 'monstrum' }
+const { materials, variant = 'base' } = Astro.props;
+const mono = (m: string) => m.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
+---
+<ul class:list={['slots', `slots--${variant}`]}>
+  {materials.map((m, i) => (
+    <>
+      {variant === 'monstrum' && i > 0 && <li class="slots__or">or</li>}
+      <li>
+        <a class="slot" href={url(`/materials/#${slugify(m)}`)} title={m}>
+          <span class="slot__box"><span>{mono(m)}</span></span>
+          <span class="slot__name">{m}</span>
+        </a>
+      </li>
+    </>
+  ))}
+</ul>

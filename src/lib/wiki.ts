@@ -4,8 +4,10 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 
 export type Item = CollectionEntry<'items'>;
 
-import { MODS, BIOMES, DAMAGE } from './constants';
-export { MODS, BIOMES, DAMAGE };
+import { MODS, BIOMES, DAMAGE, TIERS } from './constants';
+export { MODS, BIOMES, DAMAGE, TIERS };
+export const tierInfo = (id?: string) => TIERS.find((t) => t.id === id);
+export const tierIndex = (id?: string) => { const i = TIERS.findIndex((t) => t.id === id); return i < 0 ? 99 : i; };
 
 export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const url = (p: string) => `${base}${p.startsWith('/') ? p : `/${p}`}`;
@@ -29,6 +31,7 @@ export async function getItems(mod?: string) {
   return all.sort(
     (a, b) =>
       a.data.group.localeCompare(b.data.group) ||
+      tierIndex(a.data.tier) - tierIndex(b.data.tier) ||
       biomeIndex(a.data.biome) - biomeIndex(b.data.biome) ||
       totalDamage(a) - totalDamage(b)
   );

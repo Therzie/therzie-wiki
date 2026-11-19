@@ -40,11 +40,17 @@ collections:
           - { label: Wizardry, value: wizardry }
       - { label: Type, name: group, widget: string, hint: "Section name as in the spreadsheet, e.g. Battleaxe" }
       - { label: Skill, name: skill, widget: string, required: false }
+      - label: Tier
+        name: tier
+        widget: select
+        required: false
+        hint: "Taken from the prefab name (<Class><Tier>_TW)"
+        options: [Flint, Bone, Bronze, Chitin, Iron, Silver, Crystal, Blackmetal, Carapace, Dvergr, Flametal]
       - label: Biome
         name: biome
         widget: select
         required: false
-        options: [Meadows, Black Forest, Swamp, Mountains, Plains, Mistlands, Ashlands, Deep North]
+        options: [Meadows, Black Forest, Ocean, Swamp, Mountains, Plains, Mistlands, Ashlands, Deep North]
       - { label: "Biome is still a guess", name: biome_guessed, widget: boolean, required: false, default: false, hint: "Switch off once you have confirmed the biome" }
       - { label: Description, name: description, widget: text, required: false, hint: "Your own text. The importer never touches this." }
       - { label: Effect, name: effect, widget: string, required: false }
