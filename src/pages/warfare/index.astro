@@ -3,6 +3,8 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import ItemCard from '../../components/ItemCard.astro';
 import ItemIcon from '../../components/ItemIcon.astro';
 import BiomeBadge from '../../components/BiomeBadge.astro';
+import Glyph from '../../components/Glyph.astro';
+import RuneDivider from '../../components/RuneDivider.astro';
 import { getItems, groupsOf, BIOMES, DAMAGE, url, slugify, totalDamage } from '../../lib/wiki';
 
 const items = await getItems('warfare');
@@ -23,7 +25,7 @@ const usedBiomes = BIOMES.filter((b) => items.some((i) => i.data.biome === b.nam
     <div class="chips" role="group" aria-label="Biome">
       <button class="chip is-on" data-biome-filter="">All biomes</button>
       {usedBiomes.map((b) => (
-        <button class="chip" data-biome-filter={b.name} style={`--c:${b.color}`}>{b.name}</button>
+        <button class="chip" data-biome-filter={b.name} style={`--c:${b.color}`}><Glyph biome={b.name} size={13} />{b.name}</button>
       ))}
     </div>
     <div class="views" role="tablist" aria-label="View">
@@ -34,11 +36,12 @@ const usedBiomes = BIOMES.filter((b) => items.some((i) => i.data.biome === b.nam
   </div>
 
   <section class="not-content" data-panel="cards">
-    {groups.map((g) => {
+    {groups.map((g, gi) => {
       const list = items.filter((i) => i.data.group === g);
       const skill = list[0]?.data.skill;
       return (
         <div class="group" id={`group-${slugify(g)}`} data-group-block={slugify(g)}>
+          {gi > 0 && <RuneDivider seed={gi} count={5} />}
           <h2 class="group__title">{g}{skill && <span class="group__skill">{skill} skill</span>}<span class="group__count">{list.length}</span></h2>
           <div class="card-grid">{list.map((it) => <ItemCard item={it} max={max} />)}</div>
         </div>
@@ -50,7 +53,7 @@ const usedBiomes = BIOMES.filter((b) => items.some((i) => i.data.biome === b.nam
   <section class="not-content" data-panel="matrix" hidden>
     <div class="matrix" style={`--cols:${BIOMES.length}`}>
       <div class="matrix__corner"></div>
-      {BIOMES.map((b) => <div class="matrix__biome" style={`--c:${b.color}`}>{b.name}</div>)}
+      {BIOMES.map((b) => <div class="matrix__biome" style={`--c:${b.color}`}><Glyph biome={b.name} size={18} /><span>{b.name}</span></div>)}
       {groups.map((g) => (
         <>
           <div class="matrix__group">{g}</div>

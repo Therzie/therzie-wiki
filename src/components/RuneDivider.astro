@@ -1,0 +1,8 @@
+---
+import { RUNES } from '../lib/glyphs';
+interface Props { seed?: number; count?: number }
+const { seed = 0, count = 9 } = Astro.props;
+const runes = [...RUNES];
+const text = Array.from({ length: count }, (_, i) => runes[(seed * 7 + i * 5) % runes.length]).join(' ');
+---
+<div class="rune-divider not-content" aria-hidden="true"><span>{text}</span></div>

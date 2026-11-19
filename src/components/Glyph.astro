@@ -1,0 +1,7 @@
+---
+import { DAMAGE_GLYPHS, BIOME_GLYPHS, glyphSvg } from '../lib/glyphs';
+interface Props { damage?: string; biome?: string; size?: number }
+const { damage, biome, size = 16 } = Astro.props;
+const inner = damage ? DAMAGE_GLYPHS[damage] : biome ? BIOME_GLYPHS[biome] : undefined;
+---
+{inner && <span class="glyph" set:html={glyphSvg(inner, size)} />}

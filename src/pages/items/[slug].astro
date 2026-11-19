@@ -4,6 +4,9 @@ import { Aside } from '@astrojs/starlight/components';
 import ItemIcon from '../../components/ItemIcon.astro';
 import BiomeBadge from '../../components/BiomeBadge.astro';
 import DamageBars from '../../components/DamageBars.astro';
+import ItemTooltip from '../../components/ItemTooltip.astro';
+import CraftingSlots from '../../components/CraftingSlots.astro';
+import RuneDivider from '../../components/RuneDivider.astro';
 import { getItems, url, slugify, totalDamage, modName, biomeIndex, repoUrl, type Item } from '../../lib/wiki';
 
 export async function getStaticPaths() {
@@ -49,28 +52,30 @@ const repo = repoUrl;
   )}
 
   <div class="item-grid not-content">
+    <section class="panel panel--tooltip">
+      <h2>In-game</h2>
+      <ItemTooltip item={item} />
+    </section>
+
     <section class="panel">
       <h2>Damage <span class="panel__total">{totalDamage(item)}</span></h2>
       {Object.keys(d.damage).length ? <DamageBars damage={d.damage} max={max} /> : <p class="muted">No damage values yet.</p>}
       {d.effect && (<><h3>Effect</h3><p class="effect">{d.effect}</p></>)}
     </section>
-
-    <section class="panel">
-      <h2>Recipe {d.recipe.yields > 1 && <span class="panel__total">makes {d.recipe.yields}</span>}</h2>
-      {d.recipe.station && <p class="muted">{d.recipe.station}{d.recipe.level ? ` level ${d.recipe.level}` : ''}</p>}
-      <ul class="recipe">
-        {d.recipe.materials.map((m) => <li><a href={url(`/materials/#${slugify(m)}`)}>{m}</a></li>)}
-      </ul>
-      {d.recipe.monstrum && (
-        <div class="monstrum">
-          <h3>With Monstrum installed</h3>
-          <ul class="recipe">
-            {d.recipe.monstrum.map((m, i) => (<>{i > 0 && <li class="or">or</li>}<li><a href={url(`/materials/#${slugify(m)}`)}>{m}</a></li></>))}
-          </ul>
-        </div>
-      )}
-    </section>
   </div>
+
+  <section class="panel panel--craft not-content">
+    <h2>Crafting {d.recipe.yields > 1 && <span class="panel__total">makes {d.recipe.yields}</span>}</h2>
+    {d.recipe.station && <p class="muted">{d.recipe.station}{d.recipe.level ? ` level ${d.recipe.level}` : ''}</p>}
+    {d.recipe.materials.length ? <CraftingSlots materials={d.recipe.materials} /> : <p class="muted">No recipe in the spreadsheet yet.</p>}
+    {d.recipe.monstrum && (
+      <div class="monstrum">
+        <h3>With Monstrum installed</h3>
+        <CraftingSlots materials={d.recipe.monstrum} variant="monstrum" />
+      </div>
+    )}
+    <p class="small slots-note">Quantities are not in the spreadsheet yet.</p>
+  </section>
 
   {(d.notes || d.tips?.length) && (
     <section class="panel panel--notes not-content">
@@ -79,6 +84,8 @@ const repo = repoUrl;
       {d.tips && <ul>{d.tips.map((t) => <li>{t}</li>)}</ul>}
     </section>
   )}
+
+  <RuneDivider seed={d.name.length} />
 
   <section class="family not-content">
     <h2>{d.group} progression</h2>

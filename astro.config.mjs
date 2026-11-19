@@ -16,7 +16,18 @@ export default defineConfig({
     starlight({
       title: 'Therzie Mods Wiki',
       description: 'Weapons, armor, creatures and progression for the Therzie mods for Valheim.',
-      customCss: ['@fontsource/cinzel/600.css', './src/styles/custom.css'],
+      logo: { src: './src/assets/mark.svg' },
+      customCss: [
+        '@fontsource/cinzel/600.css',
+        '@fontsource/cinzel/700.css',
+        '@fontsource/cinzel-decorative/700.css',
+        '@fontsource/noto-sans-runic/400.css',
+        './src/styles/custom.css',
+      ],
+      components: {
+        ThemeProvider: './src/components/ForceDark.astro',
+        ThemeSelect: './src/components/Empty.astro',
+      },
       social: [{ icon: 'github', label: 'GitHub', href: `https://github.com/${owner}/${repo}` }],
       editLink: { baseUrl: `https://github.com/${owner}/${repo}/edit/main/` },
       lastUpdated: true,
@@ -35,7 +46,7 @@ export default defineConfig({
         { label: 'To check', link: '/checks/' },
         { label: 'About & contributing', slug: 'about' },
       ],
-      head: [{ tag: 'meta', attrs: { name: 'theme-color', content: '#14181c' } }],
+      head: [{ tag: 'meta', attrs: { name: 'theme-color', content: '#0d1014' } }],
     }),
   ],
 });

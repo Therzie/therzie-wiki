@@ -1,10 +1,11 @@
 ---
 import { biomeColor } from '../lib/wiki';
+import Glyph from './Glyph.astro';
 interface Props { biome?: string; guessed?: boolean }
 const { biome, guessed } = Astro.props;
 ---
 {biome ? (
   <span class="biome" style={`--c:${biomeColor(biome)}`} title={guessed ? 'Biome guessed from the material tier, not yet confirmed' : undefined}>
-    {biome}{guessed && <span class="biome__q">?</span>}
+    <Glyph biome={biome} size={13} />{biome}{guessed && <span class="biome__q">?</span>}
   </span>
 ) : <span class="biome biome--none">No biome</span>}
