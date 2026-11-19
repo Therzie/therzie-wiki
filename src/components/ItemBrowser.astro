@@ -8,16 +8,16 @@ import RuneDivider from './RuneDivider.astro';
 import Rune from './Rune.astro';
 import { groupsOf, groupBiome, BIOMES, TIERS, UPGRADES, DAMAGE, url, slugify, totalDamage, biomeColor, type Item } from '../lib/wiki';
 
-interface Props { items: Item[]; matrix?: 'tiers' | 'upgrades'; showMatrix?: boolean; groupBy?: 'biome'; all?: Item[] }
+interface Props { items: Item[]; matrix?: 'tiers' | 'upgrades'; showMatrix?: boolean; groupBy?: 'biome'; all?: Item[]; relabel?: (d: Item['data']) => string | undefined }
 const { items, showMatrix: legacy = false } = Astro.props;
 const matrix = Astro.props.matrix ?? (legacy ? 'tiers' : undefined);
 const showMatrix = !!matrix;
 const byBiome = Astro.props.groupBy === 'biome';
-const labelOf = new Map(items.map((i) => [i.id, byBiome ? groupBiome(i, Astro.props.all ?? items) : i.data.group]));
+const labelOf = new Map(items.map((i) => [i.id, byBiome ? groupBiome(i, Astro.props.all ?? items) : Astro.props.relabel?.(i.data) ?? i.data.group]));
 const groupOf = (i: Item) => labelOf.get(i.id)!;
 const groups = byBiome
   ? [...BIOMES.map((b) => b.name), 'Other'].filter((b) => items.some((i) => groupOf(i) === b))
-  : groupsOf(items);
+  : [...new Map(groupsOf(items).flatMap((g) => items.filter((i) => i.data.group === g).map((i) => [groupOf(i), 1] as const))).keys()];
 const max = Math.max(1, ...items.map(totalDamage));
 const usedBiomes = BIOMES.filter((b) => items.some((i) => i.data.biome === b.name));
 const hasDamage = items.some((i) => Object.keys(i.data.damage).length);

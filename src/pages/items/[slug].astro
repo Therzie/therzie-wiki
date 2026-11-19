@@ -24,6 +24,7 @@ const family = all
   .sort((a, b) => tierIndex(a.data.tier) - tierIndex(b.data.tier) || biomeIndex(a.data.biome) - biomeIndex(b.data.biome) || totalDamage(a) - totalDamage(b));
 const tier = tierInfo(d.tier);
 const section = sectionOf(item);
+const groupLabel = section?.relabel?.(item.data) ?? item.data.group;
 const resist = Object.entries(d.creature?.resist ?? {});
 const hasRecipe = d.recipe.materials.length > 0 || (d.recipe.monstrum?.length ?? 0) > 0;
 const pos = family.findIndex((i) => i.id === item.id);
@@ -37,7 +38,7 @@ const repo = repoUrl;
     <div class="item-hero__body">
       <div class="item-hero__meta">
         <a class="pill" href={url(`/${d.mod}/`)}>{modName(d.mod)}</a>
-        <a class="pill" href={url(`${section?.path ?? `/${d.mod}/`}#group-${slugify(d.group)}`)}>{d.group}</a>
+        <a class="pill" href={url(`${section?.path ?? `/${d.mod}/`}#group-${slugify(groupLabel)}`)}>{groupLabel}</a>
         {!isGear(d.kind) && <span class="pill">{KIND_LABEL[d.kind]}</span>}
         {d.skill && <span class="pill">{d.skill} skill</span>}
         {tier && <a class="pill pill--tier" href={url(`/warfare/forge-path/#tier-${tier.id.toLowerCase()}`)}><Rune r={tier.rune} />{tier.id} tier</a>}

@@ -90,6 +90,9 @@ export const isGear = (kind?: string) => ['weapon', 'shield', 'ammo', 'tool'].in
 
 /** Pages per mod. Every item belongs to the section of its spreadsheet tab. */
 /** Warfare database tab of an item: ammo, bombs and meads get their own tab instead of Weapons or Items. */
+/** Wizardry staff bases sit in the Staffs group of the sheet, but they are recipe parts, not weapons. */
+export const isStaffBase = (d: { prefab?: string; name?: string }) => /^Staffbase_/i.test(d.prefab ?? '') || /staff base$/i.test(d.name ?? '');
+
 export function warfareTab(d: { kind?: string; prefab?: string; group?: string; source?: { sheet: string } }): 'ammo' | 'shields' | 'bombs' | 'meads' | 'weapons' | 'pieces' | 'items' {
   if (d.kind === 'ammo') return 'ammo';
   if (d.kind === 'shield') return 'shields';
@@ -100,7 +103,7 @@ export function warfareTab(d: { kind?: string; prefab?: string; group?: string; 
   return 'weapons';
 }
 
-export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string; legacy?: boolean; tab?: string; match?: (d: Item['data']) => boolean; groupBy?: 'biome' }[] = [
+export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string; legacy?: boolean; tab?: string; match?: (d: Item['data']) => boolean; groupBy?: 'biome'; relabel?: (d: Item['data']) => string | undefined }[] = [
   { mod: 'warfare', path: '/warfare/ammo/', label: 'Ammo', title: 'Warfare ammo', sheets: ['Weapons'], tab: 'ammo', lead: '' },
   { mod: 'warfare', path: '/warfare/bombs/', label: 'Bombs', title: 'Warfare bombs', sheets: ['Weapons'], tab: 'bombs', lead: '' },
   { mod: 'warfare', path: '/warfare/meads/', label: 'Meads - Potions', title: 'Warfare meads and potions', sheets: ['Items'], tab: 'meads', lead: '' },
@@ -114,14 +117,15 @@ export const SECTIONS: { mod: string; path: string; label: string; title: string
     lead: 'Bosses and creatures from Monstrum by biome: what they drop, how much health they have and which damage hurts them.' },
   { mod: 'monstrum', path: '/monstrum/food/', label: 'Food', title: 'Monstrum food', sheets: ['M.Food'], groupBy: 'biome',
     lead: 'Food made from Monstrum creatures, by the biome of the creature it comes from, with health, stamina and eitr.' },
-  { mod: 'wizardry', path: '/wizardry/', label: 'Staffs', title: 'Wizardry staffs', sheets: ['Wizardry'], match: (d) => d.kind === 'weapon',
+  { mod: 'wizardry', path: '/wizardry/', label: 'Staffs', title: 'Wizardry staffs', sheets: ['Wizardry'], match: (d) => d.kind === 'weapon' && !isStaffBase(d),
     lead: 'Every Wizardry staff with its damage, eitr cost and recipe.' },
   { mod: 'wizardry', path: '/wizardry/armor/', label: 'Armor', title: 'Wizardry armor', sheets: ['Wizardry'], match: (d) => d.kind === 'armor',
     lead: 'Mage robes for every biome, circlets and rings.' },
   { mod: 'wizardry', path: '/wizardry/scrolls/', label: 'Scrolls', title: 'Wizardry scrolls', sheets: ['Wizardry', 'W.Food'], match: (d) => /^Scrolls/.test(d.group),
     lead: 'Arcane scrolls: the ones you read for an effect, and the ones that upgrade your staffs.' },
-  { mod: 'wizardry', path: '/wizardry/items/', label: 'Items', title: 'Wizardry items', sheets: ['Wizardry'], match: (d) => (d.kind === 'item' || d.kind === 'piece') && !/^Scrolls/.test(d.group),
-    lead: 'Stations and extensions, magic materials and staff cores.' },
+  { mod: 'wizardry', path: '/wizardry/items/', label: 'Items', title: 'Wizardry items', sheets: ['Wizardry'], match: (d) => ((d.kind === 'item' || d.kind === 'piece') && !/^Scrolls/.test(d.group)) || isStaffBase(d),
+    relabel: (d) => (isStaffBase(d) ? 'Staff bases' : d.group === 'Staffs Items' ? 'Staff cores' : undefined),
+    lead: 'Stations and extensions, magic materials, and the staff bases and cores you combine into a staff.' },
   { mod: 'wizardry', path: '/wizardry/food/', label: 'Food', title: 'Wizardry food', sheets: ['W.Food'], match: (d) => d.kind === 'food', groupBy: 'biome',
     lead: 'Eitr food from Wizardry by biome, with health, stamina and eitr.' },
   { mod: 'wizardry', path: '/wizardry/meads/', label: 'Meads - Potions', title: 'Wizardry meads and potions', sheets: ['W.Food'], match: (d) => d.group === 'Potions',

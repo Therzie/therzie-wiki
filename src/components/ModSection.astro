@@ -15,5 +15,5 @@ const items = all.filter((i) => inSection(section, i.data));
   )}
   <p class="lead">{section.lead}</p>
   <slot />
-  <ItemBrowser items={items} matrix={section.matrix} groupBy={section.groupBy} all={all} />
+  <ItemBrowser items={items} matrix={section.matrix} groupBy={section.groupBy} all={all} relabel={section.relabel} />
 </StarlightPage>
