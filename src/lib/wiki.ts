@@ -118,6 +118,7 @@ export const SECTIONS: { mod: string; path: string; label: string; title: string
   { mod: 'monstrum', path: '/monstrum/food/', label: 'Food', title: 'Monstrum food', sheets: ['M.Food'], groupBy: 'biome',
     lead: 'Food made from Monstrum creatures, by the biome of the creature it comes from, with health, stamina and eitr.' },
   { mod: 'wizardry', path: '/wizardry/', label: 'Staffs', title: 'Wizardry staffs', sheets: ['Wizardry'], match: (d) => d.kind === 'weapon' && !isStaffBase(d),
+    relabel: (d) => (/^blood magic/i.test(d.notes ?? '') ? 'Blood magic staffs' : undefined),
     lead: 'Every Wizardry staff with its damage, eitr cost and recipe.' },
   { mod: 'wizardry', path: '/wizardry/armor/', label: 'Armor', title: 'Wizardry armor', sheets: ['Wizardry'], match: (d) => d.kind === 'armor',
     lead: 'Mage robes for every biome, circlets and rings.' },

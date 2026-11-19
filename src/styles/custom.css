@@ -592,3 +592,26 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 
 .group__title[style*='--c'] { color: var(--c); }
 .group__title[style*='--c'] svg { align-self: center; }
+
+/* ---------- Wizardry staff progression ---------- */
+.staff-path { margin-top: 0.5rem; }
+.staff-path__list { list-style: none; padding: 0; margin: 0.75rem 0 0; display: grid; gap: 0.5rem; }
+.staff-path__row {
+  display: grid; grid-template-columns: 9.5rem 1fr auto minmax(14rem, 1.1fr); align-items: center; gap: 0.75rem;
+  padding: 0.55rem 0.9rem; border-radius: 6px; border: 1px solid var(--tw-line); border-left: 3px solid var(--c);
+  background: var(--tw-grain), linear-gradient(90deg, color-mix(in srgb, var(--c) 10%, var(--tw-wood-1)), var(--tw-wood-2));
+  background-size: 100% 100%, auto;
+}
+.staff-path__biome { display: flex; align-items: center; gap: 0.4rem; font-family: var(--tw-head); color: var(--c); }
+.staff-path__parts { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; font-size: var(--sl-text-sm); }
+.staff-path__parts a, .staff-path__staff { display: inline-flex; align-items: center; gap: 0.45rem; text-decoration: none; color: var(--sl-color-gray-1); }
+.staff-path__parts a:hover, .staff-path__staff:hover strong { color: var(--tw-bronze-hi); }
+.staff-path__blood { font-family: var(--tw-head); color: #d4504a; letter-spacing: 0.04em; }
+.staff-path__mats { color: var(--sl-color-gray-2); }
+.staff-path__plus, .staff-path__arrow { color: var(--tw-bronze); font-size: 1.1rem; }
+.staff-path__staff strong { display: block; font-family: var(--tw-head); color: var(--tw-ember); font-weight: 400; }
+.staff-path__staff small { display: block; font-size: 0.75rem; color: var(--sl-color-gray-3); }
+@media (max-width: 50rem) {
+  .staff-path__row { grid-template-columns: 1fr; gap: 0.4rem; }
+  .staff-path__arrow { display: none; }
+}

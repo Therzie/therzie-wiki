@@ -1,0 +1,49 @@
+---
+// Wizardry staff progression: per biome, the staff base and core that make each staff (read from the recipes),
+// plus the blood magic summon staffs. Biomes and summon notes are editorial fields on the items.
+import ItemIcon from './ItemIcon.astro';
+import Glyph from './Glyph.astro';
+import { getItems, isStaffBase, url, slugify, biomeColor, BIOMES, type Item } from '../lib/wiki';
+
+const all = await getItems('wizardry');
+const byName = new Map(all.map((i) => [slugify(i.data.name), i]));
+const staffs = all
+  .filter((i) => i.data.group === 'Staffs' && !isStaffBase(i.data))
+  .sort((a, b) => BIOMES.findIndex((x) => x.name === a.data.biome) - BIOMES.findIndex((x) => x.name === b.data.biome));
+const blood = (i: Item) => /^blood magic/i.test(i.data.notes ?? '');
+const parts = (i: Item) => {
+  const mats = i.data.recipe.materials.map((m) => byName.get(slugify(m)));
+  return {
+    base: mats.find((m) => m && isStaffBase(m.data)),
+    core: mats.find((m) => m && /core$/i.test(m.data.name) && m.data.group === 'Staffs Items'),
+  };
+};
+const link = (i: Item) => url(`/items/${i.id}/`);
+---
+<section class="staff-path not-content" aria-label="Staff progression">
+  <h2 class="guide-head">Staff progression</h2>
+  <p class="small">Each staff is made from the staff base and the core of its biome. The blood magic staffs summon a companion instead.</p>
+  <ol class="staff-path__list">
+    {staffs.map((s) => {
+      const { base, core } = parts(s);
+      return (
+        <li class="staff-path__row" style={`--c:${biomeColor(s.data.biome)}`}>
+          <span class="staff-path__biome">{s.data.biome && <Glyph biome={s.data.biome} size={14} />}{s.data.biome ?? 'Unknown biome'}</span>
+          {blood(s) ? (
+            <span class="staff-path__parts"><span class="staff-path__blood">Blood magic</span><span class="staff-path__mats">{[...new Set(s.data.recipe.materials.filter((m) => !m.includes(",")))].join(" · ")}</span></span>
+          ) : (
+            <span class="staff-path__parts">
+              {base && <a href={link(base)}><ItemIcon prefab={base.data.prefab ?? ''} name={base.data.name} biome={base.data.biome} size={30} />{base.data.name}</a>}
+              {core && <><span class="staff-path__plus">+</span><a href={link(core)}><ItemIcon prefab={core.data.prefab ?? ''} name={core.data.name} size={30} />{core.data.name}</a></>}
+            </span>
+          )}
+          <span class="staff-path__arrow" aria-hidden="true">→</span>
+          <a class="staff-path__staff" href={link(s)}>
+            <ItemIcon prefab={s.data.prefab ?? ''} name={s.data.name} biome={s.data.biome} size={38} />
+            <span><strong>{s.data.name}</strong><small>{blood(s) ? s.data.notes?.replace(/^blood magic staff\.\s*/i, '') : s.data.effect}</small></span>
+          </a>
+        </li>
+      );
+    })}
+  </ol>
+</section>
