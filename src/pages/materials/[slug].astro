@@ -1,0 +1,46 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import ItemIcon from '../../components/ItemIcon.astro';
+import { getItems, materialIndex, url, modName, MODS, type Material } from '../../lib/wiki';
+
+export async function getStaticPaths() {
+  const mats = materialIndex(await getItems());
+  return mats.map((m) => ({ params: { slug: m.slug }, props: { m } }));
+}
+interface Props { m: Material }
+const { m } = Astro.props;
+const ROLE = { recipe: 'Ingredient', monstrum: 'With Monstrum installed', upgrade: 'To upgrade', alternative: 'Alternative recipe' };
+const mods = MODS.map((x) => x.id).filter((id) => m.uses.some((u) => u.item.data.mod === id));
+const src = m.item?.data;
+---
+<StarlightPage frontmatter={{ title: m.name, description: `What you can make with ${m.name}.`, tableOfContents: false }}>
+  {m.item && src && (
+    <div class="item-hero not-content">
+      <ItemIcon prefab={src.prefab} name={src.name} biome={src.biome} size={72} />
+      <div class="item-hero__body">
+        <p>This material is an item on the wiki: <a href={url(`/items/${m.item.id}/`)}>{src.name}</a> ({modName(src.mod)}, {src.group}).</p>
+        {src.drops && src.drops.length > 0 && (
+          <p class="small">Drops from {src.drops.map((x) => `${x.from}${x.chance ? ` ${x.chance}` : ''}`).join(', ')}</p>
+        )}
+      </div>
+    </div>
+  )}
+  <p class="lead">Used in {m.uses.length} {m.uses.length === 1 ? 'recipe' : 'recipes'}.</p>
+  {mods.map((mod) => (
+    <section class="not-content mat-uses">
+      <h2 class="group__title">{modName(mod)}</h2>
+      <ul class="family__line">
+        {m.uses.filter((u) => u.item.data.mod === mod).map((u) => (
+          <li>
+            <a href={url(`/items/${u.item.id}/`)}>
+              <ItemIcon prefab={u.item.data.prefab} name={u.item.data.name} biome={u.item.data.biome} size={40} />
+              <span>{u.item.data.name}</span>
+              {u.role !== 'recipe' && <small>{ROLE[u.role]}</small>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+  <p class="small"><a href={url('/materials/')}>All materials</a></p>
+</StarlightPage>

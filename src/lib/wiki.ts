@@ -48,20 +48,31 @@ export function groupsOf(items: Item[]) {
   return [...order.entries()].sort((a, b) => a[1] - b[1]).map(([g]) => g);
 }
 
-export function materialIndex(items: Item[]) {
-  const map = new Map<string, { items: Item[]; monstrum: Item[] }>();
+export type MaterialUse = { item: Item; role: 'recipe' | 'monstrum' | 'upgrade' | 'alternative' };
+export type Material = { name: string; slug: string; uses: MaterialUse[]; item?: Item };
+
+/** Every material named in a recipe, with the items that use it. A material that is also a wiki item links to it. */
+export function materialIndex(items: Item[]): Material[] {
+  const map = new Map<string, Material>();
+  const add = (raw: string, item: Item, role: MaterialUse['role']) => {
+    const name = raw.replace(/\s*\(level.*\)$/, '');
+    const slug = slugify(name);
+    if (!map.has(slug)) map.set(slug, { name, slug, uses: [] });
+    const m = map.get(slug)!;
+    if (!m.uses.some((u) => u.item.id === item.id && u.role === role)) m.uses.push({ item, role });
+  };
   for (const it of items) {
-    for (const m of it.data.recipe.materials) {
-      if (!map.has(m)) map.set(m, { items: [], monstrum: [] });
-      map.get(m)!.items.push(it);
-    }
-    for (const m of (it.data.recipe.monstrum ?? []).flatMap((x) => x.split(/ or /))) {
-      if (!map.has(m)) map.set(m, { items: [], monstrum: [] });
-      map.get(m)!.monstrum.push(it);
-    }
+    const r = it.data.recipe;
+    r.materials.forEach((m) => add(m, it, 'recipe'));
+    (r.monstrum ?? []).flatMap((x) => x.split(/ or /)).forEach((m) => add(m, it, 'monstrum'));
+    (r.upgrade ?? []).forEach((m) => add(m, it, 'upgrade'));
+    (r.alternative ?? []).forEach((m) => add(m, it, 'alternative'));
   }
-  return [...map.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  const byName = new Map(items.map((i) => [slugify(i.data.name), i]));
+  for (const m of map.values()) m.item = byName.get(m.slug);
+  return [...map.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
+export const materialUrl = (name: string) => url(`/materials/${slugify(name.replace(/\s*\(level.*\)$/, ''))}/`);
 
 export const repoUrl = `https://github.com/${process.env.SITE_OWNER ?? 'therzie'}/${process.env.SITE_REPO ?? 'therzie-wiki'}`;
 

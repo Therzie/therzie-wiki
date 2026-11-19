@@ -1,24 +1,24 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-import ItemIcon from '../../components/ItemIcon.astro';
-import { getItems, materialIndex, url, slugify } from '../../lib/wiki';
+import { getItems, materialIndex, url } from '../../lib/wiki';
 
-const items = await getItems();
-const mats = materialIndex(items);
+const mats = materialIndex(await getItems());
+const letters = [...new Set(mats.map((m) => m.name[0].toUpperCase()))];
 ---
-<StarlightPage frontmatter={{ title: 'Materials', description: 'Which weapons use which material.', tableOfContents: false }}>
-  <p class="lead">Every material from the recipes, and what you can make with it. Built automatically from the item recipes.</p>
+<StarlightPage frontmatter={{ title: 'Materials', description: 'Every material from the recipes and what you can make with it.', tableOfContents: false }}>
+  <p class="lead">Every material from the recipes. Open one to see what you can make with it, and where it comes from when it is an item on this wiki.</p>
   <input type="search" class="mat-search" placeholder="Find a material…" data-mat-search aria-label="Find a material" />
-  <div class="mat-grid not-content">
-    {mats.map(([name, use]) => (
-      <section class="mat" id={slugify(name)} data-name={name.toLowerCase()}>
-        <h3>{name} <span class="group__count">{use.items.length + use.monstrum.length}</span></h3>
-        <ul>
-          {use.items.map((it) => (
-            <li><a href={url(`/items/${it.id}/`)}><ItemIcon prefab={it.data.prefab} name={it.data.name} biome={it.data.biome} size={24} />{it.data.name}</a></li>
-          ))}
-          {use.monstrum.map((it) => (
-            <li><a href={url(`/items/${it.id}/`)}><ItemIcon prefab={it.data.prefab} name={it.data.name} biome={it.data.biome} size={24} />{it.data.name}</a> <span class="pill">Monstrum</span></li>
+  <nav class="group-jump not-content" aria-label="Jump to letter">{letters.map((l) => <a href={`#letter-${l}`}>{l}</a>)}</nav>
+  <div class="not-content">
+    {letters.map((l) => (
+      <section class="mat-letter" id={`letter-${l}`} data-letter>
+        <h2 class="group__title">{l}</h2>
+        <ul class="mat-list">
+          {mats.filter((m) => m.name[0].toUpperCase() === l).map((m) => (
+            <li data-name={m.name.toLowerCase()}>
+              <a href={url(`/materials/${m.slug}/`)}>{m.name}</a>
+              <span class="group__count">{m.uses.length}</span>
+            </li>
           ))}
         </ul>
       </section>
@@ -29,6 +29,7 @@ const mats = materialIndex(items);
   const input = document.querySelector<HTMLInputElement>('[data-mat-search]')!;
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
-    document.querySelectorAll<HTMLElement>('.mat').forEach((m) => (m.hidden = !!q && !m.dataset.name!.includes(q)));
+    document.querySelectorAll<HTMLElement>('.mat-list li').forEach((li) => (li.hidden = !!q && !li.dataset.name!.includes(q)));
+    document.querySelectorAll<HTMLElement>('[data-letter]').forEach((s) => (s.hidden = !s.querySelector('li:not([hidden])')));
   });
 </script>
