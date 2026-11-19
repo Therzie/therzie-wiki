@@ -1,0 +1,23 @@
+---
+import WarfarePage from '../../components/warfare/WarfarePage.astro';
+import { TIERS, url } from '../../lib/wiki';
+import { LINKS } from '../../lib/warfare';
+
+---
+<WarfarePage slug="install">
+<ul class="readme-list">
+      <li>Install with a mod manager (r2modman or the Thunderstore App) or manually into <code>BepInEx/plugins</code>.</li>
+      <li>Updating from an older version? Delete <code>Therzie.Warfare.cfg</code> from your config folder so a fresh one is generated on startup.</li>
+      <li>Install on <strong>both the server and every client</strong>.</li>
+      <li>Vanilla battleaxe, sledgehammer and Fenrir claw recipes are replaced by Warfare versions on world load. The vanilla items can still be spawned.</li>
+    </ul>
+<h2 id="prefab-names">Prefab names</h2>
+    <p>
+      For server admins and modpack makers: all Warfare items follow the pattern <code>&lt;Class&gt;&lt;Tier&gt;_TW</code>,
+      for example <code>ClaymoreDvergr_TW</code>, <code>WarpikeBone_TW</code> or <code>ThrowAxeFlint_TW</code>.
+      Every item page on this wiki shows its prefab name with a copy button.
+    </p>
+    <p class="tier-strip">{TIERS.map((t, i) => (<>{i > 0 && ' · '}<a href={url(`/warfare/forge-path/#tier-${t.id.toLowerCase()}`)}>{t.id}</a></>))}</p>
+<h2 id="languages">Languages</h2>
+    <p>Translation files are in the <code>TherzieTranslations</code> folder. Improve one or add your own language, then share it on <a href={LINKS.discord}>Discord</a> and it will be added to the mod.</p>
+</WarfarePage>

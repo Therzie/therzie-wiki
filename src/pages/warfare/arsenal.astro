@@ -1,0 +1,20 @@
+---
+import WarfarePage from '../../components/warfare/WarfarePage.astro';
+import { arsenal } from '../../lib/warfare';
+
+---
+<WarfarePage slug="arsenal">
+<p>
+      Warfare fills every gap in Valheim's weapon list and adds classes the game never had. Every two handed weapon gets
+      improved combat animations, and every class sorts into its own tab at the crafting station.
+    </p>
+    <div class="arsenal">
+      {arsenal.map(([tab, classes]) => (
+        <div class="arsenal__tab">
+          <h3>{tab}</h3>
+          <p>{classes.map(([c, isNew], i) => (<>{i > 0 && ' · '}{isNew ? <strong class="new" title="Not in vanilla Valheim">{c}</strong> : c}</>))}</p>
+        </div>
+      ))}
+    </div>
+    <p class="small"><strong class="new">Highlighted</strong> = weapon class that does not exist in vanilla Valheim.</p>
+</WarfarePage>

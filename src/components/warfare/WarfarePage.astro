@@ -1,0 +1,24 @@
+---
+// One page of the Warfare guide, with a way back to the overview and to the next topic.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { GUIDE } from '../../lib/warfare';
+import { url } from '../../lib/wiki';
+
+interface Props { slug: string }
+const { slug } = Astro.props;
+const i = GUIDE.findIndex((g) => g.slug === slug);
+const page = GUIDE[i];
+const prev = GUIDE[i - 1];
+const next = GUIDE[i + 1];
+---
+<StarlightPage frontmatter={{ title: page.title, description: page.summary, tableOfContents: false, prev: false, next: false }}>
+  <div class="readme readme--page not-content">
+    <p class="guide-crumb"><a href={url('/warfare/')}>Warfare</a> <span>/</span> {page.title}</p>
+    <slot />
+    <nav class="guide-pager" aria-label="Warfare guide">
+      {prev ? <a class="guide-pager__link" href={url(`/warfare/${prev.slug}/`)}><small>Previous</small><span>{prev.title}</span></a> : <span />}
+      <a class="guide-pager__home" href={url('/warfare/')}>All topics</a>
+      {next ? <a class="guide-pager__link guide-pager__link--next" href={url(`/warfare/${next.slug}/`)}><small>Next</small><span>{next.title}</span></a> : <span />}
+    </nav>
+  </div>
+</StarlightPage>

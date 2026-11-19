@@ -1,0 +1,28 @@
+---
+import WarfarePage from '../../components/warfare/WarfarePage.astro';
+import { url } from '../../lib/wiki';
+import { runePaths } from '../../lib/warfare';
+const art = (f: string) => url(`/readme/warfare/${f}`);
+---
+<WarfarePage slug="runeforge">
+<figure class="raven raven--hugin">
+      <img src={art('hugin.png')} alt="" width="64" height="64" />
+      <blockquote><b>Hugin:</b> <i>"The Dvergr did not just forge steel. They fed it Eitr. Find their anvil and you will learn why."</i></blockquote>
+    </figure>
+    <p>
+      Defeat the Queen and the <strong>Dwarven Eitr Anvil</strong> opens up at the Black Forge. Grind Eitr, Dark Crystal and
+      trophies into <strong>Rune Shards</strong>, then infuse your weapon, quiver or throwing belt with a power of your choice.
+      Infused gear glows in the color of its rune.
+    </p>
+    <div class="rune-paths">
+      {runePaths.map(([icon, name, theme]) => (
+        <div class="rune-path"><span class="rune-path__icon">{icon}</span><strong>{name}</strong><span>{theme}</span></div>
+      ))}
+    </div>
+    <p>Stronger infusions unlock in later biomes, and two handed and twin weapons get unique infusions of their own.</p>
+    <div class="notes">
+      <p><strong>⚖️ Endgame, and balanced for it.</strong> The Runeforge only works on Mistlands, Ashlands and Deep North gear. Each infusion scales with the tier of the item and is tuned against vanilla endgame weapons, so it adds a choice, not a power spike.</p>
+      <p><strong>⚙️ Yours to switch off.</strong> Prefer a different enchanting mod? The Runeforge can be turned off completely in the config.</p>
+      <p><strong>🤝 Plays nice with Epic Loot and Jewelcrafting.</strong> Running either mod? Warfare detects it and switches off any infusion that would duplicate one of their effects, so you never stack the same bonus twice. The tooltip tells you which mod already covers it.</p>
+    </div>
+</WarfarePage>

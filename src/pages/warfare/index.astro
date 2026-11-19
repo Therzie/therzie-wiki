@@ -1,58 +1,22 @@
 ---
-// Warfare overview, based on the Warfare README by Therzie.
+// Warfare overview: a navigation panel with a short summary of every topic.
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-import ItemIcon from '../../components/ItemIcon.astro';
-import Glyph from '../../components/Glyph.astro';
-import RuneDivider from '../../components/RuneDivider.astro';
-import Rune from '../../components/Rune.astro';
-import { getItems, TIERS, url, biomeColor } from '../../lib/wiki';
+import { getItems, url } from '../../lib/wiki';
+import { LINKS, GUIDE } from '../../lib/warfare';
 
 const items = await getItems('warfare');
 const art = (f: string) => url(`/readme/warfare/${f}`);
-
-const LINKS = {
-  discord: 'https://discord.gg/AEqkrq2z4u',
-  patreon: 'https://www.patreon.com/Therzie',
-  paypal: 'https://paypal.me/TherzieWarfare',
-};
-
-const relics = [
-  ['Eikthyr', "Eikthyr's War Pike", 'War Pike'],
-  ['The Elder', "The Elder's Battlehammer", 'Battlehammer'],
-  ['Bonemass', "Bonemass' Sledge", 'Sledge'],
-  ['Moder', "Moder's Greatbow", 'Greatbow'],
-  ['Yagluth', "Yagluth's Blade", 'Bastard sword'],
-  ['The Queen', "The Queen's Claws", 'Fists'],
-  ['Fader', "Fader's Battleaxe", 'Battleaxe'],
+const count = (sheet: string) => items.filter((i) => i.data.source?.sheet === sheet).length;
+const browse = [
+  { href: '/warfare/weapons/', title: 'Weapons', text: 'Every weapon, shield and ammo type with damage, recipe and biome.', n: count('Weapons') },
+  { href: '/warfare/pieces/', title: 'Pieces', text: 'Crafting stations, extensions and build pieces.', n: count('Pieces') },
+  { href: '/warfare/items/', title: 'Items', text: 'Materials, meads, quivers and the rest.', n: count('Items') },
 ];
 
-// [tab, [class, isNew][]]  (isNew = class that does not exist in vanilla Valheim)
-const arsenal: [string, [string, boolean][]][] = [
-  ['Knives', [['Twin daggers', false]]],
-  ['Swords', [['Sword', false], ['Twin swords', false], ['Bastard sword', true], ['Claymore', false]]],
-  ['Axes', [['Axe', false], ['Twin axes', false], ['Battleaxe', false]]],
-  ['Clubs', [['Twin maces', false], ['Sledge', false], ['Battlehammer', true], ['Greatclub', true]]],
-  ['Polearms', [['Atgeir', false], ['Lance', true]]],
-  ['Spears', [['Spear', false], ['War Pike', true], ['Trident', true]]],
-  ['Fists', [['Fist weapons for every tier', false]]],
-  ['Throwing', [['Throwing axes', true], ['Javelins', true]]],
-  ['Ranged', [['Bow', false], ['Greatbow', true], ['Crossbow', false], ['tier arrows and bolts', false]]],
-];
-
-const runePaths = [
-  ['🩸', 'Blood', 'Lifesteal and bleeding wounds'],
-  ['🔥', 'Fury', 'Raw damage and relentless offence'],
-  ['🛡️', 'Guardian', 'Blocking, taunting and holding the line'],
-  ['✨', 'Arcane', 'Eitr and elemental bursts'],
-  ['🏹', 'Hunter', 'Ranged precision and the thrill of the hunt'],
-  ['⚒️', 'Craft', "Stamina, durability and the craftsman's edge"],
-];
-
-const saga = [
-  ['Armory', 'Armor sets for every tier. Some Warfare materials are used here too.', 'https://valheim.thunderstore.io/package/Therzie/Armory/'],
-  ['Wizardry', 'Staffs, magic and mage armor.', 'https://valheim.thunderstore.io/package/Therzie/Wizardry/'],
-  ['Monstrum', 'New creatures for every biome. Warfare does not add monsters itself.', 'https://valheim.thunderstore.io/package/Therzie/Monstrum/'],
-];
+// Old links pointed at anchors on one long page; send them to the topic page.
+const OLD = { 'the-forge-path': 'forge-path', 'relics-of-the-forsaken': 'relics', 'the-arsenal': 'arsenal', 'eitr-infusion': 'runeforge',
+  'the-fletchers-hall': 'fletchers-hall', 'and-more': 'more', 'the-therzie-saga': 'saga', 'install-notes': 'install',
+  'the-crafting-filter': 'crafting-filter', 'prefab-names': 'install', 'languages': 'install', 'roadmap': 'credits', 'credits': 'credits', 'support': 'credits' };
 ---
 <StarlightPage frontmatter={{ title: 'Warfare', description: 'Weapons for every biome, from Meadows flint to Ashlands flametal.', tableOfContents: false }}>
   <div class="readme not-content">
@@ -71,168 +35,34 @@ const saga = [
       <blockquote><b>Hugin:</b> <i>"Greetings, warrior. The Allfather loves nothing more than the clash of steel, and only those who fall in glorious combat will feast in his hall. Valhalla is not given, it is earned in battle. Arm yourself well. Odin is watching."</i></blockquote>
     </figure>
 
-    <div class="stat-row">
-      <div class="stat"><strong>11</strong><span>material tiers</span><small>Flint to Flametal, every tier a full roster</small></div>
-      <div class="stat"><strong>7</strong><span>boss relics</span><small>One legendary weapon per Forsaken</small></div>
-      <div class="stat"><strong>20+</strong><span>weapon classes</span><small>Twin blades, War Pikes, Lances, Greatbows and more</small></div>
-      <div class="stat"><strong>6</strong><span>rune paths</span><small>Infuse your gear with Eitr at the Dwarven anvil</small></div>
-    </div>
-
-    <h2 id="the-forge-path" class="readme__head"><img src={art('the-forge-path.png')} alt="" height="46" /><span class="sr-only">The Forge Path</span></h2>
-    <p>
-      Every tier is built from the materials of its own biome and follows the look of that land. Fall for a weapon class
-      early and you can keep forging it, tier after tier, all the way to the Ashlands.
-    </p>
-    <ol class="forge-path">
-      {TIERS.map((t) => {
-        const list = items.filter((i) => i.data.tier === t.id);
-        return (
-          <li class="tier" id={`tier-${t.id.toLowerCase()}`} style={`--c:${biomeColor(t.biome)}`}>
-            <div class="tier__rune"><Rune r={t.rune} /></div>
-            <div class="tier__body">
-              <h3>{t.id} <span class="tier__biome"><Glyph biome={t.biome} size={13} />{t.biome}</span></h3>
-              <p>{t.text}</p>
-              {list.length > 0 && (
-                <div class="tier__items">
-                  {list.map((it) => (
-                    <a href={url(`/items/${it.id}/`)} title={it.data.name}><ItemIcon prefab={it.data.prefab} name={it.data.name} biome={it.data.biome} size={34} /></a>
-                  ))}
-                </div>
-              )}
-            </div>
-          </li>
-        );
-      })}
-    </ol>
-
-    <RuneDivider seed={2} />
-
-    <figure class="raven raven--munin">
-      <img src={art('munin.png')} alt="" width="64" height="64" />
-      <blockquote><b>Munin:</b> <i>"I remember every one of them. The stag, the ancient tree, the rotting mass, the dragon, the burning skull, the queen beneath the mist and the one who waits in the ash. Each left something behind."</i></blockquote>
-    </figure>
-
-    <h2 id="relics-of-the-forsaken" class="readme__head"><img src={art('relics-of-the-forsaken.png')} alt="" height="46" /><span class="sr-only">Relics of the Forsaken</span></h2>
-    <p>Each of the Forsaken guards a weapon of its own. They are rare drops, so you may have to call the boss more than once.</p>
-    <table class="item-table readme-table">
-      <thead><tr><th>Forsaken</th><th>Relic</th><th>Class</th></tr></thead>
-      <tbody>{relics.map(([b, r, c]) => <tr><td>{b}</td><td class="relic">{r}</td><td>{c}</td></tr>)}</tbody>
-    </table>
-
-    <h2 id="the-arsenal" class="readme__head"><img src={art('the-arsenal.png')} alt="" height="46" /><span class="sr-only">The Arsenal</span></h2>
-    <p>
-      Warfare fills every gap in Valheim's weapon list and adds classes the game never had. Every two handed weapon gets
-      improved combat animations, and every class sorts into its own tab at the crafting station.
-    </p>
-    <div class="arsenal">
-      {arsenal.map(([tab, classes]) => (
-        <div class="arsenal__tab">
-          <h3>{tab}</h3>
-          <p>{classes.map(([c, isNew], i) => (<>{i > 0 && ' · '}{isNew ? <strong class="new" title="Not in vanilla Valheim">{c}</strong> : c}</>))}</p>
-        </div>
+    <h2 class="guide-head">Browse the database</h2>
+    <div class="guide-grid guide-grid--browse">
+      {browse.map((b) => (
+        <a class="guide-card guide-card--browse" href={url(b.href)}>
+          <span class="guide-card__title">{b.title}</span>
+          <span class="guide-card__text">{b.text}</span>
+          <span class="guide-card__stat">{b.n} entries</span>
+        </a>
       ))}
     </div>
-    <p class="small"><strong class="new">Highlighted</strong> = weapon class that does not exist in vanilla Valheim.</p>
 
-    <RuneDivider seed={5} />
-
-    <h2 id="eitr-infusion" class="readme__head"><img src={art('eitr-infusion.png')} alt="" height="46" /><span class="sr-only">Eitr Infusion</span></h2>
-    <figure class="raven raven--hugin">
-      <img src={art('hugin.png')} alt="" width="64" height="64" />
-      <blockquote><b>Hugin:</b> <i>"The Dvergr did not just forge steel. They fed it Eitr. Find their anvil and you will learn why."</i></blockquote>
-    </figure>
-    <p>
-      Defeat the Queen and the <strong>Dwarven Eitr Anvil</strong> opens up at the Black Forge. Grind Eitr, Dark Crystal and
-      trophies into <strong>Rune Shards</strong>, then infuse your weapon, quiver or throwing belt with a power of your choice.
-      Infused gear glows in the color of its rune.
-    </p>
-    <div class="rune-paths">
-      {runePaths.map(([icon, name, theme]) => (
-        <div class="rune-path"><span class="rune-path__icon">{icon}</span><strong>{name}</strong><span>{theme}</span></div>
+    <h2 class="guide-head">Learn the mod</h2>
+    <div class="guide-grid">
+      {GUIDE.map((g) => (
+        <a class="guide-card" href={url(`/warfare/${g.slug}/`)}>
+          <span class="guide-card__rune" aria-hidden="true">{g.rune}</span>
+          <span class="guide-card__title">{g.title}</span>
+          <span class="guide-card__text">{g.summary}</span>
+          {g.stat && <span class="guide-card__stat">{g.stat}</span>}
+        </a>
       ))}
     </div>
-    <p>Stronger infusions unlock in later biomes, and two handed and twin weapons get unique infusions of their own.</p>
-    <div class="notes">
-      <p><strong>⚖️ Endgame, and balanced for it.</strong> Eitr Infusion only works on Mistlands, Ashlands and Deep North gear. Each infusion scales with the tier of the item and is tuned against vanilla endgame weapons, so it adds a choice, not a power spike.</p>
-      <p><strong>⚙️ Yours to switch off.</strong> Prefer a different enchanting mod? Eitr Infusion can be turned off completely in the config.</p>
-      <p><strong>🤝 Plays nice with Epic Loot and Jewelcrafting.</strong> Running either mod? Warfare detects it and switches off any infusion that would duplicate one of their effects, so you never stack the same bonus twice. The tooltip tells you which mod already covers it.</p>
-    </div>
 
-    <h2 id="the-fletchers-hall" class="readme__head"><img src={art('the-fletcher-s-hall.png')} alt="" height="46" /><span class="sr-only">The Fletcher's Hall</span></h2>
-    <p>
-      Craft every bow, greatbow, crossbow and ammo type at the <strong>Fletcher Table</strong>, and upgrade it with four bowyer
-      extensions: <strong>Bow Rack</strong>, <strong>Archery Target</strong>, <strong>Tillering Tree</strong> and <strong>Crossbow Press</strong>.
-    </p>
-    <ul class="readme-list">
-      <li><strong>Tier ammo:</strong> arrows and bolts that match your bow tier, plus special ammo for when a normal arrow just will not do.</li>
-      <li><strong>Quivers:</strong> carry more, draw faster, and infuse them at the Eitr Anvil.</li>
-      <li><strong>Throwing belts:</strong> keep javelins and throwing axes at your hip. When one breaks, the next is drawn automatically.</li>
-    </ul>
-
-    <h2 id="and-more" class="readme__head"><img src={art('and-more.png')} alt="" height="46" /><span class="sr-only">And More</span></h2>
-    <div class="extras">
-      <div class="extra"><h3>Lingering meads</h3><p>Stamina and health regen meads that last five minutes. Brew them at the Mead Ketill.</p></div>
-      <div class="extra"><h3>Dark Crystal veins</h3><p>A new Mistlands ore. Mine it for Rune Shards and Dwarven gear.</p></div>
-      <div class="extra"><h3>Black Forge extensions</h3><p>Dvergr style upgrades for your Black Forge.</p></div>
-    </div>
-
-    <RuneDivider seed={8} />
-
-    <h2 id="the-therzie-saga" class="readme__head"><img src={art('the-therzie-saga.png')} alt="" height="46" /><span class="sr-only">The Therzie Saga</span></h2>
-    <figure class="raven raven--munin">
-      <img src={art('munin.png')} alt="" width="64" height="64" />
-      <blockquote><b>Munin:</b> <i>"A blade alone does not make a legend. Clad yourself in armor worthy of it, bend the arcane to your will and hunt beasts no skald has sung of yet. Only then will your saga be told."</i></blockquote>
-    </figure>
-    <p>Warfare is one part of a larger collection. Every mod works on its own and they are built to fit together.</p>
-    <div class="extras">
-      {saga.map(([name, text, href]) => <a class="extra extra--link" href={href}><h3>{name}</h3><p>{text}</p></a>)}
-    </div>
-
-    <h2 id="install-notes" class="readme__head"><img src={art('install-notes.png')} alt="" height="46" /><span class="sr-only">Install Notes</span></h2>
-    <ul class="readme-list">
-      <li>Install with a mod manager (r2modman or the Thunderstore App) or manually into <code>BepInEx/plugins</code>.</li>
-      <li>Updating from an older version? Delete <code>Therzie.Warfare.cfg</code> from your config folder so a fresh one is generated on startup.</li>
-      <li>Install on <strong>both the server and every client</strong>.</li>
-      <li>Vanilla battleaxe, sledgehammer and Fenrir claw recipes are replaced by Warfare versions on world load. The vanilla items can still be spawned.</li>
-    </ul>
-
-    <h2 id="the-crafting-filter" class="readme__head"><img src={art('the-crafting-filter.png')} alt="" height="46" /><span class="sr-only">The Crafting Filter</span></h2>
-    <p>So many weapons need some order in the forge. Warfare brings its own <strong>crafting filter</strong>, so you find the weapon you want in seconds instead of scrolling through every tier.</p>
-    <ul class="readme-list">
-      <li><strong>Family tabs</strong> at the Workbench, Forge and Black Forge: Knives, Swords, Axes, Clubs, Polearms, Spears, Fists and Throwing.</li>
-      <li><strong>Fletcher Table tabs:</strong> Bows, Greatbows, Crossbows, Arrows, Bolts and Quivers.</li>
-      <li><strong>Tier strip</strong> that only shows the tiers this station can craft.</li>
-      <li>Empty tabs hide themselves, and every station remembers the last tab you used.</li>
-      <li>Using Azumatt's AAA Crafting? They work together. Warfare's tabs narrow the list first, then AAA's search, favourites and pages do the rest.</li>
-    </ul>
-
-    <h2 id="prefab-names">Prefab names</h2>
-    <p>
-      For server admins and modpack makers: all Warfare items follow the pattern <code>&lt;Class&gt;&lt;Tier&gt;_TW</code>,
-      for example <code>ClaymoreDvergr_TW</code>, <code>WarpikeBone_TW</code> or <code>ThrowAxeFlint_TW</code>.
-      Every item page on this wiki shows its prefab name with a copy button.
-    </p>
-    <p class="tier-strip">{TIERS.map((t, i) => (<>{i > 0 && ' · '}<a href={`#tier-${t.id.toLowerCase()}`}>{t.id}</a></>))}</p>
-
-    <h2 id="languages" class="readme__head"><img src={art('languages.png')} alt="" height="46" /><span class="sr-only">Languages</span></h2>
-    <p>Translation files are in the <code>TherzieTranslations</code> folder. Improve one or add your own language, then share it on <a href={LINKS.discord}>Discord</a> and it will be added to the mod.</p>
-
-    <h2 id="roadmap" class="readme__head"><img src={art('roadmap.png')} alt="" height="46" /><span class="sr-only">Roadmap</span></h2>
-    <ul class="readme-list"><li>Deep North content</li><li>More Eitr infusions</li></ul>
-
-    <h2 id="credits" class="readme__head"><img src={art('credits.png')} alt="" height="46" /><span class="sr-only">Credits</span></h2>
-    <ul class="readme-list credits">
-      <li><strong>Shark</strong> for keeping the ship steady while I was away</li>
-      <li><strong>Majestic</strong> for bringing Warfare to where it is today</li>
-      <li><strong>Azumatt</strong> for help and lessons</li>
-      <li><strong>Blaxxun</strong> for making Warfare independent of other mods, and many fixes</li>
-      <li><strong>KG</strong> for code help</li>
-      <li><strong>Jere</strong> for vegetation config help</li>
-      <li>Every supporter who keeps the forge burning</li>
-    </ul>
-
-    <h2 id="support" class="readme__head"><img src={art('support.png')} alt="" height="46" /><span class="sr-only">Support</span></h2>
-    <p>Feedback, bugs or ideas? Join the <a href={LINKS.discord}>Therzie Modding Discord</a>. Want to support the work? <a href={LINKS.patreon}>Patreon</a> · <a href={LINKS.paypal}>PayPal</a></p>
     <p class="readme__sign">Made by Therzie · Skål!</p>
+    <script is:inline define:vars={{ OLD, base: url('/warfare/') }}>
+      const id = location.hash.slice(1);
+      if (OLD[id]) location.replace(base + OLD[id] + '/');
+      else if (id.startsWith('tier-')) location.replace(base + 'forge-path/#' + id);
+    </script>
   </div>
 </StarlightPage>

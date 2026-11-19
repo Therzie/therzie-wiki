@@ -34,12 +34,25 @@ export default defineConfig({
           label: 'Warfare',
           items: [
             { label: 'Overview', link: '/warfare/' },
-            { label: 'The Forge Path', link: '/warfare/#the-forge-path' },
             { label: 'Weapons', link: '/warfare/weapons/' },
             { label: 'Pieces', link: '/warfare/pieces/' },
             { label: 'Items', link: '/warfare/items/' },
-            { label: 'Relics of the Forsaken', link: '/warfare/#relics-of-the-forsaken' },
-            { label: 'Eitr Infusion', link: '/warfare/#eitr-infusion' },
+            {
+              label: 'Guide',
+              collapsed: true,
+              items: [
+                { label: 'The Forge Path', link: '/warfare/forge-path/' },
+                { label: 'The Arsenal', link: '/warfare/arsenal/' },
+                { label: 'Relics of the Forsaken', link: '/warfare/relics/' },
+                { label: 'The Runeforge', link: '/warfare/runeforge/' },
+                { label: "The Fletcher's Hall", link: '/warfare/fletchers-hall/' },
+                { label: 'And More', link: '/warfare/more/' },
+                { label: 'The Crafting Filter', link: '/warfare/crafting-filter/' },
+                { label: 'Install and prefabs', link: '/warfare/install/' },
+                { label: 'The Therzie Saga', link: '/warfare/saga/' },
+                { label: 'Roadmap and credits', link: '/warfare/credits/' },
+              ],
+            },
           ],
         },
         {

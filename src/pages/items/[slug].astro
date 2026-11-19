@@ -40,7 +40,7 @@ const repo = repoUrl;
         <a class="pill" href={url(`${section?.path ?? `/${d.mod}/`}#group-${slugify(d.group)}`)}>{d.group}</a>
         {!isGear(d.kind) && <span class="pill">{KIND_LABEL[d.kind]}</span>}
         {d.skill && <span class="pill">{d.skill} skill</span>}
-        {tier && <a class="pill pill--tier" href={url(`/${d.mod}/#tier-${tier.id.toLowerCase()}`)}><Rune r={tier.rune} />{tier.id} tier</a>}
+        {tier && <a class="pill pill--tier" href={url(`/warfare/forge-path/#tier-${tier.id.toLowerCase()}`)}><Rune r={tier.rune} />{tier.id} tier</a>}
         {d.biome && <BiomeBadge biome={d.biome} guessed={d.biome_guessed} />}
       </div>
       {d.prefab ? (

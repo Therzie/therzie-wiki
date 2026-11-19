@@ -1,0 +1,18 @@
+---
+import WarfarePage from '../../components/warfare/WarfarePage.astro';
+import { url } from '../../lib/wiki';
+import { relics } from '../../lib/warfare';
+const art = (f: string) => url(`/readme/warfare/${f}`);
+---
+<WarfarePage slug="relics">
+
+    <figure class="raven raven--munin">
+      <img src={art('munin.png')} alt="" width="64" height="64" />
+      <blockquote><b>Munin:</b> <i>"I remember every one of them. The stag, the ancient tree, the rotting mass, the dragon, the burning skull, the queen beneath the mist and the one who waits in the ash. Each left something behind."</i></blockquote>
+    </figure>
+<p>Each of the Forsaken guards a weapon of its own. They are rare drops, so you may have to call the boss more than once.</p>
+    <table class="item-table readme-table">
+      <thead><tr><th>Forsaken</th><th>Relic</th><th>Class</th></tr></thead>
+      <tbody>{relics.map(([b, r, c]) => <tr><td>{b}</td><td class="relic">{r}</td><td>{c}</td></tr>)}</tbody>
+    </table>
+</WarfarePage>
