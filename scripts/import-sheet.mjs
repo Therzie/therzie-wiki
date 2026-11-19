@@ -17,7 +17,7 @@ import * as yaml from 'js-yaml';
 
 const SHEET_ID = '1kxXS34lWO-MWGktSqcOaRE_4tiLZHjN8sV1hxv2GsEU';
 const OUT_DIR = path.resolve('src/data/items');
-const SHEET_FIELDS = ['name', 'prefab', 'mod', 'group', 'skill', 'effect', 'damage', 'recipe', 'checks', 'source'];
+const SHEET_FIELDS = ['name', 'prefab', 'mod', 'group', 'skill', 'tier', 'effect', 'damage', 'recipe', 'checks', 'source'];
 
 const args = Object.fromEntries(
   process.argv.slice(2).reduce((acc, a, i, all) => (a.startsWith('--') ? [...acc, [a.slice(2), all[i + 1]]] : acc), [])
@@ -84,6 +84,8 @@ function parse(values, sheet, startRow) {
         checks: [],
         source: { sheet, row: startRow + prefabRow - 1 },
       };
+      item.tier = tierOf(item.prefab)?.id;
+      if (!item.tier) item.checks.push('No tier found in the prefab name');
       if (inherited) item.checks.push('Group taken from the block above (no label in the sheet)');
       let mode = null;
       for (let r = prefabRow + 1; r < end; r++) {
@@ -140,17 +142,24 @@ function parse(values, sheet, startRow) {
   return items;
 }
 
-// biome guess from the material tier in the prefab name; only used when the item has no biome yet
-const BIOME_KEYS = [
-  ['Amethyst', 'Mistlands'], ['Emerald', 'Plains'], ['Crystal', 'Mountains'],
-  ['Flint', 'Meadows'], ['Bronze', 'Black Forest'], ['Iron', 'Swamp'], ['Silver', 'Mountains'],
-  ['Blackmetal', 'Plains'], ['BlackMetal', 'Plains'], ['Dvergr', 'Mistlands'], ['Flametal', 'Ashlands'],
+// ---------- tier and biome ----------
+// Warfare prefabs follow <Class><Tier>_TW (Warfare README); tiers.json maps each tier to its biome.
+const TIERS = JSON.parse(fs.readFileSync(path.resolve('src/data/tiers.json'), 'utf8'));
+function tierOf(prefab) {
+  const base = prefab.replace(/_TW$/, '');
+  const hits = TIERS.flatMap((t) => t.keys.map((k) => ({ t, k })))
+    .filter(({ k }) => new RegExp(`(?:^|[a-z])${k}(?=[A-Z]|$)`).test(base))
+    .sort((a, b) => b.k.length - a.k.length);
+  return hits[0]?.t;
+}
+// What the display name suggests, used only to spot a prefab that does not match its name.
+const NAME_KEYS = [
+  ['Amethyst', 'Mistlands'], ['Emerald', 'Plains'], ['Crystal', 'Mountains'], ['Flint', 'Meadows'],
+  ['Bone', 'Black Forest'], ['Bronze', 'Black Forest'], ['Chitin', 'Ocean'], ['Iron', 'Swamp'],
+  ['Silver', 'Mountains'], ['Blackmetal', 'Plains'], ['Carapace', 'Mistlands'], ['Dwarven', 'Mistlands'],
+  ['Dvergr', 'Mistlands'], ['Flametal', 'Ashlands'],
 ];
-BIOME_KEYS.push(['Dwarven', 'Mistlands']);
-// the display name wins over the prefab: a wrong prefab in the sheet must not decide the biome
-const guessBiome = (it) =>
-  (BIOME_KEYS.find(([k]) => it.name.toLowerCase().includes(k.toLowerCase())) ??
-    BIOME_KEYS.find(([k]) => it.prefab.includes(k)))?.[1];
+const nameBiome = (name) => NAME_KEYS.find(([k]) => new RegExp(`\\b${k}\\b`, 'i').test(name))?.[1];
 
 // ---------- write, merging with existing editorial content ----------
 const data = await loadRows();
@@ -167,9 +176,21 @@ for (const it of items) {
     if (it[k] === undefined || (Array.isArray(it[k]) && !it[k].length)) delete merged[k];
     else merged[k] = it[k];
   }
-  if (!existing.biome) {
-    const b = guessBiome(it);
-    if (b) { merged.biome = b; merged.biome_guessed = true; }
+  // biome: an editor's confirmed choice always wins; otherwise take it from the tier
+  if (!existing.biome || existing.biome_guessed) {
+    const fromTier = it.tier ? TIERS.find((t) => t.id === it.tier).biome : undefined;
+    const fromName = nameBiome(it.name);
+    if (fromTier && (!fromName || fromName === fromTier)) {
+      merged.biome = fromTier;
+      delete merged.biome_guessed;
+    } else if (fromTier || fromName) {
+      merged.biome = fromName ?? fromTier;
+      merged.biome_guessed = true;
+      if (fromTier && fromName) {
+        it.checks.push(`Prefab tier ${it.tier} (${fromTier}) does not match the name (${fromName})`);
+        merged.checks = it.checks;
+      }
+    }
   }
   merged.description ??= '';
   merged.notes ??= '';

@@ -13,6 +13,7 @@ export const DAMAGE_GLYPHS: Record<string, string> = {
 export const BIOME_GLYPHS: Record<string, string> = {
   Meadows: '<path d="M3 20h18"/><path d="M6 20c0-4-2-6-2-8M8 20c0-5 2-8 3-10M12 20c0-4 0-7-1-10M15 20c0-5 3-7 5-8"/>',
   'Black Forest': '<path d="M12 3 L5 13 h4 L6 18 h12 l-3-5 h4 z"/><path d="M12 18v3"/>',
+  Ocean: '<path d="M2 10c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M16 6l3-3 1 4"/>',
   Swamp: '<path d="M10 21V9M10 13l-4-3M10 10l3-4M10 15l4-2"/><path d="M3 21c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/>',
   Mountains: '<path d="M2 20 L9 7 l3 5 3-4 7 12 z"/><path d="M7.5 10 L9 11.5 l1.5-1.5"/>',
   Plains: '<path d="M12 21V7"/><path d="M12 7c-2-1-2-3-2-4 2 0 2 2 2 4zm0 3c-2-1-3-2-3-4 2 0 3 2 3 4zm0 0c2-1 3-2 3-4-2 0-3 2-3 4zm0 3c-2-1-3-2-3-4 2 0 3 2 3 4zm0 0c2-1 3-2 3-4-2 0-3 2-3 4z"/>',

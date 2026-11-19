@@ -1,3 +1,5 @@
+import tiers from '../data/tiers.json';
+
 export const MODS = [
   { id: 'warfare', name: 'Warfare', blurb: 'Weapons, shields and pieces', ready: true },
   { id: 'warfare-fi', name: 'Warfare Fire & Ice', blurb: 'Elemental weapons and armor', ready: false },
@@ -10,6 +12,7 @@ export const MODS = [
 export const BIOMES = [
   { name: 'Meadows', color: '#7fae4e' },
   { name: 'Black Forest', color: '#3f7a5c' },
+  { name: 'Ocean', color: '#3f8fb0' },
   { name: 'Swamp', color: '#8a7a3c' },
   { name: 'Mountains', color: '#9fc3db' },
   { name: 'Plains', color: '#d9b24c' },
@@ -29,3 +32,6 @@ export const DAMAGE = {
   spirit: { label: 'Spirit', color: '#e8e2c8' },
 } as Record<string, { label: string; color: string }>;
 
+
+/** Warfare material tiers, in progression order (from the Warfare README). */
+export const TIERS = tiers as { id: string; rune: string; biome: string; keys: string[]; text: string }[];

@@ -14,6 +14,7 @@ recipe:
     - Emerald
 checks:
   - Group taken from the block above (no label in the sheet)
+  - Prefab tier Crystal (Mountains) does not match the name (Plains)
 source:
   sheet: Weapons
   row: 42
@@ -21,3 +22,4 @@ biome: Plains
 biome_guessed: true
 description: ''
 notes: ''
+tier: Crystal

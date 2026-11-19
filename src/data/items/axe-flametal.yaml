@@ -18,6 +18,6 @@ source:
   sheet: Weapons
   row: 6
 biome: Ashlands
-biome_guessed: true
 description: ''
 notes: ''
+tier: Flametal

@@ -36,10 +36,11 @@ export default defineConfig({
         {
           label: 'Warfare',
           items: [
-            { label: 'All Warfare weapons', link: '/warfare/' },
-            { label: 'Axes', link: '/warfare/#group-axes' },
-            { label: 'Throwing Axes', link: '/warfare/#group-throwing-axes' },
-            { label: 'Battleaxes', link: '/warfare/#group-battleaxe' },
+            { label: 'Overview', link: '/warfare/' },
+            { label: 'The Forge Path', link: '/warfare/#the-forge-path' },
+            { label: 'Weapons', link: '/warfare/weapons/' },
+            { label: 'Relics of the Forsaken', link: '/warfare/#relics-of-the-forsaken' },
+            { label: 'Eitr Infusion', link: '/warfare/#eitr-infusion' },
           ],
         },
         { label: 'Materials', link: '/materials/' },

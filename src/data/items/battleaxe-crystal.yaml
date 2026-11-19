@@ -18,6 +18,6 @@ source:
   sheet: Weapons
   row: 42
 biome: Mountains
-biome_guessed: true
 description: ''
 notes: ''
+tier: Crystal

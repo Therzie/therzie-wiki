@@ -3,7 +3,7 @@ import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 import { docsLoader } from '@astrojs/starlight/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
-import { BIOMES, MODS } from './lib/constants';
+import { BIOMES, MODS, TIERS } from './lib/constants';
 
 // One YAML file per item in src/data/items/.
 // Fields marked "sheet" are written by scripts/import-sheet.mjs; the others are editorial (Majestic).
@@ -19,6 +19,7 @@ const item = z.object({
   mod: z.enum(MODS.map((m) => m.id) as [string, ...string[]]),
   group: z.string(),
   skill: opt(z.string()),
+  tier: opt(z.enum(TIERS.map((t) => t.id) as [string, ...string[]])),
   effect: opt(z.string()),
   damage: z.record(z.string(), z.number().nullable()).nullish().transform((d) => dropNulls(d ?? {})),
   recipe: z

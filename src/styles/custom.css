@@ -330,3 +330,83 @@ a.mod:hover { transform: translateY(-2px); box-shadow: 0 0 24px rgb(255 150 50 /
 .starlight-aside { background: linear-gradient(180deg, #1f1810, #15110c) !important; border-inline-start: 3px solid var(--tw-ember) !important; box-shadow: inset 0 0 0 1px var(--tw-line); }
 .starlight-aside__title { color: var(--tw-ember) !important; font-family: var(--tw-head); }
 .starlight-aside--caution .starlight-aside__icon { color: var(--tw-ember); }
+
+/* ---------- tier pill ---------- */
+.rune { font-family: var(--tw-runic); }
+.pill--tier { border-color: var(--tw-bronze); color: var(--tw-bronze-hi); }
+.pill--tier .rune { color: var(--tw-ember); }
+.item-hero__tier { margin-top: 0.6rem !important; color: var(--sl-color-gray-2); font-style: italic; font-size: var(--sl-text-sm); }
+.item-hero__tier .rune { font-style: normal; color: var(--tw-ember); margin-right: 0.25rem; }
+
+/* ---------- progression by tier ---------- */
+.matrix--tiers { grid-template-columns: 5.5rem repeat(var(--cols), minmax(4.6rem, 1fr)); gap: 3px; }
+.matrix__tier { gap: 0.1rem; }
+.matrix__rune { font-family: var(--tw-runic); font-size: 1.2rem; color: var(--tw-ember); line-height: 1; }
+.matrix__tier > span:not(.matrix__rune) { color: var(--sl-color-white); }
+.matrix__tier small { display: inline-flex; align-items: center; gap: 0.2rem; font-weight: 600; color: var(--c); font-size: 0.65rem; }
+.matrix--tiers .matrix__cell a { font-size: 0.68rem; }
+
+/* ---------- README based pages ---------- */
+.readme > * + * { margin-top: 1rem; }
+.readme__logo { text-align: center; margin-top: 0.5rem; }
+.readme__logo img { max-width: 100%; height: auto; filter: drop-shadow(0 6px 18px rgb(255 150 50 / 0.25)); }
+.readme__motto { text-align: center; font-family: var(--tw-head); font-size: var(--sl-text-xl); color: var(--tw-bronze-hi); }
+.readme__intro { text-align: center; color: var(--sl-color-gray-1); max-width: 40rem; margin-inline: auto !important; }
+.readme__links { text-align: center; }
+.readme__links a, .readme a { color: var(--tw-bronze-hi); }
+.readme__head { margin-top: 2.5rem !important; margin-bottom: 0.5rem; line-height: 0; }
+.readme__head img { height: 46px; width: auto; max-width: 100%; }
+.readme h3 { font-family: var(--tw-head); color: var(--tw-ember); margin: 0; font-size: var(--sl-text-base); }
+.readme p { margin: 0; }
+.readme > p { margin-top: 0.75rem; color: var(--sl-color-gray-1); }
+.readme code { background: rgb(0 0 0 / 0.4); border: 1px solid var(--tw-line); padding: 0 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.readme__sign { text-align: center; font-family: var(--tw-head); color: var(--tw-bronze-hi); margin-top: 2rem !important; }
+
+.raven { display: flex; gap: 0.9rem; align-items: center; margin: 1.25rem 0 0; padding: 0.75rem 1rem; border-radius: 8px; background: linear-gradient(90deg, rgb(0 0 0 / 0.35), transparent); border-left: 3px solid var(--rc); }
+.raven--hugin { --rc: #5fb3ff; }
+.raven--munin { --rc: #e04848; }
+.raven img { flex: none; width: 56px; height: 56px; border-radius: 50%; }
+.raven blockquote { margin: 0; color: var(--sl-color-gray-1); font-size: var(--sl-text-sm); border: 0; padding: 0; }
+.raven b { color: var(--rc); font-family: var(--tw-head); }
+
+.readme .stat-row { margin-top: 1.5rem !important; }
+.stat small { margin-top: 0.3rem; font-size: var(--sl-text-xs); color: var(--sl-color-gray-2); }
+
+.forge-path { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 0.6rem; }
+.tier { display: grid; grid-template-columns: 3.2rem 1fr; gap: 0.9rem; align-items: start; padding: 0.8rem 1rem; border-radius: 8px; margin: 0 !important;
+  background: var(--tw-grain), linear-gradient(90deg, color-mix(in srgb, var(--c) 14%, var(--tw-wood-1)), var(--tw-wood-2) 60%);
+  background-size: 100% 100%, auto; border: 1px solid var(--tw-line); border-left: 3px solid var(--c); scroll-margin-top: 6rem; }
+.tier:target { box-shadow: 0 0 0 2px var(--tw-bronze-hi), 0 0 22px rgb(255 170 60 / 0.25); }
+.tier__rune { font-family: var(--tw-runic); font-size: 2.2rem; line-height: 1; text-align: center; color: var(--tw-ember); text-shadow: 0 0 12px rgb(255 150 50 / 0.45); padding-top: 0.15rem; }
+.tier h3 { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+.tier__biome { display: inline-flex; align-items: center; gap: 0.25rem; font-family: var(--sl-font); font-size: var(--sl-text-xs); color: var(--c); font-weight: 600; }
+.tier p { color: var(--sl-color-gray-2); font-size: var(--sl-text-sm); font-style: italic; margin-top: 0.15rem; }
+.tier__items { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
+
+.readme-table { margin-top: 0.75rem; }
+.readme-table td.relic { color: var(--tw-ember); font-family: var(--tw-head); font-weight: 600; }
+
+.arsenal { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.6rem; margin-top: 0.75rem !important; }
+.arsenal__tab { padding: 0.7rem 0.9rem; border-radius: 6px; border: 1px solid var(--tw-line); background: var(--tw-grain), linear-gradient(180deg, var(--tw-wood-1), var(--tw-wood-2)); background-size: 100% 100%, auto; }
+.arsenal__tab p { font-size: var(--sl-text-sm); color: var(--sl-color-gray-2); margin-top: 0.2rem; }
+strong.new { color: var(--tw-ember); }
+
+.rune-paths { display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: 0.6rem; margin-top: 0.75rem !important; }
+.rune-path { display: grid; grid-template-columns: 2rem 1fr; grid-template-rows: auto auto; column-gap: 0.5rem; padding: 0.6rem 0.8rem; border-radius: 6px; border: 1px solid var(--tw-line); background: rgb(0 0 0 / 0.3); }
+.rune-path__icon { grid-row: span 2; font-size: 1.4rem; align-self: center; }
+.rune-path strong { color: var(--tw-ember); font-family: var(--tw-head); }
+.rune-path span:last-child { font-size: var(--sl-text-xs); color: var(--sl-color-gray-2); }
+.notes { display: grid; gap: 0.5rem; padding: 0.9rem 1rem; border-left: 3px solid var(--tw-bronze); background: rgb(0 0 0 / 0.3); border-radius: 0 6px 6px 0; }
+.notes p { font-size: var(--sl-text-sm); color: var(--sl-color-gray-1); }
+.notes strong { color: var(--tw-bronze-hi); }
+
+.readme-list { margin: 0.75rem 0 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; color: var(--sl-color-gray-1); }
+.readme-list li { margin: 0 !important; }
+.readme-list strong { color: var(--tw-bronze-hi); }
+.extras { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.6rem; margin-top: 0.75rem !important; }
+.extra { padding: 0.8rem 1rem; border-radius: 6px; border: 1px solid var(--tw-line); background: var(--tw-grain), linear-gradient(180deg, var(--tw-wood-1), var(--tw-wood-2)); background-size: 100% 100%, auto; text-decoration: none; color: inherit; }
+.extra p { font-size: var(--sl-text-sm); color: var(--sl-color-gray-2); margin-top: 0.25rem; }
+.extra--link:hover { border-color: var(--tw-bronze); }
+.tier-strip a { color: var(--tw-bronze-hi); }
+.matrix--tiers .matrix__cell { align-items: stretch; }
+.matrix--tiers .matrix__cell a { flex-direction: column; align-items: center; text-align: center; gap: 0.2rem; font-size: 0.62rem; line-height: 1.15; word-break: break-word; }
