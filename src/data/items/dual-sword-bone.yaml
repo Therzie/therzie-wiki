@@ -1,0 +1,54 @@
+name: Bone Twin Swords
+prefab: DualSwordBone_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Bone
+damage:
+  slash: 31
+damage_max:
+  slash: 46
+stats:
+  hands: Dual
+  block_armor: 12
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 2
+  materials:
+  - Bone Fragments
+  - Corewood
+  - Deer Hide
+  - Leather Scraps
+  amounts:
+  - 19
+  - 9
+  - 2
+  - 4
+  upgrade:
+  - Bone Fragments
+  - Deer Hide
+  - Leather Scraps
+  - Troll Hide
+  - Greydwarf Brute Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 1
+  - 2
+  - 2
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 202
+biome: Black Forest
+description: Two jawbone blades, still lined with teeth.
+notes: ''

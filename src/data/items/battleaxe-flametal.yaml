@@ -1,0 +1,59 @@
+name: Flametal Battleaxe
+prefab: BattleaxeFlametal_TW
+mod: warfare
+kind: weapon
+group: Battleaxes
+skill: Axes
+tier: Flametal
+damage:
+  slash: 150
+  chop: 80
+damage_max:
+  slash: 168
+  chop: 87.5
+stats:
+  hands: Two handed
+  block_armor: 62
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 300 (+50 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Asksvin Hide
+  - Ashwood
+  amounts:
+  - 60
+  - 30
+  - 3
+  - 10
+  upgrade:
+  - Flametal
+  - Asksvin Hide
+  - Sulfur
+  - Asksvin Trophy (level 3)
+  - Warrior Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 15
+  - 2
+  - 2
+  - 1
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 911
+biome: Ashlands
+description: A broad flametal battleaxe on a charred haft.
+notes: ''

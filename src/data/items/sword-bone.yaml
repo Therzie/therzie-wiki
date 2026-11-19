@@ -1,5 +1,4 @@
-biome: Black Forest
-name: BoneSword
+name: Bone Sword
 prefab: SwordBone_TW
 mod: warfare
 kind: weapon
@@ -7,18 +6,50 @@ group: Swords
 skill: Swords
 tier: Bone
 damage:
-  slash: 28
+  slash: 30
+damage_max:
+  slash: 48
+stats:
+  hands: One handed
+  block_armor: 12
+  block_force: 20
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 17 / 33
+  movement: -5%
+  weight: 0.8
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 2
   materials:
-    - Bone Fragments
-    - Core Wood
-    - Tin
-checks:
-  - 'Unknown damage type "Blunet" in "Blunet: 7"'
+  - Bone Fragments
+  - Corewood
+  - Deer Hide
+  - Leather Scraps
+  amounts:
+  - 13
+  - 6
+  - 2
+  - 2
+  upgrade:
+  - Bone Fragments
+  - Deer Hide
+  - Leather Scraps
+  - Troll Hide
+  - Greydwarf Brute Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 171
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 102
+biome: Black Forest
+description: A blade split from a great long bone and ground to an edge.
 notes: ''

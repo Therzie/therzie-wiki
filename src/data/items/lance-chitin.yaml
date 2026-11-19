@@ -1,0 +1,51 @@
+name: Chitin Lance
+prefab: LanceChitin_TW
+mod: warfare
+kind: weapon
+group: Lances
+skill: Polearms
+tier: Chitin
+damage:
+  pierce: 52
+damage_max:
+  pierce: 70
+stats:
+  hands: Two handed
+  block_armor: 22
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 19
+  - 9
+  - 24
+  upgrade:
+  - Chitin
+  - Bronze
+  - Skeleton Trophy (level 3)
+  - Serpent Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1604
+biome: Ocean
+description: A lance tipped with a twisted narwhal-like chitin horn.
+notes: ''

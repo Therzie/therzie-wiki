@@ -1,0 +1,60 @@
+name: Carapace Knife
+prefab: KnifeCarapace_TW
+mod: warfare
+kind: weapon
+group: Knives
+skill: Knives
+tier: Carapace
+damage:
+  slash: 49
+  pierce: 49
+damage_max:
+  slash: 52
+  pierce: 52
+stats:
+  hands: One handed
+  block_armor: 2
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 250 (+50 per level)
+  stamina: 14 / 42
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Black Jute
+  - Mandible
+  amounts:
+  - 9
+  - 4
+  - 2
+  - 1
+  upgrade:
+  - Carapace
+  - Iron
+  - Black Jute
+  - Mandible
+  - Hare Trophy (level 3)
+  - Tick Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 509
+biome: Mistlands
+description: A curved fang of Seeker carapace on a root-wood grip. Quick, quiet and cruel.
+notes: ''

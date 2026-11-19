@@ -1,0 +1,54 @@
+name: Iron Greatclub
+prefab: GreatclubIron_TW
+mod: warfare
+kind: weapon
+group: Greatclubs
+skill: Clubs
+tier: Iron
+damage:
+  blunt: 40
+  pierce: 23
+damage_max:
+  blunt: 58
+  pierce: 32
+stats:
+  hands: Two handed
+  block_armor: 72
+  block_force: 30
+  knockback: 130
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 30
+  - 15
+  - 2
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Blob Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1405
+biome: Swamp
+description: 'An olive-wood club banded and studded with iron. Too unwieldy for a shield, but it keeps you light on your feet: dodging costs less stamina.'
+notes: ''

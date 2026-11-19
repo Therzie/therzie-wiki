@@ -1,0 +1,52 @@
+name: Iron Twin Maces
+prefab: DualMaceIron_TW
+mod: warfare
+kind: weapon
+group: Dual maces
+skill: Clubs
+tier: Iron
+damage:
+  blunt: 55
+damage_max:
+  blunt: 73
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 36
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 32
+  - 16
+  - 4
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Blob Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 2
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1105
+biome: Swamp
+description: Two iron maces, one flanged and one spiked, on moss-stained hafts.
+notes: ''

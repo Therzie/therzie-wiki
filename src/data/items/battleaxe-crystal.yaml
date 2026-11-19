@@ -1,23 +1,59 @@
-biome: Mountains
 name: Crystal Battleaxe
 prefab: BattleaxeCrystal_TW
 mod: warfare
 kind: weapon
-group: Battleaxe
+group: Battleaxes
 skill: Axes
 tier: Crystal
 damage:
-  slash: 90
-  spirit: 30
+  slash: 108
+  chop: 54
+damage_max:
+  slash: 126
+  chop: 61.5
+stats:
+  hands: Two handed
+  block_armor: 45
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 3
   materials:
-    - Ancient Bark
-    - Silver
-    - Crystal
+  - Pristine Crystal
+  - Silver
+  - Fenris Claw
+  - Fenris Hair
+  amounts:
+  - 16
+  - 8
+  - 3
+  - 3
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Fenris Claw
+  - Fenris Hair
+  - Wolf Trophy (level 3)
+  - Fenring Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 42
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 907
+biome: Mountains
+description: A great silver battleaxe, its blade grown from mountain crystal.
 notes: ''

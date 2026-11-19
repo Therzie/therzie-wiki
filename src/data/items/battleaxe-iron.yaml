@@ -1,22 +1,55 @@
-biome: Swamp
 name: Iron Battleaxe
 prefab: BattleaxeIron_TW
 mod: warfare
 kind: weapon
-group: Battleaxe
+group: Battleaxes
 skill: Axes
 tier: Iron
 damage:
-  slash: 70
+  slash: 65
+  chop: 45
+damage_max:
+  slash: 83
+  chop: 52.5
+stats:
+  hands: Two handed
+  block_armor: 26
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 2
   materials:
-    - Ancient Bark
-    - Iron
-    - Draugr Elite Trophy
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 33
+  - 17
+  - 4
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Leech Trophy (level 3)
+  - Abomination Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 2
+  - 1
+  - 1
+  - 5
+checks: []
 source:
-  sheet: Weapons
-  row: 29
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 905
+biome: Swamp
+description: 'A heavy double-bitted war axe: two broad crescent bits on a tall riveted socket.'
 notes: ''

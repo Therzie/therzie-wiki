@@ -1,0 +1,51 @@
+name: Bronze Battlehammer
+prefab: BattlehammerBronze_TW
+mod: warfare
+kind: weapon
+group: Battlehammers
+skill: Clubs
+tier: Bronze
+damage:
+  blunt: 42
+damage_max:
+  blunt: 60
+stats:
+  hands: Two handed
+  block_armor: 18
+  block_force: 70
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 38
+  movement: -10%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Finewood
+  - Leather Scraps
+  amounts:
+  - 18
+  - 9
+  - 2
+  upgrade:
+  - Bronze
+  - Leather Scraps
+  - Greydwarf Brute Trophy (level 3)
+  - Troll Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1303
+biome: Black Forest
+description: A cast bronze war hammer on a corewood haft.
+notes: ''

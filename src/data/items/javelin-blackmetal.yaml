@@ -1,0 +1,52 @@
+name: Blackmetal Javelin
+prefab: JavelinBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Javelins
+skill: Spears
+tier: Blackmetal
+damage:
+  pierce: 94
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 20
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 4
+  materials:
+  - Black Metal
+  - Iron
+  - Finewood
+  - Lox Pelt
+  amounts:
+  - 16
+  - 8
+  - 10
+  - 1
+  upgrade:
+  - Black Metal
+  - Iron
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2208
+biome: Plains
+description: Dark wood javelins with barbed black metal heads, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

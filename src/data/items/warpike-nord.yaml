@@ -1,0 +1,61 @@
+name: Nord Warpike
+prefab: WarpikeNord_TW
+mod: warfare
+kind: weapon
+group: Warpikes
+skill: Spears
+tier: Nord
+damage:
+  pierce: 199
+damage_max:
+  pierce: 229
+stats:
+  hands: One handed
+  block_armor: 71
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 400 (+50 per level)
+  stamina: 14 / 36
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 4
+  materials:
+  - Bloodgold
+  - Timberwood
+  - Long Claws
+  amounts:
+  - 64
+  - 32
+  - 3
+  upgrade:
+  - Bloodgold
+  - Long Claws
+  - Liquid Frost (level 2)
+  - Elaking Trophy (level 3)
+  - Liquid Frost (level 3)
+  - Krigen Trophy (level 4)
+  - Liquid Frost (level 4)
+  - Frostcore (level 4)
+  - Glacier Crystal (level 4)
+  upgrade_amounts:
+  - 16
+  - 1
+  - 3
+  - 1
+  - 5
+  - 1
+  - 6
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1812
+biome: Deep North
+description: A long frostwood pike with an ice-forged point, flanked by the hooked claws of the Eyeless One. Thrust, jump in, and pin them down.
+notes: ''

@@ -1,0 +1,59 @@
+name: Dwarven Daggers
+prefab: DualKnifeDvergr_TW
+mod: warfare
+kind: weapon
+group: Dual knives
+skill: Knives
+tier: Dvergr
+damage:
+  slash: 42
+  pierce: 42
+  lightning: 10
+damage_max:
+  slash: 45
+  pierce: 45
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 275 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  amounts:
+  - 14
+  - 7
+  - 7
+  - 2
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 610
+biome: Mistlands
+description: A sharp pair of dwarven daggers infused with eitr. Used to slice and shock your enemies with.
+notes: ''

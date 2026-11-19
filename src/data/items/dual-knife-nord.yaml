@@ -1,0 +1,62 @@
+name: Nord Daggers
+prefab: DualKnifeNord_TW
+mod: warfare
+kind: weapon
+group: Dual knives
+skill: Knives
+tier: Nord
+damage:
+  slash: 68
+  pierce: 68
+damage_max:
+  slash: 98
+  pierce: 98
+stats:
+  hands: Dual
+  block_armor: 23
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 400 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 4
+  materials:
+  - Bloodgold
+  - Timberwood
+  - Elaking Hair Bundle
+  amounts:
+  - 35
+  - 18
+  - 2
+  upgrade:
+  - Bloodgold
+  - Elaking Hair Bundle
+  - Liquid Frost (level 2)
+  - Frozen Soul Trophy (level 3)
+  - Liquid Frost (level 3)
+  - Hexen Trophy (level 4)
+  - Liquid Frost (level 4)
+  - Frostcore (level 4)
+  - Glacier Crystal (level 4)
+  upgrade_amounts:
+  - 9
+  - 1
+  - 3
+  - 1
+  - 5
+  - 1
+  - 6
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 612
+biome: Deep North
+description: A seax and a needle of Jotun steel, cold enough to numb the hand that holds them.
+notes: ''

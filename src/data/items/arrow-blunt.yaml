@@ -1,0 +1,31 @@
+name: Blunt Arrow
+prefab: ArrowBlunt_TW
+mod: warfare
+kind: ammo
+group: Arrows
+skill: Bows
+damage:
+  blunt: 52
+stats:
+  knockback: 30
+  weight: 0.1
+recipe:
+  yields: 20
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Wood
+  - Iron
+  - Obsidian
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2750
+description: An arrow with a heavy iron knob. It crushes bone and knocks its target back.
+notes: ''

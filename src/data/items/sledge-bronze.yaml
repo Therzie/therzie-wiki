@@ -1,5 +1,4 @@
-biome: Black Forest
-name: BronzeSledgehammer
+name: Bronze Sledgehammer
 prefab: SledgeBronze_TW
 mod: warfare
 kind: weapon
@@ -8,15 +7,45 @@ skill: Clubs
 tier: Bronze
 damage:
   blunt: 45
+damage_max:
+  blunt: 63
+stats:
+  hands: Two handed
+  block_armor: 18
+  block_force: 50
+  knockback: 50
+  backstab: x2
+  durability: 200 (+50 per level)
+  stamina: 22 / 32
+  movement: -15%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Core Wood
-    - Bronze
-    - Greydward Brute Trophy
+  - Bronze
+  - Finewood
+  - Deer Hide
+  amounts:
+  - 18
+  - 9
+  - 2
+  upgrade:
+  - Bronze
+  - Deer Hide
+  - Greydwarf Brute Trophy (level 3)
+  - Troll Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 119
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 1203
+biome: Black Forest
+description: A massive Norse sledge with a cast bronze head.
 notes: ''

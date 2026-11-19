@@ -1,25 +1,53 @@
-biome: Black Forest
 name: Bronze Battleaxe
 prefab: BattleaxeBronze_TW
 mod: warfare
 kind: weapon
-group: Battleaxe
+group: Battleaxes
 skill: Axes
 tier: Bronze
 damage:
-  slash: 50
+  slash: 43
+  chop: 32
+damage_max:
+  slash: 61
+  chop: 39.5
+stats:
+  hands: Two handed
+  block_armor: 18
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Core Wood
-    - Bronze
-  monstrum:
-    - Greydwarf Brute Trophy or Razorback Trophy
-checks:
-  - Read "Greydwarf Brute" as "Greydwarf Brute Trophy" (Monstrum recipe)
+  - Bronze
+  - Finewood
+  - Leather Scraps
+  amounts:
+  - 18
+  - 9
+  - 2
+  upgrade:
+  - Bronze
+  - Leather Scraps
+  - Bear Trophy (level 3)
+  - Troll Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 29
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 903
+biome: Black Forest
+description: A broad Dane axe with a cast bronze head on a long corewood haft.
 notes: ''

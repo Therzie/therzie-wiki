@@ -1,0 +1,52 @@
+name: Flametal Twin Swords
+prefab: DualSwordFlametal_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Flametal
+damage:
+  slash: 135
+damage_max:
+  slash: 150
+stats:
+  hands: Dual
+  block_armor: 56
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 300 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Asksvin Hide
+  amounts:
+  - 58
+  - 29
+  - 3
+  upgrade:
+  - Flametal
+  - Asksvin Hide
+  - Asksvin Trophy (level 3)
+  - Warrior Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 14
+  - 1
+  - 1
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 211
+biome: Ashlands
+description: Two jagged flametal blades with veins of lava running through them.
+notes: ''

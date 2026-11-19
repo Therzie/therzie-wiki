@@ -1,0 +1,56 @@
+name: Bronze Greatclub
+prefab: GreatclubBronze_TW
+mod: warfare
+kind: weapon
+group: Greatclubs
+skill: Clubs
+tier: Bronze
+damage:
+  blunt: 27
+  pierce: 15
+damage_max:
+  blunt: 45
+  pierce: 24
+stats:
+  hands: Two handed
+  block_armor: 72
+  block_force: 30
+  knockback: 130
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Finewood
+  - Leather Scraps
+  - Corewood
+  amounts:
+  - 16
+  - 8
+  - 2
+  - 15
+  upgrade:
+  - Bronze
+  - Leather Scraps
+  - Tin
+  - Greydwarf Trophy (level 3)
+  - Greydwarf Brute Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1403
+biome: Black Forest
+description: 'A heavy wooden club shod with bronze. Too unwieldy for a shield, but it keeps you light on your feet: dodging costs less stamina.'
+notes: ''

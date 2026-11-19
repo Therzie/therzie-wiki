@@ -1,0 +1,59 @@
+name: Flametal Trident
+prefab: TridentFlametal_TW
+mod: warfare
+kind: weapon
+group: Tridents
+skill: Spears
+tier: Flametal
+damage:
+  pierce: 155
+damage_max:
+  pierce: 173
+stats:
+  hands: One handed
+  block_armor: 62
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 300 (+50 per level)
+  stamina: 14 / 16
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Ashwood
+  - Bonemaw Tooth
+  amounts:
+  - 59
+  - 29
+  - 20
+  - 3
+  upgrade:
+  - Flametal
+  - Ashwood
+  - Bonemaw Tooth
+  - Sulfur
+  - Volture Trophy (level 3)
+  - Warrior Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 15
+  - 10
+  - 2
+  - 1
+  - 1
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1911
+biome: Ashlands
+description: Three flame-tongued flametal prongs rising from a bonemaw spine. Thrust, or throw it to pin a foe in place.
+notes: ''

@@ -1,0 +1,57 @@
+name: Dwarven Bow
+prefab: BowDvergr_TW
+mod: warfare
+kind: weapon
+group: Bows
+skill: Bows
+tier: Dvergr
+damage:
+  pierce: 72
+  lightning: 2
+damage_max:
+  pierce: 84
+stats:
+  hands: Two handed
+  knockback: 25
+  backstab: x3
+  durability: 275 (+50 per level)
+  draw_stamina: 12 per second
+  secondary_stamina: 20
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 18
+  - 9
+  - 9
+  - 8
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Hare Trophy (level 3)
+  - Seeker Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 5
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2410
+biome: Mistlands
+description: A dvergr recurve of eitr-veined black wood, armoured in bronze. Its arrows carry a spark of lightning.
+notes: ''

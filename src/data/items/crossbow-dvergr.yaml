@@ -1,0 +1,57 @@
+name: Dwarven Crossbow
+prefab: CrossbowDvergr_TW
+mod: warfare
+kind: weapon
+group: Crossbows
+skill: Crossbows
+tier: Dvergr
+damage:
+  pierce: 205
+  lightning: 3
+damage_max:
+  pierce: 214
+stats:
+  hands: Two handed
+  knockback: 200
+  backstab: x3
+  durability: 175 (+50 per level)
+  secondary_stamina: 20
+  reload: 3.5 s
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 23
+  - 12
+  - 12
+  - 10
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Hare Trophy (level 3)
+  - Seeker Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 6
+  - 3
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2610
+biome: Mistlands
+description: A dvergr arbalest with a steel prod and a fishtail stock of eitr wood. Every bolt hits like a thunderclap.
+notes: ''

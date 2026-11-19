@@ -1,25 +1,60 @@
-biome: Mountains
 name: Silver Battleaxe
 prefab: BattleaxeSilver_TW
 mod: warfare
 kind: weapon
-group: Battleaxe
+group: Battleaxes
 skill: Axes
 tier: Silver
 damage:
-  slash: 90
-  spirit: 30
+  slash: 101
+  chop: 54
+  spirit: 20
+damage_max:
+  slash: 119
+  chop: 61.5
+stats:
+  hands: Two handed
+  block_armor: 45
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 3
   materials:
-    - Ancient Bark
-    - Silver
-    - Wolf Fang
-  monstrum:
-    - Fenring Trophy
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 26
+  - 13
+  - 5
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Drake Trophy (level 3)
+  - Ulv Trophy (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 29
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 906
+biome: Mountains
+description: A great double-bladed silver battleaxe with a wolf-fur collar.
 notes: ''

@@ -1,26 +1,53 @@
-biome: Swamp
 name: Iron Battlehammer
 prefab: BattlehammerIron_TW
 mod: warfare
 kind: weapon
-group: Battlehammer
+group: Battlehammers
 skill: Clubs
 tier: Iron
 damage:
-  blunt: 68
+  blunt: 63
 damage_max:
-  blunt: 86
+  blunt: 81
 stats:
-  levels: lvl 1-4
+  hands: Two handed
+  block_armor: 26
+  block_force: 70
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 38
+  movement: -10%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 2
   materials:
-    - Ancient Bark
-    - Iron
-    - Draugr Elite Trophy
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 33
+  - 17
+  - 4
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Blob Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 2
+  - 1
+  - 1
+  - 5
+checks: []
 source:
-  sheet: Weapons
-  row: 132
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 1305
+biome: Swamp
+description: A square iron socket block with two square heads, toothed with pyramid spikes.
 notes: ''

@@ -1,26 +1,58 @@
-biome: Mistlands
 name: Dwarven Lance
 prefab: LanceDvergr_TW
 mod: warfare
 kind: weapon
-group: Atgeir & Lances
-skill: Polearm
+group: Lances
+skill: Polearms
 tier: Dvergr
-effect: Secondary attack causes bleed damage over 10 seconds
 damage:
-  pierce: 135
-  lightning: 15
+  pierce: 139
+  lightning: 5
+damage_max:
+  pierce: 157
+stats:
+  hands: Two handed
+  block_armor: 58
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 275 (+100 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 2
   materials:
-    - Yggdrasil Wood
-    - Dark Crystal
-    - Refined Eitr
-  monstrum:
-    - Gjall Trophy
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 27
+  - 14
+  - 14
+  - 12
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Seeker Trophy (level 3)
+  - Wisp (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 7
+  - 3
+  - 1
+  - 3
+checks: []
 source:
-  sheet: Weapons
-  row: 69
-  col: 7
-description: ''
+  sheet: Warfare 2.0
+  row: 1610
+biome: Mistlands
+description: A dwarven lance infused with eitr. Used to thrust and shock your enemies with from a distance.
 notes: ''

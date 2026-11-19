@@ -1,0 +1,54 @@
+name: Iron Twin Axes
+prefab: DualAxeIron_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Iron
+damage:
+  slash: 52
+  chop: 48
+damage_max:
+  slash: 70
+  chop: 57
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 32
+  - 16
+  - 2
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Leech Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 805
+biome: Swamp
+description: Two iron axes on olive-wood hafts, one with a skull-cheeked head, one hooked.
+notes: ''

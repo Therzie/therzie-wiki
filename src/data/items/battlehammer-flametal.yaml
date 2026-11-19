@@ -1,0 +1,57 @@
+name: Flametal Battlehammer
+prefab: BattlehammerFlametal_TW
+mod: warfare
+kind: weapon
+group: Battlehammers
+skill: Clubs
+tier: Flametal
+damage:
+  blunt: 155
+damage_max:
+  blunt: 173
+stats:
+  hands: Two handed
+  block_armor: 62
+  block_force: 70
+  knockback: 50
+  backstab: x3
+  durability: 300 (+50 per level)
+  stamina: 22 / 38
+  movement: -10%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Ashwood
+  - Sulfur
+  amounts:
+  - 60
+  - 30
+  - 10
+  - 6
+  upgrade:
+  - Flametal
+  - Sulfur
+  - Asksvin Hide
+  - Asksvin Trophy (level 3)
+  - Morgen Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 15
+  - 3
+  - 2
+  - 1
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1311
+biome: Ashlands
+description: A flametal hammer with a burning heart. Every slam leaves a ring of fire.
+notes: ''

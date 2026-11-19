@@ -1,0 +1,58 @@
+name: Silver Lance
+prefab: LanceSilver_TW
+mod: warfare
+kind: weapon
+group: Lances
+skill: Polearms
+tier: Silver
+damage:
+  pierce: 93
+  spirit: 20
+damage_max:
+  pierce: 111
+stats:
+  hands: Two handed
+  block_armor: 45
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 25
+  - 13
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Drake Trophy (level 3)
+  - Cultist Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1606
+biome: Mountains
+description: A long silver lance, long enough to keep a drake at bay.
+notes: ''

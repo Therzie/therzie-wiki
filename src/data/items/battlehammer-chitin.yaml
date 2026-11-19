@@ -1,0 +1,51 @@
+name: Chitin Battlehammer
+prefab: BattlehammerChitin_TW
+mod: warfare
+kind: weapon
+group: Battlehammers
+skill: Clubs
+tier: Chitin
+damage:
+  blunt: 52
+damage_max:
+  blunt: 70
+stats:
+  hands: Two handed
+  block_armor: 22
+  block_force: 70
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 38
+  movement: -10%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 19
+  - 10
+  - 10
+  upgrade:
+  - Chitin
+  - Bronze
+  - Troll Trophy (level 3)
+  - Serpent Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1304
+biome: Ocean
+description: A hammer with a harpoon spike, plated in chitin.
+notes: ''

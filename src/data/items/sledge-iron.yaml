@@ -1,5 +1,4 @@
-biome: Swamp
-name: Iron Sledge (Warfare Version)
+name: Iron Sledgehammer
 prefab: SledgeIron_TW
 mod: warfare
 kind: weapon
@@ -7,17 +6,48 @@ group: Sledges
 skill: Clubs
 tier: Iron
 damage:
-  blunt: 60
+  blunt: 68
+damage_max:
+  blunt: 86
+stats:
+  hands: Two handed
+  block_armor: 26
+  block_force: 50
+  knockback: 50
+  backstab: x2
+  durability: 200 (+50 per level)
+  stamina: 22 / 32
+  movement: -15%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 2
   materials:
-    - Ancient Bark
-    - Iron
-    - Ymir Flesh
-    - Draugr Elite Trophy
+  - Iron
+  - Ancient Bark
+  - Troll Hide
+  amounts:
+  - 34
+  - 17
+  - 2
+  upgrade:
+  - Iron
+  - Troll Hide
+  - Blob Trophy (level 3)
+  - Abomination Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 9
+  - 1
+  - 1
+  - 1
+  - 5
+checks: []
 source:
-  sheet: Weapons
-  row: 119
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 1205
+biome: Swamp
+description: A massive block of swamp iron on a moss-stained haft.
 notes: ''

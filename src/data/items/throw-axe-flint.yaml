@@ -1,21 +1,45 @@
-biome: Meadows
 name: Flint Throwing Axe
 prefab: ThrowAxeFlint_TW
 mod: warfare
 kind: weapon
-group: Throwing Axes
-skill: Throwing
+group: Throwing axes
+skill: Axes
 tier: Flint
 damage:
-  slash: 9
+  slash: 13
+  chop: 15
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 40
+  movement: -5%
+  weight: 0.1
+  max_level: 4
 recipe:
-  yields: 10
+  yields: 1
+  station: Workbench
+  level: 1
   materials:
-    - Wood
-    - Flint
+  - Flint
+  - Wood
+  - Feathers
+  amounts:
+  - 6
+  - 3
+  - 2
+  upgrade:
+  - Flint
+  - Feathers
+  upgrade_amounts:
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 18
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 2101
+biome: Meadows
+description: Knapped flint throwing axes with feathered hafts, carried in pairs. Thrown one after the other, then both at once.
 notes: ''

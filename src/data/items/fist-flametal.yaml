@@ -1,25 +1,52 @@
-biome: Ashlands
-name: Flametal Claws
+name: Flametal Fists
 prefab: FistFlametal_TW
 mod: warfare
 kind: weapon
-group: Claws
+group: Fists
 skill: Fists
 tier: Flametal
-effect: on 5th hit lower slash
 damage:
-  slash: 135
+  blunt: 104
+damage_max:
+  blunt: 116
+stats:
+  hands: Dual
+  block_armor: 19 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 300 (+50 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 3
   materials:
-    - Flametal
-    - Bonemaw Tooth
-    - Asksvin Hide
-  monstrum:
-    - Asksvin Trophy
+  - Flametal
+  - Charred Bone
+  - Asksvin Hide
+  amounts:
+  - 42
+  - 21
+  - 4
+  upgrade:
+  - Flametal
+  - Asksvin Hide
+  - Asksvin Trophy (level 3)
+  - Warrior Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 11
+  - 2
+  - 1
+  - 1
+  - 5
+checks: []
 source:
-  sheet: Weapons
-  row: 258
-  col: 10
-description: ''
+  sheet: Warfare 2.0
+  row: 2011
+biome: Ashlands
+description: Flametal claws over charred guards, glowing at every seam.
 notes: ''

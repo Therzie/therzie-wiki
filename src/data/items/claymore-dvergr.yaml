@@ -1,26 +1,58 @@
-biome: Mistlands
 name: Dwarven Claymore
 prefab: ClaymoreDvergr_TW
 mod: warfare
 kind: weapon
-group: Claymore
+group: Claymores
 skill: Swords
 tier: Dvergr
-effect: Enemy targets below 25% take 15-20% extra damage
 damage:
-  slash: 130
-  lightning: 15
+  slash: 135
+  lightning: 20
+damage_max:
+  slash: 153
+stats:
+  hands: Two handed
+  block_armor: 58
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 275 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 2
   materials:
-    - Carapace
-    - Mandible
-    - Refined Eitr
-  monstrum:
-    - Seeker Soldier Trophy
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  amounts:
+  - 27
+  - 14
+  - 14
+  - 4
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  - Seeker Trophy (level 3)
+  - Wisp (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 7
+  - 2
+  - 1
+  - 3
+checks: []
 source:
-  sheet: Weapons
-  row: 145
-  col: 9
-description: ''
+  sheet: Warfare 2.0
+  row: 410
+biome: Mistlands
+description: A dwarven claymore infused with eitr. Used to slash and shock your enemies in half with.
 notes: ''

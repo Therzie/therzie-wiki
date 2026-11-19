@@ -1,0 +1,58 @@
+name: Blackmetal Twin Swords
+prefab: DualSwordBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Blackmetal
+damage:
+  slash: 95
+damage_max:
+  slash: 110
+stats:
+  hands: Dual
+  block_armor: 46
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 4
+  materials:
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Lox Pelt
+  amounts:
+  - 40
+  - 20
+  - 6
+  - 2
+  upgrade:
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Lox Pelt
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 10
+  - 10
+  - 3
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 208
+biome: Plains
+description: A hooked blade and a stake of black metal, forged for fuling raiders.
+notes: ''

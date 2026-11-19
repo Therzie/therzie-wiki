@@ -1,23 +1,50 @@
-biome: Ocean
 name: Chitin Crossbow
 prefab: CrossbowChitin_TW
 mod: warfare
 kind: weapon
-group: CrossBows
+group: Crossbows
+skill: Crossbows
 tier: Chitin
 damage:
-  pierce: 65
+  pierce: 80
+damage_max:
+  pierce: 89
+stats:
+  hands: Two handed
+  knockback: 200
+  backstab: x3
+  durability: 150 (+50 per level)
+  secondary_stamina: 20
+  reload: 3.5 s
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Fletcher Table
+  level: 2
   materials:
-    - Ancient Bark
-    - Bronze
-    - Chitin
-    - Troll Trophy
-  station: Fletchers Table
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 16
+  - 8
+  - 10
+  upgrade:
+  - Chitin
+  - Bronze
+  - Bear Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 245
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 2604
+biome: Ocean
+description: A driftwood crossbow with a prod of layered chitin and bronze fittings.
 notes: ''

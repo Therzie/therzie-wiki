@@ -1,0 +1,30 @@
+name: Chitin Bolt
+prefab: BoltChitin_TW
+mod: warfare
+kind: ammo
+group: Bolts
+skill: Crossbows
+tier: Chitin
+damage:
+  pierce: 29
+stats:
+  weight: 0.1
+recipe:
+  yields: 20
+  station: Fletcher Table
+  level: 2
+  materials:
+  - Wood
+  - Chitin
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2804
+biome: Ocean
+description: A crossbow bolt with a hooked chitin head and fin fletching.
+notes: ''

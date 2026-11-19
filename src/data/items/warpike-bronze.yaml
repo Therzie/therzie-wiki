@@ -1,0 +1,51 @@
+name: Bronze Warpike
+prefab: WarpikeBronze_TW
+mod: warfare
+kind: weapon
+group: Warpikes
+skill: Spears
+tier: Bronze
+damage:
+  pierce: 38
+damage_max:
+  pierce: 56
+stats:
+  hands: One handed
+  block_armor: 18
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 36
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Finewood
+  - Leather Scraps
+  amounts:
+  - 16
+  - 8
+  - 2
+  upgrade:
+  - Bronze
+  - Leather Scraps
+  - Skeleton Trophy (level 3)
+  - Bear Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1803
+biome: Black Forest
+description: A long pike with a cast bronze head. Thrust, jump in, and pin them down.
+notes: ''

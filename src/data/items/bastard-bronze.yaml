@@ -1,0 +1,51 @@
+name: Bronze Bastard Sword
+prefab: BastardBronze_TW
+mod: warfare
+kind: weapon
+group: Bastard swords
+skill: Swords
+tier: Bronze
+damage:
+  slash: 45
+damage_max:
+  slash: 63
+stats:
+  hands: Two handed
+  block_armor: 18
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Finewood
+  - Deer Hide
+  amounts:
+  - 16
+  - 8
+  - 2
+  upgrade:
+  - Bronze
+  - Deer Hide
+  - Skeleton Trophy (level 3)
+  - Ghost Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 303
+biome: Black Forest
+description: A long cast bronze blade on a hand-and-a-half grip.
+notes: ''

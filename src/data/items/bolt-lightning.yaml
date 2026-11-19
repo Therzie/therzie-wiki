@@ -1,0 +1,31 @@
+name: Lightning Bolt
+prefab: BoltLightning_TW
+mod: warfare
+kind: ammo
+group: Bolts
+skill: Crossbows
+damage:
+  pierce: 36
+  lightning: 72
+stats:
+  weight: 0.1
+recipe:
+  yields: 20
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Wood
+  - Copper
+  - Refined Eitr
+  - Feathers
+  amounts:
+  - 8
+  - 2
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2850
+description: A crossbow bolt with a forked copper head that crackles with eitr-fed lightning.
+notes: ''

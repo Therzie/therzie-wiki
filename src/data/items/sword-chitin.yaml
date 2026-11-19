@@ -1,5 +1,4 @@
-biome: Ocean
-name: Abyssal Sword
+name: Chitin Sword
 prefab: SwordChitin_TW
 mod: warfare
 kind: weapon
@@ -8,15 +7,47 @@ skill: Swords
 tier: Chitin
 damage:
   slash: 45
+damage_max:
+  slash: 63
+stats:
+  hands: One handed
+  block_armor: 17
+  block_force: 20
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 17 / 33
+  movement: -5%
+  weight: 0.8
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Chitin
-    - Bronze
-    - Ancient Bark
+  - Chitin
+  - Bronze
+  - Deer Hide
+  amounts:
+  - 12
+  - 6
+  - 2
+  upgrade:
+  - Chitin
+  - Bronze
+  - Deer Hide
+  - Skeleton Trophy (level 3)
+  - Ghost Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 171
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 104
+biome: Ocean
+description: A serrated blade of abyssal chitin on a bronze hilt.
 notes: ''

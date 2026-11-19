@@ -1,25 +1,58 @@
-biome: Mountains
-name: Silver bastard sword
+name: Silver Bastard Sword
 prefab: BastardSilver_TW
 mod: warfare
 kind: weapon
-group: Bastard Swords
+group: Bastard swords
 skill: Swords
 tier: Silver
 damage:
-  slash: 86
-  spirit: 30
+  slash: 105
+  spirit: 20
+damage_max:
+  slash: 123
+stats:
+  hands: Two handed
+  block_armor: 45
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 3
   materials:
-    - Silver
-    - Ancient Bark
-    - Wolf Fang
-  monstrum:
-    - Fenring Trophy
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 24
+  - 12
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Wolf Trophy (level 3)
+  - Fenring Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 158
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 306
+biome: Mountains
+description: A long silver blade with a wolf-fur collar at the guard.
 notes: ''

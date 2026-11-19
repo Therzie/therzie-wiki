@@ -20,11 +20,15 @@ since the beginning. You assist; editors decide.
 - Credit stays as it is on the About page.
 
 ## Layout
-- `scripts/import-sheet.mjs`: spreadsheet → YAML (card layout parser, merge keeps editorial fields).
+- `scripts/import-sheet.mjs`: spreadsheet → YAML (card layout parser, merge keeps editorial fields). The Weapons tab is
+  skipped: Warfare weapons, shields, ammo and bombs come from the mod itself.
+- `tools/warfare2/build.py`: Warfare 2.0 → YAML (stats, recipes with amounts, classes, boss drops) and
+  `src/data/warfare2/runeforge.json` (infusions, runes, Rune Power, gems). Inputs in `tools/warfare2/data/`, exported from
+  the mod and its prefabs; `extract_affixes.py` reads the infusion texts from the mod source.
 - `src/pages/`: Warfare overview (`warfare/`, based on the Warfare README), section pages per mod (configured in
   `SECTIONS` in `src/lib/wiki.ts`), item pages (`items/[slug]`), Monstrum weaknesses, materials, to-check list.
 - `src/data/tables/`: tables from the sheet that are not items (Monstrum weaknesses).
-- `src/data/tiers.json`: the 11 Warfare tiers with rune, biome and text (from the Warfare README). The importer
+- `src/data/tiers.json`: the 12 Warfare tiers with rune, biome and text (from the Warfare README). The importer
   takes the tier from the prefab name (`<Class><Tier>_TW`) and the biome from the tier.
 - `public/admin/config.yml`: the form editor.
 - `public/icons/<Prefab>.png`: item icons, exported from the Unity project with `tools/unity/WikiIconExport.cs`

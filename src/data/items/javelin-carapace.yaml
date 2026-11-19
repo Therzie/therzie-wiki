@@ -1,0 +1,56 @@
+name: Carapace Javelin
+prefab: JavelinCarapace_TW
+mod: warfare
+kind: weapon
+group: Javelins
+skill: Spears
+tier: Carapace
+damage:
+  pierce: 114
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 20
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  amounts:
+  - 11
+  - 5
+  - 5
+  - 1
+  upgrade:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  - Hare Trophy (level 3)
+  - Tick Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2209
+biome: Mistlands
+description: Root-wood javelins with serrated mandible heads, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

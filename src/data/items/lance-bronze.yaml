@@ -1,0 +1,51 @@
+name: Bronze Lance
+prefab: LanceBronze_TW
+mod: warfare
+kind: weapon
+group: Lances
+skill: Polearms
+tier: Bronze
+damage:
+  pierce: 42
+damage_max:
+  pierce: 60
+stats:
+  hands: Two handed
+  block_armor: 18
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Finewood
+  - Leather Scraps
+  amounts:
+  - 17
+  - 8
+  - 2
+  upgrade:
+  - Bronze
+  - Leather Scraps
+  - Skeleton Trophy (level 3)
+  - Bear Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1603
+biome: Black Forest
+description: A long corewood lance with a cast bronze head.
+notes: ''

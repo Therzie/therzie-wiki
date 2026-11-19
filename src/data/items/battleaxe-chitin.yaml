@@ -1,0 +1,53 @@
+name: Chitin Battleaxe
+prefab: BattleaxeChitin_TW
+mod: warfare
+kind: weapon
+group: Battleaxes
+skill: Axes
+tier: Chitin
+damage:
+  slash: 53
+  chop: 39
+damage_max:
+  slash: 71
+  chop: 46.5
+stats:
+  hands: Two handed
+  block_armor: 22
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 19
+  - 10
+  - 10
+  upgrade:
+  - Chitin
+  - Bronze
+  - Troll Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 904
+biome: Ocean
+description: A great axe with a head like a leviathan jaw.
+notes: ''

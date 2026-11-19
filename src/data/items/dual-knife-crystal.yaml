@@ -1,0 +1,58 @@
+name: Crystal Daggers
+prefab: DualKnifeCrystal_TW
+mod: warfare
+kind: weapon
+group: Dual knives
+skill: Knives
+tier: Crystal
+damage:
+  slash: 33
+  pierce: 34
+damage_max:
+  slash: 36
+  pierce: 37
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  amounts:
+  - 8
+  - 4
+  - 2
+  - 2
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  - Wolf Trophy (level 3)
+  - Ulv Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 607
+biome: Mountains
+description: A pair of silver daggers with crystal sunk under silver bridges.
+notes: ''

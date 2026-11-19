@@ -1,0 +1,58 @@
+name: Dwarven Sword
+prefab: SwordDvergr_TW
+mod: warfare
+kind: weapon
+group: Swords
+skill: Swords
+tier: Dvergr
+damage:
+  slash: 88
+  lightning: 35
+damage_max:
+  slash: 106
+stats:
+  hands: One handed
+  block_armor: 52
+  block_force: 20
+  knockback: 40
+  backstab: x3
+  durability: 275 (+50 per level)
+  stamina: 17 / 33
+  movement: -5%
+  weight: 0.8
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  amounts:
+  - 18
+  - 9
+  - 9
+  - 3
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  - Tick Trophy (level 3)
+  - Wisp (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 5
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 110
+biome: Mistlands
+description: A dwarven sword infused with eitr. Used to slash and shock your enemies with.
+notes: ''

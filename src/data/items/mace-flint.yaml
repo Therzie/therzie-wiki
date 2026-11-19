@@ -1,4 +1,3 @@
-biome: Meadows
 name: Flint Mace
 prefab: MaceFlint_TW
 mod: warfare
@@ -7,17 +6,46 @@ group: Maces
 skill: Clubs
 tier: Flint
 damage:
-  blunt: 20
+  blunt: 22
+damage_max:
+  blunt: 40
+stats:
+  hands: One handed
+  block_armor: 9
+  block_force: 30
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  movement: -5%
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 1
   materials:
-    - Wood
-    - Flint
-  monstrum:
-    - Leather Scraps or Fox Pelt
+  - Flint
+  - Wood
+  - Feathers
+  - Leather Scraps
+  amounts:
+  - 10
+  - 5
+  - 2
+  - 2
+  upgrade:
+  - Flint
+  - Leather Scraps
+  - Resin
+  upgrade_amounts:
+  - 2
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 82
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 1001
+biome: Meadows
+description: A wooden head set with flint shards and lashed tight, with feathers at the head.
 notes: ''

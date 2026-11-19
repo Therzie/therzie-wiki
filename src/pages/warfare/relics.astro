@@ -1,8 +1,13 @@
 ---
 import WarfarePage from '../../components/warfare/WarfarePage.astro';
-import { url } from '../../lib/wiki';
-import { relics } from '../../lib/warfare';
+import ItemIcon from '../../components/ItemIcon.astro';
+import { url, getItems } from '../../lib/wiki';
 const art = (f: string) => url(`/readme/warfare/${f}`);
+const order = ['Eikthyr', 'The Elder', 'Bonemass', 'Moder', 'Yagluth', 'The Queen', 'Fader'];
+const relics = (await getItems('warfare'))
+  .filter((i) => i.data.info?.some((x) => x.startsWith('Relic of ')))
+  .map((i) => ({ item: i, boss: i.data.info!.find((x) => x.startsWith('Relic of '))!.slice(9) }))
+  .sort((a, b) => order.indexOf(a.boss) - order.indexOf(b.boss));
 ---
 <WarfarePage slug="relics">
 
@@ -12,7 +17,14 @@ const art = (f: string) => url(`/readme/warfare/${f}`);
     </figure>
 <p>Each of the Forsaken guards a weapon of its own. They are rare drops, so you may have to call the boss more than once.</p>
     <table class="item-table readme-table">
-      <thead><tr><th>Forsaken</th><th>Relic</th><th>Class</th></tr></thead>
-      <tbody>{relics.map(([b, r, c]) => <tr><td>{b}</td><td class="relic">{r}</td><td>{c}</td></tr>)}</tbody>
+      <thead><tr><th>Forsaken</th><th>Relic</th><th>Class</th><th>Drop chance</th></tr></thead>
+      <tbody>{relics.map(({ item, boss }) => (
+        <tr>
+          <td>{boss}</td>
+          <td class="relic"><a class="item-link" href={url(`/items/${item.id}/`)}><ItemIcon prefab={item.data.prefab} name={item.data.name} biome={item.data.biome} size={28} /> {item.data.name}</a></td>
+          <td>{item.data.group.replace(/s$/, '')}</td>
+          <td>{item.data.drops?.find((d) => d.from === boss)?.chance ?? ''}</td>
+        </tr>
+      ))}</tbody>
     </table>
 </WarfarePage>

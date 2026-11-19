@@ -62,7 +62,7 @@ const repo = repoUrl;
   {d.checks.length > 0 && (
     <Aside type="caution" title="To check">
       <ul>{d.checks.map((c) => <li>{c}</li>)}</ul>
-      {d.source && <p class="small">Sheet: {d.source.sheet}, row {d.source.row}</p>}
+      {d.source && <p class="small">Source: {d.source.sheet}{d.source.row ? `, row ${d.source.row}` : ''}</p>}
     </Aside>
   )}
 
@@ -76,7 +76,7 @@ const repo = repoUrl;
       <section class="panel panel--craft">
         <h2>Crafting {d.recipe.yields > 1 && <span class="panel__total">makes {d.recipe.yields}</span>}</h2>
         {d.recipe.station && <p class="muted">{d.recipe.station}{d.recipe.level ? ` level ${d.recipe.level}` : ''}</p>}
-        {d.recipe.materials.length > 0 && <CraftingSlots materials={d.recipe.materials} />}
+        {d.recipe.materials.length > 0 && <CraftingSlots materials={d.recipe.materials} amounts={d.recipe.amounts} />}
         {d.recipe.alternative && (
           <div class="monstrum">
             <h3>Alternative recipe</h3>
@@ -85,8 +85,8 @@ const repo = repoUrl;
         )}
         {d.recipe.upgrade && (
           <div class="monstrum">
-            <h3>To upgrade</h3>
-            <CraftingSlots materials={d.recipe.upgrade} variant="upgrade" />
+            <h3>To upgrade{d.recipe.upgrade_amounts && <span class="muted small"> per level{d.recipe.station ? `, station level +1 per level` : ''}</span>}</h3>
+            <CraftingSlots materials={d.recipe.upgrade} amounts={d.recipe.upgrade_amounts} variant="upgrade" />
           </div>
         )}
         {d.recipe.monstrum && (
@@ -95,7 +95,7 @@ const repo = repoUrl;
             <CraftingSlots materials={d.recipe.monstrum} variant="monstrum" />
           </div>
         )}
-        <p class="small slots-note">Quantities are not in the spreadsheet yet.</p>
+        {!d.recipe.amounts && <p class="small slots-note">Quantities are not in the spreadsheet yet.</p>}
       </section>
     ) : d.drops?.length || d.creature ? null : (
       <section class="panel panel--craft"><h2>Crafting</h2><p class="muted">No recipe in the spreadsheet.</p></section>

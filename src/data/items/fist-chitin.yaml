@@ -1,23 +1,52 @@
-biome: Ocean
-name: Abyssal katars
+name: Chitin Fists
 prefab: FistChitin_TW
 mod: warfare
 kind: weapon
-group: Claws
+group: Fists
 skill: Fists
 tier: Chitin
-effect: Secondary attack causes Bleed damage
 damage:
-  slash: 30
+  slash: 37
+damage_max:
+  slash: 49
+stats:
+  hands: Dual
+  block_armor: 9 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Deer Hide
-    - Bronze
-    - Chitin
+  - Chitin
+  - Bronze
+  - Deer Hide
+  amounts:
+  - 14
+  - 7
+  - 2
+  upgrade:
+  - Chitin
+  - Bronze
+  - Deer Hide
+  - Bear Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 258
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 2004
+biome: Ocean
+description: 'Bronze-framed knuckle bars with a leather grip: a talon of abyssal chitin on one hand, a ridged shell on the other.'
 notes: ''

@@ -1,0 +1,59 @@
+name: Carapace Battlehammer
+prefab: BattlehammerCarapace_TW
+mod: warfare
+kind: weapon
+group: Battlehammers
+skill: Clubs
+tier: Carapace
+damage:
+  blunt: 121
+damage_max:
+  blunt: 139
+stats:
+  hands: Two handed
+  block_armor: 54
+  block_force: 70
+  knockback: 50
+  backstab: x3
+  durability: 250 (+50 per level)
+  stamina: 22 / 38
+  movement: -10%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Black Marble
+  - Mandible
+  amounts:
+  - 27
+  - 14
+  - 12
+  - 3
+  upgrade:
+  - Carapace
+  - Iron
+  - Black Marble
+  - Mandible
+  - Seeker Trophy (level 3)
+  - Seeker Soldier Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 3
+  - 2
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1309
+biome: Mistlands
+description: Marble drums on a blackened core, carved with the tree of the world.
+notes: ''

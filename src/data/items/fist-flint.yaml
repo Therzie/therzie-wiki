@@ -1,22 +1,52 @@
-biome: Meadows
-name: Flint Knuckles
+name: Flint Fists
 prefab: FistFlint_TW
 mod: warfare
 kind: weapon
-group: Claws
+group: Fists
 skill: Fists
 tier: Flint
 damage:
-  slash: 10
+  slash: 19
+damage_max:
+  slash: 31
+stats:
+  hands: Dual
+  block_armor: 4 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 1
   materials:
-    - Flint
-    - Wood
-    - Deer Hide
+  - Flint
+  - Wood
+  - Deer Hide
+  - Leather Scraps
+  amounts:
+  - 11
+  - 5
+  - 2
+  - 4
+  upgrade:
+  - Flint
+  - Deer Hide
+  - Leather Scraps
+  - Resin
+  upgrade_amounts:
+  - 3
+  - 1
+  - 2
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 258
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 2001
+biome: Meadows
+description: Knapped flint knuckles on leather D-grips, with boar tusks and feathers tied to the guard.
 notes: ''

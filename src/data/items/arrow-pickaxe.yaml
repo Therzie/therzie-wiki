@@ -3,19 +3,16 @@ prefab: ArrowPickaxe_TW
 mod: warfare
 kind: ammo
 group: Arrows
+skill: Bows
 damage:
   pierce: 10
   pickaxe: 60
-recipe:
-  yields: 1
-  materials:
-    - Ancient Bark
-    - Iron
-    - Surtling Core
-    - Feathers
+stats:
+  knockback: 10
+  weight: 0.1
+checks: []
 source:
-  sheet: Weapons
-  row: 183
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 2750
+description: An arrow with a small iron pick for a head. It chips ore and stone where it strikes and digs into the ground.
 notes: ''

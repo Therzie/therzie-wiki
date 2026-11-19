@@ -1,0 +1,59 @@
+name: Carapace Lance
+prefab: LanceCarapace_TW
+mod: warfare
+kind: weapon
+group: Lances
+skill: Polearms
+tier: Carapace
+damage:
+  pierce: 135
+damage_max:
+  pierce: 153
+stats:
+  hands: Two handed
+  block_armor: 54
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 250 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  amounts:
+  - 26
+  - 13
+  - 12
+  - 3
+  upgrade:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  - Seeker Trophy (level 3)
+  - Gjall Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 3
+  - 2
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1609
+biome: Mistlands
+description: A queen's spine for a point, set on a shaft long enough to keep the swarm at bay.
+notes: ''

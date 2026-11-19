@@ -1,4 +1,3 @@
-biome: Ashlands
 name: Flametal Sledgehammer
 prefab: SledgeFlametal_TW
 mod: warfare
@@ -6,19 +5,53 @@ kind: weapon
 group: Sledges
 skill: Clubs
 tier: Flametal
-effect: 5% chance to stun
 damage:
-  blunt: 170
+  blunt: 173
+damage_max:
+  blunt: 191
+stats:
+  hands: Two handed
+  block_armor: 62
+  block_force: 50
+  knockback: 50
+  backstab: x2
+  durability: 300 (+50 per level)
+  stamina: 22 / 32
+  movement: -15%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 3
   materials:
-    - Flametal
-    - Bonemaw Tooth
-    - Asksvin Hide
-    - Morgen Trophy
+  - Flametal
+  - Charred Bone
+  - Ashwood
+  - Sulfur
+  amounts:
+  - 62
+  - 31
+  - 10
+  - 8
+  upgrade:
+  - Flametal
+  - Sulfur
+  - Asksvin Hide
+  - Asksvin Trophy (level 3)
+  - Morgen Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 15
+  - 4
+  - 2
+  - 1
+  - 1
+  - 6
+checks: []
 source:
-  sheet: Weapons
-  row: 119
-  col: 9
-description: ''
+  sheet: Warfare 2.0
+  row: 1211
+biome: Ashlands
+description: A huge block of flametal, cracked open by its own heat.
 notes: ''

@@ -1,24 +1,59 @@
-biome: Plains
 name: Blackmetal Battleaxe
 prefab: BattleaxeBlackmetal_TW
 mod: warfare
 kind: weapon
-group: Battleaxe
+group: Battleaxes
 skill: Axes
 tier: Blackmetal
 damage:
-  slash: 110
+  slash: 120
+  chop: 60
+damage_max:
+  slash: 138
+  chop: 67.5
+stats:
+  hands: Two handed
+  block_armor: 50
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Fine Wood
-    - Blackmetal
-    - Linen Thread
-  monstrum:
-    - Lox Trophy
+  - Black Metal
+  - Iron
+  - Finewood
+  - Lox Pelt
+  amounts:
+  - 41
+  - 20
+  - 10
+  - 3
+  upgrade:
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Lox Trophy (level 3)
+  - Fuling Berserker Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 10
+  - 10
+  - 2
+  - 1
+  - 1
+  - 5
+checks: []
 source:
-  sheet: Weapons
-  row: 29
-  col: 7
-description: ''
+  sheet: Warfare 2.0
+  row: 908
+biome: Plains
+description: A broad black metal battleaxe with a war banner of lox fur and red linen.
 notes: ''

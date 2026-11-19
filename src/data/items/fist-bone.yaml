@@ -1,0 +1,54 @@
+name: Bone Fists
+prefab: FistBone_TW
+mod: warfare
+kind: weapon
+group: Fists
+skill: Fists
+tier: Bone
+damage:
+  slash: 26
+damage_max:
+  slash: 38
+stats:
+  hands: Dual
+  block_armor: 6 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 2
+  materials:
+  - Bone Fragments
+  - Corewood
+  - Deer Hide
+  - Leather Scraps
+  amounts:
+  - 14
+  - 7
+  - 2
+  - 4
+  upgrade:
+  - Bone Fragments
+  - Deer Hide
+  - Leather Scraps
+  - Troll Hide
+  - Bear Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 1
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2002
+biome: Black Forest
+description: 'Bone knuckle bars on a leather D-grip: a jawbone on one fist, three long claws on the other.'
+notes: ''

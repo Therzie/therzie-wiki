@@ -1,0 +1,58 @@
+name: Blackmetal Greatclub
+prefab: GreatclubBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Greatclubs
+skill: Clubs
+tier: Blackmetal
+damage:
+  blunt: 70
+  pierce: 41
+damage_max:
+  blunt: 88
+  pierce: 50
+stats:
+  hands: Two handed
+  block_armor: 72
+  block_force: 30
+  knockback: 130
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 4
+  materials:
+  - Black Metal
+  - Iron
+  - Finewood
+  - Needle
+  amounts:
+  - 37
+  - 18
+  - 15
+  - 6
+  upgrade:
+  - Black Metal
+  - Iron
+  - Needle
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 9
+  - 9
+  - 3
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1408
+biome: Plains
+description: 'A heavy club studded with black metal spikes. Too unwieldy for a shield, but it keeps you light on your feet: dodging costs less stamina.'
+notes: ''

@@ -1,0 +1,50 @@
+name: Bronze Twin Swords
+prefab: DualSwordBronze_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Bronze
+damage:
+  slash: 36
+damage_max:
+  slash: 51
+stats:
+  hands: Dual
+  block_armor: 14
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Finewood
+  - Deer Hide
+  amounts:
+  - 17
+  - 8
+  - 2
+  upgrade:
+  - Bronze
+  - Deer Hide
+  - Skeleton Trophy (level 3)
+  - Ghost Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 203
+biome: Black Forest
+description: Two cast bronze swords with engraved blades and copper-bound grips.
+notes: ''

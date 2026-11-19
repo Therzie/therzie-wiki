@@ -42,13 +42,15 @@ const item = z.object({
       station: opt(z.string()),
       level: opt(z.number().int()),
       materials: z.array(z.string()).nullish().transform((v) => v ?? []),
+      amounts: opt(z.array(z.number())),
       monstrum: opt(z.array(z.string())),
       upgrade: opt(z.array(z.string())),
+      upgrade_amounts: opt(z.array(z.number())),
       alternative: opt(z.array(z.string())),
     })
     .nullish().transform((v) => v ?? { yields: 1, materials: [] }),
   checks: z.array(z.string()).nullish().transform((v) => v ?? []),
-  source: opt(z.object({ sheet: z.string(), row: z.number(), col: opt(z.number()) })),
+  source: opt(z.object({ sheet: z.string(), row: opt(z.number()), col: opt(z.number()) })),
   // --- editorial ---
   biome: opt(z.enum(BIOMES.map((b) => b.name) as [string, ...string[]])),
   biome_guessed: opt(z.boolean()),

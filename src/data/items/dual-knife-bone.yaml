@@ -1,23 +1,50 @@
-biome: Black Forest
-name: Bone daggers
+name: Bone Daggers
 prefab: DualKnifeBone_TW
 mod: warfare
 kind: weapon
-group: Dual Knives
+group: Dual knives
 skill: Knives
 tier: Bone
 damage:
-  slash: 12
-  pierce: 12
+  slash: 13
+  pierce: 13
+damage_max:
+  slash: 16
+  pierce: 16
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 2
   materials:
-    - Bone Fragments
-    - Copper
-    - Wood
+  - Bone Fragments
+  - Corewood
+  - Leather Scraps
+  amounts:
+  - 10
+  - 5
+  - 4
+  upgrade:
+  - Bone Fragments
+  - Leather Scraps
+  - Greydwarf Shaman Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 2
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 106
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 602
+biome: Black Forest
+description: 'A pair of bone knives: a long fang and a toothed jawbone blade.'
 notes: ''

@@ -1,0 +1,58 @@
+name: Blackmetal Twin Axes
+prefab: DualAxeBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Blackmetal
+damage:
+  slash: 99
+  chop: 60
+damage_max:
+  slash: 117
+  chop: 69
+stats:
+  hands: Dual
+  block_armor: 46
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 4
+  materials:
+  - Black Metal
+  - Iron
+  - Finewood
+  - Lox Pelt
+  amounts:
+  - 40
+  - 20
+  - 8
+  - 2
+  upgrade:
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 10
+  - 10
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 808
+biome: Plains
+description: A hooked axe and a star axe, made to hack through fuling shields.
+notes: ''

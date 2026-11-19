@@ -1,0 +1,58 @@
+name: Crystal Twin Axes
+prefab: DualAxeCrystal_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Crystal
+damage:
+  slash: 89
+  chop: 56
+damage_max:
+  slash: 107
+  chop: 65
+stats:
+  hands: Dual
+  block_armor: 43
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Fenris Claw
+  - Fenris Hair
+  amounts:
+  - 15
+  - 8
+  - 3
+  - 3
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Fenris Claw
+  - Fenris Hair
+  - Wolf Trophy (level 3)
+  - Fenring Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 807
+biome: Mountains
+description: Two silver axes with crystal sunk into their heads.
+notes: ''

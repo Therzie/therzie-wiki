@@ -1,0 +1,59 @@
+name: Carapace Bastard Sword
+prefab: BastardCarapace_TW
+mod: warfare
+kind: weapon
+group: Bastard swords
+skill: Swords
+tier: Carapace
+damage:
+  slash: 135
+damage_max:
+  slash: 153
+stats:
+  hands: Two handed
+  block_armor: 54
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 250 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Black Jute
+  - Mandible
+  amounts:
+  - 25
+  - 12
+  - 4
+  - 3
+  upgrade:
+  - Carapace
+  - Iron
+  - Black Jute
+  - Mandible
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 309
+biome: Mistlands
+description: A serrated blade of overlapping Seeker plates, gripped by the mandibles of its own head. Heavy enough to split Seeker shell.
+notes: ''

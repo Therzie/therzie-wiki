@@ -1,0 +1,30 @@
+name: Crystal Bolt
+prefab: BoltCrystal_TW
+mod: warfare
+kind: ammo
+group: Bolts
+skill: Crossbows
+tier: Crystal
+damage:
+  pierce: 58
+stats:
+  weight: 0.1
+recipe:
+  yields: 20
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Wood
+  - Pristine Crystal
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2807
+biome: Mountains
+description: A crossbow bolt tipped with a prism of pristine crystal.
+notes: ''

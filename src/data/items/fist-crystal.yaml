@@ -1,0 +1,56 @@
+name: Crystal Fists
+prefab: FistCrystal_TW
+mod: warfare
+kind: weapon
+group: Fists
+skill: Fists
+tier: Crystal
+damage:
+  blunt: 72
+damage_max:
+  blunt: 84
+stats:
+  hands: Dual
+  block_armor: 17 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Fenris Claw
+  - Fenris Hair
+  amounts:
+  - 11
+  - 6
+  - 2
+  - 2
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Fenris Claw
+  - Fenris Hair
+  - Ulv Trophy (level 3)
+  - Stone Golem Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2007
+biome: Mountains
+description: Silver knuckles crowned with crystal, strapped over silver forearm guards.
+notes: ''

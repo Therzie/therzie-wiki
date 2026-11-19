@@ -1,0 +1,58 @@
+name: Dwarven Sledgehammer
+prefab: SledgeDvergr_TW
+mod: warfare
+kind: weapon
+group: Sledges
+skill: Clubs
+tier: Dvergr
+damage:
+  blunt: 137
+  lightning: 20
+damage_max:
+  blunt: 155
+stats:
+  hands: Two handed
+  block_armor: 52
+  block_force: 50
+  knockback: 50
+  backstab: x2
+  durability: 275 (+100 per level)
+  stamina: 22 / 32
+  movement: -15%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 29
+  - 14
+  - 14
+  - 13
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Seeker Trophy (level 3)
+  - Seeker Soldier Trophy (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 7
+  - 3
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1210
+biome: Mistlands
+description: A heavy dwarven sledgehammer infused with eitr. Used to crush and shock your enemies with.
+notes: ''

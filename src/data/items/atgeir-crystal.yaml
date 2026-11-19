@@ -1,0 +1,57 @@
+name: Crystal Atgeir
+prefab: AtgeirCrystal_TW
+mod: warfare
+kind: weapon
+group: Atgeirs
+skill: Polearms
+tier: Crystal
+damage:
+  pierce: 97
+damage_max:
+  pierce: 115
+stats:
+  hands: Two handed
+  block_armor: 45
+  block_force: 40
+  knockback: 30
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  movement: -5%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Obsidian
+  - Fenris Hair
+  amounts:
+  - 15
+  - 7
+  - 9
+  - 3
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Obsidian
+  - Fenris Hair
+  - Wolf Trophy (level 3)
+  - Drake Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 3
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1507
+biome: Mountains
+description: A hooked silver blade with a crystal edge on a long shaft.
+notes: ''

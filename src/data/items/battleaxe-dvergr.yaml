@@ -1,30 +1,60 @@
-biome: Mistlands
 name: Dwarven Battleaxe
 prefab: BattleaxeDvergr_TW
 mod: warfare
 kind: weapon
-group: Battleaxe
+group: Battleaxes
 skill: Axes
 tier: Dvergr
-effect: 4th hit lowers enemy slash resistance for the next attack
 damage:
-  slash: 135
-  lightning: 15
+  slash: 128
+  chop: 70
+  lightning: 22
+damage_max:
+  slash: 146
+  chop: 77.5
+stats:
+  hands: Two handed
+  block_armor: 58
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 275 (+100 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 2
   materials:
-    - Carapace
-    - Mandible
-    - Refined Eitr
-  monstrum:
-    - Gjall Trophy
-checks:
-  - >-
-    Prefab BattleaxeDvergr_TW appears 2x in the sheet (Dwarven Battleaxe, Weapons r29; Flametal Battleaxe,
-    Weapons r29)
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 28
+  - 14
+  - 14
+  - 12
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Seeker Trophy (level 3)
+  - Gjall Trophy (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 7
+  - 3
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 29
-  col: 8
-description: ''
+  sheet: Warfare 2.0
+  row: 910
+biome: Mistlands
+description: A heavy two-handed battleaxe forged by the dvergr.
 notes: ''

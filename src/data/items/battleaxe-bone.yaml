@@ -1,0 +1,51 @@
+name: Bone Battleaxe
+prefab: BattleaxeBone_TW
+mod: warfare
+kind: weapon
+group: Battleaxes
+skill: Axes
+tier: Bone
+damage:
+  slash: 37
+  chop: 27
+damage_max:
+  slash: 55
+  chop: 34.5
+stats:
+  hands: Two handed
+  block_armor: 15
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 2
+  materials:
+  - Bone Fragments
+  - Corewood
+  - Leather Scraps
+  amounts:
+  - 19
+  - 10
+  - 4
+  upgrade:
+  - Bone Fragments
+  - Leather Scraps
+  - Troll Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 2
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 902
+biome: Black Forest
+description: A great axe with a head carved from a massive jawbone.
+notes: ''

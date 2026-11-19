@@ -1,5 +1,4 @@
-biome: Ashlands
-name: Flametal axe
+name: Flametal Axe
 prefab: AxeFlametal_TW
 mod: warfare
 kind: weapon
@@ -8,18 +7,53 @@ skill: Axes
 tier: Flametal
 damage:
   slash: 140
+  chop: 80
+damage_max:
+  slash: 155
+  chop: 89
+stats:
+  hands: One handed
+  block_armor: 56
+  block_force: 20
+  knockback: 50
+  backstab: x3
+  durability: 300 (+50 per level)
+  stamina: 18 / 36
+  movement: -5%
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 3
   materials:
-    - Yggdrasil Wood
-    - Flametal
-    - Bonemaw Tooth
-    - Bonemaw Trophy
-checks:
-  - '"Recipe" heading missing in the sheet'
+  - Flametal
+  - Charred Bone
+  - Asksvin Hide
+  - Ashwood
+  amounts:
+  - 39
+  - 19
+  - 2
+  - 8
+  upgrade:
+  - Flametal
+  - Asksvin Hide
+  - Sulfur
+  - Asksvin Trophy (level 3)
+  - Volture Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 10
+  - 1
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 6
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 711
+biome: Ashlands
+description: A flametal axe with a blackened haft. The edge glows when it bites.
 notes: ''

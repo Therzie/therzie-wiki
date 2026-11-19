@@ -1,0 +1,33 @@
+name: Tar Bomb
+prefab: BombTar_TW
+mod: warfare
+kind: weapon
+group: Bombs
+damage:
+  blunt: 5
+stats:
+  hands: One handed
+  block_armor: 2
+  knockback: 40
+  backstab: x3
+  stamina: 8 / 20
+  weight: 0.3
+recipe:
+  yields: 5
+  station: Workbench
+  level: 3
+  materials:
+  - Tar
+  - Ooze
+  - Leather Scraps
+  amounts:
+  - 3
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2350
+biome: Plains
+description: 'A fuling pot full of tar. Slows everything it splashes, and the tar burns: set it alight for an explosion.'
+notes: ''

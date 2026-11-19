@@ -1,21 +1,51 @@
-biome: Swamp
 name: Iron Throwing Axe
 prefab: ThrowAxeIron_TW
 mod: warfare
 kind: weapon
-group: Throwing Axes
-skill: Throwing
+group: Throwing axes
+skill: Axes
 tier: Iron
 damage:
-  slash: 28
+  slash: 32
+  chop: 36
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 40
+  movement: -5%
+  weight: 0.1
+  max_level: 4
 recipe:
-  yields: 10
+  yields: 1
+  station: Forge
+  level: 2
   materials:
-    - Ancient Bark
-    - Iron
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 13
+  - 6
+  - 2
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Leech Trophy (level 3)
+  - Draugr Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 3
+  - 1
+  - 1
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 18
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 2105
+biome: Swamp
+description: Crude swamp-iron throwing axes, carried in pairs. Thrown one after the other, then both at once.
 notes: ''

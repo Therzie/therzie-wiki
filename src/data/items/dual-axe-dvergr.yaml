@@ -1,0 +1,59 @@
+name: Dwarven Twin Axes
+prefab: DualAxeDvergr_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Dvergr
+damage:
+  slash: 112
+  chop: 75
+  lightning: 15
+damage_max:
+  slash: 130
+  chop: 84
+stats:
+  hands: Dual
+  block_armor: 66
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 275 (+100 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 27
+  - 14
+  - 14
+  - 12
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 7
+  - 3
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 810
+biome: Mistlands
+description: A pair of dwarven axes infused with eitr. Used to chop and shock your enemies with.
+notes: ''

@@ -1,0 +1,57 @@
+name: Silver Twin Swords
+prefab: DualSwordSilver_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Silver
+damage:
+  slash: 80
+  spirit: 20
+damage_max:
+  slash: 95
+stats:
+  hands: Dual
+  block_armor: 43
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 25
+  - 13
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Wolf Trophy (level 3)
+  - Fenring Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 206
+biome: Mountains
+description: Two silver blades, one with a wolf-head guard and one cut with runes, wrapped in wolfcloth.
+notes: ''

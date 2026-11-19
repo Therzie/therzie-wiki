@@ -1,0 +1,52 @@
+name: Flint Daggers
+prefab: DualKnifeFlint_TW
+mod: warfare
+kind: weapon
+group: Dual knives
+skill: Knives
+tier: Flint
+damage:
+  slash: 9
+  pierce: 9
+damage_max:
+  slash: 12
+  pierce: 12
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 1
+  materials:
+  - Flint
+  - Wood
+  - Greydwarf Eye
+  - Leather Scraps
+  amounts:
+  - 8
+  - 4
+  - 2
+  - 2
+  upgrade:
+  - Flint
+  - Leather Scraps
+  - Resin
+  upgrade_amounts:
+  - 2
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 601
+biome: Meadows
+description: A pair of knapped flint daggers with greydwarf-eye pommels and a feather at the guard.
+notes: ''

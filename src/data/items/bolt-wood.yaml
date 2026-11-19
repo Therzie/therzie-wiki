@@ -1,17 +1,28 @@
-name: Wooden bolt
+name: Flint Bolt
 prefab: BoltWood_TW
 mod: warfare
 kind: ammo
-group: CrossBolts
+group: Bolts
+skill: Crossbows
 damage:
-  pierce: 22
+  pierce: 15
+stats:
+  weight: 0.1
 recipe:
-  yields: 1
+  yields: 20
+  station: Fletcher Table
+  level: 1
   materials:
-    - Wood
+  - Wood
+  - Flint
+  - Feathers
+  amounts:
+  - 8
+  - 2
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 195
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 2850
+description: A short crossbow bolt with a knapped flint head and grouse feathers.
 notes: ''

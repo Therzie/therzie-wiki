@@ -1,5 +1,4 @@
-biome: Swamp
-name: Iron Knife
+name: Iron Dagger
 prefab: KnifeIron_TW
 mod: warfare
 kind: weapon
@@ -7,18 +6,49 @@ group: Knives
 skill: Knives
 tier: Iron
 damage:
-  slash: 22
-  pierce: 22
+  slash: 24
+  pierce: 24
+damage_max:
+  slash: 27
+  pierce: 27
+stats:
+  hands: One handed
+  block_armor: 2
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 14 / 42
+  weight: 0.3
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 2
   materials:
-    - Ancient Bark
-    - Iron
-  monstrum:
-    - Leech Trophy
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 11
+  - 5
+  - 2
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Leech Trophy (level 3)
+  - Rancid Remains Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 3
+  - 1
+  - 1
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 94
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 505
+biome: Swamp
+description: A long square spike of swamp iron on a leather-bound grip. Made to find the gaps in mail.
 notes: ''

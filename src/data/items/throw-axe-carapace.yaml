@@ -1,0 +1,57 @@
+name: Carapace Throwing Axe
+prefab: ThrowAxeCarapace_TW
+mod: warfare
+kind: weapon
+group: Throwing axes
+skill: Axes
+tier: Carapace
+damage:
+  slash: 67
+  chop: 57
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 40
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  amounts:
+  - 11
+  - 5
+  - 5
+  - 1
+  upgrade:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  - Hare Trophy (level 3)
+  - Tick Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2109
+biome: Mistlands
+description: Root-wood throwing axes with marble bits, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

@@ -1,0 +1,52 @@
+name: Iron Bow
+prefab: BowIron_TW
+mod: warfare
+kind: weapon
+group: Bows
+skill: Bows
+tier: Iron
+damage:
+  pierce: 42
+damage_max:
+  pierce: 54
+stats:
+  hands: Two handed
+  knockback: 25
+  backstab: x3
+  durability: 150 (+50 per level)
+  draw_stamina: 12 per second
+  secondary_stamina: 20
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 21
+  - 11
+  - 4
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Skeleton Trophy (level 3)
+  - Surtling Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 5
+  - 2
+  - 1
+  - 1
+  - 3
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2405
+biome: Swamp
+description: An olive-wood recurve with blackened iron riser plates and hooked iron tips, tied with swamp rags.
+notes: ''

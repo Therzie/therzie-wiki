@@ -1,0 +1,59 @@
+name: Nord Throwing Axe
+prefab: ThrowAxeNord_TW
+mod: warfare
+kind: weapon
+group: Throwing axes
+skill: Axes
+tier: Nord
+damage:
+  slash: 97
+  chop: 83
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 40
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 4
+  materials:
+  - Bloodgold
+  - Timberwood
+  - Elaking Hair Bundle
+  amounts:
+  - 26
+  - 13
+  - 2
+  upgrade:
+  - Bloodgold
+  - Elaking Hair Bundle
+  - Liquid Frost (level 2)
+  - Elaking Trophy (level 3)
+  - Liquid Frost (level 3)
+  - Moose Trophy (level 4)
+  - Liquid Frost (level 4)
+  - Frostcore (level 4)
+  - Glacier Crystal (level 4)
+  upgrade_amounts:
+  - 7
+  - 1
+  - 2
+  - 1
+  - 3
+  - 1
+  - 4
+  - 1
+  - 3
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2112
+biome: Deep North
+description: Jotun throwing axes with a single curved fang, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

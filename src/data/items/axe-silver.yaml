@@ -1,4 +1,3 @@
-biome: Mountains
 name: Silver Axe
 prefab: AxeSilver_TW
 mod: warfare
@@ -7,18 +6,55 @@ group: Axes
 skill: Axes
 tier: Silver
 damage:
-  slash: 80
-  spirit: 30
+  slash: 83
+  chop: 62
+  spirit: 20
+damage_max:
+  slash: 98
+  chop: 71
+stats:
+  hands: One handed
+  block_armor: 43
+  block_force: 20
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 18 / 36
+  movement: -5%
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 3
   materials:
-    - Ancient Bark
-    - Silver
-    - Wolf Fang
-    - Wolf Trophy
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 17
+  - 8
+  - 3
+  - 2
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Drake Trophy (level 3)
+  - Ulv Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 6
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 706
+biome: Mountains
+description: A silver axe with a knotwork head and a wolf-fur collar.
 notes: ''

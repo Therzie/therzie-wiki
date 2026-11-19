@@ -1,0 +1,58 @@
+name: Carapace Twin Swords
+prefab: DualSwordCarapace_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Carapace
+damage:
+  slash: 108
+damage_max:
+  slash: 123
+stats:
+  hands: Dual
+  block_armor: 44
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 250 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Black Jute
+  - Mandible
+  amounts:
+  - 26
+  - 13
+  - 4
+  - 3
+  upgrade:
+  - Carapace
+  - Iron
+  - Black Jute
+  - Mandible
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 2
+  - 2
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 209
+biome: Mistlands
+description: A pair of mist steel blades, forged after the swords the Jotunn left in the mist.
+notes: ''

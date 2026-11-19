@@ -1,0 +1,58 @@
+name: Blackmetal Daggers
+prefab: DualKnifeBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Dual knives
+skill: Knives
+tier: Blackmetal
+damage:
+  slash: 37
+  pierce: 37
+damage_max:
+  slash: 40
+  pierce: 40
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 4
+  materials:
+  - Black Metal
+  - Iron
+  - Finewood
+  - Linen Thread
+  amounts:
+  - 21
+  - 11
+  - 4
+  - 4
+  upgrade:
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Fuling Trophy (level 3)
+  - Fuling Shaman Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 2
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 608
+biome: Plains
+description: A fang and a quill of black metal. Quick, quiet and mean.
+notes: ''

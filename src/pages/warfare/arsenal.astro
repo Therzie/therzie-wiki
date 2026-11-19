@@ -1,7 +1,11 @@
 ---
 import WarfarePage from '../../components/warfare/WarfarePage.astro';
 import { arsenal } from '../../lib/warfare';
-
+import { getItems, sectionOf, url, slugify } from '../../lib/wiki';
+const items = await getItems('warfare');
+const of = (g: string) => items.filter((i) => i.data.group === g && i.data.source?.sheet === 'Warfare 2.0');
+const hands = (g: string) => [...new Set(of(g).map((i) => String(i.data.stats?.hands ?? '')).filter(Boolean))].join(', ');
+const href = (g: string) => { const f = of(g)[0]; const s = f && sectionOf(f); return s ? url(`${s.path}#group-${slugify(g)}`) : undefined; };
 ---
 <WarfarePage slug="arsenal">
 <p>
@@ -12,9 +16,16 @@ import { arsenal } from '../../lib/warfare';
       {arsenal.map(([tab, classes]) => (
         <div class="arsenal__tab">
           <h3>{tab}</h3>
-          <p>{classes.map(([c, isNew], i) => (<>{i > 0 && ' · '}{isNew ? <strong class="new" title="Not in vanilla Valheim">{c}</strong> : c}</>))}</p>
+          <ul class="arsenal__classes">
+            {classes.filter(([c]) => of(c).length).map(([c, isNew]) => (
+              <li>
+                <a href={href(c)}>{isNew ? <strong class="new" title="Not in vanilla Valheim">{c}</strong> : c}</a>
+                <span class="arsenal__meta">{of(c).length} · {hands(c)}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       ))}
     </div>
-    <p class="small"><strong class="new">Highlighted</strong> = weapon class that does not exist in vanilla Valheim.</p>
+    <p class="small"><strong class="new">Highlighted</strong> = weapon class that does not exist in vanilla Valheim. The number is how many Warfare 2.0 items the class has; dual weapons take both hands.</p>
 </WarfarePage>

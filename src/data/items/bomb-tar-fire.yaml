@@ -1,0 +1,35 @@
+name: Fire Tar Bomb
+prefab: BombTarFire_TW
+mod: warfare
+kind: weapon
+group: Bombs
+damage:
+  blunt: 5
+stats:
+  hands: One handed
+  block_armor: 2
+  knockback: 40
+  backstab: x3
+  stamina: 8 / 20
+  weight: 0.3
+recipe:
+  yields: 5
+  station: Workbench
+  level: 3
+  materials:
+  - Tar
+  - Ooze
+  - Surtling Core
+  - Leather Scraps
+  amounts:
+  - 3
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2350
+biome: Plains
+description: A fuling tar pot with a burning wick. Bursts into a pool of burning tar that slows and scorches everything in it.
+notes: ''

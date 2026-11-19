@@ -1,26 +1,57 @@
-biome: Mistlands
-name: Dwarven fists
+name: Dwarven Fists
 prefab: FistDvergr_TW
 mod: warfare
 kind: weapon
-group: Claws
+group: Fists
 skill: Fists
 tier: Dvergr
-effect: on 5th hit restores a % of your stamina
 damage:
-  blunt: 105
-  lightning: 10
+  blunt: 89
+  lightning: 15
+damage_max:
+  blunt: 101
+stats:
+  hands: Dual
+  block_armor: 19 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 300 (+125 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 2
   materials:
-    - Soft Tissue
-    - Mandible
-    - Refined Eitr
-  monstrum:
-    - Seeker Trophy
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  amounts:
+  - 20
+  - 10
+  - 10
+  - 3
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 5
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 258
-  col: 9
-description: ''
+  sheet: Warfare 2.0
+  row: 2010
+biome: Mistlands
+description: Deadly dwarven fist weapons infused with eitr. Used to bash and shock your enemies with.
 notes: ''

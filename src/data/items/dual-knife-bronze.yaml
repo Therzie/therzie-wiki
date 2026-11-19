@@ -1,0 +1,52 @@
+name: Bronze Daggers
+prefab: DualKnifeBronze_TW
+mod: warfare
+kind: weapon
+group: Dual knives
+skill: Knives
+tier: Bronze
+damage:
+  slash: 15
+  pierce: 15
+damage_max:
+  slash: 18
+  pierce: 18
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Finewood
+  - Leather Scraps
+  amounts:
+  - 9
+  - 5
+  - 4
+  upgrade:
+  - Bronze
+  - Leather Scraps
+  - Greydwarf Trophy (level 3)
+  - Greydwarf Shaman Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 603
+biome: Black Forest
+description: 'A pair of cast bronze knives: a seax and a leaf blade.'
+notes: ''

@@ -1,25 +1,57 @@
-biome: Mistlands
 name: Dwarven Greatbow
 prefab: GreatbowDvergr_TW
 mod: warfare
 kind: weapon
-group: GreatBows
+group: Greatbows
+skill: Bows
 tier: Dvergr
-effect: 'Piercing: Deal extra damage to your foes on 4th hit'
 damage:
-  pierce: 100
-  lightning: 12
+  pierce: 102
+  lightning: 5
+damage_max:
+  pierce: 114
+stats:
+  hands: Two handed
+  knockback: 80
+  backstab: x4
+  durability: 100 (+50 per level)
+  draw_stamina: 6 per second
+  secondary_stamina: 40
+  movement: -5%
+  weight: 3
+  max_level: 4
 recipe:
   yields: 1
+  station: Fletcher Table
+  level: 5
   materials:
-    - Yggdrasil Wood
-    - Carapace
-    - Refined Eitr
-    - Gjall Trophy
-  station: Black Forge
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 25
+  - 13
+  - 13
+  - 11
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Hare Trophy (level 3)
+  - Gjall Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 6
+  - 3
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 231
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 2510
+biome: Mistlands
+description: A towering dvergr greatbow with a block riser and bronze-plated limbs. Slow to draw, devastating on release.
 notes: ''

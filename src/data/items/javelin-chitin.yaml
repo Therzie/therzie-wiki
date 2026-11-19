@@ -1,0 +1,48 @@
+name: Chitin Javelin
+prefab: JavelinChitin_TW
+mod: warfare
+kind: weapon
+group: Javelins
+skill: Spears
+tier: Chitin
+damage:
+  pierce: 44
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 20
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 7
+  - 4
+  - 8
+  upgrade:
+  - Chitin
+  - Bronze
+  - Skeleton Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2204
+biome: Ocean
+description: Javelins with barbed chitin heads, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

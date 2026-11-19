@@ -1,0 +1,58 @@
+name: Flametal Greatbow
+prefab: GreatbowFlametal_TW
+mod: warfare
+kind: weapon
+group: Greatbows
+skill: Bows
+tier: Flametal
+damage:
+  pierce: 119
+damage_max:
+  pierce: 131
+stats:
+  hands: Two handed
+  knockback: 80
+  backstab: x4
+  durability: 100 (+50 per level)
+  draw_stamina: 6 per second
+  secondary_stamina: 40
+  movement: -5%
+  weight: 3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Flametal
+  - Charred Bone
+  - Ashwood
+  - Morgen Sinew
+  amounts:
+  - 54
+  - 27
+  - 20
+  - 2
+  upgrade:
+  - Flametal
+  - Ashwood
+  - Morgen Sinew
+  - Sulfur
+  - Volture Trophy (level 3)
+  - Marksman Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 14
+  - 10
+  - 1
+  - 1
+  - 1
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2511
+biome: Ashlands
+description: A towering bow of blackwood and flametal. Slow to draw, devastating on release.
+notes: ''

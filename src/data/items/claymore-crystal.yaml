@@ -1,0 +1,57 @@
+name: Crystal Claymore
+prefab: ClaymoreCrystal_TW
+mod: warfare
+kind: weapon
+group: Claymores
+skill: Swords
+tier: Crystal
+damage:
+  slash: 112
+damage_max:
+  slash: 130
+stats:
+  hands: Two handed
+  block_armor: 45
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  amounts:
+  - 15
+  - 8
+  - 4
+  - 3
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  - Fenring Trophy (level 3)
+  - Cultist Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 407
+biome: Mountains
+description: A broad two-handed silver blade with crystal set along its spine.
+notes: ''

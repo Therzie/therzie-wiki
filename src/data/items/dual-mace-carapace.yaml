@@ -1,0 +1,58 @@
+name: Carapace Twin Maces
+prefab: DualMaceCarapace_TW
+mod: warfare
+kind: weapon
+group: Dual maces
+skill: Clubs
+tier: Carapace
+damage:
+  blunt: 108
+damage_max:
+  blunt: 126
+stats:
+  hands: Dual
+  block_armor: 60
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 250 (+50 per level)
+  stamina: 20 / 36
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Black Marble
+  - Mandible
+  amounts:
+  - 26
+  - 13
+  - 12
+  - 3
+  upgrade:
+  - Carapace
+  - Iron
+  - Black Marble
+  - Mandible
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 3
+  - 2
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1109
+biome: Mistlands
+description: Rough marble heads grown into Yggdrasil roots. Made to break knees and shells alike.
+notes: ''

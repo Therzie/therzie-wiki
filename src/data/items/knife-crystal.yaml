@@ -1,0 +1,58 @@
+name: Crystal Dagger
+prefab: KnifeCrystal_TW
+mod: warfare
+kind: weapon
+group: Knives
+skill: Knives
+tier: Crystal
+damage:
+  slash: 35
+  pierce: 36
+damage_max:
+  slash: 38
+  pierce: 39
+stats:
+  hands: One handed
+  block_armor: 2
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 14 / 42
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  amounts:
+  - 5
+  - 3
+  - 2
+  - 1
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  - Wolf Trophy (level 3)
+  - Ulv Trophy (level 4)
+  upgrade_amounts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 507
+biome: Mountains
+description: A slim silver dagger with a shard of crystal set into the blade.
+notes: ''

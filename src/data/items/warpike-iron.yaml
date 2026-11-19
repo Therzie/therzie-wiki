@@ -1,0 +1,53 @@
+name: Iron Warpike
+prefab: WarpikeIron_TW
+mod: warfare
+kind: weapon
+group: Warpikes
+skill: Spears
+tier: Iron
+damage:
+  pierce: 58
+damage_max:
+  pierce: 76
+stats:
+  hands: One handed
+  block_armor: 26
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 36
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Iron
+  - Ancient Bark
+  - Withered Bone
+  amounts:
+  - 31
+  - 16
+  - 2
+  upgrade:
+  - Iron
+  - Withered Bone
+  - Draugr Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1805
+biome: Swamp
+description: A broad raw leaf head with an iron toggle bar and a bone charm. Thrust, jump in, and pin them down.
+notes: ''

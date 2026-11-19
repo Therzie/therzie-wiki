@@ -1,0 +1,57 @@
+name: Crystal Spear
+prefab: SpearCrystal_TW
+mod: warfare
+kind: weapon
+group: Spears
+skill: Spears
+tier: Crystal
+damage:
+  pierce: 86
+damage_max:
+  pierce: 104
+stats:
+  hands: One handed
+  block_armor: 43
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 16
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Obsidian
+  - Fenris Hair
+  amounts:
+  - 8
+  - 4
+  - 5
+  - 2
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Obsidian
+  - Fenris Hair
+  - Drake Trophy (level 3)
+  - Fenring Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 2
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1707
+biome: Mountains
+description: A crystal fang set in a silver socket. Poke, or throw it.
+notes: ''

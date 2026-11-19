@@ -1,0 +1,51 @@
+name: Bone Axe
+prefab: AxeBone_TW
+mod: warfare
+kind: weapon
+group: Axes
+skill: Axes
+tier: Bone
+damage:
+  slash: 34
+  chop: 30
+damage_max:
+  slash: 49
+  chop: 39
+stats:
+  hands: One handed
+  block_armor: 12
+  block_force: 20
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 18 / 36
+  movement: -5%
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 2
+  materials:
+  - Bone Fragments
+  - Corewood
+  - Leather Scraps
+  amounts:
+  - 13
+  - 6
+  - 2
+  upgrade:
+  - Bone Fragments
+  - Leather Scraps
+  - Bear Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 702
+biome: Black Forest
+description: A bone axe head with a curved tusk spike on its back, on a corewood haft.
+notes: ''

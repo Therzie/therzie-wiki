@@ -1,21 +1,30 @@
-biome: Black Forest
 name: Bronze Bolt
 prefab: BoltBronze_TW
 mod: warfare
 kind: ammo
-group: CrossBolts
+group: Bolts
+skill: Crossbows
 tier: Bronze
 damage:
-  pierce: 32
+  pierce: 24
+stats:
+  weight: 0.1
 recipe:
-  yields: 1
+  yields: 20
+  station: Fletcher Table
+  level: 2
   materials:
-    - Wood
-    - Bronze
-    - Feathers
+  - Wood
+  - Bronze
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 195
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 2803
+biome: Black Forest
+description: A crossbow bolt with a polished bronze bodkin head.
 notes: ''

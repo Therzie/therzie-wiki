@@ -2,19 +2,29 @@ name: Explosive Lightning Bolt
 prefab: BoltExplosiveLightning_TW
 mod: warfare
 kind: ammo
-group: CrossBolts
-effect: Lightning damage on impact
+group: Bolts
+skill: Crossbows
 damage:
-  pierce: 55
+  pierce: 36
+stats:
+  weight: 0.1
 recipe:
-  yields: 1
+  yields: 20
+  station: Fletcher Table
+  level: 5
   materials:
-    - Yggdrasil Wood
-    - Carapace
-    - Refined Eitr
+  - Yggdrasil Wood
+  - Carapace
+  - Refined Eitr
+  - Feathers
+  amounts:
+  - 8
+  - 2
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 206
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 2850
+description: A crossbow bolt with a charged copper canister. It bursts in a storm of lightning where it strikes.
 notes: ''

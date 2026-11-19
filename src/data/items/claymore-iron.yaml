@@ -1,22 +1,53 @@
-biome: Swamp
 name: Iron Claymore
 prefab: ClaymoreIron_TW
 mod: warfare
 kind: weapon
-group: Claymore
+group: Claymores
 skill: Swords
 tier: Iron
 damage:
-  slash: 66
+  slash: 67
+damage_max:
+  slash: 85
+stats:
+  hands: Two handed
+  block_armor: 26
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 2
   materials:
-    - Ancient Bark
-    - Iron
-    - Draugr Elite Trophy
+  - Iron
+  - Ancient Bark
+  - Troll Hide
+  amounts:
+  - 32
+  - 16
+  - 2
+  upgrade:
+  - Iron
+  - Troll Hide
+  - Draugr Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 145
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 405
+biome: Swamp
+description: A broad two-handed iron blade with a wide swamp-forged crossguard.
 notes: ''

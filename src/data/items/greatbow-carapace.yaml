@@ -1,0 +1,58 @@
+name: Carapace Greatbow
+prefab: GreatbowCarapace_TW
+mod: warfare
+kind: weapon
+group: Greatbows
+skill: Bows
+tier: Carapace
+damage:
+  pierce: 97
+damage_max:
+  pierce: 109
+stats:
+  hands: Two handed
+  knockback: 80
+  backstab: x4
+  durability: 100 (+50 per level)
+  draw_stamina: 6 per second
+  secondary_stamina: 40
+  movement: -5%
+  weight: 3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  amounts:
+  - 25
+  - 12
+  - 11
+  - 3
+  upgrade:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  - Seeker Trophy (level 3)
+  - Gjall Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2509
+biome: Mistlands
+description: A towering bow of braided Yggdrasil roots. Slow to draw, devastating on release.
+notes: ''

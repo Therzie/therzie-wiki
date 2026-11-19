@@ -1,0 +1,61 @@
+name: Nord Lance
+prefab: LanceNord_TW
+mod: warfare
+kind: weapon
+group: Lances
+skill: Polearms
+tier: Nord
+damage:
+  pierce: 219
+damage_max:
+  pierce: 249
+stats:
+  hands: Two handed
+  block_armor: 71
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 400 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 4
+  materials:
+  - Bloodgold
+  - Timberwood
+  - Moose Hide
+  amounts:
+  - 66
+  - 33
+  - 4
+  upgrade:
+  - Bloodgold
+  - Moose Hide
+  - Liquid Frost (level 2)
+  - Elaking Trophy (level 3)
+  - Liquid Frost (level 3)
+  - Krigen Trophy (level 4)
+  - Liquid Frost (level 4)
+  - Frostcore (level 4)
+  - Glacier Crystal (level 4)
+  upgrade_amounts:
+  - 17
+  - 2
+  - 3
+  - 1
+  - 5
+  - 1
+  - 6
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1612
+biome: Deep North
+description: A rime-coated lance of Jotun steel, long enough to keep a krigen at bay.
+notes: ''

@@ -1,0 +1,31 @@
+name: Flametal Arrow
+prefab: ArrowFlametal_TW
+mod: warfare
+kind: ammo
+group: Arrows
+skill: Bows
+tier: Flametal
+damage:
+  pierce: 82
+stats:
+  knockback: 10
+  weight: 0.1
+recipe:
+  yields: 20
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Ashwood
+  - Flametal
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2711
+biome: Ashlands
+description: An arrow with a flame-shaped flametal head that still glows from the forge.
+notes: ''

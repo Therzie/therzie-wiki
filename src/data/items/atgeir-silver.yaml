@@ -1,25 +1,58 @@
-biome: Mountains
 name: Silver Atgeir
 prefab: AtgeirSilver_TW
 mod: warfare
 kind: weapon
-group: Atgeir & Lances
-skill: Polearm
+group: Atgeirs
+skill: Polearms
 tier: Silver
 damage:
-  pierce: 85
-  spirit: 30
+  pierce: 91
+  spirit: 20
+damage_max:
+  pierce: 109
+stats:
+  hands: Two handed
+  block_armor: 45
+  block_force: 40
+  knockback: 30
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  movement: -5%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 3
   materials:
-    - Ancient Bark
-    - Silver
-    - Fenrir Claw
-  monstrum:
-    - Cultist Trophy or Obisidan Golem Trophy
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 24
+  - 12
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Drake Trophy (level 3)
+  - Cultist Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 69
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 1506
+biome: Mountains
+description: A hooked silver blade on a long shaft.
 notes: ''

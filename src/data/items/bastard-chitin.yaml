@@ -1,22 +1,53 @@
-biome: Ocean
-name: Abyssal bastard sword
+name: Chitin Bastard Sword
 prefab: BastardChitin_TW
 mod: warfare
 kind: weapon
-group: Bastard Swords
+group: Bastard swords
 skill: Swords
 tier: Chitin
 damage:
-  slash: 56
+  slash: 55
+damage_max:
+  slash: 73
+stats:
+  hands: Two handed
+  block_armor: 22
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Ancient Bark
-    - Chitin
-    - Bronze
+  - Chitin
+  - Bronze
+  - Troll Hide
+  amounts:
+  - 17
+  - 9
+  - 2
+  upgrade:
+  - Chitin
+  - Bronze
+  - Troll Hide
+  - Ghost Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 158
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 304
+biome: Ocean
+description: A long chitin blade studded with barnacles. Breaks the tide, and whatever stands in it.
 notes: ''

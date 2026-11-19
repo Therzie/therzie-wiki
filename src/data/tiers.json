@@ -9,5 +9,6 @@
   { "id": "Blackmetal", "rune": "ᚹ", "biome": "Plains",       "keys": ["Blackmetal", "BlackMetal"], "text": "Taken from the Fulings, reforged by Vikings. Brutal, dark and battle worn." },
   { "id": "Carapace",   "rune": "ᚺ", "biome": "Mistlands",    "keys": ["Carapace"],                 "text": "Seeker shell and Yggdrasil wood. Alien edges from beneath the mist." },
   { "id": "Dvergr",     "rune": "ᚾ", "biome": "Mistlands",    "keys": ["Dvergr"],                   "text": "Dwarven craft at its peak. Dark green leather, black iron and caged Eitr that never stops glowing." },
-  { "id": "Flametal",   "rune": "ᛁ", "biome": "Ashlands",     "keys": ["Flametal"],                 "text": "Grausten, charred bone and molten Flametal. Weapons that are still cooling when you swing them." }
+  { "id": "Flametal",   "rune": "ᛁ", "biome": "Ashlands",     "keys": ["Flametal"],                 "text": "Grausten, charred bone and molten Flametal. Weapons that are still cooling when you swing them." },
+  { "id": "Nord",       "rune": "ᛃ", "biome": "Deep North",   "keys": ["Nord"],                     "text": "Bloodgold and Timberwood from the frozen north. The last tier of Warfare 2.0." }
 ]

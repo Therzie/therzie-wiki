@@ -1,22 +1,56 @@
-biome: Mountains
 name: Silver Throwing Axe
 prefab: ThrowAxeSilver_TW
 mod: warfare
 kind: weapon
-group: Throwing Axes
-skill: Throwing
+group: Throwing axes
+skill: Axes
 tier: Silver
 damage:
-  slash: 38
-  spirit: 4
+  slash: 47
+  chop: 41
+  spirit: 10
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 40
+  movement: -5%
+  weight: 0.1
+  max_level: 4
 recipe:
-  yields: 10
+  yields: 1
+  station: Forge
+  level: 3
   materials:
-    - Fine Wood
-    - Silver
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 10
+  - 5
+  - 2
+  - 1
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Drake Trophy (level 3)
+  - Ulv Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 18
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 2106
+biome: Mountains
+description: Silver throwing axes, carried in pairs. Thrown one after the other, then both at once.
 notes: ''

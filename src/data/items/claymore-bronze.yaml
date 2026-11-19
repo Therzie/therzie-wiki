@@ -1,23 +1,51 @@
-biome: Black Forest
 name: Bronze Claymore
 prefab: ClaymoreBronze_TW
 mod: warfare
 kind: weapon
-group: Claymore
+group: Claymores
 skill: Swords
 tier: Bronze
 damage:
-  slash: 46
+  slash: 45
+damage_max:
+  slash: 63
+stats:
+  hands: Two handed
+  block_armor: 18
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Core Wood
-    - Bronze
-  monstrum:
-    - Greydwarf Brute Trophy
+  - Bronze
+  - Finewood
+  - Deer Hide
+  amounts:
+  - 17
+  - 8
+  - 2
+  upgrade:
+  - Bronze
+  - Deer Hide
+  - Skeleton Trophy (level 3)
+  - Ghost Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 145
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 403
+biome: Black Forest
+description: A heavy Norse greatsword cast in bronze.
 notes: ''

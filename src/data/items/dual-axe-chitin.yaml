@@ -1,0 +1,52 @@
+name: Chitin Twin Axes
+prefab: DualAxeChitin_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Chitin
+damage:
+  slash: 43
+  chop: 40
+damage_max:
+  slash: 61
+  chop: 49
+stats:
+  hands: Dual
+  block_armor: 17
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 19
+  - 9
+  - 8
+  upgrade:
+  - Chitin
+  - Bronze
+  - Bear Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 804
+biome: Ocean
+description: Two chitin axes, one hooked and one fanned, on driftwood hafts.
+notes: ''

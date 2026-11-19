@@ -1,4 +1,3 @@
-biome: Mistlands
 name: Dwarven Axe
 prefab: AxeDvergr_TW
 mod: warfare
@@ -7,18 +6,55 @@ group: Axes
 skill: Axes
 tier: Dvergr
 damage:
-  slash: 105
-  lightning: 15
+  slash: 92
+  chop: 75
+  lightning: 35
+damage_max:
+  slash: 107
+  chop: 84
+stats:
+  hands: One handed
+  block_armor: 52
+  block_force: 20
+  knockback: 50
+  backstab: x3
+  durability: 275 (+100 per level)
+  stamina: 18 / 36
+  movement: -5%
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 2
   materials:
-    - Yggdrasil Wood
-    - Refined Eitr
-    - Venomous Fang
-    - Tick Trophy
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 18
+  - 9
+  - 9
+  - 8
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 5
+  - 2
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 6
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 710
+biome: Mistlands
+description: A dwarven axe infused with eitr. Used to chop and shock your enemies with.
 notes: ''

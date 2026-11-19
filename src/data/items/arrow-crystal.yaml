@@ -1,0 +1,31 @@
+name: Crystal Arrow
+prefab: ArrowCrystal_TW
+mod: warfare
+kind: ammo
+group: Arrows
+skill: Bows
+tier: Crystal
+damage:
+  pierce: 57
+stats:
+  knockback: 10
+  weight: 0.1
+recipe:
+  yields: 20
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Wood
+  - Pristine Crystal
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2707
+biome: Mountains
+description: An arrow tipped with a prism of pristine crystal in a silver socket.
+notes: ''

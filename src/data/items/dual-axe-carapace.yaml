@@ -1,0 +1,60 @@
+name: Carapace Twin Axes
+prefab: DualAxeCarapace_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Carapace
+damage:
+  slash: 111
+  chop: 71
+damage_max:
+  slash: 129
+  chop: 80
+stats:
+  hands: Dual
+  block_armor: 60
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 250 (+50 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  amounts:
+  - 26
+  - 13
+  - 12
+  - 3
+  upgrade:
+  - Carapace
+  - Iron
+  - Yggdrasil Wood
+  - Mandible
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 3
+  - 2
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 809
+biome: Mistlands
+description: Two Yggdrasil root axes with razor edges of polished black marble.
+notes: ''

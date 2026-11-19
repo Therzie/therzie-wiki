@@ -1,0 +1,46 @@
+name: Obsidian Silver Pickaxe
+prefab: PickaxeObsidianSilver_TW
+mod: warfare
+kind: tool
+group: Pickaxes
+skill: Pickaxes
+damage:
+  pierce: 41
+  pickaxe: 41
+damage_max:
+  pierce: 56
+  pickaxe: 56
+stats:
+  hands: Two handed
+  knockback: 50
+  durability: 180 (+50 per level)
+  movement: -5%
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Silver
+  - Obsidian
+  - Ancient Bark
+  - Crystal
+  amounts:
+  - 14
+  - 8
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Obsidian
+  upgrade_amounts:
+  - 7
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 3050
+biome: Mountains
+description: A knapped obsidian pick clamped in a silver socket, with a silver hammer at its back. Iron only scratches the crystal veins of the high mountains; this edge splits them.
+notes: ''

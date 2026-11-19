@@ -1,23 +1,60 @@
-biome: Swamp
-name: Iron daggers
+name: Iron Daggers
 prefab: DualKnifeIron_TW
 mod: warfare
 kind: weapon
-group: Dual Knives
+group: Dual knives
 skill: Knives
 tier: Iron
 damage:
   slash: 22
   pierce: 22
+damage_max:
+  slash: 25
+  pierce: 25
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 2
   materials:
-    - Root
-    - Iron
-    - Draugr Elite Trophy
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  - Withered Bone
+  amounts:
+  - 17
+  - 9
+  - 4
+  - 2
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Withered Bone
+  - Guck
+  - Leech Trophy (level 3)
+  - Rancid Remains Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 4
+  - 2
+  - 1
+  - 1
+  - 1
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 106
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 605
+biome: Swamp
+description: 'A pair of swamp-forged blades: a heavy seax and a hooked knife with a withered-bone grip.'
 notes: ''

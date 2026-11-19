@@ -83,7 +83,7 @@ export const KIND_LABEL: Record<string, string> = {
 export const STAT_LABEL: Record<string, string> = {
   block_armor: 'Block armor', block_force: 'Block force', parry_bonus: 'Parry bonus', armor: 'Armor',
   comfort: 'Comfort', value: 'Value', levels: 'Values', upgrade: 'Upgrade', eitr_regen: 'Eitr regen', carry_weight: 'Carry weight',
-  eitr: 'Eitr cost',
+  eitr: 'Eitr cost', hands: 'Hands', draw_stamina: 'Draw stamina', secondary_stamina: 'Secondary stamina', max_level: 'Max level',
 };
 export const statLabel = (k: string) => STAT_LABEL[k] ?? k.replace(/_/g, ' ').replace(/^\w/, (c) => c.toUpperCase());
 export const isGear = (kind?: string) => ['weapon', 'shield', 'ammo', 'tool'].includes(kind ?? 'weapon');
@@ -104,11 +104,12 @@ export function warfareTab(d: { kind?: string; prefab?: string; group?: string; 
 }
 
 export const SECTIONS: { mod: string; path: string; label: string; title: string; sheets: string[]; matrix?: 'tiers' | 'upgrades'; kinds?: string[]; lead: string; legacy?: boolean; tab?: string; match?: (d: Item['data']) => boolean; groupBy?: 'biome'; relabel?: (d: Item['data']) => string | undefined }[] = [
-  { mod: 'warfare', path: '/warfare/ammo/', label: 'Ammo', title: 'Warfare ammo', sheets: ['Weapons'], tab: 'ammo', lead: '' },
-  { mod: 'warfare', path: '/warfare/bombs/', label: 'Bombs', title: 'Warfare bombs', sheets: ['Weapons'], tab: 'bombs', lead: '' },
+  { mod: 'warfare', path: '/warfare/ammo/', label: 'Ammo', title: 'Warfare ammo', sheets: ['Weapons', 'Warfare 2.0'], tab: 'ammo', lead: '' },
+  { mod: 'warfare', path: '/warfare/bombs/', label: 'Bombs', title: 'Warfare bombs', sheets: ['Weapons', 'Warfare 2.0'], tab: 'bombs', lead: '' },
   { mod: 'warfare', path: '/warfare/meads/', label: 'Meads - Potions', title: 'Warfare meads and potions', sheets: ['Items'], tab: 'meads', lead: '' },
-  { mod: 'warfare', path: '/warfare/shields/', label: 'Shields', title: 'Warfare shields', sheets: ['Weapons'], tab: 'shields', lead: '' },
-  { mod: 'warfare', path: '/warfare/weapons/', label: 'Weapons', title: 'Warfare weapons', sheets: ['Weapons'], matrix: 'tiers', lead: '' },
+  { mod: 'warfare', path: '/warfare/shields/', label: 'Shields', title: 'Warfare shields', sheets: ['Weapons', 'Warfare 2.0'], tab: 'shields', lead: '' },
+  { mod: 'warfare', path: '/warfare/weapons/', label: 'Weapons', title: 'Warfare weapons', sheets: ['Weapons', 'Warfare 2.0'], matrix: 'tiers',
+    lead: 'Every Warfare 2.0 weapon by class, with the values from the mod: damage at the first and the last level, stamina, durability and the full recipe with amounts. Switch to Progression to see each class along the twelve tiers.' },
   { mod: 'warfare', path: '/warfare/pieces/', label: 'Pieces', title: 'Warfare pieces', sheets: ['Pieces'], lead: '' },
   { mod: 'warfare', path: '/warfare/items/', label: 'Items', title: 'Warfare items', sheets: ['Items'], lead: '' },
   { mod: 'armory', path: '/armory/', label: 'Armor sets', title: 'Armory', sheets: ['Armory'], matrix: 'upgrades',
@@ -153,6 +154,12 @@ export const UPGRADES = ['Base', 'Bronze', 'Iron', 'Silver', 'Blackmetal', 'Cara
 /** Icon for a material name: the vanilla icon (public/icons/vanilla/<prefab>.png) or the icon of a wiki item with that name. */
 const vanillaDir = path.join(process.cwd(), 'public', 'icons', 'vanilla');
 const vanillaIcons = new Set(fs.existsSync(vanillaDir) ? fs.readdirSync(vanillaDir).filter((f) => f.endsWith('.png')) : []);
+/** Warfare materials that are not wiki items yet, by their English name -> prefab icon in public/icons. */
+const OWN_ICONS: Record<string, string> = {
+  'Volcanic Crystal': 'VolcanicCrystal_TW', 'Glacier Crystal': 'GlacierCrystal_TW', 'Pristine Crystal': 'PristineCrystal_TW',
+  'Rune Power I': 'RunePower1_TW', 'Rune Power II': 'RunePower2_TW', 'Rune Power III': 'RunePower3_TW',
+  Amber: 'Amber_TW', Cinderstone: 'Cinderstone_TW', Moonstone: 'Moonstone_TW', 'Dark Crystal': 'DarkCrystal_TW',
+};
 export function materialIcon(name: string, itemsByName?: Map<string, Item>): string | undefined {
   const base = name.replace(/\s*\(level.*\)$/, '');
   const compact = base.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -160,6 +167,8 @@ export function materialIcon(name: string, itemsByName?: Map<string, Item>): str
   const trophy = base.match(/^(.*)\s+trophy$/i);
   if (trophy) candidates.push(`trophy${trophy[1].toLowerCase().replace(/[^a-z0-9]/g, '')}`);
   for (const c of candidates) if (vanillaIcons.has(`${c}.png`)) return url(`/icons/vanilla/${c}.png`);
+  const own = OWN_ICONS[base] ?? (/^(Mistlands|Ashlands|Deep North) Rune: (\w+)$/.exec(base)?.[2] && `Rune${/: (\w+)$/.exec(base)![1]}_TW`);
+  if (own) return iconFor(own);
   const item = itemsByName?.get(slugify(base));
   return item?.data.prefab ? iconFor(item.data.prefab) : undefined;
 }

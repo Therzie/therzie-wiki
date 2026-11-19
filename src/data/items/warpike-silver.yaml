@@ -1,0 +1,58 @@
+name: Silver Warpike
+prefab: WarpikeSilver_TW
+mod: warfare
+kind: weapon
+group: Warpikes
+skill: Spears
+tier: Silver
+damage:
+  pierce: 86
+  spirit: 20
+damage_max:
+  pierce: 104
+stats:
+  hands: One handed
+  block_armor: 45
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 36
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 24
+  - 12
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Drake Trophy (level 3)
+  - Cultist Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1806
+biome: Mountains
+description: A long pike with an obsidian head in a silver socket. Thrust, jump in, and pin them down.
+notes: ''

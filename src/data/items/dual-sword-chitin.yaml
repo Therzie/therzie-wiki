@@ -1,0 +1,52 @@
+name: Chitin Twin Swords
+prefab: DualSwordChitin_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Chitin
+damage:
+  slash: 45
+damage_max:
+  slash: 60
+stats:
+  hands: Dual
+  block_armor: 17
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Deer Hide
+  amounts:
+  - 19
+  - 9
+  - 2
+  upgrade:
+  - Chitin
+  - Bronze
+  - Deer Hide
+  - Skeleton Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 204
+biome: Ocean
+description: Two tide-worn chitin blades with bronze guards.
+notes: ''

@@ -1,22 +1,31 @@
-biome: Mountains
 name: Silver Bolt
 prefab: BoltSilver_TW
 mod: warfare
 kind: ammo
-group: CrossBolts
+group: Bolts
+skill: Crossbows
 tier: Silver
 damage:
   pierce: 52
   spirit: 20
+stats:
+  weight: 0.1
 recipe:
-  yields: 1
+  yields: 20
+  station: Fletcher Table
+  level: 3
   materials:
-    - Wood
-    - Silver
-    - Feathers
+  - Wood
+  - Silver
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 206
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 2806
+biome: Mountains
+description: A crossbow bolt with a silver leaf head. Silver bites deep into the restless dead.
 notes: ''

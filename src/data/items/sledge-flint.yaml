@@ -1,0 +1,47 @@
+name: Flint Sledgehammer
+prefab: SledgeFlint_TW
+mod: warfare
+kind: weapon
+group: Sledges
+skill: Clubs
+tier: Flint
+damage:
+  blunt: 27
+damage_max:
+  blunt: 45
+stats:
+  hands: Two handed
+  block_armor: 11
+  block_force: 50
+  knockback: 50
+  backstab: x2
+  durability: 200 (+50 per level)
+  stamina: 22 / 32
+  movement: -15%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 1
+  materials:
+  - Flint
+  - Wood
+  - Deer Hide
+  amounts:
+  - 15
+  - 8
+  - 2
+  upgrade:
+  - Flint
+  - Deer Hide
+  upgrade_amounts:
+  - 4
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1201
+biome: Meadows
+description: A compact wooden sledge head bristling with flint spikes, also pointing down.
+notes: ''

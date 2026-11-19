@@ -1,22 +1,58 @@
-biome: Swamp
-name: Iron knuckles
+name: Iron Fists
 prefab: FistIron_TW
 mod: warfare
 kind: weapon
-group: Claws
+group: Fists
 skill: Fists
 tier: Iron
 damage:
-  blunt: 40
+  slash: 45
+damage_max:
+  slash: 57
+stats:
+  hands: Dual
+  block_armor: 11 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 2
   materials:
-    - Rotten Pelt
-    - Iron
-    - Abomination Trophy
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  - Troll Hide
+  amounts:
+  - 24
+  - 12
+  - 4
+  - 2
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Troll Hide
+  - Guck
+  - Blob Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 6
+  - 2
+  - 1
+  - 1
+  - 1
+  - 1
+  - 3
+checks: []
 source:
-  sheet: Weapons
-  row: 258
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 2005
+biome: Swamp
+description: Rough iron knuckle bars with three spikes and a leather D-grip, forged for crypt work.
 notes: ''

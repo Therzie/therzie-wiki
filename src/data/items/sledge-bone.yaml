@@ -1,0 +1,49 @@
+name: Bone Sledgehammer
+prefab: SledgeBone_TW
+mod: warfare
+kind: weapon
+group: Sledges
+skill: Clubs
+tier: Bone
+damage:
+  blunt: 38
+damage_max:
+  blunt: 56
+stats:
+  hands: Two handed
+  block_armor: 15
+  block_force: 50
+  knockback: 50
+  backstab: x2
+  durability: 200 (+50 per level)
+  stamina: 22 / 32
+  movement: -15%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 2
+  materials:
+  - Bone Fragments
+  - Corewood
+  - Troll Hide
+  amounts:
+  - 20
+  - 10
+  - 2
+  upgrade:
+  - Bone Fragments
+  - Troll Hide
+  - Troll Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1202
+biome: Black Forest
+description: A massive sledge with a head of fused vertebrae on a corewood haft.
+notes: ''

@@ -1,26 +1,33 @@
-name: Skullcrusher
+name: Blight
 prefab: SledgeBonemass_TW
 mod: warfare
 kind: weapon
-group: Boss Weapons
-effect: 'Bash: Every hit has a 6% chance to stun your enemies'
+group: Sledges
+skill: Clubs
 damage:
-  blunt: 64
-  poison: 15
+  blunt: 120
+damage_max:
+  blunt: 138
+stats:
+  hands: Two handed
+  block_armor: 52
+  block_force: 50
+  knockback: 50
+  backstab: x2
+  durability: 200 (+100 per level)
+  stamina: 22 / 32
+  movement: -15%
+  weight: 4
+  max_level: 4
 drops:
-  - from: Bonemass
-    chance: 5%
-recipe:
-  yields: 1
-  materials:
-    - Iron
-    - Guck
-    - Ooze
-    - Bonemass Trophy
-  station: Forge
+- from: Bonemass
+  chance: 5%
+info:
+- Relic of Bonemass
+checks: []
 source:
-  sheet: Weapons
-  row: 373
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 1250
+biome: Swamp
+description: Two rotting skulls fused into one, caged in ribs and oozing swamp guck. A toxic green mist clings to the head.
 notes: ''

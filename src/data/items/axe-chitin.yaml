@@ -1,0 +1,53 @@
+name: Chitin Axe
+prefab: AxeChitin_TW
+mod: warfare
+kind: weapon
+group: Axes
+skill: Axes
+tier: Chitin
+damage:
+  slash: 50
+  chop: 45
+damage_max:
+  slash: 65
+  chop: 54
+stats:
+  hands: One handed
+  block_armor: 17
+  block_force: 20
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 18 / 36
+  movement: -5%
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 12
+  - 6
+  - 6
+  upgrade:
+  - Chitin
+  - Bronze
+  - Greydwarf Brute Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 704
+biome: Ocean
+description: A razor-edged chitin head on a driftwood haft.
+notes: ''

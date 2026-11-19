@@ -1,0 +1,47 @@
+name: Dvergr Tower Shield
+prefab: ShieldDvergrTower_TW
+mod: warfare
+kind: shield
+group: Shields
+tier: Dvergr
+stats:
+  hands: Shield
+  block_armor: 120 (+6 per level)
+  block_force: 150
+  durability: 250 (+50 per level)
+  movement: -10%
+  weight: 5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Copper
+  amounts:
+  - 20
+  - 10
+  - 10
+  - 6
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Seeker Soldier Trophy (level 3)
+  - Wisp (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 5
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2910
+biome: Mistlands
+description: Dvergr steel set in a bronze frame, its runes glowing in channels cut into the plates. A wall to stand behind.
+notes: ''

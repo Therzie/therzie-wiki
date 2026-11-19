@@ -1,24 +1,59 @@
-biome: Plains
 name: Blackmetal Claymore
 prefab: ClaymoreBlackmetal_TW
 mod: warfare
 kind: weapon
-group: Claymore
+group: Claymores
 skill: Swords
 tier: Blackmetal
 damage:
-  slash: 106
+  slash: 124
+damage_max:
+  slash: 142
+stats:
+  hands: Two handed
+  block_armor: 50
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Blackmetal
-    - Fine Wood
-    - Linen Thread
-  monstrum:
-    - Goblin Shaman Trophy
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Lox Pelt
+  amounts:
+  - 40
+  - 20
+  - 6
+  - 2
+  upgrade:
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Lox Pelt
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 10
+  - 10
+  - 3
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 145
-  col: 8
-description: ''
+  sheet: Warfare 2.0
+  row: 408
+biome: Plains
+description: A palisade of black metal teeth on a two-handed blade.
 notes: ''

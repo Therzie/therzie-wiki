@@ -1,0 +1,57 @@
+name: Dwarven Twin Swords
+prefab: DualSwordDvergr_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Dvergr
+damage:
+  slash: 108
+  lightning: 15
+damage_max:
+  slash: 123
+stats:
+  hands: Dual
+  block_armor: 48
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 275 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  amounts:
+  - 27
+  - 14
+  - 14
+  - 4
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  - Seeker Trophy (level 3)
+  - Wisp (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 7
+  - 2
+  - 1
+  - 3
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 210
+biome: Mistlands
+description: A sharp pair of dwarven swords infused with eitr. Used to slash and shock your enemies with.
+notes: ''

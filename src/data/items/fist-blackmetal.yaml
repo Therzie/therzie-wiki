@@ -1,26 +1,58 @@
-biome: Plains
-name: Blackmetal claws
+name: Blackmetal Fists
 prefab: FistBlackmetal_TW
 mod: warfare
 kind: weapon
-group: Claws
+group: Fists
 skill: Fists
 tier: Blackmetal
-effect: on 6th hit increases your movement speed
 damage:
-  slash: 80
+  blunt: 80
+damage_max:
+  blunt: 92
+stats:
+  hands: Dual
+  block_armor: 19 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Blackmetal
-    - Needle
-    - Trophy Deathsquito
-  monstrum:
-    - Lox Bone
-    - Prowler Fang
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Needle
+  amounts:
+  - 29
+  - 15
+  - 2
+  - 10
+  upgrade:
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Needle
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 1
+  - 5
+  - 1
+  - 1
+  - 3
+checks: []
 source:
-  sheet: Weapons
-  row: 258
-  col: 8
-description: ''
+  sheet: Warfare 2.0
+  row: 2008
+biome: Plains
+description: A shield fist and a needle claw of black metal, strapped over spiked guards.
 notes: ''

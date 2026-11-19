@@ -1,0 +1,59 @@
+name: Dwarven Atgeir
+prefab: AtgeirDvergr_TW
+mod: warfare
+kind: weapon
+group: Atgeirs
+skill: Polearms
+tier: Dvergr
+damage:
+  pierce: 108
+  lightning: 39
+damage_max:
+  pierce: 117
+  lightning: 48
+stats:
+  hands: Two handed
+  block_armor: 40
+  block_force: 40
+  knockback: 30
+  backstab: x3
+  durability: 275 (+50 per level)
+  stamina: 16 / 32
+  movement: -5%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 26
+  - 13
+  - 13
+  - 12
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Seeker Trophy (level 3)
+  - Wisp (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 7
+  - 3
+  - 1
+  - 3
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1510
+biome: Mistlands
+description: A dwarven atgeir infused with eitr. Used to sweep and shock your enemies with.
+notes: ''

@@ -2,19 +2,29 @@ name: Explosive Poison Bolt
 prefab: BoltExplosivePoison_TW
 mod: warfare
 kind: ammo
-group: CrossBolts
-effect: Explodes on impact
+group: Bolts
+skill: Crossbows
 damage:
-  pierce: 55
+  pierce: 31
+stats:
+  weight: 0.1
 recipe:
-  yields: 1
+  yields: 20
+  station: Fletcher Table
+  level: 4
   materials:
-    - Wood
-    - Blackmetal
-    - Ooze
+  - Wood
+  - Black Metal
+  - Tar
+  - Feathers
+  amounts:
+  - 8
+  - 2
+  - 2
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 206
-  col: 7
-description: ''
+  sheet: Warfare 2.0
+  row: 2850
+description: A crossbow bolt with an iron canister of tar and venom. It bursts in a cloud of poison where it strikes.
 notes: ''

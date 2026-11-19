@@ -1,0 +1,59 @@
+name: Silver Greatclub
+prefab: GreatclubSilver_TW
+mod: warfare
+kind: weapon
+group: Greatclubs
+skill: Clubs
+tier: Silver
+damage:
+  blunt: 59
+  pierce: 34
+  spirit: 20
+damage_max:
+  blunt: 77
+  pierce: 43
+stats:
+  hands: Two handed
+  block_armor: 72
+  block_force: 30
+  knockback: 130
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 24
+  - 12
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Ulv Trophy (level 3)
+  - Cultist Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1406
+biome: Mountains
+description: A heavy club bound in silver and wolf fur. Too unwieldy for a shield, but it hits like a rockslide.
+notes: ''

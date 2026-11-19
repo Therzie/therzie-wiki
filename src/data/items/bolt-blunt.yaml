@@ -2,20 +2,30 @@ name: Blunt Bolt
 prefab: BoltBlunt_TW
 mod: warfare
 kind: ammo
-group: CrossBolts
+group: Bolts
+skill: Crossbows
 damage:
-  blunt: 55
-  pierce: 10
+  blunt: 52
+stats:
+  knockback: 40
+  weight: 0.1
 recipe:
-  yields: 1
+  yields: 20
+  station: Fletcher Table
+  level: 3
   materials:
-    - Wood
-    - Obsidian
-    - Iron
-    - Feathers
+  - Wood
+  - Iron
+  - Obsidian
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 206
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 2850
+description: A crossbow bolt with a heavy iron knob. It crushes bone and knocks its target back.
 notes: ''

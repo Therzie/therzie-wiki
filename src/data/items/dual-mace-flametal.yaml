@@ -1,0 +1,52 @@
+name: Flametal Twin Maces
+prefab: DualMaceFlametal_TW
+mod: warfare
+kind: weapon
+group: Dual maces
+skill: Clubs
+tier: Flametal
+damage:
+  blunt: 135
+damage_max:
+  blunt: 153
+stats:
+  hands: Dual
+  block_armor: 62
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 300 (+50 per level)
+  stamina: 20 / 36
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Sulfur
+  amounts:
+  - 58
+  - 29
+  - 5
+  upgrade:
+  - Flametal
+  - Sulfur
+  - Asksvin Trophy (level 3)
+  - Warrior Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 14
+  - 3
+  - 1
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1111
+biome: Ashlands
+description: Two flanged flametal maces with lava trapped between the plates.
+notes: ''

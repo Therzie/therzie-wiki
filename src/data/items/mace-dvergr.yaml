@@ -1,4 +1,3 @@
-biome: Mistlands
 name: Dwarven Mallet
 prefab: MaceDvergr_TW
 mod: warfare
@@ -7,19 +6,53 @@ group: Maces
 skill: Clubs
 tier: Dvergr
 damage:
-  blunt: 100
+  blunt: 108
   lightning: 15
+damage_max:
+  blunt: 126
+stats:
+  hands: One handed
+  block_armor: 52
+  block_force: 30
+  knockback: 90
+  backstab: x3
+  durability: 275 (+100 per level)
+  stamina: 16 / 32
+  movement: -5%
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 2
   materials:
-    - Yggdrasil Wood
-    - Carapace
-    - Refined Eitr
-  monstrum:
-    - Dvergr Trophy
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 18
+  - 9
+  - 9
+  - 8
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 5
+  - 2
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 82
-  col: 8
-description: ''
+  sheet: Warfare 2.0
+  row: 1010
+biome: Mistlands
+description: A dwarven mallet infused with eitr. Used to smash and shock your enemies with.
 notes: ''

@@ -1,22 +1,57 @@
-biome: Plains
 name: Blackmetal Spear
 prefab: SpearBlackmetal_TW
 mod: warfare
 kind: weapon
 group: Spears
+skill: Spears
 tier: Blackmetal
 damage:
   pierce: 95
+damage_max:
+  pierce: 113
+stats:
+  hands: One handed
+  block_armor: 46
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 16
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Fine Wood
-    - Blackmetal
-    - Needle
-    - Lox Trophy
+  - Black Metal
+  - Iron
+  - Finewood
+  - Linen Thread
+  amounts:
+  - 21
+  - 11
+  - 10
+  - 4
+  upgrade:
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Fuling Trophy (level 3)
+  - Fuling Shaman Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 2
+  - 1
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 271
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 1708
+biome: Plains
+description: A saw-toothed black metal head on a dark shaft. Poke, or throw it.
 notes: ''

@@ -1,24 +1,56 @@
-biome: Plains
 name: Blackmetal Greatbow
 prefab: GreatbowBlackmetal_TW
 mod: warfare
 kind: weapon
-group: GreatBows
+group: Greatbows
+skill: Bows
 tier: Blackmetal
-effect: 'Piercing: Deal extra damage to your foes on 4th hit'
 damage:
   pierce: 87
+damage_max:
+  pierce: 99
+stats:
+  hands: Two handed
+  knockback: 80
+  backstab: x4
+  durability: 100 (+50 per level)
+  draw_stamina: 6 per second
+  secondary_stamina: 40
+  movement: -5%
+  weight: 3
+  max_level: 4
 recipe:
   yields: 1
+  station: Fletcher Table
+  level: 4
   materials:
-    - Fine Wood
-    - Blackmetal
-    - Lox Bone
-    - Fuling Berserker Trophy
-  station: Fletchers Table
+  - Black Metal
+  - Iron
+  - Finewood
+  - Linen Thread
+  amounts:
+  - 37
+  - 18
+  - 16
+  - 12
+  upgrade:
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Fuling Shaman Trophy (level 3)
+  - Deathsquito Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 9
+  - 9
+  - 6
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 231
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 2508
+biome: Plains
+description: A towering bow of dark wood and black metal. Slow to draw, devastating on release.
 notes: ''

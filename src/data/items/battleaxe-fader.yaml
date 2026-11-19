@@ -1,0 +1,36 @@
+name: Ashfall
+prefab: BattleaxeFader_TW
+mod: warfare
+kind: weapon
+group: Battleaxes
+skill: Axes
+damage:
+  slash: 179
+  chop: 70
+  fire: 16
+damage_max:
+  slash: 197
+  chop: 77.5
+stats:
+  hands: Two handed
+  block_armor: 64
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 300 (+100 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
+drops:
+- from: Fader
+  chance: 7%
+info:
+- Relic of Fader
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 950
+biome: Ashlands
+description: A blade of green lava stone bursting from Fader's own jaws. Emerald fire still burns in the cracks of the skull.
+notes: ''

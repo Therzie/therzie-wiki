@@ -9,7 +9,9 @@ interface Props { item: Item; max: number }
 const { item } = Astro.props;
 const d = item.data;
 const tier = tierInfo(d.tier);
-const stats = Object.entries(d.stats ?? {}).filter(([k]) => k !== 'levels');
+// cards keep it short; the item page shows every stat
+const CARD_SKIP = new Set(['levels', 'knockback', 'backstab', 'durability', 'movement', 'weight', 'max_level', 'secondary_stamina', 'block_force', 'reload']);
+const stats = Object.entries(d.stats ?? {}).filter(([k]) => !CARD_SKIP.has(k) && !(k === 'block_armor' && d.kind === 'weapon'));
 const weak = Object.entries(d.creature?.resist ?? {}).filter(([, v]) => /weak/.test(v)).map(([k]) => k);
 const immune = Object.entries(d.creature?.resist ?? {}).filter(([, v]) => v === 'immune').map(([k]) => k);
 const search = [d.name, d.prefab ?? '', d.group, d.tier ?? '', d.biome ?? '', d.set?.name ?? '', ...d.recipe.materials, ...(d.drops ?? []).map((x) => x.from)]

@@ -1,0 +1,60 @@
+name: Nord Twin Swords
+prefab: DualSwordNord_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Nord
+damage:
+  slash: 170
+damage_max:
+  slash: 200
+stats:
+  hands: Dual
+  block_armor: 64
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 400 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 4
+  materials:
+  - Bloodgold
+  - Timberwood
+  - Elaking Hair Bundle
+  amounts:
+  - 66
+  - 33
+  - 4
+  upgrade:
+  - Bloodgold
+  - Elaking Hair Bundle
+  - Liquid Frost (level 2)
+  - Frozen Soul Trophy (level 3)
+  - Liquid Frost (level 3)
+  - Krigen Trophy (level 4)
+  - Liquid Frost (level 4)
+  - Frostcore (level 4)
+  - Glacier Crystal (level 4)
+  upgrade_amounts:
+  - 17
+  - 2
+  - 3
+  - 1
+  - 5
+  - 1
+  - 6
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 212
+biome: Deep North
+description: Two broad blades of Jotun steel with fractured edges and gold-railed rune fullers.
+notes: ''

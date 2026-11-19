@@ -1,0 +1,49 @@
+name: Chitin Throwing Axe
+prefab: ThrowAxeChitin_TW
+mod: warfare
+kind: weapon
+group: Throwing axes
+skill: Axes
+tier: Chitin
+damage:
+  slash: 26
+  chop: 30
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 40
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 7
+  - 4
+  - 4
+  upgrade:
+  - Chitin
+  - Bronze
+  - Skeleton Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2104
+biome: Ocean
+description: Chitin throwing axes, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

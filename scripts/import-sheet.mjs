@@ -25,7 +25,8 @@ const SHEET_FIELDS = ['name', 'prefab', 'mod', 'kind', 'group', 'skill', 'tier',
 
 // tab -> mod and layout
 const TABS = {
-  Weapons: { mod: 'warfare', layout: 'cards' },
+  // Warfare weapons, shields and ammo come from the mod itself since Warfare 2.0 (tools/warfare2/build.py).
+  Weapons: { mod: 'warfare', layout: 'cards', skip: true },
   Pieces: { mod: 'warfare', layout: 'cards', kind: 'piece' },
   Items: { mod: 'warfare', layout: 'cards', kind: 'item' },
   Armory: { mod: 'armory', layout: 'cards' },
@@ -520,6 +521,7 @@ for (const data of await loadSources()) {
   const tab = tabRaw.replace(/''/g, "'");
   const cfg = TABS[tab];
   if (!cfg) { ctx.skipped.push(`Tab ${tab}: not configured in TABS`); continue; }
+  if (cfg.skip) { ctx.skipped.push(`Tab ${tab}: skipped, these items come from the mod (tools/warfare2)`); continue; }
   const rows = (data.values ?? []).map((r) => r ?? []);
   const parser = { cards: parseCards, creatures: parseCreatures, food: parseFood, weakness: parseWeakness, progression: parseProgression }[cfg.layout];
   all.push(...parser(rows, tab, cfg, Number(startRow), ctx));

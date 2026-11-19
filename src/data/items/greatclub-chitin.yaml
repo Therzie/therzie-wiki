@@ -1,0 +1,52 @@
+name: Chitin Greatclub
+prefab: GreatclubChitin_TW
+mod: warfare
+kind: weapon
+group: Greatclubs
+skill: Clubs
+tier: Chitin
+damage:
+  blunt: 33
+  pierce: 19
+damage_max:
+  blunt: 51
+  pierce: 28
+stats:
+  hands: Two handed
+  block_armor: 72
+  block_force: 30
+  knockback: 130
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Corewood
+  amounts:
+  - 17
+  - 9
+  - 15
+  upgrade:
+  - Chitin
+  - Bronze
+  - Troll Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1404
+biome: Ocean
+description: 'A heavy driftwood club shingled with chitin. Too unwieldy for a shield, but it keeps you light on your feet: dodging costs less stamina.'
+notes: ''

@@ -1,0 +1,50 @@
+name: Flametal Javelin
+prefab: JavelinFlametal_TW
+mod: warfare
+kind: weapon
+group: Javelins
+skill: Spears
+tier: Flametal
+damage:
+  pierce: 132
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 20
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Ashwood
+  amounts:
+  - 23
+  - 12
+  - 10
+  upgrade:
+  - Flametal
+  - Ashwood
+  - Asksvin Trophy (level 3)
+  - Volture Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 6
+  - 5
+  - 1
+  - 1
+  - 3
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2211
+biome: Ashlands
+description: Blackwood javelins with flametal heads, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

@@ -23,7 +23,7 @@ jobs:
         env:
           GOOGLE_SHEETS_API_KEY: ${{ secrets.GOOGLE_SHEETS_API_KEY }}
         run: |
-          node scripts/import-sheet.mjs --range "Weapons!A1:AC1185" --range "Pieces!A1:AK1027" --range "Items!A1:AK1005" --range "Armory!A1:AB1294" --range "Monstrum!A1:AK990" --range "M.Food!A1:AE996" --range "Mon.Weakness!A1:AB1011" --range "Wizardry!A1:AC1176" --range "W.Creatures!A1:AK923" --range "W.Food!A1:AA1007" --range "'Weapons-F&I'!A1:AO1165" --range "'Armor-F&I'!A1:AK986" --range "M.DeepNorth!A1:AK1075" --range "DN-Progression!A1:Y987" | tee import-report.txt
+          node scripts/import-sheet.mjs --range "Pieces!A1:AK1027" --range "Items!A1:AK1005" --range "Armory!A1:AB1294" --range "Monstrum!A1:AK990" --range "M.Food!A1:AE996" --range "Mon.Weakness!A1:AB1011" --range "Wizardry!A1:AC1176" --range "W.Creatures!A1:AK923" --range "W.Food!A1:AA1007" --range "'Weapons-F&I'!A1:AO1165" --range "'Armor-F&I'!A1:AK986" --range "M.DeepNorth!A1:AK1075" --range "DN-Progression!A1:Y987" | tee import-report.txt
       - name: Check that the site still builds
         run: npx astro build
       - uses: peter-evans/create-pull-request@v7

@@ -1,24 +1,52 @@
-biome: Plains
-name: Blackmetal buckler
+name: Blackmetal Buckler
 prefab: ShieldBlackmetalBuckler_TW
 mod: warfare
 kind: shield
-group: Bucklers
+group: Shields
 tier: Blackmetal
 stats:
-  block_armor: 59
-  block_force: 40
-  parry_bonus: 2.5x
+  hands: Shield
+  block_armor: 55 (+6 per level)
+  block_force: 45
+  parry_bonus: x2.5
+  durability: 200 (+50 per level)
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Blackmetal
-    - Fine Wood
-    - Linen Thread
-    - Lox Trophy
+  - Black Metal
+  - Iron
+  - Finewood
+  - Lox Pelt
+  - Chain
+  amounts:
+  - 14
+  - 7
+  - 6
+  - 2
+  - 2
+  upgrade:
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Lox Trophy (level 3)
+  - Fuling Berserker Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 1
+  - 1
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 316
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 2908
+biome: Plains
+description: A dark core plate chained across in a tight X, ringed with lox fur and spikes. Built to turn a fuling's blow.
 notes: ''

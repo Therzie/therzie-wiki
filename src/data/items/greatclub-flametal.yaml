@@ -1,0 +1,54 @@
+name: Flametal Greatclub
+prefab: GreatclubFlametal_TW
+mod: warfare
+kind: weapon
+group: Greatclubs
+skill: Clubs
+tier: Flametal
+damage:
+  blunt: 110
+  pierce: 63
+damage_max:
+  blunt: 128
+  pierce: 72
+stats:
+  hands: Two handed
+  block_armor: 72
+  block_force: 30
+  knockback: 130
+  backstab: x3
+  durability: 300 (+50 per level)
+  stamina: 16 / 32
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Ashwood
+  amounts:
+  - 54
+  - 27
+  - 15
+  upgrade:
+  - Flametal
+  - Ashwood
+  - Asksvin Trophy (level 3)
+  - Warrior Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 14
+  - 8
+  - 1
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1411
+biome: Ashlands
+description: 'A charred club studded with flametal. Too unwieldy for a shield, but it keeps you light on your feet: dodging costs less stamina.'
+notes: ''

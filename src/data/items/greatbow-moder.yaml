@@ -1,26 +1,34 @@
-name: Skystrike
+name: Wrath
 prefab: GreatbowModer_TW
 mod: warfare
 kind: weapon
-group: Boss Weapons
-effect: 'Pinning: Slows targets for brief moment -50%'
+group: Greatbows
+skill: Bows
 damage:
-  pierce: 25
-  frost: 60
+  pierce: 82
+  frost: 10
+damage_max:
+  pierce: 94
+  frost: 22
+stats:
+  hands: Two handed
+  knockback: 80
+  backstab: x4
+  durability: 100 (+50 per level)
+  draw_stamina: 6 per second
+  secondary_stamina: 40
+  movement: -5%
+  weight: 3
+  max_level: 4
 drops:
-  - from: Moder
-    chance: 6%
-recipe:
-  yields: 1
-  materials:
-    - Silver
-    - Crystal
-    - Freeze Gland
-    - Moder Trophy
-  station: Fletchers Table
+- from: Moder
+  chance: 5%
+info:
+- Relic of Moder
+checks: []
 source:
-  sheet: Weapons
-  row: 373
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 2550
+biome: Mountains
+description: A greatbow of living ice, Moder's skull clamped around the grip. Every arrow leaves frost in its wake; a perfect shot shatters into a storm of ice.
 notes: ''

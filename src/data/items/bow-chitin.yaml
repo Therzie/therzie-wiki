@@ -1,0 +1,54 @@
+name: Chitin Bow
+prefab: BowChitin_TW
+mod: warfare
+kind: weapon
+group: Bows
+skill: Bows
+tier: Chitin
+damage:
+  pierce: 36
+damage_max:
+  pierce: 48
+stats:
+  hands: Two handed
+  knockback: 25
+  backstab: x3
+  durability: 150 (+50 per level)
+  draw_stamina: 12 per second
+  secondary_stamina: 20
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 2
+  materials:
+  - Chitin
+  - Bronze
+  - Deer Hide
+  - Finewood
+  amounts:
+  - 12
+  - 6
+  - 4
+  - 10
+  upgrade:
+  - Chitin
+  - Bronze
+  - Deer Hide
+  - Bear Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2404
+biome: Ocean
+description: A recurve of segmented chitin plates with a bronze grip.
+notes: ''

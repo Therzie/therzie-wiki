@@ -1,0 +1,52 @@
+name: Iron Twin Swords
+prefab: DualSwordIron_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Iron
+damage:
+  slash: 55
+damage_max:
+  slash: 70
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 32
+  - 16
+  - 4
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Draugr Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 2
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 205
+biome: Swamp
+description: Two plainly forged iron blades, one fullered, one clipped at the point.
+notes: ''

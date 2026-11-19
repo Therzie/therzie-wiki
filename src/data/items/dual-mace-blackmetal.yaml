@@ -1,0 +1,58 @@
+name: Blackmetal Twin Maces
+prefab: DualMaceBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Dual maces
+skill: Clubs
+tier: Blackmetal
+damage:
+  blunt: 95
+damage_max:
+  blunt: 113
+stats:
+  hands: Dual
+  block_armor: 46
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 36
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 4
+  materials:
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Needle
+  amounts:
+  - 40
+  - 20
+  - 2
+  - 10
+  upgrade:
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Needle
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 10
+  - 10
+  - 1
+  - 5
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1108
+biome: Plains
+description: A porcupine of needles and a stack of spiked black metal rings.
+notes: ''

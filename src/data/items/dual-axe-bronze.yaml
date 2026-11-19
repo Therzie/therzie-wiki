@@ -1,0 +1,52 @@
+name: Bronze Twin Axes
+prefab: DualAxeBronze_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Bronze
+damage:
+  slash: 35
+  chop: 32
+damage_max:
+  slash: 53
+  chop: 41
+stats:
+  hands: Dual
+  block_armor: 14
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Finewood
+  - Leather Scraps
+  amounts:
+  - 17
+  - 8
+  - 2
+  upgrade:
+  - Bronze
+  - Leather Scraps
+  - Greydwarf Brute Trophy (level 3)
+  - Bear Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 803
+biome: Black Forest
+description: Two bronze axes on corewood hafts, one bearded, one crescent.
+notes: ''

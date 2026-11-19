@@ -1,5 +1,4 @@
-biome: Ocean
-name: Abyssal hammer
+name: Chitin Mace
 prefab: MaceChitin_TW
 mod: warfare
 kind: weapon
@@ -7,17 +6,48 @@ group: Maces
 skill: Clubs
 tier: Chitin
 damage:
-  blunt: 35
-  pierce: 15
+  blunt: 45
+damage_max:
+  blunt: 63
+stats:
+  hands: One handed
+  block_armor: 17
+  block_force: 30
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  movement: -5%
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Ancient Bark
-    - Chitin
-    - Bronze
+  - Chitin
+  - Bronze
+  - Leather Scraps
+  amounts:
+  - 12
+  - 6
+  - 2
+  upgrade:
+  - Chitin
+  - Bronze
+  - Leather Scraps
+  - Bear Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 82
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 1004
+biome: Ocean
+description: A flanged mace of dark chitin plates on a bronze core.
 notes: ''

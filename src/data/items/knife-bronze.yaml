@@ -1,5 +1,4 @@
-biome: Black Forest
-name: Bronze Knife
+name: Bronze Dagger
 prefab: KnifeBronze_TW
 mod: warfare
 kind: weapon
@@ -9,17 +8,45 @@ tier: Bronze
 damage:
   slash: 16
   pierce: 16
+damage_max:
+  slash: 19
+  pierce: 19
+stats:
+  hands: One handed
+  block_armor: 2
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 14 / 42
+  weight: 0.3
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Bronze
-    - Greydwarf Shaman Trophy
-  monstrum:
-    - Bone Fragments
-    - Razorback Tusk
+  - Bronze
+  - Finewood
+  - Leather Scraps
+  amounts:
+  - 6
+  - 3
+  - 2
+  upgrade:
+  - Bronze
+  - Leather Scraps
+  - Greydwarf Trophy (level 3)
+  - Greydwarf Shaman Trophy (level 4)
+  upgrade_amounts:
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 94
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 503
+biome: Black Forest
+description: 'A Bronze Age antenna dagger: a leaf blade with a cast midrib and a pommel curling into two copper-tipped arms.'
 notes: ''

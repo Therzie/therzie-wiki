@@ -1,0 +1,48 @@
+name: Crystal Buckler
+prefab: ShieldCrystalBuckler_TW
+mod: warfare
+kind: shield
+group: Shields
+tier: Crystal
+stats:
+  hands: Shield
+  block_armor: 40 (+6 per level)
+  block_force: 40
+  parry_bonus: x2.5
+  durability: 200 (+50 per level)
+  movement: -5%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Obsidian
+  - Fenris Hair
+  amounts:
+  - 7
+  - 4
+  - 4
+  - 1
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Obsidian
+  - Drake Trophy (level 3)
+  - Cultist Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2907
+biome: Mountains
+description: An obsidian disc overgrown with a spiral of pristine crystal. The grip is wrapped in wolf fur against the mountain cold.
+notes: ''

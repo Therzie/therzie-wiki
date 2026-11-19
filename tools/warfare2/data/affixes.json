@@ -1,0 +1,3411 @@
+{
+ "affixes": [
+  {
+   "key": "BloodPrice",
+   "name": "Blood Price",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "GiantBloodSack",
+     5
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Your hits put a Blood Mark on the target for 4 s; killing a marked enemy heals you for ⟦6%⟧ of your max health over 6 s",
+     "heavy": "Your hits put a Blood Mark on the target for 4 s; killing a marked enemy heals you for ⟦9%⟧ of your max health over 6 s"
+    },
+    {
+     "level": 2,
+     "text": "Your hits put a Blood Mark on the target for 4 s; killing a marked enemy heals you for ⟦7.5%⟧ of your max health over 6 s",
+     "heavy": "Your hits put a Blood Mark on the target for 4 s; killing a marked enemy heals you for ⟦11.3%⟧ of your max health over 6 s"
+    },
+    {
+     "level": 3,
+     "text": "Your hits put a Blood Mark on the target for 4 s; killing a marked enemy heals you for ⟦9%⟧ of your max health over 6 s",
+     "heavy": "Your hits put a Blood Mark on the target for 4 s; killing a marked enemy heals you for ⟦13.5%⟧ of your max health over 6 s"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Bleeding",
+   "name": "Bleeding",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn",
+    "Skirmisher"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual",
+    "Throwing"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Mandible",
+     4
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "25% chance on a hit to make the target bleed for ⟦12%⟧ of that hit's damage over 4 s",
+     "heavy": "25% chance on a hit to make the target bleed for ⟦18%⟧ of that hit's damage over 4 s"
+    },
+    {
+     "level": 2,
+     "text": "25% chance on a hit to make the target bleed for ⟦14.4%⟧ of that hit's damage over 4 s",
+     "heavy": "25% chance on a hit to make the target bleed for ⟦21.6%⟧ of that hit's damage over 4 s"
+    },
+    {
+     "level": 3,
+     "text": "25% chance on a hit to make the target bleed for ⟦16.8%⟧ of that hit's damage over 4 s",
+     "heavy": "25% chance on a hit to make the target bleed for ⟦25.2%⟧ of that hit's damage over 4 s"
+    }
+   ],
+   "notes": [
+    "Only on slash weapons"
+   ]
+  },
+  {
+   "key": "Impale",
+   "name": "Impale",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Carapace",
+     10
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Secondary attack hits deal ⟦10%⟧ of their damage again as pierce over 6 s",
+     "heavy": "Secondary attack hits deal ⟦15%⟧ of their damage again as pierce over 6 s"
+    },
+    {
+     "level": 2,
+     "text": "Secondary attack hits deal ⟦12%⟧ of their damage again as pierce over 6 s",
+     "heavy": "Secondary attack hits deal ⟦18%⟧ of their damage again as pierce over 6 s"
+    },
+    {
+     "level": 3,
+     "text": "Secondary attack hits deal ⟦14%⟧ of their damage again as pierce over 6 s",
+     "heavy": "Secondary attack hits deal ⟦21%⟧ of their damage again as pierce over 6 s"
+    }
+   ],
+   "notes": [
+    "Only on pierce weapons"
+   ]
+  },
+  {
+   "key": "CoupDeGrace",
+   "name": "Coup de Grace",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn",
+    "Huntsman"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual",
+    "Ranged",
+    "Throwing"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "CharredBone",
+     10
+    ]
+   ],
+   "curve": "Fixed",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A hit that leaves an enemy below ⟦7%⟧ health kills it outright (not bosses; once every 5 s)"
+    },
+    {
+     "level": 2,
+     "text": "A hit that leaves an enemy below ⟦8.1%⟧ health kills it outright (not bosses; once every 5 s)"
+    },
+    {
+     "level": 3,
+     "text": "A hit that leaves an enemy below ⟦9.1%⟧ health kills it outright (not bosses; once every 5 s)"
+    }
+   ],
+   "notes": [
+    "Only on pierce weapons"
+   ]
+  },
+  {
+   "key": "Madness",
+   "name": "Madness",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackCore",
+     2
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Below 50% durability this weapon deals more damage the more worn it is: ⟦+6%⟧ at 25%, up to ⟦+12%⟧ when it is almost broken",
+     "heavy": "Below 50% durability this weapon deals more damage the more worn it is: ⟦+9%⟧ at 25%, up to ⟦+18%⟧ when it is almost broken"
+    },
+    {
+     "level": 2,
+     "text": "Below 50% durability this weapon deals more damage the more worn it is: ⟦+7.2%⟧ at 25%, up to ⟦+14.4%⟧ when it is almost broken",
+     "heavy": "Below 50% durability this weapon deals more damage the more worn it is: ⟦+10.8%⟧ at 25%, up to ⟦+21.6%⟧ when it is almost broken"
+    },
+    {
+     "level": 3,
+     "text": "Below 50% durability this weapon deals more damage the more worn it is: ⟦+8.4%⟧ at 25%, up to ⟦+16.8%⟧ when it is almost broken",
+     "heavy": "Below 50% durability this weapon deals more damage the more worn it is: ⟦+12.6%⟧ at 25%, up to ⟦+25.2%⟧ when it is almost broken"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Adrenaline",
+   "name": "Adrenaline",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "RoyalJelly",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "20% chance per attack to restore ⟦2%⟧ of your max stamina",
+     "heavy": "20% chance per attack to restore ⟦3%⟧ of your max stamina"
+    },
+    {
+     "level": 2,
+     "text": "20% chance per attack to restore ⟦2.5%⟧ of your max stamina",
+     "heavy": "20% chance per attack to restore ⟦3.8%⟧ of your max stamina"
+    },
+    {
+     "level": 3,
+     "text": "20% chance per attack to restore ⟦3%⟧ of your max stamina",
+     "heavy": "20% chance per attack to restore ⟦4.5%⟧ of your max stamina"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Sunder",
+   "name": "Sunder",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackCore",
+     1
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "17% chance per attack: ⟦+5%⟧ damage of this weapon's main type for 4 s",
+     "heavy": "17% chance per attack: ⟦+7.5%⟧ damage of this weapon's main type for 4 s"
+    },
+    {
+     "level": 2,
+     "text": "17% chance per attack: ⟦+6%⟧ damage of this weapon's main type for 4 s",
+     "heavy": "17% chance per attack: ⟦+9%⟧ damage of this weapon's main type for 4 s"
+    },
+    {
+     "level": 3,
+     "text": "17% chance per attack: ⟦+7%⟧ damage of this weapon's main type for 4 s",
+     "heavy": "17% chance per attack: ⟦+10.5%⟧ damage of this weapon's main type for 4 s"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Rage",
+   "name": "Rage",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Bilebag",
+     4
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Each time a monster hits you: a Rage stack for 6 s (5 max), ⟦+2%⟧ damage per stack",
+     "heavy": "Each time a monster hits you: a Rage stack for 6 s (5 max), ⟦+3%⟧ damage per stack"
+    },
+    {
+     "level": 2,
+     "text": "Each time a monster hits you: a Rage stack for 6 s (5 max), ⟦+2.4%⟧ damage per stack",
+     "heavy": "Each time a monster hits you: a Rage stack for 6 s (5 max), ⟦+3.6%⟧ damage per stack"
+    },
+    {
+     "level": 3,
+     "text": "Each time a monster hits you: a Rage stack for 6 s (5 max), ⟦+2.8%⟧ damage per stack",
+     "heavy": "Each time a monster hits you: a Rage stack for 6 s (5 max), ⟦+4.2%⟧ damage per stack"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Quake",
+   "name": "Quake",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackMarble",
+     10
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "15% chance per attack: a shockwave hits other enemies within 2.5 m for ⟦10%⟧ of the hit as blunt and pushes them back (no push on bosses)",
+     "heavy": "15% chance per attack: a shockwave hits other enemies within 2.5 m for ⟦15%⟧ of the hit as blunt and pushes them back (no push on bosses)"
+    },
+    {
+     "level": 2,
+     "text": "15% chance per attack: a shockwave hits other enemies within 2.5 m for ⟦12%⟧ of the hit as blunt and pushes them back (no push on bosses)",
+     "heavy": "15% chance per attack: a shockwave hits other enemies within 2.5 m for ⟦18%⟧ of the hit as blunt and pushes them back (no push on bosses)"
+    },
+    {
+     "level": 3,
+     "text": "15% chance per attack: a shockwave hits other enemies within 2.5 m for ⟦14%⟧ of the hit as blunt and pushes them back (no push on bosses)",
+     "heavy": "15% chance per attack: a shockwave hits other enemies within 2.5 m for ⟦21%⟧ of the hit as blunt and pushes them back (no push on bosses)"
+    }
+   ],
+   "notes": [
+    "Only on blunt weapons"
+   ]
+  },
+  {
+   "key": "EitrEdge",
+   "name": "Eitr Edge",
+   "theme": "Arcane",
+   "roles": [
+    "Galdrblade"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     16
+    ],
+    [
+     "MorgenHeart",
+     1
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Above 50% eitr every attack costs 3 eitr and is ⟦+6.7%⟧ faster, growing to ⟦+8.6%⟧ at 300 max eitr",
+     "heavy": "Above 50% eitr every attack costs 3 eitr and is ⟦+10%⟧ faster, growing to ⟦+12.9%⟧ at 300 max eitr"
+    },
+    {
+     "level": 2,
+     "text": "Above 50% eitr every attack costs 3 eitr and is ⟦+8%⟧ faster, growing to ⟦+10.3%⟧ at 300 max eitr",
+     "heavy": "Above 50% eitr every attack costs 3 eitr and is ⟦+12%⟧ faster, growing to ⟦+15.4%⟧ at 300 max eitr"
+    },
+    {
+     "level": 3,
+     "text": "Above 50% eitr every attack costs 3 eitr and is ⟦+9.3%⟧ faster, growing to ⟦+12%⟧ at 300 max eitr",
+     "heavy": "Above 50% eitr every attack costs 3 eitr and is ⟦+14%⟧ faster, growing to ⟦+18%⟧ at 300 max eitr"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "EmberBrand",
+   "name": "Ember Brand",
+   "theme": "Arcane",
+   "roles": [
+    "Galdrblade"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "SulfurStone",
+     4
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Secondary attack hits leave smouldering ground (2 m, 3 s) that burns enemies in it for ⟦6%⟧ of the hit per second",
+     "heavy": "Secondary attack hits leave smouldering ground (2 m, 3 s) that burns enemies in it for ⟦9%⟧ of the hit per second"
+    },
+    {
+     "level": 2,
+     "text": "Secondary attack hits leave smouldering ground (2 m, 3 s) that burns enemies in it for ⟦7.2%⟧ of the hit per second",
+     "heavy": "Secondary attack hits leave smouldering ground (2 m, 3 s) that burns enemies in it for ⟦10.8%⟧ of the hit per second"
+    },
+    {
+     "level": 3,
+     "text": "Secondary attack hits leave smouldering ground (2 m, 3 s) that burns enemies in it for ⟦8.4%⟧ of the hit per second",
+     "heavy": "Secondary attack hits leave smouldering ground (2 m, 3 s) that burns enemies in it for ⟦12.6%⟧ of the hit per second"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "LightningBurst",
+   "name": "Lightning Burst",
+   "theme": "Arcane",
+   "roles": [
+    "Galdrblade",
+    "Seidr"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual",
+    "Ranged",
+    "Throwing",
+    "Staff"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Thunderstone",
+     4
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Charges every 6 s while in hand (3 max); your next hit adds ⟦4%⟧ of its damage as lightning per charge",
+     "heavy": "Charges every 6 s while in hand (3 max); your next hit adds ⟦6%⟧ of its damage as lightning per charge"
+    },
+    {
+     "level": 2,
+     "text": "Charges every 6 s while in hand (3 max); your next hit adds ⟦4.8%⟧ of its damage as lightning per charge",
+     "heavy": "Charges every 6 s while in hand (3 max); your next hit adds ⟦7.2%⟧ of its damage as lightning per charge"
+    },
+    {
+     "level": 3,
+     "text": "Charges every 6 s while in hand (3 max); your next hit adds ⟦5.6%⟧ of its damage as lightning per charge",
+     "heavy": "Charges every 6 s while in hand (3 max); your next hit adds ⟦8.4%⟧ of its damage as lightning per charge"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Rime",
+   "name": "Rime",
+   "theme": "Arcane",
+   "roles": [
+    "Seidr",
+    "Skirmisher"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual",
+    "Throwing",
+    "Staff"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "FreezeGland",
+     6
+    ]
+   ],
+   "curve": "Fixed",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Each hit adds a Chill stack (2 with two handed and dual weapons): ⟦5%⟧ slow per stack, gone after 3 s without a hit. At 5 stacks the target freezes for ⟦0.8 s⟧, then cannot be chilled for 12 s (not bosses)"
+    },
+    {
+     "level": 2,
+     "text": "Each hit adds a Chill stack (2 with two handed and dual weapons): ⟦5%⟧ slow per stack, gone after 3 s without a hit. At 5 stacks the target freezes for ⟦0.9 s⟧, then cannot be chilled for 12 s (not bosses)"
+    },
+    {
+     "level": 3,
+     "text": "Each hit adds a Chill stack (2 with two handed and dual weapons): ⟦5%⟧ slow per stack, gone after 3 s without a hit. At 5 stacks the target freezes for ⟦1 s⟧, then cannot be chilled for 12 s (not bosses)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Pierced",
+   "name": "Pierced",
+   "theme": "Hunter",
+   "roles": [
+    "Huntsman"
+   ],
+   "cats": [
+    "Ranged"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Blackwood",
+     10
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "25% chance on a hit to deal ⟦12%⟧ of its damage again as extra pierce"
+    },
+    {
+     "level": 2,
+     "text": "25% chance on a hit to deal ⟦14.4%⟧ of its damage again as extra pierce"
+    },
+    {
+     "level": 3,
+     "text": "25% chance on a hit to deal ⟦16.8%⟧ of its damage again as extra pierce"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Headhunter",
+   "name": "Headhunter",
+   "theme": "Hunter",
+   "roles": [
+    "Huntsman"
+   ],
+   "cats": [
+    "Ranged"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "CelestialFeather",
+     2
+    ]
+   ],
+   "curve": "Fixed",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Fully drawn shots that hit beyond 30 m deal ⟦+8%⟧ damage"
+    },
+    {
+     "level": 2,
+     "text": "Fully drawn shots that hit beyond 30 m deal ⟦+9.2%⟧ damage"
+    },
+    {
+     "level": 3,
+     "text": "Fully drawn shots that hit beyond 30 m deal ⟦+10.4%⟧ damage"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Windstep",
+   "name": "Windstep",
+   "theme": "Hunter",
+   "roles": [
+    "Huntsman"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual",
+    "Ranged",
+    "Quiver"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Feathers",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "After a kill: movement speed ⟦+15%⟧ for 3 s",
+     "heavy": "After a kill: movement speed ⟦+22.5%⟧ for 3 s"
+    },
+    {
+     "level": 2,
+     "text": "After a kill: movement speed ⟦+18.8%⟧ for 3 s",
+     "heavy": "After a kill: movement speed ⟦+28.1%⟧ for 3 s"
+    },
+    {
+     "level": 3,
+     "text": "After a kill: movement speed ⟦+22.5%⟧ for 3 s",
+     "heavy": "After a kill: movement speed ⟦+33.8%⟧ for 3 s"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Focus",
+   "name": "Focus",
+   "theme": "Hunter",
+   "roles": [
+    "Huntsman"
+   ],
+   "cats": [
+    "Ranged",
+    "Quiver"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Feathers",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "After standing still for 2 s: draw and reload speed ⟦+8%⟧ until you move"
+    },
+    {
+     "level": 2,
+     "text": "After standing still for 2 s: draw and reload speed ⟦+10%⟧ until you move"
+    },
+    {
+     "level": 3,
+     "text": "After standing still for 2 s: draw and reload speed ⟦+12%⟧ until you move"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "HuntersMark",
+   "name": "Hunter's Mark",
+   "theme": "Hunter",
+   "roles": [
+    "Huntsman"
+   ],
+   "cats": [
+    "Ranged",
+    "Quiver"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Feathers",
+     10
+    ]
+   ],
+   "curve": "Fixed",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Your first hit on an unaware enemy marks it for 7 s: it takes ⟦+8%⟧ damage from you and your group (once every 10 s)"
+    },
+    {
+     "level": 2,
+     "text": "Your first hit on an unaware enemy marks it for 7 s: it takes ⟦+9.2%⟧ damage from you and your group (once every 10 s)"
+    },
+    {
+     "level": 3,
+     "text": "Your first hit on an unaware enemy marks it for 7 s: it takes ⟦+10.4%⟧ damage from you and your group (once every 10 s)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Salvage",
+   "name": "Salvage",
+   "theme": "Hunter",
+   "roles": [
+    "Huntsman"
+   ],
+   "cats": [
+    "Quiver"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "YggdrasilWood",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "⟦25%⟧ chance that a shot arrow or bolt drops back as a pickup where it lands"
+    },
+    {
+     "level": 2,
+     "text": "⟦31.3%⟧ chance that a shot arrow or bolt drops back as a pickup where it lands"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "SteadyBreath",
+   "name": "Steady Breath",
+   "theme": "Hunter",
+   "roles": [
+    "Huntsman"
+   ],
+   "cats": [
+    "Ranged"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Feathers",
+     10
+    ]
+   ],
+   "curve": "Fixed",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A perfect shot (released in the sweet spot) refunds ⟦50%⟧ of the stamina that draw cost"
+    },
+    {
+     "level": 2,
+     "text": "A perfect shot (released in the sweet spot) refunds ⟦57.5%⟧ of the stamina that draw cost"
+    },
+    {
+     "level": 3,
+     "text": "A perfect shot (released in the sweet spot) refunds ⟦65%⟧ of the stamina that draw cost"
+    }
+   ],
+   "notes": [
+    "Only on greatbows"
+   ]
+  },
+  {
+   "key": "Protector",
+   "name": "Protector",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual",
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "YggdrasilWood",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "25% chance per attack: your next block within 6 s gets ⟦+20%⟧ block power",
+     "heavy": "25% chance per attack: your next block within 6 s gets ⟦+30%⟧ block power"
+    },
+    {
+     "level": 2,
+     "text": "25% chance per attack: your next block within 6 s gets ⟦+25%⟧ block power",
+     "heavy": "25% chance per attack: your next block within 6 s gets ⟦+37.5%⟧ block power"
+    },
+    {
+     "level": 3,
+     "text": "25% chance per attack: your next block within 6 s gets ⟦+30%⟧ block power",
+     "heavy": "25% chance per attack: your next block within 6 s gets ⟦+45%⟧ block power"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Resolve",
+   "name": "Resolve",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "AskHide",
+     6
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Blocking costs ⟦15%⟧ less stamina"
+    },
+    {
+     "level": 2,
+     "text": "Blocking costs ⟦18.8%⟧ less stamina"
+    },
+    {
+     "level": 3,
+     "text": "Blocking costs ⟦22.5%⟧ less stamina"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Retaliation",
+   "name": "Retaliation",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Carapace",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "⟦15%⟧ of the damage you block is dealt back to the attacker as pierce, scaled by your armor: x the square root of (armor / blocked damage), at most x1.5 (once per 1 s per enemy)"
+    },
+    {
+     "level": 2,
+     "text": "⟦18.8%⟧ of the damage you block is dealt back to the attacker as pierce, scaled by your armor: x the square root of (armor / blocked damage), at most x1.5 (once per 1 s per enemy)"
+    },
+    {
+     "level": 3,
+     "text": "⟦22.5%⟧ of the damage you block is dealt back to the attacker as pierce, scaled by your armor: x the square root of (armor / blocked damage), at most x1.5 (once per 1 s per enemy)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Bulwark",
+   "name": "Bulwark",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackMetal",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Monsters deal ⟦-3%⟧ damage to you for every enemy within 5 m (4 max; all damage reduction together at most 25%)"
+    },
+    {
+     "level": 2,
+     "text": "Monsters deal ⟦-3.8%⟧ damage to you for every enemy within 5 m (4 max; all damage reduction together at most 25%)"
+    },
+    {
+     "level": 3,
+     "text": "Monsters deal ⟦-4.5%⟧ damage to you for every enemy within 5 m (4 max; all damage reduction together at most 25%)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Concussion",
+   "name": "Concussion",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackMarble",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A perfect block also staggers enemies within ⟦3 m⟧ (not bosses; every 10 s)"
+    },
+    {
+     "level": 2,
+     "text": "A perfect block also staggers enemies within ⟦3.8 m⟧ (not bosses; every 10 s)"
+    },
+    {
+     "level": 3,
+     "text": "A perfect block also staggers enemies within ⟦4.5 m⟧ (not bosses; every 10 s)"
+    }
+   ],
+   "notes": [
+    "Shields without parry (towers): a block after holding it 1 s counts as perfect (cooldown x1.5)"
+   ]
+  },
+  {
+   "key": "Intimidate",
+   "name": "Intimidate",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "OneHanded"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Mandible",
+     3
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Monsters deal ⟦-6%⟧ damage to you while this weapon is in hand"
+    },
+    {
+     "level": 2,
+     "text": "Monsters deal ⟦-7.5%⟧ damage to you while this weapon is in hand"
+    },
+    {
+     "level": 3,
+     "text": "Monsters deal ⟦-9%⟧ damage to you while this weapon is in hand"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Guardian",
+   "name": "Guardian",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Grausten",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "15% of the damage monsters deal to a teammate within ⟦6 m⟧ is moved to you"
+    },
+    {
+     "level": 2,
+     "text": "15% of the damage monsters deal to a teammate within ⟦8 m⟧ is moved to you"
+    },
+    {
+     "level": 3,
+     "text": "15% of the damage monsters deal to a teammate within ⟦9 m⟧ is moved to you"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Provoke",
+   "name": "Provoke",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "AskHide",
+     4
+    ]
+   ],
+   "curve": "Fixed",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A perfect block taunts enemies within 8 m for ⟦5 s⟧ (not bosses; every 30 s)"
+    },
+    {
+     "level": 2,
+     "text": "A perfect block taunts enemies within 8 m for ⟦5.8 s⟧ (not bosses; every 30 s)"
+    },
+    {
+     "level": 3,
+     "text": "A perfect block taunts enemies within 8 m for ⟦6.5 s⟧ (not bosses; every 30 s)"
+    }
+   ],
+   "notes": [
+    "Shields without parry (towers): a block after holding it 1 s counts as perfect (cooldown x1.5)"
+   ]
+  },
+  {
+   "key": "Rally",
+   "name": "Rally",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "FlametalNew",
+     4
+    ]
+   ],
+   "curve": "Fixed",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A perfect block heals you and allies within 6 m for ⟦6%⟧ of their max health (every 20 s)"
+    },
+    {
+     "level": 2,
+     "text": "A perfect block heals you and allies within 6 m for ⟦6.9%⟧ of their max health (every 20 s)"
+    },
+    {
+     "level": 3,
+     "text": "A perfect block heals you and allies within 6 m for ⟦7.8%⟧ of their max health (every 20 s)"
+    }
+   ],
+   "notes": [
+    "Shields without parry (towers): a block after holding it 1 s counts as perfect (cooldown x1.5)"
+   ]
+  },
+  {
+   "key": "SecondWind",
+   "name": "Second Wind",
+   "theme": "Guardian",
+   "roles": [
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield",
+    "Quiver",
+    "Belt"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Sap",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Once every 600 s: a hit that would drop you below 15% health is negated and heals you for ⟦15%⟧"
+    },
+    {
+     "level": 2,
+     "text": "Once every 600 s: a hit that would drop you below 15% health is negated and heals you for ⟦18.8%⟧"
+    },
+    {
+     "level": 3,
+     "text": "Once every 600 s: a hit that would drop you below 15% health is negated and heals you for ⟦22.5%⟧"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "BloodDebt",
+   "name": "Blood Debt",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn"
+   ],
+   "cats": [
+    "Shield",
+    "Quiver",
+    "Belt"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "GiantBloodSack",
+     4
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "⟦25%⟧ of the damage monsters deal to you becomes debt (max 15% of your max health); hit an enemy within 4 s to heal it back over 6 s (every 8 s)"
+    },
+    {
+     "level": 2,
+     "text": "⟦31.3%⟧ of the damage monsters deal to you becomes debt (max 15% of your max health); hit an enemy within 4 s to heal it back over 6 s (every 8 s)"
+    },
+    {
+     "level": 3,
+     "text": "⟦37.5%⟧ of the damage monsters deal to you becomes debt (max 15% of your max health); hit an enemy within 4 s to heal it back over 6 s (every 8 s)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Spite",
+   "name": "Spite",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn"
+   ],
+   "cats": [
+    "Shield",
+    "Quiver",
+    "Belt"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Bilebag",
+     3
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "After a monster hits you, your next hit within 3 s deals ⟦20%⟧ of that damage extra (at most +⟦10%⟧ of your hit; every 6 s)"
+    },
+    {
+     "level": 2,
+     "text": "After a monster hits you, your next hit within 3 s deals ⟦24%⟧ of that damage extra (at most +⟦12%⟧ of your hit; every 6 s)"
+    },
+    {
+     "level": 3,
+     "text": "After a monster hits you, your next hit within 3 s deals ⟦28%⟧ of that damage extra (at most +⟦14%⟧ of your hit; every 6 s)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Overflow",
+   "name": "Overflow",
+   "theme": "Arcane",
+   "roles": [
+    "Skirmisher"
+   ],
+   "cats": [
+    "Belt"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     16
+    ],
+    [
+     "Softtissue",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Stamina regeneration ⟦+15%⟧ while your eitr is full"
+    },
+    {
+     "level": 2,
+     "text": "Stamina regeneration ⟦+18.8%⟧ while your eitr is full"
+    },
+    {
+     "level": 3,
+     "text": "Stamina regeneration ⟦+22.5%⟧ while your eitr is full"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "EitrSiphon",
+   "name": "Eitr Siphon",
+   "theme": "Arcane",
+   "roles": [
+    "Galdrblade",
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     16
+    ],
+    [
+     "Softtissue",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Your weapon hits on enemies restore ⟦0.7%⟧ of your max eitr (at most every 0.5 s)"
+    },
+    {
+     "level": 2,
+     "text": "Your weapon hits on enemies restore ⟦0.8%⟧ of your max eitr (at most every 0.5 s)"
+    },
+    {
+     "level": 3,
+     "text": "Your weapon hits on enemies restore ⟦1%⟧ of your max eitr (at most every 0.5 s)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Runeward",
+   "name": "Runeward",
+   "theme": "Arcane",
+   "roles": [
+    "Galdrblade",
+    "Shieldwall"
+   ],
+   "cats": [
+    "Shield"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     16
+    ],
+    [
+     "Wisp",
+     4
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Above 30% eitr, ⟦30%⟧ of the stamina a block costs is paid with eitr instead (1 eitr per 2 stamina)"
+    },
+    {
+     "level": 2,
+     "text": "Above 30% eitr, ⟦37.5%⟧ of the stamina a block costs is paid with eitr instead (1 eitr per 2 stamina)"
+    },
+    {
+     "level": 3,
+     "text": "Above 30% eitr, ⟦45%⟧ of the stamina a block costs is paid with eitr instead (1 eitr per 2 stamina)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "EitrFlow",
+   "name": "Eitr Flow",
+   "theme": "Arcane",
+   "roles": [
+    "Huntsman",
+    "Galdrblade"
+   ],
+   "cats": [
+    "Quiver"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     16
+    ],
+    [
+     "Softtissue",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Eitr regeneration ⟦+10%⟧ while a bow or crossbow is in hand"
+    },
+    {
+     "level": 2,
+     "text": "Eitr regeneration ⟦+12.5%⟧ while a bow or crossbow is in hand"
+    },
+    {
+     "level": 3,
+     "text": "Eitr regeneration ⟦+15%⟧ while a bow or crossbow is in hand"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Rhythm",
+   "name": "Rhythm",
+   "theme": "Craft",
+   "roles": [
+    "Runesmith"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "YggdrasilWood",
+     6
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Every 3rd hit in a row (at most 2 s apart) deals ⟦+10%⟧ damage (then 5 s cooldown)",
+     "heavy": "Every 3rd hit in a row (at most 2 s apart) deals ⟦+15%⟧ damage (then 5 s cooldown)"
+    },
+    {
+     "level": 2,
+     "text": "Every 3rd hit in a row (at most 2 s apart) deals ⟦+12%⟧ damage (then 5 s cooldown)",
+     "heavy": "Every 3rd hit in a row (at most 2 s apart) deals ⟦+18%⟧ damage (then 5 s cooldown)"
+    },
+    {
+     "level": 3,
+     "text": "Every 3rd hit in a row (at most 2 s apart) deals ⟦+14%⟧ damage (then 5 s cooldown)",
+     "heavy": "Every 3rd hit in a row (at most 2 s apart) deals ⟦+21%⟧ damage (then 5 s cooldown)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "HotStreak",
+   "name": "Hot Streak",
+   "theme": "Craft",
+   "roles": [
+    "Skirmisher"
+   ],
+   "cats": [
+    "Belt"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Bloodbag",
+     6
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Throw hits within 3 s of each other stack ⟦+3%⟧ damage (3 max)"
+    },
+    {
+     "level": 2,
+     "text": "Throw hits within 3 s of each other stack ⟦+3.6%⟧ damage (3 max)"
+    },
+    {
+     "level": 3,
+     "text": "Throw hits within 3 s of each other stack ⟦+4.2%⟧ damage (3 max)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Retrieval",
+   "name": "Retrieval",
+   "theme": "Hunter",
+   "roles": [
+    "Skirmisher"
+   ],
+   "cats": [
+    "Belt"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "YggdrasilWood",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "⟦25%⟧ chance that a throw costs your weapon no durability"
+    },
+    {
+     "level": 2,
+     "text": "⟦31.3%⟧ chance that a throw costs your weapon no durability"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Quickdraw",
+   "name": "Quickdraw",
+   "theme": "Hunter",
+   "roles": [
+    "Skirmisher"
+   ],
+   "cats": [
+    "Belt"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Wisp",
+     3
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Charged throws reach full charge ⟦+12%⟧ faster"
+    },
+    {
+     "level": 2,
+     "text": "Charged throws reach full charge ⟦+15%⟧ faster"
+    },
+    {
+     "level": 3,
+     "text": "Charged throws reach full charge ⟦+18%⟧ faster"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Tireless",
+   "name": "Tireless",
+   "theme": "Craft",
+   "roles": [
+    "Shieldwall",
+    "Skirmisher"
+   ],
+   "cats": [
+    "Shield",
+    "Quiver",
+    "Belt"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "MushroomJotunPuffs",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Stamina starts regenerating ⟦30%⟧ sooner after you use it"
+    },
+    {
+     "level": 2,
+     "text": "Stamina starts regenerating ⟦37.5%⟧ sooner after you use it"
+    },
+    {
+     "level": 3,
+     "text": "Stamina starts regenerating ⟦45%⟧ sooner after you use it"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "HonedFocus",
+   "name": "Honed Focus",
+   "theme": "Craft",
+   "roles": [
+    "Runesmith",
+    "Berserkr"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Iron",
+     10
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Each hit on the same enemy adds a Focus stack (4 max): ⟦+1.5%⟧ damage per stack. Hitting another enemy or 3 s without a hit resets it",
+     "heavy": "Each hit on the same enemy adds a Focus stack (4 max): ⟦+2.3%⟧ damage per stack. Hitting another enemy or 3 s without a hit resets it"
+    },
+    {
+     "level": 2,
+     "text": "Each hit on the same enemy adds a Focus stack (4 max): ⟦+1.8%⟧ damage per stack. Hitting another enemy or 3 s without a hit resets it",
+     "heavy": "Each hit on the same enemy adds a Focus stack (4 max): ⟦+2.7%⟧ damage per stack. Hitting another enemy or 3 s without a hit resets it"
+    },
+    {
+     "level": 3,
+     "text": "Each hit on the same enemy adds a Focus stack (4 max): ⟦+2.1%⟧ damage per stack. Hitting another enemy or 3 s without a hit resets it",
+     "heavy": "Each hit on the same enemy adds a Focus stack (4 max): ⟦+3.2%⟧ damage per stack. Hitting another enemy or 3 s without a hit resets it"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Tempered",
+   "name": "Tempered",
+   "theme": "Craft",
+   "roles": [
+    "Runesmith"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackMarble",
+     8
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "⟦+4%⟧ damage while this weapon is above 90% durability",
+     "heavy": "⟦+6%⟧ damage while this weapon is above 90% durability"
+    },
+    {
+     "level": 2,
+     "text": "⟦+4.8%⟧ damage while this weapon is above 90% durability",
+     "heavy": "⟦+7.2%⟧ damage while this weapon is above 90% durability"
+    },
+    {
+     "level": 3,
+     "text": "⟦+5.6%⟧ damage while this weapon is above 90% durability",
+     "heavy": "⟦+8.4%⟧ damage while this weapon is above 90% durability"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Scavenger",
+   "name": "Scavenger",
+   "theme": "Craft",
+   "roles": [
+    "Runesmith"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual",
+    "Ranged",
+    "Throwing"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Carapace",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "⟦8%⟧ chance that a kill drops one extra material from that creature (no trophies, not bosses)",
+     "heavy": "⟦12%⟧ chance that a kill drops one extra material from that creature (no trophies, not bosses)"
+    },
+    {
+     "level": 2,
+     "text": "⟦10%⟧ chance that a kill drops one extra material from that creature (no trophies, not bosses)",
+     "heavy": "⟦15%⟧ chance that a kill drops one extra material from that creature (no trophies, not bosses)"
+    },
+    {
+     "level": 3,
+     "text": "⟦12%⟧ chance that a kill drops one extra material from that creature (no trophies, not bosses)",
+     "heavy": "⟦18%⟧ chance that a kill drops one extra material from that creature (no trophies, not bosses)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "MendingKill",
+   "name": "Mending Kill",
+   "theme": "Craft",
+   "roles": [
+    "Runesmith"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual",
+    "Ranged",
+    "Throwing"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Sap",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A kill restores ⟦3%⟧ of this weapon's max durability",
+     "heavy": "A kill restores ⟦4.5%⟧ of this weapon's max durability"
+    },
+    {
+     "level": 2,
+     "text": "A kill restores ⟦3.8%⟧ of this weapon's max durability",
+     "heavy": "A kill restores ⟦5.6%⟧ of this weapon's max durability"
+    },
+    {
+     "level": 3,
+     "text": "A kill restores ⟦4.5%⟧ of this weapon's max durability",
+     "heavy": "A kill restores ⟦6.8%⟧ of this weapon's max durability"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "QuickHands",
+   "name": "Quick Hands",
+   "theme": "Craft",
+   "roles": [
+    "Runesmith"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Wisp",
+     3
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Your first attack within 3 s of drawing this weapon is ⟦+20%⟧ faster",
+     "heavy": "Your first attack within 3 s of drawing this weapon is ⟦+30%⟧ faster"
+    },
+    {
+     "level": 2,
+     "text": "Your first attack within 3 s of drawing this weapon is ⟦+25%⟧ faster",
+     "heavy": "Your first attack within 3 s of drawing this weapon is ⟦+37.5%⟧ faster"
+    },
+    {
+     "level": 3,
+     "text": "Your first attack within 3 s of drawing this weapon is ⟦+30%⟧ faster",
+     "heavy": "Your first attack within 3 s of drawing this weapon is ⟦+45%⟧ faster"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "FletchersKit",
+   "name": "Fletcher's Kit",
+   "theme": "Craft",
+   "roles": [
+    "Huntsman",
+    "Runesmith"
+   ],
+   "cats": [
+    "Quiver"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "LinenThread",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Every ⟦20 s⟧ the quiver adds 1 arrow or bolt to a stack already in its pouch"
+    },
+    {
+     "level": 2,
+     "text": "Every ⟦16 s⟧ the quiver adds 1 arrow or bolt to a stack already in its pouch"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Wayfinder",
+   "name": "Wayfinder",
+   "theme": "Hunter",
+   "roles": [
+    "Wayfarer"
+   ],
+   "cats": [
+    "Utility"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Feathers",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Your minimap reveals the land in a ⟦+30%⟧ larger radius"
+    },
+    {
+     "level": 2,
+     "text": "Your minimap reveals the land in a ⟦+37.5%⟧ larger radius"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "FairWind",
+   "name": "Fair Wind",
+   "theme": "Hunter",
+   "roles": [
+    "Wayfarer"
+   ],
+   "cats": [
+    "Utility"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "JuteBlue",
+     6
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "While you steer a ship, its sail pulls ⟦+10%⟧ harder"
+    },
+    {
+     "level": 2,
+     "text": "While you steer a ship, its sail pulls ⟦+12.5%⟧ harder"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Hearthbound",
+   "name": "Hearthbound",
+   "theme": "Guardian",
+   "roles": [
+    "Wayfarer"
+   ],
+   "cats": [
+    "Utility"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "RoyalJelly",
+     6
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Rested lasts ⟦+20%⟧ longer"
+    },
+    {
+     "level": 2,
+     "text": "Rested lasts ⟦+25%⟧ longer"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Ashwalker",
+   "name": "Ashwalker",
+   "theme": "Guardian",
+   "roles": [
+    "Wayfarer"
+   ],
+   "cats": [
+    "Utility"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Grausten",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Burning on you lasts ⟦-30%⟧ shorter and deals that much less damage"
+    },
+    {
+     "level": 2,
+     "text": "Burning on you lasts ⟦-37.5%⟧ shorter and deals that much less damage"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "LongArm",
+   "name": "Long Arm",
+   "theme": "Craft",
+   "roles": [
+    "Wayfarer"
+   ],
+   "cats": [
+    "Hammer"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "YggdrasilWood",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "You can build and repair ⟦+2 m⟧ farther away with this hammer"
+    },
+    {
+     "level": 2,
+     "text": "You can build and repair ⟦+2.5 m⟧ farther away with this hammer"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "TirelessBuilder",
+   "name": "Tireless Builder",
+   "theme": "Craft",
+   "roles": [
+    "Wayfarer"
+   ],
+   "cats": [
+    "Hammer"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Sap",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Building, repairing and removing cost ⟦-40%⟧ stamina with this hammer"
+    },
+    {
+     "level": 2,
+     "text": "Building, repairing and removing cost ⟦-50%⟧ stamina with this hammer"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "MasonsSweep",
+   "name": "Mason's Sweep",
+   "theme": "Craft",
+   "roles": [
+    "Wayfarer"
+   ],
+   "cats": [
+    "Hammer"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackMarble",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A repair also mends every damaged piece you may repair within ⟦4 m⟧"
+    },
+    {
+     "level": 2,
+     "text": "A repair also mends every damaged piece you may repair within ⟦5 m⟧"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Hardened",
+   "name": "Hardened",
+   "theme": "Craft",
+   "roles": [
+    "Wayfarer"
+   ],
+   "cats": [
+    "Hammer"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackMetal",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Pieces you place with this hammer get ⟦+15%⟧ health (permanent on that piece)"
+    },
+    {
+     "level": 2,
+     "text": "Pieces you place with this hammer get ⟦+18.8%⟧ health (permanent on that piece)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "LoadBearer",
+   "name": "Load Bearer",
+   "theme": "Craft",
+   "roles": [
+    "Wayfarer"
+   ],
+   "cats": [
+    "Hammer"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "YggdrasilWood",
+     10
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Pieces you place with this hammer carry ⟦+10%⟧ more support (permanent on that piece)"
+    },
+    {
+     "level": 2,
+     "text": "Pieces you place with this hammer carry ⟦+12.5%⟧ more support (permanent on that piece)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "LongReach",
+   "name": "Long Reach",
+   "theme": "Hunter",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Feathers",
+     10
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Hits at 80% or more of this weapon's reach deal ⟦+8%⟧ damage",
+     "heavy": "Hits at 80% or more of this weapon's reach deal ⟦+12%⟧ damage"
+    },
+    {
+     "level": 2,
+     "text": "Hits at 80% or more of this weapon's reach deal ⟦+9.6%⟧ damage",
+     "heavy": "Hits at 80% or more of this weapon's reach deal ⟦+14.4%⟧ damage"
+    },
+    {
+     "level": 3,
+     "text": "Hits at 80% or more of this weapon's reach deal ⟦+11.2%⟧ damage",
+     "heavy": "Hits at 80% or more of this weapon's reach deal ⟦+16.8%⟧ damage"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Chamber",
+   "name": "Chamber",
+   "theme": "Hunter",
+   "roles": [
+    "Huntsman"
+   ],
+   "cats": [
+    "Ranged"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "MechanicalSpring",
+     2
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A hit makes your next reload within 5 s ⟦+12%⟧ faster (all reload bonuses together at most 35%)"
+    },
+    {
+     "level": 2,
+     "text": "A hit makes your next reload within 5 s ⟦+15%⟧ faster (all reload bonuses together at most 35%)"
+    },
+    {
+     "level": 3,
+     "text": "A hit makes your next reload within 5 s ⟦+18%⟧ faster (all reload bonuses together at most 35%)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Shatter",
+   "name": "Shatter",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "FreezeGland",
+     4
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A hit on a frozen or chilled enemy shatters the ice: ⟦25%⟧ of the hit as extra blunt damage and the frost is gone (once per freeze)",
+     "heavy": "A hit on a frozen or chilled enemy shatters the ice: ⟦37.5%⟧ of the hit as extra blunt damage and the frost is gone (once per freeze)"
+    },
+    {
+     "level": 2,
+     "text": "A hit on a frozen or chilled enemy shatters the ice: ⟦30%⟧ of the hit as extra blunt damage and the frost is gone (once per freeze)",
+     "heavy": "A hit on a frozen or chilled enemy shatters the ice: ⟦45%⟧ of the hit as extra blunt damage and the frost is gone (once per freeze)"
+    },
+    {
+     "level": 3,
+     "text": "A hit on a frozen or chilled enemy shatters the ice: ⟦35%⟧ of the hit as extra blunt damage and the frost is gone (once per freeze)",
+     "heavy": "A hit on a frozen or chilled enemy shatters the ice: ⟦52.5%⟧ of the hit as extra blunt damage and the frost is gone (once per freeze)"
+    }
+   ],
+   "notes": [
+    "Only on blunt weapons"
+   ]
+  },
+  {
+   "key": "Kindle",
+   "name": "Kindle",
+   "theme": "Arcane",
+   "roles": [
+    "Seidr",
+    "Galdrblade"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual",
+    "Staff"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "SurtlingCore",
+     2
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A hit on a burning enemy spreads the fire to one enemy within 3 m at ⟦50%⟧ strength (spread fire does not spread again; every 3 s per enemy)",
+     "heavy": "A hit on a burning enemy spreads the fire to one enemy within 3 m at ⟦75%⟧ strength (spread fire does not spread again; every 3 s per enemy)"
+    },
+    {
+     "level": 2,
+     "text": "A hit on a burning enemy spreads the fire to one enemy within 3 m at ⟦60%⟧ strength (spread fire does not spread again; every 3 s per enemy)",
+     "heavy": "A hit on a burning enemy spreads the fire to one enemy within 3 m at ⟦90%⟧ strength (spread fire does not spread again; every 3 s per enemy)"
+    },
+    {
+     "level": 3,
+     "text": "A hit on a burning enemy spreads the fire to one enemy within 3 m at ⟦70%⟧ strength (spread fire does not spread again; every 3 s per enemy)",
+     "heavy": "A hit on a burning enemy spreads the fire to one enemy within 3 m at ⟦100%⟧ strength (spread fire does not spread again; every 3 s per enemy)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "BloodWard",
+   "name": "Blood Ward",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn",
+    "Völva"
+   ],
+   "cats": [
+    "Shield",
+    "Quiver",
+    "Belt"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "GiantBloodSack",
+     4
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Healing above your max health becomes a barrier of up to ⟦10%⟧ of your max health for 8 s (food regeneration does not count)"
+    },
+    {
+     "level": 2,
+     "text": "Healing above your max health becomes a barrier of up to ⟦12.5%⟧ of your max health for 8 s (food regeneration does not count)"
+    },
+    {
+     "level": 3,
+     "text": "Healing above your max health becomes a barrier of up to ⟦15%⟧ of your max health for 8 s (food regeneration does not count)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "EitrFletching",
+   "name": "Eitr Fletching",
+   "theme": "Arcane",
+   "roles": [
+    "Huntsman",
+    "Galdrblade"
+   ],
+   "cats": [
+    "Quiver"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Softtissue",
+     8
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": false,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Above 50% eitr every shot costs 3 eitr: projectiles fly ⟦+20%⟧ faster and deal ⟦+5%⟧ damage (not with Arrow Rain or a locked crossbow sight)"
+    },
+    {
+     "level": 2,
+     "text": "Above 50% eitr every shot costs 3 eitr: projectiles fly ⟦+24%⟧ faster and deal ⟦+6%⟧ damage (not with Arrow Rain or a locked crossbow sight)"
+    },
+    {
+     "level": 3,
+     "text": "Above 50% eitr every shot costs 3 eitr: projectiles fly ⟦+28%⟧ faster and deal ⟦+7%⟧ damage (not with Arrow Rain or a locked crossbow sight)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Recall",
+   "name": "Recall",
+   "theme": "Arcane",
+   "roles": [
+    "Skirmisher",
+    "Galdrblade"
+   ],
+   "cats": [
+    "OneHanded",
+    "TwoHanded",
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Wisp",
+     3
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": false,
+   "heavy": true,
+   "levels": [
+    {
+     "level": 1,
+     "text": "After a throw, press secondary again (or wait 4 s) to call the weapon back to your hand for 5 eitr (up to ⟦40 m⟧)",
+     "heavy": "After a throw, press secondary again (or wait 4 s) to call the weapon back to your hand for 5 eitr (up to ⟦60 m⟧)"
+    },
+    {
+     "level": 2,
+     "text": "After a throw, press secondary again (or wait 4 s) to call the weapon back to your hand for 5 eitr (up to ⟦50 m⟧)",
+     "heavy": "After a throw, press secondary again (or wait 4 s) to call the weapon back to your hand for 5 eitr (up to ⟦75 m⟧)"
+    },
+    {
+     "level": 3,
+     "text": "After a throw, press secondary again (or wait 4 s) to call the weapon back to your hand for 5 eitr (up to ⟦60 m⟧)",
+     "heavy": "After a throw, press secondary again (or wait 4 s) to call the weapon back to your hand for 5 eitr (up to ⟦90 m⟧)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "EitrEcho",
+   "name": "Eitr Echo",
+   "theme": "Arcane",
+   "roles": [
+    "Seidr"
+   ],
+   "cats": [
+    "Staff"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     16
+    ],
+    [
+     "DvergrNeedle",
+     4
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "⟦15%⟧ chance that the eitr this staff would use is not spent"
+    },
+    {
+     "level": 2,
+     "text": "⟦18.8%⟧ chance that the eitr this staff would use is not spent"
+    },
+    {
+     "level": 3,
+     "text": "⟦22.5%⟧ chance that the eitr this staff would use is not spent"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Overcharge",
+   "name": "Overcharge",
+   "theme": "Arcane",
+   "roles": [
+    "Seidr"
+   ],
+   "cats": [
+    "Staff"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     16
+    ],
+    [
+     "MorgenHeart",
+     1
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Spells cast while your eitr is above 80% deal ⟦+8%⟧ damage"
+    },
+    {
+     "level": 2,
+     "text": "Spells cast while your eitr is above 80% deal ⟦+9.6%⟧ damage"
+    },
+    {
+     "level": 3,
+     "text": "Spells cast while your eitr is above 80% deal ⟦+11.2%⟧ damage"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Splinter",
+   "name": "Splinter",
+   "theme": "Arcane",
+   "roles": [
+    "Seidr"
+   ],
+   "cats": [
+    "Staff"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackCore",
+     1
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "A spell hit jumps to the nearest other enemy within 3 m for ⟦20%⟧ of its damage (up to 3 jumps per cast)"
+    },
+    {
+     "level": 2,
+     "text": "A spell hit jumps to the nearest other enemy within 3 m for ⟦24%⟧ of its damage (up to 3 jumps per cast)"
+    },
+    {
+     "level": 3,
+     "text": "A spell hit jumps to the nearest other enemy within 3 m for ⟦28%⟧ of its damage (up to 3 jumps per cast)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "BloodPact",
+   "name": "Blood Pact",
+   "theme": "Blood",
+   "roles": [
+    "Völva"
+   ],
+   "cats": [
+    "Staff"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "GiantBloodSack",
+     5
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "While this staff is in your inventory, your summons take ⟦13%⟧ less damage and deal ⟦+10%⟧ damage"
+    },
+    {
+     "level": 2,
+     "text": "While this staff is in your inventory, your summons take ⟦15.8%⟧ less damage and deal ⟦+12.5%⟧ damage"
+    },
+    {
+     "level": 3,
+     "text": "While this staff is in your inventory, your summons take ⟦18.4%⟧ less damage and deal ⟦+15%⟧ damage"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Lifebond",
+   "name": "Lifebond",
+   "theme": "Blood",
+   "roles": [
+    "Völva"
+   ],
+   "cats": [
+    "Staff"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Bloodbag",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "While this staff is in your inventory, ⟦5%⟧ of the damage your summons deal heals you over 6 s"
+    },
+    {
+     "level": 2,
+     "text": "While this staff is in your inventory, ⟦6.3%⟧ of the damage your summons deal heals you over 6 s"
+    },
+    {
+     "level": 3,
+     "text": "While this staff is in your inventory, ⟦7.5%⟧ of the damage your summons deal heals you over 6 s"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "SanguineWard",
+   "name": "Sanguine Ward",
+   "theme": "Blood",
+   "roles": [
+    "Völva"
+   ],
+   "cats": [
+    "Staff"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "RoyalJelly",
+     6
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Barriers from this staff are ⟦+20%⟧ stronger, also on your allies"
+    },
+    {
+     "level": 2,
+     "text": "Barriers from this staff are ⟦+25%⟧ stronger, also on your allies"
+    },
+    {
+     "level": 3,
+     "text": "Barriers from this staff are ⟦+30%⟧ stronger, also on your allies"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Twinstrike",
+   "name": "Twinstrike",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Mandible",
+     4
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "30% chance on a hit to deal ⟦+12%⟧ damage"
+    },
+    {
+     "level": 2,
+     "text": "30% chance on a hit to deal ⟦+14.4%⟧ damage"
+    },
+    {
+     "level": 3,
+     "text": "30% chance on a hit to deal ⟦+16.8%⟧ damage"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Momentum",
+   "name": "Momentum",
+   "theme": "Hunter",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "CelestialFeather",
+     2
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Each hit within 2 s of the last: ⟦+2%⟧ movement speed and ⟦+1%⟧ attack speed per stack (5 max)"
+    },
+    {
+     "level": 2,
+     "text": "Each hit within 2 s of the last: ⟦+2.5%⟧ movement speed and ⟦+1.3%⟧ attack speed per stack (5 max)"
+    },
+    {
+     "level": 3,
+     "text": "Each hit within 2 s of the last: ⟦+3%⟧ movement speed and ⟦+1.5%⟧ attack speed per stack (5 max)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Flurry",
+   "name": "Flurry",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "MorgenSinew",
+     3
+    ]
+   ],
+   "curve": "Fixed",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "After a dodge roll your next 3 attacks within 4 s are ⟦+15%⟧ faster"
+    },
+    {
+     "level": 2,
+     "text": "After a dodge roll your next 3 attacks within 4 s are ⟦+17.3%⟧ faster"
+    },
+    {
+     "level": 3,
+     "text": "After a dodge roll your next 3 attacks within 4 s are ⟦+19.5%⟧ faster"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Riposte",
+   "name": "Riposte",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "CelestialFeather",
+     2
+    ]
+   ],
+   "curve": "Fixed",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "After a perfect block your next hit within 3 s deals ⟦+15%⟧ damage (every 6 s)"
+    },
+    {
+     "level": 2,
+     "text": "After a perfect block your next hit within 3 s deals ⟦+17.3%⟧ damage (every 6 s)"
+    },
+    {
+     "level": 3,
+     "text": "After a perfect block your next hit within 3 s deals ⟦+19.5%⟧ damage (every 6 s)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Hemorrhage",
+   "name": "Hemorrhage",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn"
+   ],
+   "cats": [
+    "Dual"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Mandible",
+     4
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Each hit adds a Wound to the target (5 max, gone after 4 s without a hit); at 5 Wounds it bleeds for ⟦25%⟧ of that hit over 4 s and the Wounds reset"
+    },
+    {
+     "level": 2,
+     "text": "Each hit adds a Wound to the target (5 max, gone after 4 s without a hit); at 5 Wounds it bleeds for ⟦30%⟧ of that hit over 4 s and the Wounds reset"
+    },
+    {
+     "level": 3,
+     "text": "Each hit adds a Wound to the target (5 max, gone after 4 s without a hit); at 5 Wounds it bleeds for ⟦35%⟧ of that hit over 4 s and the Wounds reset"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Bloodletter",
+   "name": "Bloodletter",
+   "theme": "Blood",
+   "roles": [
+    "Bloodsworn"
+   ],
+   "cats": [
+    "TwoHanded"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "GiantBloodSack",
+     5
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Each enemy hit by the same attack heals you for ⟦1%⟧ of your max health over 6 s (up to 3 enemies per attack)"
+    },
+    {
+     "level": 2,
+     "text": "Each enemy hit by the same attack heals you for ⟦1.3%⟧ of your max health over 6 s (up to 3 enemies per attack)"
+    },
+    {
+     "level": 3,
+     "text": "Each enemy hit by the same attack heals you for ⟦1.5%⟧ of your max health over 6 s (up to 3 enemies per attack)"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Cleave",
+   "name": "Cleave",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "TwoHanded"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "Grausten",
+     20
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Every extra target hit by the same attack takes ⟦+12%⟧ damage"
+    },
+    {
+     "level": 2,
+     "text": "Every extra target hit by the same attack takes ⟦+14.4%⟧ damage"
+    },
+    {
+     "level": 3,
+     "text": "Every extra target hit by the same attack takes ⟦+16.8%⟧ damage"
+    }
+   ],
+   "notes": [
+    "Only on slash weapons"
+   ]
+  },
+  {
+   "key": "Aftershock",
+   "name": "Aftershock",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "TwoHanded"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "CharcoalResin",
+     10
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Hits on a staggered target splash ⟦12%⟧ of the damage to other enemies within 2.5 m"
+    },
+    {
+     "level": 2,
+     "text": "Hits on a staggered target splash ⟦14.4%⟧ of the damage to other enemies within 2.5 m"
+    },
+    {
+     "level": 3,
+     "text": "Hits on a staggered target splash ⟦16.8%⟧ of the damage to other enemies within 2.5 m"
+    }
+   ],
+   "notes": [
+    "Only on blunt weapons"
+   ]
+  },
+  {
+   "key": "Unstoppable",
+   "name": "Unstoppable",
+   "theme": "Fury",
+   "roles": [
+    "Berserkr"
+   ],
+   "cats": [
+    "TwoHanded"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "ScaleHide",
+     6
+    ]
+   ],
+   "curve": "Damage",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "You take ⟦-15%⟧ damage while attacking with this weapon"
+    },
+    {
+     "level": 2,
+     "text": "You take ⟦-18%⟧ damage while attacking with this weapon"
+    },
+    {
+     "level": 3,
+     "text": "You take ⟦-21%⟧ damage while attacking with this weapon"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "key": "Counterweight",
+   "name": "Counterweight",
+   "theme": "Craft",
+   "roles": [
+    "Berserkr",
+    "Runesmith"
+   ],
+   "cats": [
+    "TwoHanded"
+   ],
+   "cost": [
+    [
+     "Eitr",
+     10
+    ],
+    [
+     "BlackMetal",
+     8
+    ]
+   ],
+   "curve": "Utility",
+   "noclass": true,
+   "heavy": false,
+   "levels": [
+    {
+     "level": 1,
+     "text": "Secondary attacks cost ⟦-20%⟧ stamina while your stamina is above 50%"
+    },
+    {
+     "level": 2,
+     "text": "Secondary attacks cost ⟦-25%⟧ stamina while your stamina is above 50%"
+    },
+    {
+     "level": 3,
+     "text": "Secondary attacks cost ⟦-30%⟧ stamina while your stamina is above 50%"
+    }
+   ],
+   "notes": []
+  }
+ ],
+ "gems": [
+  {
+   "id": "G:Blood",
+   "path": "Blood",
+   "path2": null,
+   "item": "GemstoneRed",
+   "name": "Bloodstone",
+   "effect": "Blood Sacrifice",
+   "hex": "#d0143f",
+   "lines": [
+    "Blood Sacrifice: each attack costs 3% of your current health (never kills).",
+    "+12% physical damage, +0.2% damage per missing health point (max +30%)."
+   ]
+  },
+  {
+   "id": "G:Storm",
+   "path": "Arcane",
+   "path2": null,
+   "item": "GemstoneBlue",
+   "name": "Iolite",
+   "effect": "Storm",
+   "hex": "#4fa3ff",
+   "lines": [
+    "Storm: +10 lightning damage.",
+    "18% chance (13% secondary) to release chain lightning (55 lightning)."
+   ]
+  },
+  {
+   "id": "G:Roots",
+   "path": "Hunter",
+   "path2": null,
+   "item": "GemstoneGreen",
+   "name": "Jade",
+   "effect": "Entangling Roots",
+   "hex": "#5bd65b",
+   "lines": [
+    "Entangling Roots: +10 poison damage.",
+    "20% chance to root the target for 3 s (bosses are slowed by 50%), then 8 s immune."
+   ]
+  },
+  {
+   "id": "G:Ember",
+   "path": "Fury",
+   "path2": null,
+   "item": "Cinderstone_TW",
+   "name": "Cinderstone",
+   "effect": "Smoulder",
+   "hex": "#ff5a14",
+   "lines": [
+    "Smoulder: +10 fire damage.",
+    "Hits leave embers; 3 embers within 4 s ignite the target: a burst of fire (25% of the weapon's damage) that sets it burning. Once per 6 s per target."
+   ]
+  },
+  {
+   "id": "G:Aegis",
+   "path": "Guardian",
+   "path2": null,
+   "item": "Amber_TW",
+   "name": "Amber",
+   "effect": "Aegis",
+   "hex": "#ffc23a",
+   "lines": [
+    "Aegis: +10 spirit damage.",
+    "Each hit grants a barrier of 1% of your max health, stacking up to 8%, for 6 s."
+   ]
+  },
+  {
+   "id": "G:Mastery",
+   "path": "Craft",
+   "path2": null,
+   "item": "Moonstone_TW",
+   "name": "Moonstone",
+   "effect": "Masterwork",
+   "hex": "#cfe0ff",
+   "lines": [
+    "Masterwork: damage as if the weapon were 2 levels higher (also beyond the last level).",
+    "50% less durability loss when attacking."
+   ]
+  },
+  {
+   "id": "E:Thunderblood",
+   "path": "Arcane",
+   "path2": "Blood",
+   "item": "OrbThunderBlood",
+   "name": "Thunderblood",
+   "effect": "Thunderblood",
+   "hex": "#e0262e",
+   "lines": [
+    "Thunderblood essence (Arcane + Blood): +10 physical, +35 lightning, +0.2% damage per missing health point (max +30%).",
+    "18% chance (13% secondary) to release red chain lightning (55 lightning)."
+   ]
+  },
+  {
+   "id": "E:Frostfire",
+   "path": "Fury",
+   "path2": "Guardian",
+   "item": "OrbFrostFire",
+   "name": "Frostfire",
+   "effect": "Frostfire",
+   "hex": "#38c8f0",
+   "lines": [
+    "Frostfire essence (Fury + Guardian): physical x0.81, +12 fire and +88 frost."
+   ]
+  },
+  {
+   "id": "E:Venomblood",
+   "path": "Blood",
+   "path2": "Hunter",
+   "item": "EssenceVenomblood_TW",
+   "name": "Venomblood",
+   "effect": "Venomblood",
+   "hex": "#7fd12a",
+   "lines": [
+    "Venomblood essence (Blood + Hunter): +5 physical; each hit makes the target bleed for 30 (up to 3 bleeds at once)."
+   ]
+  },
+  {
+   "id": "E:Wildfire",
+   "path": "Fury",
+   "path2": "Hunter",
+   "item": "EssenceWildfire_TW",
+   "name": "Wildfire",
+   "effect": "Wildfire",
+   "hex": "#ffa21a",
+   "lines": [
+    "Wildfire essence (Fury + Hunter): +5 physical, +35 fire."
+   ]
+  },
+  {
+   "id": "E:Runesteel",
+   "path": "Arcane",
+   "path2": "Craft",
+   "item": "EssenceRunesteel_TW",
+   "name": "Runesteel",
+   "effect": "Runesteel",
+   "hex": "#9e73ff",
+   "lines": [
+    "Runesteel essence (Arcane + Craft): +25 Galdr damage, +25 max eitr while held.",
+    "Galdr is rune magic without an element: it ignores weaknesses, resistances and armor."
+   ]
+  },
+  {
+   "id": "E:Ironroot",
+   "path": "Guardian",
+   "path2": "Craft",
+   "item": "EssenceIronroot_TW",
+   "name": "Ironroot",
+   "effect": "Ironroot",
+   "hex": "#c46a28",
+   "lines": [
+    "Ironroot essence (Guardian + Craft): +40 blunt."
+   ]
+  }
+ ],
+ "gem_flametal": 4,
+ "essence_gold": 20,
+ "essence_gold_per_level": 10,
+ "resonance": {
+  "Blood": [
+   "kills heal you for 2% of your max health; Blood Sacrifice costs 2% instead of 3% health",
+   "kills heal you for 2.3% of your max health; Blood Sacrifice costs 2% instead of 3% health",
+   "kills heal you for 2.6% of your max health; Blood Sacrifice costs 2% instead of 3% health; Deep North III: gem effect x1.5; a kill bursts: enemies within 4 m bleed for 25% of your last hit over 4 s (4 s cooldown)"
+  ],
+  "Fury": [
+   "+3% damage",
+   "+3.45% damage",
+   "+3.9% damage; Deep North III: gem effect x1.5"
+  ],
+  "Guardian": [
+   "+8% block power while this weapon is held",
+   "+9.2% block power while this weapon is held",
+   "+10.4% block power while this weapon is held; Deep North III: gem effect x1.5"
+  ],
+  "Arcane": [
+   "+15% eitr regeneration; Iolite chain lightning chance +4%",
+   "+17.25% eitr regeneration; Iolite chain lightning chance +4.6%",
+   "+19.5% eitr regeneration; Iolite chain lightning chance +5.2%; Deep North III: gem effect x1.5; every 6th hit releases a lightning nova: 30% of the hit to other enemies within 4 m (8 s cooldown)"
+  ],
+  "Hunter": [
+   "+4% movement speed",
+   "+4.6% movement speed",
+   "+5.2% movement speed; Deep North III: gem effect x1.5; a kill grants Apex for 6 s: your next 3 hits +20% damage, arrows and bolts pierce one enemy, +15% movement speed"
+  ],
+  "Craft": [
+   "this weapon loses 25% less durability; Moonstone Masterwork +1 level",
+   "this weapon loses 28.75% less durability; Moonstone Masterwork +1 level",
+   "this weapon loses 32.5% less durability; Moonstone Masterwork +1 level; Deep North III: gem effect x1.5"
+  ]
+ },
+ "heavy_factor": 1.5
+}

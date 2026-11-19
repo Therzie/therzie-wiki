@@ -1,0 +1,48 @@
+name: Bone Twin Maces
+prefab: DualMaceBone_TW
+mod: warfare
+kind: weapon
+group: Dual maces
+skill: Clubs
+tier: Bone
+damage:
+  blunt: 31
+damage_max:
+  blunt: 49
+stats:
+  hands: Dual
+  block_armor: 12
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 36
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 2
+  materials:
+  - Bone Fragments
+  - Corewood
+  - Leather Scraps
+  amounts:
+  - 19
+  - 9
+  - 4
+  upgrade:
+  - Bone Fragments
+  - Leather Scraps
+  - Greydwarf Brute Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 2
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1102
+biome: Black Forest
+description: 'Two bone maces: a knobbed femur and a club of stacked vertebrae.'
+notes: ''

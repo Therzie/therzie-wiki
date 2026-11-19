@@ -1,0 +1,59 @@
+name: Silver Twin Axes
+prefab: DualAxeSilver_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Silver
+damage:
+  slash: 83
+  chop: 56
+  spirit: 20
+damage_max:
+  slash: 101
+  chop: 65
+stats:
+  hands: Dual
+  block_armor: 43
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 25
+  - 13
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Drake Trophy (level 3)
+  - Ulv Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 806
+biome: Mountains
+description: Two silver axes, one clawed and one bearded, on pine hafts.
+notes: ''

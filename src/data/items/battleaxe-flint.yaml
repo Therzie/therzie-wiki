@@ -1,22 +1,53 @@
-biome: Meadows
 name: Flint Battleaxe
 prefab: BattleaxeFlint_TW
 mod: warfare
 kind: weapon
-group: Battleaxe
+group: Battleaxes
 skill: Axes
 tier: Flint
 damage:
-  slash: 30
+  slash: 27
+  chop: 20
+damage_max:
+  slash: 45
+  chop: 27.5
+stats:
+  hands: Two handed
+  block_armor: 11
+  block_force: 70
+  knockback: 70
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 36
+  movement: -10%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 1
   materials:
-    - Flint
-    - Wood
-    - Leather Scraps
+  - Flint
+  - Wood
+  - Greydwarf Eye
+  - Leather Scraps
+  amounts:
+  - 15
+  - 7
+  - 1
+  - 4
+  upgrade:
+  - Flint
+  - Leather Scraps
+  - Resin
+  upgrade_amounts:
+  - 4
+  - 2
+  - 3
+checks: []
 source:
-  sheet: Weapons
-  row: 29
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 901
+biome: Meadows
+description: An open-frame great axe with a stepped crescent of flint and two horn tips, lashed with dark leather.
 notes: ''

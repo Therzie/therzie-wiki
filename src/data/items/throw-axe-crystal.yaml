@@ -1,0 +1,55 @@
+name: Crystal Throwing Axe
+prefab: ThrowAxeCrystal_TW
+mod: warfare
+kind: weapon
+group: Throwing axes
+skill: Axes
+tier: Crystal
+damage:
+  slash: 50
+  chop: 41
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 40
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Fenris Claw
+  - Fenris Hair
+  amounts:
+  - 6
+  - 3
+  - 1
+  - 1
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Fenris Claw
+  - Fenris Hair
+  - Wolf Trophy (level 3)
+  - Fenring Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2107
+biome: Mountains
+description: Silver throwing axes with crystal-set heads, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

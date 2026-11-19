@@ -1,0 +1,43 @@
+name: Serpentscale Buckler
+prefab: ShieldSerpentscaleBuckler_TW
+mod: warfare
+kind: shield
+group: Shields
+stats:
+  hands: Shield
+  block_armor: 36 (+6 per level)
+  block_force: 30
+  parry_bonus: x2.5
+  durability: 200 (+50 per level)
+  movement: -5%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Serpent Scale
+  - Iron
+  - Finewood
+  amounts:
+  - 8
+  - 4
+  - 4
+  upgrade:
+  - Serpent Scale
+  - Iron
+  - Serpent Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2950
+biome: Ocean
+description: Sea serpent scales laid in rings around an iron boss. Light on the arm and quick to parry.
+notes: ''

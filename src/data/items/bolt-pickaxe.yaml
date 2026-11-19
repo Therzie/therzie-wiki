@@ -2,20 +2,16 @@ name: Pickaxe Bolt
 prefab: BoltPickaxe_TW
 mod: warfare
 kind: ammo
-group: CrossBolts
+group: Bolts
+skill: Crossbows
 damage:
   pierce: 10
   pickaxe: 70
-recipe:
-  yields: 1
-  materials:
-    - Ancient Bark
-    - Resin
-    - Surtling Core
-    - Feathers
+stats:
+  weight: 0.1
+checks: []
 source:
-  sheet: Weapons
-  row: 206
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 2850
+description: A crossbow bolt with a small iron pick for a head. It chips ore and stone where it strikes and digs into the ground.
 notes: ''

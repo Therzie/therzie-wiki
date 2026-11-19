@@ -1,0 +1,53 @@
+name: Blackmetal Throwing Axe
+prefab: ThrowAxeBlackmetal_TW
+mod: warfare
+kind: weapon
+group: Throwing axes
+skill: Axes
+tier: Blackmetal
+damage:
+  slash: 55
+  chop: 47
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 40
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 4
+  materials:
+  - Black Metal
+  - Iron
+  - Finewood
+  - Lox Pelt
+  amounts:
+  - 16
+  - 8
+  - 6
+  - 1
+  upgrade:
+  - Black Metal
+  - Iron
+  - Fuling Trophy (level 3)
+  - Fuling Shaman Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2108
+biome: Plains
+description: Black metal throwing axes, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

@@ -1,0 +1,53 @@
+name: Iron Bastard Sword
+prefab: BastardIron_TW
+mod: warfare
+kind: weapon
+group: Bastard swords
+skill: Swords
+tier: Iron
+damage:
+  slash: 67
+damage_max:
+  slash: 85
+stats:
+  hands: Two handed
+  block_armor: 26
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 30
+  - 15
+  - 4
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Draugr Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 2
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 305
+biome: Swamp
+description: A long crypt blade of rough-hammered iron with a heavy guard.
+notes: ''

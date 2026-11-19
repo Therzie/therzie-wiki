@@ -1,27 +1,35 @@
-name: Cranium Basher
+name: Rootbreaker
 prefab: BattlehammerElder_TW
 mod: warfare
 kind: weapon
-group: Boss Weapons
-effect: 'Smasher: Lowers creatures blunt resistance on 6th hit'
+group: Battlehammers
+skill: Clubs
 damage:
   blunt: 52
   spirit: 10
+damage_max:
+  blunt: 70
+  spirit: 13
+stats:
+  hands: Two handed
+  block_armor: 28
+  block_force: 70
+  knockback: 50
+  backstab: x3
+  durability: 200 (+100 per level)
+  stamina: 14 / 22
+  movement: -10%
+  weight: 4
+  max_level: 4
 drops:
-  - from: Elder
-    chance: 4%
-recipe:
-  yields: 1
-  materials:
-    - Ancient Bark
-    - Stone
-    - Greydwarf Eye
-  station: Forge
-  monstrum:
-    - Elder Trophy
+- from: The Elder
+  chance: 4%
+info:
+- Relic of The Elder
+checks: []
 source:
-  sheet: Weapons
-  row: 358
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 1350
+biome: Black Forest
+description: A petrified burl torn from the Elder, caged in living roots. Red sap glows in its cracks and a pink mist clings to the head.
 notes: ''

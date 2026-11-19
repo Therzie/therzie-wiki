@@ -1,0 +1,59 @@
+name: Flametal Atgeir
+prefab: AtgeirFlametal_TW
+mod: warfare
+kind: weapon
+group: Atgeirs
+skill: Polearms
+tier: Flametal
+damage:
+  pierce: 145
+damage_max:
+  pierce: 154
+stats:
+  hands: Two handed
+  block_armor: 62
+  block_force: 40
+  knockback: 30
+  backstab: x3
+  durability: 300 (+50 per level)
+  stamina: 16 / 32
+  movement: -5%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Ashwood
+  - Bonemaw Tooth
+  amounts:
+  - 56
+  - 28
+  - 15
+  - 3
+  upgrade:
+  - Flametal
+  - Ashwood
+  - Bonemaw Tooth
+  - Sulfur
+  - Volture Trophy (level 3)
+  - Warrior Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 14
+  - 8
+  - 2
+  - 1
+  - 1
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1511
+biome: Ashlands
+description: A hooked flametal blade on a long blackwood shaft.
+notes: ''

@@ -1,0 +1,50 @@
+name: Bronze Twin Maces
+prefab: DualMaceBronze_TW
+mod: warfare
+kind: weapon
+group: Dual maces
+skill: Clubs
+tier: Bronze
+damage:
+  blunt: 36
+damage_max:
+  blunt: 54
+stats:
+  hands: Dual
+  block_armor: 14
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 36
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Finewood
+  - Leather Scraps
+  amounts:
+  - 17
+  - 8
+  - 2
+  upgrade:
+  - Bronze
+  - Leather Scraps
+  - Greydwarf Trophy (level 3)
+  - Greydwarf Brute Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1103
+biome: Black Forest
+description: Two cast bronze hammers on corewood hafts, banded with copper.
+notes: ''

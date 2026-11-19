@@ -1,22 +1,31 @@
-biome: Black Forest
 name: Bone Arrow
 prefab: ArrowBone_TW
 mod: warfare
 kind: ammo
 group: Arrows
+skill: Bows
 tier: Bone
 damage:
-  blunt: 38
-  pierce: 5
+  pierce: 29
+stats:
+  knockback: 10
+  weight: 0.1
 recipe:
-  yields: 1
+  yields: 20
+  station: Fletcher Table
+  level: 2
   materials:
-    - Wood
-    - Bone Fragments
-    - Feathers
+  - Wood
+  - Bone Fragments
+  - Feathers
+  amounts:
+  - 8
+  - 4
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 183
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 2702
+biome: Black Forest
+description: An arrow with a barbed bone head, sinew-bound and fletched with raven feathers.
 notes: ''

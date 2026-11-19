@@ -1,23 +1,54 @@
-biome: Ocean
-name: Chitin daggers
+name: Chitin Daggers
 prefab: DualKnifeChitin_TW
 mod: warfare
 kind: weapon
-group: Dual Knives
+group: Dual knives
 skill: Knives
 tier: Chitin
 damage:
   slash: 18
   pierce: 18
+damage_max:
+  slash: 21
+  pierce: 21
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Ancient Bark
-    - Chitin
-    - Bronze
+  - Chitin
+  - Bronze
+  - Leather Scraps
+  amounts:
+  - 10
+  - 5
+  - 4
+  upgrade:
+  - Chitin
+  - Bronze
+  - Leather Scraps
+  - Skeleton Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 106
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 604
+biome: Ocean
+description: 'A pair of daggers cut from abyssal chitin: a fang and a needle.'
 notes: ''

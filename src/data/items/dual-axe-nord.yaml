@@ -1,0 +1,62 @@
+name: Nord Twin Axes
+prefab: DualAxeNord_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Nord
+damage:
+  slash: 175
+  chop: 112
+damage_max:
+  slash: 205
+  chop: 127
+stats:
+  hands: Dual
+  block_armor: 69
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 400 (+50 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 4
+  materials:
+  - Bloodgold
+  - Timberwood
+  - Elaking Hair Bundle
+  amounts:
+  - 66
+  - 33
+  - 4
+  upgrade:
+  - Bloodgold
+  - Elaking Hair Bundle
+  - Liquid Frost (level 2)
+  - Elaking Trophy (level 3)
+  - Liquid Frost (level 3)
+  - Moose Trophy (level 4)
+  - Liquid Frost (level 4)
+  - Frostcore (level 4)
+  - Glacier Crystal (level 4)
+  upgrade_amounts:
+  - 17
+  - 2
+  - 3
+  - 1
+  - 5
+  - 1
+  - 6
+  - 1
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 812
+biome: Deep North
+description: Two Jotun axes with ice-forged bits and iron back spikes, bound in gold and elk fur.
+notes: ''

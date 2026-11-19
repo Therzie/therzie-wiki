@@ -1,0 +1,59 @@
+name: Dwarven Knife
+prefab: KnifeDvergr_TW
+mod: warfare
+kind: weapon
+group: Knives
+skill: Knives
+tier: Dvergr
+damage:
+  slash: 52
+  pierce: 52
+  lightning: 5
+damage_max:
+  slash: 55
+  pierce: 55
+stats:
+  hands: One handed
+  block_armor: 2
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 275 (+50 per level)
+  stamina: 14 / 42
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  amounts:
+  - 9
+  - 5
+  - 5
+  - 2
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Scale Hide
+  - Tick Trophy (level 3)
+  - Seeker Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 2
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 510
+biome: Mistlands
+description: A dwarven knife infused with eitr. Used to stab and shock your enemies with.
+notes: ''

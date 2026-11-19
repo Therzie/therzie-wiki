@@ -1,0 +1,51 @@
+name: Flint Claymore
+prefab: ClaymoreFlint_TW
+mod: warfare
+kind: weapon
+group: Claymores
+skill: Swords
+tier: Flint
+damage:
+  slash: 27
+damage_max:
+  slash: 45
+stats:
+  hands: Two handed
+  block_armor: 11
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 1
+  materials:
+  - Flint
+  - Wood
+  - Deer Hide
+  - Greydwarf Eye
+  amounts:
+  - 14
+  - 7
+  - 2
+  - 1
+  upgrade:
+  - Flint
+  - Deer Hide
+  - Resin
+  upgrade_amounts:
+  - 4
+  - 1
+  - 3
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 401
+biome: Meadows
+description: A great two-handed flint blade with a leather-wrapped ricasso and a greydwarf-eye pommel.
+notes: ''

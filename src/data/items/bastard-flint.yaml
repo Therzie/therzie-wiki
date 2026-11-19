@@ -1,24 +1,47 @@
-biome: Meadows
-name: Flint bastard sword
+name: Flint Bastard Sword
 prefab: BastardFlint_TW
 mod: warfare
 kind: weapon
-group: Bastard Swords
+group: Bastard swords
 skill: Swords
 tier: Flint
 damage:
-  slash: 26
+  slash: 27
+damage_max:
+  slash: 45
+stats:
+  hands: Two handed
+  block_armor: 11
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 1
   materials:
-    - Flint
-    - Core Wood
-    - Greydwarf Eye
-  monstrum:
-    - Leather Scraps
+  - Flint
+  - Wood
+  - Deer Hide
+  amounts:
+  - 14
+  - 7
+  - 2
+  upgrade:
+  - Flint
+  - Deer Hide
+  upgrade_amounts:
+  - 3
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 158
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 301
+biome: Meadows
+description: A long, broad blade of knapped flint, as long as a claymore's.
 notes: ''

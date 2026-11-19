@@ -1,0 +1,48 @@
+name: Iron Javelin
+prefab: JavelinIron_TW
+mod: warfare
+kind: weapon
+group: Javelins
+skill: Spears
+tier: Iron
+damage:
+  pierce: 54
+stats:
+  hands: One handed
+  block_armor: 1
+  knockback: 18
+  backstab: x3
+  durability: 43 (+6 per level)
+  stamina: 18 / 20
+  movement: -5%
+  weight: 0.1
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 13
+  - 6
+  - 1
+  upgrade:
+  - Iron
+  - Leech Trophy (level 3)
+  - Draugr Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 3
+  - 1
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2205
+biome: Swamp
+description: Javelins with rough-forged iron heads and bone charms, carried in pairs. Thrown one after the other, then both at once.
+notes: ''

@@ -1,24 +1,57 @@
-biome: Plains
-name: Blackmetal bastard sword
+name: Blackmetal Bastard Sword
 prefab: BastardBlackmetal_TW
 mod: warfare
 kind: weapon
-group: Bastard Swords
+group: Bastard swords
 skill: Swords
 tier: Blackmetal
 damage:
-  slash: 106
+  slash: 124
+damage_max:
+  slash: 142
+stats:
+  hands: Two handed
+  block_armor: 50
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Blackmetal
-    - Tar
-    - Goblin Brute Trophy
-  monstrum:
-    - Lox Bone or Prowler Fang
+  - Black Metal
+  - Iron
+  - Finewood
+  - Linen Thread
+  amounts:
+  - 37
+  - 18
+  - 6
+  - 6
+  upgrade:
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 9
+  - 9
+  - 3
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 158
-  col: 7
-description: ''
+  sheet: Warfare 2.0
+  row: 308
+biome: Plains
+description: A long jagged blade with chains wrapped round the ricasso. Carved like a fuling totem.
 notes: ''

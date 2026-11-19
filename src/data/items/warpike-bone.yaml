@@ -1,23 +1,49 @@
-biome: Black Forest
-name: Bone war pike
+name: Bone Warpike
 prefab: WarpikeBone_TW
 mod: warfare
 kind: weapon
-group: WarPikes
+group: Warpikes
 skill: Spears
 tier: Bone
-effect: 4th hit lowers targets pierce resistance
 damage:
-  pierce: 38
+  pierce: 32
+damage_max:
+  pierce: 50
+stats:
+  hands: One handed
+  block_armor: 15
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 36
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 2
   materials:
-    - Bone Fragments
-    - Copper
-    - Skeleon Trophy
+  - Bone Fragments
+  - Corewood
+  - Leather Scraps
+  amounts:
+  - 18
+  - 9
+  - 2
+  upgrade:
+  - Bone Fragments
+  - Leather Scraps
+  - Skeleton Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 283
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 1802
+biome: Black Forest
+description: A long pike tipped with a tusk. Thrust, jump in, and pin them down.
 notes: ''

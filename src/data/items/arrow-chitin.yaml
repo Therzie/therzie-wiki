@@ -1,0 +1,31 @@
+name: Chitin Arrow
+prefab: ArrowChitin_TW
+mod: warfare
+kind: ammo
+group: Arrows
+skill: Bows
+tier: Chitin
+damage:
+  pierce: 37
+stats:
+  knockback: 10
+  weight: 0.1
+recipe:
+  yields: 20
+  station: Fletcher Table
+  level: 2
+  materials:
+  - Wood
+  - Chitin
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2704
+biome: Ocean
+description: An arrow with a hooked head of abyssal chitin and stiff fin fletching.
+notes: ''

@@ -1,0 +1,57 @@
+name: Silver Twin Hammers
+prefab: DualMaceSilver_TW
+mod: warfare
+kind: weapon
+group: Dual maces
+skill: Clubs
+tier: Silver
+damage:
+  blunt: 80
+  spirit: 20
+damage_max:
+  blunt: 98
+stats:
+  hands: Dual
+  block_armor: 43
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 36
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 25
+  - 13
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Ulv Trophy (level 3)
+  - Cultist Trophy (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1106
+biome: Mountains
+description: Two silver hammers with drum and rune heads, collared in wolf fur.
+notes: ''

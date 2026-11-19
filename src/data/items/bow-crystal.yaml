@@ -1,0 +1,56 @@
+name: Crystal Bow
+prefab: BowCrystal_TW
+mod: warfare
+kind: weapon
+group: Bows
+skill: Bows
+tier: Crystal
+damage:
+  pierce: 54
+damage_max:
+  pierce: 66
+stats:
+  hands: Two handed
+  knockback: 25
+  backstab: x3
+  durability: 150 (+50 per level)
+  draw_stamina: 12 per second
+  secondary_stamina: 20
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  amounts:
+  - 10
+  - 5
+  - 3
+  - 2
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  - Cultist Trophy (level 3)
+  - Drake Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2407
+biome: Mountains
+description: A recurve of dark wood with crystal sunk into the limbs under wooden bridges.
+notes: ''

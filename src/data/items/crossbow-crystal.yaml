@@ -1,0 +1,56 @@
+name: Crystal Crossbow
+prefab: CrossbowCrystal_TW
+mod: warfare
+kind: weapon
+group: Crossbows
+skill: Crossbows
+tier: Crystal
+damage:
+  pierce: 158
+damage_max:
+  pierce: 167
+stats:
+  hands: Two handed
+  knockback: 200
+  backstab: x3
+  durability: 150 (+50 per level)
+  secondary_stamina: 20
+  reload: 3.5 s
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  amounts:
+  - 13
+  - 7
+  - 4
+  - 3
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Red Jute
+  - Fenris Hair
+  - Cultist Trophy (level 3)
+  - Drake Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2607
+biome: Mountains
+description: A silver crossbow with crystal set into the bolt rail and herringbone panels on the stock.
+notes: ''

@@ -1,0 +1,34 @@
+name: Thunderheart
+prefab: WarpikeEikthyr_TW
+mod: warfare
+kind: weapon
+group: Warpikes
+skill: Spears
+damage:
+  pierce: 44
+  lightning: 6
+damage_max:
+  pierce: 62
+stats:
+  hands: One handed
+  block_armor: 48
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 36
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+drops:
+- from: Eikthyr
+  chance: 4%
+info:
+- Relic of Eikthyr
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1850
+biome: Meadows
+description: A warpike crowned with the skull and antlers of Eikthyr. Its knapped flint blade still crackles with the stag's lightning.
+notes: ''

@@ -1,22 +1,56 @@
-biome: Black Forest
-name: Bronze Knuckles
+name: Bronze Fists
 prefab: FistBronze_TW
 mod: warfare
 kind: weapon
-group: Claws
+group: Fists
 skill: Fists
 tier: Bronze
 damage:
-  blunt: 20
+  slash: 30
+damage_max:
+  slash: 42
+stats:
+  hands: Dual
+  block_armor: 7 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Deer Hide
-    - Bronze
-    - Greydwarf Trophy
+  - Bronze
+  - Finewood
+  - Deer Hide
+  - Leather Scraps
+  amounts:
+  - 12
+  - 6
+  - 2
+  - 2
+  upgrade:
+  - Bronze
+  - Deer Hide
+  - Leather Scraps
+  - Tin
+  - Skeleton Trophy (level 3)
+  - Bear Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 258
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 2003
+biome: Black Forest
+description: Cast bronze knuckle bars with copper bands and a leather D-grip.
 notes: ''

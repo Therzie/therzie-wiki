@@ -1,0 +1,50 @@
+name: Bone Dagger
+prefab: KnifeBone_TW
+mod: warfare
+kind: weapon
+group: Knives
+skill: Knives
+tier: Bone
+damage:
+  slash: 14
+  pierce: 14
+damage_max:
+  slash: 17
+  pierce: 17
+stats:
+  hands: One handed
+  block_armor: 2
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 14 / 42
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 2
+  materials:
+  - Bone Fragments
+  - Corewood
+  - Leather Scraps
+  amounts:
+  - 6
+  - 3
+  - 2
+  upgrade:
+  - Bone Fragments
+  - Leather Scraps
+  - Greydwarf Shaman Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 502
+biome: Black Forest
+description: A curved bone talon on a leather-wrapped grip.
+notes: ''

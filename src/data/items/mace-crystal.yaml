@@ -1,0 +1,57 @@
+name: Crystal Mace
+prefab: MaceCrystal_TW
+mod: warfare
+kind: weapon
+group: Maces
+skill: Clubs
+tier: Crystal
+damage:
+  blunt: 86
+damage_max:
+  blunt: 104
+stats:
+  hands: One handed
+  block_armor: 43
+  block_force: 30
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  movement: -5%
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 3
+  materials:
+  - Pristine Crystal
+  - Silver
+  - Obsidian
+  - Fenris Hair
+  amounts:
+  - 10
+  - 5
+  - 6
+  - 2
+  upgrade:
+  - Pristine Crystal
+  - Silver
+  - Obsidian
+  - Fenris Hair
+  - Drake Trophy (level 3)
+  - Ulv Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 2
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1007
+biome: Mountains
+description: A silver mace with a crown of crystal clamped in its head.
+notes: ''

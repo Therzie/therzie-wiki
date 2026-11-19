@@ -1,4 +1,3 @@
-biome: Meadows
 name: Flint Sword
 prefab: SwordFlint_TW
 mod: warfare
@@ -7,17 +6,42 @@ group: Swords
 skill: Swords
 tier: Flint
 damage:
-  slash: 15
+  slash: 22
+damage_max:
+  slash: 40
+stats:
+  hands: One handed
+  block_armor: 9
+  block_force: 20
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 17 / 33
+  movement: -5%
+  weight: 0.8
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 1
   materials:
-    - Flint
-    - Wood
-  monstrum:
-    - Leather Scraps or Fox Pelt
+  - Flint
+  - Wood
+  - Leather Scraps
+  amounts:
+  - 10
+  - 5
+  - 2
+  upgrade:
+  - Flint
+  - Leather Scraps
+  upgrade_amounts:
+  - 2
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 171
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 101
+biome: Meadows
+description: A long blade of knapped flint set in a bound grip, with tusk quillons.
 notes: ''

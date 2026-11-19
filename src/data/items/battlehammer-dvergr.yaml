@@ -1,29 +1,58 @@
-biome: Mistlands
 name: Dwarven Battlehammer
 prefab: BattlehammerDvergr_TW
 mod: warfare
 kind: weapon
-group: Battlehammer
+group: Battlehammers
 skill: Clubs
 tier: Dvergr
-effect: 4th hit lowers blunt resistance
 damage:
-  blunt: 128
-  lightning: 15
+  blunt: 121
+  lightning: 20
 damage_max:
-  blunt: 149
+  blunt: 139
 stats:
-  levels: lvl 1-4
+  hands: Two handed
+  block_armor: 58
+  block_force: 70
+  knockback: 50
+  backstab: x3
+  durability: 275 (+100 per level)
+  stamina: 22 / 38
+  movement: -10%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 2
   materials:
-    - Soft Tissue
-    - Carapace
-    - Refined Eitr
-    - Seeker Soldier Trophy
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  amounts:
+  - 28
+  - 14
+  - 14
+  - 12
+  upgrade:
+  - Refined Eitr
+  - Dark Crystal
+  - Black Metal
+  - Yggdrasil Wood
+  - Seeker Trophy (level 3)
+  - Seeker Soldier Trophy (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 7
+  - 3
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 132
-  col: 7
-description: ''
+  sheet: Warfare 2.0
+  row: 1310
+biome: Mistlands
+description: A dwarven battlehammer infused with eitr. Used to bash and shock your enemies with.
 notes: ''

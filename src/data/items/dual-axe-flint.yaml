@@ -1,0 +1,52 @@
+name: Flint Twin Axes
+prefab: DualAxeFlint_TW
+mod: warfare
+kind: weapon
+group: Dual axes
+skill: Axes
+tier: Flint
+damage:
+  slash: 22
+  chop: 20
+damage_max:
+  slash: 40
+  chop: 29
+stats:
+  hands: Dual
+  block_armor: 9
+  block_force: 40
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 66
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 1
+  materials:
+  - Flint
+  - Wood
+  - Feathers
+  - Leather Scraps
+  amounts:
+  - 14
+  - 7
+  - 2
+  - 4
+  upgrade:
+  - Flint
+  - Leather Scraps
+  - Resin
+  upgrade_amounts:
+  - 4
+  - 2
+  - 3
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 801
+biome: Meadows
+description: Two flint axes on bark-wood hafts, lashed with rawhide and hung with feathers.
+notes: ''

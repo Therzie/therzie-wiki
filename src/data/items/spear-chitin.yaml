@@ -1,0 +1,51 @@
+name: Chitin Spear
+prefab: SpearChitin_TW
+mod: warfare
+kind: weapon
+group: Spears
+skill: Spears
+tier: Chitin
+damage:
+  pierce: 45
+damage_max:
+  pierce: 63
+stats:
+  hands: One handed
+  block_armor: 17
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 16
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 10
+  - 5
+  - 10
+  upgrade:
+  - Chitin
+  - Bronze
+  - Skeleton Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1704
+biome: Ocean
+description: A barbed chitin harpoon head on a driftwood shaft. Poke, or throw it.
+notes: ''

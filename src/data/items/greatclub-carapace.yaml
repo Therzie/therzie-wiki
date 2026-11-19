@@ -1,0 +1,60 @@
+name: Carapace Greatclub
+prefab: GreatclubCarapace_TW
+mod: warfare
+kind: weapon
+group: Greatclubs
+skill: Clubs
+tier: Carapace
+damage:
+  blunt: 85
+  pierce: 50
+damage_max:
+  blunt: 103
+  pierce: 59
+stats:
+  hands: Two handed
+  block_armor: 66
+  block_force: 30
+  knockback: 130
+  backstab: x3
+  durability: 250 (+50 per level)
+  stamina: 16 / 32
+  weight: 2
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 1
+  materials:
+  - Carapace
+  - Iron
+  - Black Marble
+  - Mandible
+  amounts:
+  - 25
+  - 12
+  - 11
+  - 3
+  upgrade:
+  - Carapace
+  - Iron
+  - Black Marble
+  - Mandible
+  - Seeker Trophy (level 3)
+  - Seeker Soldier Trophy (level 4)
+  - Dark Crystal (level 4)
+  upgrade_amounts:
+  - 6
+  - 6
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1409
+biome: Mistlands
+description: 'A ribbed marble head on a twisted root shaft. Too unwieldy for a shield, but it keeps you light on your feet: dodging costs less stamina.'
+notes: ''

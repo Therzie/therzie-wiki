@@ -1,26 +1,53 @@
-biome: Plains
-name: Blackmetal war pike
+name: Blackmetal Warpike
 prefab: WarpikeBlackmetal_TW
 mod: warfare
 kind: weapon
-group: WarPikes
+group: Warpikes
 skill: Spears
 tier: Blackmetal
-effect: 4th hit lowers targets pierce resistance
 damage:
-  pierce: 98
+  pierce: 102
+damage_max:
+  pierce: 120
+stats:
+  hands: One handed
+  block_armor: 50
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 36
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Fine Wood
-    - Blackmetal
-    - Gobling Brute Trophy
-  monstrum:
-    - Lox Bone
-    - Prowler Fang
+  - Black Metal
+  - Iron
+  - Finewood
+  amounts:
+  - 38
+  - 19
+  - 16
+  upgrade:
+  - Black Metal
+  - Iron
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 10
+  - 10
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 283
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 1808
+biome: Plains
+description: A deathsquito stinger for a head, on a long dark shaft. Thrust, jump in, and pin them down.
 notes: ''

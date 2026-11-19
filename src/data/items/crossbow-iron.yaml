@@ -1,23 +1,52 @@
-biome: Swamp
 name: Iron Crossbow
 prefab: CrossbowIron_TW
 mod: warfare
 kind: weapon
-group: CrossBows
+group: Crossbows
+skill: Crossbows
 tier: Iron
 damage:
-  pierce: 80
+  pierce: 97
+damage_max:
+  pierce: 106
+stats:
+  hands: Two handed
+  knockback: 200
+  backstab: x3
+  durability: 150 (+50 per level)
+  secondary_stamina: 20
+  reload: 3.5 s
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Fletcher Table
+  level: 3
   materials:
-    - Ancient Bark
-    - Iron
-    - Withered Bone
-    - Wraith Trophy
-  station: Fletchers Table
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 28
+  - 14
+  - 4
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Skeleton Trophy (level 3)
+  - Surtling Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 7
+  - 2
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 245
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 2605
+biome: Swamp
+description: 'A heavy arbalest: a thick iron prod lashed with black leather on a squared olive-wood stock with riveted iron plates.'
 notes: ''

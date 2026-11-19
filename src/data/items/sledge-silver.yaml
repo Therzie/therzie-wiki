@@ -1,4 +1,3 @@
-biome: Mountains
 name: Silver Sledgehammer
 prefab: SledgeSilver_TW
 mod: warfare
@@ -6,20 +5,54 @@ kind: weapon
 group: Sledges
 skill: Clubs
 tier: Silver
-effect: 2% chance to stun
 damage:
-  blunt: 75
-  spirit: 30
+  blunt: 101
+  spirit: 20
+damage_max:
+  blunt: 119
+stats:
+  hands: Two handed
+  block_armor: 45
+  block_force: 50
+  knockback: 50
+  backstab: x2
+  durability: 200 (+50 per level)
+  stamina: 22 / 32
+  movement: -15%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 3
   materials:
-    - Ancient Bark
-    - Silver
-    - Wolf Fang
-    - Cultist Trophy
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 27
+  - 14
+  - 5
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Ulv Trophy (level 3)
+  - Stone Golem Trophy (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 2
+  - 2
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 119
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 1206
+biome: Mountains
+description: A great silver sledge with a wolf-fur collar. It shatters bone like ice.
 notes: ''

@@ -1,0 +1,34 @@
+name: Ruin
+prefab: BastardYagluth_TW
+mod: warfare
+kind: weapon
+group: Bastard swords
+skill: Swords
+damage:
+  slash: 133
+  fire: 12
+damage_max:
+  slash: 151
+stats:
+  hands: Two handed
+  block_armor: 64
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
+drops:
+- from: Yagluth
+  chance: 6%
+info:
+- Relic of Yagluth
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 350
+biome: Plains
+description: A blade of meteor rock split by a burning pink core, crowned with Yagluth's stakes and caged in ribs. Strike hard and the sky answers.
+notes: ''

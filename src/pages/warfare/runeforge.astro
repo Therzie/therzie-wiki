@@ -1,28 +1,235 @@
 ---
 import WarfarePage from '../../components/warfare/WarfarePage.astro';
+import CraftingSlots from '../../components/CraftingSlots.astro';
 import { url } from '../../lib/wiki';
-import { runePaths } from '../../lib/warfare';
+import rf from '../../data/warfare2/runeforge.json';
 const art = (f: string) => url(`/readme/warfare/${f}`);
+
+// Warfare 2.0 Runeforge: data from the mod (tools/warfare2/build.py)
+const PATHS = [
+  { id: 'Blood', color: '#d90f1f', theme: 'Life drain and bleeding wounds' },
+  { id: 'Fury', color: '#ff730d', theme: 'Raw strength and relentless attacks' },
+  { id: 'Guardian', color: '#f2c240', theme: 'Blocking, staggering and holding the line' },
+  { id: 'Arcane', color: '#26d9f2', theme: 'Eitr, lightning and frost' },
+  { id: 'Hunter', color: '#59e640', theme: 'Precision, stealth and ammunition' },
+  { id: 'Craft', color: '#ccdbf2', theme: 'Durability, stamina and spoils' },
+];
+const color = (p: string) => PATHS.find((x) => x.id === p)?.color ?? '#ccc';
+const CATS: [string, string, number][] = [
+  ['OneHanded', 'One handed', 2], ['TwoHanded', 'Two handed', 3], ['Dual', 'Dual', 3], ['Ranged', 'Bows and crossbows', 2],
+  ['Throwing', 'Throwing', 2], ['Shield', 'Shields', 2], ['Quiver', 'Quivers', 2], ['Belt', 'Throwing belts', 2],
+  ['Utility', 'Utility items', 2], ['Hammer', 'Hammer', 2], ['Staff', 'Staffs', 2],
+];
+const catLabel = (c: string) => CATS.find((x) => x[0] === c)?.[1] ?? c;
+const ROMAN = ['I', 'II', 'III'];
+const LEVEL = [
+  { r: 'I', biome: 'Mistlands', color: '#9a7fc9', rune: 'Mistlands rune' },
+  { r: 'II', biome: 'Ashlands', color: '#d4643a', rune: 'Ashlands rune' },
+  { r: 'III', biome: 'Deep North', color: '#5fc6d1', rune: 'Deep North rune' },
+];
+const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const val = (s: string) => esc(s).replace(/⟦(.*?)⟧/g, '<b class="rf-val">$1</b>');
+// one sentence per infusion, every value shown as I / II / III (texts only differ in their values)
+const merge = (texts: string[]) => {
+  const parts = texts.map((t) => t.split(/⟦(.*?)⟧/));
+  const base = parts[0];
+  if (parts.some((p) => p.length !== base.length || p.some((x, i) => i % 2 === 0 && x !== base[i]))) return null;
+  return base.map((x, i) => (i % 2 === 0 ? esc(x) : `<b class="rf-val">${parts.map((p) => esc(p[i])).join('<i> / </i>')}</b>`)).join('');
+};
+const heavyVals = (texts: string[]) => {
+  const vals = texts.map((t) => [...t.matchAll(/⟦(.*?)⟧/g)].map((m) => m[1]));
+  return vals[0].map((_, i) => vals.map((v) => v[i]).join(' / ')).join(', ');
+};
+const affixes = [...rf.affixes].sort((a, b) => PATHS.findIndex((p) => p.id === a.theme) - PATHS.findIndex((p) => p.id === b.theme) || a.name.localeCompare(b.name));
+const runeCount = (cats: string[]) => [...new Set(cats.map((c) => CATS.find((x) => x[0] === c)?.[2] ?? 2))].join(' or ');
+const ROLES = ['Shieldwall', 'Galdrblade', 'Berserkr', 'Bloodsworn', 'Huntsman', 'Skirmisher', 'Seidr', 'Völva', 'Runesmith', 'Wayfarer'];
+const ROLE_TEXT: Record<string, string> = {
+  Shieldwall: 'One handed weapon and shield', Galdrblade: 'Melee fighting on eitr', Berserkr: 'Two handed and dual damage',
+  Bloodsworn: 'Blood and sustain', Huntsman: 'Bows, crossbows and quivers', Skirmisher: 'Throwing weapons and belts',
+  Seidr: 'Elemental magic staffs', Völva: 'Blood magic staffs', Runesmith: 'Craft', Wayfarer: 'Utility items and the hammer',
+};
+const roleCount = (r: string) => rf.affixes.filter((a) => a.roles.includes(r)).length;
 ---
 <WarfarePage slug="runeforge">
 <figure class="raven raven--hugin">
       <img src={art('hugin.png')} alt="" width="64" height="64" />
-      <blockquote><b>Hugin:</b> <i>"The Dvergr did not just forge steel. They fed it Eitr. Find their anvil and you will learn why."</i></blockquote>
+      <blockquote><b>Munin:</b> <i>"Nine nights the Allfather hung on Yggdrasil, wind-torn and wounded by his own spear. On the ninth he looked down, seized the runes and fell back with their secret. This forge grows from a root of that same tree."</i></blockquote>
     </figure>
+
     <p>
-      Defeat the Queen and the <strong>Dwarven Eitr Anvil</strong> opens up at the Black Forge. Grind Eitr, Dark Crystal and
-      trophies into <strong>Rune Shards</strong>, then infuse your weapon, quiver or throwing belt with a power of your choice.
-      Infused gear glows in the color of its rune.
+      The <strong>Runeforge</strong> is a forge fed by Yggdrasil's roots. Eitr is pumped through the roots into the anvil to bind
+      infusions and gems into your gear, and to carve runes. Build it with the hammer next to the Black Forge. It opens up once
+      the Queen has fallen. A compact Runeforge, the anvil on its own with a small eitr vat, works exactly the same.
     </p>
-    <div class="rune-paths">
-      {runePaths.map(([icon, name, theme]) => (
-        <div class="rune-path"><span class="rune-path__icon">{icon}</span><strong>{name}</strong><span>{theme}</span></div>
+    <CraftingSlots materials={['Yggdrasil Wood', 'Black Marble', 'Refined Eitr', 'Dark Crystal', 'Majestic Carapace']} amounts={[30, 40, 20, 8, 1]} />
+
+    <h2 id="what">What you can infuse</h2>
+    <ul>
+      <li>Weapons and shields from the Mistlands onwards: Warfare, vanilla and other mods.</li>
+      <li>Every Warfare boss weapon, whatever its biome.</li>
+      <li>Quivers and throwing belts from the Mistlands onwards, utility items such as Megingjord, the vanilla Hammer, and staffs.</li>
+    </ul>
+    <p>Each item holds <strong>one infusion</strong>. A binding takes its time: the forge keeps working while you walk away and keeps the finished item for you until you take it.</p>
+
+    <h2 id="levels">Three levels</h2>
+    <p>The rune decides the level, not the biome of the item. Every infusion can be bound at level I and upgraded later, so a weapon can grow with you.</p>
+    <div class="rf-levels">
+      {LEVEL.map((l, i) => (
+        <div class="rf-level" style={`--c:${l.color}`}>
+          <strong>{l.r}</strong><span>{l.biome}</span>
+          <p>{['Bound with a Mistlands rune.', 'Bound with an Ashlands rune.', 'Bound with a Deep North rune. Needs a Frost Foundry within 12 m of the Runeforge and 2 Liquid Frost per binding.'][i]}</p>
+        </div>
       ))}
     </div>
-    <p>Stronger infusions unlock in later biomes, and two handed and twin weapons get unique infusions of their own.</p>
+    <table class="item-table readme-table rf-curves">
+      <thead><tr><th>Kind of infusion</th><th>I</th><th>II</th><th>III</th></tr></thead>
+      <tbody>
+        <tr><td>Damage</td><td>x1</td><td>x1.2</td><td>x1.4</td></tr>
+        <tr><td>Utility</td><td>x1</td><td>x1.25</td><td>x1.5</td></tr>
+        <tr><td>Fixed (thresholds, durations)</td><td>x1</td><td>x1.15</td><td>x1.3</td></tr>
+      </tbody>
+    </table>
+    <p class="small">Two handed and dual weapons carry a single infusion for a heavier weapon, so most infusions are <strong>x1.5</strong> on them. Infusions made for one kind of item only keep their own value. Convenience infusions (utility items, the hammer and a few quiver and belt infusions) stop at level II.</p>
+
+    <h2 id="cost">What a binding costs</h2>
+    <ul>
+      <li><strong>2 runes</strong> of the path for one handed weapons, shields, bows, crossbows, throwing weapons, quivers and belts. <strong>3 runes</strong> for two handed and dual weapons.</li>
+      <li>Plus the material of the infusion itself, shown with each infusion below.</li>
+      <li>Upgrading the same infusion to a higher level costs only the new runes (and Liquid Frost for level III).</li>
+    </ul>
+
+    <h2 id="runes">Runes and Rune Power</h2>
+    <p>Runes are carved at the Runeforge. Each rune needs <strong>Rune Power</strong>, drawn out of trophies at the forge: the harder the creature, the more power its trophy holds. Boss trophies do not count. Now and then a trophy gives double (Munin's Gift) or triple (Odin's Favor) power.</p>
+    <div class="rf-power">
+      {LEVEL.map((l, i) => (
+        <div class="rf-power__col" style={`--c:${l.color}`}>
+          <h3>Rune Power {l.r} <span>{l.biome}</span></h3>
+          <ul>{rf.rune_power[String(i + 1) as '1'].map((t) => <li><span>{t.trophy}</span><b>{t.value}</b></li>)}</ul>
+        </div>
+      ))}
+    </div>
+    <p class="small">Rune Power can also be raised at the forge: 1 Rune Power I and 1 Volcanic Crystal make 1 Rune Power II, 2 Rune Power II and 1 Glacier Crystal make 1 Rune Power III.</p>
+    <div class="rf-runes">
+      {PATHS.map((p) => (
+        <section class="rf-runes__path" style={`--c:${p.color}`}>
+          <h3>{p.id}</h3>
+          {rf.runes.filter((r) => r.path === p.id).map((r) => (
+            <div class="rf-rune">
+              <h4>{r.name}</h4>
+              <CraftingSlots materials={r.materials} amounts={r.amounts} />
+            </div>
+          ))}
+        </section>
+      ))}
+    </div>
+
+    <h2 id="paths">Six paths and ten roles</h2>
+    <div class="rune-paths">
+      {PATHS.map((p) => (
+        <div class="rune-path" style={`--c:${p.color}`}><span class="rune-path__icon rf-dot"></span><strong style={`color:${p.color}`}>{p.id}</strong><span>{p.theme} · {rf.affixes.filter((a) => a.theme === p.id).length} infusions</span></div>
+      ))}
+    </div>
+    <p>Every infusion also belongs to one or two roles, so you can build around a way of fighting:</p>
+    <div class="rf-roles">
+      {ROLES.map((r) => <button class="rf-role" type="button" data-role={r}><strong>{r}</strong><span>{ROLE_TEXT[r]} · {roleCount(r)}</span></button>)}
+    </div>
+
+    <h2 id="infusions">All infusions</h2>
+    <div class="rf-filter not-content">
+      <div class="rf-filter__row" data-group="cat">
+        <button type="button" class="is-on" data-cat="">All items</button>
+        {CATS.map(([id, label]) => <button type="button" data-cat={id}>{label}</button>)}
+      </div>
+      <div class="rf-filter__row" data-group="path">
+        <button type="button" class="is-on" data-path="">All paths</button>
+        {PATHS.map((p) => <button type="button" data-path={p.id} style={`--c:${p.color}`}>{p.id}</button>)}
+      </div>
+      <p class="small rf-count"><span data-count>{affixes.length}</span> infusions<span data-role-note></span></p>
+    </div>
+    <div class="rf-grid not-content">
+      {affixes.map((a) => (
+        <article class="rf-card" style={`--c:${color(a.theme)}`} data-cats={a.cats.join(' ')} data-path={a.theme} data-roles={a.roles.join(' ')}>
+          <header>
+            <h3>{a.name}</h3>
+            <span class="rf-card__path">{a.theme}</span>
+          </header>
+          <p class="rf-card__meta">{a.cats.map(catLabel).join(', ')}{a.roles.length > 0 && <> · <em>{a.roles.join(', ')}</em></>}</p>
+          {merge(a.levels.map((l) => l.text)) ? (
+            <p class="rf-card__text"><Fragment set:html={merge(a.levels.map((l) => l.text))} /></p>
+          ) : (
+            <ol class="rf-card__levels">{a.levels.map((l, i) => <li style={`--lc:${LEVEL[i].color}`}><span class="rf-card__lvl">{ROMAN[i]}</span><span set:html={val(l.text)} /></li>)}</ol>
+          )}
+          <p class="rf-card__legend">Level {a.levels.map((_, i) => ROMAN[i]).join(' / ')}{a.heavy && <> · <b>Two handed and dual:</b> {heavyVals(a.levels.map((l) => (l as { heavy?: string }).heavy ?? ''))}</>}</p>
+          {a.notes.length > 0 && <p class="rf-card__note">{a.notes.join('. ')}</p>}
+          <p class="rf-card__cost"><b>Cost:</b> {runeCount(a.cats)} {a.theme} runes{a.cost.map(([m, n]) => `, ${n} ${m}`).join('')}</p>
+        </article>
+      ))}
+    </div>
+
+    <h2 id="gems">Gems and Resonance</h2>
+    <p>
+      The six gems of the Ashlands are set at the Runeforge too, in the same weapon and beside its infusion. One gem per weapon,
+      for Ashlands and Deep North weapons and elemental staffs. A gem costs the gem and {rf.gem_flametal} Flametal; in a Deep North weapon it costs
+      {rf.essence_gold} Bloodgold, plus {rf.essence_gold_per_level} per level of the weapon above 1.
+    </p>
+    <div class="rf-gems not-content">
+      {rf.gems.filter((g) => g.id.startsWith('G:')).map((g) => (
+        <article class="rf-gem" style={`--c:${g.hex}`}>
+          <h3>{g.name} <span style={`color:${color(g.path)}`}>{g.path}</span></h3>
+          <ul>{g.lines.map((l) => <li>{l}</li>)}</ul>
+        </article>
+      ))}
+    </div>
+    <p><strong>Resonance.</strong> When the path of the infusion matches the path of the gem in the same weapon, the weapon resonates while it is in your hand:</p>
+    <table class="item-table readme-table rf-res">
+      <thead><tr><th>Path</th><th>I</th><th>II</th><th>III</th></tr></thead>
+      <tbody>{PATHS.map((p) => <tr><td style={`color:${p.color}`}><strong>{p.id}</strong></td>{(rf.resonance as Record<string, string[]>)[p.id].map((t) => <td>{t}</td>)}</tr>)}</tbody>
+    </table>
+    <h3>Deep North essences</h3>
+    <p>Deep North weapons take an essence in the same slot instead of a gem. Each essence belongs to two paths.</p>
+    <div class="rf-gems not-content">
+      {rf.gems.filter((g) => g.id.startsWith('E:')).map((g) => (
+        <article class="rf-gem" style={`--c:${g.hex}`}>
+          <h3>{g.name}</h3>
+          <ul>{g.lines.map((l) => <li>{l}</li>)}</ul>
+        </article>
+      ))}
+    </div>
+
     <div class="notes">
-      <p><strong>⚖️ Endgame, and balanced for it.</strong> The Runeforge only works on Mistlands, Ashlands and Deep North gear. Each infusion scales with the tier of the item and is tuned against vanilla endgame weapons, so it adds a choice, not a power spike.</p>
       <p><strong>⚙️ Yours to switch off.</strong> Prefer a different enchanting mod? The Runeforge can be turned off completely in the config.</p>
-      <p><strong>🤝 Plays nice with Epic Loot and Jewelcrafting.</strong> Running either mod? Warfare detects it and switches off any infusion that would duplicate one of their effects, so you never stack the same bonus twice. The tooltip tells you which mod already covers it.</p>
+      <p><strong>🤝 Plays nice with Epic Loot and Jewelcrafting.</strong> Running either mod? Warfare detects it and switches off any infusion that would duplicate one of their effects, so you never stack the same bonus twice.</p>
     </div>
 </WarfarePage>
+
+<script>
+  const state = { cat: '', path: '', role: '' };
+  const cards = [...document.querySelectorAll<HTMLElement>('.rf-card')];
+  const count = document.querySelector('[data-count]')!;
+  const roleNote = document.querySelector('[data-role-note]')!;
+  function apply() {
+    let n = 0;
+    for (const c of cards) {
+      const show = (!state.cat || c.dataset.cats!.split(' ').includes(state.cat)) && (!state.path || c.dataset.path === state.path)
+        && (!state.role || c.dataset.roles!.split(' ').includes(state.role));
+      c.hidden = !show; if (show) n++;
+    }
+    count.textContent = String(n);
+    roleNote.textContent = state.role ? ` for the ${state.role} role (click the role again to clear)` : '';
+    document.querySelectorAll<HTMLElement>('.rf-role').forEach((b) => b.classList.toggle('is-on', b.dataset.role === state.role));
+  }
+  document.querySelectorAll<HTMLElement>('.rf-filter__row').forEach((row) => {
+    const key = row.dataset.group as 'cat' | 'path';
+    row.addEventListener('click', (e) => {
+      const b = (e.target as HTMLElement).closest('button'); if (!b) return;
+      state[key] = b.dataset[key] ?? '';
+      row.querySelectorAll('button').forEach((x) => x.classList.toggle('is-on', x === b));
+      apply();
+    });
+  });
+  document.querySelectorAll<HTMLElement>('.rf-role').forEach((b) => b.addEventListener('click', () => {
+    state.role = state.role === b.dataset.role ? '' : b.dataset.role!;
+    apply();
+    document.getElementById('infusions')?.scrollIntoView({ behavior: 'smooth' });
+  }));
+</script>

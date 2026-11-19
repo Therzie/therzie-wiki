@@ -1,23 +1,56 @@
-biome: Plains
 name: Blackmetal Crossbow
 prefab: CrossbowBlackmetal_TW
 mod: warfare
 kind: weapon
-group: CrossBows
+group: Crossbows
+skill: Crossbows
 tier: Blackmetal
 damage:
-  pierce: 140
+  pierce: 175
+damage_max:
+  pierce: 184
+stats:
+  hands: Two handed
+  knockback: 200
+  backstab: x3
+  durability: 150 (+50 per level)
+  secondary_stamina: 20
+  reload: 3.5 s
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Fletcher Table
+  level: 4
   materials:
-    - Fine Wood
-    - Blackmetal
-    - Lox Bone
-    - Fuling Berserker Trophy
-  station: Fletchers Table
+  - Black Metal
+  - Iron
+  - Finewood
+  - Linen Thread
+  amounts:
+  - 34
+  - 17
+  - 10
+  - 8
+  upgrade:
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Fuling Trophy (level 3)
+  - Fuling Shaman Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 9
+  - 9
+  - 4
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 245
-  col: 8
-description: ''
+  sheet: Warfare 2.0
+  row: 2608
+biome: Plains
+description: A black metal arbalest with spiked prod tips and a skull on the stock.
 notes: ''

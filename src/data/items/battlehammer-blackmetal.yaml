@@ -1,9 +1,8 @@
-biome: Plains
 name: Blackmetal Battlehammer
 prefab: BattlehammerBlackmetal_TW
 mod: warfare
 kind: weapon
-group: Battlehammer
+group: Battlehammers
 skill: Clubs
 tier: Blackmetal
 damage:
@@ -11,17 +10,48 @@ damage:
 damage_max:
   blunt: 126
 stats:
-  levels: lvl 1-4
+  hands: Two handed
+  block_armor: 50
+  block_force: 70
+  knockback: 50
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 22 / 38
+  movement: -10%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Fine Wood
-    - Blackmetal
-    - Lox Bone
-    - Fuling Berserker Trophy
+  - Black Metal
+  - Iron
+  - Finewood
+  - Lox Pelt
+  amounts:
+  - 41
+  - 20
+  - 10
+  - 3
+  upgrade:
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Lox Trophy (level 3)
+  - Fuling Berserker Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 10
+  - 10
+  - 2
+  - 1
+  - 1
+  - 5
+checks: []
 source:
-  sheet: Weapons
-  row: 132
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 1308
+biome: Plains
+description: A brute of a hammer, cast in black metal with a skull in its face.
 notes: ''

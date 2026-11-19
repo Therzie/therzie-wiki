@@ -631,3 +631,74 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
   .guide-pager__link { padding: 0.5rem 0.65rem; }
   .guide-pager__link span { font-size: 0.95rem; line-height: 1.2; }
 }
+
+/* recipe amounts, bottom right of the slot like the in-game stack count */
+.slot__box { position: relative; }
+.slot__amount {
+  position: absolute; right: 3px; bottom: 1px; font-size: 0.78rem; font-weight: 700; color: #fff;
+  text-shadow: 0 0 3px #000, 0 1px 2px #000; line-height: 1;
+}
+
+/* arsenal: classes with counts */
+.arsenal__classes { list-style: none; padding: 0; margin: 0.3rem 0 0; font-size: var(--sl-text-sm); }
+.arsenal__classes li { display: flex; justify-content: space-between; gap: 0.5rem; margin: 0.15rem 0 0 !important; }
+.arsenal__classes a { text-decoration: none; color: var(--sl-color-gray-1); }
+.arsenal__classes a:hover { color: var(--tw-ember); }
+.arsenal__meta { color: var(--sl-color-gray-3); font-size: var(--sl-text-xs); white-space: nowrap; }
+.item-link { display: inline-flex; align-items: center; gap: 0.45rem; text-decoration: none; }
+
+/* Runeforge */
+.rf-levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 0.6rem; margin-top: 0.75rem !important; }
+.rf-level { padding: 0.7rem 0.9rem; border-radius: 6px; border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); background: linear-gradient(180deg, color-mix(in srgb, var(--c) 14%, transparent), rgb(0 0 0 / 0.3)); }
+.rf-level strong { font-family: var(--tw-head); font-size: 1.6rem; color: var(--c); margin-right: 0.5rem; }
+.rf-level span { color: var(--sl-color-gray-2); font-size: var(--sl-text-sm); }
+.rf-level p { font-size: var(--sl-text-sm); margin-top: 0.3rem; }
+.rf-curves td:not(:first-child), .rf-curves th:not(:first-child) { text-align: center; }
+.rf-power { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.6rem; margin-top: 0.75rem !important; }
+.rf-power__col { padding: 0.6rem 0.8rem; border-radius: 6px; border-top: 3px solid var(--c); background: rgb(0 0 0 / 0.3); }
+.rf-power__col h3 { font-size: var(--sl-text-base); color: var(--c); margin: 0; }
+.rf-power__col h3 span { color: var(--sl-color-gray-3); font-size: var(--sl-text-xs); font-family: var(--sl-font); }
+.rf-power__col ul { list-style: none; padding: 0; margin: 0.4rem 0 0; font-size: var(--sl-text-sm); }
+.rf-power__col li { display: flex; justify-content: space-between; margin: 0.1rem 0 0 !important; }
+.rf-power__col b { color: var(--c); }
+.rf-runes { display: grid; grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr)); gap: 0.8rem; margin-top: 1rem !important; }
+.rf-runes__path { padding: 0.7rem 0.9rem; border-radius: 6px; border-left: 3px solid var(--c); background: rgb(0 0 0 / 0.28); }
+.rf-runes__path h3 { color: var(--c); margin: 0; font-family: var(--tw-head); }
+.rf-rune { margin-top: 0.6rem !important; }
+.rf-rune h4 { font-size: var(--sl-text-sm); margin: 0; color: var(--sl-color-gray-2); }
+.rf-rune .slots { gap: 0.4rem; margin-top: 0.35rem; }
+.rf-rune .slot { width: 4.4rem; }
+.rf-dot { width: 1rem; height: 1rem; border-radius: 50%; background: var(--c); box-shadow: 0 0 10px var(--c); }
+.rf-roles { display: grid; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 0.45rem; margin-top: 0.6rem !important; }
+.rf-role { text-align: left; display: flex; flex-direction: column; gap: 0.1rem; padding: 0.5rem 0.7rem; border-radius: 6px; border: 1px solid var(--tw-line); background: rgb(0 0 0 / 0.3); color: var(--sl-color-gray-1); cursor: pointer; font: inherit; }
+.rf-role strong { font-family: var(--tw-head); color: var(--tw-ember); }
+.rf-role span { font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); }
+.rf-role:hover, .rf-role.is-on { border-color: var(--tw-ember); box-shadow: 0 0 10px rgb(255 140 40 / 0.25); }
+.rf-filter { margin-top: 0.75rem; display: grid; gap: 0.4rem; }
+.rf-filter__row { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.rf-filter__row button { font: inherit; font-size: var(--sl-text-xs); padding: 0.25rem 0.6rem; border-radius: 999px; border: 1px solid var(--tw-line); background: rgb(0 0 0 / 0.35); color: var(--c, var(--sl-color-gray-2)); cursor: pointer; }
+.rf-filter__row button.is-on { background: color-mix(in srgb, var(--c, var(--tw-ember)) 25%, #000); border-color: var(--c, var(--tw-ember)); color: #fff; }
+.rf-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 0.6rem; margin-top: 0.6rem; }
+.rf-card { padding: 0.7rem 0.85rem; border-radius: 6px; border: 1px solid color-mix(in srgb, var(--c) 35%, #000); border-top: 3px solid var(--c); background: linear-gradient(180deg, color-mix(in srgb, var(--c) 9%, #14110d), #0f0c09); font-size: var(--sl-text-sm); }
+.rf-card[hidden] { display: none; }
+.rf-card header { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; }
+.rf-card h3 { margin: 0; font-family: var(--tw-head); font-size: var(--sl-text-lg); color: var(--c); }
+.rf-card__path { font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); text-transform: uppercase; letter-spacing: 0.08em; }
+.rf-card__meta { margin: 0.15rem 0 0 !important; font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); }
+.rf-card__levels { list-style: none; padding: 0; margin: 0.5rem 0 0 !important; display: grid; gap: 0.35rem; }
+.rf-card__levels li { display: grid; grid-template-columns: 1.8rem 1fr; gap: 0.4rem; margin: 0 !important; }
+.rf-card__lvl { font-family: var(--tw-head); font-weight: 700; color: var(--lc); text-align: center; }
+.rf-card__heavy { display: block; margin-top: 0.15rem; color: var(--sl-color-gray-3); font-size: var(--sl-text-xs); }
+.rf-val { color: #ffb347; }
+.rf-card__note { margin: 0.4rem 0 0 !important; font-size: var(--sl-text-xs); color: #b3a78f; font-style: italic; }
+.rf-card__cost { margin: 0.45rem 0 0 !important; font-size: var(--sl-text-xs); color: var(--sl-color-gray-2); border-top: 1px solid rgb(255 255 255 / 0.08); padding-top: 0.35rem; }
+.rf-gems { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 0.6rem; margin-top: 0.6rem; }
+.rf-gem { padding: 0.6rem 0.8rem; border-radius: 6px; border-left: 3px solid var(--c); background: rgb(0 0 0 / 0.3); font-size: var(--sl-text-sm); }
+.rf-gem h3 { margin: 0; color: var(--c); font-family: var(--tw-head); font-size: var(--sl-text-base); display: flex; justify-content: space-between; }
+.rf-gem h3 span { font-size: var(--sl-text-xs); font-family: var(--sl-font); }
+.rf-gem ul { margin: 0.3rem 0 0; padding-left: 1rem; }
+.rf-res td { font-size: var(--sl-text-xs); vertical-align: top; }
+.rf-card__text { margin: 0.45rem 0 0 !important; line-height: 1.5; }
+.rf-card__text i { color: var(--sl-color-gray-3); font-style: normal; }
+.rf-card__legend { margin: 0.3rem 0 0 !important; font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); }
+.rf-card__legend b { color: var(--sl-color-gray-2); font-weight: 600; }

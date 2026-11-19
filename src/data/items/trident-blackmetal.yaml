@@ -1,24 +1,57 @@
-biome: Plains
 name: Blackmetal Trident
 prefab: TridentBlackmetal_TW
 mod: warfare
 kind: weapon
-group: Atgeir & Lances
-skill: Polearm
+group: Tridents
+skill: Spears
 tier: Blackmetal
 damage:
-  pierce: 106
+  pierce: 100
+damage_max:
+  pierce: 118
+stats:
+  hands: One handed
+  block_armor: 50
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 16
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Fine Wood
-    - Blackmetal
-    - Chitin
-  monstrum:
-    - Lox Trophy
+  - Black Metal
+  - Iron
+  - Finewood
+  - Lox Pelt
+  amounts:
+  - 40
+  - 20
+  - 16
+  - 2
+  upgrade:
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 10
+  - 10
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 69
-  col: 5
-description: ''
+  sheet: Warfare 2.0
+  row: 1908
+biome: Plains
+description: Three barbed black metal prongs on a long shaft. Thrust, or throw it to pin a foe in place.
 notes: ''

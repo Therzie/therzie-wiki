@@ -1,24 +1,57 @@
-biome: Mountains
 name: Silver Crossbow
 prefab: CrossbowSilver_TW
 mod: warfare
 kind: weapon
-group: CrossBows
+group: Crossbows
+skill: Crossbows
 tier: Silver
 damage:
-  pierce: 110
-  spirit: 5
+  pierce: 147
+  spirit: 3
+damage_max:
+  pierce: 156
+stats:
+  hands: Two handed
+  knockback: 200
+  backstab: x3
+  durability: 150 (+50 per level)
+  secondary_stamina: 20
+  reload: 3.5 s
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Fletcher Table
+  level: 3
   materials:
-    - Ancient Bark
-    - Silver
-    - Red Jute
-    - Cultist Trophy
-  station: Fletchers Table
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 22
+  - 11
+  - 4
+  - 3
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Drake Trophy (level 3)
+  - Cultist Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 245
-  col: 7
-description: ''
+  sheet: Warfare 2.0
+  row: 2606
+biome: Mountains
+description: A pine crossbow with a silver prod mount and knotwork bands on the stock.
 notes: ''

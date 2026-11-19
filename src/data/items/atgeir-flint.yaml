@@ -1,23 +1,51 @@
-biome: Meadows
 name: Flint Atgeir
 prefab: AtgeirFlint_TW
 mod: warfare
 kind: weapon
-group: Atgeir & Lances
-skill: Polearm
+group: Atgeirs
+skill: Polearms
 tier: Flint
 damage:
-  pierce: 25
+  pierce: 27
+damage_max:
+  pierce: 45
+stats:
+  hands: Two handed
+  block_armor: 11
+  block_force: 40
+  knockback: 30
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 32
+  movement: -5%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 1
   materials:
-    - Flint
-    - Core Wood
-  monstrum:
-    - Leather Scraps or Fox Pelt
+  - Flint
+  - Wood
+  - Greydwarf Eye
+  - Leather Scraps
+  amounts:
+  - 14
+  - 7
+  - 1
+  - 4
+  upgrade:
+  - Flint
+  - Leather Scraps
+  - Resin
+  upgrade_amounts:
+  - 3
+  - 2
+  - 3
+checks: []
 source:
-  sheet: Weapons
-  row: 69
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 1501
+biome: Meadows
+description: An open-frame glaive with a crescent flint blade on a long bark-wood shaft, feathers at the socket.
 notes: ''

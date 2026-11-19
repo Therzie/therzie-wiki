@@ -2,20 +2,30 @@ name: Frost Bolt
 prefab: BoltFrost_TW
 mod: warfare
 kind: ammo
-group: CrossBolts
+group: Bolts
+skill: Crossbows
 damage:
-  pierce: 31
+  pierce: 26
   frost: 52
+stats:
+  weight: 0.1
 recipe:
-  yields: 1
+  yields: 20
+  station: Fletcher Table
+  level: 3
   materials:
-    - Wood
-    - Obsidian
-    - Feathers
-    - Freeze Gland
+  - Wood
+  - Obsidian
+  - Freeze Gland
+  - Feathers
+  amounts:
+  - 8
+  - 4
+  - 1
+  - 2
+checks: []
 source:
-  sheet: Weapons
-  row: 195
-  col: 7
-description: ''
+  sheet: Warfare 2.0
+  row: 2850
+description: A crossbow bolt with a head of ever-cold ice that chills its target to the bone.
 notes: ''

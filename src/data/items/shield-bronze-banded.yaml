@@ -1,23 +1,46 @@
-biome: Black Forest
-name: Bronze banded shield
+name: Banded Bronze Shield
 prefab: ShieldBronzeBanded_TW
 mod: warfare
 kind: shield
-group: Round Shields
+group: Shields
 tier: Bronze
+damage:
+  blunt: 10
 stats:
-  block_armor: 24
+  hands: Shield
+  block_armor: 24 (+6 per level)
   block_force: 30
-  parry_bonus: 1.5x
+  parry_bonus: x1.5
+  durability: 200 (+50 per level)
+  movement: -5%
+  weight: 5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Core Wood
-    - Bronze
-    - Deer Hide
+  - Bronze
+  - Finewood
+  - Copper
+  amounts:
+  - 10
+  - 8
+  - 2
+  upgrade:
+  - Bronze
+  - Finewood
+  - Greydwarf Brute Trophy (level 3)
+  - Skeleton Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 2
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 330
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 2903
+biome: Black Forest
+description: Corewood planks bound by a cross of engraved bronze bands, with a domed bronze boss. Sturdy enough for the dark woods.
 notes: ''

@@ -1,23 +1,49 @@
-biome: Black Forest
 name: Bone Claymore
 prefab: ClaymoreBone_TW
 mod: warfare
 kind: weapon
-group: Claymore
+group: Claymores
 skill: Swords
 tier: Bone
 damage:
-  blunt: 30
-  slash: 15
+  slash: 38
+damage_max:
+  slash: 56
+stats:
+  hands: Two handed
+  block_armor: 15
+  block_force: 50
+  knockback: 55
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 4
+  max_level: 4
 recipe:
   yields: 1
+  station: Workbench
+  level: 2
   materials:
-    - Bone Fragments
-    - Copper
-    - Skeleton Trophy
+  - Bone Fragments
+  - Corewood
+  - Troll Hide
+  amounts:
+  - 19
+  - 9
+  - 2
+  upgrade:
+  - Bone Fragments
+  - Troll Hide
+  - Greydwarf Brute Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 145
-  col: 3
-description: ''
+  sheet: Warfare 2.0
+  row: 402
+biome: Black Forest
+description: A broad two-handed blade cut from a giant shoulder blade.
 notes: ''

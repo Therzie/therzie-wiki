@@ -1,25 +1,57 @@
-biome: Plains
-name: Blackmetal lance
+name: Blackmetal Lance
 prefab: LanceBlackmetal_TW
 mod: warfare
 kind: weapon
-group: Atgeir & Lances
-skill: Polearm
+group: Lances
+skill: Polearms
 tier: Blackmetal
-effect: Secondary attack causes bleed damage over 10 seconds
 damage:
   pierce: 111
+damage_max:
+  pierce: 129
+stats:
+  hands: Two handed
+  block_armor: 50
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 2.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 4
   materials:
-    - Fine Wood
-    - Blackmetal
-    - Lox Trophy
-  monstrum:
-    - Lox Bone or Prowler Fang
+  - Black Metal
+  - Iron
+  - Finewood
+  - Lox Pelt
+  amounts:
+  - 40
+  - 20
+  - 24
+  - 2
+  upgrade:
+  - Black Metal
+  - Iron
+  - Lox Pelt
+  - Fuling Trophy (level 3)
+  - Lox Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 10
+  - 10
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 69
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 1608
+biome: Plains
+description: A long black metal point with palisade barbs, long enough to keep a lox at bay.
 notes: ''

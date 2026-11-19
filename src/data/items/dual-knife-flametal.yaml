@@ -1,24 +1,54 @@
-biome: Ashlands
-name: Flametal daggers
+name: Flametal Daggers
 prefab: DualKnifeFlametal_TW
 mod: warfare
 kind: weapon
-group: Dual Knives
+group: Dual knives
 skill: Knives
 tier: Flametal
 damage:
-  slash: 55
-  pierce: 55
+  slash: 54
+  pierce: 54
+damage_max:
+  slash: 57
+  pierce: 57
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 300 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
 recipe:
   yields: 1
+  station: Black Forge
+  level: 3
   materials:
-    - Ashwood
-    - Flametal
-    - Charred Bone
-    - Warlock Trophy
+  - Flametal
+  - Charred Bone
+  - Asksvin Hide
+  amounts:
+  - 31
+  - 15
+  - 2
+  upgrade:
+  - Flametal
+  - Asksvin Hide
+  - Asksvin Trophy (level 3)
+  - Warrior Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 8
+  - 1
+  - 1
+  - 1
+  - 4
+checks: []
 source:
-  sheet: Weapons
-  row: 106
-  col: 8
-description: ''
+  sheet: Warfare 2.0
+  row: 611
+biome: Ashlands
+description: A pair of flametal daggers, still smouldering from the forge.
 notes: ''

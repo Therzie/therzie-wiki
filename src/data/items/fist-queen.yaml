@@ -2,25 +2,33 @@ name: Hunger
 prefab: FistQueen_TW
 mod: warfare
 kind: weapon
-group: Boss Weapons
-effect: 'Devour: 6th hit lowers slash resistance and causes bleeding with secondary attack'
+group: Fists
+skill: Fists
 damage:
-  slash: 108
-  poison: 12
+  blunt: 105
+  slash: 10
+damage_max:
+  blunt: 117
+  slash: 16
+stats:
+  hands: Dual
+  block_armor: 19 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 300 (+125 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
 drops:
-  - from: Queen
-    chance: 8%
-recipe:
-  yields: 1
-  materials:
-    - Carapace
-    - Dark Crystal
-    - Venomous Fang
-    - Queen Trophy
-  station: Black Forge
+- from: The Queen
+  chance: 7%
+info:
+- Relic of The Queen
+checks: []
 source:
-  sheet: Weapons
-  row: 373
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 2050
+biome: Mistlands
+description: Monstrous venom tipped claw weapons to shred your prey to pieces with.
 notes: ''

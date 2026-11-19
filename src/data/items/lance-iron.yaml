@@ -1,0 +1,53 @@
+name: Iron Lance
+prefab: LanceIron_TW
+mod: warfare
+kind: weapon
+group: Lances
+skill: Polearms
+tier: Iron
+damage:
+  pierce: 63
+damage_max:
+  pierce: 81
+stats:
+  hands: Two handed
+  block_armor: 26
+  block_force: 40
+  knockback: 90
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 20 / 40
+  movement: -5%
+  weight: 2.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Iron
+  - Ancient Bark
+  - Leather Scraps
+  amounts:
+  - 32
+  - 16
+  - 4
+  upgrade:
+  - Iron
+  - Leather Scraps
+  - Draugr Trophy (level 3)
+  - Draugr Elite Trophy (level 4)
+  - Rotten Pelt (level 4)
+  upgrade_amounts:
+  - 8
+  - 2
+  - 1
+  - 1
+  - 4
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 1605
+biome: Swamp
+description: A needle bodkin head with two back hooks on long riveted langets, trailing tattered leather.
+notes: ''

@@ -1,0 +1,50 @@
+name: Flint Twin Swords
+prefab: DualSwordFlint_TW
+mod: warfare
+kind: weapon
+group: Dual swords
+skill: Swords
+tier: Flint
+damage:
+  slash: 22
+damage_max:
+  slash: 37
+stats:
+  hands: Dual
+  block_armor: 9
+  block_force: 40
+  knockback: 40
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 0.3
+  max_level: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 1
+  materials:
+  - Flint
+  - Wood
+  - Feathers
+  - Leather Scraps
+  amounts:
+  - 14
+  - 7
+  - 2
+  - 4
+  upgrade:
+  - Flint
+  - Leather Scraps
+  - Resin
+  upgrade_amounts:
+  - 4
+  - 2
+  - 3
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 201
+biome: Meadows
+description: Two knapped flint swords, related but not alike, with feathers tied at the guard.
+notes: ''

@@ -1,23 +1,51 @@
-biome: Ocean
-name: Abyssal war pike
+name: Chitin Warpike
 prefab: WarpikeChitin_TW
 mod: warfare
 kind: weapon
-group: WarPikes
+group: Warpikes
 skill: Spears
 tier: Chitin
-effect: 4th hit lowers targets pierce resistance
 damage:
   pierce: 48
+damage_max:
+  pierce: 66
+stats:
+  hands: One handed
+  block_armor: 22
+  block_force: 20
+  knockback: 20
+  backstab: x3
+  durability: 200 (+50 per level)
+  stamina: 14 / 36
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 1
   materials:
-    - Ancient Bark
-    - Chitin
-    - Bronze
+  - Chitin
+  - Bronze
+  - Finewood
+  amounts:
+  - 18
+  - 9
+  - 16
+  upgrade:
+  - Chitin
+  - Bronze
+  - Skeleton Trophy (level 3)
+  - Draugr Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 283
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 1804
+biome: Ocean
+description: A long pike with a winged chitin head. Thrust, jump in, and pin them down.
 notes: ''

@@ -1,24 +1,56 @@
-biome: Plains
 name: Blackmetal Bow
 prefab: BowBlackmetal_TW
 mod: warfare
 kind: weapon
 group: Bows
+skill: Bows
 tier: Blackmetal
 damage:
-  pierce: 62
+  pierce: 60
+damage_max:
+  pierce: 72
+stats:
+  hands: Two handed
+  knockback: 25
+  backstab: x3
+  durability: 150 (+50 per level)
+  draw_stamina: 12 per second
+  secondary_stamina: 20
+  movement: -5%
+  weight: 1.5
+  max_level: 4
 recipe:
   yields: 1
+  station: Fletcher Table
+  level: 4
   materials:
-    - Fine Wood
-    - Blackmetal
-  station: Fletchers Table
-  monstrum:
-    - Needle
-    - Deathsquito Trophy
+  - Black Metal
+  - Iron
+  - Finewood
+  - Linen Thread
+  amounts:
+  - 26
+  - 13
+  - 10
+  - 10
+  upgrade:
+  - Black Metal
+  - Iron
+  - Linen Thread
+  - Fuling Trophy (level 3)
+  - Fuling Shaman Trophy (level 4)
+  - Lox Bone (level 4)
+  upgrade_amounts:
+  - 7
+  - 7
+  - 5
+  - 1
+  - 1
+  - 3
+checks: []
 source:
-  sheet: Weapons
-  row: 219
-  col: 4
-description: ''
+  sheet: Warfare 2.0
+  row: 2408
+biome: Plains
+description: A fuling recurve of dark wood, tipped with hooked black metal and studded with needles.
 notes: ''

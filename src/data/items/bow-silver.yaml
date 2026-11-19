@@ -1,0 +1,57 @@
+name: Silver Bow
+prefab: BowSilver_TW
+mod: warfare
+kind: weapon
+group: Bows
+skill: Bows
+tier: Silver
+damage:
+  pierce: 50
+  spirit: 3
+damage_max:
+  pierce: 62
+stats:
+  hands: Two handed
+  knockback: 25
+  backstab: x3
+  durability: 150 (+50 per level)
+  draw_stamina: 12 per second
+  secondary_stamina: 20
+  movement: -5%
+  weight: 1.5
+  max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 17
+  - 8
+  - 3
+  - 2
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Drake Trophy (level 3)
+  - Cultist Trophy (level 4)
+  upgrade_amounts:
+  - 4
+  - 4
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2406
+biome: Mountains
+description: A pine recurve with silver-capped limbs and a wolfcloth grip.
+notes: ''

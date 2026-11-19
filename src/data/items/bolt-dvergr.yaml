@@ -1,0 +1,30 @@
+name: Dvergr Bolt
+prefab: BoltDvergr_TW
+mod: warfare
+kind: ammo
+group: Bolts
+skill: Crossbows
+tier: Dvergr
+damage:
+  pierce: 75
+stats:
+  weight: 0.1
+recipe:
+  yields: 20
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Yggdrasil Wood
+  - Refined Eitr
+  - Feathers
+  amounts:
+  - 8
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2810
+biome: Mistlands
+description: A dvergr bodkin bolt with an eitr-lit head.
+notes: ''

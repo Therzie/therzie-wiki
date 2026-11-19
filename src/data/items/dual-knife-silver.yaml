@@ -1,25 +1,59 @@
-biome: Mountains
-name: Silver daggers
+name: Silver Daggers
 prefab: DualKnifeSilver_TW
 mod: warfare
 kind: weapon
-group: Dual Knives
+group: Dual knives
 skill: Knives
 tier: Silver
 damage:
-  slash: 26
-  pierce: 26
-  spirit: 12
+  slash: 31
+  pierce: 32
+  spirit: 8
+damage_max:
+  slash: 34
+  pierce: 35
+stats:
+  hands: Dual
+  block_armor: 20
+  block_force: 10
+  knockback: 10
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 12 / 38
+  weight: 0.3
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 3
   materials:
-    - Ancient Bark
-    - Crystal
-    - Silver
-    - Cultist Trophy
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 14
+  - 7
+  - 2
+  - 2
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Ulv Trophy (level 3)
+  - Fenring Trophy (level 4)
+  upgrade_amounts:
+  - 3
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 106
-  col: 6
-description: ''
+  sheet: Warfare 2.0
+  row: 606
+biome: Mountains
+description: 'A pair of daggers: one of knapped obsidian, one of rune-cut silver.'
 notes: ''

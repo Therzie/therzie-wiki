@@ -1,26 +1,57 @@
-biome: Mountains
-name: Silver Claws
+name: Silver Fists
 prefab: FistSilver_TW
 mod: warfare
 kind: weapon
-group: Claws
+group: Fists
 skill: Fists
 tier: Silver
-effect: on 5th hit cause bleeding damage
 damage:
-  slash: 60
-  spirit: 20
+  slash: 67
+  spirit: 13
+damage_max:
+  slash: 79
+stats:
+  hands: Dual
+  block_armor: 15 (+1 per level)
+  block_force: 10
+  knockback: 20
+  backstab: x6
+  durability: 200 (+50 per level)
+  stamina: 16 / 48
+  weight: 2
+  max_level: 4
 recipe:
   yields: 1
+  station: Forge
+  level: 3
   materials:
-    - Fenris Hair
-    - Fenris Claw
-    - Silver
-  monstrum:
-    - Ulv Trophy
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  amounts:
+  - 19
+  - 9
+  - 3
+  - 2
+  upgrade:
+  - Silver
+  - Iron
+  - Wolf Pelt
+  - Wolf Fang
+  - Wolf Trophy (level 3)
+  - Ulv Trophy (level 4)
+  upgrade_amounts:
+  - 5
+  - 5
+  - 1
+  - 1
+  - 1
+  - 1
+checks: []
 source:
-  sheet: Weapons
-  row: 258
-  col: 7
-description: ''
+  sheet: Warfare 2.0
+  row: 2006
+biome: Mountains
+description: 'Silver knuckle bars with a leather-wrapped grip: three silver spikes on one hand, an obsidian blade on the other.'
 notes: ''
