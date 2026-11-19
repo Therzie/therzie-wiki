@@ -503,3 +503,14 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 .tooltip-card__set li { margin: 0 !important; }
 .food--health dd { color: #ff6b5e; } .food--stamina dd { color: #f2d64b; } .food--eitr dd { color: #b98cff; }
 .drops .glyph { vertical-align: -2px; }
+
+/* materials overview */
+.mat-letter { margin-top: 1.5rem; }
+.mat-letter[hidden] { display: none; }
+.mat-list { list-style: none; padding: 0; margin: 0.75rem 0 0; columns: 15rem; column-gap: 1.5rem; }
+.mat-list li { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin: 0 0 0.3rem !important; break-inside: avoid; }
+.mat-list li[hidden] { display: none; }
+.mat-list a { color: var(--sl-color-gray-1); text-decoration: none; }
+.mat-list a:hover { color: var(--tw-ember); }
+.mat-uses { margin-top: 1.5rem; }
+.mat-uses .family__line a { width: 7.5rem; }
