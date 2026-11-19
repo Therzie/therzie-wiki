@@ -18,9 +18,6 @@ export default defineConfig({
       description: 'Weapons, armor, creatures and progression for the Therzie mods for Valheim.',
       logo: { src: './src/assets/mark.svg' },
       customCss: [
-        '@fontsource/cinzel/600.css',
-        '@fontsource/cinzel/700.css',
-        '@fontsource/cinzel-decorative/700.css',
         '@fontsource/noto-sans-runic/400.css',
         './src/styles/custom.css',
       ],
@@ -47,7 +44,11 @@ export default defineConfig({
         { label: 'To check', link: '/checks/' },
         { label: 'About & contributing', slug: 'about' },
       ],
-      head: [{ tag: 'meta', attrs: { name: 'theme-color', content: '#0d1014' } }],
+      head: [
+        { tag: 'meta', attrs: { name: 'theme-color', content: '#0d1014' } },
+        // load the heading font before first paint
+        { tag: 'link', attrs: { rel: 'preload', href: `${base}/fonts/Norse-Bold.otf`, as: 'font', type: 'font/otf', crossorigin: 'anonymous' } },
+      ],
     }),
   ],
 });

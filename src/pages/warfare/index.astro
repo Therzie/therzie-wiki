@@ -4,6 +4,7 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import ItemIcon from '../../components/ItemIcon.astro';
 import Glyph from '../../components/Glyph.astro';
 import RuneDivider from '../../components/RuneDivider.astro';
+import Rune from '../../components/Rune.astro';
 import { getItems, TIERS, url, biomeColor } from '../../lib/wiki';
 
 const items = await getItems('warfare');
@@ -87,7 +88,7 @@ const saga = [
         const list = items.filter((i) => i.data.tier === t.id);
         return (
           <li class="tier" id={`tier-${t.id.toLowerCase()}`} style={`--c:${biomeColor(t.biome)}`}>
-            <div class="tier__rune">{t.rune}</div>
+            <div class="tier__rune"><Rune r={t.rune} /></div>
             <div class="tier__body">
               <h3>{t.id} <span class="tier__biome"><Glyph biome={t.biome} size={13} />{t.biome}</span></h3>
               <p>{t.text}</p>

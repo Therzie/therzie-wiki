@@ -5,6 +5,7 @@ import ItemIcon from '../../../components/ItemIcon.astro';
 import BiomeBadge from '../../../components/BiomeBadge.astro';
 import Glyph from '../../../components/Glyph.astro';
 import RuneDivider from '../../../components/RuneDivider.astro';
+import Rune from '../../../components/Rune.astro';
 import { getItems, groupsOf, BIOMES, TIERS, DAMAGE, url, slugify, totalDamage, biomeColor } from '../../../lib/wiki';
 
 const items = await getItems('warfare');
@@ -55,7 +56,7 @@ const usedBiomes = BIOMES.filter((b) => items.some((i) => i.data.biome === b.nam
       <div class="matrix__corner"></div>
       {TIERS.map((t) => (
         <div class="matrix__biome matrix__tier" style={`--c:${biomeColor(t.biome)}`} title={t.text}>
-          <span class="matrix__rune">{t.rune}</span>
+          <Rune r={t.rune} class="matrix__rune" />
           <span>{t.id}</span>
           <small><Glyph biome={t.biome} size={11} />{t.biome}</small>
         </div>

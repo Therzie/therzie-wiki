@@ -6,6 +6,7 @@ import BiomeBadge from '../../components/BiomeBadge.astro';
 import ItemTooltip from '../../components/ItemTooltip.astro';
 import CraftingSlots from '../../components/CraftingSlots.astro';
 import RuneDivider from '../../components/RuneDivider.astro';
+import Rune from '../../components/Rune.astro';
 import { getItems, url, slugify, totalDamage, modName, biomeIndex, tierIndex, tierInfo, repoUrl, type Item } from '../../lib/wiki';
 
 export async function getStaticPaths() {
@@ -34,7 +35,7 @@ const repo = repoUrl;
         <a class="pill" href={url(`/${d.mod}/`)}>{modName(d.mod)}</a>
         <a class="pill" href={url(`/${d.mod}/weapons/#group-${slugify(d.group)}`)}>{d.group}</a>
         {d.skill && <span class="pill">{d.skill} skill</span>}
-        {tier && <a class="pill pill--tier" href={url(`/${d.mod}/#tier-${tier.id.toLowerCase()}`)}><span class="rune">{tier.rune}</span>{tier.id} tier</a>}
+        {tier && <a class="pill pill--tier" href={url(`/${d.mod}/#tier-${tier.id.toLowerCase()}`)}><Rune r={tier.rune} />{tier.id} tier</a>}
         <BiomeBadge biome={d.biome} guessed={d.biome_guessed} />
       </div>
       <p class="prefab">
@@ -42,7 +43,7 @@ const repo = repoUrl;
         <button class="copy-btn" data-copy-btn={d.prefab} aria-label="Copy prefab name">copy</button>
       </p>
       {d.description && <p class="item-hero__desc">{d.description}</p>}
-      {tier && <p class="item-hero__tier"><span class="rune">{tier.rune}</span> {tier.text}</p>}
+      {tier && <p class="item-hero__tier"><Rune r={tier.rune} /> {tier.text}</p>}
     </div>
   </div>
 

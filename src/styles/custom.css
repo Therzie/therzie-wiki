@@ -8,8 +8,8 @@
   color-scheme: dark;
   --sl-content-width: 64rem;
   --sl-font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --tw-head: 'Norse', 'Cinzel', Georgia, serif;
-  --tw-display: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  --tw-head: 'Norse', serif;
+  --tw-display: var(--tw-head);
   --tw-runic: 'Noto Sans Runic', serif;
 
   --sl-color-accent-low: #2a1f12;
@@ -46,7 +46,8 @@
   src: url('/therzie-wiki/fonts/Norse-Bold.otf') format('opentype');
   font-weight: 400 900;
   font-style: normal;
-  font-display: swap;
+  /* block: show nothing for a moment instead of a fallback face, so headings never jump */
+  font-display: block;
 }
 
 /* ---------- page backdrop: night sky, mist, distant mountains ---------- */
@@ -90,7 +91,7 @@ h1#_top, .hero h1 {
   text-shadow: none; filter: drop-shadow(0 2px 0 rgb(0 0 0 / 0.6));
 }
 .content-panel:first-of-type h1#_top::after {
-  content: 'ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ';
+  content: 'ᚠ ᚢ ᚦ ᚨ ᚱ ᚴ';
   display: block; margin-top: 0.4rem;
   font-family: var(--tw-runic); font-size: 1.05rem; letter-spacing: 0.55em; color: var(--tw-bronze); opacity: 0.75;
   -webkit-text-fill-color: var(--tw-bronze);
@@ -421,7 +422,8 @@ strong.new { color: var(--tw-ember); }
 .matrix--tiers .matrix__cell a { flex-direction: column; align-items: center; text-align: center; gap: 0.2rem; font-size: 0.62rem; line-height: 1.15; word-break: break-word; }
 
 /* ---------- Norse headings: all caps display face, needs a bit more size and air ---------- */
-h1, h2, .group__title, .mod__name, .hero h1, .site-title, nav.sidebar .large,
+h1, h2, h3, h4, h5, h6, th, .group__title, .mod__name, .hero h1, .site-title, nav.sidebar .large,
+.pagination-links .link-title, .sl-link-button, .view, .item-icon__mono, .slot__box,
 .card-item h3, .tooltip-card__name, .matrix__group, .matrix__tier > span:not(.matrix__rune),
 .tier h3, .readme h3, .arsenal__tab h3, .rune-path strong, .panel h2, .family h2, .stat strong,
 .item-table th, .readme-table td.relic, .mat h3, .raven b, .readme__motto, .readme__sign, .starlight-aside__title {
@@ -456,3 +458,8 @@ nav.sidebar .large { font-size: 1.05rem; letter-spacing: 0.08em; }
 
 /* Warfare overview: the README logo is the title */
 body:has(.readme__logo) .content-panel:first-of-type { display: none; }
+
+/* small runes (kaun, ing) at the same visual height as the rest */
+.rune { display: inline-block; }
+.rune--small { transform: scale(2.2); transform-origin: 50% 65%; margin-inline: 0.2em; }
+.rune-divider span { display: inline-flex; gap: 0.35em; letter-spacing: 0; }
