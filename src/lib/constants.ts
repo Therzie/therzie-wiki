@@ -2,12 +2,12 @@ import tiers from '../data/tiers.json';
 
 export const MODS = [
   { id: 'warfare', name: 'Warfare', blurb: 'Weapons, shields, pieces and items', ready: true },
-  { id: 'warfare-fi', name: 'Warfare Fire & Ice', blurb: 'Elemental weapons and armor', ready: false },
+  { id: 'warfare-fi', name: 'Warfare Fire & Ice', blurb: 'Elemental weapons and armor', ready: false, legacy: 'https://docs.google.com/spreadsheets/d/1kxXS34lWO-MWGktSqcOaRE_4tiLZHjN8sV1hxv2GsEU/edit#gid=2023776386' },
   { id: 'armory', name: 'Armory', blurb: 'Armor sets for every biome', ready: true },
   { id: 'monstrum', name: 'Monstrum', blurb: 'Creatures, bosses, food and weaknesses', ready: true },
-  { id: 'monstrum-dn', name: 'Monstrum Deep North', blurb: 'The Deep North and its progression', ready: false },
+  { id: 'monstrum-dn', name: 'Monstrum Deep North', blurb: 'The Deep North and its progression', ready: false, legacy: 'https://docs.google.com/spreadsheets/d/1kxXS34lWO-MWGktSqcOaRE_4tiLZHjN8sV1hxv2GsEU/edit#gid=383638690' },
   { id: 'wizardry', name: 'Wizardry', blurb: 'Staffs, robes, rings, creatures and food', ready: true },
-] as const;
+] as { id: string; name: string; blurb: string; ready: boolean; legacy?: string }[];
 
 export const BIOMES = [
   { name: 'Meadows', color: '#7fae4e' },

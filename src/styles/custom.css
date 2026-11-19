@@ -514,3 +514,10 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 .mat-list a:hover { color: var(--tw-ember); }
 .mat-uses { margin-top: 1.5rem; }
 .mat-uses .family__line a { width: 7.5rem; }
+
+/* legacy block on the home page */
+.legacy { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--tw-line); }
+.legacy__title { font-size: 1.6rem; color: var(--tw-bronze-hi); margin: 0; }
+.legacy__lead { color: var(--sl-color-gray-3); font-size: var(--sl-text-sm); margin: 0.4rem 0 1rem; }
+.mod--legacy { opacity: 0.8; filter: saturate(0.7); }
+.mod--legacy:hover { opacity: 1; filter: none; border-color: var(--tw-bronze); }

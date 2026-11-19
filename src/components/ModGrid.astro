@@ -1,22 +1,31 @@
 ---
 import { MODS, url, getItems } from '../lib/wiki';
 const items = await getItems();
+const current = MODS.filter((m) => m.ready);
+const legacy = MODS.filter((m) => m.legacy);
 ---
 <div class="mod-grid not-content">
-  {MODS.map((m) => {
-    const n = items.filter((i) => i.data.mod === m.id).length;
-    return m.ready ? (
-      <a class="mod" href={url(`/${m.id}/`)}>
-        <span class="mod__name">{m.name}</span>
-        <span class="mod__blurb">{m.blurb}</span>
-        <span class="mod__count">{n} items so far</span>
-      </a>
-    ) : (
-      <div class="mod mod--soon">
-        <span class="mod__name">{m.name}</span>
-        <span class="mod__blurb">{m.blurb}</span>
-        <span class="mod__count">Still in the spreadsheet</span>
-      </div>
-    );
-  })}
+  {current.map((m) => (
+    <a class="mod" href={url(`/${m.id}/`)}>
+      <span class="mod__name">{m.name}</span>
+      <span class="mod__blurb">{m.blurb}</span>
+      <span class="mod__count">{items.filter((i) => i.data.mod === m.id).length} items</span>
+    </a>
+  ))}
 </div>
+
+{legacy.length > 0 && (
+  <section class="legacy not-content">
+    <h2 class="legacy__title">Legacy pre 1.0 Wiki</h2>
+    <p class="legacy__lead">From before Valheim 1.0. These pages are still in the original spreadsheet.</p>
+    <div class="mod-grid">
+      {legacy.map((m) => (
+        <a class="mod mod--legacy" href={m.legacy}>
+          <span class="mod__name">{m.name}</span>
+          <span class="mod__blurb">{m.blurb}</span>
+          <span class="mod__count">Open in the spreadsheet ↗</span>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
