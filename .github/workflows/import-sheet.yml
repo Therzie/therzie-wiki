@@ -1,0 +1,36 @@
+# Pulls the latest numbers from Majestic's spreadsheet and opens a pull request.
+# Nothing is published until an editor reviews and merges it.
+name: Import from spreadsheet
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * 1'   # Mondays 06:17 UTC
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Import
+        env:
+          GOOGLE_SHEETS_API_KEY: ${{ secrets.GOOGLE_SHEETS_API_KEY }}
+        run: |
+          node scripts/import-sheet.mjs --range "Weapons!A6:AC68" --mod warfare | tee import-report.txt
+      - name: Check that the site still builds
+        run: npx astro build
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: import/spreadsheet
+          title: 'Import from spreadsheet'
+          commit-message: 'Import latest values from the spreadsheet'
+          body-path: import-report.txt
+          add-paths: src/data/items
+          labels: import

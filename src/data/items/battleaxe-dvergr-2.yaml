@@ -1,0 +1,24 @@
+name: Flametal Battleaxe
+prefab: BattleaxeDvergr_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+damage:
+  slash: 174
+recipe:
+  yields: 1
+  materials:
+    - Flametal
+    - Charred Bone
+    - Bonemaw Tooth
+  monstrum:
+    - Valkyrie Trophy
+checks:
+  - Prefab BattleaxeDvergr_TW appears 2x in the sheet (Dwarven Battleaxe, Flametal Battleaxe)
+source:
+  sheet: Weapons
+  row: 29
+biome: Ashlands
+biome_guessed: true
+description: ''
+notes: ''

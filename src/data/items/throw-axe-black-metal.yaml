@@ -1,0 +1,20 @@
+name: Blackmetal Throwing Axe
+prefab: ThrowAxeBlackMetal_TW
+mod: warfare
+group: Throwing Axes
+skill: Throwing
+damage:
+  slash: 48
+recipe:
+  yields: 10
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Linen Thread
+source:
+  sheet: Weapons
+  row: 18
+biome: Plains
+biome_guessed: true
+description: ''
+notes: ''

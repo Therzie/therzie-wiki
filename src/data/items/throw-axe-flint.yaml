@@ -1,0 +1,19 @@
+name: Flint Throwing Axe
+prefab: ThrowAxeFlint_TW
+mod: warfare
+group: Throwing Axes
+skill: Throwing
+damage:
+  slash: 9
+recipe:
+  yields: 10
+  materials:
+    - Wood
+    - Flint
+source:
+  sheet: Weapons
+  row: 18
+biome: Meadows
+biome_guessed: true
+description: ''
+notes: ''

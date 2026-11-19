@@ -1,0 +1,22 @@
+name: Silver Axe
+prefab: AxeSilver_TW
+mod: warfare
+group: Axes
+skill: Axes
+damage:
+  slash: 80
+  spirit: 30
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Silver
+    - Wolf Fang
+    - Wolf Trophy
+source:
+  sheet: Weapons
+  row: 6
+biome: Mountains
+biome_guessed: true
+description: ''
+notes: ''

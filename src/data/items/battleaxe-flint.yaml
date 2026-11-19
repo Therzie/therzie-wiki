@@ -1,0 +1,20 @@
+name: Flint Battleaxe
+prefab: BattleaxeFlint_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+damage:
+  slash: 30
+recipe:
+  yields: 1
+  materials:
+    - Flint
+    - Wood
+    - Leather Scraps
+source:
+  sheet: Weapons
+  row: 29
+biome: Meadows
+biome_guessed: true
+description: ''
+notes: ''

@@ -1,0 +1,21 @@
+name: Dwarven Throwing Axe
+prefab: ThrowAxeDvergr_TW
+mod: warfare
+group: Throwing Axes
+skill: Throwing
+damage:
+  slash: 68
+  lightning: 4
+recipe:
+  yields: 10
+  materials:
+    - Yggdrasil Wood
+    - Carapace
+    - Refined Eitr
+source:
+  sheet: Weapons
+  row: 18
+biome: Mistlands
+biome_guessed: true
+description: ''
+notes: ''

@@ -1,0 +1,22 @@
+---
+import { MODS, url, getItems } from '../lib/wiki';
+const items = await getItems();
+---
+<div class="mod-grid not-content">
+  {MODS.map((m) => {
+    const n = items.filter((i) => i.data.mod === m.id).length;
+    return m.ready ? (
+      <a class="mod" href={url(`/${m.id}/`)}>
+        <span class="mod__name">{m.name}</span>
+        <span class="mod__blurb">{m.blurb}</span>
+        <span class="mod__count">{n} items so far</span>
+      </a>
+    ) : (
+      <div class="mod mod--soon">
+        <span class="mod__name">{m.name}</span>
+        <span class="mod__blurb">{m.blurb}</span>
+        <span class="mod__count">Still in the spreadsheet</span>
+      </div>
+    );
+  })}
+</div>

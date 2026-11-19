@@ -1,0 +1,24 @@
+name: Amethyst crystal battleaxe
+prefab: BattleaxeCrystalAmethyst_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+damage:
+  slash: 135
+  lightning: 15
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Refined Eitr
+    - Dark Crystal
+    - Amethyst
+checks:
+  - Group taken from the block above (no label in the sheet)
+source:
+  sheet: Weapons
+  row: 42
+biome: Mistlands
+biome_guessed: true
+description: ''
+notes: ''

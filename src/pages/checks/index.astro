@@ -1,0 +1,39 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { getItems, url } from '../../lib/wiki';
+
+const items = await getItems();
+const flagged = items.filter((i) => i.data.checks.length);
+const guessed = items.filter((i) => i.data.biome_guessed);
+const noText = items.filter((i) => !i.data.description);
+---
+<StarlightPage frontmatter={{ title: 'To check', description: 'Open points for the wiki editors.', tableOfContents: false }}>
+  <p class="lead">
+    The importer never fixes the sheet on its own. Anything that looks off ends up here, so an editor can decide.
+    When a point is handled, remove it from <code>checks</code> in the item file.
+  </p>
+
+  <div class="stat-row not-content">
+    <div class="stat"><strong>{flagged.length}</strong><span>items with a remark</span></div>
+    <div class="stat"><strong>{guessed.length}</strong><span>biomes still guessed</span></div>
+    <div class="stat"><strong>{noText.length}</strong><span>items without a description</span></div>
+  </div>
+
+  <h2>Remarks from the import</h2>
+  <table class="item-table">
+    <thead><tr><th>Item</th><th>Remark</th><th>Sheet</th></tr></thead>
+    <tbody>
+      {flagged.flatMap((it) => it.data.checks.map((c, i) => (
+        <tr>
+          <td>{i === 0 && <a href={url(`/items/${it.id}/`)}>{it.data.name}</a>}</td>
+          <td>{c}</td>
+          <td class="small">{i === 0 && it.data.source && `${it.data.source.sheet} r${it.data.source.row}`}</td>
+        </tr>
+      )))}
+    </tbody>
+  </table>
+
+  <h2>Biome guessed from the material</h2>
+  <p>Confirm the biome in the editor; the question mark disappears once <code>biome_guessed</code> is gone.</p>
+  <p class="inline-list">{guessed.map((it) => <a href={url(`/items/${it.id}/`)}>{it.data.name} ({it.data.biome})</a>)}</p>
+</StarlightPage>

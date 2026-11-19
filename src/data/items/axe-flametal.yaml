@@ -1,0 +1,23 @@
+name: Flametal axe
+prefab: AxeFlametal_TW
+mod: warfare
+group: Axes
+skill: Axes
+damage:
+  slash: 140
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Flametal
+    - Bonemaw Tooth
+    - Bonemaw Trophy
+checks:
+  - '"Recipe" heading missing in the sheet'
+source:
+  sheet: Weapons
+  row: 6
+biome: Ashlands
+biome_guessed: true
+description: ''
+notes: ''

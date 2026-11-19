@@ -1,0 +1,20 @@
+name: Iron Battleaxe
+prefab: BattleaxeIron_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+damage:
+  slash: 70
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Iron
+    - Draugr Elite Trophy
+source:
+  sheet: Weapons
+  row: 29
+biome: Swamp
+biome_guessed: true
+description: ''
+notes: ''

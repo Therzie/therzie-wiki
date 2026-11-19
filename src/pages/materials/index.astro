@@ -1,0 +1,34 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import ItemIcon from '../../components/ItemIcon.astro';
+import { getItems, materialIndex, url, slugify } from '../../lib/wiki';
+
+const items = await getItems();
+const mats = materialIndex(items);
+---
+<StarlightPage frontmatter={{ title: 'Materials', description: 'Which weapons use which material.', tableOfContents: false }}>
+  <p class="lead">Every material from the recipes, and what you can make with it. Built automatically from the item recipes.</p>
+  <input type="search" class="mat-search" placeholder="Find a material…" data-mat-search aria-label="Find a material" />
+  <div class="mat-grid not-content">
+    {mats.map(([name, use]) => (
+      <section class="mat" id={slugify(name)} data-name={name.toLowerCase()}>
+        <h3>{name} <span class="group__count">{use.items.length + use.monstrum.length}</span></h3>
+        <ul>
+          {use.items.map((it) => (
+            <li><a href={url(`/items/${it.id}/`)}><ItemIcon prefab={it.data.prefab} name={it.data.name} biome={it.data.biome} size={24} />{it.data.name}</a></li>
+          ))}
+          {use.monstrum.map((it) => (
+            <li><a href={url(`/items/${it.id}/`)}><ItemIcon prefab={it.data.prefab} name={it.data.name} biome={it.data.biome} size={24} />{it.data.name}</a> <span class="pill">Monstrum</span></li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</StarlightPage>
+<script>
+  const input = document.querySelector<HTMLInputElement>('[data-mat-search]')!;
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    document.querySelectorAll<HTMLElement>('.mat').forEach((m) => (m.hidden = !!q && !m.dataset.name!.includes(q)));
+  });
+</script>

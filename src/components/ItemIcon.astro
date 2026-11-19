@@ -1,0 +1,11 @@
+---
+import { iconFor, biomeColor } from '../lib/wiki';
+interface Props { prefab: string; name: string; biome?: string; size?: number }
+const { prefab, name, biome, size = 56 } = Astro.props;
+const src = iconFor(prefab);
+const color = biomeColor(biome);
+const initials = name.split(/\s+/).filter((w) => /^[A-Za-z]/.test(w)).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
+---
+<span class="item-icon" style={`--c:${color};--s:${size}px`} aria-hidden="true">
+  {src ? <img src={src} alt="" width={size} height={size} loading="lazy" /> : <span class="item-icon__mono">{initials}</span>}
+</span>

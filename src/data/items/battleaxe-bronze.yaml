@@ -1,0 +1,24 @@
+name: Bronze Battleaxe
+prefab: BattleaxeBronze_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+damage:
+  slash: 50
+recipe:
+  yields: 1
+  materials:
+    - Core Wood
+    - Bronze
+  monstrum:
+    - Greydwarf Brute Trophy
+    - Razorback Trophy
+checks:
+  - Read "Greydwarf Brute" as "Greydwarf Brute Trophy" (Monstrum recipe)
+source:
+  sheet: Weapons
+  row: 29
+biome: Black Forest
+biome_guessed: true
+description: ''
+notes: ''

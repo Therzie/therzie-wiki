@@ -1,0 +1,370 @@
+{
+ "range": "Weapons!A6:L54",
+ "values": [
+  [
+   "",
+   "Name",
+   "Silver Axe",
+   "Dwarven Axe",
+   "Flametal axe"
+  ],
+  [
+   "",
+   "Prefab",
+   "AxeSilver_TW",
+   "AxeDvergr_TW",
+   "AxeFlametal_TW"
+  ],
+  [
+   "",
+   "Axes\n(Axes Skill)"
+  ],
+  [
+   "",
+   "",
+   "Values:",
+   "Values:",
+   "Values:"
+  ],
+  [
+   "",
+   "",
+   "Slash: 80",
+   "Slash: 105",
+   "Slash: 140"
+  ],
+  [
+   "",
+   "",
+   "Spirit: 30",
+   "Lightning: 15"
+  ],
+  [
+   "",
+   "",
+   "Recipe",
+   "Recipe"
+  ],
+  [
+   "",
+   "",
+   "Ancient Bark",
+   "Yggdrasil wood",
+   "Yggdrasil wood"
+  ],
+  [
+   "",
+   "",
+   "Silver",
+   "Refined Eitr",
+   "Flametal"
+  ],
+  [
+   "",
+   "",
+   "Wolf Fang",
+   "Venomous Fang",
+   "Bonemaw Tooth"
+  ],
+  [
+   "",
+   "",
+   "Wolf Trophy ",
+   "Tick trophy",
+   "Bonemaw Trophy"
+  ],
+  [],
+  [
+   "",
+   "Name",
+   "Flint Throwing Axe",
+   "Bronze Throwing Axe",
+   "Iron Throwing Axe",
+   "Silver Throwing Axe",
+   "Blackmetal Throwing Axe",
+   "Dwarven Throwing Axe"
+  ],
+  [
+   "",
+   "Prefab",
+   "ThrowAxeFlint_TW",
+   "ThrowAxeBronze_TW",
+   "ThrowAxeIron_TW",
+   "ThrowAxeSilver_TW",
+   "ThrowAxeBlackMetal_TW",
+   "ThrowAxeDvergr_TW"
+  ],
+  [
+   "",
+   "Throwing\nAxes\n(Throwing Skill)"
+  ],
+  [
+   "",
+   "",
+   "Values:",
+   "Values:",
+   "Values:",
+   "Values:",
+   "Values:",
+   "Values:"
+  ],
+  [
+   "",
+   "",
+   "Slash: 9",
+   "Slash: 18",
+   "Slash: 28",
+   "Slash: 38",
+   "Slash: 48",
+   "Slash: 68"
+  ],
+  [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Spirit: 4",
+   "",
+   "Lightning: 4"
+  ],
+  [
+   "",
+   "",
+   "Recipe: x10",
+   "Recipe: x10",
+   "Recipe: x10",
+   "Recipe: x10",
+   "Recipe: x10",
+   "Recipe: x10"
+  ],
+  [
+   "",
+   "",
+   "Wood",
+   "Core Wood",
+   "Ancient Bark",
+   "Fine Wood",
+   "Fine Wood",
+   "Yggdrasil wood"
+  ],
+  [
+   "",
+   "",
+   "Flint",
+   "Bronze",
+   "Iron",
+   "Silver",
+   "Blackmetal",
+   "Carapace"
+  ],
+  [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Linen Thread",
+   "Refined Eitr"
+  ],
+  [],
+  [
+   "",
+   "Name",
+   "Flint Battleaxe",
+   "Bronze Battleaxe",
+   "Iron Battleaxe",
+   "Silver Battleaxe",
+   "Blackmetal Battleaxe",
+   "Dwarven Battleaxe",
+   "Flametal Battleaxe"
+  ],
+  [
+   "",
+   "Prefab",
+   "BattleaxeFlint_TW",
+   "BattleaxeBronze_TW",
+   "BattleaxeIron_TW",
+   "BattleaxeSilver_TW",
+   "BattleaxeBlackmetal_TW",
+   "BattleaxeDvergr_TW",
+   "BattleaxeDvergr_TW"
+  ],
+  [
+   "",
+   "Battleaxe\n(Axes Skill)"
+  ],
+  [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Effect: 4th hit lowers enemy slash resistance for the next attack"
+  ],
+  [
+   "",
+   "",
+   "Values:",
+   "Values:",
+   "Values:",
+   "Values:",
+   "Values:",
+   "Values:",
+   "Values:"
+  ],
+  [
+   "",
+   "",
+   "Slash: 30",
+   "Slash: 50",
+   "Slash: 70",
+   "Slash: 90",
+   "Slash: 110",
+   "Slash: 135",
+   "Slash: 174"
+  ],
+  [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Spirit: 30",
+   "",
+   "Lightning: 15"
+  ],
+  [
+   "",
+   "",
+   "Recipe",
+   "Recipe",
+   "Recipe",
+   "Recipe",
+   "Recipe",
+   "Recipe",
+   "Recipe"
+  ],
+  [
+   "",
+   "",
+   "Flint",
+   "Core Wood",
+   "Ancient Bark",
+   "Ancient Bark",
+   "Fine Wood",
+   "Carapace",
+   "Flametal"
+  ],
+  [
+   "",
+   "",
+   "Wood",
+   "Bronze",
+   "Iron ",
+   "Silver",
+   "Blackmetal",
+   "Mandible",
+   "Charred Bone"
+  ],
+  [
+   "",
+   "",
+   "Leather Scraps",
+   "",
+   "Draugr Elite Trophy",
+   "Wolf Fang",
+   "Linen Thread",
+   "Refined eitr",
+   "Bonemaw Tooth"
+  ],
+  [
+   "",
+   "Monstrum\nInstalled",
+   "",
+   "Greydwarf Brute OR \nRazorback Trophy",
+   "",
+   "Fenring Trophy",
+   "Lox Trophy",
+   "Gjall Trophy",
+   "Valkyrie Trophy"
+  ],
+  [],
+  [
+   "",
+   "",
+   "Crystal Battleaxe",
+   "Emerald crystal battleaxe",
+   "Amethyst crystal battleaxe"
+  ],
+  [
+   "",
+   "",
+   "BattleaxeCrystal_TW",
+   "BattleaxeCrystalEmerald_TW",
+   "BattleaxeCrystalAmethyst_TW"
+  ],
+  [],
+  [],
+  [
+   "",
+   "",
+   "Values:",
+   "Values:",
+   "Values:"
+  ],
+  [
+   "",
+   "",
+   "Slash: 90",
+   "Slash: 110",
+   "Slash: 135"
+  ],
+  [
+   "",
+   "",
+   "Spirit: 30",
+   "",
+   "Lightning: 15"
+  ],
+  [
+   "",
+   "",
+   "Recipe",
+   "Recipe",
+   "Recipe"
+  ],
+  [
+   "",
+   "",
+   "Ancient Bark",
+   "FineWood",
+   "YggdrasilWood"
+  ],
+  [
+   "",
+   "",
+   "Silver",
+   "BlackMetal",
+   "Refined Eitr"
+  ],
+  [
+   "",
+   "",
+   "Crystal",
+   "LoxBone",
+   "DarkCrystal"
+  ],
+  [
+   "",
+   "",
+   "",
+   "Emerald ",
+   "Amethyst "
+  ],
+  []
+ ]
+}

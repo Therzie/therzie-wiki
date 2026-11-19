@@ -1,0 +1,23 @@
+name: Emerald crystal battleaxe
+prefab: BattleaxeCrystalEmerald_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+damage:
+  slash: 110
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Lox Bone
+    - Emerald
+checks:
+  - Group taken from the block above (no label in the sheet)
+source:
+  sheet: Weapons
+  row: 42
+biome: Plains
+biome_guessed: true
+description: ''
+notes: ''

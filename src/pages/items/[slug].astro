@@ -1,0 +1,116 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { Aside } from '@astrojs/starlight/components';
+import ItemIcon from '../../components/ItemIcon.astro';
+import BiomeBadge from '../../components/BiomeBadge.astro';
+import DamageBars from '../../components/DamageBars.astro';
+import { getItems, url, slugify, totalDamage, modName, biomeIndex, repoUrl, type Item } from '../../lib/wiki';
+
+export async function getStaticPaths() {
+  const items = await getItems();
+  return items.map((item) => ({ params: { slug: item.id }, props: { item, all: items } }));
+}
+interface Props { item: Item; all: Item[] }
+const { item, all } = Astro.props;
+const d = item.data;
+const max = Math.max(...all.map(totalDamage));
+
+const family = all
+  .filter((i) => i.data.group === d.group && i.data.mod === d.mod)
+  .sort((a, b) => biomeIndex(a.data.biome) - biomeIndex(b.data.biome) || totalDamage(a) - totalDamage(b));
+const pos = family.findIndex((i) => i.id === item.id);
+const prev = family[pos - 1];
+const next = family[pos + 1];
+const repo = repoUrl;
+---
+<StarlightPage frontmatter={{ title: d.name, description: `${d.name} (${d.prefab}) from ${modName(d.mod)}.`, tableOfContents: false }}>
+  <div class="item-hero not-content">
+    <ItemIcon prefab={d.prefab} name={d.name} biome={d.biome} size={96} />
+    <div class="item-hero__body">
+      <div class="item-hero__meta">
+        <a class="pill" href={url(`/${d.mod}/`)}>{modName(d.mod)}</a>
+        <a class="pill" href={url(`/${d.mod}/#group-${slugify(d.group)}`)}>{d.group}</a>
+        {d.skill && <span class="pill">{d.skill} skill</span>}
+        <BiomeBadge biome={d.biome} guessed={d.biome_guessed} />
+      </div>
+      <p class="prefab">
+        <code data-copy={d.prefab}>{d.prefab}</code>
+        <button class="copy-btn" data-copy-btn={d.prefab} aria-label="Copy prefab name">copy</button>
+      </p>
+      {d.description && <p class="item-hero__desc">{d.description}</p>}
+    </div>
+  </div>
+
+  {d.checks.length > 0 && (
+    <Aside type="caution" title="To check">
+      <ul>{d.checks.map((c) => <li>{c}</li>)}</ul>
+      {d.source && <p class="small">Sheet: {d.source.sheet}, row {d.source.row}</p>}
+    </Aside>
+  )}
+
+  <div class="item-grid not-content">
+    <section class="panel">
+      <h2>Damage <span class="panel__total">{totalDamage(item)}</span></h2>
+      {Object.keys(d.damage).length ? <DamageBars damage={d.damage} max={max} /> : <p class="muted">No damage values yet.</p>}
+      {d.effect && (<><h3>Effect</h3><p class="effect">{d.effect}</p></>)}
+    </section>
+
+    <section class="panel">
+      <h2>Recipe {d.recipe.yields > 1 && <span class="panel__total">makes {d.recipe.yields}</span>}</h2>
+      {d.recipe.station && <p class="muted">{d.recipe.station}{d.recipe.level ? ` level ${d.recipe.level}` : ''}</p>}
+      <ul class="recipe">
+        {d.recipe.materials.map((m) => <li><a href={url(`/materials/#${slugify(m)}`)}>{m}</a></li>)}
+      </ul>
+      {d.recipe.monstrum && (
+        <div class="monstrum">
+          <h3>With Monstrum installed</h3>
+          <ul class="recipe">
+            {d.recipe.monstrum.map((m, i) => (<>{i > 0 && <li class="or">or</li>}<li><a href={url(`/materials/#${slugify(m)}`)}>{m}</a></li></>))}
+          </ul>
+        </div>
+      )}
+    </section>
+  </div>
+
+  {(d.notes || d.tips?.length) && (
+    <section class="panel panel--notes not-content">
+      <h2>Notes</h2>
+      {d.notes && <p>{d.notes}</p>}
+      {d.tips && <ul>{d.tips.map((t) => <li>{t}</li>)}</ul>}
+    </section>
+  )}
+
+  <section class="family not-content">
+    <h2>{d.group} progression</h2>
+    <ol class="family__line">
+      {family.map((f) => (
+        <li class:list={{ 'is-current': f.id === item.id }}>
+          <a href={url(`/items/${f.id}/`)}>
+            <ItemIcon prefab={f.data.prefab} name={f.data.name} biome={f.data.biome} size={40} />
+            <span>{f.data.name}</span>
+            <small>{totalDamage(f)}</small>
+          </a>
+        </li>
+      ))}
+    </ol>
+    <nav class="family__nav">
+      {prev ? <a href={url(`/items/${prev.id}/`)}>← {prev.data.name}</a> : <span />}
+      {next ? <a href={url(`/items/${next.id}/`)}>{next.data.name} →</a> : <span />}
+    </nav>
+  </section>
+
+  <p class="edit-item small">
+    <a href={`${repo}/edit/main/src/data/items/${item.id}.yaml`}>Edit this item on GitHub</a> ·
+    <a href={url('/admin/')}>Open the editor</a>
+  </p>
+</StarlightPage>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy-btn]').forEach((b) =>
+    b.addEventListener('click', async () => {
+      await navigator.clipboard?.writeText(b.dataset.copyBtn!);
+      b.textContent = 'copied';
+      setTimeout(() => (b.textContent = 'copy'), 1200);
+    })
+  );
+</script>

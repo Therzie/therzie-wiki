@@ -1,0 +1,19 @@
+name: Bronze Throwing Axe
+prefab: ThrowAxeBronze_TW
+mod: warfare
+group: Throwing Axes
+skill: Throwing
+damage:
+  slash: 18
+recipe:
+  yields: 10
+  materials:
+    - Core Wood
+    - Bronze
+source:
+  sheet: Weapons
+  row: 18
+biome: Black Forest
+biome_guessed: true
+description: ''
+notes: ''

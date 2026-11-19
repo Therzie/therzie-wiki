@@ -1,0 +1,19 @@
+name: Iron Throwing Axe
+prefab: ThrowAxeIron_TW
+mod: warfare
+group: Throwing Axes
+skill: Throwing
+damage:
+  slash: 28
+recipe:
+  yields: 10
+  materials:
+    - Ancient Bark
+    - Iron
+source:
+  sheet: Weapons
+  row: 18
+biome: Swamp
+biome_guessed: true
+description: ''
+notes: ''

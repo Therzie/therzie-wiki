@@ -1,0 +1,26 @@
+name: Dwarven Battleaxe
+prefab: BattleaxeDvergr_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+effect: 4th hit lowers enemy slash resistance for the next attack
+damage:
+  slash: 135
+  lightning: 15
+recipe:
+  yields: 1
+  materials:
+    - Carapace
+    - Mandible
+    - Refined Eitr
+  monstrum:
+    - Gjall Trophy
+checks:
+  - Prefab BattleaxeDvergr_TW appears 2x in the sheet (Dwarven Battleaxe, Flametal Battleaxe)
+source:
+  sheet: Weapons
+  row: 29
+biome: Mistlands
+biome_guessed: true
+description: ''
+notes: ''

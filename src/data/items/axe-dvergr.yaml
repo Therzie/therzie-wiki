@@ -1,0 +1,22 @@
+name: Dwarven Axe
+prefab: AxeDvergr_TW
+mod: warfare
+group: Axes
+skill: Axes
+damage:
+  slash: 105
+  lightning: 15
+recipe:
+  yields: 1
+  materials:
+    - Yggdrasil Wood
+    - Refined Eitr
+    - Venomous Fang
+    - Tick Trophy
+source:
+  sheet: Weapons
+  row: 6
+biome: Mistlands
+biome_guessed: true
+description: ''
+notes: ''

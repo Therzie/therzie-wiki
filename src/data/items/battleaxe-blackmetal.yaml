@@ -1,0 +1,22 @@
+name: Blackmetal Battleaxe
+prefab: BattleaxeBlackmetal_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+damage:
+  slash: 110
+recipe:
+  yields: 1
+  materials:
+    - Fine Wood
+    - Blackmetal
+    - Linen Thread
+  monstrum:
+    - Lox Trophy
+source:
+  sheet: Weapons
+  row: 29
+biome: Plains
+biome_guessed: true
+description: ''
+notes: ''

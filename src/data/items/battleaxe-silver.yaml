@@ -1,0 +1,23 @@
+name: Silver Battleaxe
+prefab: BattleaxeSilver_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+damage:
+  slash: 90
+  spirit: 30
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Silver
+    - Wolf Fang
+  monstrum:
+    - Fenring Trophy
+source:
+  sheet: Weapons
+  row: 29
+biome: Mountains
+biome_guessed: true
+description: ''
+notes: ''

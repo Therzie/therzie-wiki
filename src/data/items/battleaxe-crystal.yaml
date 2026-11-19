@@ -1,0 +1,23 @@
+name: Crystal Battleaxe
+prefab: BattleaxeCrystal_TW
+mod: warfare
+group: Battleaxe
+skill: Axes
+damage:
+  slash: 90
+  spirit: 30
+recipe:
+  yields: 1
+  materials:
+    - Ancient Bark
+    - Silver
+    - Crystal
+checks:
+  - Group taken from the block above (no label in the sheet)
+source:
+  sheet: Weapons
+  row: 42
+biome: Mountains
+biome_guessed: true
+description: ''
+notes: ''

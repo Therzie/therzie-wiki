@@ -1,0 +1,95 @@
+# Editor for the Therzie Mods Wiki (Sveltia CMS, compatible with Decap CMS config).
+# Sign in with GitHub: either "Sign in with token" (a fine-grained personal access token with
+# Contents: read & write on this repo) or "Work with local repository" in Chrome/Edge.
+backend:
+  name: github
+  repo: therzie/therzie-wiki   # change if the repo lives elsewhere
+  branch: main
+  commit_messages:
+    update: "Edit {{collection}} “{{slug}}” (via editor)"
+    create: "Add {{collection}} “{{slug}}” (via editor)"
+
+media_folder: public/icons
+public_folder: /icons
+site_url: https://therzie.github.io/therzie-wiki/
+
+collections:
+  - name: items
+    label: Items
+    label_singular: Item
+    folder: src/data/items
+    extension: yaml
+    format: yaml
+    create: true
+    identifier_field: name
+    summary: "{{name}} · {{group}} · {{biome}}"
+    sortable_fields: [name, group, biome]
+    view_groups: [{ label: Type, field: group }, { label: Biome, field: biome }]
+    fields:
+      - { label: Name, name: name, widget: string, hint: "From the spreadsheet" }
+      - { label: Prefab, name: prefab, widget: string, pattern: ['^[A-Za-z0-9]+_TW$', 'Prefab names end in _TW'], hint: "From the spreadsheet" }
+      - label: Mod
+        name: mod
+        widget: select
+        options:
+          - { label: Warfare, value: warfare }
+          - { label: Warfare Fire & Ice, value: warfare-fi }
+          - { label: Armory, value: armory }
+          - { label: Monstrum, value: monstrum }
+          - { label: Monstrum Deep North, value: monstrum-dn }
+          - { label: Wizardry, value: wizardry }
+      - { label: Type, name: group, widget: string, hint: "Section name as in the spreadsheet, e.g. Battleaxe" }
+      - { label: Skill, name: skill, widget: string, required: false }
+      - label: Biome
+        name: biome
+        widget: select
+        required: false
+        options: [Meadows, Black Forest, Swamp, Mountains, Plains, Mistlands, Ashlands, Deep North]
+      - { label: "Biome is still a guess", name: biome_guessed, widget: boolean, required: false, default: false, hint: "Switch off once you have confirmed the biome" }
+      - { label: Description, name: description, widget: text, required: false, hint: "Your own text. The importer never touches this." }
+      - { label: Effect, name: effect, widget: string, required: false }
+      - label: Damage
+        name: damage
+        widget: object
+        collapsed: false
+        fields:
+          - { label: Slash, name: slash, widget: number, required: false }
+          - { label: Pierce, name: pierce, widget: number, required: false }
+          - { label: Blunt, name: blunt, widget: number, required: false }
+          - { label: Fire, name: fire, widget: number, required: false }
+          - { label: Frost, name: frost, widget: number, required: false }
+          - { label: Lightning, name: lightning, widget: number, required: false }
+          - { label: Poison, name: poison, widget: number, required: false }
+          - { label: Spirit, name: spirit, widget: number, required: false }
+      - label: Recipe
+        name: recipe
+        widget: object
+        fields:
+          - { label: Makes, name: yields, widget: number, default: 1, value_type: int }
+          - { label: Station, name: station, widget: string, required: false }
+          - { label: Station level, name: level, widget: number, required: false, value_type: int }
+          - { label: Materials, name: materials, widget: list, field: { label: Material, name: material, widget: string } }
+          - { label: "With Monstrum installed (alternatives)", name: monstrum, widget: list, required: false, field: { label: Material, name: material, widget: string } }
+      - { label: Notes, name: notes, widget: text, required: false, hint: "Your own text. The importer never touches this." }
+      - { label: Tips, name: tips, widget: list, required: false, field: { label: Tip, name: tip, widget: string } }
+      - { label: "To check", name: checks, widget: list, required: false, hint: "Remarks from the importer. Remove a line once it is handled." , field: { label: Remark, name: remark, widget: string } }
+      - { label: "Hide from the site", name: hidden, widget: boolean, required: false, default: false }
+      - label: Source
+        name: source
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Sheet tab, name: sheet, widget: string }
+          - { label: Row, name: row, widget: number, value_type: int }
+
+  - name: pages
+    label: Pages
+    folder: src/content/docs
+    extension: md
+    format: frontmatter
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
