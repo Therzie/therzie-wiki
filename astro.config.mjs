@@ -50,7 +50,6 @@ export default defineConfig({
                 { label: 'Relics of the Forsaken', link: '/warfare/relics/' },
                 { label: 'The Runeforge', link: '/warfare/runeforge/' },
                 { label: "The Fletcher's Hall", link: '/warfare/fletchers-hall/' },
-                { label: 'And More', link: '/warfare/more/' },
               ],
             },
           ],

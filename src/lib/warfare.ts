@@ -47,6 +47,4 @@ export const GUIDE: { slug: string; title: string; summary: string; stat?: strin
     summary: 'Draw Rune Power from trophies, carve runes of six paths and bind one infusion into your endgame gear, at level I, II or III.' },
   { slug: 'fletchers-hall', title: "The Fletcher's Hall", rune: 'ᛉ',
     summary: 'Bows, greatbows and crossbows at the Fletcher Table, with tier ammo, quivers and throwing belts.' },
-  { slug: 'more', title: 'And More', rune: 'ᛗ',
-    summary: 'Lingering meads, Dark Crystal veins in the Mistlands and Dvergr style Black Forge extensions.' },
 ];
