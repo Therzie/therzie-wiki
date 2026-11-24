@@ -50,7 +50,10 @@ const search = [d.name, d.prefab ?? '', d.group, d.tier ?? '', d.biome ?? '', d.
       {stats.map(([k, v]) => <li><span class="stats__label">{statLabel(k)}</span><span class="stats__value">{v}</span></li>)}
     </ul>
   )}
-  {d.drops && d.drops.length > 0 && (
+  {d.drops && d.drops.length > 0 && d.creature && (
+    <div class="card-item__loot"><span>Drops:</span><ul>{d.drops.map((x) => <li>{x.from}{x.chance && ` - ${x.chance}`}</li>)}</ul></div>
+  )}
+  {d.drops && d.drops.length > 0 && !d.creature && (
     <p class="card-item__drops">Drops from {d.drops.slice(0, 3).map((x) => `${x.from}${x.chance ? ` ${x.chance}` : ''}`).join(', ')}{d.drops.length > 3 && ` +${d.drops.length - 3}`}</p>
   )}
   {d.effect && <p class="card-item__effect">{d.effect}</p>}

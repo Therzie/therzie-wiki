@@ -702,3 +702,7 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 .rf-card__text i { color: var(--sl-color-gray-3); font-style: normal; }
 .rf-card__legend { margin: 0.3rem 0 0 !important; font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); }
 .rf-card__legend b { color: var(--sl-color-gray-2); font-weight: 600; }
+.card-item__loot { font-size: var(--sl-text-xs); color: var(--sl-color-gray-2); }
+.card-item__loot > span { color: var(--sl-color-gray-1); font-weight: 600; }
+.card-item__loot ul { margin: 0.15rem 0 0; padding-left: 1.1rem; list-style: disc; }
+.card-item__loot li { margin: 0 !important; }
