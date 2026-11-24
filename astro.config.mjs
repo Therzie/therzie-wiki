@@ -85,7 +85,9 @@ export default defineConfig({
           items: [
             { label: 'Fire & Ice weapons', link: '/warfare-fi/' },
             { label: 'Fire & Ice armor', link: '/warfare-fi/armor/' },
+            { label: 'Fire & Ice items', link: '/warfare-fi/items/' },
             { label: 'Deep North creatures', link: '/monstrum-dn/' },
+            { label: 'Deep North food', link: '/monstrum-dn/food/' },
           ],
         },
         { label: 'Materials', link: '/materials/' },

@@ -1,0 +1,14 @@
+name: Daggerfang scalehide
+prefab: DaggerfangScaleHide_TW
+mod: warfare-fi
+kind: item
+group: Materials
+drops:
+  - from: Daggerfang
+    chance: 85%
+source:
+  sheet: Items
+  row: 70
+  col: 13
+description: ''
+notes: ''

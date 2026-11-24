@@ -1,0 +1,19 @@
+name: Ragnorite
+prefab: RagnoriteBar_TW
+mod: warfare-fi
+kind: item
+group: Recipes
+recipe:
+  yields: 1
+  materials:
+    - Lokvyr
+    - Muspelheim Crystal
+  station: Ymir Forge
+checks:
+  - Prefab RagnoriteBar_TW appears 2x in the sheet (Ragnorite, Items r99; Ragnorite, Items r109)
+source:
+  sheet: Items
+  row: 99
+  col: 3
+description: ''
+notes: ''

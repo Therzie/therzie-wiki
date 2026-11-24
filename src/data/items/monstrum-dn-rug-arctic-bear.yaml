@@ -1,0 +1,18 @@
+name: Ursa rug
+prefab: rug_ArcticBear_TW
+mod: monstrum-dn
+kind: piece
+group: Rugs
+stats:
+  comfort: 1
+recipe:
+  yields: 1
+  materials:
+    - Ursa Pelt
+    - Ursa Trophy
+source:
+  sheet: Pieces
+  row: 53
+  col: 3
+description: ''
+notes: ''

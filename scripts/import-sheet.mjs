@@ -42,6 +42,12 @@ const TABS = {
   'M.DeepNorth': { mod: 'monstrum-dn', layout: 'creatures', legacy: true },
   'DN-Progression': { mod: 'monstrum-dn', layout: 'progression', legacy: true },
 };
+// Items from the current sheet tabs whose prefab is in the Warfare Fire & Ice prefab list (Thunderstore) go to the legacy wiki.
+const legacyList = (f) => new Set(JSON.parse(fs.readFileSync(new URL(`../src/data/legacy/${f}.json`, import.meta.url), 'utf8')).prefabs);
+const FI_PREFABS = legacyList('warfare-fi');
+// same for Monstrum Deep North (creatures, food and rugs that ended up in the current Monstrum and Warfare tabs)
+const DN_PREFABS = legacyList('monstrum-dn');
+const modOf = (cfg, prefab) => cfg.legacy ? cfg.mod : FI_PREFABS.has(prefab) ? 'warfare-fi' : DN_PREFABS.has(prefab) ? 'monstrum-dn' : cfg.mod;
 const LEGACY_MODS = new Set(Object.values(TABS).filter((t) => t.legacy).map((t) => t.mod));
 
 // ---------- arguments ----------
@@ -136,7 +142,7 @@ function findBlocks(rows) {
 
 function newItem(cfg, tab, name, prefab, g, row, col) {
   return {
-    name, prefab, mod: cfg.mod, kind: kindOf(cfg, g.group), group: g.group, skill: g.skill,
+    name, prefab, mod: modOf(cfg, prefab), kind: kindOf(cfg, g.group), group: g.group, skill: g.skill,
     effect: [], info: [], damage: {}, damage_max: {}, stats: {}, drops: [],
     recipe: { yields: 1, materials: [], upgrade: [], alternative: [] },
     checks: [], source: { sheet: tab, row, col },

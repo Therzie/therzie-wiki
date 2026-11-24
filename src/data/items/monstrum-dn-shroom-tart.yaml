@@ -1,0 +1,24 @@
+name: Mushroom tart
+prefab: ShroomTart_TW
+mod: monstrum-dn
+kind: food
+group: Food DeepNorth
+effect: Eitr Regen +5%
+food:
+  health: 34
+  stamina: 17
+  eitr: 100
+recipe:
+  yields: 1
+  materials:
+    - Barley Flour
+    - Helweed
+    - Wintercap
+    - Tundra Berry
+  station: Preparation Table
+source:
+  sheet: M.Food
+  row: 26
+  col: 19
+description: ''
+notes: ''

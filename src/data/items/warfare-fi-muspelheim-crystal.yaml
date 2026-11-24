@@ -1,0 +1,14 @@
+name: Muspelheim crystal
+prefab: MuspelheimCrystal_TW
+mod: warfare-fi
+kind: item
+group: Materials
+drops:
+  - from: Muspelheim fragment
+    chance: 100%
+source:
+  sheet: Items
+  row: 81
+  col: 3
+description: ''
+notes: ''

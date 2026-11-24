@@ -1,0 +1,18 @@
+name: 'Magic Rune: Destruction'
+prefab: RuneDestruction_TW
+mod: warfare-fi
+kind: item
+group: Materials
+drops:
+  - from: Sythrak
+    chance: 100%
+checks:
+  - >-
+    Prefab RuneDestruction_TW appears 2x in the sheet (Magic Rune: Destruction, Items r60; Magic Rune:
+    Destruction, Items r99)
+source:
+  sheet: Items
+  row: 60
+  col: 17
+description: ''
+notes: ''

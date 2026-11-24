@@ -1,0 +1,21 @@
+name: Jotarr banner
+prefab: BannerJotunnheim_TW
+mod: warfare-fi
+kind: piece
+group: Rugs
+info:
+  - Banners
+stats:
+  comfort: 1
+recipe:
+  yields: 1
+  materials:
+    - Boreal Pine Wood
+    - Jotunn Eyeball
+    - Northern Fur Bundle
+source:
+  sheet: Pieces
+  row: 53
+  col: 5
+description: ''
+notes: ''

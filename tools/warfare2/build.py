@@ -144,12 +144,13 @@ def stats_of(s, kind, hands, maxq):
     if maxq > 1: st["max_level"] = maxq
     return st
 
+FI_PREFABS = set(json.load(open(os.path.join(ROOT, "src", "data", "legacy", "warfare-fi.json")))["prefabs"])
 out_items, report = {}, {"new": [], "updated": [], "removed": [], "skipped": []}
 for prefab, s in sorted(stats.items()):
     if prefab not in names: continue
     group, hands, rest = class_of(prefab)
     kind = kind_of(prefab, s, group)
-    if not group or not kind or any(l in prefab for l in LEGACY):
+    if not group or not kind or any(l in prefab for l in LEGACY) or prefab in FI_PREFABS:
         report["skipped"].append(prefab); continue
     tier, biome, boss = tier_of(rest)
     if not hands:

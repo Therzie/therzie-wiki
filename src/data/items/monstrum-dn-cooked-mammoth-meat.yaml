@@ -1,0 +1,21 @@
+name: Cooked pridetusk meat
+prefab: CookedMammothMeat_TW
+mod: monstrum-dn
+kind: food
+group: Food DeepNorth
+effect: Carry Weight +25
+food:
+  health: 95
+  stamina: 40
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Pridetusk Meat
+  station: Iron Cooking Station
+source:
+  sheet: M.Food
+  row: 14
+  col: 15
+description: ''
+notes: ''

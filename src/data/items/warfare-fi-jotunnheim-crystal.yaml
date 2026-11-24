@@ -1,0 +1,15 @@
+name: Jotunnheim crystal
+prefab: JotunnheimCrystal_TW
+mod: warfare-fi
+kind: item
+group: Materials
+drops:
+  - from: Frozen Mammoth Bones
+    chance: 33%
+  - from: Jotunnheim fragment
+source:
+  sheet: Items
+  row: 50
+  col: 13
+description: ''
+notes: ''

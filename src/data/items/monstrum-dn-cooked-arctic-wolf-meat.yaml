@@ -1,0 +1,21 @@
+name: Cooked dire wolf meat
+prefab: CookedArcticWolfMeat_TW
+mod: monstrum-dn
+kind: food
+group: Food DeepNorth
+effect: Movement Speed +1%
+food:
+  health: 80
+  stamina: 28
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Dire Wolf Meat
+  station: Iron Cooking Station
+source:
+  sheet: M.Food
+  row: 14
+  col: 11
+description: ''
+notes: ''

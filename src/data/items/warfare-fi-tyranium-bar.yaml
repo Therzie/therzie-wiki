@@ -1,0 +1,19 @@
+name: Tyranium
+prefab: TyraniumBar_TW
+mod: warfare-fi
+kind: item
+group: Recipes
+recipe:
+  yields: 1
+  materials:
+    - Lokvyr
+    - Jotunnheim Crystal
+  station: Ymir Forge
+checks:
+  - Prefab TyraniumBar_TW appears 2x in the sheet (Tyranium, Items r99; Tyranium, Items r109)
+source:
+  sheet: Items
+  row: 99
+  col: 5
+description: ''
+notes: ''

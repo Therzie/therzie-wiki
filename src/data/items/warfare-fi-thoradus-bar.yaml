@@ -1,0 +1,17 @@
+name: Thoradus
+prefab: ThoradusBar_TW
+mod: warfare-fi
+kind: item
+group: Recipes
+recipe:
+  yields: 1
+  materials:
+    - Tyranium
+    - Ragnorite
+  station: Lokvyr Smelting Vat
+source:
+  sheet: Items
+  row: 99
+  col: 7
+description: ''
+notes: ''

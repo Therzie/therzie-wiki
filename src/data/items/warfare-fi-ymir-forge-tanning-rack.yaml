@@ -1,0 +1,21 @@
+name: Njord tanning rack
+prefab: YmirForge_TanningRack_TW
+mod: warfare-fi
+kind: piece
+group: Ymir Forge & Extensions
+info:
+  - Craft Northern Fur Bundles
+  - Craft Helhide Bundles
+recipe:
+  yields: 1
+  materials:
+    - Dire Wolf Pelt
+    - Pridetusk Pelt
+    - Ursa Pelt
+    - Boreal Pine Wood
+source:
+  sheet: Pieces
+  row: 31
+  col: 4
+description: ''
+notes: ''

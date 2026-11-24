@@ -1,0 +1,17 @@
+name: Lokvyr
+prefab: LokvyrBar_TW
+mod: warfare-fi
+kind: item
+group: Smelting
+recipe:
+  yields: 1
+  materials:
+    - Lokvyr Ore
+    - Enchanted Blazing Coal
+  station: Ymir Forge [Smelter]
+source:
+  sheet: Items
+  row: 109
+  col: 3
+description: ''
+notes: ''

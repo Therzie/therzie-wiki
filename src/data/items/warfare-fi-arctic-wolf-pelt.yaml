@@ -1,0 +1,14 @@
+name: Dire wolf pelt
+prefab: ArcticWolfPelt_TW
+mod: warfare-fi
+kind: item
+group: Materials
+drops:
+  - from: Dire Wolf
+    chance: 85%
+source:
+  sheet: Items
+  row: 50
+  col: 5
+description: ''
+notes: ''

@@ -138,8 +138,12 @@ export const SECTIONS: { mod: string; path: string; label: string; title: string
     lead: 'Weapons, shields and ammo from Warfare Fire & Ice, as documented before Valheim 1.0.' },
   { mod: 'warfare-fi', path: '/warfare-fi/armor/', label: 'Armor', title: 'Warfare Fire & Ice armor', sheets: ['Armor-F&I'], legacy: true,
     lead: 'Armor sets and capes from Warfare Fire & Ice, as documented before Valheim 1.0.' },
+  { mod: 'warfare-fi', path: '/warfare-fi/items/', label: 'Items', title: 'Warfare Fire & Ice items and pieces', sheets: ['Items', 'Pieces'], legacy: true,
+    lead: 'Materials, runes, idols and crafting stations from Warfare Fire & Ice, as documented before Valheim 1.0.' },
   { mod: 'monstrum-dn', path: '/monstrum-dn/', label: 'Creatures', title: 'Monstrum Deep North creatures', sheets: ['M.DeepNorth'], legacy: true,
     lead: 'Bosses and creatures of the Deep North from Monstrum Deep North, as documented before Valheim 1.0.' },
+  { mod: 'monstrum-dn', path: '/monstrum-dn/food/', label: 'Food', title: 'Monstrum Deep North food and pieces', sheets: ['M.Food', 'Pieces'], legacy: true,
+    lead: 'Food and rugs from Monstrum Deep North, as documented before Valheim 1.0.' },
 ];
 export const isLegacy = (mod: string) => SECTIONS.some((s) => s.mod === mod && s.legacy);
 export const inSection = (s: (typeof SECTIONS)[number], d: Item['data']) =>

@@ -1,0 +1,19 @@
+name: Northern fur bundle
+prefab: FurBundleNorth_TW
+mod: warfare-fi
+kind: item
+group: Recipes
+recipe:
+  yields: 1
+  materials:
+    - Dire Wolf Pelt
+    - Ursa Pelt
+    - Pridetusk Pelt
+    - Icestalker Scale
+  station: Njord Tanning Rack Alternative Recipes in Red
+source:
+  sheet: Items
+  row: 99
+  col: 15
+description: ''
+notes: ''

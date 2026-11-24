@@ -1,0 +1,20 @@
+name: Jotunn eyeball
+prefab: JotunnEye_TW
+mod: warfare-fi
+kind: item
+group: Materials
+drops:
+  - from: Berzerker
+    chance: 50%
+  - from: Juggernaut
+    chance: 55%
+  - from: Bladefist
+    chance: 40%
+  - from: Primalist
+    chance: 35%
+source:
+  sheet: Items
+  row: 60
+  col: 7
+description: ''
+notes: ''

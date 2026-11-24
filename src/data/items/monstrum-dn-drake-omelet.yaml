@@ -1,0 +1,24 @@
+name: Spicy Drake omelet
+prefab: DrakeOmelet_TW
+mod: monstrum-dn
+kind: food
+group: Food DeepNorth
+effect: Stamina Regen +10%
+food:
+  health: 38
+  stamina: 110
+  eitr: 0
+recipe:
+  yields: 1
+  materials:
+    - Fiery Dragon Egg
+    - Helweed
+    - Wintercap
+    - Primal Leek
+  station: Cauldron lvl 5
+source:
+  sheet: M.Food
+  row: 26
+  col: 3
+description: ''
+notes: ''

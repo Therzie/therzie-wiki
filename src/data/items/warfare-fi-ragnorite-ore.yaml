@@ -1,0 +1,11 @@
+name: Pure Ragnorite ore
+prefab: RagnoriteOre_TW
+mod: warfare-fi
+kind: item
+group: Materials
+source:
+  sheet: Items
+  row: 81
+  col: 7
+description: ''
+notes: ''
