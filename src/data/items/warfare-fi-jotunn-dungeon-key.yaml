@@ -1,21 +1,21 @@
-name: Storm key
-prefab: StormTempleKey_TW
-mod: warfare
+name: Jotarr relic
+prefab: JotunnDungeonKey_TW
+mod: warfare-fi
 kind: item
 group: Recipes
 info:
-  - Opens Door to Storm Heralrd
+  - Opens Door to Gorr
 recipe:
   yields: 1
   materials:
-    - Thoradus
-    - 'Magic Rune: Wrath'
-    - Surtr Idol
+    - Tyranium Idol Fragment
+    - 'Magic Rune: Rage'
+    - Black Ice
     - Ymir Idol
   station: Lokvyr Smelting Vat
 source:
   sheet: Items
   row: 89
-  col: 5
+  col: 9
 description: ''
 notes: ''

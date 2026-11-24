@@ -1,6 +1,6 @@
 name: Razorback saddle
 prefab: SaddleBoar_TW
-mod: warfare
+mod: monstrum
 kind: item
 group: Saddles
 recipe:

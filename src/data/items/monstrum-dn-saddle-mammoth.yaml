@@ -1,6 +1,6 @@
 name: Pridetusk saddle
 prefab: SaddleMammoth_TW
-mod: warfare
+mod: monstrum-dn
 kind: item
 group: Recipes
 recipe:

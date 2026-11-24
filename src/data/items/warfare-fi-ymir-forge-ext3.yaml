@@ -1,6 +1,6 @@
 name: Thoradus Smithing Mallet
 prefab: YmirForge_ext3_TW
-mod: warfare
+mod: warfare-fi
 kind: piece
 group: Ymir Forge & Extensions
 recipe:

@@ -118,6 +118,7 @@ export const SECTIONS: { mod: string; path: string; label: string; title: string
     lead: 'Bosses and creatures from Monstrum by biome: what they drop, how much health they have and which damage hurts them.' },
   { mod: 'monstrum', path: '/monstrum/food/', label: 'Food', title: 'Monstrum food', sheets: ['M.Food'], groupBy: 'biome',
     lead: 'Food made from Monstrum creatures, by the biome of the creature it comes from, with health, stamina and eitr.' },
+  { mod: 'monstrum', path: '/monstrum/items/', label: 'Items', title: 'Monstrum items', sheets: ['Items', 'Pieces'], lead: 'Saddles and other items for the creatures of Monstrum.' },
   { mod: 'wizardry', path: '/wizardry/', label: 'Staffs', title: 'Wizardry staffs', sheets: ['Wizardry'], match: (d) => d.kind === 'weapon' && !isStaffBase(d),
     relabel: (d) => (/^blood magic/i.test(d.notes ?? '') ? 'Blood magic staffs' : undefined),
     lead: 'Every Wizardry staff with its damage, eitr cost and recipe.' },

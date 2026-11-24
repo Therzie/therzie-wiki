@@ -43,11 +43,16 @@ const TABS = {
   'DN-Progression': { mod: 'monstrum-dn', layout: 'progression', legacy: true },
 };
 // Items from the current sheet tabs whose prefab is in the Warfare Fire & Ice prefab list (Thunderstore) go to the legacy wiki.
-const legacyList = (f) => new Set(JSON.parse(fs.readFileSync(new URL(`../src/data/legacy/${f}.json`, import.meta.url), 'utf8')).prefabs);
+const readData = (f) => JSON.parse(fs.readFileSync(new URL(`../src/data/${f}.json`, import.meta.url), 'utf8'));
+const legacyList = (f) => { const d = readData(`legacy/${f}`); return new Set([...d.prefabs, ...(d.extra ?? [])]); };
+// editor decisions: items that belong to Monstrum, and items that no longer exist
+const OVERRIDES = readData('mod-overrides');
+const MONSTRUM_PREFABS = new Set(OVERRIDES.monstrum);
+const REMOVED_PREFABS = new Set(OVERRIDES.removed);
 const FI_PREFABS = legacyList('warfare-fi');
 // same for Monstrum Deep North (creatures, food and rugs that ended up in the current Monstrum and Warfare tabs)
 const DN_PREFABS = legacyList('monstrum-dn');
-const modOf = (cfg, prefab) => cfg.legacy ? cfg.mod : FI_PREFABS.has(prefab) ? 'warfare-fi' : DN_PREFABS.has(prefab) ? 'monstrum-dn' : cfg.mod;
+const modOf = (cfg, prefab) => cfg.legacy ? cfg.mod : FI_PREFABS.has(prefab) ? 'warfare-fi' : DN_PREFABS.has(prefab) ? 'monstrum-dn' : MONSTRUM_PREFABS.has(prefab) ? 'monstrum' : cfg.mod;
 const LEGACY_MODS = new Set(Object.values(TABS).filter((t) => t.legacy).map((t) => t.mod));
 
 // ---------- arguments ----------
@@ -548,6 +553,7 @@ for (const [, list] of byKey) {
   });
 }
 
+for (let i = all.length - 1; i >= 0; i--) if (REMOVED_PREFABS.has(all[i].prefab)) all.splice(i, 1);
 fs.mkdirSync(OUT_DIR, { recursive: true });
 let created = 0, updated = 0;
 for (const it of all) {

@@ -1,6 +1,6 @@
 name: Muspelheim portal fragment
 prefab: SurtrPortalFragments_TW
-mod: warfare
+mod: warfare-fi
 kind: item
 group: Materials
 drops:

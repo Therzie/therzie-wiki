@@ -1,6 +1,6 @@
 name: Ragnorite spiked collar
 prefab: CollarRagnorite_TW
-mod: warfare
+mod: warfare-fi
 kind: item
 group: Materials
 drops:

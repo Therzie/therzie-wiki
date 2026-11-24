@@ -1,21 +1,21 @@
-name: Destroyer's idol
-prefab: SythrakKey_TW
-mod: warfare
+name: Storm key
+prefab: StormTempleKey_TW
+mod: warfare-fi
 kind: item
 group: Recipes
 info:
-  - Opens Door to Sythrak
+  - Opens Door to Storm Heralrd
 recipe:
   yields: 1
   materials:
-    - Ragnorite
-    - 'Magic Rune: Destruction'
-    - Drake Scale
+    - Thoradus
+    - 'Magic Rune: Wrath'
     - Surtr Idol
+    - Ymir Idol
   station: Lokvyr Smelting Vat
 source:
   sheet: Items
   row: 89
-  col: 3
+  col: 5
 description: ''
 notes: ''

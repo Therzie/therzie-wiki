@@ -1,6 +1,6 @@
 name: Prowler saddle
 prefab: SaddleProwler_TW
-mod: warfare
+mod: monstrum
 kind: item
 group: Saddles
 recipe:

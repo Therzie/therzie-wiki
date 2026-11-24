@@ -65,6 +65,7 @@ export default defineConfig({
             { label: 'Creatures', link: '/monstrum/' },
             { label: 'Weaknesses', link: '/monstrum/weaknesses/' },
             { label: 'Food', link: '/monstrum/food/' },
+            { label: 'Items', link: '/monstrum/items/' },
           ],
         },
         {

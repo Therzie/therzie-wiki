@@ -487,7 +487,7 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 
 /* small runes (kaun, ing) at the same visual height as the rest */
 .rune { display: inline-block; }
-.rune--kaun { transform: scale(2.2); transform-origin: 50% 65%; margin-inline: 0.2em; }
+.rune--kaun { display: inline-block; transform: translateY(0.25em) scale(2.2); transform-origin: 50% 50%; margin-inline: 0.12em 0.15em; }
 .rune--ing { transform: scale(1.35); transform-origin: 50% 60%; }
 .rune-divider span { display: inline-flex; gap: 0.35em; letter-spacing: 0; }
 

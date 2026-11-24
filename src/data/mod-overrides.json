@@ -1,0 +1,11 @@
+{
+ "note": "Editor decisions for items from the current sheet tabs. monstrum: prefabs that belong to Monstrum. removed: prefabs that no longer exist and are not imported.",
+ "monstrum": [
+  "SaddleBoar_TW",
+  "SaddleBear_TW",
+  "SaddleProwler_TW"
+ ],
+ "removed": [
+  "VenomousFang_TW"
+ ]
+}

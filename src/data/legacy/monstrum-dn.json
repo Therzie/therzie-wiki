@@ -1,6 +1,6 @@
 {
  "source": "https://thunderstore.io/c/valheim/p/Therzie/MonstrumDeepNorth/",
- "note": "Prefab list of Monstrum Deep North on Thunderstore. Items with these prefabs belong to the legacy Deep North wiki, whatever sheet tab they come from.",
+ "note": "Prefab list of Monstrum Deep North on Thunderstore. Items with these prefabs belong to the legacy Deep North wiki, whatever sheet tab they come from. \"extra\" lists items the editors assigned to this mod that are not on the Thunderstore list.",
  "prefabs": [
   "ArcticWolf_TW",
   "ArcticWolfCub_TW",
@@ -73,5 +73,9 @@
   "ShroomTart_TW",
   "ShroomTartUncooked_TW",
   "SurtrDrakeEgg_TW"
+ ],
+ "extra": [
+  "SaddleMammoth_TW",
+  "rug_Mammoth_TW"
  ]
 }

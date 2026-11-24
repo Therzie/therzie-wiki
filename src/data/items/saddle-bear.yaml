@@ -1,6 +1,6 @@
 name: Bear saddle
 prefab: SaddleBear_TW
-mod: warfare
+mod: monstrum
 kind: item
 group: Saddles
 recipe:
