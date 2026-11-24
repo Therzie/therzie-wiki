@@ -706,3 +706,4 @@ body:has(.readme__logo) .content-panel:first-of-type { display: none; }
 .card-item__loot > span { color: var(--sl-color-gray-1); font-weight: 600; }
 .card-item__loot ul { margin: 0.15rem 0 0; padding-left: 1.1rem; list-style: disc; }
 .card-item__loot li { margin: 0 !important; }
+.relics-table th:last-child, .relics-table td:last-child { text-align: center; }
