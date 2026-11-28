@@ -3,18 +3,19 @@ prefab: ThrowAxeFlint_TW
 mod: warfare
 kind: weapon
 group: Throwing axes
-skill: Axes
 tier: Flint
 damage:
   slash: 13
   chop: 15
+damage_max:
+  slash: 22
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 40
+  durability: 43 (+18 per level)
+  stamina: 6 / 13
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -26,10 +27,12 @@ recipe:
   - Flint
   - Wood
   - Feathers
+  - Wooden Battle Idol
   amounts:
   - 6
   - 3
   - 2
+  - 1
   upgrade:
   - Flint
   - Feathers

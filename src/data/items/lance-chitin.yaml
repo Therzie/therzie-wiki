@@ -15,8 +15,8 @@ stats:
   block_force: 40
   knockback: 90
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 20 / 40
+  durability: 100 (+50 per level)
+  stamina: 11 / 22
   movement: -5%
   weight: 2.5
   max_level: 4
@@ -28,10 +28,12 @@ recipe:
   - Chitin
   - Bronze
   - Finewood
+  - Bronze Battle Idol
   amounts:
   - 19
   - 9
   - 24
+  - 1
   upgrade:
   - Chitin
   - Bronze

@@ -9,7 +9,7 @@ damage:
   slash: 111
   chop: 71
 damage_max:
-  slash: 129
+  slash: 126
   chop: 80
 stats:
   hands: Dual
@@ -18,8 +18,9 @@ stats:
   knockback: 50
   backstab: x3
   durability: 250 (+50 per level)
-  stamina: 20 / 66
-  weight: 0.3
+  stamina: 18 / 36
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -30,11 +31,13 @@ recipe:
   - Iron
   - Yggdrasil Wood
   - Mandible
+  - Black Marble Battle Idol
   amounts:
   - 26
   - 13
   - 12
   - 3
+  - 1
   upgrade:
   - Carapace
   - Iron

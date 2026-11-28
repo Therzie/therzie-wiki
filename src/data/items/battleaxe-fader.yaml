@@ -17,11 +17,41 @@ stats:
   block_force: 70
   knockback: 70
   backstab: x3
-  durability: 300 (+100 per level)
+  durability: 400 (+50 per level)
   stamina: 22 / 36
   movement: -10%
   weight: 2.5
   max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Asksvin Hide
+  - Fader Trophy
+  - Flametal Battle Idol
+  amounts:
+  - 120
+  - 40
+  - 16
+  - 1
+  - 1
+  upgrade:
+  - Flametal
+  - Charred Bone
+  - Asksvin Hide
+  - Kindled Ribs (level 3)
+  - Fader Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 30
+  - 10
+  - 4
+  - 1
+  - 1
+  - 6
 drops:
 - from: Fader
   chance: 7%

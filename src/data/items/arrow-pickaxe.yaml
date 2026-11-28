@@ -10,6 +10,20 @@ damage:
 stats:
   knockback: 10
   weight: 0.1
+recipe:
+  yields: 20
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Wood
+  - Obsidian
+  - Crystal
+  - Feathers
+  amounts:
+  - 8
+  - 4
+  - 1
+  - 2
 checks: []
 source:
   sheet: Warfare 2.0

@@ -6,14 +6,14 @@ group: Bows
 skill: Bows
 tier: Bone
 damage:
-  pierce: 27
+  pierce: 22.95
 damage_max:
-  pierce: 39
+  pierce: 33.15
 stats:
   hands: Two handed
   knockback: 25
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 75 (+50 per level)
   draw_stamina: 12 per second
   secondary_stamina: 20
   movement: -5%
@@ -27,10 +27,12 @@ recipe:
   - Bone Fragments
   - Corewood
   - Deer Hide
+  - Bronze Battle Idol
   amounts:
   - 13
   - 6
   - 2
+  - 1
   upgrade:
   - Bone Fragments
   - Deer Hide

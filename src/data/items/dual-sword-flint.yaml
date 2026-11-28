@@ -8,16 +8,17 @@ tier: Flint
 damage:
   slash: 22
 damage_max:
-  slash: 37
+  slash: 40
 stats:
   hands: Dual
   block_armor: 9
   block_force: 40
   knockback: 40
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 16 / 48
-  weight: 0.3
+  durability: 175 (+50 per level)
+  stamina: 7 / 14
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -28,11 +29,13 @@ recipe:
   - Wood
   - Feathers
   - Leather Scraps
+  - Wooden Battle Idol
   amounts:
   - 14
   - 7
   - 2
   - 4
+  - 1
   upgrade:
   - Flint
   - Leather Scraps

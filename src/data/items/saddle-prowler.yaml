@@ -1,18 +1,26 @@
-name: Prowler saddle
+name: Prowler Saddle
 prefab: SaddleProwler_TW
 mod: monstrum
 kind: item
 group: Saddles
+stats:
+  weight: 8
+description: Used to mount a Prowler, don't grab it by the manes!
 recipe:
   yields: 1
+  station: Workbench
+  level: 4
   materials:
-    - Prowler Fang
-    - Lox Pelt
-    - Prowler Trophy
-  station: Workbench lvl4
+  - Prowler Fang
+  - Lox Pelt
+  - Prowler Trophy
+  amounts:
+  - 4
+  - 4
+  - 1
+checks: []
 source:
   sheet: Items
   row: 39
   col: 7
-description: ''
 notes: ''

@@ -1,4 +1,4 @@
-name: Bow rack
+name: Throwing Stand
 prefab: FletcherTable_ext1_TW
 mod: warfare
 kind: piece
@@ -6,13 +6,19 @@ group: Fletcher Table & Extensions
 recipe:
   yields: 1
   materials:
-    - Bronze
-    - Fine Wood
-    - Bronze Nails
-    - Deer Hide
+  - Finewood
+  - Bronze
+  - Troll Bone
+  amounts:
+  - 6
+  - 2
+  - 2
+info:
+- Upgrades the Fletcher Table
+checks: []
 source:
   sheet: Pieces
   row: 2
   col: 4
-description: ''
+description: Upgrades the Fletcher Table.
 notes: ''

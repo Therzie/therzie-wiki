@@ -15,8 +15,8 @@ stats:
   block_force: 50
   knockback: 50
   backstab: x2
-  durability: 200 (+50 per level)
-  stamina: 22 / 32
+  durability: 75 (+50 per level)
+  stamina: 15 / 17
   movement: -15%
   weight: 4
   max_level: 4
@@ -28,10 +28,12 @@ recipe:
   - Flint
   - Wood
   - Deer Hide
+  - Wooden Battle Idol
   amounts:
   - 15
   - 8
   - 2
+  - 1
   upgrade:
   - Flint
   - Deer Hide

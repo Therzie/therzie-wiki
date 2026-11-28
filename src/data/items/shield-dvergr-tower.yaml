@@ -21,11 +21,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Copper
+  - Black Marble Protection Idol
   amounts:
   - 20
   - 10
   - 10
   - 6
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal

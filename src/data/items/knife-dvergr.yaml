@@ -6,19 +6,19 @@ group: Knives
 skill: Knives
 tier: Dvergr
 damage:
-  slash: 52
-  pierce: 52
+  slash: 49
+  pierce: 49
   lightning: 5
 damage_max:
-  slash: 55
-  pierce: 55
+  slash: 52
+  pierce: 52
 stats:
   hands: One handed
   block_armor: 2
   block_force: 10
   knockback: 10
   backstab: x6
-  durability: 275 (+50 per level)
+  durability: 300 (+50 per level)
   stamina: 14 / 42
   weight: 0.3
   max_level: 4
@@ -31,11 +31,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Scale Hide
+  - Black Marble Battle Idol
   amounts:
-  - 9
-  - 5
-  - 5
+  - 8
+  - 4
+  - 6
   - 2
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal

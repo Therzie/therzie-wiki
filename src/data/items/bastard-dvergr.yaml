@@ -30,11 +30,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Scale Hide
+  - Black Marble Battle Idol
   amounts:
-  - 25
-  - 13
-  - 13
+  - 21
+  - 11
+  - 15
   - 4
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -43,9 +45,9 @@ recipe:
   - Seeker Trophy (level 3)
   - Wisp (level 4)
   upgrade_amounts:
-  - 6
-  - 6
-  - 6
+  - 4
+  - 4
+  - 7
   - 1
   - 1
   - 3

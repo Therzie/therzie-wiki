@@ -10,16 +10,16 @@ damage:
   pierce: 19
 damage_max:
   blunt: 51
-  pierce: 28
 stats:
   hands: Two handed
-  block_armor: 72
+  block_armor: 22
   block_force: 30
   knockback: 130
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  durability: 100 (+50 per level)
+  stamina: 15 / 22
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -28,19 +28,23 @@ recipe:
   materials:
   - Chitin
   - Bronze
-  - Corewood
+  - Troll Hide
+  - Bronze Battle Idol
   amounts:
   - 17
   - 9
-  - 15
+  - 2
+  - 1
   upgrade:
   - Chitin
   - Bronze
-  - Troll Trophy (level 3)
-  - Draugr Trophy (level 4)
+  - Troll Hide
+  - Greydwarf Brute Trophy (level 3)
+  - Serpent Trophy (level 4)
   upgrade_amounts:
   - 4
   - 4
+  - 1
   - 1
   - 1
 checks: []

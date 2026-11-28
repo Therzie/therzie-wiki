@@ -16,8 +16,9 @@ stats:
   knockback: 90
   backstab: x3
   durability: 300 (+50 per level)
-  stamina: 20 / 36
-  weight: 0.3
+  stamina: 18 / 51
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -27,10 +28,12 @@ recipe:
   - Flametal
   - Charred Bone
   - Sulfur
+  - Flametal Battle Idol
   amounts:
   - 58
   - 29
   - 5
+  - 1
   upgrade:
   - Flametal
   - Sulfur

@@ -8,7 +8,7 @@ tier: Bronze
 damage:
   slash: 36
 damage_max:
-  slash: 51
+  slash: 54
 stats:
   hands: Dual
   block_armor: 14
@@ -16,8 +16,9 @@ stats:
   knockback: 40
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 16 / 48
-  weight: 0.3
+  stamina: 9 / 18
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -27,10 +28,12 @@ recipe:
   - Bronze
   - Finewood
   - Deer Hide
+  - Bronze Battle Idol
   amounts:
   - 17
   - 8
   - 2
+  - 1
   upgrade:
   - Bronze
   - Deer Hide

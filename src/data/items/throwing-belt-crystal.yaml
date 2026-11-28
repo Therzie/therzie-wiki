@@ -1,0 +1,29 @@
+name: Crystal Throwing Belt
+prefab: ThrowingBeltCrystal_TW
+mod: warfare
+kind: item
+group: Throwing belts
+tier: Crystal
+effect: 'Belt: 3 slots (javelins and throwing axes); Draws a fresh one when the weapon in your hand is spent'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Wolf Pelt
+  - Pristine Crystal
+  - Fenris Hair
+  - Silver
+  amounts:
+  - 7
+  - 5
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5700
+description: A mountain war belt with a javelin sheath and rings for throwing axes, studded with crystal. Holds spare throwing weapons; when the one in your hand is spent, the next is drawn from the belt.
+notes: ''

@@ -1,0 +1,29 @@
+name: Iron Quiver
+prefab: QuiverIron_TW
+mod: warfare
+kind: item
+group: Quivers
+tier: Iron
+effect: 'Ammo pouch: 4 slots (arrows and bolts)'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 2
+  materials:
+  - Rotten Pelt
+  - Iron
+  - Leather Scraps
+  - Withered Bone
+  amounts:
+  - 3
+  - 2
+  - 2
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5600
+description: A rough swamp quiver of mud-stained leather, bound with hammered iron hoops and black strips, with a withered-bone charm. Holds arrows and bolts in its own pouch.
+notes: ''

@@ -10,16 +10,16 @@ damage:
   pierce: 41
 damage_max:
   blunt: 88
-  pierce: 50
 stats:
   hands: Two handed
-  block_armor: 72
+  block_armor: 50
   block_force: 30
   knockback: 130
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  stamina: 20 / 29
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -30,17 +30,19 @@ recipe:
   - Iron
   - Finewood
   - Needle
+  - Black Metal Battle Idol
   amounts:
   - 37
   - 18
   - 15
   - 6
+  - 1
   upgrade:
   - Black Metal
   - Iron
   - Needle
-  - Fuling Trophy (level 3)
-  - Lox Trophy (level 4)
+  - Lox Trophy (level 3)
+  - Deathsquito Trophy (level 4)
   - Lox Bone (level 4)
   upgrade_amounts:
   - 9

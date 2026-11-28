@@ -1,0 +1,31 @@
+name: Nord Quiver
+prefab: QuiverNord_TW
+mod: warfare
+kind: item
+group: Quivers
+tier: Nord
+effect: 'Ammo pouch: 8 slots (arrows and bolts)'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Seal Pelt
+  - Bloodgold
+  - Timberwood
+  - Elaking Hair Bundle
+  - Glacier Crystal
+  amounts:
+  - 12
+  - 11
+  - 8
+  - 2
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5600
+description: A dark blue-grey leather quiver under stacked Jotun-steel ice plates, banded in gold and set with a glacier gem, with a collar of elk fur. Holds arrows and bolts in its own pouch.
+notes: ''

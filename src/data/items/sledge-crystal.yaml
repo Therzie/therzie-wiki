@@ -15,8 +15,8 @@ stats:
   block_force: 50
   knockback: 50
   backstab: x2
-  durability: 200 (+50 per level)
-  stamina: 22 / 32
+  durability: 175 (+50 per level)
+  stamina: 24 / 27
   movement: -15%
   weight: 4
   max_level: 4
@@ -29,11 +29,13 @@ recipe:
   - Silver
   - Obsidian
   - Fenris Hair
+  - Silver Battle Idol
   amounts:
   - 16
   - 8
   - 10
   - 3
+  - 1
   upgrade:
   - Pristine Crystal
   - Silver

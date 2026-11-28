@@ -16,7 +16,7 @@ stats:
   knockback: 20
   backstab: x3
   durability: 400 (+50 per level)
-  stamina: 14 / 36
+  stamina: 18 / 38
   movement: -5%
   weight: 1.5
   max_level: 4
@@ -28,10 +28,12 @@ recipe:
   - Bloodgold
   - Timberwood
   - Long Claws
+  - Bloodgold Battle Idol
   amounts:
   - 64
   - 32
   - 3
+  - 1
   upgrade:
   - Bloodgold
   - Long Claws

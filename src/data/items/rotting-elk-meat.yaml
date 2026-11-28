@@ -1,0 +1,15 @@
+name: 'Rotten Elk Meat '
+prefab: RottingElkMeat_TW
+mod: monstrum
+kind: item
+group: Materials
+stats:
+  weight: 0.5
+  stack: 20
+description: The stench alone makes your stomach turn upside down.
+biome: Swamp
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 37
+notes: ''

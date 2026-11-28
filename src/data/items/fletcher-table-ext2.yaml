@@ -1,4 +1,4 @@
-name: Target dummy
+name: Archery Target
 prefab: FletcherTable_ext2_TW
 mod: warfare
 kind: piece
@@ -6,13 +6,17 @@ group: Fletcher Table & Extensions
 recipe:
   yields: 1
   materials:
-    - Bronze Nails
-    - Core Wood
-    - Troll Hide
-    - Troll Bone
+  - Ancient Bark
+  - Iron
+  amounts:
+  - 6
+  - 2
+info:
+- Upgrades the Fletcher Table
+checks: []
 source:
   sheet: Pieces
   row: 2
   col: 5
-description: ''
+description: Upgrades the Fletcher Table.
 notes: ''

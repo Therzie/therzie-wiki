@@ -1,0 +1,15 @@
+name: Bloodgill Fin
+prefab: SharkFin_TW
+mod: monstrum
+kind: item
+group: Materials
+stats:
+  weight: 0.8
+  stack: 50
+description: You can make delicious soup out of these, maybe even start a species threatening market..
+biome: Ocean
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 38
+notes: ''

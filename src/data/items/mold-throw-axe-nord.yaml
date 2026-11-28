@@ -1,0 +1,16 @@
+name: 'Mould: Nord Throwing Axe'
+prefab: MoldThrowAxeNord_TW
+mod: warfare
+kind: item
+group: Moulds
+stats:
+  weight: 1
+  stack: 10
+info:
+- From the Ancient Coin Exchange at the Runeforge (Moulds tab)
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5400
+description: A mould for the Nord Throwing Axe. Pour gold into it at the Black Forge to make a cast.
+notes: ''

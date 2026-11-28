@@ -3,18 +3,19 @@ prefab: ThrowAxeCarapace_TW
 mod: warfare
 kind: weapon
 group: Throwing axes
-skill: Axes
 tier: Carapace
 damage:
   slash: 67
   chop: 57
+damage_max:
+  slash: 76
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 40
+  durability: 43 (+18 per level)
+  stamina: 16 / 36
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -27,10 +28,12 @@ recipe:
   - Iron
   - Yggdrasil Wood
   - Mandible
+  - Black Marble Battle Idol
   amounts:
   - 11
   - 5
   - 5
+  - 1
   - 1
   upgrade:
   - Carapace

@@ -3,12 +3,16 @@ prefab: TrollBone_TW
 mod: warfare
 kind: item
 group: Materials
-drops:
-  - from: Troll
-    chance: 85%
+stats:
+  weight: 1
+  stack: 30
+checks: []
 source:
   sheet: Items
   row: 20
   col: 11
-description: ''
+description: A heavy, gnarled bone from a forest troll. Dense enough to brace a bow or anchor a target frame.
+drops:
+- from: Troll
+  chance: 85%
 notes: ''

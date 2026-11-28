@@ -6,10 +6,10 @@ group: Dual axes
 skill: Axes
 tier: Chitin
 damage:
-  slash: 43
+  slash: 50
   chop: 40
 damage_max:
-  slash: 61
+  slash: 65
   chop: 49
 stats:
   hands: Dual
@@ -17,9 +17,10 @@ stats:
   block_force: 40
   knockback: 50
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 20 / 66
-  weight: 0.3
+  durability: 150 (+50 per level)
+  stamina: 10 / 20
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -29,10 +30,12 @@ recipe:
   - Chitin
   - Bronze
   - Finewood
+  - Bronze Battle Idol
   amounts:
   - 19
   - 9
   - 8
+  - 1
   upgrade:
   - Chitin
   - Bronze

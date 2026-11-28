@@ -1,0 +1,15 @@
+name: Bloodgill Trophy
+prefab: TrophyShark_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 3
+  stack: 20
+description: We're gonna need a bigger boat..
+biome: Ocean
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 55
+notes: ''

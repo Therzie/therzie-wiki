@@ -1,18 +1,29 @@
-name: Razorback saddle
+name: Razorback Saddle
 prefab: SaddleBoar_TW
 mod: monstrum
 kind: item
 group: Saddles
+stats:
+  weight: 8
+description: Used to mount a Razorback, it's gonna be a bumpy ride!
 recipe:
   yields: 1
+  station: Workbench
+  level: 3
   materials:
-    - Leather Scraps
-    - Black Dye
-    - Razorback Trophy
-  station: Workbench lvl3
+  - Razorback Leather
+  - Razorback Tusk
+  - Razorback Trophy
+  amounts:
+  - 12
+  - 4
+  - 1
+info:
+- Saddle for the Razorback
+biome: Black Forest
+checks: []
 source:
   sheet: Items
   row: 39
   col: 3
-description: ''
 notes: ''

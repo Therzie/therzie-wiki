@@ -6,17 +6,17 @@ group: Battlehammers
 skill: Clubs
 tier: Flint
 damage:
-  blunt: 26
+  blunt: 23
 damage_max:
-  blunt: 44
+  blunt: 41
 stats:
   hands: Two handed
   block_armor: 11
-  block_force: 70
+  block_force: 23
   knockback: 50
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 22 / 38
+  durability: 100 (+50 per level)
+  stamina: 12 / 13
   movement: -10%
   weight: 4
   max_level: 4
@@ -30,12 +30,14 @@ recipe:
   - Greydwarf Eye
   - Leather Scraps
   - Stone
+  - Wooden Battle Idol
   amounts:
   - 15
   - 7
   - 1
   - 4
   - 12
+  - 1
   upgrade:
   - Flint
   - Leather Scraps

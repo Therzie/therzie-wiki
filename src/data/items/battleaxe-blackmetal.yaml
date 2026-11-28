@@ -18,7 +18,7 @@ stats:
   knockback: 70
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 22 / 36
+  stamina: 20 / 33
   movement: -10%
   weight: 2.5
   max_level: 4
@@ -31,11 +31,13 @@ recipe:
   - Iron
   - Finewood
   - Lox Pelt
+  - Black Metal Battle Idol
   amounts:
   - 41
   - 20
   - 10
   - 3
+  - 1
   upgrade:
   - Black Metal
   - Iron

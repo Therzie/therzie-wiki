@@ -1,0 +1,14 @@
+name: Glacier Crystal
+prefab: GlacierCrystal_TW
+mod: warfare
+kind: item
+group: Materials
+stats:
+  weight: 1
+  stack: 50
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5000
+description: A shard of primordial ice, broken from the glacier veins of the Deep North. Deep blue to its core, threaded with veins of cold light, and still crusted with snow. The frost giants guard it jealously.
+notes: ''

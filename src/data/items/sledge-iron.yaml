@@ -6,17 +6,17 @@ group: Sledges
 skill: Clubs
 tier: Iron
 damage:
-  blunt: 68
+  blunt: 60
 damage_max:
-  blunt: 86
+  blunt: 78
 stats:
   hands: Two handed
   block_armor: 26
   block_force: 50
   knockback: 50
   backstab: x2
-  durability: 200 (+50 per level)
-  stamina: 22 / 32
+  durability: 100 (+50 per level)
+  stamina: 20 / 23
   movement: -15%
   weight: 4
   max_level: 4
@@ -28,10 +28,12 @@ recipe:
   - Iron
   - Ancient Bark
   - Troll Hide
+  - Iron Battle Idol
   amounts:
   - 34
   - 17
   - 2
+  - 1
   upgrade:
   - Iron
   - Troll Hide

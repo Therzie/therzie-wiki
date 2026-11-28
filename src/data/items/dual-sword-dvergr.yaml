@@ -9,7 +9,7 @@ damage:
   slash: 108
   lightning: 15
 damage_max:
-  slash: 123
+  slash: 126
 stats:
   hands: Dual
   block_armor: 48
@@ -17,8 +17,9 @@ stats:
   knockback: 40
   backstab: x3
   durability: 275 (+50 per level)
-  stamina: 16 / 48
-  weight: 0.3
+  stamina: 18 / 36
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -29,11 +30,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Scale Hide
+  - Black Marble Battle Idol
   amounts:
-  - 27
-  - 14
-  - 14
+  - 22
+  - 11
+  - 16
   - 4
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -42,9 +45,9 @@ recipe:
   - Seeker Trophy (level 3)
   - Wisp (level 4)
   upgrade_amounts:
-  - 7
-  - 7
-  - 7
+  - 6
+  - 6
+  - 8
   - 2
   - 1
   - 3

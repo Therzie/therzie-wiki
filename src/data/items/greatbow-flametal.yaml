@@ -8,12 +8,12 @@ tier: Flametal
 damage:
   pierce: 119
 damage_max:
-  pierce: 131
+  pierce: 137
 stats:
   hands: Two handed
   knockback: 80
   backstab: x4
-  durability: 100 (+50 per level)
+  durability: 300 (+50 per level)
   draw_stamina: 6 per second
   secondary_stamina: 40
   movement: -5%
@@ -28,11 +28,13 @@ recipe:
   - Charred Bone
   - Ashwood
   - Morgen Sinew
+  - Flametal Battle Idol
   amounts:
   - 54
   - 27
   - 20
   - 2
+  - 1
   upgrade:
   - Flametal
   - Ashwood

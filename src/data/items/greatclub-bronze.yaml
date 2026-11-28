@@ -10,16 +10,16 @@ damage:
   pierce: 15
 damage_max:
   blunt: 45
-  pierce: 24
 stats:
   hands: Two handed
-  block_armor: 72
+  block_armor: 18
   block_force: 30
   knockback: 130
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  durability: 100 (+50 per level)
+  stamina: 14 / 20
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -29,21 +29,19 @@ recipe:
   - Bronze
   - Finewood
   - Leather Scraps
-  - Corewood
+  - Bronze Battle Idol
   amounts:
   - 16
   - 8
   - 2
-  - 15
+  - 1
   upgrade:
   - Bronze
   - Leather Scraps
-  - Tin
-  - Greydwarf Trophy (level 3)
-  - Greydwarf Brute Trophy (level 4)
+  - Greydwarf Shaman Trophy (level 3)
+  - Skeleton Trophy (level 4)
   upgrade_amounts:
   - 4
-  - 1
   - 1
   - 1
   - 1

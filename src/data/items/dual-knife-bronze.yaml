@@ -6,11 +6,11 @@ group: Dual knives
 skill: Knives
 tier: Bronze
 damage:
+  slash: 12
+  pierce: 12
+damage_max:
   slash: 15
   pierce: 15
-damage_max:
-  slash: 18
-  pierce: 18
 stats:
   hands: Dual
   block_armor: 20
@@ -18,7 +18,7 @@ stats:
   knockback: 10
   backstab: x6
   durability: 200 (+50 per level)
-  stamina: 12 / 38
+  stamina: 6 / 18
   weight: 0.3
   max_level: 4
 recipe:
@@ -29,10 +29,12 @@ recipe:
   - Bronze
   - Finewood
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 9
   - 5
   - 4
+  - 1
   upgrade:
   - Bronze
   - Leather Scraps

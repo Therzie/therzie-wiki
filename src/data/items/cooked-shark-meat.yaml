@@ -1,4 +1,4 @@
-name: Cooked Bloodgill meat
+name: Cooked Bloodgill Meat
 prefab: CookedSharkMeat_TW
 mod: monstrum
 kind: food
@@ -7,14 +7,18 @@ food:
   health: 40
   stamina: 74
   eitr: 0
+stats:
+  duration: 20 min
+  healing: 3 hp/tick
+description: Steak of the sea, you can't help but drool.
 recipe:
   yields: 1
   materials:
-    - Bloodgill Meat
+  - Bloodgill Meat
   station: Iron Cooking Station
+checks: []
 source:
   sheet: M.Food
   row: 2
   col: 23
-description: ''
 notes: ''

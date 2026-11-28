@@ -1,0 +1,14 @@
+name: Frozen Soul Trophy
+prefab: TrophyFrozenSoul_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 0.5
+  stack: 20
+description: The skull of a Frozen Soul, rimed in frost. Its eyes still stare with a cold blue light.
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 49
+notes: ''

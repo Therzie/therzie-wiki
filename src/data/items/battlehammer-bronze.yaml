@@ -12,11 +12,11 @@ damage_max:
 stats:
   hands: Two handed
   block_armor: 18
-  block_force: 70
+  block_force: 34
   knockback: 50
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 22 / 38
+  stamina: 14 / 16
   movement: -10%
   weight: 4
   max_level: 4
@@ -28,10 +28,12 @@ recipe:
   - Bronze
   - Finewood
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 18
   - 9
   - 2
+  - 1
   upgrade:
   - Bronze
   - Leather Scraps

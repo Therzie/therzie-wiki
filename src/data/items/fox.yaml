@@ -1,9 +1,8 @@
-biome: Meadows
 name: Fox
 prefab: Fox_TW
 mod: monstrum
 kind: creature
-group: Other
+group: Creatures
 creature:
   health: 30
   resist:
@@ -16,17 +15,22 @@ creature:
     spirit: immune
     frost: normal
   spawn:
-    - when: Day
-      chance: 16%
-    - when: Night
-      chance: 20%
+  - when: Day
+    chance: 16%
+  - when: Night
+    chance: 20%
 drops:
-  - from: Raw Fox Meat
-    chance: 80%
-  - from: Fox Pelt
-    chance: 100%
-  - from: Fox Trophy
-    chance: 18%
+- from: Raw Fox Meat
+  chance: 100%
+- from: Fox Pelt
+  chance: 100%
+- from: Fox Trophy
+  chance: 22%
+info:
+- Tameable; eats Neck Tail, Raw Bear Steak, Raw Fish, Deer Meat, Boar Meat
+- Breeds when tamed
+biome: Meadows
+checks: []
 source:
   sheet: Monstrum
   row: 24

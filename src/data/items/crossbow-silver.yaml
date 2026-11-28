@@ -6,15 +6,15 @@ group: Crossbows
 skill: Crossbows
 tier: Silver
 damage:
-  pierce: 147
+  pierce: 114
   spirit: 3
 damage_max:
-  pierce: 156
+  pierce: 123
 stats:
   hands: Two handed
   knockback: 200
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 75 (+50 per level)
   secondary_stamina: 20
   reload: 3.5 s
   movement: -5%
@@ -29,11 +29,13 @@ recipe:
   - Iron
   - Wolf Pelt
   - Wolf Fang
+  - Silver Battle Idol
   amounts:
   - 22
   - 11
   - 4
   - 3
+  - 1
   upgrade:
   - Silver
   - Iron

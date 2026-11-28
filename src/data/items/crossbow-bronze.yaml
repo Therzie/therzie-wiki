@@ -6,14 +6,14 @@ group: Crossbows
 skill: Crossbows
 tier: Bronze
 damage:
-  pierce: 65
+  pierce: 51
 damage_max:
-  pierce: 74
+  pierce: 60
 stats:
   hands: Two handed
   knockback: 200
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 25 (+50 per level)
   secondary_stamina: 20
   reload: 3.5 s
   movement: -5%
@@ -27,10 +27,12 @@ recipe:
   - Bronze
   - Finewood
   - Deer Hide
+  - Bronze Battle Idol
   amounts:
   - 15
   - 7
   - 2
+  - 1
   upgrade:
   - Bronze
   - Deer Hide

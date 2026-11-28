@@ -15,8 +15,8 @@ stats:
   block_force: 10
   knockback: 20
   backstab: x6
-  durability: 200 (+50 per level)
-  stamina: 16 / 48
+  durability: 300 (+50 per level)
+  stamina: 7 / 18
   weight: 2
   max_level: 4
 recipe:
@@ -27,10 +27,12 @@ recipe:
   - Chitin
   - Bronze
   - Deer Hide
+  - Bronze Battle Idol
   amounts:
   - 14
   - 7
   - 2
+  - 1
   upgrade:
   - Chitin
   - Bronze

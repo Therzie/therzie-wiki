@@ -6,18 +6,18 @@ group: Knives
 skill: Knives
 tier: Flametal
 damage:
-  slash: 65
-  pierce: 65
+  slash: 52
+  pierce: 52
 damage_max:
-  slash: 68
-  pierce: 68
+  slash: 55
+  pierce: 55
 stats:
   hands: One handed
   block_armor: 2
   block_force: 10
   knockback: 10
   backstab: x6
-  durability: 300 (+50 per level)
+  durability: 325 (+50 per level)
   stamina: 14 / 42
   weight: 0.3
   max_level: 4
@@ -29,10 +29,12 @@ recipe:
   - Flametal
   - Charred Bone
   - Asksvin Hide
+  - Flametal Battle Idol
   amounts:
   - 19
   - 10
   - 2
+  - 1
   upgrade:
   - Flametal
   - Asksvin Hide

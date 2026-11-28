@@ -9,7 +9,7 @@ damage:
   slash: 30
   chop: 27
 damage_max:
-  slash: 48
+  slash: 45
   chop: 36
 stats:
   hands: Dual
@@ -17,9 +17,10 @@ stats:
   block_force: 40
   knockback: 50
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 20 / 66
-  weight: 0.3
+  durability: 100 (+40 per level)
+  stamina: 8 / 16
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -29,10 +30,12 @@ recipe:
   - Bone Fragments
   - Corewood
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 19
   - 9
   - 4
+  - 1
   upgrade:
   - Bone Fragments
   - Leather Scraps

@@ -1,0 +1,30 @@
+name: 'Ashlands Rune: Arcane'
+prefab: RuneArcaneAsh_TW
+mod: warfare
+kind: item
+group: Runes
+stats:
+  weight: 0.01
+  stack: 100
+recipe:
+  yields: 1
+  station: Runeforge
+  level: 1
+  materials:
+  - 'Mistlands Rune: Arcane'
+  - Volcanic Crystal
+  - Rune Power II
+  - Proustite Powder
+  amounts:
+  - 1
+  - 4
+  - 12
+  - 8
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5200
+description: 'Rune of the Arcane path, level II (Ashlands).
+
+  Used at the Runeforge to infuse or upgrade Arcane infusions to level II.'
+notes: ''

@@ -10,16 +10,16 @@ damage:
   pierce: 50
 damage_max:
   blunt: 103
-  pierce: 59
 stats:
   hands: Two handed
-  block_armor: 66
+  block_armor: 51
   block_force: 30
   knockback: 130
   backstab: x3
   durability: 250 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  stamina: 22 / 32
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -30,17 +30,19 @@ recipe:
   - Iron
   - Black Marble
   - Mandible
+  - Black Marble Battle Idol
   amounts:
   - 25
   - 12
   - 11
   - 3
+  - 1
   upgrade:
   - Carapace
   - Iron
   - Black Marble
   - Mandible
-  - Seeker Trophy (level 3)
+  - Hare Trophy (level 3)
   - Seeker Soldier Trophy (level 4)
   - Dark Crystal (level 4)
   upgrade_amounts:

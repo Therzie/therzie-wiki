@@ -26,11 +26,13 @@ recipe:
   - Obsidian
   - Ancient Bark
   - Crystal
+  - Silver Battle Idol
   amounts:
   - 14
   - 8
   - 4
   - 3
+  - 1
   upgrade:
   - Silver
   - Obsidian

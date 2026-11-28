@@ -6,18 +6,18 @@ group: Fists
 skill: Fists
 tier: Dvergr
 damage:
-  blunt: 89
+  blunt: 87
   lightning: 15
 damage_max:
-  blunt: 101
+  blunt: 99
 stats:
   hands: Dual
   block_armor: 19 (+1 per level)
   block_force: 10
   knockback: 20
   backstab: x6
-  durability: 300 (+125 per level)
-  stamina: 16 / 48
+  durability: 350 (+50 per level)
+  stamina: 14 / 35
   weight: 2
   max_level: 4
 recipe:
@@ -29,11 +29,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Scale Hide
+  - Black Marble Battle Idol
   amounts:
-  - 20
-  - 10
-  - 10
+  - 17
+  - 9
+  - 11
   - 3
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -42,9 +44,9 @@ recipe:
   - Tick Trophy (level 3)
   - Seeker Trophy (level 4)
   upgrade_amounts:
-  - 5
-  - 5
-  - 5
+  - 4
+  - 4
+  - 6
   - 1
   - 1
   - 1

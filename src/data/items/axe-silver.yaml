@@ -18,8 +18,8 @@ stats:
   block_force: 20
   knockback: 50
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 18 / 36
+  durability: 175 (+50 per level)
+  stamina: 12 / 24
   movement: -5%
   weight: 2
   max_level: 4
@@ -32,11 +32,13 @@ recipe:
   - Iron
   - Wolf Pelt
   - Wolf Fang
+  - Silver Battle Idol
   amounts:
   - 17
   - 8
   - 3
   - 2
+  - 1
   upgrade:
   - Silver
   - Iron

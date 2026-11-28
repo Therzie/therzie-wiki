@@ -15,8 +15,8 @@ stats:
   block_force: 50
   knockback: 50
   backstab: x2
-  durability: 300 (+50 per level)
-  stamina: 22 / 32
+  durability: 325 (+50 per level)
+  stamina: 28 / 32
   movement: -15%
   weight: 4
   max_level: 4
@@ -29,11 +29,13 @@ recipe:
   - Charred Bone
   - Ashwood
   - Sulfur
+  - Flametal Battle Idol
   amounts:
   - 62
   - 31
   - 10
   - 8
+  - 1
   upgrade:
   - Flametal
   - Sulfur

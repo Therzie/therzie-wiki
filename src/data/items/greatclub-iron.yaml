@@ -6,20 +6,20 @@ group: Greatclubs
 skill: Clubs
 tier: Iron
 damage:
-  blunt: 40
-  pierce: 23
+  blunt: 35
+  pierce: 20
 damage_max:
-  blunt: 58
-  pierce: 32
+  blunt: 53
 stats:
   hands: Two handed
-  block_armor: 72
+  block_armor: 26
   block_force: 30
   knockback: 130
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  durability: 100 (+50 per level)
+  stamina: 16 / 23
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -29,19 +29,21 @@ recipe:
   - Iron
   - Ancient Bark
   - Leather Scraps
+  - Iron Battle Idol
   amounts:
   - 30
   - 15
-  - 2
+  - 4
+  - 1
   upgrade:
   - Iron
   - Leather Scraps
   - Blob Trophy (level 3)
-  - Draugr Elite Trophy (level 4)
+  - Rancid Remains Trophy (level 4)
   - Rotten Pelt (level 4)
   upgrade_amounts:
   - 8
-  - 1
+  - 2
   - 1
   - 1
   - 4

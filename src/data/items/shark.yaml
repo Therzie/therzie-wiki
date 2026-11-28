@@ -1,9 +1,8 @@
-biome: Ocean
 name: Bloodgill
 prefab: Shark_TW
 mod: monstrum
 kind: creature
-group: Other
+group: Creatures
 creature:
   health: 380
   resist:
@@ -14,19 +13,19 @@ creature:
     poison: normal
     lightning: weak
     spirit: immune
-    frost: resistant
+    frost: very resistant
   spawn:
-    - when: Day
-      chance: 4%
-    - when: Night
-      chance: 4%
+  - when: Day and night
+    chance: 1%
 drops:
-  - from: Bloodgill meat
-    chance: 100%
-  - from: Bloodgill fin
-    chance: 75%
-  - from: Bloodgill trophy
-    chance: 22%
+- from: Bloodgill Meat
+  chance: 100% (2-6)
+- from: Bloodgill Fin
+  chance: 75% (2-4)
+- from: Bloodgill Trophy
+  chance: 22%
+biome: Ocean
+checks: []
 source:
   sheet: Monstrum
   row: 47

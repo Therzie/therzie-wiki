@@ -5,22 +5,50 @@ kind: weapon
 group: Battlehammers
 skill: Clubs
 damage:
-  blunt: 52
+  blunt: 63
   spirit: 10
 damage_max:
-  blunt: 70
+  blunt: 81
   spirit: 13
 stats:
   hands: Two handed
   block_armor: 28
-  block_force: 70
+  block_force: 34
   knockback: 50
   backstab: x3
-  durability: 200 (+100 per level)
-  stamina: 14 / 22
+  durability: 200 (+50 per level)
+  stamina: 14 / 24
   movement: -10%
   weight: 4
   max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 1
+  materials:
+  - Bronze
+  - Ancient Bark
+  - Root
+  - The Elder Trophy
+  - Bronze Battle Idol
+  amounts:
+  - 32
+  - 48
+  - 8
+  - 1
+  - 1
+  upgrade:
+  - Bronze
+  - Ancient Bark
+  - Root
+  - Abomination Trophy (level 3)
+  - The Elder Trophy (level 4)
+  upgrade_amounts:
+  - 8
+  - 12
+  - 2
+  - 1
+  - 1
 drops:
 - from: The Elder
   chance: 4%

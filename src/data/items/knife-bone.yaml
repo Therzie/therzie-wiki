@@ -6,11 +6,11 @@ group: Knives
 skill: Knives
 tier: Bone
 damage:
-  slash: 14
-  pierce: 14
+  slash: 10
+  pierce: 10
 damage_max:
-  slash: 17
-  pierce: 17
+  slash: 13
+  pierce: 13
 stats:
   hands: One handed
   block_armor: 2
@@ -18,7 +18,7 @@ stats:
   knockback: 10
   backstab: x6
   durability: 200 (+50 per level)
-  stamina: 14 / 42
+  stamina: 5 / 15
   weight: 0.3
   max_level: 4
 recipe:
@@ -29,10 +29,12 @@ recipe:
   - Bone Fragments
   - Corewood
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 6
   - 3
   - 2
+  - 1
   upgrade:
   - Bone Fragments
   - Leather Scraps

@@ -5,21 +5,48 @@ kind: weapon
 group: Fists
 skill: Fists
 damage:
-  blunt: 105
+  blunt: 101
   slash: 10
 damage_max:
-  blunt: 117
-  slash: 16
+  blunt: 113
 stats:
   hands: Dual
   block_armor: 19 (+1 per level)
   block_force: 10
   knockback: 20
   backstab: x6
-  durability: 300 (+125 per level)
-  stamina: 16 / 48
+  durability: 375 (+50 per level)
+  stamina: 14 / 56
   weight: 2
   max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Carapace
+  - Refined Eitr
+  - Mandible
+  - The Queen Trophy
+  - Black Marble Battle Idol
+  amounts:
+  - 40
+  - 32
+  - 8
+  - 1
+  - 1
+  upgrade:
+  - Carapace
+  - Refined Eitr
+  - Mandible
+  - Majestic Carapace (level 3)
+  - The Queen Trophy (level 4)
+  upgrade_amounts:
+  - 10
+  - 8
+  - 2
+  - 1
+  - 1
 drops:
 - from: The Queen
   chance: 7%

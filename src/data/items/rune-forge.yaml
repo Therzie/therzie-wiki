@@ -1,0 +1,27 @@
+name: Runeforge
+prefab: RuneForge_TW
+mod: warfare
+kind: piece
+group: Runeforge
+recipe:
+  yields: 1
+  materials:
+  - Yggdrasil Wood
+  - Black Marble
+  - Refined Eitr
+  - Dark Crystal
+  - Majestic Carapace
+  amounts:
+  - 30
+  - 40
+  - 20
+  - 8
+  - 1
+info:
+- Crafting station
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 6000
+description: A forge fed by Yggdrasil's roots. Eitr is pumped through the roots into the anvil to bind infusions and gems into your gear, and to forge runes.
+notes: ''

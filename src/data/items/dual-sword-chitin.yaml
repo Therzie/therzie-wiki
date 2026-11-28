@@ -8,7 +8,7 @@ tier: Chitin
 damage:
   slash: 45
 damage_max:
-  slash: 60
+  slash: 63
 stats:
   hands: Dual
   block_armor: 17
@@ -16,8 +16,9 @@ stats:
   knockback: 40
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 16 / 48
-  weight: 0.3
+  stamina: 10 / 20
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -27,10 +28,12 @@ recipe:
   - Chitin
   - Bronze
   - Deer Hide
+  - Bronze Battle Idol
   amounts:
   - 19
   - 9
   - 2
+  - 1
   upgrade:
   - Chitin
   - Bronze

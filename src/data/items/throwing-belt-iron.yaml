@@ -1,0 +1,29 @@
+name: Iron Throwing Belt
+prefab: ThrowingBeltIron_TW
+mod: warfare
+kind: item
+group: Throwing belts
+tier: Iron
+effect: 'Belt: 2 slots (javelins and throwing axes); Draws a fresh one when the weapon in your hand is spent'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 2
+  materials:
+  - Rotten Pelt
+  - Iron
+  - Leather Scraps
+  - Withered Bone
+  amounts:
+  - 3
+  - 2
+  - 2
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5700
+description: A mud-brown crypt raider belt with a riveted iron frog and a bone charm. Holds spare throwing weapons; when the one in your hand is spent, the next is drawn from the belt.
+notes: ''

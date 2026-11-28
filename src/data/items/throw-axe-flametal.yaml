@@ -3,18 +3,19 @@ prefab: ThrowAxeFlametal_TW
 mod: warfare
 kind: weapon
 group: Throwing axes
-skill: Axes
 tier: Flametal
 damage:
   slash: 77
   chop: 66
+damage_max:
+  slash: 86
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 40
+  durability: 43 (+18 per level)
+  stamina: 16 / 36
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -26,10 +27,12 @@ recipe:
   - Flametal
   - Charred Bone
   - Ashwood
+  - Flametal Battle Idol
   amounts:
   - 23
   - 12
   - 6
+  - 1
   upgrade:
   - Flametal
   - Ashwood

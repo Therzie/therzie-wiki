@@ -1,0 +1,32 @@
+name: Spirit Bomb
+prefab: BombSpirit_TW
+mod: warfare
+kind: weapon
+group: Bombs
+damage:
+  blunt: 5
+stats:
+  hands: One handed
+  block_armor: 2
+  knockback: 40
+  backstab: x3
+  stamina: 8 / 20
+  weight: 0.3
+recipe:
+  yields: 10
+  station: Cauldron
+  level: 4
+  materials:
+  - Silver Ore
+  - Fenris Hair
+  - Cloudberries
+  amounts:
+  - 2
+  - 2
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2350
+description: Unleashes a spiritual cleansing on impact!
+notes: ''

@@ -1,0 +1,39 @@
+name: Rotten Draugr Cape
+prefab: CapeRotten_TW
+mod: warfare
+kind: item
+group: Capes
+effect: The dead smell one of their own. In the Swamp, undead notice you 25% later. Poison lasts shorter.
+stats:
+  armor: 1 (+1 per level)
+  durability: 600 (+50 per level)
+  max_level: 4
+  weight: 4
+recipe:
+  yields: 1
+  station: Workbench
+  level: 2
+  materials:
+  - Draugr Trophy
+  - Leather Scraps
+  - Guck
+  - Ooze
+  amounts:
+  - 1
+  - 6
+  - 8
+  - 4
+  upgrade:
+  - Leather Scraps
+  - Guck
+  - Ooze
+  upgrade_amounts:
+  - 3
+  - 4
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5800
+description: The rotting hide of a draugr, its jaw still chained open. Flies follow wherever it goes. Poison wears off 25% faster while worn.
+notes: ''

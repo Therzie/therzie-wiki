@@ -12,11 +12,11 @@ damage_max:
 stats:
   hands: Two handed
   block_armor: 22
-  block_force: 70
+  block_force: 34
   knockback: 50
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 22 / 38
+  stamina: 15 / 17
   movement: -10%
   weight: 4
   max_level: 4
@@ -28,10 +28,12 @@ recipe:
   - Chitin
   - Bronze
   - Finewood
+  - Bronze Battle Idol
   amounts:
   - 19
   - 10
   - 10
+  - 1
   upgrade:
   - Chitin
   - Bronze

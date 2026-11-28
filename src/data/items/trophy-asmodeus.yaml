@@ -1,0 +1,15 @@
+name: Asmodeus Trophy
+prefab: TrophyAsmodeus_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 2
+  stack: 20
+description: Even in death, its stare is hypnotizing..
+biome: Meadows
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 44
+notes: ''

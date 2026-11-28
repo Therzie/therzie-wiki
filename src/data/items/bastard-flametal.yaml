@@ -28,10 +28,12 @@ recipe:
   - Flametal
   - Charred Bone
   - Asksvin Hide
+  - Flametal Battle Idol
   amounts:
   - 54
   - 27
   - 3
+  - 1
   upgrade:
   - Flametal
   - Asksvin Hide

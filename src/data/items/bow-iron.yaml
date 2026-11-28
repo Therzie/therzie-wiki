@@ -6,14 +6,14 @@ group: Bows
 skill: Bows
 tier: Iron
 damage:
-  pierce: 42
+  pierce: 35.7
 damage_max:
-  pierce: 54
+  pierce: 45.9
 stats:
   hands: Two handed
   knockback: 25
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 100 (+50 per level)
   draw_stamina: 12 per second
   secondary_stamina: 20
   movement: -5%
@@ -27,10 +27,12 @@ recipe:
   - Iron
   - Ancient Bark
   - Leather Scraps
+  - Iron Battle Idol
   amounts:
   - 21
   - 11
   - 4
+  - 1
   upgrade:
   - Iron
   - Leather Scraps

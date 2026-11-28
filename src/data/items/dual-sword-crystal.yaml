@@ -8,7 +8,7 @@ tier: Crystal
 damage:
   slash: 86
 damage_max:
-  slash: 101
+  slash: 104
 stats:
   hands: Dual
   block_armor: 43
@@ -16,8 +16,9 @@ stats:
   knockback: 40
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 16 / 48
-  weight: 0.3
+  stamina: 15 / 30
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -28,11 +29,13 @@ recipe:
   - Silver
   - Red Jute
   - Fenris Hair
+  - Silver Battle Idol
   amounts:
   - 15
   - 8
   - 4
   - 3
+  - 1
   upgrade:
   - Pristine Crystal
   - Silver

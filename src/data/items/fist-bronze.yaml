@@ -6,17 +6,19 @@ group: Fists
 skill: Fists
 tier: Bronze
 damage:
-  slash: 30
+  blunt: 17.5
+  slash: 7.5
 damage_max:
-  slash: 42
+  blunt: 25.9
+  slash: 11.1
 stats:
   hands: Dual
   block_armor: 7 (+1 per level)
   block_force: 10
   knockback: 20
   backstab: x6
-  durability: 200 (+50 per level)
-  stamina: 16 / 48
+  durability: 300 (+50 per level)
+  stamina: 6 / 15
   weight: 2
   max_level: 4
 recipe:
@@ -28,11 +30,13 @@ recipe:
   - Finewood
   - Deer Hide
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 12
   - 6
   - 2
   - 2
+  - 1
   upgrade:
   - Bronze
   - Deer Hide

@@ -1,0 +1,27 @@
+name: Bronze Quiver
+prefab: QuiverBronze_TW
+mod: warfare
+kind: item
+group: Quivers
+tier: Bronze
+effect: 'Ammo pouch: 3 slots (arrows and bolts)'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 1
+  materials:
+  - Deer Hide
+  - Bronze
+  - Leather Scraps
+  amounts:
+  - 6
+  - 4
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5600
+description: A stiffened leather quiver with two riveted bronze splints, an engraved bronze collar and a bronze dome cap. Holds arrows and bolts in its own pouch.
+notes: ''

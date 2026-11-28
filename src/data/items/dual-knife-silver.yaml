@@ -6,12 +6,12 @@ group: Dual knives
 skill: Knives
 tier: Silver
 damage:
-  slash: 31
-  pierce: 32
+  slash: 25
+  pierce: 25
   spirit: 8
 damage_max:
-  slash: 34
-  pierce: 35
+  slash: 28
+  pierce: 28
 stats:
   hands: Dual
   block_armor: 20
@@ -19,7 +19,7 @@ stats:
   knockback: 10
   backstab: x6
   durability: 200 (+50 per level)
-  stamina: 12 / 38
+  stamina: 10 / 30
   weight: 0.3
   max_level: 4
 recipe:
@@ -31,11 +31,13 @@ recipe:
   - Iron
   - Wolf Pelt
   - Wolf Fang
+  - Silver Battle Idol
   amounts:
   - 14
   - 7
   - 2
   - 2
+  - 1
   upgrade:
   - Silver
   - Iron

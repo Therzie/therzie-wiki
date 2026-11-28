@@ -15,8 +15,8 @@ stats:
   block_force: 10
   knockback: 20
   backstab: x6
-  durability: 275 (+50 per level)
-  stamina: 16 / 48
+  durability: 325 (+50 per level)
+  stamina: 14 / 28
   weight: 2
   max_level: 4
 recipe:
@@ -28,11 +28,13 @@ recipe:
   - Iron
   - Black Jute
   - Mandible
+  - Black Marble Battle Idol
   amounts:
   - 19
   - 10
   - 3
   - 2
+  - 1
   upgrade:
   - Carapace
   - Iron

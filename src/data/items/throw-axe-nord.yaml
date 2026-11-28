@@ -3,18 +3,19 @@ prefab: ThrowAxeNord_TW
 mod: warfare
 kind: weapon
 group: Throwing axes
-skill: Axes
 tier: Nord
 damage:
   slash: 97
   chop: 83
+damage_max:
+  slash: 112
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 40
+  durability: 43 (+18 per level)
+  stamina: 17 / 38
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -26,10 +27,12 @@ recipe:
   - Bloodgold
   - Timberwood
   - Elaking Hair Bundle
+  - Bloodgold Battle Idol
   amounts:
   - 26
   - 13
   - 2
+  - 1
   upgrade:
   - Bloodgold
   - Elaking Hair Bundle

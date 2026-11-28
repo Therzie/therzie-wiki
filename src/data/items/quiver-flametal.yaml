@@ -1,0 +1,29 @@
+name: Flametal Quiver
+prefab: QuiverFlametal_TW
+mod: warfare
+kind: item
+group: Quivers
+tier: Flametal
+effect: 'Ammo pouch: 7 slots (arrows and bolts)'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Asksvin Hide
+  - Flametal
+  - Morgen Sinew
+  - Volcanic Crystal
+  amounts:
+  - 12
+  - 11
+  - 2
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5600
+description: A hip quiver of ash-hardened leather and flametal, glowing with trapped embers. Holds arrows and bolts in its own pouch.
+notes: ''

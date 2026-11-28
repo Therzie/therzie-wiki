@@ -1,0 +1,15 @@
+name: Razorback Trophy
+prefab: TrophyRazorback_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 2
+  stack: 20
+description: The tusks keep growing till they pierce the brain.
+biome: Black Forest
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 53
+notes: ''

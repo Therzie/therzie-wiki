@@ -1,0 +1,27 @@
+name: 'Cast: Nord Greatbow'
+prefab: GreatbowNordUncooked_TW
+mod: warfare
+kind: item
+group: Casts
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 4
+  materials:
+  - Bloodgold
+  - Timberwood
+  - Nornathread
+  - 'Mould: Nord Greatbow'
+  amounts:
+  - 62
+  - 31
+  - 4
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5500
+description: A cast of the Nord Greatbow. It needs to be hardened with frost in the Frost Foundry.
+notes: ''

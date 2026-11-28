@@ -6,14 +6,14 @@ group: Bows
 skill: Bows
 tier: Blackmetal
 damage:
-  pierce: 60
+  pierce: 51
 damage_max:
-  pierce: 72
+  pierce: 61.2
 stats:
   hands: Two handed
   knockback: 25
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 175 (+50 per level)
   draw_stamina: 12 per second
   secondary_stamina: 20
   movement: -5%
@@ -28,11 +28,13 @@ recipe:
   - Iron
   - Finewood
   - Linen Thread
+  - Black Metal Battle Idol
   amounts:
   - 26
   - 13
   - 10
   - 10
+  - 1
   upgrade:
   - Black Metal
   - Iron

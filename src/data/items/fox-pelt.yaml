@@ -1,14 +1,15 @@
 name: Fox Pelt
 prefab: FoxPelt_TW
-mod: warfare
+mod: monstrum
 kind: item
 group: Materials
-drops:
-  - from: Fox
-    chance: 80%
+stats:
+  weight: 1
+  stack: 50
+description: A beautiful, majestic red pelt of a fox.
+biome: Meadows
+checks: []
 source:
-  sheet: Items
-  row: 20
-  col: 3
-description: ''
+  sheet: Monstrum 1.7
+  row: 36
 notes: ''

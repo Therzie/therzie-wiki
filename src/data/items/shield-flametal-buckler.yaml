@@ -1,0 +1,50 @@
+name: Flametal Buckler
+prefab: ShieldFlametalBuckler_TW
+mod: warfare
+kind: shield
+group: Shields
+tier: Flametal
+stats:
+  hands: Shield
+  block_armor: 80 (+6 per level)
+  block_force: 50
+  parry_bonus: x2.5
+  durability: 300 (+50 per level)
+  movement: -5%
+  weight: 4
+  max_level: 4
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 3
+  materials:
+  - Flametal
+  - Charred Bone
+  - Asksvin Hide
+  - Flametal Protection Idol
+  amounts:
+  - 26
+  - 12
+  - 2
+  - 1
+  upgrade:
+  - Flametal
+  - Asksvin Hide
+  - Sulfur
+  - Asksvin Trophy (level 3)
+  - Volture Trophy (level 4)
+  - Volcanic Crystal (level 4)
+  upgrade_amounts:
+  - 7
+  - 1
+  - 1
+  - 1
+  - 1
+  - 3
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 2911
+biome: Ashlands
+description: Forged flametal with a molten core that bleeds outward in glowing rays. The grip is bound in overlapping Ashlands leather.
+notes: ''

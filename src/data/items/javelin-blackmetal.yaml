@@ -3,17 +3,18 @@ prefab: JavelinBlackmetal_TW
 mod: warfare
 kind: weapon
 group: Javelins
-skill: Spears
 tier: Blackmetal
 damage:
   pierce: 94
+damage_max:
+  pierce: 103
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 20
+  durability: 43 (+18 per level)
+  stamina: 14 / 16
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -26,10 +27,12 @@ recipe:
   - Iron
   - Finewood
   - Lox Pelt
+  - Black Metal Battle Idol
   amounts:
   - 16
   - 8
   - 10
+  - 1
   - 1
   upgrade:
   - Black Metal

@@ -1,0 +1,29 @@
+name: Silver Throwing Belt
+prefab: ThrowingBeltSilver_TW
+mod: warfare
+kind: item
+group: Throwing belts
+tier: Silver
+effect: 'Belt: 3 slots (javelins and throwing axes); Draws a fresh one when the weapon in your hand is spent'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Wolf Pelt
+  - Silver
+  - Wolf Fang
+  - Obsidian
+  amounts:
+  - 12
+  - 11
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5700
+description: A mountain war belt of wolf fur and silver with a javelin sheath and rings for throwing axes. Holds spare throwing weapons; when the one in your hand is spent, the next is drawn from the belt.
+notes: ''

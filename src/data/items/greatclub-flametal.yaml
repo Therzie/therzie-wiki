@@ -10,16 +10,16 @@ damage:
   pierce: 63
 damage_max:
   blunt: 128
-  pierce: 72
 stats:
   hands: Two handed
-  block_armor: 72
+  block_armor: 62
   block_force: 30
   knockback: 130
   backstab: x3
-  durability: 300 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  durability: 325 (+50 per level)
+  stamina: 22 / 32
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -29,19 +29,19 @@ recipe:
   - Flametal
   - Charred Bone
   - Ashwood
+  - Flametal Battle Idol
   amounts:
   - 54
   - 27
   - 15
+  - 1
   upgrade:
   - Flametal
-  - Ashwood
-  - Asksvin Trophy (level 3)
-  - Warrior Trophy (level 4)
+  - Warrior Trophy (level 3)
+  - Volture Trophy (level 4)
   - Volcanic Crystal (level 4)
   upgrade_amounts:
   - 14
-  - 8
   - 1
   - 1
   - 6

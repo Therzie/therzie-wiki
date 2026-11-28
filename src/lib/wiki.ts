@@ -5,6 +5,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 export type Item = CollectionEntry<'items'>;
 
 import { MODS, BIOMES, DAMAGE, TIERS } from './constants';
+import vanillaNames from '../data/vanilla-names.json';
 export { MODS, BIOMES, DAMAGE, TIERS };
 export const tierInfo = (id?: string) => TIERS.find((t) => t.id === id);
 export const tierIndex = (id?: string) => { const i = TIERS.findIndex((t) => t.id === id); return i < 0 ? 99 : i; };
@@ -114,11 +115,12 @@ export const SECTIONS: { mod: string; path: string; label: string; title: string
   { mod: 'warfare', path: '/warfare/items/', label: 'Items', title: 'Warfare items', sheets: ['Items'], lead: '' },
   { mod: 'armory', path: '/armory/', label: 'Armor sets', title: 'Armory', sheets: ['Armory'], matrix: 'upgrades',
     lead: 'Every Armory set with its set effects, armor value and recipes, from the base set to its last upgrade. Switch to the upgrade view to see each set along its upgrade path.' },
-  { mod: 'monstrum', path: '/monstrum/', label: 'Creatures', title: 'Monstrum creatures', sheets: ['Monstrum'], groupBy: 'biome',
+  { mod: 'monstrum', path: '/monstrum/', label: 'Creatures', title: 'Monstrum creatures', sheets: ['Monstrum', 'Monstrum 1.7'], match: (d) => d.kind === 'creature', groupBy: 'biome',
     lead: 'Bosses and creatures from Monstrum by biome: what they drop, how much health they have and which damage hurts them.' },
-  { mod: 'monstrum', path: '/monstrum/food/', label: 'Food', title: 'Monstrum food', sheets: ['M.Food'], groupBy: 'biome',
+  { mod: 'monstrum', path: '/monstrum/food/', label: 'Food', title: 'Monstrum food', sheets: ['M.Food', 'Monstrum 1.7'], match: (d) => d.kind === 'food', groupBy: 'biome',
     lead: 'Food made from Monstrum creatures, by the biome of the creature it comes from, with health, stamina and eitr.' },
-  { mod: 'monstrum', path: '/monstrum/items/', label: 'Items', title: 'Monstrum items', sheets: ['Items', 'Pieces'], lead: 'Saddles and other items for the creatures of Monstrum.' },
+  { mod: 'monstrum', path: '/monstrum/items/', label: 'Items', title: 'Monstrum items', sheets: ['Items', 'Pieces', 'Monstrum 1.7'], match: (d) => d.kind !== 'creature' && d.kind !== 'food',
+    lead: 'Trophies, materials, saddles and the boss weapons of Monstrum.' },
   { mod: 'wizardry', path: '/wizardry/', label: 'Staffs', title: 'Wizardry staffs', sheets: ['Wizardry'], match: (d) => d.kind === 'weapon' && !isStaffBase(d),
     relabel: (d) => (/^blood magic/i.test(d.notes ?? '') ? 'Blood magic staffs' : undefined),
     lead: 'Every Wizardry staff with its damage, eitr cost and recipe.' },
@@ -158,6 +160,8 @@ export const UPGRADES = ['Base', 'Bronze', 'Iron', 'Silver', 'Blackmetal', 'Cara
 
 /** Icon for a material name: the vanilla icon (public/icons/vanilla/<prefab>.png) or the icon of a wiki item with that name. */
 const vanillaDir = path.join(process.cwd(), 'public', 'icons', 'vanilla');
+/** English name (compact) -> vanilla prefab (lower case) where they differ, from the in-game dump (tools/warfare2/build.py). */
+const VANILLA_NAMES: Record<string, string> = vanillaNames;
 const vanillaIcons = new Set(fs.existsSync(vanillaDir) ? fs.readdirSync(vanillaDir).filter((f) => f.endsWith('.png')) : []);
 /** Warfare materials that are not wiki items yet, by their English name -> prefab icon in public/icons. */
 const OWN_ICONS: Record<string, string> = {
@@ -165,17 +169,28 @@ const OWN_ICONS: Record<string, string> = {
   'Rune Power I': 'RunePower1_TW', 'Rune Power II': 'RunePower2_TW', 'Rune Power III': 'RunePower3_TW',
   Amber: 'Amber_TW', Cinderstone: 'Cinderstone_TW', Moonstone: 'Moonstone_TW', 'Dark Crystal': 'DarkCrystal_TW',
 };
+/** Therzie items by name -> prefab with an icon in public/icons (read once from the item files; the crafting slots get no item list). */
+const iconDir = path.join(process.cwd(), 'public', 'icons');
+const OWN_BY_NAME = new Map<string, string>();
+for (const f of fs.readdirSync(path.join(process.cwd(), 'src', 'data', 'items')).filter((x) => x.endsWith('.yaml'))) {
+  const t = fs.readFileSync(path.join(process.cwd(), 'src', 'data', 'items', f), 'utf8');
+  const n = /^name: ['"]?(.+?)['"]?$/m.exec(t)?.[1], p = /^prefab: (\S+)$/m.exec(t)?.[1];
+  if (n && p && !OWN_BY_NAME.has(slugify(n)) && fs.existsSync(path.join(iconDir, `${p}.png`))) OWN_BY_NAME.set(slugify(n), p);
+}
 export function materialIcon(name: string, itemsByName?: Map<string, Item>): string | undefined {
   const base = name.replace(/\s*\(level.*\)$/, '');
   const compact = base.toLowerCase().replace(/[^a-z0-9]/g, '');
   const candidates = [compact];
   const trophy = base.match(/^(.*)\s+trophy$/i);
   if (trophy) candidates.push(`trophy${trophy[1].toLowerCase().replace(/[^a-z0-9]/g, '')}`);
+  if (VANILLA_NAMES[compact]) candidates.push(VANILLA_NAMES[compact]);
   for (const c of candidates) if (vanillaIcons.has(`${c}.png`)) return url(`/icons/vanilla/${c}.png`);
   const own = OWN_ICONS[base] ?? (/^(Mistlands|Ashlands|Deep North) Rune: (\w+)$/.exec(base)?.[2] && `Rune${/: (\w+)$/.exec(base)![1]}_TW`);
   if (own) return iconFor(own);
   const item = itemsByName?.get(slugify(base));
-  return item?.data.prefab ? iconFor(item.data.prefab) : undefined;
+  if (item?.data.prefab) return iconFor(item.data.prefab);
+  const ownPrefab = OWN_BY_NAME.get(slugify(base));
+  return ownPrefab ? iconFor(ownPrefab) : undefined;
 }
 
 /**

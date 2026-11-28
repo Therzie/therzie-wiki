@@ -1,0 +1,15 @@
+name: Black Bear Trophy
+prefab: TrophyBlackBear_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 1.5
+  stack: 20
+description: A worthy hunter's trophy to be hanged at display in a mead hall.
+biome: Black Forest
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 46
+notes: ''

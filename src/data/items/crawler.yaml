@@ -1,32 +1,33 @@
-biome: Swamp
 name: Crawler
 prefab: Crawler_TW
 mod: monstrum
 kind: creature
-group: Other
+group: Creatures
 creature:
   health: 200
   resist:
     blunt: normal
     slash: normal
     pierce: normal
-    fire: normal
+    fire: immune
     poison: resistant
     lightning: normal
     spirit: immune
     frost: normal
   spawn:
-    - when: Day
-      chance: 8%
-    - when: Night
-      chance: 18%
+  - when: Day
+    chance: 8%
+  - when: Night
+    chance: 18%
 drops:
-  - from: Guck
-    chance: 100%
-  - from: Withered Bone
-    chance: 45%
-  - from: Crawler Trophy
-    chance: 30%
+- from: Withered Bone
+  chance: 45%
+- from: Guck
+  chance: 100%
+- from: Crawler Trophy
+  chance: 30%
+biome: Swamp
+checks: []
 source:
   sheet: Monstrum
   row: 24

@@ -6,10 +6,10 @@ group: Battleaxes
 skill: Axes
 tier: Flametal
 damage:
-  slash: 150
+  slash: 130
   chop: 80
 damage_max:
-  slash: 168
+  slash: 148
   chop: 87.5
 stats:
   hands: Two handed
@@ -17,7 +17,7 @@ stats:
   block_force: 70
   knockback: 70
   backstab: x3
-  durability: 300 (+50 per level)
+  durability: 200 (+50 per level)
   stamina: 22 / 36
   movement: -10%
   weight: 2.5
@@ -31,11 +31,13 @@ recipe:
   - Charred Bone
   - Asksvin Hide
   - Ashwood
+  - Flametal Battle Idol
   amounts:
   - 60
   - 30
   - 3
   - 10
+  - 1
   upgrade:
   - Flametal
   - Asksvin Hide

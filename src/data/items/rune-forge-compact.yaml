@@ -1,0 +1,27 @@
+name: Runeforge (compact)
+prefab: RuneForgeCompact_TW
+mod: warfare
+kind: piece
+group: Runeforge
+recipe:
+  yields: 1
+  materials:
+  - Yggdrasil Wood
+  - Black Marble
+  - Refined Eitr
+  - Dark Crystal
+  - Majestic Carapace
+  amounts:
+  - 30
+  - 40
+  - 20
+  - 8
+  - 1
+info:
+- Crafting station
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 6000
+description: The anvil of the Runeforge on its own, gripped by young Yggdrasil roots and fed by a small eitr vat. Eitr is pumped into the anvil to bind infusions and gems into your gear, and to forge runes. Works exactly like the full Runeforge.
+notes: ''

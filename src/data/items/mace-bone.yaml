@@ -15,8 +15,8 @@ stats:
   block_force: 30
   knockback: 90
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 16 / 32
+  durability: 150 (+50 per level)
+  stamina: 7 / 14
   movement: -5%
   weight: 2
   max_level: 4
@@ -28,10 +28,12 @@ recipe:
   - Bone Fragments
   - Corewood
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 13
   - 6
   - 2
+  - 1
   upgrade:
   - Bone Fragments
   - Leather Scraps

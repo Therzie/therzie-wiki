@@ -5,20 +5,48 @@ kind: weapon
 group: Sledges
 skill: Clubs
 damage:
-  blunt: 120
+  blunt: 92
 damage_max:
-  blunt: 138
+  blunt: 110
 stats:
   hands: Two handed
   block_armor: 52
   block_force: 50
   knockback: 50
   backstab: x2
-  durability: 200 (+100 per level)
-  stamina: 22 / 32
+  durability: 150 (+50 per level)
+  stamina: 20 / 23
   movement: -15%
   weight: 4
   max_level: 4
+recipe:
+  yields: 1
+  station: Forge
+  level: 2
+  materials:
+  - Iron
+  - Withered Bone
+  - Ooze
+  - Bonemass Trophy
+  - Iron Battle Idol
+  amounts:
+  - 72
+  - 80
+  - 16
+  - 1
+  - 1
+  upgrade:
+  - Iron
+  - Withered Bone
+  - Ooze
+  - Stone Golem Trophy (level 3)
+  - Bonemass Trophy (level 4)
+  upgrade_amounts:
+  - 18
+  - 20
+  - 4
+  - 1
+  - 1
 drops:
 - from: Bonemass
   chance: 5%

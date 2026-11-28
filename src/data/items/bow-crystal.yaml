@@ -6,9 +6,9 @@ group: Bows
 skill: Bows
 tier: Crystal
 damage:
-  pierce: 54
+  pierce: 45.9
 damage_max:
-  pierce: 66
+  pierce: 56.1
 stats:
   hands: Two handed
   knockback: 25
@@ -28,11 +28,13 @@ recipe:
   - Silver
   - Red Jute
   - Fenris Hair
+  - Silver Battle Idol
   amounts:
   - 10
   - 5
   - 3
   - 2
+  - 1
   upgrade:
   - Pristine Crystal
   - Silver

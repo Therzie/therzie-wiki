@@ -1,18 +1,30 @@
-name: Bear saddle
+name: Bear Saddle
 prefab: SaddleBear_TW
 mod: monstrum
 kind: item
 group: Saddles
+stats:
+  weight: 8
+description: Used to mount any Bear, keep it on a short leash!
 recipe:
   yields: 1
+  station: Workbench
+  level: 3
   materials:
-    - Black Bear Pelt
-    - Troll Bone
-    - Black Bear Trophy
-  station: Workbench lvl3
+  - Grizzly Pelt
+  - Wolf Fang
+  - Grizzly Bear Trophy
+  amounts:
+  - 6
+  - 4
+  - 1
+info:
+- Saddle for the Black Bear
+- Saddle for the Grizzly Bear
+biome: Black Forest
+checks: []
 source:
   sheet: Items
   row: 39
   col: 5
-description: ''
 notes: ''

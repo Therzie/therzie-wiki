@@ -1,14 +1,18 @@
-name: Prowler fang
+name: Prowler Fang
 prefab: ProwlerFang_TW
 mod: warfare
 kind: item
 group: Materials
-drops:
-  - from: Prowler
-    chance: 90%
+stats:
+  weight: 0.2
+  stack: 50
+checks: []
 source:
   sheet: Items
   row: 28
   col: 3
-description: ''
+description: Still dripping with blood from it's last victim..
+drops:
+- from: Prowler
+  chance: 90%
 notes: ''

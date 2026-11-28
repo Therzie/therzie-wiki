@@ -20,10 +20,12 @@ recipe:
   - Serpent Scale
   - Iron
   - Finewood
+  - Iron Protection Idol
   amounts:
   - 8
   - 4
   - 4
+  - 1
   upgrade:
   - Serpent Scale
   - Iron

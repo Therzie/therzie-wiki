@@ -1,9 +1,8 @@
-biome: Black Forest
 name: Razorback
 prefab: Razorback_TW
 mod: monstrum
 kind: creature
-group: Other
+group: Creatures
 creature:
   health: 50
   resist:
@@ -16,19 +15,23 @@ creature:
     spirit: immune
     frost: normal
   spawn:
-    - when: Day
-      chance: 18%
-    - when: Night
-      chance: 18%
-drops:
-  - from: Boar Meat
-    chance: 90%
-  - from: Razorback leather
-    chance: 100%
-  - from: Razorback Trophy
+  - when: Day and night
     chance: 18%
-  - from: Razorback tusk
-    chance: 70%
+drops:
+- from: Boar Meat
+  chance: 90%
+- from: Razorback Leather
+  chance: 100%
+- from: Razorback Tusk
+  chance: 70% (1-2)
+- from: Razorback Trophy
+  chance: 18%
+info:
+- Tameable; eats Turnip, Carrot, Onion, Mushroom, Raspberries, Blueberries, Yellow Mushroom, Boar Meat
+- Can be ridden with the Razorback Saddle
+- Breeds when tamed
+biome: Black Forest
+checks: []
 source:
   sheet: Monstrum
   row: 24

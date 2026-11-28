@@ -1,0 +1,15 @@
+name: Prowler Trophy
+prefab: TrophyProwler_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 1.5
+  stack: 20
+description: Better not let this kitty scratch your sofa..
+biome: Plains
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 52
+notes: ''

@@ -1,0 +1,25 @@
+name: Burning Hunger
+prefab: BurningHunger_TW
+mod: monstrum
+kind: creature
+group: Summons
+creature:
+  health: 100
+  resist:
+    blunt: weak
+    slash: normal
+    pierce: resistant
+    fire: immune
+    poison: immune
+    lightning: normal
+    spirit: normal
+    frost: weak
+info:
+- Summoned by Svält
+biome: Black Forest
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 16
+description: ''
+notes: ''

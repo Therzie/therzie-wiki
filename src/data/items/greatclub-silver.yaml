@@ -11,16 +11,16 @@ damage:
   spirit: 20
 damage_max:
   blunt: 77
-  pierce: 43
 stats:
   hands: Two handed
-  block_armor: 72
+  block_armor: 45
   block_force: 30
   knockback: 130
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  durability: 150 (+50 per level)
+  stamina: 18 / 26
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -31,18 +31,20 @@ recipe:
   - Iron
   - Wolf Pelt
   - Wolf Fang
+  - Silver Battle Idol
   amounts:
   - 24
   - 12
   - 4
   - 3
+  - 1
   upgrade:
   - Silver
   - Iron
   - Wolf Pelt
   - Wolf Fang
-  - Ulv Trophy (level 3)
-  - Cultist Trophy (level 4)
+  - Drake Trophy (level 3)
+  - Fenring Trophy (level 4)
   upgrade_amounts:
   - 6
   - 6

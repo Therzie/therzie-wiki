@@ -6,14 +6,14 @@ group: Crossbows
 skill: Crossbows
 tier: Chitin
 damage:
-  pierce: 80
+  pierce: 62
 damage_max:
-  pierce: 89
+  pierce: 71
 stats:
   hands: Two handed
   knockback: 200
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 50 (+50 per level)
   secondary_stamina: 20
   reload: 3.5 s
   movement: -5%
@@ -27,10 +27,12 @@ recipe:
   - Chitin
   - Bronze
   - Finewood
+  - Bronze Battle Idol
   amounts:
   - 16
   - 8
   - 10
+  - 1
   upgrade:
   - Chitin
   - Bronze

@@ -9,7 +9,7 @@ damage:
   slash: 89
   chop: 56
 damage_max:
-  slash: 107
+  slash: 104
   chop: 65
 stats:
   hands: Dual
@@ -17,9 +17,10 @@ stats:
   block_force: 40
   knockback: 50
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 20 / 66
-  weight: 0.3
+  durability: 175 (+50 per level)
+  stamina: 15 / 30
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -30,11 +31,13 @@ recipe:
   - Silver
   - Fenris Claw
   - Fenris Hair
+  - Silver Battle Idol
   amounts:
   - 15
   - 8
   - 3
   - 3
+  - 1
   upgrade:
   - Pristine Crystal
   - Silver

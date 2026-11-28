@@ -3,18 +3,19 @@ prefab: ThrowAxeCrystal_TW
 mod: warfare
 kind: weapon
 group: Throwing axes
-skill: Axes
 tier: Crystal
 damage:
   slash: 50
   chop: 41
+damage_max:
+  slash: 59
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 40
+  durability: 43 (+18 per level)
+  stamina: 13 / 29
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -27,9 +28,11 @@ recipe:
   - Silver
   - Fenris Claw
   - Fenris Hair
+  - Silver Battle Idol
   amounts:
   - 6
   - 3
+  - 1
   - 1
   - 1
   upgrade:

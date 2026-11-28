@@ -10,16 +10,16 @@ damage:
   pierce: 9
 damage_max:
   blunt: 35
-  pierce: 18
 stats:
   hands: Two handed
-  block_armor: 72
+  block_armor: 11
   block_force: 30
   knockback: 130
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  durability: 75 (+50 per level)
+  stamina: 12 / 17
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -29,16 +29,18 @@ recipe:
   - Flint
   - Wood
   - Leather Scraps
+  - Wooden Battle Idol
   amounts:
   - 14
   - 7
-  - 2
+  - 4
+  - 1
   upgrade:
   - Flint
   - Leather Scraps
   upgrade_amounts:
   - 3
-  - 1
+  - 2
 checks: []
 source:
   sheet: Warfare 2.0

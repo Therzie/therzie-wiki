@@ -1,0 +1,15 @@
+name: Bloodgill Meat
+prefab: SharkMeat_TW
+mod: monstrum
+kind: item
+group: Materials
+stats:
+  weight: 1.3
+  stack: 50
+description: A bloody slice of salty shark meat.
+biome: Ocean
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 39
+notes: ''

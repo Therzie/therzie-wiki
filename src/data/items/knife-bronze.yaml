@@ -6,11 +6,11 @@ group: Knives
 skill: Knives
 tier: Bronze
 damage:
-  slash: 16
-  pierce: 16
+  slash: 12
+  pierce: 12
 damage_max:
-  slash: 19
-  pierce: 19
+  slash: 15
+  pierce: 15
 stats:
   hands: One handed
   block_armor: 2
@@ -18,7 +18,7 @@ stats:
   knockback: 10
   backstab: x6
   durability: 200 (+50 per level)
-  stamina: 14 / 42
+  stamina: 6 / 18
   weight: 0.3
   max_level: 4
 recipe:
@@ -29,10 +29,12 @@ recipe:
   - Bronze
   - Finewood
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 6
   - 3
   - 2
+  - 1
   upgrade:
   - Bronze
   - Leather Scraps

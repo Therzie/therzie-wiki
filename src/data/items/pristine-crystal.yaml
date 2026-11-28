@@ -1,0 +1,14 @@
+name: Pristine Crystal
+prefab: PristineCrystal_TW
+mod: warfare
+kind: item
+group: Materials
+stats:
+  weight: 1
+  stack: 50
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5000
+description: A flawless crystal, clear as mountain ice. Found deep in the crystal veins, in frost caves and in the hearts of stone golems. Smiths of the north set it into their finest blades.
+notes: ''

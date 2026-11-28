@@ -15,8 +15,8 @@ stats:
   block_force: 10
   knockback: 20
   backstab: x6
-  durability: 200 (+50 per level)
-  stamina: 16 / 48
+  durability: 300 (+50 per level)
+  stamina: 12 / 48
   weight: 2
   max_level: 4
 recipe:
@@ -28,11 +28,13 @@ recipe:
   - Iron
   - Lox Pelt
   - Needle
+  - Black Metal Battle Idol
   amounts:
   - 29
   - 15
   - 2
   - 10
+  - 1
   upgrade:
   - Black Metal
   - Iron
