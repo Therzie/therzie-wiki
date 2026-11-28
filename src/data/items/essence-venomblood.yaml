@@ -1,0 +1,14 @@
+name: Venomblood Essence
+prefab: EssenceVenomblood_TW
+mod: warfare
+kind: item
+group: Essences
+stats:
+  weight: 0.5
+  stack: 50
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5300
+description: An essence of the Blood and Hunter paths. Bound in the gem socket of a Deep North weapon at the Runeforge.
+notes: ''

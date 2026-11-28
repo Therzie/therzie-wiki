@@ -1,0 +1,25 @@
+name: Snowmauler Cub
+prefab: BearDeepNorthCub_TW
+mod: monstrum
+kind: creature
+group: Young
+creature:
+  health: 50
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+info:
+- Young of the Snowmauler
+biome: Deep North
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 19
+description: ''
+notes: ''

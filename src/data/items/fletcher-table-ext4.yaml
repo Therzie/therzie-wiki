@@ -1,4 +1,4 @@
-name: Wood lathe
+name: Crossbow Press
 prefab: FletcherTable_ext4_TW
 mod: warfare
 kind: piece
@@ -6,13 +6,17 @@ group: Fletcher Table & Extensions
 recipe:
   yields: 1
   materials:
-    - Silver
-    - Fine Wood
-    - Obsidian
-    - Wolf Pelt
+  - Black Metal
+  - Finewood
+  amounts:
+  - 4
+  - 6
+info:
+- Upgrades the Fletcher Table
+checks: []
 source:
   sheet: Pieces
   row: 2
   col: 7
-description: ''
+description: Upgrades the Fletcher Table.
 notes: ''

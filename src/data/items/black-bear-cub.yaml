@@ -1,0 +1,25 @@
+name: Black Bear Cub
+prefab: BlackBearCub_TW
+mod: monstrum
+kind: creature
+group: Young
+creature:
+  health: 10
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+info:
+- Young of the Black Bear
+biome: Black Forest
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 20
+description: ''
+notes: ''

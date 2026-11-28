@@ -6,17 +6,17 @@ group: Fists
 skill: Fists
 tier: Bone
 damage:
-  slash: 26
+  slash: 22
 damage_max:
-  slash: 38
+  slash: 34
 stats:
   hands: Dual
   block_armor: 6 (+1 per level)
   block_force: 10
   knockback: 20
   backstab: x6
-  durability: 200 (+50 per level)
-  stamina: 16 / 48
+  durability: 300 (+50 per level)
+  stamina: 5 / 12
   weight: 2
   max_level: 4
 recipe:
@@ -28,11 +28,13 @@ recipe:
   - Corewood
   - Deer Hide
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 14
   - 7
   - 2
   - 4
+  - 1
   upgrade:
   - Bone Fragments
   - Deer Hide

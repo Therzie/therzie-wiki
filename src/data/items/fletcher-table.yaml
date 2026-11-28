@@ -1,4 +1,4 @@
-name: Fletcher table
+name: Fletcher Table
 prefab: FletcherTable_TW
 mod: warfare
 kind: piece
@@ -6,13 +6,19 @@ group: Fletcher Table & Extensions
 recipe:
   yields: 1
   materials:
-    - Bronze
-    - Core Wood
-    - Leather Scraps
-    - Deer Hide
+  - Wood
+  - Leather Scraps
+  - Feathers
+  amounts:
+  - 10
+  - 4
+  - 4
+info:
+- Crafting station
+checks: []
 source:
   sheet: Pieces
   row: 2
   col: 3
-description: ''
+description: Where bows, crossbows, arrows, bolts and quivers are made, mended and enchanted.
 notes: ''

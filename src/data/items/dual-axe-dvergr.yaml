@@ -10,7 +10,7 @@ damage:
   chop: 75
   lightning: 15
 damage_max:
-  slash: 130
+  slash: 127
   chop: 84
 stats:
   hands: Dual
@@ -18,9 +18,10 @@ stats:
   block_force: 40
   knockback: 50
   backstab: x3
-  durability: 275 (+100 per level)
-  stamina: 20 / 66
-  weight: 0.3
+  durability: 275 (+50 per level)
+  stamina: 18 / 36
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -31,11 +32,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Yggdrasil Wood
+  - Black Marble Battle Idol
   amounts:
-  - 27
-  - 14
-  - 14
-  - 12
+  - 22
+  - 11
+  - 16
+  - 13
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -44,9 +47,9 @@ recipe:
   - Tick Trophy (level 3)
   - Seeker Trophy (level 4)
   upgrade_amounts:
-  - 7
-  - 7
-  - 7
+  - 6
+  - 6
+  - 8
   - 3
   - 1
   - 1

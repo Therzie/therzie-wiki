@@ -9,7 +9,7 @@ damage:
   slash: 80
   spirit: 20
 damage_max:
-  slash: 95
+  slash: 98
 stats:
   hands: Dual
   block_armor: 43
@@ -17,8 +17,9 @@ stats:
   knockback: 40
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 16 / 48
-  weight: 0.3
+  stamina: 14 / 28
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -29,11 +30,13 @@ recipe:
   - Iron
   - Wolf Pelt
   - Wolf Fang
+  - Silver Battle Idol
   amounts:
   - 25
   - 13
   - 4
   - 3
+  - 1
   upgrade:
   - Silver
   - Iron

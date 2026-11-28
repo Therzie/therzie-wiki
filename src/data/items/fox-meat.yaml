@@ -1,0 +1,15 @@
+name: Raw Fox Meat
+prefab: FoxMeat_TW
+mod: monstrum
+kind: item
+group: Materials
+stats:
+  weight: 0.7
+  stack: 20
+description: This fox did not manage to trick the farmer.
+biome: Meadows
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 35
+notes: ''

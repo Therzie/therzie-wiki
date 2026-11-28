@@ -28,10 +28,12 @@ recipe:
   - Bloodgold
   - Timberwood
   - Moose Hide
+  - Bloodgold Battle Idol
   amounts:
   - 66
   - 33
   - 4
+  - 1
   upgrade:
   - Bloodgold
   - Moose Hide

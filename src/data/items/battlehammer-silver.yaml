@@ -13,11 +13,11 @@ damage_max:
 stats:
   hands: Two handed
   block_armor: 45
-  block_force: 70
+  block_force: 34
   knockback: 50
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 22 / 38
+  stamina: 18 / 20
   movement: -10%
   weight: 4
   max_level: 4
@@ -30,11 +30,13 @@ recipe:
   - Iron
   - Wolf Pelt
   - Wolf Fang
+  - Silver Battle Idol
   amounts:
   - 26
   - 13
   - 5
   - 3
+  - 1
   upgrade:
   - Silver
   - Iron

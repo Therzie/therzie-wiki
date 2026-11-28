@@ -6,14 +6,14 @@ group: Bows
 skill: Bows
 tier: Bronze
 damage:
-  pierce: 32
+  pierce: 27.2
 damage_max:
-  pierce: 44
+  pierce: 37.4
 stats:
   hands: Two handed
   knockback: 25
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 100 (+50 per level)
   draw_stamina: 12 per second
   secondary_stamina: 20
   movement: -5%
@@ -27,10 +27,12 @@ recipe:
   - Bronze
   - Finewood
   - Deer Hide
+  - Bronze Battle Idol
   amounts:
   - 11
   - 6
   - 2
+  - 1
   upgrade:
   - Bronze
   - Deer Hide

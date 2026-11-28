@@ -1,0 +1,14 @@
+name: Cinderstone
+prefab: Cinderstone_TW
+mod: warfare
+kind: item
+group: Gems
+stats:
+  weight: 2
+  stack: 50
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5100
+description: A lump of cooled lava, cracked open around a glowing heart. Found in the charred fortresses and, rarely, in the volcanic crystal veins of the Ashlands. Socketed into a weapon at the Runeforge, its fury bursts out at the end of every combo.
+notes: ''

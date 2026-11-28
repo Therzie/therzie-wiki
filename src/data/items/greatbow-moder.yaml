@@ -14,12 +14,40 @@ stats:
   hands: Two handed
   knockback: 80
   backstab: x4
-  durability: 100 (+50 per level)
+  durability: 175 (+50 per level)
   draw_stamina: 6 per second
-  secondary_stamina: 40
+  secondary_stamina: 30
   movement: -5%
   weight: 3
   max_level: 4
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Silver
+  - Dragon Tear
+  - Freeze Gland
+  - Moder Trophy
+  - Silver Battle Idol
+  amounts:
+  - 56
+  - 12
+  - 16
+  - 1
+  - 1
+  upgrade:
+  - Silver
+  - Dragon Tear
+  - Freeze Gland
+  - Deathsquito Trophy (level 3)
+  - Moder Trophy (level 4)
+  upgrade_amounts:
+  - 14
+  - 3
+  - 4
+  - 1
+  - 1
 drops:
 - from: Moder
   chance: 5%

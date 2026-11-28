@@ -12,7 +12,7 @@ damage_max:
 stats:
   hands: Two handed
   block_armor: 62
-  block_force: 70
+  block_force: 34
   knockback: 50
   backstab: x3
   durability: 300 (+50 per level)
@@ -29,11 +29,13 @@ recipe:
   - Charred Bone
   - Ashwood
   - Sulfur
+  - Flametal Battle Idol
   amounts:
   - 60
   - 30
   - 10
   - 6
+  - 1
   upgrade:
   - Flametal
   - Sulfur

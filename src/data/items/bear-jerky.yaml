@@ -1,4 +1,4 @@
-name: Bear jerky
+name: Bear Jerky
 prefab: BearJerky_TW
 mod: monstrum
 kind: food
@@ -7,15 +7,23 @@ food:
   health: 30
   stamina: 30
   eitr: 0
+stats:
+  duration: 30 min
+  healing: 3 hp/tick
+description: Sweet and salty!
 recipe:
-  yields: 1
-  materials:
-    - Raw Bear Steak
-    - Honey
+  yields: 2
   station: Cauldron
+  level: 1
+  materials:
+  - Bear Meat
+  - Honey
+  amounts:
+  - 1
+  - 1
+checks: []
 source:
   sheet: M.Food
   row: 2
   col: 15
-description: ''
 notes: ''

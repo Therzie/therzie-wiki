@@ -18,7 +18,7 @@ stats:
   knockback: 10
   backstab: x6
   durability: 200 (+50 per level)
-  stamina: 14 / 42
+  stamina: 8 / 24
   weight: 0.3
   max_level: 4
 recipe:
@@ -29,10 +29,12 @@ recipe:
   - Iron
   - Ancient Bark
   - Leather Scraps
+  - Iron Battle Idol
   amounts:
   - 11
   - 5
   - 2
+  - 1
   upgrade:
   - Iron
   - Leather Scraps

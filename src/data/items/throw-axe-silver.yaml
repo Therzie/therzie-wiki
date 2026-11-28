@@ -3,19 +3,20 @@ prefab: ThrowAxeSilver_TW
 mod: warfare
 kind: weapon
 group: Throwing axes
-skill: Axes
 tier: Silver
 damage:
   slash: 47
   chop: 41
   spirit: 10
+damage_max:
+  slash: 56
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 40
+  durability: 43 (+18 per level)
+  stamina: 12 / 27
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -28,10 +29,12 @@ recipe:
   - Iron
   - Wolf Pelt
   - Wolf Fang
+  - Silver Battle Idol
   amounts:
   - 10
   - 5
   - 2
+  - 1
   - 1
   upgrade:
   - Silver

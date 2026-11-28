@@ -1,4 +1,4 @@
-name: Vice
+name: Tillering Tree
 prefab: FletcherTable_ext3_TW
 mod: warfare
 kind: piece
@@ -6,13 +6,17 @@ group: Fletcher Table & Extensions
 recipe:
   yields: 1
   materials:
-    - Iron
-    - Ancient Bark
-    - Iron Nails
-    - Rotten Pelt
+  - Silver
+  - Wolf Pelt
+  amounts:
+  - 3
+  - 2
+info:
+- Upgrades the Fletcher Table
+checks: []
 source:
   sheet: Pieces
   row: 2
   col: 6
-description: ''
+description: Upgrades the Fletcher Table.
 notes: ''

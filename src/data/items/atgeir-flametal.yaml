@@ -8,15 +8,15 @@ tier: Flametal
 damage:
   pierce: 145
 damage_max:
-  pierce: 154
+  pierce: 163
 stats:
   hands: Two handed
   block_armor: 62
   block_force: 40
   knockback: 30
   backstab: x3
-  durability: 300 (+50 per level)
-  stamina: 16 / 32
+  durability: 325 (+50 per level)
+  stamina: 20 / 40
   movement: -5%
   weight: 2.5
   max_level: 4
@@ -29,11 +29,13 @@ recipe:
   - Charred Bone
   - Ashwood
   - Bonemaw Tooth
+  - Flametal Battle Idol
   amounts:
   - 56
   - 28
   - 15
   - 3
+  - 1
   upgrade:
   - Flametal
   - Ashwood

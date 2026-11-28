@@ -3,14 +3,18 @@ prefab: LoxBone_TW
 mod: warfare
 kind: item
 group: Materials
-drops:
-  - from: Lox
-    chance: 75%
-  - from: Prowler
-    chance: 25%
+stats:
+  weight: 1
+  stack: 30
+checks: []
 source:
   sheet: Items
   row: 20
   col: 17
-description: ''
+description: A massive leg bone of a lox. Fulings carve their war totems from these.
+drops:
+- from: Lox
+  chance: 75%
+- from: Prowler
+  chance: 25%
 notes: ''

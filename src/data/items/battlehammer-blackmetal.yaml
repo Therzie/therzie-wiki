@@ -12,11 +12,11 @@ damage_max:
 stats:
   hands: Two handed
   block_armor: 50
-  block_force: 70
+  block_force: 34
   knockback: 50
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 22 / 38
+  durability: 150 (+50 per level)
+  stamina: 20 / 35
   movement: -10%
   weight: 4
   max_level: 4
@@ -29,11 +29,13 @@ recipe:
   - Iron
   - Finewood
   - Lox Pelt
+  - Black Metal Battle Idol
   amounts:
   - 41
   - 20
   - 10
   - 3
+  - 1
   upgrade:
   - Black Metal
   - Iron

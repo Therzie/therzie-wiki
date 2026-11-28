@@ -15,8 +15,8 @@ stats:
   block_force: 50
   knockback: 55
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 20 / 40
+  durability: 75 (+50 per level)
+  stamina: 11 / 22
   movement: -5%
   weight: 4
   max_level: 4
@@ -28,10 +28,12 @@ recipe:
   - Bone Fragments
   - Corewood
   - Troll Hide
+  - Bronze Battle Idol
   amounts:
   - 19
   - 9
   - 2
+  - 1
   upgrade:
   - Bone Fragments
   - Troll Hide

@@ -1,9 +1,8 @@
-biome: Swamp
-name: Hel wraith
+name: Hel Wraith
 prefab: HelWraith_TW
 mod: monstrum
 kind: creature
-group: Other
+group: Creatures
 creature:
   health: 100
   resist:
@@ -15,14 +14,13 @@ creature:
     lightning: normal
     spirit: weak
     frost: immune
-  spawn:
-    - when: Vrykolathas Altar Spawn
-    - when: Night Only
 drops:
-  - from: Chain
-    chance: 100%
-  - from: Wraith Trophy
-    chance: 24%
+- from: Chain
+  chance: 100%
+- from: Wraith Trophy
+  chance: 24%
+biome: Swamp
+checks: []
 source:
   sheet: Monstrum
   row: 47

@@ -15,8 +15,8 @@ stats:
   block_force: 40
   knockback: 30
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 16 / 32
+  durability: 100 (+50 per level)
+  stamina: 10 / 20
   movement: -5%
   weight: 2.5
   max_level: 4
@@ -29,11 +29,13 @@ recipe:
   - Wood
   - Greydwarf Eye
   - Leather Scraps
+  - Wooden Battle Idol
   amounts:
   - 14
   - 7
   - 1
   - 4
+  - 1
   upgrade:
   - Flint
   - Leather Scraps

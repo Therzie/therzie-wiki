@@ -18,7 +18,7 @@ stats:
   knockback: 50
   backstab: x3
   durability: 300 (+50 per level)
-  stamina: 18 / 36
+  stamina: 16 / 32
   movement: -5%
   weight: 2
   max_level: 4
@@ -31,11 +31,13 @@ recipe:
   - Charred Bone
   - Asksvin Hide
   - Ashwood
+  - Flametal Battle Idol
   amounts:
   - 39
   - 19
   - 2
   - 8
+  - 1
   upgrade:
   - Flametal
   - Asksvin Hide

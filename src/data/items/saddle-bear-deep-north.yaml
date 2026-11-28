@@ -1,0 +1,30 @@
+name: Snowmauler Saddle
+prefab: SaddleBearDeepNorth_TW
+mod: monstrum
+kind: item
+group: Saddles
+stats:
+  weight: 8
+description: A saddle for a tamed Snowmauler.
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 2
+  materials:
+  - Snowmauler Trophy
+  - Snowmauler Pelt
+  - Timberwood
+  - Bloodgold
+  amounts:
+  - 1
+  - 6
+  - 6
+  - 4
+info:
+- Saddle for the Snowmauler
+biome: Deep North
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 40
+notes: ''

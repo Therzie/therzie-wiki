@@ -16,8 +16,9 @@ stats:
   knockback: 40
   backstab: x3
   durability: 400 (+50 per level)
-  stamina: 16 / 48
-  weight: 0.3
+  stamina: 19 / 38
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -27,10 +28,12 @@ recipe:
   - Bloodgold
   - Timberwood
   - Elaking Hair Bundle
+  - Bloodgold Battle Idol
   amounts:
   - 66
   - 33
   - 4
+  - 1
   upgrade:
   - Bloodgold
   - Elaking Hair Bundle

@@ -3,18 +3,19 @@ prefab: ThrowAxeBronze_TW
 mod: warfare
 kind: weapon
 group: Throwing axes
-skill: Axes
 tier: Bronze
 damage:
   slash: 21
   chop: 24
+damage_max:
+  slash: 30
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 40
+  durability: 43 (+18 per level)
+  stamina: 8 / 18
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -26,10 +27,12 @@ recipe:
   - Bronze
   - Finewood
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 7
   - 3
   - 2
+  - 1
   upgrade:
   - Bronze
   - Leather Scraps

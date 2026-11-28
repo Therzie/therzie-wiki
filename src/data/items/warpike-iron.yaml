@@ -15,8 +15,8 @@ stats:
   block_force: 20
   knockback: 20
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 14 / 36
+  durability: 100 (+50 per level)
+  stamina: 11 / 23
   movement: -5%
   weight: 1.5
   max_level: 4
@@ -28,10 +28,12 @@ recipe:
   - Iron
   - Ancient Bark
   - Withered Bone
+  - Iron Battle Idol
   amounts:
   - 31
   - 16
   - 2
+  - 1
   upgrade:
   - Iron
   - Withered Bone

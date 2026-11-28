@@ -1,14 +1,18 @@
-name: Razorback tusk
+name: Razorback Tusk
 prefab: RazorbackTusk_TW
 mod: warfare
 kind: item
 group: Materials
-drops:
-  - from: Razorback
-    chance: 70%
+stats:
+  weight: 1
+  stack: 20
+checks: []
 source:
   sheet: Items
   row: 20
   col: 7
-description: ''
+description: Sharp and mean, you're lucky not be gored by these.
+drops:
+- from: Razorback
+  chance: 70%
 notes: ''

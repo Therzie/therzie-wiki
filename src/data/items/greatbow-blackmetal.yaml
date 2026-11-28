@@ -13,9 +13,9 @@ stats:
   hands: Two handed
   knockback: 80
   backstab: x4
-  durability: 100 (+50 per level)
+  durability: 175 (+50 per level)
   draw_stamina: 6 per second
-  secondary_stamina: 40
+  secondary_stamina: 35
   movement: -5%
   weight: 3
   max_level: 4
@@ -28,11 +28,13 @@ recipe:
   - Iron
   - Finewood
   - Linen Thread
+  - Black Metal Battle Idol
   amounts:
   - 37
   - 18
   - 16
   - 12
+  - 1
   upgrade:
   - Black Metal
   - Iron

@@ -18,8 +18,8 @@ stats:
   block_force: 20
   knockback: 50
   backstab: x3
-  durability: 275 (+100 per level)
-  stamina: 18 / 36
+  durability: 275 (+50 per level)
+  stamina: 16 / 32
   movement: -5%
   weight: 2
   max_level: 4
@@ -32,11 +32,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Yggdrasil Wood
+  - Black Marble Battle Idol
   amounts:
-  - 18
-  - 9
-  - 9
+  - 16
   - 8
+  - 10
+  - 9
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -45,9 +47,9 @@ recipe:
   - Tick Trophy (level 3)
   - Seeker Trophy (level 4)
   upgrade_amounts:
-  - 5
-  - 5
-  - 5
+  - 4
+  - 4
+  - 6
   - 2
   - 1
   - 1

@@ -3,17 +3,18 @@ prefab: JavelinFlametal_TW
 mod: warfare
 kind: weapon
 group: Javelins
-skill: Spears
 tier: Flametal
 damage:
   pierce: 132
+damage_max:
+  pierce: 141
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 20
+  durability: 43 (+18 per level)
+  stamina: 16 / 18
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -25,10 +26,12 @@ recipe:
   - Flametal
   - Charred Bone
   - Ashwood
+  - Flametal Battle Idol
   amounts:
   - 23
   - 12
   - 10
+  - 1
   upgrade:
   - Flametal
   - Ashwood

@@ -18,7 +18,7 @@ stats:
   knockback: 10
   backstab: x6
   durability: 200 (+50 per level)
-  stamina: 12 / 38
+  stamina: 7 / 21
   weight: 0.3
   max_level: 4
 recipe:
@@ -29,10 +29,12 @@ recipe:
   - Chitin
   - Bronze
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 10
   - 5
   - 4
+  - 1
   upgrade:
   - Chitin
   - Bronze

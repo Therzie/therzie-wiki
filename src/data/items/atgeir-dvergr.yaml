@@ -6,10 +6,10 @@ group: Atgeirs
 skill: Polearms
 tier: Dvergr
 damage:
-  pierce: 108
+  pierce: 104
   lightning: 39
 damage_max:
-  pierce: 117
+  pierce: 113
   lightning: 48
 stats:
   hands: Two handed
@@ -17,8 +17,8 @@ stats:
   block_force: 40
   knockback: 30
   backstab: x3
-  durability: 275 (+50 per level)
-  stamina: 16 / 32
+  durability: 300 (+50 per level)
+  stamina: 20 / 40
   movement: -5%
   weight: 2.5
   max_level: 4
@@ -31,11 +31,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Yggdrasil Wood
+  - Black Marble Battle Idol
   amounts:
-  - 26
+  - 22
+  - 11
+  - 15
   - 13
-  - 13
-  - 12
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -44,9 +46,9 @@ recipe:
   - Seeker Trophy (level 3)
   - Wisp (level 4)
   upgrade_amounts:
-  - 7
-  - 7
-  - 7
+  - 6
+  - 6
+  - 8
   - 3
   - 1
   - 3

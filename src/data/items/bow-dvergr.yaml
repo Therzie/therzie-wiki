@@ -6,10 +6,10 @@ group: Bows
 skill: Bows
 tier: Dvergr
 damage:
-  pierce: 72
-  lightning: 2
+  pierce: 61.2
+  lightning: 1.7
 damage_max:
-  pierce: 84
+  pierce: 71.4
 stats:
   hands: Two handed
   knockback: 25
@@ -29,11 +29,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Yggdrasil Wood
+  - Black Marble Battle Idol
   amounts:
-  - 18
-  - 9
-  - 9
+  - 16
   - 8
+  - 10
+  - 9
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -42,9 +44,9 @@ recipe:
   - Hare Trophy (level 3)
   - Seeker Trophy (level 4)
   upgrade_amounts:
-  - 5
-  - 5
-  - 5
+  - 4
+  - 4
+  - 6
   - 2
   - 1
   - 1

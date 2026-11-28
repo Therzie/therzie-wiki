@@ -1,0 +1,15 @@
+name: Black Bear Pelt
+prefab: BlackBearPelt_TW
+mod: monstrum
+kind: item
+group: Materials
+stats:
+  weight: 1.5
+  stack: 50
+description: A thick, dark pelt of a black bear.
+biome: Black Forest
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 33
+notes: ''

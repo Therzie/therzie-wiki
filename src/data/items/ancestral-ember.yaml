@@ -1,0 +1,14 @@
+name: Ancestral Ember
+prefab: AncestralEmber_TW
+mod: warfare
+kind: item
+group: Essences
+stats:
+  weight: 2
+  stack: 50
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5300
+description: A spark of an ancestor's memory, left behind by a Fallen Warrior. At the Runeforge it binds two runes into an essence.
+notes: ''

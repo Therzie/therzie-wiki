@@ -1,0 +1,27 @@
+name: 'Cast: Nord Trident'
+prefab: TridentNordUncooked_TW
+mod: warfare
+kind: item
+group: Casts
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Black Forge
+  level: 4
+  materials:
+  - Bloodgold
+  - Timberwood
+  - Moose Hide
+  - 'Mould: Nord Trident'
+  amounts:
+  - 66
+  - 33
+  - 4
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5500
+description: A cast of the Nord Trident. It needs to be hardened with frost in the Frost Foundry.
+notes: ''

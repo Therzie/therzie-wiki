@@ -1,9 +1,8 @@
-biome: Plains
 name: Prowler
 prefab: Prowler_TW
 mod: monstrum
 kind: creature
-group: Other
+group: Creatures
 creature:
   health: 335
   resist:
@@ -16,17 +15,22 @@ creature:
     spirit: immune
     frost: normal
   spawn:
-    - when: Day
-      chance: 8%
-    - when: Night
-      chance: 16%
+  - when: Day
+    chance: 8%
+  - when: Night
+    chance: 16%
 drops:
-  - from: Prowler fang
-    chance: 90%
-  - from: Lox bone
-    chance: 25%
-  - from: Prowler Trophy
-    chance: 22%
+- from: Prowler Fang
+  chance: 90% (1-2)
+- from: Lox Bone
+  chance: 25%
+- from: Prowler Trophy
+  chance: 22%
+info:
+- Tameable; eats Lox Meat, Wolf Meat, Raw Bear Steak, Deer Meat, Hare Meat, Seeker Meat, Boar Meat, Raw Fish, Raw Fox Meat
+- Breeds when tamed
+biome: Plains
+checks: []
 source:
   sheet: Monstrum
   row: 47

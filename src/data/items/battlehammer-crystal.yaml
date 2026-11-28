@@ -12,11 +12,11 @@ damage_max:
 stats:
   hands: Two handed
   block_armor: 45
-  block_force: 70
+  block_force: 34
   knockback: 50
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 22 / 38
+  durability: 175 (+50 per level)
+  stamina: 19 / 21
   movement: -10%
   weight: 4
   max_level: 4
@@ -29,11 +29,13 @@ recipe:
   - Silver
   - Obsidian
   - Fenris Hair
+  - Silver Battle Idol
   amounts:
   - 16
   - 8
   - 9
   - 3
+  - 1
   upgrade:
   - Pristine Crystal
   - Silver

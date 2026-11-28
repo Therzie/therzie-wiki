@@ -1,23 +1,31 @@
-name: Bloodgill fin soup
+name: Bloodgill Fin Soup
 prefab: SharkFinSoup_TW
 mod: monstrum
 kind: food
 group: Food
-effect: Eitr Regen +25%
 food:
   health: 33
   stamina: 45
   eitr: 62
+stats:
+  duration: 25 min
+  healing: 3 hp/tick
+description: Salt and spicy soup that will cure any cold! Imbues you with eitr regeneration.
 recipe:
-  yields: 1
+  yields: 2
+  station: Cauldron
+  level: 5
   materials:
-    - Bloodgill Meat
-    - Bloodgil Fin
-    - Cloudberries
-  station: 'Cauldron: Level 5'
+  - Bloodgill Meat
+  - Bloodgill Fin
+  - Cloudberries
+  amounts:
+  - 1
+  - 2
+  - 3
+checks: []
 source:
   sheet: M.Food
   row: 2
   col: 27
-description: ''
 notes: ''

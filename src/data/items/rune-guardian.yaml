@@ -1,0 +1,30 @@
+name: 'Mistlands Rune: Guardian'
+prefab: RuneGuardian_TW
+mod: warfare
+kind: item
+group: Runes
+stats:
+  weight: 0.01
+  stack: 100
+recipe:
+  yields: 1
+  station: Runeforge
+  level: 1
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Rune Power I
+  - Black Marble
+  amounts:
+  - 2
+  - 4
+  - 6
+  - 12
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5200
+description: 'Rune of the Guardian path, level I (Mistlands).
+
+  Used at the Runeforge to infuse Guardian infusions at level I.'
+notes: ''

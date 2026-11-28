@@ -1,4 +1,4 @@
-name: Cooked Bear Steak
+name: Cooked bear steak
 prefab: CookedBearSteak_TW
 mod: monstrum
 kind: food
@@ -7,13 +7,17 @@ food:
   health: 38
   stamina: 23
   eitr: 0
+stats:
+  duration: 30 min
+  healing: 3 hp/tick
+description: Add salt and pepper for a delicious treat!
 recipe:
   yields: 1
   materials:
-    - Raw Bear Steak
+  - Raw Bear Steak
+checks: []
 source:
   sheet: M.Food
   row: 2
   col: 11
-description: ''
 notes: ''

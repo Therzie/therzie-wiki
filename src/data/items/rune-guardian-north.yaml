@@ -1,0 +1,30 @@
+name: 'Deep North Rune: Guardian'
+prefab: RuneGuardianNorth_TW
+mod: warfare
+kind: item
+group: Runes
+stats:
+  weight: 0.01
+  stack: 100
+recipe:
+  yields: 1
+  station: Runeforge
+  level: 1
+  materials:
+  - 'Ashlands Rune: Guardian'
+  - Glacier Crystal
+  - Rune Power III
+  - Frozen Branch
+  amounts:
+  - 1
+  - 3
+  - 15
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5200
+description: 'Rune of the Guardian path, level III (Deep North).
+
+  Used at the Runeforge to infuse or upgrade Guardian infusions to level III.'
+notes: ''

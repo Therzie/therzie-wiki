@@ -16,8 +16,9 @@ stats:
   knockback: 90
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 20 / 36
-  weight: 0.3
+  stamina: 9 / 25
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -27,10 +28,12 @@ recipe:
   - Bronze
   - Finewood
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 17
   - 8
   - 2
+  - 1
   upgrade:
   - Bronze
   - Leather Scraps

@@ -1,0 +1,30 @@
+name: 'Deep North Rune: Fury'
+prefab: RuneFuryNorth_TW
+mod: warfare
+kind: item
+group: Runes
+stats:
+  weight: 0.01
+  stack: 100
+recipe:
+  yields: 1
+  station: Runeforge
+  level: 1
+  materials:
+  - 'Ashlands Rune: Fury'
+  - Glacier Crystal
+  - Rune Power III
+  - Memorial Coal
+  amounts:
+  - 1
+  - 3
+  - 15
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5200
+description: 'Rune of the Fury path, level III (Deep North).
+
+  Used at the Runeforge to infuse or upgrade Fury infusions to level III.'
+notes: ''

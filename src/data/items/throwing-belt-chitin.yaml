@@ -1,0 +1,29 @@
+name: Chitin Throwing Belt
+prefab: ThrowingBeltChitin_TW
+mod: warfare
+kind: item
+group: Throwing belts
+tier: Chitin
+effect: 'Belt: 2 slots (javelins and throwing axes); Draws a fresh one when the weapon in your hand is spent'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 1
+  materials:
+  - Troll Hide
+  - Chitin
+  - Leather Scraps
+  - Bronze
+  amounts:
+  - 5
+  - 3
+  - 4
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5700
+description: A sea-raider belt with a bronze-ringed frog and a chitin shell boss. Holds spare throwing weapons; when the one in your hand is spent, the next is drawn from the belt.
+notes: ''

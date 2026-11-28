@@ -1,0 +1,14 @@
+name: Volcanic Crystal
+prefab: VolcanicCrystal_TW
+mod: warfare
+kind: item
+group: Materials
+stats:
+  weight: 1
+  stack: 50
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5000
+description: A crystal grown in the heat of the Ashlands, veined with living lava. It is still warm to the touch.
+notes: ''

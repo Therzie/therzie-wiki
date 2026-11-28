@@ -6,14 +6,14 @@ group: Crossbows
 skill: Crossbows
 tier: Iron
 damage:
-  pierce: 97
+  pierce: 75
 damage_max:
-  pierce: 106
+  pierce: 84
 stats:
   hands: Two handed
   knockback: 200
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 50 (+50 per level)
   secondary_stamina: 20
   reload: 3.5 s
   movement: -5%
@@ -27,10 +27,12 @@ recipe:
   - Iron
   - Ancient Bark
   - Leather Scraps
+  - Iron Battle Idol
   amounts:
   - 28
   - 14
   - 4
+  - 1
   upgrade:
   - Iron
   - Leather Scraps

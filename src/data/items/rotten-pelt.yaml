@@ -3,16 +3,20 @@ prefab: RottenPelt_TW
 mod: warfare
 kind: item
 group: Materials
-drops:
-  - from: Draugr
-    chance: 12%
-  - from: Draugr Elite
-    chance: 35%
-  - from: Rotten Elk
-    chance: 100%
+stats:
+  weight: 0.8
+  stack: 50
+checks: []
 source:
   sheet: Items
   row: 20
   col: 13
-description: ''
+description: A sodden, reeking pelt torn from the undead of the swamp. Still tough enough to bind iron.
+drops:
+- from: Draugr
+  chance: 12%
+- from: Draugr Elite
+  chance: 35%
+- from: Rotten Elk
+  chance: 100%
 notes: ''

@@ -1,0 +1,15 @@
+name: Snowmauler Trophy
+prefab: TrophyBearDeepNorth_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 2
+  stack: 20
+description: The head of a Snowmauler, rime still clinging to its fur.
+biome: Deep North
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 45
+notes: ''

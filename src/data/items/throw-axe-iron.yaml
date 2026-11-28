@@ -3,18 +3,19 @@ prefab: ThrowAxeIron_TW
 mod: warfare
 kind: weapon
 group: Throwing axes
-skill: Axes
 tier: Iron
 damage:
   slash: 32
   chop: 36
+damage_max:
+  slash: 41
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 40
+  durability: 43 (+18 per level)
+  stamina: 10 / 22
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -26,10 +27,12 @@ recipe:
   - Iron
   - Ancient Bark
   - Leather Scraps
+  - Iron Battle Idol
   amounts:
   - 13
   - 6
   - 2
+  - 1
   upgrade:
   - Iron
   - Leather Scraps

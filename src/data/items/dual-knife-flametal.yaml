@@ -17,8 +17,8 @@ stats:
   block_force: 10
   knockback: 10
   backstab: x6
-  durability: 300 (+50 per level)
-  stamina: 12 / 38
+  durability: 325 (+50 per level)
+  stamina: 14 / 42
   weight: 0.3
   max_level: 4
 recipe:
@@ -29,10 +29,12 @@ recipe:
   - Flametal
   - Charred Bone
   - Asksvin Hide
+  - Flametal Battle Idol
   amounts:
   - 31
   - 15
   - 2
+  - 1
   upgrade:
   - Flametal
   - Asksvin Hide

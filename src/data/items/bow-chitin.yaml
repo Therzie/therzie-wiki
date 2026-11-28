@@ -6,14 +6,14 @@ group: Bows
 skill: Bows
 tier: Chitin
 damage:
-  pierce: 36
+  pierce: 30.6
 damage_max:
-  pierce: 48
+  pierce: 40.8
 stats:
   hands: Two handed
   knockback: 25
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 100 (+50 per level)
   draw_stamina: 12 per second
   secondary_stamina: 20
   movement: -5%
@@ -28,11 +28,13 @@ recipe:
   - Bronze
   - Deer Hide
   - Finewood
+  - Bronze Battle Idol
   amounts:
   - 12
   - 6
   - 4
   - 10
+  - 1
   upgrade:
   - Chitin
   - Bronze

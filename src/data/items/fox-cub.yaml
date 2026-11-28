@@ -1,0 +1,25 @@
+name: Fox Cub
+prefab: FoxCub_TW
+mod: monstrum
+kind: creature
+group: Young
+creature:
+  health: 10
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+info:
+- Young of the Fox
+biome: Meadows
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 21
+description: ''
+notes: ''

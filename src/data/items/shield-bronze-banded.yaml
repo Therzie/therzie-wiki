@@ -23,10 +23,12 @@ recipe:
   - Bronze
   - Finewood
   - Copper
+  - Bronze Protection Idol
   amounts:
   - 10
   - 8
   - 2
+  - 1
   upgrade:
   - Bronze
   - Finewood

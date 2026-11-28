@@ -8,7 +8,7 @@ tier: Bone
 damage:
   slash: 31
 damage_max:
-  slash: 46
+  slash: 49
 stats:
   hands: Dual
   block_armor: 12
@@ -16,8 +16,9 @@ stats:
   knockback: 40
   backstab: x3
   durability: 200 (+50 per level)
-  stamina: 16 / 48
-  weight: 0.3
+  stamina: 8 / 16
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -28,11 +29,13 @@ recipe:
   - Corewood
   - Deer Hide
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 19
   - 9
   - 2
   - 4
+  - 1
   upgrade:
   - Bone Fragments
   - Deer Hide

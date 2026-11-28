@@ -1,0 +1,27 @@
+name: Hellblade Cleavers
+prefab: DualAxeDemonic_TW
+mod: monstrum
+kind: weapon
+group: Boss weapons
+damage:
+  chop: 36
+  fire: 8
+  slash: 45
+damage_max:
+  chop: 45
+  fire: 11
+  slash: 60
+stats:
+  hands: Dual
+  stamina: 9 / 18
+  durability: 150 (+50 per level)
+  weight: 2
+  max_level: 4
+skill: Axes
+description: A demonic pair of axes from the burning realm of Surtr.
+biome: Black Forest
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 59
+notes: ''

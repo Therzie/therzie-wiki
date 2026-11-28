@@ -1,0 +1,15 @@
+name: Obsidian Golem Trophy
+prefab: TrophyObsidianGolem_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 2
+  stack: 20
+description: The dark volcanic glass is both beautiful and sharp.
+biome: Mountains
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 51
+notes: ''

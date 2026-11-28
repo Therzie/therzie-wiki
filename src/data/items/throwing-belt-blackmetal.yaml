@@ -1,0 +1,29 @@
+name: Blackmetal Throwing Belt
+prefab: ThrowingBeltBlackmetal_TW
+mod: warfare
+kind: item
+group: Throwing belts
+tier: Blackmetal
+effect: 'Belt: 3 slots (javelins and throwing axes); Draws a fresh one when the weapon in your hand is spent'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 4
+  materials:
+  - Lox Pelt
+  - Black Metal
+  - Linen Thread
+  - Lox Bone
+  amounts:
+  - 12
+  - 11
+  - 6
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5700
+description: A fuling war belt with a javelin sheath and black metal rings for throwing axes. Holds spare throwing weapons; when the one in your hand is spent, the next is drawn from the belt.
+notes: ''

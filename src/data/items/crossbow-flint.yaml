@@ -13,7 +13,7 @@ stats:
   hands: Two handed
   knockback: 200
   backstab: x3
-  durability: 150 (+50 per level)
+  durability: 25 (+50 per level)
   secondary_stamina: 20
   reload: 3.5 s
   movement: -5%
@@ -28,11 +28,13 @@ recipe:
   - Wood
   - Deer Hide
   - Leather Scraps
+  - Wooden Battle Idol
   amounts:
   - 13
   - 6
   - 4
   - 2
+  - 1
   upgrade:
   - Flint
   - Deer Hide

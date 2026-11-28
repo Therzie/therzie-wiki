@@ -1,0 +1,23 @@
+name: Blood Thirster
+prefab: ClaymoreBloodthirst_TW
+mod: monstrum
+kind: weapon
+group: Boss weapons
+damage:
+  slash: 76
+damage_max:
+  slash: 94
+stats:
+  hands: Two handed
+  stamina: 14 / 28
+  durability: 150 (+50 per level)
+  weight: 4
+  max_level: 4
+skill: Swords
+description: A cursed greatsword of dark steel set in living bone. The deeper your wounds, the harder it bites.
+biome: Swamp
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 58
+notes: ''

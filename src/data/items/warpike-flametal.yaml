@@ -16,7 +16,7 @@ stats:
   knockback: 20
   backstab: x3
   durability: 300 (+50 per level)
-  stamina: 14 / 36
+  stamina: 17 / 36
   movement: -5%
   weight: 1.5
   max_level: 4
@@ -29,11 +29,13 @@ recipe:
   - Charred Bone
   - Ashwood
   - Bonemaw Tooth
+  - Flametal Battle Idol
   amounts:
   - 56
   - 28
   - 20
   - 3
+  - 1
   upgrade:
   - Flametal
   - Ashwood

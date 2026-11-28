@@ -1,4 +1,3 @@
-biome: Black Forest
 name: Svält
 prefab: BossSvalt_TW
 mod: monstrum
@@ -17,12 +16,14 @@ creature:
     spirit: normal
     frost: normal
   summon:
-    - Greydwarf Shaman Trophy x2
+  - Greydwarf Shaman Trophy x2
 drops:
-  - from: Hellblade cleavers
-    chance: 7%
-  - from: Svält trophy
-    chance: 100%
+- from: Hellblade Cleavers
+  chance: 7%
+- from: Svält Trophy
+  chance: 100%
+biome: Black Forest
+checks: []
 source:
   sheet: Monstrum
   row: 3

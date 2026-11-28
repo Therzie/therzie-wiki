@@ -1,9 +1,8 @@
-biome: Swamp
 name: Rotting Elk
 prefab: RottingElk_TW
 mod: monstrum
 kind: creature
-group: Other
+group: Creatures
 creature:
   health: 140
   resist:
@@ -11,24 +10,24 @@ creature:
     slash: normal
     pierce: normal
     fire: normal
-    poison: normal
+    poison: immune
     lightning: normal
     spirit: normal
     frost: normal
   spawn:
-    - when: Day
-      chance: 25%
-    - when: Night
-      chance: 25%
-drops:
-  - from: Rotten Pelt
-    chance: 100%
-  - from: Ooze
-    chance: 30%
-  - from: Rotten Elk Meat
+  - when: Day and night
     chance: 25%
-  - from: Rotten Elk Trophy
-    chance: 18%
+drops:
+- from: Rotten Pelt
+  chance: 100%
+- from: Guck
+  chance: 30%
+- from: Rotten Elk Meat
+  chance: 25%
+- from: Rotting Elk Trophy
+  chance: 18%
+biome: Swamp
+checks: []
 source:
   sheet: Monstrum
   row: 24

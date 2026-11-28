@@ -22,10 +22,12 @@ recipe:
   - Silver
   - Obsidian
   - Fenris Hair
+  - Silver Protection Idol
   amounts:
   - 7
   - 4
   - 4
+  - 1
   - 1
   upgrade:
   - Pristine Crystal

@@ -6,10 +6,10 @@ group: Dual axes
 skill: Axes
 tier: Bronze
 damage:
-  slash: 35
+  slash: 40
   chop: 32
 damage_max:
-  slash: 53
+  slash: 55
   chop: 41
 stats:
   hands: Dual
@@ -17,9 +17,10 @@ stats:
   block_force: 40
   knockback: 50
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 20 / 66
-  weight: 0.3
+  durability: 125 (+50 per level)
+  stamina: 9 / 18
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -29,10 +30,12 @@ recipe:
   - Bronze
   - Finewood
   - Leather Scraps
+  - Bronze Battle Idol
   amounts:
   - 17
   - 8
   - 2
+  - 1
   upgrade:
   - Bronze
   - Leather Scraps

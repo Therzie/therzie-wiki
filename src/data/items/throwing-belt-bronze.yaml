@@ -1,0 +1,27 @@
+name: Bronze Throwing Belt
+prefab: ThrowingBeltBronze_TW
+mod: warfare
+kind: item
+group: Throwing belts
+tier: Bronze
+effect: 'Belt: 2 slots (javelins and throwing axes); Draws a fresh one when the weapon in your hand is spent'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 1
+  materials:
+  - Leather Scraps
+  - Bronze
+  - Copper
+  amounts:
+  - 7
+  - 5
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5700
+description: A black leather belt with a bronze-ringed frog and copper fittings. Holds spare throwing weapons; when the one in your hand is spent, the next is drawn from the belt.
+notes: ''

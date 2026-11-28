@@ -1,0 +1,14 @@
+name: Unhardened Thunderblood Essence
+prefab: EssenceThunderbloodCast_TW
+mod: warfare
+kind: item
+group: Essences
+stats:
+  weight: 0.5
+  stack: 10
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5300
+description: Two runes of the Arcane and Blood paths, bound by an Ancestral Ember. Harden it in the Frost Foundry to get a Thunderblood Essence.
+notes: ''

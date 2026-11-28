@@ -9,12 +9,12 @@ damage:
   pierce: 102
   lightning: 5
 damage_max:
-  pierce: 114
+  pierce: 120
 stats:
   hands: Two handed
   knockback: 80
   backstab: x4
-  durability: 100 (+50 per level)
+  durability: 275 (+50 per level)
   draw_stamina: 6 per second
   secondary_stamina: 40
   movement: -5%
@@ -29,11 +29,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Yggdrasil Wood
+  - Black Marble Battle Idol
   amounts:
-  - 25
-  - 13
-  - 13
+  - 21
   - 11
+  - 15
+  - 12
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -42,9 +44,9 @@ recipe:
   - Hare Trophy (level 3)
   - Gjall Trophy (level 4)
   upgrade_amounts:
-  - 6
-  - 6
-  - 6
+  - 4
+  - 4
+  - 7
   - 3
   - 1
   - 1

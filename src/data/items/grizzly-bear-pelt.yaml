@@ -1,14 +1,18 @@
-name: Grizzly pelt
+name: Grizzly Pelt
 prefab: GrizzlyBearPelt_TW
 mod: warfare
 kind: item
 group: Materials
-drops:
-  - from: Grizzly Bear
-    chance: 90%
+stats:
+  weight: 1.5
+  stack: 50
+checks: []
 source:
   sheet: Items
   row: 20
   col: 15
-description: ''
+description: A thick brown pelt of a grizzly bear.
+drops:
+- from: Grizzly Bear
+  chance: 90%
 notes: ''

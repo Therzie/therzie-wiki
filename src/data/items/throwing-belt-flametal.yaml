@@ -1,0 +1,29 @@
+name: Flametal Throwing Belt
+prefab: ThrowingBeltFlametal_TW
+mod: warfare
+kind: item
+group: Throwing belts
+tier: Flametal
+effect: 'Belt: 4 slots (javelins and throwing axes); Draws a fresh one when the weapon in your hand is spent'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Asksvin Hide
+  - Flametal
+  - Ashwood
+  - Volcanic Crystal
+  amounts:
+  - 12
+  - 11
+  - 4
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5700
+description: A flametal war belt with a javelin sheath and rings for throwing axes, still warm from the forge. Holds spare throwing weapons; when the one in your hand is spent, the next is drawn from the belt.
+notes: ''

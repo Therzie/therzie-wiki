@@ -6,10 +6,10 @@ group: Dual axes
 skill: Axes
 tier: Iron
 damage:
-  slash: 52
+  slash: 60
   chop: 48
 damage_max:
-  slash: 70
+  slash: 75
   chop: 57
 stats:
   hands: Dual
@@ -17,9 +17,10 @@ stats:
   block_force: 40
   knockback: 50
   backstab: x3
-  durability: 200 (+50 per level)
-  stamina: 20 / 66
-  weight: 0.3
+  durability: 175 (+50 per level)
+  stamina: 12 / 24
+  movement: -5%
+  weight: 2
   max_level: 4
 recipe:
   yields: 1
@@ -29,10 +30,12 @@ recipe:
   - Iron
   - Ancient Bark
   - Leather Scraps
+  - Iron Battle Idol
   amounts:
   - 32
   - 16
   - 2
+  - 1
   upgrade:
   - Iron
   - Leather Scraps

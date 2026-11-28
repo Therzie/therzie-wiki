@@ -12,10 +12,10 @@ damage_max:
 stats:
   hands: Two handed
   block_armor: 54
-  block_force: 70
+  block_force: 34
   knockback: 50
   backstab: x3
-  durability: 250 (+50 per level)
+  durability: 225 (+50 per level)
   stamina: 22 / 38
   movement: -10%
   weight: 4
@@ -29,11 +29,13 @@ recipe:
   - Iron
   - Black Marble
   - Mandible
+  - Black Marble Battle Idol
   amounts:
   - 27
   - 14
   - 12
   - 3
+  - 1
   upgrade:
   - Carapace
   - Iron

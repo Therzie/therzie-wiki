@@ -8,12 +8,12 @@ tier: Carapace
 damage:
   pierce: 97
 damage_max:
-  pierce: 109
+  pierce: 115
 stats:
   hands: Two handed
   knockback: 80
   backstab: x4
-  durability: 100 (+50 per level)
+  durability: 250 (+50 per level)
   draw_stamina: 6 per second
   secondary_stamina: 40
   movement: -5%
@@ -28,11 +28,13 @@ recipe:
   - Iron
   - Yggdrasil Wood
   - Mandible
+  - Black Marble Battle Idol
   amounts:
   - 25
   - 12
   - 11
   - 3
+  - 1
   upgrade:
   - Carapace
   - Iron

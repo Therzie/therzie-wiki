@@ -1,0 +1,29 @@
+name: Crystal Quiver
+prefab: QuiverCrystal_TW
+mod: warfare
+kind: item
+group: Quivers
+tier: Crystal
+effect: 'Ammo pouch: 4 slots (arrows and bolts)'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Wolf Pelt
+  - Pristine Crystal
+  - Fenris Hair
+  - Silver
+  amounts:
+  - 8
+  - 5
+  - 1
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5600
+description: A hip quiver of wolf leather and silver, set with frost-white crystal. Holds arrows and bolts in its own pouch.
+notes: ''

@@ -23,12 +23,14 @@ recipe:
   - Finewood
   - Lox Pelt
   - Chain
+  - Black Metal Protection Idol
   amounts:
   - 14
   - 7
   - 6
   - 2
   - 2
+  - 1
   upgrade:
   - Black Metal
   - Iron

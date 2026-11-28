@@ -1,0 +1,29 @@
+name: Blackmetal Quiver
+prefab: QuiverBlackmetal_TW
+mod: warfare
+kind: item
+group: Quivers
+tier: Blackmetal
+effect: 'Ammo pouch: 5 slots (arrows and bolts)'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 4
+  materials:
+  - Lox Pelt
+  - Black Metal
+  - Linen Thread
+  - Lox Bone
+  amounts:
+  - 12
+  - 10
+  - 8
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5600
+description: A fuling hip quiver of lox leather and black metal. Holds arrows and bolts in its own pouch.
+notes: ''

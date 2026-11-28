@@ -1,0 +1,35 @@
+name: Snowmauler
+prefab: BearDeepNorth_TW
+mod: monstrum
+kind: creature
+group: Creatures
+creature:
+  health: 1420
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: very resistant
+  spawn:
+  - when: Day
+    chance: 10%
+drops:
+- from: Snowmauler Trophy
+  chance: 10%
+- from: Snowmauler Pelt
+  chance: 100% (3-4)
+info:
+- Tameable; eats Moose Meat, Seal Blubber, Asksvin Tail, Volture Meat, Bonemaw Meat
+- Can be ridden with the Snowmauler Saddle
+- Breeds when tamed
+biome: Deep North
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 4
+description: ''
+notes: ''

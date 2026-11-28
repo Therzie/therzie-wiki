@@ -1,0 +1,30 @@
+name: 'Ashlands Rune: Craft'
+prefab: RuneCraftAsh_TW
+mod: warfare
+kind: item
+group: Runes
+stats:
+  weight: 0.01
+  stack: 100
+recipe:
+  yields: 1
+  station: Runeforge
+  level: 1
+  materials:
+  - 'Mistlands Rune: Craft'
+  - Volcanic Crystal
+  - Rune Power II
+  - Flametal
+  amounts:
+  - 1
+  - 4
+  - 12
+  - 6
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5200
+description: 'Rune of the Craft path, level II (Ashlands).
+
+  Used at the Runeforge to infuse or upgrade Craft infusions to level II.'
+notes: ''

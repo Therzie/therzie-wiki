@@ -1,0 +1,24 @@
+name: Ancient Root
+prefab: GDAncientShaman_rootspawn_TW
+mod: monstrum
+kind: creature
+group: Summons
+creature:
+  health: 75
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: weak
+    poison: immune
+    lightning: normal
+    spirit: normal
+    frost: resistant
+info:
+- Summoned by Ancient Shaman
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 18
+description: ''
+notes: ''

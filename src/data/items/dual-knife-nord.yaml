@@ -9,8 +9,8 @@ damage:
   slash: 68
   pierce: 68
 damage_max:
-  slash: 98
-  pierce: 98
+  slash: 83
+  pierce: 83
 stats:
   hands: Dual
   block_armor: 23
@@ -18,7 +18,7 @@ stats:
   knockback: 10
   backstab: x6
   durability: 400 (+50 per level)
-  stamina: 12 / 38
+  stamina: 15 / 45
   weight: 0.3
   max_level: 4
 recipe:
@@ -29,10 +29,12 @@ recipe:
   - Bloodgold
   - Timberwood
   - Elaking Hair Bundle
+  - Bloodgold Battle Idol
   amounts:
   - 35
   - 18
   - 2
+  - 1
   upgrade:
   - Bloodgold
   - Elaking Hair Bundle

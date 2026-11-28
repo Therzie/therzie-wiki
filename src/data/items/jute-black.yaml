@@ -1,16 +1,20 @@
-name: Black jute
+name: Black Jute
 prefab: JuteBlack_TW
 mod: warfare
 kind: item
 group: Materials
-drops:
-  - from: Dvergr
-    chance: 25%
-  - from: Dvergr Mages
-    chance: 35%
+stats:
+  weight: 2
+  stack: 50
+checks: []
 source:
   sheet: Items
   row: 28
   col: 9
-description: ''
+description: Tightly woven black jute, carried by the dvergr of the Mistlands. Wraps a grip that never slips.
+drops:
+- from: Dvergr
+  chance: 25%
+- from: Dvergr Mages
+  chance: 35%
 notes: ''

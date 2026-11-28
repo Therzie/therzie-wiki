@@ -1,0 +1,29 @@
+name: Silver Quiver
+prefab: QuiverSilver_TW
+mod: warfare
+kind: item
+group: Quivers
+tier: Silver
+effect: 'Ammo pouch: 4 slots (arrows and bolts)'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 3
+  materials:
+  - Wolf Pelt
+  - Silver
+  - Wolf Fang
+  - Obsidian
+  amounts:
+  - 12
+  - 11
+  - 1
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5600
+description: A wolf-fur hip quiver with a silver clasp and obsidian studs. Holds arrows and bolts in its own pouch.
+notes: ''

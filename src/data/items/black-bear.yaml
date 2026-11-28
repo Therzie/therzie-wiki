@@ -1,0 +1,38 @@
+name: Black Bear
+prefab: BlackBear_TW
+mod: monstrum
+kind: creature
+group: Creatures
+creature:
+  health: 120
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: normal
+    poison: normal
+    lightning: normal
+    spirit: immune
+    frost: normal
+  spawn:
+  - when: Day and night
+    chance: 0%
+drops:
+- from: Black Bear Pelt
+  chance: 100%
+- from: Raw Bear Steak
+  chance: 70%
+- from: Black Bear Trophy
+  chance: 22%
+info:
+- Tameable; eats Boar Meat, Raspberries, Yellow Mushroom, Deer Meat, Blueberries, Mushroom, Entrails, Honey, Raw Fox Meat, Raw Fish
+- Can be ridden with the Bear Saddle
+- Breeds when tamed
+- 'Off by default: turn on ''Enable Black Bear'' in the Monstrum config, which also sets its spawn chance'
+biome: Black Forest
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 5
+description: ''
+notes: ''

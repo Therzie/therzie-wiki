@@ -1,19 +1,29 @@
-name: Lightning Resistance Mead
+name: Lightning resistance mead
 prefab: MeadLightningResist_TW
 mod: warfare
 kind: item
 group: Potions
-effect: Resistance Vs Lightning
+effect: 'Damage modifier: Resistant VS Lightning for 10 min'
+stats:
+  weight: 1
+  stack: 10
 recipe:
-  yields: 1
-  materials:
-    - Honey
-    - Barley
-    - Flax
+  yields: 6
   station: Fermenter
+  materials:
+  - Honey
+  - Barley
+  - Flax
+  amounts:
+  - 12
+  - 5
+  - 7
+info:
+- 'Brew Mead base: Lightning resistance at the Mead Ketill, then ferment it in a Fermenter: 6 meads per base'
+checks: []
 source:
   sheet: Items
   row: 11
   col: 7
-description: ''
+description: Grants resistance to lightning damage for 10 minutes.
 notes: ''

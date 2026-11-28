@@ -1,0 +1,15 @@
+name: Svält Trophy
+prefab: TrophySvalt_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 1.5
+  stack: 20
+description: Venom still drips from the monster's skull..
+biome: Black Forest
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 56
+notes: ''

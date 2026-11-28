@@ -1,22 +1,26 @@
-name: Dark crystal
+name: Dark Crystal
 prefab: DarkCrystal_TW
 mod: warfare
 kind: item
 group: Materials
-drops:
-  - from: Dvergr
-    chance: 15%
-  - from: Dvergr Mages
-    chance: 25%
-  - from: Gjall
-    chance: 35%
-  - from: Seeker
-    chance: 15%
-  - from: Seeker Soldier
-    chance: 20%
+stats:
+  weight: 1
+  stack: 50
+checks: []
 source:
   sheet: Items
   row: 28
   col: 7
-description: ''
+description: A shard of crystallised darkness, mined from the veins of the Mistlands. It hums softly with trapped eitr.
+drops:
+- from: Dvergr
+  chance: 15%
+- from: Dvergr Mages
+  chance: 25%
+- from: Gjall
+  chance: 35%
+- from: Seeker
+  chance: 15%
+- from: Seeker Soldier
+  chance: 20%
 notes: ''

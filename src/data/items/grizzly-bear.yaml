@@ -1,9 +1,8 @@
-biome: Mountains
 name: Grizzly Bear
 prefab: GrizzlyBear_TW
 mod: monstrum
 kind: creature
-group: Other
+group: Creatures
 creature:
   health: 250
   resist:
@@ -16,17 +15,23 @@ creature:
     spirit: immune
     frost: normal
   spawn:
-    - when: Day
-      chance: 15%
-    - when: Night
-      chance: 19%
+  - when: Day and night
+    chance: 15%
+  - when: Day and night
+    chance: 19%
 drops:
-  - from: Grizzly Pelt
-    chance: 90%
-  - from: Raw Bear Steak
-    chance: 70%
-  - from: Grizzly Bear Trophy
-    chance: 20%
+- from: Grizzly Pelt
+  chance: 90%
+- from: Raw Bear Steak
+  chance: 70% (1-2)
+- from: Grizzly Bear Trophy
+  chance: 20%
+info:
+- Tameable; eats Entrails, Blueberries, Turnip, Wolf Meat, Deer Meat, Honey, Raw Fox Meat, Raw Fish
+- Can be ridden with the Bear Saddle
+- Breeds when tamed
+biome: Mountains
+checks: []
 source:
   sheet: Monstrum
   row: 47

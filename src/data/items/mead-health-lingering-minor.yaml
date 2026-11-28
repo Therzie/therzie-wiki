@@ -1,0 +1,28 @@
+name: Minor lingering healing mead
+prefab: MeadHealthLingeringMinor_TW
+mod: warfare
+kind: item
+group: Potions
+effect: 'Health regen: +15% for 5 min'
+stats:
+  weight: 1
+  stack: 10
+recipe:
+  yields: 6
+  station: Fermenter
+  materials:
+  - Honey
+  - Turnip
+  - Thistle
+  amounts:
+  - 10
+  - 10
+  - 5
+info:
+- 'Brew Mead base: Minor lingering healing at the Mead Ketill, then ferment it in a Fermenter: 6 meads per base'
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5900
+description: Health regeneration increased by 15 % for 5 minutes.
+notes: ''

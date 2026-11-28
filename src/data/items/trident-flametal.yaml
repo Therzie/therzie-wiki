@@ -6,9 +6,9 @@ group: Tridents
 skill: Spears
 tier: Flametal
 damage:
-  pierce: 155
+  pierce: 142
 damage_max:
-  pierce: 173
+  pierce: 160
 stats:
   hands: One handed
   block_armor: 62
@@ -16,7 +16,7 @@ stats:
   knockback: 20
   backstab: x3
   durability: 300 (+50 per level)
-  stamina: 14 / 16
+  stamina: 16 / 18
   movement: -5%
   weight: 1.5
   max_level: 4
@@ -29,11 +29,13 @@ recipe:
   - Charred Bone
   - Ashwood
   - Bonemaw Tooth
+  - Flametal Battle Idol
   amounts:
   - 59
   - 29
   - 20
   - 3
+  - 1
   upgrade:
   - Flametal
   - Ashwood

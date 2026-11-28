@@ -1,0 +1,31 @@
+name: Carapace Quiver
+prefab: QuiverCarapace_TW
+mod: warfare
+kind: item
+group: Quivers
+tier: Carapace
+effect: 'Ammo pouch: 6 slots (arrows and bolts)'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Carapace
+  - Scale Hide
+  - Mandible
+  - Yggdrasil Wood
+  - Dark Crystal
+  amounts:
+  - 12
+  - 11
+  - 1
+  - 4
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5600
+description: A hip quiver plated with seeker carapace. Holds arrows and bolts in its own pouch.
+notes: ''

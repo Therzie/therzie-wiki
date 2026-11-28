@@ -3,17 +3,27 @@ prefab: MeadStaminaLingeringMinor_TW
 mod: warfare
 kind: item
 group: Potions
-effect: Stamina Regen +10% for 5m
+effect: 'Stamina regen: +15% for 5 min'
+stats:
+  weight: 1
+  stack: 10
 recipe:
-  yields: 1
-  materials:
-    - Tasty Mead
-    - Yellow Mushroom
-    - Honey
+  yields: 6
   station: Fermenter
+  materials:
+  - Honey
+  - Blueberries
+  - Onion
+  amounts:
+  - 10
+  - 10
+  - 5
+info:
+- 'Brew Mead base: Minor lingering stamina at the Mead Ketill, then ferment it in a Fermenter: 6 meads per base'
+checks: []
 source:
   sheet: Items
   row: 11
   col: 3
-description: ''
+description: Stamina regeneration increased by 15 % for 5 minutes.
 notes: ''

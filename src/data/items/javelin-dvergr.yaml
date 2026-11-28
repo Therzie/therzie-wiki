@@ -3,18 +3,19 @@ prefab: JavelinDvergr_TW
 mod: warfare
 kind: weapon
 group: Javelins
-skill: Spears
 tier: Dvergr
 damage:
   pierce: 120
   lightning: 8
+damage_max:
+  pierce: 129
 stats:
   hands: One handed
   block_armor: 1
   knockback: 18
   backstab: x3
-  durability: 43 (+6 per level)
-  stamina: 18 / 20
+  durability: 43 (+18 per level)
+  stamina: 16 / 18
   movement: -5%
   weight: 0.1
   max_level: 4
@@ -27,11 +28,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Yggdrasil Wood
+  - Black Marble Battle Idol
   amounts:
-  - 11
-  - 5
-  - 5
-  - 5
+  - 9
+  - 4
+  - 6
+  - 6
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -40,8 +43,8 @@ recipe:
   - Hare Trophy (level 3)
   - Tick Trophy (level 4)
   upgrade_amounts:
-  - 3
-  - 3
+  - 2
+  - 2
   - 3
   - 1
   - 1

@@ -15,8 +15,8 @@ stats:
   block_force: 10
   knockback: 20
   backstab: x6
-  durability: 200 (+50 per level)
-  stamina: 16 / 48
+  durability: 300 (+50 per level)
+  stamina: 11 / 28
   weight: 2
   max_level: 4
 recipe:
@@ -28,11 +28,13 @@ recipe:
   - Silver
   - Fenris Claw
   - Fenris Hair
+  - Silver Battle Idol
   amounts:
   - 11
   - 6
   - 2
   - 2
+  - 1
   upgrade:
   - Pristine Crystal
   - Silver

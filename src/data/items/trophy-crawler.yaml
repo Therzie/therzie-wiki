@@ -1,0 +1,15 @@
+name: Crawler Trophy
+prefab: TrophyCrawler_TW
+mod: monstrum
+kind: item
+group: Trophies
+stats:
+  weight: 2
+  stack: 20
+description: You can still hear its monstrous screams..
+biome: Swamp
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 47
+notes: ''

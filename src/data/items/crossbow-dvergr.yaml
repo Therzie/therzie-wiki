@@ -6,10 +6,10 @@ group: Crossbows
 skill: Crossbows
 tier: Dvergr
 damage:
-  pierce: 205
+  pierce: 159
   lightning: 3
 damage_max:
-  pierce: 214
+  pierce: 168
 stats:
   hands: Two handed
   knockback: 200
@@ -29,11 +29,13 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Yggdrasil Wood
+  - Black Marble Battle Idol
   amounts:
-  - 23
-  - 12
-  - 12
+  - 19
   - 10
+  - 13
+  - 11
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
@@ -42,9 +44,9 @@ recipe:
   - Hare Trophy (level 3)
   - Seeker Trophy (level 4)
   upgrade_amounts:
-  - 6
-  - 6
-  - 6
+  - 4
+  - 4
+  - 7
   - 3
   - 1
   - 1

@@ -1,0 +1,30 @@
+name: 'Mistlands Rune: Hunter'
+prefab: RuneHunter_TW
+mod: warfare
+kind: item
+group: Runes
+stats:
+  weight: 0.01
+  stack: 100
+recipe:
+  yields: 1
+  station: Runeforge
+  level: 1
+  materials:
+  - Refined Eitr
+  - Dark Crystal
+  - Rune Power I
+  - Feathers
+  amounts:
+  - 2
+  - 4
+  - 6
+  - 20
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5200
+description: 'Rune of the Hunter path, level I (Mistlands).
+
+  Used at the Runeforge to infuse Hunter infusions at level I.'
+notes: ''

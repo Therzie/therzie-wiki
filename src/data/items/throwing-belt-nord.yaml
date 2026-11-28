@@ -1,0 +1,31 @@
+name: Nord Throwing Belt
+prefab: ThrowingBeltNord_TW
+mod: warfare
+kind: item
+group: Throwing belts
+tier: Nord
+effect: 'Belt: 5 slots (javelins and throwing axes); Draws a fresh one when the weapon in your hand is spent'
+stats:
+  weight: 2
+recipe:
+  yields: 1
+  station: Fletcher Table
+  level: 5
+  materials:
+  - Moose Hide
+  - Bloodgold
+  - Timberwood
+  - Long Claws
+  - Glacier Crystal
+  amounts:
+  - 12
+  - 11
+  - 6
+  - 2
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5700
+description: A Jotun war belt with a javelin sheath and a fur-trimmed frog, a glacier gem set in gold and two great digging claws. Holds spare throwing weapons; when the one in your hand is spent, the next is drawn from the belt.
+notes: ''

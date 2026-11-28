@@ -7,13 +7,17 @@ food:
   health: 11
   stamina: 30
   eitr: 0
+stats:
+  duration: 20 min
+  healing: 2 hp/tick
+description: One small bite fills a man's stomach!
 recipe:
   yields: 1
   materials:
-    - Raw Fox Meat
+  - Raw Fox Meat
+checks: []
 source:
   sheet: M.Food
   row: 2
   col: 3
-description: ''
 notes: ''

@@ -11,16 +11,16 @@ damage:
   lightning: 15
 damage_max:
   blunt: 108
-  pierce: 61
 stats:
   hands: Two handed
-  block_armor: 72
+  block_armor: 52
   block_force: 30
   knockback: 130
   backstab: x3
-  durability: 275 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  durability: 300 (+50 per level)
+  stamina: 22 / 32
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -31,22 +31,24 @@ recipe:
   - Dark Crystal
   - Black Metal
   - Yggdrasil Wood
+  - Black Marble Battle Idol
   amounts:
-  - 25
-  - 13
-  - 13
+  - 21
   - 11
+  - 15
+  - 12
+  - 1
   upgrade:
   - Refined Eitr
   - Dark Crystal
   - Black Metal
   - Yggdrasil Wood
-  - Tick Trophy (level 3)
-  - Seeker Trophy (level 4)
+  - Seeker Trophy (level 3)
+  - Tick Trophy (level 4)
   upgrade_amounts:
-  - 6
-  - 6
-  - 6
+  - 4
+  - 4
+  - 7
   - 3
   - 1
   - 1

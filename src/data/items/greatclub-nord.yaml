@@ -10,16 +10,16 @@ damage:
   pierce: 79
 damage_max:
   blunt: 169
-  pierce: 94
 stats:
   hands: Two handed
-  block_armor: 83
+  block_armor: 70
   block_force: 30
   knockback: 130
   backstab: x3
   durability: 400 (+50 per level)
-  stamina: 16 / 32
-  weight: 2
+  stamina: 23 / 33
+  movement: -10%
+  weight: 3
   max_level: 4
 recipe:
   yields: 1
@@ -29,17 +29,19 @@ recipe:
   - Bloodgold
   - Timberwood
   - Moose Hide
+  - Bloodgold Battle Idol
   amounts:
   - 62
   - 31
   - 4
+  - 1
   upgrade:
   - Bloodgold
   - Moose Hide
   - Liquid Frost (level 2)
   - Elaking Trophy (level 3)
   - Liquid Frost (level 3)
-  - Barka Trophy (level 4)
+  - Hexen Trophy (level 4)
   - Liquid Frost (level 4)
   - Frostcore (level 4)
   - Glacier Crystal (level 4)

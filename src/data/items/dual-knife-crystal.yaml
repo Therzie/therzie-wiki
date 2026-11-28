@@ -18,7 +18,7 @@ stats:
   knockback: 10
   backstab: x6
   durability: 200 (+50 per level)
-  stamina: 12 / 38
+  stamina: 11 / 33
   weight: 0.3
   max_level: 4
 recipe:
@@ -30,11 +30,13 @@ recipe:
   - Silver
   - Red Jute
   - Fenris Hair
+  - Silver Battle Idol
   amounts:
   - 8
   - 4
   - 2
   - 2
+  - 1
   upgrade:
   - Pristine Crystal
   - Silver

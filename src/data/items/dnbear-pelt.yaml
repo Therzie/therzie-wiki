@@ -1,0 +1,15 @@
+name: Snowmauler Pelt
+prefab: DNBearPelt_TW
+mod: monstrum
+kind: item
+group: Materials
+stats:
+  weight: 2
+  stack: 50
+description: A heavy white pelt from a Snowmauler. Shards of ice are still frozen into the fur.
+biome: Deep North
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 34
+notes: ''

@@ -1,14 +1,18 @@
-name: Razorback leather
+name: Razorback Leather
 prefab: RazorbackLeather_TW
 mod: warfare
 kind: item
 group: Materials
-drops:
-  - from: Razorback
-    chance: 100%
+stats:
+  weight: 0.5
+  stack: 50
+checks: []
 source:
   sheet: Items
   row: 20
   col: 5
-description: ''
+description: Dark boar leather that can be used for crafting.
+drops:
+- from: Razorback
+  chance: 100%
 notes: ''

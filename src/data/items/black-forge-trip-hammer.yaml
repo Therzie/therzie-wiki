@@ -1,0 +1,25 @@
+name: Dwarven Eitr Anvil
+prefab: BlackForge_TripHammer_TW
+mod: warfare
+kind: piece
+group: Black Forge extensions
+recipe:
+  yields: 1
+  materials:
+  - Black Metal
+  - Yggdrasil Wood
+  - Refined Eitr
+  - Copper
+  - Black Core
+  amounts:
+  - 10
+  - 6
+  - 6
+  - 4
+  - 1
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 6000
+description: A dwarven anvil with an eitr-driven trip hammer. Upgrades the Black Forge. Unlocks the Dwarven tier for your Black Forge.
+notes: ''

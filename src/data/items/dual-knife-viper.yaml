@@ -1,0 +1,27 @@
+name: Viper Fangs
+prefab: DualKnifeViper_TW
+mod: monstrum
+kind: weapon
+group: Boss weapons
+damage:
+  pierce: 11
+  poison: 6
+  slash: 11
+damage_max:
+  pierce: 14
+  poison: 9
+  slash: 14
+stats:
+  hands: Dual
+  stamina: 5 / 15
+  durability: 200 (+50 per level)
+  weight: 0.3
+  max_level: 4
+skill: Knives
+description: Twin fang blades of the Viper lord. Venom gathers along the grooves and drips from their tips.
+biome: Meadows
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 60
+notes: ''

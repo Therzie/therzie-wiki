@@ -1,0 +1,23 @@
+name: Dwarven Eitr Grinder
+prefab: BlackForge_Grindstone_TW
+mod: warfare
+kind: piece
+group: Black Forge extensions
+recipe:
+  yields: 1
+  materials:
+  - Black Metal
+  - Yggdrasil Wood
+  - Refined Eitr
+  - Lox Pelt
+  amounts:
+  - 6
+  - 4
+  - 4
+  - 2
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 6000
+description: A dwarven grinder driven by eitr, its stone turning through a cooling basin. Upgrades the Black Forge.
+notes: ''

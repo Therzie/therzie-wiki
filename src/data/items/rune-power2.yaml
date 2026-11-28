@@ -1,0 +1,14 @@
+name: Rune Power II
+prefab: RunePower2_TW
+mod: warfare
+kind: item
+group: Runes
+stats:
+  weight: 0.1
+  stack: 100
+checks: []
+source:
+  sheet: Warfare 2.0
+  row: 5200
+description: The power bound in Ashlands trophies, drawn out at the Runeforge. Used to carve Ashlands runes.
+notes: ''

@@ -1,0 +1,25 @@
+name: Damned Soul
+prefab: DamnedOne_TW
+mod: monstrum
+kind: creature
+group: Summons
+creature:
+  health: 150
+  resist:
+    blunt: normal
+    slash: normal
+    pierce: normal
+    fire: resistant
+    poison: immune
+    lightning: normal
+    spirit: normal
+    frost: resistant
+info:
+- Summoned by Vrykolathas
+biome: Swamp
+checks: []
+source:
+  sheet: Monstrum 1.7
+  row: 17
+description: ''
+notes: ''

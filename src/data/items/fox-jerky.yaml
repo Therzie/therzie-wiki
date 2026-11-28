@@ -4,18 +4,26 @@ mod: monstrum
 kind: food
 group: Food
 food:
-  health: 11
-  stamina: 30
+  health: 25
+  stamina: 25
   eitr: 0
+stats:
+  duration: 30 min
+  healing: 2 hp/tick
+description: Seasoned with honey to keep you on your toes!
 recipe:
-  yields: 1
-  materials:
-    - Raw Fox Meat
-    - Honey
+  yields: 2
   station: Cauldron
+  level: 1
+  materials:
+  - Raw Fox Meat
+  - Honey
+  amounts:
+  - 1
+  - 1
+checks: []
 source:
   sheet: M.Food
   row: 2
   col: 7
-description: ''
 notes: ''
