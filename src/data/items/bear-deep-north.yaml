@@ -23,7 +23,7 @@ drops:
 - from: Snowmauler Pelt
   chance: 100% (3-4)
 info:
-- Tameable
+- Tameable; eats Moose Meat, Seal Blubber, Asksvin Tail, Volture Meat, Bonemaw Meat
 - Can be ridden with the Snowmauler Saddle
 - Breeds when tamed
 biome: Deep North
